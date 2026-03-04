@@ -181,7 +181,7 @@ export default function MarketingPage() {
             <ResponsiveContainer width="100%" height={220}>
               <FunnelChart>
                 <Tooltip {...TOOLTIP_STYLE} />
-                <Funnel dataKey="value" data={perspFunnelData} isAnimationActive animationDuration={800}>
+                <Funnel dataKey="value" data={perspFunnelData} isAnimationActive animationDuration={800} label={false}>
                   <LabelList position="right" fill="#a8a29e" stroke="none" dataKey="name" fontSize={14} fontWeight={600} />
                   {perspFunnelData.map((_, i) => (
                     <Cell key={i} fill={FUNNEL_COLORS[i]} />
