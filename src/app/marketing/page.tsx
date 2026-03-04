@@ -57,8 +57,8 @@ const creativeDeepFunnel = metaAds.map((ad) => {
 
 /* ── Perspective Funnel ── */
 const perspFunnelData = [
-  { name: `${perspectiveSummary.totalVisits} LP Visits`, value: perspectiveSummary.totalVisits },
-  { name: `${perspectiveSummary.converted} Konvertiert`, value: perspectiveSummary.converted },
+  { name: "LP Visits", value: perspectiveSummary.totalVisits },
+  { name: "Konvertiert", value: perspectiveSummary.converted },
 ];
 
 /* ── Cost per Ad ── */
@@ -177,18 +177,28 @@ export default function MarketingPage() {
       {/* Perspective Funnel */}
       <SectionCard title="Kursnet/meinNOW Landing Page Funnel">
         <div className="grid gap-8 lg:grid-cols-3">
-          <div className="lg:col-span-1">
-            <ResponsiveContainer width="100%" height={220}>
-              <FunnelChart>
-                <Tooltip {...TOOLTIP_STYLE} />
-                <Funnel dataKey="value" data={perspFunnelData} isAnimationActive animationDuration={800} label={false}>
-                  <LabelList position="right" fill="#a8a29e" stroke="none" dataKey="name" fontSize={14} fontWeight={600} />
-                  {perspFunnelData.map((_, i) => (
-                    <Cell key={i} fill={FUNNEL_COLORS[i]} />
-                  ))}
-                </Funnel>
-              </FunnelChart>
-            </ResponsiveContainer>
+          <div className="lg:col-span-1 flex items-stretch gap-4">
+            <div className="flex-1">
+              <ResponsiveContainer width="100%" height={220}>
+                <FunnelChart>
+                  <Tooltip {...TOOLTIP_STYLE} />
+                  <Funnel dataKey="value" data={perspFunnelData} isAnimationActive animationDuration={800} label={false}>
+                    {perspFunnelData.map((_, i) => (
+                      <Cell key={i} fill={FUNNEL_COLORS[i]} />
+                    ))}
+                  </Funnel>
+                </FunnelChart>
+              </ResponsiveContainer>
+            </div>
+            <div className="flex flex-col justify-around py-4">
+              {perspFunnelData.map((d, i) => (
+                <div key={i} className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-sm" style={{ background: FUNNEL_COLORS[i] }} />
+                  <span className="text-[14px] font-semibold text-[#fafaf9] tabular-nums">{d.value}</span>
+                  <span className="text-[13px] text-[#78716c]">{d.name}</span>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Gap Visualization */}
