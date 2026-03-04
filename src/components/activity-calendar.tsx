@@ -9,6 +9,10 @@ type Mode = "dials" | "calltime";
 
 const DAY_LABELS = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"];
 
+function toLocalISO(d: Date): string {
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
+
 const SELLER_NAMES = ["Walid Karimi", "Nele Pfau", "Bastian Wuske", "Eric H.", "Michel G."];
 
 function getMonday(d: Date): Date {
@@ -74,7 +78,7 @@ function buildWeeks(entries: AircallDailyEntry[]): WeekRow[] {
     for (let i = 0; i < 7; i++) {
       const d = new Date(current);
       d.setDate(d.getDate() + i);
-      const iso = d.toISOString().split("T")[0];
+      const iso = toLocalISO(d);
       const entry = byDate.get(iso) ?? null;
       days.push(entry);
       if (entry) {
@@ -98,7 +102,7 @@ function buildWeeks(entries: AircallDailyEntry[]): WeekRow[] {
 }
 
 function BubbleCell({ entry, mode, maxVal }: { entry: AircallDailyEntry | null; mode: Mode; maxVal: number }) {
-  const today = new Date().toISOString().split("T")[0];
+  const today = toLocalISO(new Date());
 
   if (!entry || (mode === "dials" && entry.dials === 0) || (mode === "calltime" && entry.calltimeSec === 0)) {
     if (entry && entry.date === today) {

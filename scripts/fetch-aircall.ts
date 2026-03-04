@@ -165,7 +165,7 @@ function aggregateDaily(calls: RawCall[]): DailyEntry[] {
 
   for (const c of calls) {
     if (!c.started_at) continue;
-    const date = new Date(c.started_at * 1000).toISOString().split("T")[0];
+    const date = new Date(c.started_at * 1000).toLocaleDateString("sv-SE", { timeZone: "Europe/Berlin" });
     const entry = map.get(date) ?? { dials: 0, reached: 0, calltimeSec: 0 };
 
     if (c.direction === "outbound") {
@@ -191,7 +191,7 @@ function aggregateSellerDaily(calls: RawCall[]): SellerDailyEntry[] {
     if (!c.started_at || !c.user) continue;
     const sellerName = SELLERS[c.user.id];
     if (!sellerName) continue;
-    const date = new Date(c.started_at * 1000).toISOString().split("T")[0];
+    const date = new Date(c.started_at * 1000).toLocaleDateString("sv-SE", { timeZone: "Europe/Berlin" });
     const key = `${sellerName}::${date}`;
     const entry = map.get(key) ?? { dials: 0, reached: 0, calltimeSec: 0 };
 
