@@ -2,7 +2,9 @@
 
 import { KpiCard, SectionCard } from "@/components/kpi-card";
 import { leads } from "@/data/leads";
+import { aircallSellers, aircallFetchedAt, formatDuration } from "@/data/aircall";
 import { TOOLTIP_STYLE, AXIS_STYLE, PALETTE, SELLER_BAR_COLORS } from "@/components/chart-theme";
+import { Phone, PhoneOutgoing, PhoneIncoming, Clock } from "lucide-react";
 import {
   BarChart,
   Bar,
@@ -18,7 +20,7 @@ import {
   Legend,
 } from "recharts";
 
-const sellers = ["Walid Karimi", "Nele Pfau"] as const;
+const sellers = ["Walid Karimi", "Nele Pfau", "Bastian Wuske"] as const;
 
 function sellerStats(name: string) {
   const sellerLeads = leads.filter((l) => l.vertriebler === name);
@@ -32,6 +34,8 @@ function sellerStats(name: string) {
   const termine = sellerLeads.filter((l) => l.terminBeimAmt).length;
   const neuerLead = sellerLeads.filter((l) => l.leadStatus === "Neuer Lead").length;
   const nichtErreicht = sellerLeads.filter((l) => l.leadStatus === "1x NE").length;
+
+  const aircall = aircallSellers.find((a) => a.name === name);
 
   return {
     name,
@@ -49,6 +53,7 @@ function sellerStats(name: string) {
       { name: "Discovery+", count: discovery },
       { name: "Verloren", count: verloren },
     ],
+    aircall,
   };
 }
 
@@ -67,12 +72,13 @@ const radarData = [
   { metric: "Discovery", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.discovery])) },
   { metric: "Angebote", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.angebot])) },
   { metric: "Termine", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.termine])) },
-  { metric: "Verloren", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.verloren])) },
+  { metric: "Calls", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.aircall?.totalCalls ?? 0])) },
 ];
 
 const GRADIENT_PAIRS = [
   { from: "#e2a96e", to: "#c4956a" },
   { from: "#5eead4", to: "#2dd4bf" },
+  { from: "#818cf8", to: "#6366f1" },
 ];
 
 export default function SellerPage() {
@@ -80,7 +86,34 @@ export default function SellerPage() {
     <div className="space-y-8">
       <div>
         <h1 className="text-[26px] font-bold tracking-tight text-[#fafaf9]">Seller-Ansicht</h1>
-        <p className="mt-1 text-[13px] text-[#57534e]">Performance-Vergleich der Vertriebler</p>
+        <p className="mt-1 text-[13px] text-[#57534e]">
+          Performance-Vergleich der Vertriebler · Aircall-Daten vom {new Date(aircallFetchedAt).toLocaleDateString("de-DE")}
+        </p>
+      </div>
+
+      {/* Aircall KPIs */}
+      <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 stagger-in">
+        <KpiCard
+          label="Gesamt-Calls"
+          value={aircallSellers.reduce((s, a) => s + a.totalCalls, 0)}
+          sub={`${aircallSellers.reduce((s, a) => s + a.outboundCalls, 0)} outbound`}
+          accent
+        />
+        <KpiCard
+          label="Gesprächszeit"
+          value={formatDuration(aircallSellers.reduce((s, a) => s + a.totalDurationSec, 0))}
+          sub="Alle Seller"
+        />
+        <KpiCard
+          label="Avg Dauer"
+          value={formatDuration(Math.round(aircallSellers.reduce((s, a) => s + a.avgDurationSec, 0) / aircallSellers.length))}
+          sub="Pro Gespräch"
+        />
+        <KpiCard
+          label="Längster Call"
+          value={formatDuration(Math.max(...aircallSellers.map((a) => a.longestCallSec)))}
+          sub={aircallSellers.reduce((best, a) => a.longestCallSec > best.longestCallSec ? a : best).name}
+        />
       </div>
 
       {/* Comparison Chart + Radar */}
@@ -105,6 +138,7 @@ export default function SellerPage() {
               <PolarAngleAxis dataKey="metric" tick={{ fill: "#78716c", fontSize: 11 }} />
               <Radar name="Walid" dataKey="Walid" stroke={PALETTE.amber} fill={PALETTE.amber} fillOpacity={0.15} strokeWidth={2} />
               <Radar name="Nele" dataKey="Nele" stroke={PALETTE.teal} fill={PALETTE.teal} fillOpacity={0.15} strokeWidth={2} />
+              <Radar name="Bastian" dataKey="Bastian" stroke={PALETTE.indigo} fill={PALETTE.indigo} fillOpacity={0.15} strokeWidth={2} />
               <Legend wrapperStyle={{ fontSize: 12, color: "#78716c" }} />
               <Tooltip {...TOOLTIP_STYLE} />
             </RadarChart>
@@ -113,7 +147,7 @@ export default function SellerPage() {
       </div>
 
       {/* Seller Cards */}
-      <div className="grid gap-6 lg:grid-cols-2 stagger-in">
+      <div className="grid gap-6 lg:grid-cols-3 stagger-in">
         {sellerData.map((s, idx) => (
           <div key={s.name} className="glass-card overflow-hidden">
             {/* Header with gradient */}
@@ -132,7 +166,7 @@ export default function SellerPage() {
                   <h2 className="text-[17px] font-semibold text-[#fafaf9]">{s.name}</h2>
                   <div className="flex items-center gap-2 mt-0.5">
                     <span className="text-[12px] tabular-nums font-medium" style={{ color: GRADIENT_PAIRS[idx].from }}>
-                      {s.conversionRate.toFixed(1)}% Conversion
+                      {s.total > 0 ? s.conversionRate.toFixed(1) : "–"}% Conversion
                     </span>
                     <span className="text-[#44403c]">·</span>
                     <span className="text-[12px] text-[#57534e]">{s.total} Leads</span>
@@ -142,6 +176,7 @@ export default function SellerPage() {
             </div>
 
             <div className="px-6 pb-2">
+              {/* CRM Stats */}
               <div className="grid grid-cols-4 gap-3 mb-5">
                 {[
                   { label: "Leads", val: s.total },
@@ -155,6 +190,49 @@ export default function SellerPage() {
                   </div>
                 ))}
               </div>
+
+              {/* Aircall Stats */}
+              {s.aircall && (
+                <div className="mb-5">
+                  <h3 className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#57534e] mb-3 flex items-center gap-1.5">
+                    <Phone className="h-3 w-3" /> Aircall
+                  </h3>
+                  <div className="grid grid-cols-2 gap-2">
+                    <div className="flex items-center gap-2 py-2 px-3 rounded-lg bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.03)]">
+                      <PhoneOutgoing className="h-3.5 w-3.5 text-[#e2a96e]" />
+                      <div>
+                        <div className="text-[16px] font-semibold tabular-nums text-[#fafaf9]">{s.aircall.outboundCalls}</div>
+                        <div className="text-[9px] uppercase tracking-wider text-[#57534e]">Outbound</div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2 py-2 px-3 rounded-lg bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.03)]">
+                      <PhoneIncoming className="h-3.5 w-3.5 text-[#5eead4]" />
+                      <div>
+                        <div className="text-[16px] font-semibold tabular-nums text-[#fafaf9]">{s.aircall.inboundCalls}</div>
+                        <div className="text-[9px] uppercase tracking-wider text-[#57534e]">Inbound</div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2 py-2 px-3 rounded-lg bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.03)]">
+                      <Clock className="h-3.5 w-3.5 text-[#818cf8]" />
+                      <div>
+                        <div className="text-[16px] font-semibold tabular-nums text-[#fafaf9]">{formatDuration(s.aircall.avgDurationSec)}</div>
+                        <div className="text-[9px] uppercase tracking-wider text-[#57534e]">Avg Dauer</div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-2 py-2 px-3 rounded-lg bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.03)]">
+                      <Phone className="h-3.5 w-3.5 text-[#a78bfa]" />
+                      <div>
+                        <div className="text-[16px] font-semibold tabular-nums text-[#fafaf9]">{s.aircall.callsPerDay}/Tag</div>
+                        <div className="text-[9px] uppercase tracking-wider text-[#57534e]">Frequenz</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="mt-2 flex items-center justify-between text-[11px] text-[#57534e]">
+                    <span>Gesprächszeit: {formatDuration(s.aircall.totalDurationSec)}</span>
+                    <span>Längster: {formatDuration(s.aircall.longestCallSec)}</span>
+                  </div>
+                </div>
+              )}
 
               <ResponsiveContainer width="100%" height={160}>
                 <BarChart data={s.statusData} layout="vertical" barCategoryGap="25%">
@@ -185,7 +263,8 @@ export default function SellerPage() {
                 <th className="text-right pr-5">Discovery+</th>
                 <th className="text-right pr-5">Angebote</th>
                 <th className="text-right pr-5">Conversion %</th>
-                <th className="text-right pr-2">Amt-Termine</th>
+                <th className="text-right pr-5">Calls</th>
+                <th className="text-right pr-2">Avg Dauer</th>
               </tr>
             </thead>
             <tbody>
@@ -207,9 +286,10 @@ export default function SellerPage() {
                     <td className="text-right pr-5 tabular-nums text-[#a8a29e]">{s.discovery}</td>
                     <td className="text-right pr-5 tabular-nums font-semibold text-[#5eead4] glow-badge">{s.angebot}</td>
                     <td className="text-right pr-5 tabular-nums text-[#e2a96e] font-medium">
-                      {s.total > 0 ? ((s.discovery / s.total) * 100).toFixed(1) : 0}%
+                      {s.total > 0 ? ((s.discovery / s.total) * 100).toFixed(1) : "–"}%
                     </td>
-                    <td className="text-right pr-2 tabular-nums text-[#a8a29e]">{s.termine}</td>
+                    <td className="text-right pr-5 tabular-nums text-[#a8a29e]">{s.aircall?.totalCalls ?? "–"}</td>
+                    <td className="text-right pr-2 tabular-nums text-[#a8a29e]">{s.aircall ? formatDuration(s.aircall.avgDurationSec) : "–"}</td>
                   </tr>
                 ))}
             </tbody>
