@@ -2,6 +2,7 @@
 
 import { KpiCard, SectionCard } from "@/components/kpi-card";
 import { ActivityCalendar } from "@/components/activity-calendar";
+import { TargetTracker } from "@/components/target-tracker";
 import { leads } from "@/data/leads";
 import { aircallSellers, aircallFetchedAt, formatDuration } from "@/data/aircall";
 import { TOOLTIP_STYLE, AXIS_STYLE, PALETTE, SELLER_BAR_COLORS } from "@/components/chart-theme";
@@ -190,6 +191,9 @@ export default function SellerPage() {
           Performance-Vergleich der Vertriebler · Aircall-Daten vom {new Date(aircallFetchedAt).toLocaleDateString("de-DE")}
         </p>
       </div>
+
+      {/* Zielerreichung */}
+      <TargetTracker />
 
       {/* Aircall KPIs */}
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 stagger-in">

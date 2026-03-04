@@ -17,7 +17,8 @@ export const leads: Lead[] = [
     "createdOn": "27.1.2026 18:09",
     "terminBeimAmt": "2.2.2026",
     "closingWahrscheinlichkeit": "50%",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Daniel Alvarez"
   },
   {
     "id": 2,
@@ -35,7 +36,8 @@ export const leads: Lead[] = [
     "createdOn": "27.1.2026 18:11",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Arne Gramann"
   },
   {
     "id": 3,
@@ -53,7 +55,8 @@ export const leads: Lead[] = [
     "createdOn": "27.1.2026 19:29",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Kerstin Grevelhörster"
   },
   {
     "id": 4,
@@ -71,7 +74,8 @@ export const leads: Lead[] = [
     "createdOn": "27.1.2026 19:31",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Simone Hübsch"
   },
   {
     "id": 5,
@@ -89,7 +93,8 @@ export const leads: Lead[] = [
     "createdOn": "27.1.2026 19:50",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "60%",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Neeraja Venkataraman"
   },
   {
     "id": 6,
@@ -107,7 +112,8 @@ export const leads: Lead[] = [
     "createdOn": "27.1.2026 19:50",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Annika Schmoldt"
   },
   {
     "id": 7,
@@ -125,7 +131,8 @@ export const leads: Lead[] = [
     "createdOn": "27.1.2026 19:52",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Mohammad Rezs Nikooyeh"
   },
   {
     "id": 8,
@@ -143,7 +150,8 @@ export const leads: Lead[] = [
     "createdOn": "27.1.2026 21:15",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Louise Stehmar"
   },
   {
     "id": 9,
@@ -161,7 +169,8 @@ export const leads: Lead[] = [
     "createdOn": "27.1.2026 21:29",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Edda Flach"
   },
   {
     "id": 10,
@@ -179,7 +188,8 @@ export const leads: Lead[] = [
     "createdOn": "27.1.2026 22:09",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Michaela Jacob"
   },
   {
     "id": 11,
@@ -197,7 +207,8 @@ export const leads: Lead[] = [
     "createdOn": "27.1.2026 22:35",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Kathleen Anderseck"
   },
   {
     "id": 12,
@@ -215,7 +226,8 @@ export const leads: Lead[] = [
     "createdOn": "27.1.2026 22:40",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Hümeyra Sez"
   },
   {
     "id": 13,
@@ -233,7 +245,8 @@ export const leads: Lead[] = [
     "createdOn": "28.1.2026 00:17",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Rafaella Giovanna Brandão-Bader"
   },
   {
     "id": 14,
@@ -251,7 +264,8 @@ export const leads: Lead[] = [
     "createdOn": "28.1.2026 00:40",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Jennifer Kleinert"
   },
   {
     "id": 15,
@@ -269,7 +283,8 @@ export const leads: Lead[] = [
     "createdOn": "28.1.2026 01:02",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Mohsen Abyari"
   },
   {
     "id": 16,
@@ -287,7 +302,8 @@ export const leads: Lead[] = [
     "createdOn": "28.1.2026 02:03",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Thomas Müller"
   },
   {
     "id": 17,
@@ -305,7 +321,8 @@ export const leads: Lead[] = [
     "createdOn": "28.1.2026 02:15",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Annemarie Lanzendörfer"
   },
   {
     "id": 18,
@@ -323,7 +340,8 @@ export const leads: Lead[] = [
     "createdOn": "28.1.2026 03:24",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Alexander Burgkart"
   },
   {
     "id": 19,
@@ -341,7 +359,8 @@ export const leads: Lead[] = [
     "createdOn": "28.1.2026 07:53",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Olaf Fritsch"
   },
   {
     "id": 20,
@@ -359,7 +378,8 @@ export const leads: Lead[] = [
     "createdOn": "28.1.2026 08:29",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Sahra Babory"
   },
   {
     "id": 21,
@@ -377,7 +397,8 @@ export const leads: Lead[] = [
     "createdOn": "28.1.2026 11:21",
     "terminBeimAmt": "20.2.2026",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Sandra Schott"
   },
   {
     "id": 22,
@@ -395,7 +416,8 @@ export const leads: Lead[] = [
     "createdOn": "28.1.2026 12:24",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Theres Scheffel"
   },
   {
     "id": 23,
@@ -413,7 +435,8 @@ export const leads: Lead[] = [
     "createdOn": "28.1.2026 13:28",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Clara Dos Santos"
   },
   {
     "id": 24,
@@ -431,7 +454,8 @@ export const leads: Lead[] = [
     "createdOn": "28.1.2026 15:10",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Izabela Walczyńska"
   },
   {
     "id": 25,
@@ -449,7 +473,8 @@ export const leads: Lead[] = [
     "createdOn": "28.1.2026 16:16",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Joanna Papierz-Mannarino"
   },
   {
     "id": 26,
@@ -467,7 +492,8 @@ export const leads: Lead[] = [
     "createdOn": "28.1.2026 20:53",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Stefanie Böhm"
   },
   {
     "id": 27,
@@ -485,7 +511,8 @@ export const leads: Lead[] = [
     "createdOn": "29.1.2026 07:12",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Anitha Vijay"
   },
   {
     "id": 28,
@@ -503,7 +530,8 @@ export const leads: Lead[] = [
     "createdOn": "29.1.2026 09:07",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Stefan Schaefer"
   },
   {
     "id": 29,
@@ -521,7 +549,8 @@ export const leads: Lead[] = [
     "createdOn": "29.1.2026 09:19",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Alexandra Foese"
   },
   {
     "id": 30,
@@ -539,7 +568,8 @@ export const leads: Lead[] = [
     "createdOn": "29.1.2026 09:32",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Jahangir Ali Mohammed"
   },
   {
     "id": 31,
@@ -557,7 +587,8 @@ export const leads: Lead[] = [
     "createdOn": "29.1.2026 09:37",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Florentina Voicu"
   },
   {
     "id": 32,
@@ -575,7 +606,8 @@ export const leads: Lead[] = [
     "createdOn": "29.1.2026 10:24",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Agnieszka Kieloch"
   },
   {
     "id": 33,
@@ -593,7 +625,8 @@ export const leads: Lead[] = [
     "createdOn": "29.1.2026 11:17",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Melanie Hollenbach"
   },
   {
     "id": 34,
@@ -611,7 +644,8 @@ export const leads: Lead[] = [
     "createdOn": "29.1.2026 11:26",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Margrit Gagzow"
   },
   {
     "id": 35,
@@ -629,7 +663,8 @@ export const leads: Lead[] = [
     "createdOn": "29.1.2026 13:58",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Christoph Krupp"
   },
   {
     "id": 36,
@@ -647,7 +682,8 @@ export const leads: Lead[] = [
     "createdOn": "29.1.2026 14:13",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Nathalie Schreiber"
   },
   {
     "id": 37,
@@ -665,7 +701,8 @@ export const leads: Lead[] = [
     "createdOn": "11.2.2026 11:53",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "Hoch",
-    "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap"
+    "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
+    "name": "Sara Mohebi"
   },
   {
     "id": 38,
@@ -683,7 +720,8 @@ export const leads: Lead[] = [
     "createdOn": "12.2.2026 08:48",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "Hoch",
-    "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap"
+    "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
+    "name": "Heike Link-Würdinger"
   },
   {
     "id": 39,
@@ -701,7 +739,8 @@ export const leads: Lead[] = [
     "createdOn": "13.2.2026 09:44",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "Hoch",
-    "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung"
+    "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
+    "name": "Catherina Weihmann"
   },
   {
     "id": 40,
@@ -719,7 +758,8 @@ export const leads: Lead[] = [
     "createdOn": "13.2.2026 09:45",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "Hoch",
-    "utmTitle": "datev-lohnabrechnung-und-sozialversicherung"
+    "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
+    "name": "Florian Kissig"
   },
   {
     "id": 41,
@@ -737,7 +777,8 @@ export const leads: Lead[] = [
     "createdOn": "13.2.2026 09:48",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "Hoch",
-    "utmTitle": "datev-lohnabrechnung-und-sozialversicherung"
+    "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
+    "name": "Dicle Uzuner"
   },
   {
     "id": 42,
@@ -755,7 +796,8 @@ export const leads: Lead[] = [
     "createdOn": "13.2.2026 12:20",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "Hoch",
-    "utmTitle": "hr-assistenz-und-tech-im-hr"
+    "utmTitle": "hr-assistenz-und-tech-im-hr",
+    "name": "Kamilla Gomon"
   },
   {
     "id": 43,
@@ -773,7 +815,8 @@ export const leads: Lead[] = [
     "createdOn": "13.2.2026 15:01",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "Hoch",
-    "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung"
+    "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
+    "name": "Nicole Klann"
   },
   {
     "id": 44,
@@ -791,7 +834,8 @@ export const leads: Lead[] = [
     "createdOn": "16.2.2026 10:39",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "Hoch",
-    "utmTitle": "datev-lohnabrechnung-und-sozialversicherung"
+    "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
+    "name": "Parwana Rahmani"
   },
   {
     "id": 45,
@@ -809,7 +853,8 @@ export const leads: Lead[] = [
     "createdOn": "18.2.2026 09:20",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "Hoch",
-    "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap"
+    "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
+    "name": "Zehra Demircan"
   },
   {
     "id": 46,
@@ -827,7 +872,8 @@ export const leads: Lead[] = [
     "createdOn": "18.2.2026 12:57",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "Hoch",
-    "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics"
+    "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics",
+    "name": "Fatimah Frase"
   },
   {
     "id": 47,
@@ -845,7 +891,8 @@ export const leads: Lead[] = [
     "createdOn": "18.2.2026 20:29",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Heide Lorigny"
   },
   {
     "id": 48,
@@ -863,7 +910,8 @@ export const leads: Lead[] = [
     "createdOn": "18.2.2026 21:18",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Maria Parra Arcos"
   },
   {
     "id": 49,
@@ -881,7 +929,8 @@ export const leads: Lead[] = [
     "createdOn": "18.2.2026 22:48",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Kathrin Kraus"
   },
   {
     "id": 50,
@@ -899,7 +948,8 @@ export const leads: Lead[] = [
     "createdOn": "18.2.2026 22:54",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Patricia Ajvazi"
   },
   {
     "id": 51,
@@ -917,7 +967,8 @@ export const leads: Lead[] = [
     "createdOn": "18.2.2026 23:06",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Albina Dezkina"
   },
   {
     "id": 52,
@@ -935,7 +986,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 00:08",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Daniel Kuhn"
   },
   {
     "id": 53,
@@ -953,7 +1005,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 00:20",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Antje Schomann"
   },
   {
     "id": 54,
@@ -971,7 +1024,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 00:23",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Martin Plit"
   },
   {
     "id": 55,
@@ -989,7 +1043,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 02:04",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Claudia Brosche"
   },
   {
     "id": 56,
@@ -1007,7 +1062,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 07:11",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Marlen Willendorf"
   },
   {
     "id": 57,
@@ -1025,7 +1081,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 07:17",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Melissa Kommenda"
   },
   {
     "id": 58,
@@ -1043,7 +1100,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 07:27",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Stadtel Detlef"
   },
   {
     "id": 59,
@@ -1061,7 +1119,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 07:32",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Jūratė Cohrs"
   },
   {
     "id": 60,
@@ -1079,7 +1138,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 08:30",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Katy Martin Martin"
   },
   {
     "id": 61,
@@ -1097,7 +1157,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 09:08",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Christina Deß"
   },
   {
     "id": 62,
@@ -1115,7 +1176,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 09:50",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Sissy Bornkessel"
   },
   {
     "id": 63,
@@ -1133,7 +1195,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 10:21",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Cathrin Abed"
   },
   {
     "id": 64,
@@ -1151,7 +1214,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 10:38",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Petra Schroer"
   },
   {
     "id": 65,
@@ -1169,7 +1233,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 12:35",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Hardish Kaur Kaur"
   },
   {
     "id": 66,
@@ -1187,7 +1252,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 14:16",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "El Powerss"
   },
   {
     "id": 67,
@@ -1205,7 +1271,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 14:19",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Corinna Maistrak"
   },
   {
     "id": 68,
@@ -1223,7 +1290,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 14:23",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Pascal Herpich"
   },
   {
     "id": 69,
@@ -1241,7 +1309,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 14:32",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Svitlana Kurylo"
   },
   {
     "id": 70,
@@ -1259,7 +1328,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 14:47",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Sabine Breit"
   },
   {
     "id": 71,
@@ -1277,7 +1347,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 15:17",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Michael Stahl"
   },
   {
     "id": 72,
@@ -1295,7 +1366,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 15:18",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Sahar Farghaly"
   },
   {
     "id": 73,
@@ -1313,7 +1385,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 15:28",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Lena Feil"
   },
   {
     "id": 74,
@@ -1331,7 +1404,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 15:49",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Natalia Schukin"
   },
   {
     "id": 75,
@@ -1349,7 +1423,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 16:11",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Jenny Quint"
   },
   {
     "id": 76,
@@ -1367,7 +1442,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 16:47",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Klaus Ringkamp"
   },
   {
     "id": 77,
@@ -1385,7 +1461,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 17:08",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Julia Proppe"
   },
   {
     "id": 78,
@@ -1403,7 +1480,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 17:19",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Silke Müller"
   },
   {
     "id": 79,
@@ -1421,7 +1499,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 17:29",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Doris Pflueger"
   },
   {
     "id": 80,
@@ -1439,7 +1518,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 17:45",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "𝐸𝓋𝑒𝓁𝓎𝓃 Wanner"
   },
   {
     "id": 81,
@@ -1457,7 +1537,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 18:28",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Ve Rena"
   },
   {
     "id": 82,
@@ -1475,7 +1556,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 18:30",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Jürgen Braun"
   },
   {
     "id": 83,
@@ -1493,7 +1575,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 18:36",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Eileen Clauss"
   },
   {
     "id": 84,
@@ -1511,7 +1594,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 18:38",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Natascha Nicklas"
   },
   {
     "id": 85,
@@ -1529,7 +1613,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 19:28",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Corinna Borg"
   },
   {
     "id": 86,
@@ -1547,7 +1632,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 19:42",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Herzog Andrea"
   },
   {
     "id": 87,
@@ -1565,7 +1651,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 20:17",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Inga Stapelmann"
   },
   {
     "id": 88,
@@ -1583,7 +1670,8 @@ export const leads: Lead[] = [
     "createdOn": "19.2.2026 20:17",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Martina Kolbinger"
   },
   {
     "id": 89,
@@ -1601,7 +1689,8 @@ export const leads: Lead[] = [
     "createdOn": "20.2.2026 07:46",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Christiane Mattmüller"
   },
   {
     "id": 90,
@@ -1619,7 +1708,8 @@ export const leads: Lead[] = [
     "createdOn": "20.2.2026 08:37",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Susi Schmidt"
   },
   {
     "id": 91,
@@ -1637,7 +1727,8 @@ export const leads: Lead[] = [
     "createdOn": "20.2.2026 08:51",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Fabienne Roder"
   },
   {
     "id": 92,
@@ -1655,7 +1746,8 @@ export const leads: Lead[] = [
     "createdOn": "20.2.2026 09:34",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Tina Gross"
   },
   {
     "id": 93,
@@ -1673,7 +1765,8 @@ export const leads: Lead[] = [
     "createdOn": "20.2.2026 10:03",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Sofia Lazic"
   },
   {
     "id": 94,
@@ -1691,7 +1784,8 @@ export const leads: Lead[] = [
     "createdOn": "20.2.2026 10:16",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Manuela Heß"
   },
   {
     "id": 95,
@@ -1709,7 +1803,8 @@ export const leads: Lead[] = [
     "createdOn": "20.2.2026 10:29",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Maya Preuß"
   },
   {
     "id": 96,
@@ -1727,6 +1822,7 @@ export const leads: Lead[] = [
     "createdOn": "20.2.2026 10:33",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
+    "utmTitle": "",
+    "name": "Daniel Marcos"
   }
 ];

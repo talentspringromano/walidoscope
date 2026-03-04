@@ -9,6 +9,8 @@ import { Users, DollarSign, MousePointerClick, TrendingUp } from "lucide-react";
 import {
   BarChart,
   Bar,
+  AreaChart,
+  Area,
   XAxis,
   YAxis,
   Tooltip,
@@ -17,6 +19,8 @@ import {
   Funnel,
   LabelList,
   Cell,
+  CartesianGrid,
+  Legend,
 } from "recharts";
 
 const metaLeads = leads.filter(
@@ -58,6 +62,30 @@ const channelData = [
   { name: "Meta (FB/IG)", leads: metaLeads.length, spend: totalMetaSpend, organic: false },
   { name: "Kursnet", leads: kursnetLeads.length, spend: 0, organic: true },
 ];
+
+/* ── Leads im Zeitverlauf nach Quelle ── */
+function parseDE(dateStr: string): string {
+  const [day, month, year] = dateStr.split(/[. ]/);
+  return `${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`;
+}
+
+const timelineMap = new Map<string, { Facebook: number; Instagram: number; Kursnet: number }>();
+leads.forEach((l) => {
+  const date = parseDE(l.createdOn);
+  const entry = timelineMap.get(date) ?? { Facebook: 0, Instagram: 0, Kursnet: 0 };
+  entry[l.platform]++;
+  timelineMap.set(date, entry);
+});
+
+const timelineData = Array.from(timelineMap.entries())
+  .sort(([a], [b]) => a.localeCompare(b))
+  .map(([date, counts]) => ({
+    date: new Date(date).toLocaleDateString("de-DE", { day: "numeric", month: "short" }),
+    Facebook: counts.Facebook,
+    Instagram: counts.Instagram,
+    Kursnet: counts.Kursnet,
+    Gesamt: counts.Facebook + counts.Instagram + counts.Kursnet,
+  }));
 
 export default function OverviewPage() {
   return (
@@ -133,6 +161,40 @@ export default function OverviewPage() {
           </ResponsiveContainer>
         </SectionCard>
       </div>
+
+      {/* Leads im Zeitverlauf */}
+      <SectionCard title="Leads im Zeitverlauf nach Quelle">
+        <ResponsiveContainer width="100%" height={300}>
+          <AreaChart data={timelineData}>
+            <defs>
+              <linearGradient id="gFb" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#818cf8" stopOpacity={0.3} />
+                <stop offset="100%" stopColor="#818cf8" stopOpacity={0} />
+              </linearGradient>
+              <linearGradient id="gIg" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#e2a96e" stopOpacity={0.3} />
+                <stop offset="100%" stopColor="#e2a96e" stopOpacity={0} />
+              </linearGradient>
+              <linearGradient id="gKn" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#5eead4" stopOpacity={0.3} />
+                <stop offset="100%" stopColor="#5eead4" stopOpacity={0} />
+              </linearGradient>
+            </defs>
+            <CartesianGrid strokeDasharray="3 3" stroke="#1c1917" vertical={false} />
+            <XAxis dataKey="date" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+            <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} allowDecimals={false} />
+            <Tooltip
+              {...TOOLTIP_STYLE}
+              formatter={(val, name) => [val, name]}
+              labelFormatter={(label) => `${label}`}
+            />
+            <Legend wrapperStyle={{ fontSize: 12, color: "#78716c" }} />
+            <Area type="monotone" dataKey="Facebook" stackId="1" stroke="#818cf8" fill="url(#gFb)" strokeWidth={2} />
+            <Area type="monotone" dataKey="Instagram" stackId="1" stroke="#e2a96e" fill="url(#gIg)" strokeWidth={2} />
+            <Area type="monotone" dataKey="Kursnet" stackId="1" stroke="#5eead4" fill="url(#gKn)" strokeWidth={2} />
+          </AreaChart>
+        </ResponsiveContainer>
+      </SectionCard>
 
       {/* Channel Comparison */}
       <SectionCard title="Kanal-Vergleich">

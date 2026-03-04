@@ -24,15 +24,30 @@ const statusData = statusOrder.map((s) => ({
   count: leads.filter((l) => l.leadStatus === s).length,
 }));
 
+const lostLeads = leads.filter((l) => l.leadStatus === "Verloren");
+const lostWithReason = lostLeads.filter((l) => l.verlustgrund);
+const lostNoReason = lostLeads.filter((l) => !l.verlustgrund);
+
 const verlustgruende: Record<string, number> = {};
-leads
-  .filter((l) => l.leadStatus === "Verloren" && l.verlustgrund)
-  .forEach((l) => {
-    verlustgruende[l.verlustgrund] = (verlustgruende[l.verlustgrund] || 0) + 1;
-  });
+lostWithReason.forEach((l) => {
+  verlustgruende[l.verlustgrund] = (verlustgruende[l.verlustgrund] || 0) + 1;
+});
+// Add "Kein Grund angegeben" to pie
+if (lostNoReason.length > 0) {
+  verlustgruende["Kein Grund angegeben"] = lostNoReason.length;
+}
 const verlustData = Object.entries(verlustgruende)
   .sort((a, b) => b[1] - a[1])
   .map(([name, value]) => ({ name, value }));
+
+// Lost by seller
+const lostBySeller: Record<string, { total: number; noReason: number }> = {};
+lostLeads.forEach((l) => {
+  const entry = lostBySeller[l.vertriebler] ?? { total: 0, noReason: 0 };
+  entry.total++;
+  if (!l.verlustgrund) entry.noReason++;
+  lostBySeller[l.vertriebler] = entry;
+});
 
 const angebotLeads = leads.filter(
   (l) => l.dealStatus === "Angebot schicken" || l.leadStatus === "Angebot zuschicken"
@@ -62,7 +77,7 @@ export default function SalesPage() {
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 stagger-in">
         <KpiCard label="In Pipeline" value={discoveryPlus.length} sub="Discovery + Follow up + Angebot" accent />
         <KpiCard label="Angebote erstellt" value={angebotLeads.length} sub="Deal: Angebot schicken" />
-        <KpiCard label="Verloren" value={leads.filter((l) => l.leadStatus === "Verloren").length} sub={`${verlustData.length} Gründe`} />
+        <KpiCard label="Verloren" value={lostLeads.length} sub={`${lostNoReason.length} ohne Grund`} />
         <KpiCard label="Amt-Termine" value={leadsWithTermin.length} sub="Termine gebucht" />
       </div>
 
@@ -121,6 +136,74 @@ export default function SalesPage() {
         </SectionCard>
       </div>
 
+      {/* Verluste pro Vertriebler */}
+      {lostLeads.length > 0 && (
+        <SectionCard title="Verluste pro Vertriebler">
+          <div className="grid gap-4 md:grid-cols-3 mb-6">
+            {Object.entries(lostBySeller)
+              .sort((a, b) => b[1].total - a[1].total)
+              .map(([name, data]) => (
+                <div key={name} className="rounded-xl border border-[rgba(255,255,255,0.04)] bg-[rgba(255,255,255,0.02)] p-4">
+                  <div className="text-[14px] font-medium text-[#fafaf9]">{name}</div>
+                  <div className="flex items-baseline gap-3 mt-2">
+                    <span className="text-[28px] font-bold tabular-nums text-[#f87171]">{data.total}</span>
+                    <span className="text-[12px] text-[#57534e]">Verloren</span>
+                  </div>
+                  {data.noReason > 0 && (
+                    <div className="mt-2 flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[rgba(245,158,11,0.1)] border border-[rgba(245,158,11,0.2)] w-fit">
+                      <span className="h-1.5 w-1.5 rounded-full bg-amber-400" />
+                      <span className="text-[11px] font-medium text-amber-400">{data.noReason}× kein Grund angegeben</span>
+                    </div>
+                  )}
+                  <div className="mt-3 h-1.5 rounded-full bg-[rgba(255,255,255,0.04)] overflow-hidden">
+                    <div
+                      className="h-full rounded-full bg-[#f87171]"
+                      style={{ width: `${Math.round((data.noReason / data.total) * 100)}%` }}
+                    />
+                  </div>
+                  <div className="text-[10px] text-[#57534e] mt-1">
+                    {Math.round(((data.total - data.noReason) / data.total) * 100)}% mit Grund erfasst
+                  </div>
+                </div>
+              ))}
+          </div>
+
+          {/* Detail-Tabelle der Leads ohne Grund */}
+          {lostNoReason.length > 0 && (
+            <div>
+              <h3 className="text-[11px] font-medium uppercase tracking-[0.08em] text-amber-400 mb-3 flex items-center gap-1.5">
+                <span className="h-1.5 w-1.5 rounded-full bg-amber-400" />
+                Verluste ohne Grund — Nachpflege nötig
+              </h3>
+              <div className="overflow-x-auto -mx-2">
+                <table className="w-full premium-table">
+                  <thead>
+                    <tr>
+                      <th className="text-left pl-2">#</th>
+                      <th className="text-left pl-4">Name</th>
+                      <th className="text-left pl-4">Vertriebler</th>
+                      <th className="text-left pl-4">Plattform</th>
+                      <th className="text-right pr-2">Erstellt</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {lostNoReason.map((l) => (
+                      <tr key={l.id}>
+                        <td className="pl-2 tabular-nums text-[#44403c] text-[12px]">{l.id}</td>
+                        <td className="pl-4 text-[13px] font-medium text-[#fafaf9]">{l.name}</td>
+                        <td className="pl-4 text-[13px] text-[#a8a29e]">{l.vertriebler}</td>
+                        <td className="pl-4 text-[12px] text-[#57534e]">{l.platform}</td>
+                        <td className="text-right pr-2 tabular-nums text-[12px] text-[#57534e]">{l.createdOn}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
+        </SectionCard>
+      )}
+
       {/* Deal Tracking */}
       <SectionCard title="Deal-Tracking — Angebote in Pipeline">
         <div className="overflow-x-auto -mx-2">
@@ -128,9 +211,9 @@ export default function SalesPage() {
             <thead>
               <tr>
                 <th className="text-left pl-2">#</th>
-                <th className="text-left pl-4">Lead Status</th>
-                <th className="text-left pl-4">Deal Status</th>
-                <th className="text-left pl-4">Plattform</th>
+                <th className="text-left pl-4">Name</th>
+                <th className="text-left pl-4">Status</th>
+                <th className="text-left pl-4">Deal</th>
                 <th className="text-left pl-4">Vertriebler</th>
                 <th className="text-right pr-5">Closing %</th>
                 <th className="text-right pr-2">Erstellt</th>
@@ -140,13 +223,13 @@ export default function SalesPage() {
               {angebotLeads.map((l, i) => (
                 <tr key={l.id}>
                   <td className="pl-2 tabular-nums text-[#44403c] text-[12px]">{i + 1}</td>
+                  <td className="pl-4 text-[13px] font-medium text-[#fafaf9]">{l.name}</td>
                   <td className="pl-4">
                     <span className={`inline-block rounded-full px-2.5 py-0.5 text-[11px] font-medium ${STATUS_BADGE[l.leadStatus] || "bg-[rgba(255,255,255,0.05)] text-[#a8a29e]"}`}>
                       {l.leadStatus}
                     </span>
                   </td>
                   <td className="pl-4 text-[13px] text-[#a8a29e]">{l.dealStatus}</td>
-                  <td className="pl-4 text-[12px] text-[#57534e]">{l.platform}</td>
                   <td className="pl-4 text-[13px] text-[#fafaf9] font-medium">{l.vertriebler}</td>
                   <td className="text-right pr-5 tabular-nums text-[#e2a96e] font-medium text-[13px]">{l.closingWahrscheinlichkeit || "—"}</td>
                   <td className="text-right pr-2 tabular-nums text-[12px] text-[#57534e]">{l.createdOn}</td>
@@ -167,7 +250,7 @@ export default function SalesPage() {
                 className="relative rounded-xl border border-[rgba(255,255,255,0.04)] bg-[rgba(255,255,255,0.02)] p-4 hover:border-[rgba(226,169,110,0.15)] transition-all duration-300 group"
               >
                 <div className="absolute top-3 right-3 h-2 w-2 rounded-full bg-[#5eead4] shadow-[0_0_8px_rgba(94,234,212,0.4)]" />
-                <div className="text-[13px] font-medium text-[#fafaf9]">Lead #{l.id}</div>
+                <div className="text-[13px] font-medium text-[#fafaf9]">{l.name}</div>
                 <div className="mt-2 flex items-center gap-2 text-[12px] text-[#e2a96e] tabular-nums font-medium">
                   <svg className="h-3.5 w-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="3" width="12" height="11" rx="2"/><path d="M5 1v3m6-3v3M2 7h12"/></svg>
                   {l.terminBeimAmt}

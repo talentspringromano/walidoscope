@@ -29,6 +29,7 @@ export type Platform = "Facebook" | "Instagram" | "Kursnet";
 
 export interface Lead {
   id: number;
+  name: string;
   leadStatus: LeadStatus;
   dealStatus: DealStatus;
   verlustgrund: string;
