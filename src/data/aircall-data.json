@@ -20,34 +20,34 @@
     {
       "name": "Nele Pfau",
       "userId": 1862427,
-      "outboundCalls": 359,
+      "outboundCalls": 349,
       "inboundCalls": 19,
-      "answeredCalls": 378,
+      "answeredCalls": 368,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 53162,
+      "totalDurationSec": 52012,
       "avgDurationSec": 141,
       "longestCallSec": 1740,
       "reachabilityPct": 100,
-      "callsPerDay": 27,
-      "totalCalls": 378,
+      "callsPerDay": 28.3,
+      "totalCalls": 368,
       "firstCallDate": "2026-02-19",
       "lastCallDate": "2026-03-04"
     },
     {
       "name": "Eric H.",
       "userId": 1862760,
-      "outboundCalls": 89,
+      "outboundCalls": 125,
       "inboundCalls": 3,
-      "answeredCalls": 92,
+      "answeredCalls": 128,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 6872,
-      "avgDurationSec": 75,
+      "totalDurationSec": 8996,
+      "avgDurationSec": 70,
       "longestCallSec": 1076,
       "reachabilityPct": 100,
-      "callsPerDay": 7.1,
-      "totalCalls": 92,
+      "callsPerDay": 9.8,
+      "totalCalls": 128,
       "firstCallDate": "2026-02-20",
       "lastCallDate": "2026-03-04"
     },
@@ -89,9 +89,9 @@
   "daily": [
     {
       "date": "2026-02-19",
-      "dials": 12,
-      "reached": 12,
-      "calltimeSec": 1213
+      "dials": 2,
+      "reached": 2,
+      "calltimeSec": 63
     },
     {
       "date": "2026-02-20",
@@ -143,10 +143,10 @@
     },
     {
       "date": "2026-03-04",
-      "dials": 122,
-      "reached": 122,
-      "calltimeSec": 14444
+      "dials": 158,
+      "reached": 158,
+      "calltimeSec": 16568
     }
   ],
-  "fetchedAt": "2026-03-04T18:16:27.137Z"
+  "fetchedAt": "2026-03-04T19:56:59.133Z"
 }
