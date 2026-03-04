@@ -14,9 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="de">
-      <body className="text-[#fafaf9] antialiased">
+      <body className="flex text-[#fafaf9] antialiased">
         <Sidebar />
-        <main className="ml-[232px] min-h-screen px-10 py-8">
+        <main className="flex-1 min-h-screen px-10 py-8">
           <div className="page-enter">{children}</div>
         </main>
       </body>

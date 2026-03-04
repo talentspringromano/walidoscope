@@ -147,20 +147,53 @@ function aggregate(calls: RawCall[]): SellerAgg[] {
   return result;
 }
 
+interface DailyEntry {
+  date: string;        // YYYY-MM-DD
+  dials: number;       // total outbound calls
+  reached: number;     // answered outbound calls
+  calltimeSec: number; // total talk time in seconds
+}
+
+function aggregateDaily(calls: RawCall[]): DailyEntry[] {
+  const map = new Map<string, { dials: number; reached: number; calltimeSec: number }>();
+
+  for (const c of calls) {
+    if (!c.started_at) continue;
+    const date = new Date(c.started_at * 1000).toISOString().split("T")[0];
+    const entry = map.get(date) ?? { dials: 0, reached: 0, calltimeSec: 0 };
+
+    if (c.direction === "outbound") {
+      entry.dials++;
+      if (c.status === "done" || c.status === "answered") {
+        entry.reached++;
+        entry.calltimeSec += c.duration || 0;
+      }
+    }
+
+    map.set(date, entry);
+  }
+
+  return Array.from(map.entries())
+    .map(([date, v]) => ({ date, ...v }))
+    .sort((a, b) => a.date.localeCompare(b.date));
+}
+
 async function main() {
   console.log("Fetching Aircall calls (GET only)...");
   const calls = await fetchAllCalls();
   console.log(`Found ${calls.length} calls for target sellers.`);
 
   const sellers = aggregate(calls);
+  const daily = aggregateDaily(calls);
 
   for (const s of sellers) {
     console.log(`  ${s.name}: ${s.totalCalls} calls (${s.outboundCalls} out, ${s.inboundCalls} in), avg ${s.avgDurationSec}s`);
   }
+  console.log(`  Daily entries: ${daily.length} days`);
 
   const outPath = new URL("../src/data/aircall-data.json", import.meta.url);
   const fs = await import("fs");
-  fs.writeFileSync(new URL(outPath), JSON.stringify({ sellers, fetchedAt: new Date().toISOString() }, null, 2));
+  fs.writeFileSync(new URL(outPath), JSON.stringify({ sellers, daily, fetchedAt: new Date().toISOString() }, null, 2));
   console.log(`Written to src/data/aircall-data.json`);
 }
 

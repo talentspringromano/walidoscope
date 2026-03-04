@@ -1,6 +1,7 @@
 "use client";
 
 import { KpiCard, SectionCard } from "@/components/kpi-card";
+import { ActivityCalendar } from "@/components/activity-calendar";
 import { leads } from "@/data/leads";
 import { aircallSellers, aircallFetchedAt, formatDuration } from "@/data/aircall";
 import { TOOLTIP_STYLE, AXIS_STYLE, PALETTE, SELLER_BAR_COLORS } from "@/components/chart-theme";
@@ -250,6 +251,9 @@ export default function SellerPage() {
           </div>
         ))}
       </div>
+
+      {/* Aktivitätskalender */}
+      <ActivityCalendar />
 
       {/* Bestenliste */}
       <SectionCard title="Bestenliste">

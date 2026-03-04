@@ -18,7 +18,15 @@ export interface AircallSeller {
   lastCallDate: string;
 }
 
+export interface AircallDailyEntry {
+  date: string;
+  dials: number;
+  reached: number;
+  calltimeSec: number;
+}
+
 export const aircallSellers: AircallSeller[] = data.sellers;
+export const aircallDaily: AircallDailyEntry[] = (data as { daily?: AircallDailyEntry[] }).daily ?? [];
 export const aircallFetchedAt: string = data.fetchedAt;
 
 export function formatDuration(sec: number): string {
