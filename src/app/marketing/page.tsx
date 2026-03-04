@@ -59,7 +59,6 @@ const creativeDeepFunnel = metaAds.map((ad) => {
 const perspFunnelData = [
   { name: "LP Visits", value: perspectiveSummary.totalVisits },
   { name: "Konvertiert", value: perspectiveSummary.converted },
-  { name: "Completed", value: perspectiveSummary.completed },
 ];
 
 /* ── Cost per Ad ── */
