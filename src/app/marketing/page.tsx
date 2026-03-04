@@ -198,6 +198,12 @@ export default function MarketingPage() {
                   <span className="text-[13px] text-[#78716c]">{d.name}</span>
                 </div>
               ))}
+              <div className="mt-1 pt-3 border-t border-[rgba(255,255,255,0.06)]">
+                <span className="text-[12px] text-[#57534e]">Conversion Rate</span>
+                <span className="ml-2 text-[16px] font-bold text-[#e2a96e] tabular-nums">
+                  {((perspectiveSummary.converted / perspectiveSummary.totalVisits) * 100).toFixed(1)}%
+                </span>
+              </div>
             </div>
           </div>
 
