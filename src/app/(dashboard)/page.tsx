@@ -59,9 +59,9 @@ const statusData = [
 ];
 
 const channelData = [
-  { name: "Meta (FB/IG)", leads: metaLeads.length, spend: totalMetaSpend, organic: false },
-  { name: "Indeed", leads: indeedLeads.length, spend: 0, organic: true },
-  { name: "Kursnet", leads: kursnetLeads.length, spend: 0, organic: true },
+  { name: "Meta (FB/IG)", leads: metaLeads.length, spend: totalMetaSpend, sub: `€${(totalMetaSpend / metaLeads.length).toFixed(2)} CPL` },
+  { name: "Indeed", leads: indeedLeads.length, spend: 0, sub: "Organisch via Indeed" },
+  { name: "Kursnet", leads: kursnetLeads.length, spend: 0, sub: "Organisch via Kursnet/meinNOW" },
 ];
 
 /* ── Leads im Zeitverlauf nach Quelle ── */
@@ -238,14 +238,14 @@ export default function OverviewPage() {
               className="relative rounded-2xl border border-[rgba(255,255,255,0.04)] bg-[rgba(255,255,255,0.02)] p-6 overflow-hidden group hover:border-[rgba(255,255,255,0.08)] transition-all duration-300"
             >
               {/* subtle ambient glow */}
-              <div className={`absolute -top-12 -right-12 h-32 w-32 rounded-full blur-[60px] pointer-events-none transition-opacity duration-500 opacity-0 group-hover:opacity-100 ${ch.organic ? "bg-[rgba(94,234,212,0.1)]" : "bg-[rgba(226,169,110,0.1)]"}`} />
+              <div className={`absolute -top-12 -right-12 h-32 w-32 rounded-full blur-[60px] pointer-events-none transition-opacity duration-500 opacity-0 group-hover:opacity-100 ${ch.spend > 0 ? "bg-[rgba(226,169,110,0.1)]" : "bg-[rgba(94,234,212,0.1)]"}`} />
 
               <div className="relative">
                 <div className="text-[12px] font-medium uppercase tracking-wider text-[#57534e]">
                   {ch.name}
                 </div>
                 <div className="mt-3 flex items-baseline gap-2">
-                  <span className={`text-[40px] font-bold tracking-tight tabular-nums ${ch.organic ? "text-[#5eead4]" : "text-[#e2a96e]"}`}>
+                  <span className={`text-[40px] font-bold tracking-tight tabular-nums ${ch.spend > 0 ? "text-[#e2a96e]" : "text-[#5eead4]"}`}>
                     {ch.leads}
                   </span>
                   <span className="text-[13px] font-medium text-[#44403c]">Leads</span>
@@ -253,11 +253,11 @@ export default function OverviewPage() {
                 {ch.spend > 0 ? (
                   <div className="mt-2 flex gap-4 text-[12px] text-[#78716c]">
                     <span>€{ch.spend.toFixed(2)} Spend</span>
-                    <span>€{(ch.spend / ch.leads).toFixed(2)} CPL</span>
+                    <span>{ch.sub}</span>
                   </div>
                 ) : (
                   <div className="mt-2 text-[12px] text-[#57534e]">
-                    Organisch via Kursnet/meinNOW
+                    {ch.sub}
                   </div>
                 )}
               </div>
