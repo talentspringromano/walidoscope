@@ -1,9 +1,10 @@
 "use client";
 
-import { KpiCard } from "@/components/kpi-card";
+import { KpiCard, SectionCard } from "@/components/kpi-card";
 import { leads } from "@/data/leads";
-import { metaAds, totalMetaSpend, totalMetaLeads } from "@/data/meta-ads";
+import { totalMetaSpend, totalMetaLeads } from "@/data/meta-ads";
 import { perspectiveSummary } from "@/data/perspective";
+import { TOOLTIP_STYLE, AXIS_STYLE, FUNNEL_COLORS, STATUS_COLORS } from "@/components/chart-theme";
 import { Users, DollarSign, MousePointerClick, TrendingUp } from "lucide-react";
 import {
   BarChart,
@@ -22,34 +23,26 @@ const metaLeads = leads.filter(
   (l) => l.platform === "Facebook" || l.platform === "Instagram"
 );
 const kursnetLeads = leads.filter((l) => l.platform === "Kursnet");
-
 const totalLeads = leads.length;
+
 const discoveryCall = leads.filter(
-  (l) => l.leadStatus === "Discovery Call" || l.leadStatus === "Follow up" || l.leadStatus === "Angebot zuschicken"
+  (l) =>
+    l.leadStatus === "Discovery Call" ||
+    l.leadStatus === "Follow up" ||
+    l.leadStatus === "Angebot zuschicken"
 ).length;
 const angebotSent = leads.filter(
-  (l) => l.dealStatus === "Angebot schicken" || l.leadStatus === "Angebot zuschicken"
+  (l) =>
+    l.dealStatus === "Angebot schicken" ||
+    l.leadStatus === "Angebot zuschicken"
 ).length;
 const terminCount = leads.filter((l) => l.terminBeimAmt).length;
 
 const funnelData = [
-  { name: "Leads", value: totalLeads, fill: "#3b82f6" },
-  { name: "Discovery Call+", value: discoveryCall, fill: "#6366f1" },
-  { name: "Angebot", value: angebotSent, fill: "#8b5cf6" },
-  { name: "Amt-Termin", value: terminCount, fill: "#a78bfa" },
-];
-
-const channelData = [
-  {
-    name: "Meta (FB/IG)",
-    leads: metaLeads.length,
-    spend: totalMetaSpend,
-  },
-  {
-    name: "Kursnet",
-    leads: kursnetLeads.length,
-    spend: 0,
-  },
+  { name: "Leads", value: totalLeads },
+  { name: "Discovery Call+", value: discoveryCall },
+  { name: "Angebot", value: angebotSent },
+  { name: "Amt-Termin", value: terminCount },
 ];
 
 const statusData = [
@@ -61,23 +54,32 @@ const statusData = [
   { name: "Verloren", count: leads.filter((l) => l.leadStatus === "Verloren").length },
 ];
 
+const channelData = [
+  { name: "Meta (FB/IG)", leads: metaLeads.length, spend: totalMetaSpend, organic: false },
+  { name: "Kursnet", leads: kursnetLeads.length, spend: 0, organic: true },
+];
+
 export default function OverviewPage() {
   return (
     <div className="space-y-8">
+      {/* Header */}
       <div>
-        <h1 className="text-2xl font-bold">Overview</h1>
-        <p className="mt-1 text-sm text-zinc-500">
-          Talentspring Payroll Academy – Gesamtübersicht
+        <h1 className="text-[26px] font-bold tracking-tight text-[#fafaf9]">
+          Overview
+        </h1>
+        <p className="mt-1 text-[13px] text-[#57534e]">
+          Talentspring Payroll Academy — Gesamtübersicht
         </p>
       </div>
 
       {/* KPI Row */}
-      <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
+      <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 stagger-in">
         <KpiCard
           label="Gesamte Leads"
           value={totalLeads}
           sub={`${metaLeads.length} Meta · ${kursnetLeads.length} Kursnet`}
           icon={<Users className="h-4 w-4" />}
+          accent
         />
         <KpiCard
           label="Gesamt-Spend"
@@ -100,100 +102,74 @@ export default function OverviewPage() {
       </div>
 
       {/* Charts Row */}
-      <div className="grid gap-6 lg:grid-cols-2">
-        {/* Funnel */}
-        <div className="rounded-xl border border-zinc-800/60 bg-zinc-900/50 p-5">
-          <h2 className="mb-4 text-sm font-medium text-zinc-400">
-            Conversion Funnel
-          </h2>
+      <div className="grid gap-6 lg:grid-cols-2 stagger-in">
+        <SectionCard title="Conversion Funnel">
           <ResponsiveContainer width="100%" height={280}>
             <FunnelChart>
-              <Tooltip
-                contentStyle={{ background: "#18181b", border: "1px solid #3f3f46", borderRadius: 8 }}
-                itemStyle={{ color: "#e4e4e7" }}
-              />
-              <Funnel dataKey="value" data={funnelData} isAnimationActive>
-                <LabelList
-                  position="right"
-                  fill="#a1a1aa"
-                  stroke="none"
-                  dataKey="name"
-                  fontSize={12}
-                />
-                <LabelList
-                  position="center"
-                  fill="#fff"
-                  stroke="none"
-                  dataKey="value"
-                  fontSize={16}
-                  fontWeight={600}
-                />
-                {funnelData.map((entry, i) => (
-                  <Cell key={i} fill={entry.fill} />
+              <Tooltip {...TOOLTIP_STYLE} />
+              <Funnel dataKey="value" data={funnelData} isAnimationActive animationDuration={800}>
+                <LabelList position="right" fill="#78716c" stroke="none" dataKey="name" fontSize={12} />
+                <LabelList position="center" fill="#fafaf9" stroke="none" dataKey="value" fontSize={18} fontWeight={600} className="tabular-nums" />
+                {funnelData.map((_, i) => (
+                  <Cell key={i} fill={FUNNEL_COLORS[i]} />
                 ))}
               </Funnel>
             </FunnelChart>
           </ResponsiveContainer>
-        </div>
+        </SectionCard>
 
-        {/* Lead Status Distribution */}
-        <div className="rounded-xl border border-zinc-800/60 bg-zinc-900/50 p-5">
-          <h2 className="mb-4 text-sm font-medium text-zinc-400">
-            Lead-Status Verteilung
-          </h2>
+        <SectionCard title="Lead-Status Verteilung">
           <ResponsiveContainer width="100%" height={280}>
-            <BarChart data={statusData} layout="vertical">
-              <XAxis type="number" stroke="#52525b" fontSize={12} />
-              <YAxis
-                type="category"
-                dataKey="name"
-                width={110}
-                stroke="#52525b"
-                fontSize={12}
-              />
-              <Tooltip
-                contentStyle={{ background: "#18181b", border: "1px solid #3f3f46", borderRadius: 8 }}
-                itemStyle={{ color: "#e4e4e7" }}
-              />
-              <Bar dataKey="count" fill="#6366f1" radius={[0, 4, 4, 0]} />
+            <BarChart data={statusData} layout="vertical" barCategoryGap="20%">
+              <XAxis type="number" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+              <YAxis type="category" dataKey="name" width={110} {...AXIS_STYLE} axisLine={false} tickLine={false} />
+              <Tooltip {...TOOLTIP_STYLE} />
+              <Bar dataKey="count" radius={[0, 6, 6, 0]} animationDuration={800}>
+                {statusData.map((entry) => (
+                  <Cell key={entry.name} fill={STATUS_COLORS[entry.name] || "#818cf8"} />
+                ))}
+              </Bar>
             </BarChart>
           </ResponsiveContainer>
-        </div>
+        </SectionCard>
       </div>
 
       {/* Channel Comparison */}
-      <div className="rounded-xl border border-zinc-800/60 bg-zinc-900/50 p-5">
-        <h2 className="mb-4 text-sm font-medium text-zinc-400">
-          Kanal-Vergleich
-        </h2>
-        <div className="grid gap-4 md:grid-cols-2">
+      <SectionCard title="Kanal-Vergleich">
+        <div className="grid gap-5 md:grid-cols-2">
           {channelData.map((ch) => (
             <div
               key={ch.name}
-              className="rounded-lg border border-zinc-800/40 bg-zinc-900/30 p-4"
+              className="relative rounded-2xl border border-[rgba(255,255,255,0.04)] bg-[rgba(255,255,255,0.02)] p-6 overflow-hidden group hover:border-[rgba(255,255,255,0.08)] transition-all duration-300"
             >
-              <div className="text-sm font-medium text-zinc-300">{ch.name}</div>
-              <div className="mt-2 text-3xl font-bold text-white">
-                {ch.leads}
-                <span className="ml-1 text-sm font-normal text-zinc-500">
-                  Leads
-                </span>
+              {/* subtle ambient glow */}
+              <div className={`absolute -top-12 -right-12 h-32 w-32 rounded-full blur-[60px] pointer-events-none transition-opacity duration-500 opacity-0 group-hover:opacity-100 ${ch.organic ? "bg-[rgba(94,234,212,0.1)]" : "bg-[rgba(226,169,110,0.1)]"}`} />
+
+              <div className="relative">
+                <div className="text-[12px] font-medium uppercase tracking-wider text-[#57534e]">
+                  {ch.name}
+                </div>
+                <div className="mt-3 flex items-baseline gap-2">
+                  <span className={`text-[40px] font-bold tracking-tight tabular-nums ${ch.organic ? "text-[#5eead4]" : "text-[#e2a96e]"}`}>
+                    {ch.leads}
+                  </span>
+                  <span className="text-[13px] font-medium text-[#44403c]">Leads</span>
+                </div>
+                {ch.spend > 0 ? (
+                  <div className="mt-2 flex gap-4 text-[12px] text-[#78716c]">
+                    <span>€{ch.spend.toFixed(2)} Spend</span>
+                    <span>€{(ch.spend / ch.leads).toFixed(2)} CPL</span>
+                  </div>
+                ) : (
+                  <div className="mt-2 text-[12px] text-[#57534e]">
+                    Organisch via Kursnet/meinNOW
+                  </div>
+                )}
               </div>
-              {ch.spend > 0 && (
-                <div className="mt-1 text-xs text-zinc-500">
-                  €{ch.spend.toFixed(2)} Spend · €
-                  {(ch.spend / ch.leads).toFixed(2)} CPL
-                </div>
-              )}
-              {ch.spend === 0 && (
-                <div className="mt-1 text-xs text-zinc-500">
-                  Organisch via Kursnet/meinNOW
-                </div>
-              )}
             </div>
           ))}
         </div>
-      </div>
+      </SectionCard>
     </div>
   );
 }

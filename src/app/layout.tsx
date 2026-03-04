@@ -14,9 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="de">
-      <body className="bg-zinc-950 text-zinc-100 antialiased">
+      <body className="text-[#fafaf9] antialiased">
         <Sidebar />
-        <main className="ml-56 min-h-screen p-8">{children}</main>
+        <main className="ml-[232px] min-h-screen px-10 py-8">
+          <div className="page-enter">{children}</div>
+        </main>
       </body>
     </html>
   );

@@ -1,7 +1,8 @@
 "use client";
 
-import { KpiCard } from "@/components/kpi-card";
+import { KpiCard, SectionCard } from "@/components/kpi-card";
 import { leads } from "@/data/leads";
+import { TOOLTIP_STYLE, AXIS_STYLE, PALETTE, SELLER_BAR_COLORS } from "@/components/chart-theme";
 import {
   BarChart,
   Bar,
@@ -10,18 +11,19 @@ import {
   Tooltip,
   ResponsiveContainer,
   Cell,
+  RadarChart,
+  PolarGrid,
+  PolarAngleAxis,
+  Radar,
+  Legend,
 } from "recharts";
 
-/* ── Seller Stats ── */
 const sellers = ["Walid Karimi", "Nele Pfau"] as const;
 
 function sellerStats(name: string) {
   const sellerLeads = leads.filter((l) => l.vertriebler === name);
   const discovery = sellerLeads.filter(
-    (l) =>
-      l.leadStatus === "Discovery Call" ||
-      l.leadStatus === "Follow up" ||
-      l.leadStatus === "Angebot zuschicken"
+    (l) => l.leadStatus === "Discovery Call" || l.leadStatus === "Follow up" || l.leadStatus === "Angebot zuschicken"
   ).length;
   const angebot = sellerLeads.filter(
     (l) => l.dealStatus === "Angebot schicken" || l.leadStatus === "Angebot zuschicken"
@@ -40,6 +42,7 @@ function sellerStats(name: string) {
     termine,
     neuerLead,
     nichtErreicht,
+    conversionRate: sellerLeads.length > 0 ? ((discovery / sellerLeads.length) * 100) : 0,
     statusData: [
       { name: "Neuer Lead", count: neuerLead },
       { name: "1x NE", count: nichtErreicht },
@@ -51,8 +54,6 @@ function sellerStats(name: string) {
 
 const sellerData = sellers.map((s) => sellerStats(s));
 
-const STATUS_COLORS = ["#3b82f6", "#f59e0b", "#10b981", "#ef4444"];
-
 const comparisonData = sellerData.map((s) => ({
   name: s.name.split(" ")[0],
   Leads: s.total,
@@ -60,117 +61,161 @@ const comparisonData = sellerData.map((s) => ({
   Angebote: s.angebot,
 }));
 
+// Radar data for skill comparison
+const radarData = [
+  { metric: "Leads", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.total])) },
+  { metric: "Discovery", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.discovery])) },
+  { metric: "Angebote", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.angebot])) },
+  { metric: "Termine", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.termine])) },
+  { metric: "Verloren", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.verloren])) },
+];
+
+const GRADIENT_PAIRS = [
+  { from: "#e2a96e", to: "#c4956a" },
+  { from: "#5eead4", to: "#2dd4bf" },
+];
+
 export default function SellerPage() {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-2xl font-bold">Seller-Ansicht</h1>
-        <p className="mt-1 text-sm text-zinc-500">
-          Performance-Vergleich der Vertriebler
-        </p>
+        <h1 className="text-[26px] font-bold tracking-tight text-[#fafaf9]">Seller-Ansicht</h1>
+        <p className="mt-1 text-[13px] text-[#57534e]">Performance-Vergleich der Vertriebler</p>
       </div>
 
-      {/* Comparison Chart */}
-      <div className="rounded-xl border border-zinc-800/60 bg-zinc-900/50 p-5">
-        <h2 className="mb-4 text-sm font-medium text-zinc-400">
-          Vertriebler-Vergleich
-        </h2>
-        <ResponsiveContainer width="100%" height={280}>
-          <BarChart data={comparisonData}>
-            <XAxis dataKey="name" stroke="#52525b" fontSize={13} />
-            <YAxis stroke="#52525b" fontSize={12} />
-            <Tooltip
-              contentStyle={{ background: "#18181b", border: "1px solid #3f3f46", borderRadius: 8 }}
-              itemStyle={{ color: "#e4e4e7" }}
-            />
-            <Bar dataKey="Leads" fill="#6366f1" radius={[4, 4, 0, 0]} />
-            <Bar dataKey="Discovery+" fill="#10b981" radius={[4, 4, 0, 0]} />
-            <Bar dataKey="Angebote" fill="#f59e0b" radius={[4, 4, 0, 0]} />
-          </BarChart>
-        </ResponsiveContainer>
+      {/* Comparison Chart + Radar */}
+      <div className="grid gap-6 lg:grid-cols-2 stagger-in">
+        <SectionCard title="Vertriebler-Vergleich">
+          <ResponsiveContainer width="100%" height={280}>
+            <BarChart data={comparisonData} barGap={4}>
+              <XAxis dataKey="name" {...AXIS_STYLE} axisLine={false} tickLine={false} fontSize={14} />
+              <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} />
+              <Tooltip {...TOOLTIP_STYLE} />
+              <Bar dataKey="Leads" fill={PALETTE.indigo} radius={[6, 6, 0, 0]} />
+              <Bar dataKey="Discovery+" fill={PALETTE.teal} radius={[6, 6, 0, 0]} />
+              <Bar dataKey="Angebote" fill={PALETTE.amber} radius={[6, 6, 0, 0]} />
+            </BarChart>
+          </ResponsiveContainer>
+        </SectionCard>
+
+        <SectionCard title="Skill-Profil">
+          <ResponsiveContainer width="100%" height={280}>
+            <RadarChart data={radarData}>
+              <PolarGrid stroke="#292524" />
+              <PolarAngleAxis dataKey="metric" tick={{ fill: "#78716c", fontSize: 11 }} />
+              <Radar name="Walid" dataKey="Walid" stroke={PALETTE.amber} fill={PALETTE.amber} fillOpacity={0.15} strokeWidth={2} />
+              <Radar name="Nele" dataKey="Nele" stroke={PALETTE.teal} fill={PALETTE.teal} fillOpacity={0.15} strokeWidth={2} />
+              <Legend wrapperStyle={{ fontSize: 12, color: "#78716c" }} />
+              <Tooltip {...TOOLTIP_STYLE} />
+            </RadarChart>
+          </ResponsiveContainer>
+        </SectionCard>
       </div>
 
       {/* Seller Cards */}
-      <div className="grid gap-6 lg:grid-cols-2">
-        {sellerData.map((s) => (
-          <div
-            key={s.name}
-            className="rounded-xl border border-zinc-800/60 bg-zinc-900/50 p-5"
-          >
-            <h2 className="mb-4 text-lg font-semibold text-white">{s.name}</h2>
-
-            <div className="mb-4 grid grid-cols-2 gap-3">
-              <KpiCard label="Leads gesamt" value={s.total} />
-              <KpiCard label="Discovery+" value={s.discovery} />
-              <KpiCard label="Angebote" value={s.angebot} />
-              <KpiCard label="Verloren" value={s.verloren} />
+      <div className="grid gap-6 lg:grid-cols-2 stagger-in">
+        {sellerData.map((s, idx) => (
+          <div key={s.name} className="glass-card overflow-hidden">
+            {/* Header with gradient */}
+            <div className="relative px-6 pt-6 pb-4">
+              <div className="absolute inset-0 opacity-[0.03]" style={{
+                background: `linear-gradient(135deg, ${GRADIENT_PAIRS[idx].from}, ${GRADIENT_PAIRS[idx].to})`
+              }} />
+              <div className="relative flex items-center gap-4">
+                <div
+                  className="h-12 w-12 rounded-xl flex items-center justify-center text-lg font-bold text-[#0c0c0e]"
+                  style={{ background: `linear-gradient(135deg, ${GRADIENT_PAIRS[idx].from}, ${GRADIENT_PAIRS[idx].to})` }}
+                >
+                  {s.name.charAt(0)}
+                </div>
+                <div>
+                  <h2 className="text-[17px] font-semibold text-[#fafaf9]">{s.name}</h2>
+                  <div className="flex items-center gap-2 mt-0.5">
+                    <span className="text-[12px] tabular-nums font-medium" style={{ color: GRADIENT_PAIRS[idx].from }}>
+                      {s.conversionRate.toFixed(1)}% Conversion
+                    </span>
+                    <span className="text-[#44403c]">·</span>
+                    <span className="text-[12px] text-[#57534e]">{s.total} Leads</span>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <ResponsiveContainer width="100%" height={180}>
-              <BarChart data={s.statusData} layout="vertical">
-                <XAxis type="number" stroke="#52525b" fontSize={12} />
-                <YAxis type="category" dataKey="name" width={90} stroke="#52525b" fontSize={11} />
-                <Tooltip
-                  contentStyle={{ background: "#18181b", border: "1px solid #3f3f46", borderRadius: 8 }}
-                  itemStyle={{ color: "#e4e4e7" }}
-                />
-                <Bar dataKey="count" radius={[0, 4, 4, 0]}>
-                  {s.statusData.map((_, i) => (
-                    <Cell key={i} fill={STATUS_COLORS[i]} />
-                  ))}
-                </Bar>
-              </BarChart>
-            </ResponsiveContainer>
+            <div className="px-6 pb-2">
+              <div className="grid grid-cols-4 gap-3 mb-5">
+                {[
+                  { label: "Leads", val: s.total },
+                  { label: "Discovery+", val: s.discovery },
+                  { label: "Angebote", val: s.angebot },
+                  { label: "Verloren", val: s.verloren },
+                ].map((m) => (
+                  <div key={m.label} className="text-center py-3 rounded-lg bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.03)]">
+                    <div className="text-[20px] font-semibold tabular-nums text-[#fafaf9]">{m.val}</div>
+                    <div className="text-[10px] uppercase tracking-wider text-[#57534e] mt-0.5">{m.label}</div>
+                  </div>
+                ))}
+              </div>
+
+              <ResponsiveContainer width="100%" height={160}>
+                <BarChart data={s.statusData} layout="vertical" barCategoryGap="25%">
+                  <XAxis type="number" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+                  <YAxis type="category" dataKey="name" width={85} {...AXIS_STYLE} axisLine={false} tickLine={false} />
+                  <Tooltip {...TOOLTIP_STYLE} />
+                  <Bar dataKey="count" radius={[0, 6, 6, 0]} animationDuration={800}>
+                    {s.statusData.map((_, i) => (
+                      <Cell key={i} fill={SELLER_BAR_COLORS[i]} />
+                    ))}
+                  </Bar>
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
           </div>
         ))}
       </div>
 
       {/* Bestenliste */}
-      <div className="rounded-xl border border-zinc-800/60 bg-zinc-900/50 p-5">
-        <h2 className="mb-4 text-sm font-medium text-zinc-400">
-          Bestenliste
-        </h2>
-        <div className="overflow-x-auto">
-          <table className="w-full text-left text-sm">
+      <SectionCard title="Bestenliste">
+        <div className="overflow-x-auto -mx-2">
+          <table className="w-full premium-table">
             <thead>
-              <tr className="border-b border-zinc-800 text-xs uppercase text-zinc-500">
-                <th className="pb-3 pr-4">Rang</th>
-                <th className="pb-3 pr-4">Vertriebler</th>
-                <th className="pb-3 pr-4 text-right">Leads</th>
-                <th className="pb-3 pr-4 text-right">Discovery+</th>
-                <th className="pb-3 pr-4 text-right">Angebote</th>
-                <th className="pb-3 pr-4 text-right">Conversion %</th>
-                <th className="pb-3 text-right">Amt-Termine</th>
+              <tr>
+                <th className="text-left pl-2">Rang</th>
+                <th className="text-left pl-4">Vertriebler</th>
+                <th className="text-right pr-5">Leads</th>
+                <th className="text-right pr-5">Discovery+</th>
+                <th className="text-right pr-5">Angebote</th>
+                <th className="text-right pr-5">Conversion %</th>
+                <th className="text-right pr-2">Amt-Termine</th>
               </tr>
             </thead>
             <tbody>
               {sellerData
                 .sort((a, b) => b.angebot - a.angebot)
                 .map((s, i) => (
-                  <tr key={s.name} className="border-b border-zinc-800/40">
-                    <td className="py-3 pr-4">
-                      <span
-                        className={`inline-flex h-6 w-6 items-center justify-center rounded-full text-xs font-bold ${
-                          i === 0 ? "bg-amber-500/20 text-amber-400" : "bg-zinc-800 text-zinc-400"
-                        }`}
-                      >
+                  <tr key={s.name}>
+                    <td className="pl-2">
+                      <span className={`inline-flex h-7 w-7 items-center justify-center rounded-lg text-[11px] font-bold ${
+                        i === 0
+                          ? "bg-gradient-to-br from-[#e2a96e] to-[#c4956a] text-[#0c0c0e] shadow-[0_0_16px_rgba(226,169,110,0.3)]"
+                          : "bg-[rgba(255,255,255,0.04)] text-[#57534e]"
+                      }`}>
                         {i + 1}
                       </span>
                     </td>
-                    <td className="py-3 pr-4 font-medium text-zinc-200">{s.name}</td>
-                    <td className="py-3 pr-4 text-right text-zinc-300">{s.total}</td>
-                    <td className="py-3 pr-4 text-right text-zinc-300">{s.discovery}</td>
-                    <td className="py-3 pr-4 text-right font-medium text-emerald-400">{s.angebot}</td>
-                    <td className="py-3 pr-4 text-right text-zinc-400">
+                    <td className="pl-4 text-[14px] font-medium text-[#fafaf9]">{s.name}</td>
+                    <td className="text-right pr-5 tabular-nums text-[#a8a29e]">{s.total}</td>
+                    <td className="text-right pr-5 tabular-nums text-[#a8a29e]">{s.discovery}</td>
+                    <td className="text-right pr-5 tabular-nums font-semibold text-[#5eead4] glow-badge">{s.angebot}</td>
+                    <td className="text-right pr-5 tabular-nums text-[#e2a96e] font-medium">
                       {s.total > 0 ? ((s.discovery / s.total) * 100).toFixed(1) : 0}%
                     </td>
-                    <td className="py-3 text-right text-zinc-300">{s.termine}</td>
+                    <td className="text-right pr-2 tabular-nums text-[#a8a29e]">{s.termine}</td>
                   </tr>
                 ))}
             </tbody>
           </table>
         </div>
-      </div>
+      </SectionCard>
     </div>
   );
 }
