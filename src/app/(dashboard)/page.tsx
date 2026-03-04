@@ -30,20 +30,23 @@ const kursnetLeads = leads.filter((l) => l.platform === "Kursnet");
 const indeedLeads = leads.filter((l) => l.platform === "Indeed");
 const totalLeads = leads.length;
 
-const qualifiedPlus = leads.filter(
-  (l) =>
-    l.leadStatus === "Vertriebsqualifiziert" ||
-    l.leadStatus === "Kennenlerngespräch gebucht" ||
-    l.leadStatus === "Beratungsgespräch gebucht"
-).length;
 const gewonnen = leads.filter(
   (l) => l.leadStatus === "Gewonnen"
 ).length;
 const terminCount = leads.filter((l) => l.terminBeimAmt).length;
 
+// Historical/cumulative: leads that reached this stage or any later stage
+const qualifiedPlusHistorical = leads.filter(
+  (l) =>
+    l.leadStatus === "Vertriebsqualifiziert" ||
+    l.leadStatus === "Kennenlerngespräch gebucht" ||
+    l.leadStatus === "Beratungsgespräch gebucht" ||
+    l.leadStatus === "Gewonnen"
+).length;
+
 const funnelData = [
   { name: "Leads", value: totalLeads },
-  { name: "Qualifiziert+", value: qualifiedPlus },
+  { name: "Qualifiziert+", value: qualifiedPlusHistorical },
   { name: "Gewonnen", value: gewonnen },
   { name: "Amt-Termin", value: terminCount },
 ];

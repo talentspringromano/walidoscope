@@ -1,3 +1,6 @@
+# DISABLED — migrated to Vercel
+# To re-enable, remove the 'if: false' from the jobs below
+
 name: Deploy to GitHub Pages
 
 on:
@@ -16,6 +19,7 @@ concurrency:
 
 jobs:
   build:
+    if: false
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

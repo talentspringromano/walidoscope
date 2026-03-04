@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import {
   LayoutDashboard,
   Megaphone,
@@ -10,6 +11,7 @@ import {
   Users,
   PanelLeftClose,
   PanelLeftOpen,
+  LogOut,
 } from "lucide-react";
 
 const navItems = [
@@ -21,8 +23,13 @@ const navItems = [
 
 export function Sidebar() {
   const pathname = usePathname();
-  const basePath = process.env.NODE_ENV === "production" ? "/walidoscope" : "";
+  const router = useRouter();
   const [collapsed, setCollapsed] = useState(false);
+
+  async function handleLogout() {
+    await fetch("/api/auth", { method: "DELETE" });
+    router.push("/login");
+  }
 
   return (
     <>
@@ -72,11 +79,10 @@ export function Sidebar() {
 
         <nav className={`flex flex-1 flex-col gap-0.5 ${collapsed ? "px-0 items-center" : "px-1"}`}>
           {navItems.map(({ href, label, icon: Icon }) => {
-            const fullHref = basePath + href;
             const isActive =
               href === "/"
-                ? pathname === fullHref || pathname === "/"
-                : pathname.startsWith(fullHref);
+                ? pathname === href
+                : pathname.startsWith(href);
 
             return (
               <Link
@@ -119,7 +125,7 @@ export function Sidebar() {
         )}
 
         {/* Footer */}
-        <div className={`mt-auto pt-4 border-t border-[rgba(255,255,255,0.04)] ${collapsed ? "flex justify-center" : "px-3"}`}>
+        <div className={`mt-auto pt-4 border-t border-[rgba(255,255,255,0.04)] ${collapsed ? "flex flex-col items-center gap-3" : "px-3 space-y-3"}`}>
           <div className="flex items-center gap-2">
             <div className="h-7 w-7 rounded-full bg-gradient-to-br from-[#292524] to-[#1c1917] flex items-center justify-center text-[10px] font-bold text-[#78716c] shrink-0">
               TS
@@ -131,6 +137,16 @@ export function Sidebar() {
               </div>
             )}
           </div>
+          <button
+            onClick={handleLogout}
+            title="Abmelden"
+            className={`flex items-center text-[13px] font-medium text-[#78716c] hover:text-red-400 transition-colors ${
+              collapsed ? "justify-center w-10 h-10" : "gap-3 px-3 py-2 rounded-xl hover:bg-[rgba(255,255,255,0.03)]"
+            }`}
+          >
+            <LogOut className="h-[18px] w-[18px] shrink-0" strokeWidth={1.8} />
+            {!collapsed && "Abmelden"}
+          </button>
         </div>
       </aside>
 
