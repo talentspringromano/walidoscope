@@ -18,7 +18,6 @@ import {
   Cell,
   FunnelChart,
   Funnel,
-  LabelList,
 } from "recharts";
 
 /* ── Lead Segmentierung ── */
@@ -182,7 +181,7 @@ export default function MarketingPage() {
               <ResponsiveContainer width="100%" height={220}>
                 <FunnelChart>
                   <Tooltip {...TOOLTIP_STYLE} />
-                  <Funnel dataKey="value" data={perspFunnelData} isAnimationActive animationDuration={800} label={false}>
+                  <Funnel dataKey="value" data={perspFunnelData} isAnimationActive animationDuration={800} label={<></>}>
                     {perspFunnelData.map((_, i) => (
                       <Cell key={i} fill={FUNNEL_COLORS[i]} />
                     ))}
