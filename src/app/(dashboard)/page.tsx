@@ -15,9 +15,6 @@ import {
   YAxis,
   Tooltip,
   ResponsiveContainer,
-  FunnelChart,
-  Funnel,
-  LabelList,
   Cell,
   CartesianGrid,
   Legend,
@@ -139,18 +136,43 @@ export default function OverviewPage() {
       {/* Charts Row */}
       <div className="grid gap-6 lg:grid-cols-2 stagger-in">
         <SectionCard title="Conversion Funnel">
-          <ResponsiveContainer width="100%" height={280}>
-            <FunnelChart>
-              <Tooltip {...TOOLTIP_STYLE} />
-              <Funnel dataKey="value" data={funnelData} isAnimationActive animationDuration={800}>
-                <LabelList position="right" fill="#78716c" stroke="none" dataKey="name" fontSize={12} />
-                <LabelList position="center" fill="#fafaf9" stroke="none" dataKey="value" fontSize={18} fontWeight={600} className="tabular-nums" />
-                {funnelData.map((_, i) => (
-                  <Cell key={i} fill={FUNNEL_COLORS[i]} />
-                ))}
-              </Funnel>
-            </FunnelChart>
-          </ResponsiveContainer>
+          <div className="space-y-3 py-2">
+            {funnelData.map((stage, i) => {
+              const maxValue = funnelData[0].value;
+              const widthPct = Math.max(12, (stage.value / maxValue) * 100);
+              const prevValue = i > 0 ? funnelData[i - 1].value : null;
+              const convRate = prevValue ? ((stage.value / prevValue) * 100).toFixed(1) : null;
+
+              return (
+                <div key={stage.name} className="flex items-center gap-4">
+                  <div className="w-[100px] text-right shrink-0">
+                    <div className="text-[12px] text-[#78716c]">{stage.name}</div>
+                  </div>
+                  <div className="flex-1 relative">
+                    <div
+                      className="h-10 rounded-lg flex items-center transition-all duration-700"
+                      style={{
+                        width: `${widthPct}%`,
+                        background: `linear-gradient(90deg, ${FUNNEL_COLORS[i]}, ${FUNNEL_COLORS[i]}dd)`,
+                        boxShadow: `0 0 20px ${FUNNEL_COLORS[i]}22`,
+                      }}
+                    >
+                      <span className="pl-3 text-[15px] font-bold tabular-nums text-[#0c0c0e]">
+                        {stage.value}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="w-[52px] shrink-0 text-right">
+                    {convRate && (
+                      <span className="text-[11px] tabular-nums text-[#57534e]">
+                        {convRate}%
+                      </span>
+                    )}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </SectionCard>
 
         <SectionCard title="Lead-Status Verteilung">
