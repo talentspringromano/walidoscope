@@ -141,6 +141,7 @@ export default function OverviewPage() {
               const maxValue = funnelData[0].value;
               const widthPct = Math.max(8, (stage.value / maxValue) * 100);
               const overallRate = i > 0 ? ((stage.value / maxValue) * 100).toFixed(1) : null;
+              const barOpacity = 1 - i * 0.2;
 
               return (
                 <div key={stage.name}>
@@ -149,21 +150,21 @@ export default function OverviewPage() {
                       <span className="text-[22px] font-bold tabular-nums text-[#fafaf9]">
                         {stage.value}
                       </span>
-                      <span className="text-[13px] font-medium text-[#78716c]">{stage.name}</span>
+                      <span className="text-[13px] font-medium text-[#57534e]">{stage.name}</span>
                     </div>
                     {overallRate && (
-                      <span className="text-[12px] tabular-nums font-medium" style={{ color: FUNNEL_COLORS[i] }}>
+                      <span className="text-[12px] tabular-nums font-medium text-[#78716c]">
                         {overallRate}%
                       </span>
                     )}
                   </div>
-                  <div className="h-2 w-full rounded-full bg-[rgba(255,255,255,0.04)]">
+                  <div className="h-1.5 w-full rounded-full bg-[rgba(255,255,255,0.04)]">
                     <div
                       className="h-full rounded-full transition-all duration-700"
                       style={{
                         width: `${widthPct}%`,
-                        background: FUNNEL_COLORS[i],
-                        opacity: 0.85,
+                        background: "#e2a96e",
+                        opacity: barOpacity,
                       }}
                     />
                   </div>
