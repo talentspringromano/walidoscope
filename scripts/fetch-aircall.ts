@@ -156,6 +156,10 @@ interface DailyEntry {
   calltimeSec: number; // total talk time in seconds
 }
 
+interface SellerDailyEntry extends DailyEntry {
+  seller: string;
+}
+
 function aggregateDaily(calls: RawCall[]): DailyEntry[] {
   const map = new Map<string, { dials: number; reached: number; calltimeSec: number }>();
 
@@ -180,6 +184,36 @@ function aggregateDaily(calls: RawCall[]): DailyEntry[] {
     .sort((a, b) => a.date.localeCompare(b.date));
 }
 
+function aggregateSellerDaily(calls: RawCall[]): SellerDailyEntry[] {
+  const map = new Map<string, { dials: number; reached: number; calltimeSec: number }>();
+
+  for (const c of calls) {
+    if (!c.started_at || !c.user) continue;
+    const sellerName = SELLERS[c.user.id];
+    if (!sellerName) continue;
+    const date = new Date(c.started_at * 1000).toISOString().split("T")[0];
+    const key = `${sellerName}::${date}`;
+    const entry = map.get(key) ?? { dials: 0, reached: 0, calltimeSec: 0 };
+
+    if (c.direction === "outbound") {
+      entry.dials++;
+      if (c.status === "done" || c.status === "answered") {
+        entry.reached++;
+        entry.calltimeSec += c.duration || 0;
+      }
+    }
+
+    map.set(key, entry);
+  }
+
+  return Array.from(map.entries())
+    .map(([key, v]) => {
+      const [seller, date] = key.split("::");
+      return { seller, date, ...v };
+    })
+    .sort((a, b) => a.date.localeCompare(b.date) || a.seller.localeCompare(b.seller));
+}
+
 async function main() {
   console.log("Fetching Aircall calls (GET only)...");
   const calls = await fetchAllCalls();
@@ -187,15 +221,16 @@ async function main() {
 
   const sellers = aggregate(calls);
   const daily = aggregateDaily(calls);
+  const sellerDaily = aggregateSellerDaily(calls);
 
   for (const s of sellers) {
     console.log(`  ${s.name}: ${s.totalCalls} calls (${s.outboundCalls} out, ${s.inboundCalls} in), avg ${s.avgDurationSec}s`);
   }
-  console.log(`  Daily entries: ${daily.length} days`);
+  console.log(`  Daily entries: ${daily.length} days, ${sellerDaily.length} seller-daily entries`);
 
   const outPath = new URL("../src/data/aircall-data.json", import.meta.url);
   const fs = await import("fs");
-  fs.writeFileSync(new URL(outPath), JSON.stringify({ sellers, daily, fetchedAt: new Date().toISOString() }, null, 2));
+  fs.writeFileSync(new URL(outPath), JSON.stringify({ sellers, daily, sellerDaily, fetchedAt: new Date().toISOString() }, null, 2));
   console.log(`Written to src/data/aircall-data.json`);
 }
 

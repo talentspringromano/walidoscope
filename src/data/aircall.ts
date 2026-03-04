@@ -25,8 +25,13 @@ export interface AircallDailyEntry {
   calltimeSec: number;
 }
 
+export interface AircallSellerDailyEntry extends AircallDailyEntry {
+  seller: string;
+}
+
 export const aircallSellers: AircallSeller[] = data.sellers;
 export const aircallDaily: AircallDailyEntry[] = (data as { daily?: AircallDailyEntry[] }).daily ?? [];
+export const aircallSellerDaily: AircallSellerDailyEntry[] = (data as { sellerDaily?: AircallSellerDailyEntry[] }).sellerDaily ?? [];
 export const aircallFetchedAt: string = data.fetchedAt;
 
 export function formatDuration(sec: number): string {

@@ -1,13 +1,15 @@
 "use client";
 
-import { useState } from "react";
-import { Phone, PhoneOutgoing, Clock } from "lucide-react";
-import { aircallDaily, type AircallDailyEntry } from "@/data/aircall";
+import { useState, useMemo } from "react";
+import { Phone, PhoneOutgoing, Clock, ChevronDown } from "lucide-react";
+import { aircallDaily, aircallSellerDaily, type AircallDailyEntry } from "@/data/aircall";
 import { formatDuration } from "@/data/aircall";
 
 type Mode = "dials" | "calltime";
 
 const DAY_LABELS = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"];
+
+const SELLER_NAMES = ["Walid Karimi", "Nele Pfau", "Bastian Wuske", "Eric H.", "Michel G."];
 
 function getMonday(d: Date): Date {
   const date = new Date(d);
@@ -31,12 +33,6 @@ function formatWeekLabel(monday: Date): string {
   return `${mStartFull} – ${mEnd}`;
 }
 
-function isoToDay(iso: string): number {
-  const d = new Date(iso + "T00:00:00");
-  const day = d.getDay();
-  return day === 0 ? 6 : day - 1; // 0=Mo, 6=So
-}
-
 interface WeekRow {
   monday: Date;
   label: string;
@@ -49,9 +45,18 @@ function buildWeeks(entries: AircallDailyEntry[]): WeekRow[] {
   if (entries.length === 0) return [];
 
   const byDate = new Map<string, AircallDailyEntry>();
-  for (const e of entries) byDate.set(e.date, e);
+  for (const e of entries) {
+    const existing = byDate.get(e.date);
+    if (existing) {
+      existing.dials += e.dials;
+      existing.reached += e.reached;
+      existing.calltimeSec += e.calltimeSec;
+    } else {
+      byDate.set(e.date, { ...e });
+    }
+  }
 
-  const allDates = entries.map((e) => new Date(e.date + "T00:00:00"));
+  const allDates = [...byDate.keys()].map((d) => new Date(d + "T00:00:00"));
   const minDate = new Date(Math.min(...allDates.map((d) => d.getTime())));
   const maxDate = new Date(Math.max(...allDates.map((d) => d.getTime())));
 
@@ -140,12 +145,32 @@ function BubbleCell({ entry, mode, maxVal }: { entry: AircallDailyEntry | null; 
 
 export function ActivityCalendar() {
   const [mode, setMode] = useState<Mode>("dials");
-  const weeks = buildWeeks(aircallDaily);
+  const [selectedSeller, setSelectedSeller] = useState<string>("all");
+  const [selectedWeek, setSelectedWeek] = useState<string>("all");
 
-  const maxVal = Math.max(
-    1,
-    ...aircallDaily.map((e) => (mode === "dials" ? e.dials : e.calltimeSec))
-  );
+  // Get filtered daily entries based on seller selection
+  const filteredEntries = useMemo(() => {
+    if (selectedSeller === "all") {
+      return aircallDaily;
+    }
+    // Filter sellerDaily for selected seller
+    return aircallSellerDaily.filter((e) => e.seller === selectedSeller);
+  }, [selectedSeller]);
+
+  const weeks = useMemo(() => buildWeeks(filteredEntries), [filteredEntries]);
+
+  // Filter weeks based on selection
+  const displayedWeeks = useMemo(() => {
+    if (selectedWeek === "all") return weeks;
+    const idx = parseInt(selectedWeek);
+    if (isNaN(idx) || idx < 0 || idx >= weeks.length) return weeks;
+    return [weeks[idx]];
+  }, [weeks, selectedWeek]);
+
+  const maxVal = useMemo(() => {
+    const entries = displayedWeeks.flatMap((w) => w.days.filter(Boolean) as AircallDailyEntry[]);
+    return Math.max(1, ...entries.map((e) => (mode === "dials" ? e.dials : e.calltimeSec)));
+  }, [displayedWeeks, mode]);
 
   if (weeks.length === 0) {
     return (
@@ -155,7 +180,9 @@ export function ActivityCalendar() {
           <h2 className="text-[17px] font-semibold text-[#fafaf9]">Aktivitätskalender</h2>
         </div>
         <p className="text-[13px] text-[#57534e]">
-          Tägliche Daten werden beim nächsten Aircall-Refresh geladen.
+          {selectedSeller !== "all"
+            ? "Keine Daten für diesen Seller vorhanden."
+            : "Tägliche Daten werden beim nächsten Aircall-Refresh geladen."}
         </p>
       </div>
     );
@@ -173,30 +200,67 @@ export function ActivityCalendar() {
           <p className="text-[13px] text-[#57534e]">Anwahlversuche pro Tag</p>
         </div>
 
-        {/* Toggle */}
-        <div className="flex rounded-xl border border-[rgba(255,255,255,0.06)] overflow-hidden">
-          <button
-            onClick={() => setMode("calltime")}
-            className={`flex items-center gap-1.5 px-3.5 py-1.5 text-[12px] font-medium transition-all ${
-              mode === "calltime"
-                ? "bg-[rgba(226,169,110,0.1)] text-[#e2a96e] border-r border-[rgba(255,255,255,0.06)]"
-                : "text-[#78716c] hover:text-[#a8a29e] border-r border-[rgba(255,255,255,0.06)]"
-            }`}
-          >
-            <Clock className="h-3.5 w-3.5" />
-            Calltime
-          </button>
-          <button
-            onClick={() => setMode("dials")}
-            className={`flex items-center gap-1.5 px-3.5 py-1.5 text-[12px] font-medium transition-all ${
-              mode === "dials"
-                ? "bg-[rgba(226,169,110,0.1)] text-[#e2a96e]"
-                : "text-[#78716c] hover:text-[#a8a29e]"
-            }`}
-          >
-            <PhoneOutgoing className="h-3.5 w-3.5" />
-            Dials
-          </button>
+        {/* Controls */}
+        <div className="flex items-center gap-3">
+          {/* Seller Filter */}
+          <div className="relative">
+            <select
+              value={selectedSeller}
+              onChange={(e) => setSelectedSeller(e.target.value)}
+              className="appearance-none rounded-xl border border-[rgba(255,255,255,0.06)] bg-[rgba(255,255,255,0.03)] px-3.5 py-1.5 pr-8 text-[12px] font-medium text-[#a8a29e] cursor-pointer hover:border-[rgba(255,255,255,0.12)] focus:outline-none focus:border-[#e2a96e] transition-colors"
+            >
+              <option value="all">Alle Seller</option>
+              {SELLER_NAMES.map((name) => (
+                <option key={name} value={name}>
+                  {name}
+                </option>
+              ))}
+            </select>
+            <ChevronDown className="absolute right-2.5 top-1/2 -translate-y-1/2 h-3 w-3 text-[#57534e] pointer-events-none" />
+          </div>
+
+          {/* Week Filter */}
+          <div className="relative">
+            <select
+              value={selectedWeek}
+              onChange={(e) => setSelectedWeek(e.target.value)}
+              className="appearance-none rounded-xl border border-[rgba(255,255,255,0.06)] bg-[rgba(255,255,255,0.03)] px-3.5 py-1.5 pr-8 text-[12px] font-medium text-[#a8a29e] cursor-pointer hover:border-[rgba(255,255,255,0.12)] focus:outline-none focus:border-[#e2a96e] transition-colors"
+            >
+              <option value="all">Alle Wochen</option>
+              {weeks.map((w, i) => (
+                <option key={i} value={i}>
+                  {w.label}
+                </option>
+              ))}
+            </select>
+            <ChevronDown className="absolute right-2.5 top-1/2 -translate-y-1/2 h-3 w-3 text-[#57534e] pointer-events-none" />
+          </div>
+
+          {/* Mode Toggle */}
+          <div className="flex rounded-xl border border-[rgba(255,255,255,0.06)] overflow-hidden">
+            <button
+              onClick={() => setMode("calltime")}
+              className={`flex items-center gap-1.5 px-3.5 py-1.5 text-[12px] font-medium transition-all ${
+                mode === "calltime"
+                  ? "bg-[rgba(226,169,110,0.1)] text-[#e2a96e] border-r border-[rgba(255,255,255,0.06)]"
+                  : "text-[#78716c] hover:text-[#a8a29e] border-r border-[rgba(255,255,255,0.06)]"
+              }`}
+            >
+              <Clock className="h-3.5 w-3.5" />
+              Calltime
+            </button>
+            <button
+              onClick={() => setMode("dials")}
+              className={`flex items-center gap-1.5 px-3.5 py-1.5 text-[12px] font-medium transition-all ${
+                mode === "dials"
+                  ? "bg-[rgba(226,169,110,0.1)] text-[#e2a96e]"
+                  : "text-[#78716c] hover:text-[#a8a29e]"
+              }`}
+            >
+              <PhoneOutgoing className="h-3.5 w-3.5" />
+              Dials
+            </button>
+          </div>
         </div>
       </div>
 
@@ -210,8 +274,8 @@ export function ActivityCalendar() {
 
       {/* Weeks */}
       <div className="space-y-1">
-        {weeks.map((week) => (
-          <div key={week.label} className="grid grid-cols-[140px_repeat(7,1fr)] gap-2 items-center py-4 border-t border-[rgba(255,255,255,0.03)]">
+        {displayedWeeks.map((week, wi) => (
+          <div key={wi} className="grid grid-cols-[140px_repeat(7,1fr)] gap-2 items-center py-4 border-t border-[rgba(255,255,255,0.03)]">
             <div>
               <div className="text-[13px] font-medium text-[#fafaf9]">{week.label}</div>
               <div className="text-[11px] font-medium text-[#e2a96e]">
