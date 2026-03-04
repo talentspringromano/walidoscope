@@ -23,7 +23,7 @@ import {
   Legend,
 } from "recharts";
 
-const sellers = ["Walid Karimi", "Nele Pfau", "Bastian Wuske"] as const;
+const sellers = ["Walid Karimi", "Nele Pfau", "Bastian Wuske", "Eric Hardt", "Michel Grosser"];
 
 function sellerStats(name: string) {
   const sellerLeads = leads.filter((l) => l.vertriebler === name);
@@ -77,10 +77,15 @@ const radarData = [
   { metric: "Calls", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.aircall?.totalCalls ?? 0])) },
 ];
 
+const RADAR_COLORS = ["#e2a96e", "#5eead4", "#818cf8", "#fb923c", "#a78bfa", "#f472b6"];
+
 const GRADIENT_PAIRS = [
   { from: "#e2a96e", to: "#c4956a" },
   { from: "#5eead4", to: "#2dd4bf" },
   { from: "#818cf8", to: "#6366f1" },
+  { from: "#fb923c", to: "#ea580c" },
+  { from: "#a78bfa", to: "#7c3aed" },
+  { from: "#f472b6", to: "#db2777" },
 ];
 
 type BLSortKey = "total" | "qualified" | "gewonnen" | "conversionRate" | "bgConvRate" | "calls" | "avgDuration";
@@ -244,9 +249,12 @@ export default function SellerPage() {
             <RadarChart data={radarData}>
               <PolarGrid stroke="#292524" />
               <PolarAngleAxis dataKey="metric" tick={{ fill: "#78716c", fontSize: 11 }} />
-              <Radar name="Walid" dataKey="Walid" stroke={PALETTE.amber} fill={PALETTE.amber} fillOpacity={0.15} strokeWidth={2} />
-              <Radar name="Nele" dataKey="Nele" stroke={PALETTE.teal} fill={PALETTE.teal} fillOpacity={0.15} strokeWidth={2} />
-              <Radar name="Bastian" dataKey="Bastian" stroke={PALETTE.indigo} fill={PALETTE.indigo} fillOpacity={0.15} strokeWidth={2} />
+              {sellerData.map((s, i) => {
+                const firstName = s.name.split(" ")[0];
+                return (
+                  <Radar key={firstName} name={firstName} dataKey={firstName} stroke={RADAR_COLORS[i % RADAR_COLORS.length]} fill={RADAR_COLORS[i % RADAR_COLORS.length]} fillOpacity={0.15} strokeWidth={2} />
+                );
+              })}
               <Legend wrapperStyle={{ fontSize: 12, color: "#78716c" }} />
               <Tooltip {...TOOLTIP_STYLE} />
             </RadarChart>
@@ -255,7 +263,7 @@ export default function SellerPage() {
       </div>
 
       {/* Seller Cards */}
-      <div className="grid gap-6 lg:grid-cols-3 stagger-in">
+      <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3 stagger-in">
         {sellerData.map((s, idx) => (
           <div key={s.name} className="glass-card overflow-hidden">
             {/* Header with gradient */}
