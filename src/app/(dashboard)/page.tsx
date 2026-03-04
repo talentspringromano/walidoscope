@@ -9,8 +9,8 @@ import { Users, DollarSign, MousePointerClick, TrendingUp } from "lucide-react";
 import {
   BarChart,
   Bar,
-  AreaChart,
-  Area,
+  LineChart,
+  Line,
   XAxis,
   YAxis,
   Tooltip,
@@ -193,25 +193,7 @@ export default function OverviewPage() {
       {/* Leads im Zeitverlauf */}
       <SectionCard title="Leads im Zeitverlauf nach Quelle">
         <ResponsiveContainer width="100%" height={300}>
-          <AreaChart data={timelineData}>
-            <defs>
-              <linearGradient id="gFb" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#818cf8" stopOpacity={0.3} />
-                <stop offset="100%" stopColor="#818cf8" stopOpacity={0} />
-              </linearGradient>
-              <linearGradient id="gIg" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#e2a96e" stopOpacity={0.3} />
-                <stop offset="100%" stopColor="#e2a96e" stopOpacity={0} />
-              </linearGradient>
-              <linearGradient id="gKn" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#5eead4" stopOpacity={0.3} />
-                <stop offset="100%" stopColor="#5eead4" stopOpacity={0} />
-              </linearGradient>
-              <linearGradient id="gIn" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#fb923c" stopOpacity={0.3} />
-                <stop offset="100%" stopColor="#fb923c" stopOpacity={0} />
-              </linearGradient>
-            </defs>
+          <LineChart data={timelineData}>
             <CartesianGrid strokeDasharray="3 3" stroke="#1c1917" vertical={false} />
             <XAxis dataKey="date" {...AXIS_STYLE} axisLine={false} tickLine={false} />
             <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} allowDecimals={false} />
@@ -221,11 +203,11 @@ export default function OverviewPage() {
               labelFormatter={(label) => `${label}`}
             />
             <Legend wrapperStyle={{ fontSize: 12, color: "#78716c" }} />
-            <Area type="monotone" dataKey="Facebook" stackId="1" stroke="#818cf8" fill="url(#gFb)" strokeWidth={2} />
-            <Area type="monotone" dataKey="Instagram" stackId="1" stroke="#e2a96e" fill="url(#gIg)" strokeWidth={2} />
-            <Area type="monotone" dataKey="Kursnet" stackId="1" stroke="#5eead4" fill="url(#gKn)" strokeWidth={2} />
-            <Area type="monotone" dataKey="Indeed" stackId="1" stroke="#fb923c" fill="url(#gIn)" strokeWidth={2} />
-          </AreaChart>
+            <Line type="monotone" dataKey="Facebook" stroke="#818cf8" strokeWidth={2} dot={false} />
+            <Line type="monotone" dataKey="Instagram" stroke="#e2a96e" strokeWidth={2} dot={false} />
+            <Line type="monotone" dataKey="Kursnet" stroke="#5eead4" strokeWidth={2} dot={false} />
+            <Line type="monotone" dataKey="Indeed" stroke="#fb923c" strokeWidth={2} dot={false} />
+          </LineChart>
         </ResponsiveContainer>
       </SectionCard>
 
