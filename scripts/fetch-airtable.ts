@@ -102,6 +102,12 @@ async function main() {
   const records = await fetchAllRecords();
   console.log(`Found ${records.length} records.`);
 
+  // Debug: log field names from first record
+  if (records.length > 0) {
+    console.log("API field names:", Object.keys(records[0].fields));
+    console.log("Sample record fields:", JSON.stringify(records[0].fields, null, 2));
+  }
+
   // Sort by created time
   records.sort((a, b) => {
     const aTime = a.fields["Timestamp - Created on"] as string || a.createdTime;
