@@ -35,10 +35,12 @@ export const PALETTE = {
 export const FUNNEL_COLORS = ["#e2a96e", "#818cf8", "#5eead4", "#a78bfa"];
 export const STATUS_COLORS: Record<string, string> = {
   "Neuer Lead": "#818cf8",
-  "1x NE": "#fb923c",
-  "Discovery Call": "#e2a96e",
-  "Follow up": "#a78bfa",
-  "Angebot zuschicken": "#5eead4",
+  "Rückruf": "#fb923c",
+  "Vertriebsqualifiziert": "#e2a96e",
+  "Reterminierung": "#a78bfa",
+  "Kennenlerngespräch gebucht": "#5eead4",
+  "Beratungsgespräch gebucht": "#34d399",
+  "Gewonnen": "#fbbf24",
   Verloren: "#fb7185",
 };
 export const SEGMENT_COLORS = ["#5eead4", "#818cf8", "#e2a96e", "#fb7185"];

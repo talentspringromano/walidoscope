@@ -17,15 +17,17 @@ export interface MetaAd {
 
 export type LeadStatus =
   | "Neuer Lead"
-  | "1x NE"
-  | "Discovery Call"
-  | "Follow up"
-  | "Angebot zuschicken"
+  | "Rückruf"
+  | "Vertriebsqualifiziert"
+  | "Reterminierung"
+  | "Kennenlerngespräch gebucht"
+  | "Beratungsgespräch gebucht"
+  | "Gewonnen"
   | "Verloren";
 
 export type DealStatus = "Neuer Lead" | "Angebot schicken" | "";
 
-export type Platform = "Facebook" | "Instagram" | "Kursnet";
+export type Platform = "Facebook" | "Instagram" | "Kursnet" | "Indeed" | "";
 
 export interface Lead {
   id: number;

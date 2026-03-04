@@ -27,33 +27,32 @@ const sellers = ["Walid Karimi", "Nele Pfau", "Bastian Wuske"] as const;
 
 function sellerStats(name: string) {
   const sellerLeads = leads.filter((l) => l.vertriebler === name);
-  const discovery = sellerLeads.filter(
-    (l) => l.leadStatus === "Discovery Call" || l.leadStatus === "Follow up" || l.leadStatus === "Angebot zuschicken"
+  const qualified = sellerLeads.filter(
+    (l) => l.leadStatus === "Vertriebsqualifiziert" || l.leadStatus === "Kennenlerngespräch gebucht" || l.leadStatus === "Beratungsgespräch gebucht"
   ).length;
-  const angebot = sellerLeads.filter(
-    (l) => l.dealStatus === "Angebot schicken" || l.leadStatus === "Angebot zuschicken"
-  ).length;
+  const gewonnen = sellerLeads.filter((l) => l.leadStatus === "Gewonnen").length;
   const verloren = sellerLeads.filter((l) => l.leadStatus === "Verloren").length;
   const termine = sellerLeads.filter((l) => l.terminBeimAmt).length;
   const neuerLead = sellerLeads.filter((l) => l.leadStatus === "Neuer Lead").length;
-  const nichtErreicht = sellerLeads.filter((l) => l.leadStatus === "1x NE").length;
+  const rueckruf = sellerLeads.filter((l) => l.leadStatus === "Rückruf").length;
 
   const aircall = aircallSellers.find((a) => a.name === name);
 
   return {
     name,
     total: sellerLeads.length,
-    discovery,
-    angebot,
+    qualified,
+    gewonnen,
     verloren,
     termine,
     neuerLead,
-    nichtErreicht,
-    conversionRate: sellerLeads.length > 0 ? ((discovery / sellerLeads.length) * 100) : 0,
+    rueckruf,
+    conversionRate: sellerLeads.length > 0 ? ((qualified / sellerLeads.length) * 100) : 0,
     statusData: [
       { name: "Neuer Lead", count: neuerLead },
-      { name: "1x NE", count: nichtErreicht },
-      { name: "Discovery+", count: discovery },
+      { name: "Rückruf", count: rueckruf },
+      { name: "Qualifiziert+", count: qualified },
+      { name: "Gewonnen", count: gewonnen },
       { name: "Verloren", count: verloren },
     ],
     aircall,
@@ -65,15 +64,15 @@ const sellerData = sellers.map((s) => sellerStats(s));
 const comparisonData = sellerData.map((s) => ({
   name: s.name.split(" ")[0],
   Leads: s.total,
-  "Discovery+": s.discovery,
-  Angebote: s.angebot,
+  "Qualifiziert+": s.qualified,
+  Gewonnen: s.gewonnen,
 }));
 
 // Radar data for skill comparison
 const radarData = [
   { metric: "Leads", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.total])) },
-  { metric: "Discovery", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.discovery])) },
-  { metric: "Angebote", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.angebot])) },
+  { metric: "Qualifiziert", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.qualified])) },
+  { metric: "Gewonnen", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.gewonnen])) },
   { metric: "Termine", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.termine])) },
   { metric: "Calls", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.aircall?.totalCalls ?? 0])) },
 ];
@@ -84,18 +83,18 @@ const GRADIENT_PAIRS = [
   { from: "#818cf8", to: "#6366f1" },
 ];
 
-type BLSortKey = "total" | "discovery" | "angebot" | "conversionRate" | "calls" | "avgDuration";
+type BLSortKey = "total" | "qualified" | "gewonnen" | "conversionRate" | "calls" | "avgDuration";
 type BLSortDir = "asc" | "desc";
 
 function Bestenliste({ data }: { data: ReturnType<typeof sellerStats>[] }) {
-  const [sortKey, setSortKey] = useState<BLSortKey>("angebot");
+  const [sortKey, setSortKey] = useState<BLSortKey>("gewonnen");
   const [sortDir, setSortDir] = useState<BLSortDir>("desc");
 
   function getValue(s: ReturnType<typeof sellerStats>, key: BLSortKey): number {
     switch (key) {
       case "total": return s.total;
-      case "discovery": return s.discovery;
-      case "angebot": return s.angebot;
+      case "qualified": return s.qualified;
+      case "gewonnen": return s.gewonnen;
       case "conversionRate": return s.conversionRate;
       case "calls": return s.aircall?.totalCalls ?? 0;
       case "avgDuration": return s.aircall?.avgDurationSec ?? 0;
@@ -125,8 +124,8 @@ function Bestenliste({ data }: { data: ReturnType<typeof sellerStats>[] }) {
     [null, "Rang", "text-left pl-2"],
     [null, "Vertriebler", "text-left pl-4"],
     ["total", "Leads", "text-right pr-5"],
-    ["discovery", "Discovery+", "text-right pr-5"],
-    ["angebot", "Angebote", "text-right pr-5"],
+    ["qualified", "Qualifiziert+", "text-right pr-5"],
+    ["gewonnen", "Gewonnen", "text-right pr-5"],
     ["conversionRate", "Conversion %", "text-right pr-5"],
     ["calls", "Calls", "text-right pr-5"],
     ["avgDuration", "Avg Dauer", "text-right pr-2"],
@@ -166,8 +165,8 @@ function Bestenliste({ data }: { data: ReturnType<typeof sellerStats>[] }) {
                 </td>
                 <td className="pl-4 text-[14px] font-medium text-[#fafaf9]">{s.name}</td>
                 <td className="text-right pr-5 tabular-nums text-[#a8a29e]">{s.total}</td>
-                <td className="text-right pr-5 tabular-nums text-[#a8a29e]">{s.discovery}</td>
-                <td className="text-right pr-5 tabular-nums font-semibold text-[#5eead4] glow-badge">{s.angebot}</td>
+                <td className="text-right pr-5 tabular-nums text-[#a8a29e]">{s.qualified}</td>
+                <td className="text-right pr-5 tabular-nums font-semibold text-[#5eead4] glow-badge">{s.gewonnen}</td>
                 <td className="text-right pr-5 tabular-nums text-[#e2a96e] font-medium">
                   {s.total > 0 ? s.conversionRate.toFixed(1) : "–"}%
                 </td>
@@ -229,8 +228,8 @@ export default function SellerPage() {
               <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} />
               <Tooltip {...TOOLTIP_STYLE} />
               <Bar dataKey="Leads" fill={PALETTE.indigo} radius={[6, 6, 0, 0]} />
-              <Bar dataKey="Discovery+" fill={PALETTE.teal} radius={[6, 6, 0, 0]} />
-              <Bar dataKey="Angebote" fill={PALETTE.amber} radius={[6, 6, 0, 0]} />
+              <Bar dataKey="Qualifiziert+" fill={PALETTE.teal} radius={[6, 6, 0, 0]} />
+              <Bar dataKey="Gewonnen" fill={PALETTE.amber} radius={[6, 6, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
         </SectionCard>
@@ -284,8 +283,8 @@ export default function SellerPage() {
               <div className="grid grid-cols-4 gap-3 mb-5">
                 {[
                   { label: "Leads", val: s.total },
-                  { label: "Discovery+", val: s.discovery },
-                  { label: "Angebote", val: s.angebot },
+                  { label: "Qualifiziert+", val: s.qualified },
+                  { label: "Gewonnen", val: s.gewonnen },
                   { label: "Verloren", val: s.verloren },
                 ].map((m) => (
                   <div key={m.label} className="text-center py-3 rounded-lg bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.03)]">

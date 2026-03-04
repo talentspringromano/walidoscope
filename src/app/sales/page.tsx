@@ -16,7 +16,8 @@ import {
 } from "recharts";
 
 const statusOrder = [
-  "Neuer Lead", "1x NE", "Discovery Call", "Follow up", "Angebot zuschicken", "Verloren",
+  "Neuer Lead", "Rückruf", "Vertriebsqualifiziert", "Reterminierung",
+  "Kennenlerngespräch gebucht", "Beratungsgespräch gebucht", "Gewonnen", "Verloren",
 ] as const;
 
 const statusData = statusOrder.map((s) => ({
@@ -50,20 +51,22 @@ lostLeads.forEach((l) => {
 });
 
 const angebotLeads = leads.filter(
-  (l) => l.dealStatus === "Angebot schicken" || l.leadStatus === "Angebot zuschicken"
+  (l) => l.dealStatus === "Angebot schicken" || l.leadStatus === "Beratungsgespräch gebucht"
 );
-const discoveryPlus = leads.filter(
+const pipelineLeads = leads.filter(
   (l) =>
-    l.leadStatus === "Discovery Call" ||
-    l.leadStatus === "Follow up" ||
-    l.leadStatus === "Angebot zuschicken"
+    l.leadStatus === "Vertriebsqualifiziert" ||
+    l.leadStatus === "Kennenlerngespräch gebucht" ||
+    l.leadStatus === "Beratungsgespräch gebucht"
 );
 const leadsWithTermin = leads.filter((l) => l.terminBeimAmt);
 
 const STATUS_BADGE: Record<string, string> = {
-  "Discovery Call": "bg-[rgba(226,169,110,0.12)] text-[#e2a96e]",
-  "Follow up": "bg-[rgba(167,139,250,0.12)] text-[#a78bfa]",
-  "Angebot zuschicken": "bg-[rgba(94,234,212,0.12)] text-[#5eead4]",
+  "Vertriebsqualifiziert": "bg-[rgba(226,169,110,0.12)] text-[#e2a96e]",
+  "Reterminierung": "bg-[rgba(167,139,250,0.12)] text-[#a78bfa]",
+  "Kennenlerngespräch gebucht": "bg-[rgba(94,234,212,0.12)] text-[#5eead4]",
+  "Beratungsgespräch gebucht": "bg-[rgba(52,211,153,0.12)] text-[#34d399]",
+  "Gewonnen": "bg-[rgba(251,191,36,0.12)] text-[#fbbf24]",
 };
 
 export default function SalesPage() {
@@ -75,7 +78,7 @@ export default function SalesPage() {
       </div>
 
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 stagger-in">
-        <KpiCard label="In Pipeline" value={discoveryPlus.length} sub="Discovery + Follow up + Angebot" accent />
+        <KpiCard label="In Pipeline" value={pipelineLeads.length} sub="Qualifiziert + Gespräche" accent />
         <KpiCard label="Angebote erstellt" value={angebotLeads.length} sub="Deal: Angebot schicken" />
         <KpiCard label="Verloren" value={lostLeads.length} sub={`${lostNoReason.length} ohne Grund`} />
         <KpiCard label="Amt-Termine" value={leadsWithTermin.length} sub="Termine gebucht" />

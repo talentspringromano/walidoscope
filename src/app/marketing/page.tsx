@@ -46,13 +46,13 @@ const creativeDeepFunnel = metaAds.map((ad) => {
   const adLeads = leads.filter(
     (l) => l.adId === ad.adId || l.adId === `ag:${ad.adId}` || l.adId.includes(ad.adId.slice(-10))
   );
-  const discovery = adLeads.filter(
-    (l) => l.leadStatus === "Discovery Call" || l.leadStatus === "Follow up" || l.leadStatus === "Angebot zuschicken"
+  const qualified = adLeads.filter(
+    (l) => l.leadStatus === "Vertriebsqualifiziert" || l.leadStatus === "Kennenlerngespräch gebucht" || l.leadStatus === "Beratungsgespräch gebucht"
   ).length;
   const angebot = adLeads.filter(
-    (l) => l.dealStatus === "Angebot schicken" || l.leadStatus === "Angebot zuschicken"
+    (l) => l.leadStatus === "Gewonnen"
   ).length;
-  return { ...ad, airtableLeads: adLeads.length, discovery, angebot };
+  return { ...ad, airtableLeads: adLeads.length, discovery: qualified, angebot };
 });
 
 /* ── Perspective Funnel ── */

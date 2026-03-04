@@ -27,39 +27,40 @@ const metaLeads = leads.filter(
   (l) => l.platform === "Facebook" || l.platform === "Instagram"
 );
 const kursnetLeads = leads.filter((l) => l.platform === "Kursnet");
+const indeedLeads = leads.filter((l) => l.platform === "Indeed");
 const totalLeads = leads.length;
 
-const discoveryCall = leads.filter(
+const qualifiedPlus = leads.filter(
   (l) =>
-    l.leadStatus === "Discovery Call" ||
-    l.leadStatus === "Follow up" ||
-    l.leadStatus === "Angebot zuschicken"
+    l.leadStatus === "Vertriebsqualifiziert" ||
+    l.leadStatus === "Kennenlerngespräch gebucht" ||
+    l.leadStatus === "Beratungsgespräch gebucht"
 ).length;
-const angebotSent = leads.filter(
-  (l) =>
-    l.dealStatus === "Angebot schicken" ||
-    l.leadStatus === "Angebot zuschicken"
+const gewonnen = leads.filter(
+  (l) => l.leadStatus === "Gewonnen"
 ).length;
 const terminCount = leads.filter((l) => l.terminBeimAmt).length;
 
 const funnelData = [
   { name: "Leads", value: totalLeads },
-  { name: "Discovery Call+", value: discoveryCall },
-  { name: "Angebot", value: angebotSent },
+  { name: "Qualifiziert+", value: qualifiedPlus },
+  { name: "Gewonnen", value: gewonnen },
   { name: "Amt-Termin", value: terminCount },
 ];
 
 const statusData = [
   { name: "Neuer Lead", count: leads.filter((l) => l.leadStatus === "Neuer Lead").length },
-  { name: "1x NE", count: leads.filter((l) => l.leadStatus === "1x NE").length },
-  { name: "Discovery Call", count: leads.filter((l) => l.leadStatus === "Discovery Call").length },
-  { name: "Follow up", count: leads.filter((l) => l.leadStatus === "Follow up").length },
-  { name: "Angebot", count: leads.filter((l) => l.leadStatus === "Angebot zuschicken").length },
+  { name: "Rückruf", count: leads.filter((l) => l.leadStatus === "Rückruf").length },
+  { name: "Qualifiziert", count: leads.filter((l) => l.leadStatus === "Vertriebsqualifiziert").length },
+  { name: "Reterminierung", count: leads.filter((l) => l.leadStatus === "Reterminierung").length },
+  { name: "Gespräch", count: leads.filter((l) => l.leadStatus === "Kennenlerngespräch gebucht" || l.leadStatus === "Beratungsgespräch gebucht").length },
+  { name: "Gewonnen", count: leads.filter((l) => l.leadStatus === "Gewonnen").length },
   { name: "Verloren", count: leads.filter((l) => l.leadStatus === "Verloren").length },
 ];
 
 const channelData = [
   { name: "Meta (FB/IG)", leads: metaLeads.length, spend: totalMetaSpend, organic: false },
+  { name: "Indeed", leads: indeedLeads.length, spend: 0, organic: true },
   { name: "Kursnet", leads: kursnetLeads.length, spend: 0, organic: true },
 ];
 
@@ -69,11 +70,14 @@ function parseDE(dateStr: string): string {
   return `${year}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`;
 }
 
-const timelineMap = new Map<string, { Facebook: number; Instagram: number; Kursnet: number }>();
+const timelineMap = new Map<string, { Facebook: number; Instagram: number; Kursnet: number; Indeed: number }>();
 leads.forEach((l) => {
   const date = parseDE(l.createdOn);
-  const entry = timelineMap.get(date) ?? { Facebook: 0, Instagram: 0, Kursnet: 0 };
-  entry[l.platform]++;
+  if (!date || date === "NaN-NaN-NaN") return;
+  const entry = timelineMap.get(date) ?? { Facebook: 0, Instagram: 0, Kursnet: 0, Indeed: 0 };
+  if (l.platform === "Facebook" || l.platform === "Instagram" || l.platform === "Kursnet" || l.platform === "Indeed") {
+    entry[l.platform]++;
+  }
   timelineMap.set(date, entry);
 });
 
@@ -84,7 +88,7 @@ const timelineData = Array.from(timelineMap.entries())
     Facebook: counts.Facebook,
     Instagram: counts.Instagram,
     Kursnet: counts.Kursnet,
-    Gesamt: counts.Facebook + counts.Instagram + counts.Kursnet,
+    Indeed: counts.Indeed,
   }));
 
 export default function OverviewPage() {
@@ -105,7 +109,7 @@ export default function OverviewPage() {
         <KpiCard
           label="Gesamte Leads"
           value={totalLeads}
-          sub={`${metaLeads.length} Meta · ${kursnetLeads.length} Kursnet`}
+          sub={`${metaLeads.length} Meta · ${kursnetLeads.length} Kursnet · ${indeedLeads.length} Indeed`}
           icon={<Users className="h-4 w-4" />}
           accent
         />
@@ -179,6 +183,10 @@ export default function OverviewPage() {
                 <stop offset="0%" stopColor="#5eead4" stopOpacity={0.3} />
                 <stop offset="100%" stopColor="#5eead4" stopOpacity={0} />
               </linearGradient>
+              <linearGradient id="gIn" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#fb923c" stopOpacity={0.3} />
+                <stop offset="100%" stopColor="#fb923c" stopOpacity={0} />
+              </linearGradient>
             </defs>
             <CartesianGrid strokeDasharray="3 3" stroke="#1c1917" vertical={false} />
             <XAxis dataKey="date" {...AXIS_STYLE} axisLine={false} tickLine={false} />
@@ -192,6 +200,7 @@ export default function OverviewPage() {
             <Area type="monotone" dataKey="Facebook" stackId="1" stroke="#818cf8" fill="url(#gFb)" strokeWidth={2} />
             <Area type="monotone" dataKey="Instagram" stackId="1" stroke="#e2a96e" fill="url(#gIg)" strokeWidth={2} />
             <Area type="monotone" dataKey="Kursnet" stackId="1" stroke="#5eead4" fill="url(#gKn)" strokeWidth={2} />
+            <Area type="monotone" dataKey="Indeed" stackId="1" stroke="#fb923c" fill="url(#gIn)" strokeWidth={2} />
           </AreaChart>
         </ResponsiveContainer>
       </SectionCard>
