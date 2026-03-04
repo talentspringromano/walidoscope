@@ -1,0 +1,39 @@
+name: Refresh Aircall Data
+
+on:
+  schedule:
+    - cron: "0 */6 * * *" # Every 6 hours
+  workflow_dispatch: # Manual trigger from GitHub UI
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch Aircall data
+        run: npx tsx scripts/fetch-aircall.ts
+        env:
+          AIRCALL_API_ID: ${{ secrets.AIRCALL_API_ID }}
+          AIRCALL_API_TOKEN: ${{ secrets.AIRCALL_API_TOKEN }}
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/aircall-data.json
+          git diff --cached --quiet || git commit -m "chore: refresh aircall data [automated]"
+          git push

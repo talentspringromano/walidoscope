@@ -3,8 +3,13 @@
  * Usage: npx tsx scripts/fetch-aircall.ts
  */
 
-const API_ID = process.env.AIRCALL_API_ID || "***REMOVED***";
-const API_TOKEN = process.env.AIRCALL_API_TOKEN || "***REMOVED***";
+const API_ID = process.env.AIRCALL_API_ID;
+const API_TOKEN = process.env.AIRCALL_API_TOKEN;
+
+if (!API_ID || !API_TOKEN) {
+  console.error("Missing AIRCALL_API_ID or AIRCALL_API_TOKEN environment variables.");
+  process.exit(1);
+}
 const AUTH = Buffer.from(`${API_ID}:${API_TOKEN}`).toString("base64");
 
 const SELLERS: Record<number, string> = {
