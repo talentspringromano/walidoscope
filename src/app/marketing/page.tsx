@@ -22,6 +22,7 @@ import {
 
 /* ── Lead Segmentierung ── */
 function classifyLead(l: (typeof leads)[0]) {
+  if (l.platform === "Kursnet") return "High-Touch";
   const arbeitslos = l.arbeitslosGemeldet === "Ja";
   const baldArbeitslos = l.arbeitslosGemeldet.includes("3 Monaten");
   const vorerfahrung = l.vorerfahrung.includes("relevante Erfahrung");
