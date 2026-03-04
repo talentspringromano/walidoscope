@@ -16,6 +16,8 @@ const SELLERS: Record<number, string> = {
   1093878: "Walid Karimi",
   1862427: "Nele Pfau",
   1875176: "Bastian Wuske",
+  1862760: "Eric H.",
+  1862761: "Michel G.",
 };
 const SELLER_IDS = new Set(Object.keys(SELLERS).map(Number));
 
