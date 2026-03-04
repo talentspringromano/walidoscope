@@ -5,7 +5,8 @@ import { ActivityCalendar } from "@/components/activity-calendar";
 import { leads } from "@/data/leads";
 import { aircallSellers, aircallFetchedAt, formatDuration } from "@/data/aircall";
 import { TOOLTIP_STYLE, AXIS_STYLE, PALETTE, SELLER_BAR_COLORS } from "@/components/chart-theme";
-import { Phone, PhoneOutgoing, PhoneIncoming, Clock } from "lucide-react";
+import { useState, useMemo } from "react";
+import { Phone, PhoneOutgoing, PhoneIncoming, Clock, ArrowUpDown, ArrowUp, ArrowDown } from "lucide-react";
 import {
   BarChart,
   Bar,
@@ -81,6 +82,104 @@ const GRADIENT_PAIRS = [
   { from: "#5eead4", to: "#2dd4bf" },
   { from: "#818cf8", to: "#6366f1" },
 ];
+
+type BLSortKey = "total" | "discovery" | "angebot" | "conversionRate" | "calls" | "avgDuration";
+type BLSortDir = "asc" | "desc";
+
+function Bestenliste({ data }: { data: ReturnType<typeof sellerStats>[] }) {
+  const [sortKey, setSortKey] = useState<BLSortKey>("angebot");
+  const [sortDir, setSortDir] = useState<BLSortDir>("desc");
+
+  function getValue(s: ReturnType<typeof sellerStats>, key: BLSortKey): number {
+    switch (key) {
+      case "total": return s.total;
+      case "discovery": return s.discovery;
+      case "angebot": return s.angebot;
+      case "conversionRate": return s.conversionRate;
+      case "calls": return s.aircall?.totalCalls ?? 0;
+      case "avgDuration": return s.aircall?.avgDurationSec ?? 0;
+    }
+  }
+
+  const sorted = useMemo(() =>
+    [...data].sort((a, b) => {
+      const av = getValue(a, sortKey);
+      const bv = getValue(b, sortKey);
+      return sortDir === "desc" ? bv - av : av - bv;
+    }), [data, sortKey, sortDir]);
+
+  function toggle(key: BLSortKey) {
+    if (sortKey === key) setSortDir((d) => (d === "asc" ? "desc" : "asc"));
+    else { setSortKey(key); setSortDir("desc"); }
+  }
+
+  function SortIcon({ col }: { col: BLSortKey }) {
+    if (sortKey !== col) return <ArrowUpDown className="h-3 w-3 ml-1 opacity-30" />;
+    return sortDir === "desc"
+      ? <ArrowDown className="h-3 w-3 ml-1 text-[#e2a96e]" />
+      : <ArrowUp className="h-3 w-3 ml-1 text-[#e2a96e]" />;
+  }
+
+  const cols: [BLSortKey | null, string, string][] = [
+    [null, "Rang", "text-left pl-2"],
+    [null, "Vertriebler", "text-left pl-4"],
+    ["total", "Leads", "text-right pr-5"],
+    ["discovery", "Discovery+", "text-right pr-5"],
+    ["angebot", "Angebote", "text-right pr-5"],
+    ["conversionRate", "Conversion %", "text-right pr-5"],
+    ["calls", "Calls", "text-right pr-5"],
+    ["avgDuration", "Avg Dauer", "text-right pr-2"],
+  ];
+
+  return (
+    <SectionCard title="Bestenliste">
+      <div className="overflow-x-auto -mx-2">
+        <table className="w-full premium-table">
+          <thead>
+            <tr>
+              {cols.map(([key, label, cls]) => (
+                <th
+                  key={label}
+                  className={`${cls} ${key ? "cursor-pointer select-none hover:text-[#a8a29e] transition-colors" : ""}`}
+                  onClick={key ? () => toggle(key) : undefined}
+                >
+                  <span className="inline-flex items-center">
+                    {label}
+                    {key && <SortIcon col={key} />}
+                  </span>
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {sorted.map((s, i) => (
+              <tr key={s.name}>
+                <td className="pl-2">
+                  <span className={`inline-flex h-7 w-7 items-center justify-center rounded-lg text-[11px] font-bold ${
+                    i === 0
+                      ? "bg-gradient-to-br from-[#e2a96e] to-[#c4956a] text-[#0c0c0e] shadow-[0_0_16px_rgba(226,169,110,0.3)]"
+                      : "bg-[rgba(255,255,255,0.04)] text-[#57534e]"
+                  }`}>
+                    {i + 1}
+                  </span>
+                </td>
+                <td className="pl-4 text-[14px] font-medium text-[#fafaf9]">{s.name}</td>
+                <td className="text-right pr-5 tabular-nums text-[#a8a29e]">{s.total}</td>
+                <td className="text-right pr-5 tabular-nums text-[#a8a29e]">{s.discovery}</td>
+                <td className="text-right pr-5 tabular-nums font-semibold text-[#5eead4] glow-badge">{s.angebot}</td>
+                <td className="text-right pr-5 tabular-nums text-[#e2a96e] font-medium">
+                  {s.total > 0 ? s.conversionRate.toFixed(1) : "–"}%
+                </td>
+                <td className="text-right pr-5 tabular-nums text-[#a8a29e]">{s.aircall?.totalCalls ?? "–"}</td>
+                <td className="text-right pr-2 tabular-nums text-[#a8a29e]">{s.aircall ? formatDuration(s.aircall.avgDurationSec) : "–"}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </SectionCard>
+  );
+}
 
 export default function SellerPage() {
   return (
@@ -256,50 +355,7 @@ export default function SellerPage() {
       <ActivityCalendar />
 
       {/* Bestenliste */}
-      <SectionCard title="Bestenliste">
-        <div className="overflow-x-auto -mx-2">
-          <table className="w-full premium-table">
-            <thead>
-              <tr>
-                <th className="text-left pl-2">Rang</th>
-                <th className="text-left pl-4">Vertriebler</th>
-                <th className="text-right pr-5">Leads</th>
-                <th className="text-right pr-5">Discovery+</th>
-                <th className="text-right pr-5">Angebote</th>
-                <th className="text-right pr-5">Conversion %</th>
-                <th className="text-right pr-5">Calls</th>
-                <th className="text-right pr-2">Avg Dauer</th>
-              </tr>
-            </thead>
-            <tbody>
-              {sellerData
-                .sort((a, b) => b.angebot - a.angebot)
-                .map((s, i) => (
-                  <tr key={s.name}>
-                    <td className="pl-2">
-                      <span className={`inline-flex h-7 w-7 items-center justify-center rounded-lg text-[11px] font-bold ${
-                        i === 0
-                          ? "bg-gradient-to-br from-[#e2a96e] to-[#c4956a] text-[#0c0c0e] shadow-[0_0_16px_rgba(226,169,110,0.3)]"
-                          : "bg-[rgba(255,255,255,0.04)] text-[#57534e]"
-                      }`}>
-                        {i + 1}
-                      </span>
-                    </td>
-                    <td className="pl-4 text-[14px] font-medium text-[#fafaf9]">{s.name}</td>
-                    <td className="text-right pr-5 tabular-nums text-[#a8a29e]">{s.total}</td>
-                    <td className="text-right pr-5 tabular-nums text-[#a8a29e]">{s.discovery}</td>
-                    <td className="text-right pr-5 tabular-nums font-semibold text-[#5eead4] glow-badge">{s.angebot}</td>
-                    <td className="text-right pr-5 tabular-nums text-[#e2a96e] font-medium">
-                      {s.total > 0 ? ((s.discovery / s.total) * 100).toFixed(1) : "–"}%
-                    </td>
-                    <td className="text-right pr-5 tabular-nums text-[#a8a29e]">{s.aircall?.totalCalls ?? "–"}</td>
-                    <td className="text-right pr-2 tabular-nums text-[#a8a29e]">{s.aircall ? formatDuration(s.aircall.avgDurationSec) : "–"}</td>
-                  </tr>
-                ))}
-            </tbody>
-          </table>
-        </div>
-      </SectionCard>
+      <Bestenliste data={sellerData} />
     </div>
   );
 }

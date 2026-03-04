@@ -1,11 +1,12 @@
 "use client";
 
+import { useState, useMemo } from "react";
 import { KpiCard, SectionCard } from "@/components/kpi-card";
 import { leads } from "@/data/leads";
 import { metaAds, totalMetaSpend, totalMetaLeads, avgCPL } from "@/data/meta-ads";
 import { perspectiveSummary } from "@/data/perspective";
 import { TOOLTIP_STYLE, AXIS_STYLE, PALETTE, SEGMENT_COLORS, FUNNEL_COLORS } from "@/components/chart-theme";
-import { AlertTriangle } from "lucide-react";
+import { AlertTriangle, ArrowUpDown, ArrowUp, ArrowDown } from "lucide-react";
 import {
   BarChart,
   Bar,
@@ -67,7 +68,52 @@ const costData = metaAds.map((ad) => ({
   cpl: ad.costPerResult,
 }));
 
+type SortKey = "shortName" | "amountSpent" | "impressions" | "clicksAll" | "results" | "costPerResult" | "airtableLeads" | "discovery" | "angebot";
+type SortDir = "asc" | "desc";
+type FilterPreset = "all" | "low-cpl" | "high-leads" | "deep-funnel";
+
+const FILTER_PRESETS: { key: FilterPreset; label: string }[] = [
+  { key: "all", label: "Alle" },
+  { key: "low-cpl", label: "CPL < €5" },
+  { key: "high-leads", label: "Leads ≥ 6" },
+  { key: "deep-funnel", label: "Mit Angebot" },
+];
+
 export default function MarketingPage() {
+  const [sortKey, setSortKey] = useState<SortKey>("results");
+  const [sortDir, setSortDir] = useState<SortDir>("desc");
+  const [filter, setFilter] = useState<FilterPreset>("all");
+
+  const filteredAndSorted = useMemo(() => {
+    let data = [...creativeDeepFunnel];
+
+    if (filter === "low-cpl") data = data.filter((d) => d.costPerResult < 5);
+    else if (filter === "high-leads") data = data.filter((d) => d.results >= 6);
+    else if (filter === "deep-funnel") data = data.filter((d) => d.angebot > 0);
+
+    data.sort((a, b) => {
+      const aVal = a[sortKey as keyof typeof a];
+      const bVal = b[sortKey as keyof typeof b];
+      if (typeof aVal === "string" && typeof bVal === "string")
+        return sortDir === "asc" ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
+      return sortDir === "asc" ? (aVal as number) - (bVal as number) : (bVal as number) - (aVal as number);
+    });
+
+    return data;
+  }, [sortKey, sortDir, filter]);
+
+  function toggleSort(key: SortKey) {
+    if (sortKey === key) setSortDir((d) => (d === "asc" ? "desc" : "asc"));
+    else { setSortKey(key); setSortDir("desc"); }
+  }
+
+  function SortIcon({ col }: { col: SortKey }) {
+    if (sortKey !== col) return <ArrowUpDown className="h-3 w-3 ml-1 opacity-30" />;
+    return sortDir === "desc"
+      ? <ArrowDown className="h-3 w-3 ml-1 text-[#e2a96e]" />
+      : <ArrowUp className="h-3 w-3 ml-1 text-[#e2a96e]" />;
+  }
+
   return (
     <div className="space-y-8">
       <div>
@@ -85,23 +131,56 @@ export default function MarketingPage() {
 
       {/* Creative Performance Table */}
       <SectionCard title="Creative Performance (Deep-Funnel)">
+        {/* Filter Chips */}
+        <div className="flex items-center gap-2 mb-4">
+          {FILTER_PRESETS.map((f) => (
+            <button
+              key={f.key}
+              onClick={() => setFilter(f.key)}
+              className={`px-3 py-1 rounded-lg text-[11px] font-medium transition-all ${
+                filter === f.key
+                  ? "bg-[rgba(226,169,110,0.12)] text-[#e2a96e] border border-[rgba(226,169,110,0.25)]"
+                  : "text-[#78716c] border border-[rgba(255,255,255,0.06)] hover:text-[#a8a29e] hover:bg-[rgba(255,255,255,0.03)]"
+              }`}
+            >
+              {f.label}
+            </button>
+          ))}
+          <span className="ml-auto text-[11px] text-[#44403c]">
+            {filteredAndSorted.length} von {creativeDeepFunnel.length}
+          </span>
+        </div>
+
         <div className="overflow-x-auto -mx-2">
           <table className="w-full premium-table">
             <thead>
               <tr>
-                <th className="text-left pl-2">Creative</th>
-                <th className="text-right pr-5">Spend</th>
-                <th className="text-right pr-5">Impr.</th>
-                <th className="text-right pr-5">Clicks</th>
-                <th className="text-right pr-5">Leads</th>
-                <th className="text-right pr-5">CPL</th>
-                <th className="text-right pr-5">CRM</th>
-                <th className="text-right pr-5">Discovery+</th>
-                <th className="text-right pr-2">Angebot</th>
+                {([
+                  ["shortName", "Creative", "text-left pl-2"],
+                  ["amountSpent", "Spend", "text-right pr-5"],
+                  ["impressions", "Impr.", "text-right pr-5"],
+                  ["clicksAll", "Clicks", "text-right pr-5"],
+                  ["results", "Leads", "text-right pr-5"],
+                  ["costPerResult", "CPL", "text-right pr-5"],
+                  ["airtableLeads", "CRM", "text-right pr-5"],
+                  ["discovery", "Discovery+", "text-right pr-5"],
+                  ["angebot", "Angebot", "text-right pr-2"],
+                ] as [SortKey, string, string][]).map(([key, label, cls]) => (
+                  <th
+                    key={key}
+                    className={`${cls} cursor-pointer select-none hover:text-[#a8a29e] transition-colors`}
+                    onClick={() => toggleSort(key)}
+                  >
+                    <span className="inline-flex items-center">
+                      {label}
+                      <SortIcon col={key} />
+                    </span>
+                  </th>
+                ))}
               </tr>
             </thead>
             <tbody>
-              {creativeDeepFunnel.map((ad) => (
+              {filteredAndSorted.map((ad) => (
                 <tr key={ad.adId}>
                   <td className="pl-2 pr-4 text-[13px] font-medium text-[#fafaf9]">{ad.shortName}</td>
                   <td className="text-right pr-5 tabular-nums text-[#78716c]">€{ad.amountSpent.toFixed(2)}</td>
