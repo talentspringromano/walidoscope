@@ -1,0 +1,38 @@
+name: Refresh Airtable Data
+
+on:
+  schedule:
+    - cron: "30 */6 * * *" # Every 6 hours (offset from Aircall)
+  workflow_dispatch: # Manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Fetch Airtable data
+        run: npx tsx scripts/fetch-airtable.ts
+        env:
+          AIRTABLE_PAT: ${{ secrets.AIRTABLE_PAT }}
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/leads.ts
+          git diff --cached --quiet || git commit -m "chore: refresh airtable leads [automated]"
+          git push
