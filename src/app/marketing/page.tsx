@@ -5,6 +5,7 @@ import { leads } from "@/data/leads";
 import { metaAds, totalMetaSpend, totalMetaLeads, avgCPL } from "@/data/meta-ads";
 import { perspectiveSummary } from "@/data/perspective";
 import { TOOLTIP_STYLE, AXIS_STYLE, PALETTE, SEGMENT_COLORS, FUNNEL_COLORS } from "@/components/chart-theme";
+import { AlertTriangle } from "lucide-react";
 import {
   BarChart,
   Bar,
@@ -81,7 +82,7 @@ export default function MarketingPage() {
         <KpiCard label="Meta Spend" value={`€${totalMetaSpend.toFixed(2)}`} sub="7 Creatives" accent />
         <KpiCard label="Meta Leads" value={totalMetaLeads} sub={`€${avgCPL.toFixed(2)} CPL`} />
         <KpiCard label="Kursnet Visits" value={perspectiveSummary.totalVisits} sub={`${perspectiveSummary.converted} konvertiert`} />
-        <KpiCard label="Kursnet Leads" value={leads.filter((l) => l.platform === "Kursnet").length} sub="Aus Airtable CRM" />
+        <KpiCard label="Kursnet Leads" value={leads.filter((l) => l.platform === "Kursnet").length} sub={`${leads.filter((l) => l.platform === "Kursnet").length} im CRM · ${perspectiveSummary.converted} konvertiert`} />
       </div>
 
       {/* Creative Performance Table */}
@@ -163,21 +164,60 @@ export default function MarketingPage() {
         </SectionCard>
       </div>
 
+      {/* CRM Gap Warning */}
+      <div className="rounded-xl border border-amber-500/30 px-5 py-4 flex items-start gap-3" style={{ background: "rgba(245, 158, 11, 0.12)" }}>
+        <AlertTriangle className="h-5 w-5 text-amber-400 mt-0.5 shrink-0" />
+        <div>
+          <p className="text-[14px] font-semibold text-amber-300">CRM-Erfassungslücke erkannt</p>
+          <p className="text-[13px] text-amber-400/80 mt-1">
+            12 von {perspectiveSummary.converted} Perspective-Konversionen fehlen im CRM. Nur {leads.filter((l) => l.platform === "Kursnet").length} wurden in Airtable als Kursnet-Leads erfasst.
+          </p>
+        </div>
+      </div>
+
       {/* Perspective Funnel */}
       <SectionCard title="Kursnet/meinNOW Landing Page Funnel">
-        <div className="grid gap-8 lg:grid-cols-2">
-          <ResponsiveContainer width="100%" height={220}>
-            <FunnelChart>
-              <Tooltip {...TOOLTIP_STYLE} />
-              <Funnel dataKey="value" data={perspFunnelData} isAnimationActive animationDuration={800}>
-                <LabelList position="center" fill="#fafaf9" stroke="none" dataKey="value" fontSize={18} fontWeight={600} />
-                <LabelList position="right" fill="#78716c" stroke="none" dataKey="name" fontSize={12} />
-                {perspFunnelData.map((_, i) => (
-                  <Cell key={i} fill={FUNNEL_COLORS[i]} />
-                ))}
-              </Funnel>
-            </FunnelChart>
-          </ResponsiveContainer>
+        <div className="grid gap-8 lg:grid-cols-3">
+          <div className="lg:col-span-1">
+            <ResponsiveContainer width="100%" height={220}>
+              <FunnelChart>
+                <Tooltip {...TOOLTIP_STYLE} />
+                <Funnel dataKey="value" data={perspFunnelData} isAnimationActive animationDuration={800}>
+                  <LabelList position="center" fill="#fafaf9" stroke="none" dataKey="value" fontSize={18} fontWeight={600} />
+                  <LabelList position="right" fill="#78716c" stroke="none" dataKey="name" fontSize={12} />
+                  {perspFunnelData.map((_, i) => (
+                    <Cell key={i} fill={FUNNEL_COLORS[i]} />
+                  ))}
+                </Funnel>
+              </FunnelChart>
+            </ResponsiveContainer>
+          </div>
+
+          {/* Gap Visualization */}
+          <div className="flex flex-col justify-center space-y-4">
+            <h3 className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#57534e]">
+              CRM-Erfassungs-Gap
+            </h3>
+            {[
+              { label: "Perspective konvertiert", value: perspectiveSummary.converted, color: "text-[#818cf8]" },
+              { label: "Im CRM erfasst", value: leads.filter((l) => l.platform === "Kursnet").length, color: "text-[#5eead4]" },
+              { label: "Fehlend", value: perspectiveSummary.converted - leads.filter((l) => l.platform === "Kursnet").length, color: "text-amber-400" },
+            ].map((row) => (
+              <div key={row.label} className="flex items-center justify-between">
+                <span className="text-[12px] text-[#a8a29e]">{row.label}</span>
+                <span className={`text-[18px] font-semibold tabular-nums ${row.color}`}>{row.value}</span>
+              </div>
+            ))}
+            <div className="h-2 rounded-full bg-[rgba(255,255,255,0.04)] overflow-hidden mt-1">
+              <div
+                className="h-full rounded-full bg-gradient-to-r from-[#5eead4] to-[#5eead4]"
+                style={{ width: `${Math.round((leads.filter((l) => l.platform === "Kursnet").length / perspectiveSummary.converted) * 100)}%` }}
+              />
+            </div>
+            <p className="text-[11px] text-[#57534e]">
+              {Math.round((leads.filter((l) => l.platform === "Kursnet").length / perspectiveSummary.converted) * 100)}% Erfassungsrate
+            </p>
+          </div>
 
           <div className="space-y-3">
             <h3 className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#57534e] mb-4">
