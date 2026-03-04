@@ -57,8 +57,8 @@ const creativeDeepFunnel = metaAds.map((ad) => {
 
 /* ── Perspective Funnel ── */
 const perspFunnelData = [
-  { name: "LP Visits", value: perspectiveSummary.totalVisits, label: `${perspectiveSummary.totalVisits} LP Visits` },
-  { name: "Konvertiert", value: perspectiveSummary.converted, label: `${perspectiveSummary.converted} Konvertiert` },
+  { name: `${perspectiveSummary.totalVisits} LP Visits`, value: perspectiveSummary.totalVisits },
+  { name: `${perspectiveSummary.converted} Konvertiert`, value: perspectiveSummary.converted },
 ];
 
 /* ── Cost per Ad ── */
@@ -182,7 +182,7 @@ export default function MarketingPage() {
               <FunnelChart>
                 <Tooltip {...TOOLTIP_STYLE} />
                 <Funnel dataKey="value" data={perspFunnelData} isAnimationActive animationDuration={800}>
-                  <LabelList position="right" fill="#a8a29e" stroke="none" dataKey="label" fontSize={14} fontWeight={600} />
+                  <LabelList position="right" fill="#a8a29e" stroke="none" dataKey="name" fontSize={14} fontWeight={600} />
                   {perspFunnelData.map((_, i) => (
                     <Cell key={i} fill={FUNNEL_COLORS[i]} />
                   ))}
