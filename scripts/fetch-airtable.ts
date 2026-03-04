@@ -19,26 +19,6 @@ interface AirtableRecord {
   createdTime: string;
 }
 
-// Field name mapping: Airtable column → our Lead field
-const FIELD_MAP: Record<string, string> = {
-  "Name": "name",
-  "Lead - Status": "leadStatus",
-  "Deal - Status": "dealStatus",
-  "Verlustgrund": "verlustgrund",
-  "Ad ID": "adId",
-  "Ad Name": "adName",
-  "Platform": "platform",
-  "Arbeitslos gemeldet": "arbeitslosGemeldet",
-  "Deutschkenntnisse": "deutschkenntnisse",
-  "Alter": "alter",
-  "Vorerfahrung im Personalwesen": "vorerfahrung",
-  "Zuständiger Vertriebler": "vertriebler",
-  "Timestamp - Created on": "createdOn",
-  "Termin beim Amt": "terminBeimAmt",
-  "Closing Wahrscheinlichkeit": "closingWahrscheinlichkeit",
-  "utm_title": "utmTitle",
-};
-
 async function fetchAllRecords(): Promise<AirtableRecord[]> {
   const all: AirtableRecord[] = [];
   let offset: string | undefined;
@@ -72,29 +52,62 @@ async function fetchAllRecords(): Promise<AirtableRecord[]> {
   return all;
 }
 
+function str(val: unknown): string {
+  if (val == null) return "";
+  if (typeof val === "string") return val.trim();
+  // Linked records come as arrays: [{id, name}] or ["name"]
+  if (Array.isArray(val)) {
+    return val.map((v) => (typeof v === "object" && v?.name ? v.name : String(v))).join(", ");
+  }
+  if (typeof val === "object" && (val as { name?: string }).name) {
+    return (val as { name: string }).name;
+  }
+  return String(val);
+}
+
+function formatDateDE(val: unknown): string {
+  if (!val || typeof val !== "string") return "";
+  // ISO format "2026-01-27T18:09:00.000Z" → "27.1.2026 18:09"
+  if (val.includes("T") || val.includes("-")) {
+    const d = new Date(val);
+    if (isNaN(d.getTime())) return str(val);
+    return `${d.getDate()}.${d.getMonth() + 1}.${d.getFullYear()} ${d.getHours().toString().padStart(2, "0")}:${d.getMinutes().toString().padStart(2, "0")}`;
+  }
+  return str(val);
+}
+
+function formatDateShort(val: unknown): string {
+  if (!val || typeof val !== "string") return "";
+  // "2026-02-02" → "2.2.2026"
+  if (val.includes("-")) {
+    const [y, m, d] = val.split("-");
+    return `${parseInt(d)}.${parseInt(m)}.${y}`;
+  }
+  return str(val);
+}
+
 function mapRecord(record: AirtableRecord, index: number) {
   const f = record.fields;
-  const lead: Record<string, unknown> = { id: index + 1 };
 
-  for (const [airtableField, ourField] of Object.entries(FIELD_MAP)) {
-    let val = f[airtableField] ?? "";
-
-    // Normalize createdOn to German format "27.1.2026 18:09"
-    if (ourField === "createdOn" && typeof val === "string" && val.includes("T")) {
-      const d = new Date(val);
-      val = `${d.getDate()}.${d.getMonth() + 1}.${d.getFullYear()} ${d.getHours().toString().padStart(2, "0")}:${d.getMinutes().toString().padStart(2, "0")}`;
-    }
-
-    // Normalize terminBeimAmt to "2.2.2026" format
-    if (ourField === "terminBeimAmt" && typeof val === "string" && val.includes("-")) {
-      const [y, m, d] = val.split("-");
-      val = `${parseInt(d)}.${parseInt(m)}.${y}`;
-    }
-
-    lead[ourField] = typeof val === "string" ? val.trim() : String(val ?? "");
-  }
-
-  return lead;
+  return {
+    id: index + 1,
+    name: str(f["Name"]),
+    leadStatus: str(f["Status"]) || str(f["Lead - Status"]),
+    dealStatus: str(f["Deal - Status"]) || str(f["Deal Status"]),
+    verlustgrund: str(f["Verlustgrund"]),
+    adId: str(f["Ad ID"]),
+    adName: str(f["Ad Name"]),
+    platform: str(f["Source"]) || str(f["Platform"]),
+    arbeitslosGemeldet: str(f["Arbeitslos gemeldet"]),
+    deutschkenntnisse: str(f["Deutschkenntnisse"]),
+    alter: str(f["Alter"]),
+    vorerfahrung: str(f["Vorerfahrung im Personalwesen"]),
+    vertriebler: str(f["Zuständiger Vertriebler"]),
+    createdOn: formatDateDE(f["Datum - Created on"] || f["Timestamp - Created on"] || record.createdTime),
+    terminBeimAmt: formatDateShort(f["Termin beim Amt"]),
+    closingWahrscheinlichkeit: str(f["Closing Wahrscheinlichkeit"]),
+    utmTitle: str(f["utm_title"]),
+  };
 }
 
 async function main() {
@@ -102,16 +115,10 @@ async function main() {
   const records = await fetchAllRecords();
   console.log(`Found ${records.length} records.`);
 
-  // Debug: log field names from first record
-  if (records.length > 0) {
-    console.log("API field names:", Object.keys(records[0].fields));
-    console.log("Sample record fields:", JSON.stringify(records[0].fields, null, 2));
-  }
-
   // Sort by created time
   records.sort((a, b) => {
-    const aTime = a.fields["Timestamp - Created on"] as string || a.createdTime;
-    const bTime = b.fields["Timestamp - Created on"] as string || b.createdTime;
+    const aTime = (a.fields["Datum - Created on"] || a.fields["Timestamp - Created on"] || a.createdTime) as string;
+    const bTime = (b.fields["Datum - Created on"] || b.fields["Timestamp - Created on"] || b.createdTime) as string;
     return new Date(aTime).getTime() - new Date(bTime).getTime();
   });
 
@@ -128,7 +135,7 @@ async function main() {
   // Summary
   const statuses: Record<string, number> = {};
   for (const l of leads) {
-    const s = l.leadStatus as string || "Unknown";
+    const s = l.leadStatus || "Unknown";
     statuses[s] = (statuses[s] || 0) + 1;
   }
   console.log("Status breakdown:", statuses);
