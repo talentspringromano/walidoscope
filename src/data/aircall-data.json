@@ -148,5 +148,217 @@
       "calltimeSec": 16568
     }
   ],
-  "fetchedAt": "2026-03-04T19:56:59.133Z"
+  "sellerDaily": [
+    {
+      "seller": "Nele Pfau",
+      "date": "2026-02-19",
+      "dials": 2,
+      "reached": 2,
+      "calltimeSec": 63
+    },
+    {
+      "seller": "Eric H.",
+      "date": "2026-02-20",
+      "dials": 1,
+      "reached": 1,
+      "calltimeSec": 36
+    },
+    {
+      "seller": "Nele Pfau",
+      "date": "2026-02-20",
+      "dials": 5,
+      "reached": 5,
+      "calltimeSec": 3533
+    },
+    {
+      "seller": "Walid Karimi",
+      "date": "2026-02-20",
+      "dials": 1,
+      "reached": 1,
+      "calltimeSec": 940
+    },
+    {
+      "seller": "Eric H.",
+      "date": "2026-02-23",
+      "dials": 2,
+      "reached": 2,
+      "calltimeSec": 232
+    },
+    {
+      "seller": "Nele Pfau",
+      "date": "2026-02-23",
+      "dials": 39,
+      "reached": 39,
+      "calltimeSec": 6667
+    },
+    {
+      "seller": "Walid Karimi",
+      "date": "2026-02-23",
+      "dials": 21,
+      "reached": 21,
+      "calltimeSec": 3785
+    },
+    {
+      "seller": "Michel G.",
+      "date": "2026-02-24",
+      "dials": 21,
+      "reached": 21,
+      "calltimeSec": 2513
+    },
+    {
+      "seller": "Nele Pfau",
+      "date": "2026-02-24",
+      "dials": 73,
+      "reached": 73,
+      "calltimeSec": 5829
+    },
+    {
+      "seller": "Walid Karimi",
+      "date": "2026-02-24",
+      "dials": 4,
+      "reached": 4,
+      "calltimeSec": 3528
+    },
+    {
+      "seller": "Nele Pfau",
+      "date": "2026-02-25",
+      "dials": 54,
+      "reached": 54,
+      "calltimeSec": 3944
+    },
+    {
+      "seller": "Walid Karimi",
+      "date": "2026-02-25",
+      "dials": 2,
+      "reached": 2,
+      "calltimeSec": 269
+    },
+    {
+      "seller": "Michel G.",
+      "date": "2026-02-26",
+      "dials": 4,
+      "reached": 4,
+      "calltimeSec": 684
+    },
+    {
+      "seller": "Nele Pfau",
+      "date": "2026-02-26",
+      "dials": 27,
+      "reached": 27,
+      "calltimeSec": 3320
+    },
+    {
+      "seller": "Walid Karimi",
+      "date": "2026-02-26",
+      "dials": 17,
+      "reached": 17,
+      "calltimeSec": 1443
+    },
+    {
+      "seller": "Eric H.",
+      "date": "2026-02-27",
+      "dials": 15,
+      "reached": 15,
+      "calltimeSec": 2096
+    },
+    {
+      "seller": "Nele Pfau",
+      "date": "2026-02-27",
+      "dials": 20,
+      "reached": 20,
+      "calltimeSec": 1647
+    },
+    {
+      "seller": "Walid Karimi",
+      "date": "2026-02-27",
+      "dials": 5,
+      "reached": 5,
+      "calltimeSec": 541
+    },
+    {
+      "seller": "Eric H.",
+      "date": "2026-03-02",
+      "dials": 9,
+      "reached": 9,
+      "calltimeSec": 691
+    },
+    {
+      "seller": "Michel G.",
+      "date": "2026-03-02",
+      "dials": 25,
+      "reached": 25,
+      "calltimeSec": 1233
+    },
+    {
+      "seller": "Nele Pfau",
+      "date": "2026-03-02",
+      "dials": 47,
+      "reached": 47,
+      "calltimeSec": 6736
+    },
+    {
+      "seller": "Walid Karimi",
+      "date": "2026-03-02",
+      "dials": 16,
+      "reached": 16,
+      "calltimeSec": 4951
+    },
+    {
+      "seller": "Eric H.",
+      "date": "2026-03-03",
+      "dials": 45,
+      "reached": 45,
+      "calltimeSec": 2951
+    },
+    {
+      "seller": "Michel G.",
+      "date": "2026-03-03",
+      "dials": 2,
+      "reached": 2,
+      "calltimeSec": 87
+    },
+    {
+      "seller": "Nele Pfau",
+      "date": "2026-03-03",
+      "dials": 43,
+      "reached": 43,
+      "calltimeSec": 6135
+    },
+    {
+      "seller": "Walid Karimi",
+      "date": "2026-03-03",
+      "dials": 68,
+      "reached": 68,
+      "calltimeSec": 7476
+    },
+    {
+      "seller": "Bastian Wuske",
+      "date": "2026-03-04",
+      "dials": 63,
+      "reached": 63,
+      "calltimeSec": 6984
+    },
+    {
+      "seller": "Eric H.",
+      "date": "2026-03-04",
+      "dials": 53,
+      "reached": 53,
+      "calltimeSec": 2707
+    },
+    {
+      "seller": "Nele Pfau",
+      "date": "2026-03-04",
+      "dials": 39,
+      "reached": 39,
+      "calltimeSec": 6129
+    },
+    {
+      "seller": "Walid Karimi",
+      "date": "2026-03-04",
+      "dials": 3,
+      "reached": 3,
+      "calltimeSec": 748
+    }
+  ],
+  "fetchedAt": "2026-03-04T20:18:19.732Z"
 }
