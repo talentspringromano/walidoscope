@@ -83,7 +83,7 @@ const GRADIENT_PAIRS = [
   { from: "#818cf8", to: "#6366f1" },
 ];
 
-type BLSortKey = "total" | "qualified" | "gewonnen" | "conversionRate" | "calls" | "avgDuration";
+type BLSortKey = "total" | "qualified" | "gewonnen" | "conversionRate" | "bgConvRate" | "calls" | "avgDuration";
 type BLSortDir = "asc" | "desc";
 
 function Bestenliste({ data }: { data: ReturnType<typeof sellerStats>[] }) {
@@ -96,6 +96,7 @@ function Bestenliste({ data }: { data: ReturnType<typeof sellerStats>[] }) {
       case "qualified": return s.qualified;
       case "gewonnen": return s.gewonnen;
       case "conversionRate": return s.conversionRate;
+      case "bgConvRate": return s.total > 0 ? (s.gewonnen / s.total) * 100 : 0;
       case "calls": return s.aircall?.totalCalls ?? 0;
       case "avgDuration": return s.aircall?.avgDurationSec ?? 0;
     }
@@ -127,6 +128,7 @@ function Bestenliste({ data }: { data: ReturnType<typeof sellerStats>[] }) {
     ["qualified", "Qualifiziert+", "text-right pr-5"],
     ["gewonnen", "Gewonnen", "text-right pr-5"],
     ["conversionRate", "Conversion %", "text-right pr-5"],
+    ["bgConvRate", "BG-Conv %", "text-right pr-5"],
     ["calls", "Calls", "text-right pr-5"],
     ["avgDuration", "Avg Dauer", "text-right pr-2"],
   ];
@@ -169,6 +171,9 @@ function Bestenliste({ data }: { data: ReturnType<typeof sellerStats>[] }) {
                 <td className="text-right pr-5 tabular-nums font-semibold text-[#5eead4] glow-badge">{s.gewonnen}</td>
                 <td className="text-right pr-5 tabular-nums text-[#e2a96e] font-medium">
                   {s.total > 0 ? s.conversionRate.toFixed(1) : "–"}%
+                </td>
+                <td className="text-right pr-5 tabular-nums text-[#5eead4] font-medium">
+                  {s.total > 0 ? ((s.gewonnen / s.total) * 100).toFixed(1) : "–"}%
                 </td>
                 <td className="text-right pr-5 tabular-nums text-[#a8a29e]">{s.aircall?.totalCalls ?? "–"}</td>
                 <td className="text-right pr-2 tabular-nums text-[#a8a29e]">{s.aircall ? formatDuration(s.aircall.avgDurationSec) : "–"}</td>
@@ -270,6 +275,10 @@ export default function SellerPage() {
                   <div className="flex items-center gap-2 mt-0.5">
                     <span className="text-[12px] tabular-nums font-medium" style={{ color: GRADIENT_PAIRS[idx].from }}>
                       {s.total > 0 ? s.conversionRate.toFixed(1) : "–"}% Conversion
+                    </span>
+                    <span className="text-[#44403c]">·</span>
+                    <span className="text-[12px] tabular-nums font-medium text-[#5eead4]">
+                      {s.total > 0 ? ((s.gewonnen / s.total) * 100).toFixed(1) : "–"}% BG-Conv
                     </span>
                     <span className="text-[#44403c]">·</span>
                     <span className="text-[12px] text-[#57534e]">{s.total} Leads</span>

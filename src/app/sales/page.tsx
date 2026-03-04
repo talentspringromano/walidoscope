@@ -50,6 +50,12 @@ lostLeads.forEach((l) => {
   lostBySeller[l.vertriebler] = entry;
 });
 
+const gewonnenLeads = leads.filter((l) => l.leadStatus === "Gewonnen");
+const gewonnenBySeller: Record<string, number> = {};
+gewonnenLeads.forEach((l) => {
+  gewonnenBySeller[l.vertriebler] = (gewonnenBySeller[l.vertriebler] || 0) + 1;
+});
+
 const angebotLeads = leads.filter(
   (l) => l.dealStatus === "Angebot schicken" || l.leadStatus === "Beratungsgespräch gebucht"
 );
@@ -77,8 +83,9 @@ export default function SalesPage() {
         <p className="mt-1 text-[13px] text-[#57534e]">Lead-Pipeline, Verlustgründe & Deal-Tracking</p>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 stagger-in">
+      <div className="grid grid-cols-2 gap-4 lg:grid-cols-5 stagger-in">
         <KpiCard label="In Pipeline" value={pipelineLeads.length} sub="Qualifiziert + Gespräche" accent />
+        <KpiCard label="BGs (Gewonnen)" value={gewonnenLeads.length} sub={Object.entries(gewonnenBySeller).map(([name, count]) => `${name.split(" ")[0]}: ${count}`).join(" · ") || "Keine"} />
         <KpiCard label="Angebote erstellt" value={angebotLeads.length} sub="Deal: Angebot schicken" />
         <KpiCard label="Verloren" value={lostLeads.length} sub={`${lostNoReason.length} ohne Grund`} />
         <KpiCard label="Amt-Termine" value={leadsWithTermin.length} sub="Termine gebucht" />

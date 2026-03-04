@@ -56,9 +56,11 @@ const creativeDeepFunnel = metaAds.map((ad) => {
 });
 
 /* ── Perspective Funnel ── */
+const gewonnenKursnet = leads.filter((l) => l.platform === "Kursnet" && l.leadStatus === "Gewonnen").length;
 const perspFunnelData = [
   { name: "LP Visits", value: perspectiveSummary.totalVisits },
   { name: "Konvertiert", value: perspectiveSummary.converted },
+  { name: "Gewonnen (BG)", value: gewonnenKursnet },
 ];
 
 /* ── Cost per Ad ── */
@@ -276,11 +278,19 @@ export default function MarketingPage() {
                   <span className="text-[13px] text-[#78716c]">{d.name}</span>
                 </div>
               ))}
-              <div className="mt-1 pt-3 border-t border-[rgba(255,255,255,0.06)]">
-                <span className="text-[12px] text-[#57534e]">Conversion Rate</span>
-                <span className="ml-2 text-[16px] font-bold text-[#e2a96e] tabular-nums">
-                  {((perspectiveSummary.converted / perspectiveSummary.totalVisits) * 100).toFixed(1)}%
-                </span>
+              <div className="mt-1 pt-3 border-t border-[rgba(255,255,255,0.06)] space-y-1.5">
+                <div className="flex items-center justify-between">
+                  <span className="text-[12px] text-[#57534e]">Visit → Gewonnen</span>
+                  <span className="text-[16px] font-bold text-[#e2a96e] tabular-nums">
+                    {perspectiveSummary.totalVisits > 0 ? ((gewonnenKursnet / perspectiveSummary.totalVisits) * 100).toFixed(1) : "0"}%
+                  </span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-[12px] text-[#57534e]">Konvertiert → Gewonnen</span>
+                  <span className="text-[16px] font-bold text-[#5eead4] tabular-nums">
+                    {perspectiveSummary.converted > 0 ? ((gewonnenKursnet / perspectiveSummary.converted) * 100).toFixed(1) : "0"}%
+                  </span>
+                </div>
               </div>
             </div>
           </div>
