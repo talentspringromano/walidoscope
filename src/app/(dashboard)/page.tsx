@@ -136,38 +136,36 @@ export default function OverviewPage() {
       {/* Charts Row */}
       <div className="grid gap-6 lg:grid-cols-2 stagger-in">
         <SectionCard title="Conversion Funnel">
-          <div className="space-y-3 py-2">
+          <div className="space-y-5 py-2">
             {funnelData.map((stage, i) => {
               const maxValue = funnelData[0].value;
-              const widthPct = Math.max(12, (stage.value / maxValue) * 100);
-              const prevValue = i > 0 ? funnelData[i - 1].value : null;
-              const convRate = prevValue ? ((stage.value / prevValue) * 100).toFixed(1) : null;
+              const widthPct = Math.max(8, (stage.value / maxValue) * 100);
+              const overallRate = i > 0 ? ((stage.value / maxValue) * 100).toFixed(1) : null;
 
               return (
-                <div key={stage.name} className="flex items-center gap-4">
-                  <div className="w-[100px] text-right shrink-0">
-                    <div className="text-[12px] text-[#78716c]">{stage.name}</div>
-                  </div>
-                  <div className="flex-1 relative">
-                    <div
-                      className="h-10 rounded-lg flex items-center transition-all duration-700"
-                      style={{
-                        width: `${widthPct}%`,
-                        background: `linear-gradient(90deg, ${FUNNEL_COLORS[i]}, ${FUNNEL_COLORS[i]}dd)`,
-                        boxShadow: `0 0 20px ${FUNNEL_COLORS[i]}22`,
-                      }}
-                    >
-                      <span className="pl-3 text-[15px] font-bold tabular-nums text-[#0c0c0e]">
+                <div key={stage.name}>
+                  <div className="flex items-baseline justify-between mb-1.5">
+                    <div className="flex items-baseline gap-2.5">
+                      <span className="text-[22px] font-bold tabular-nums text-[#fafaf9]">
                         {stage.value}
                       </span>
+                      <span className="text-[13px] font-medium text-[#78716c]">{stage.name}</span>
                     </div>
-                  </div>
-                  <div className="w-[52px] shrink-0 text-right">
-                    {convRate && (
-                      <span className="text-[11px] tabular-nums text-[#57534e]">
-                        {convRate}%
+                    {overallRate && (
+                      <span className="text-[12px] tabular-nums font-medium" style={{ color: FUNNEL_COLORS[i] }}>
+                        {overallRate}%
                       </span>
                     )}
+                  </div>
+                  <div className="h-2 w-full rounded-full bg-[rgba(255,255,255,0.04)]">
+                    <div
+                      className="h-full rounded-full transition-all duration-700"
+                      style={{
+                        width: `${widthPct}%`,
+                        background: FUNNEL_COLORS[i],
+                        opacity: 0.85,
+                      }}
+                    />
                   </div>
                 </div>
               );
