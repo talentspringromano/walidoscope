@@ -47,8 +47,8 @@ const qualifiedPlusHistorical = leads.filter(
 const funnelData = [
   { name: "Leads", value: totalLeads },
   { name: "Qualifiziert+", value: qualifiedPlusHistorical },
-  { name: "Gewonnen", value: gewonnen },
   { name: "Amt-Termin", value: terminCount },
+  { name: "Gewonnen (BG)", value: gewonnen },
 ];
 
 const statusData = [
