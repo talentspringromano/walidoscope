@@ -67,6 +67,34 @@ const pipelineLeads = leads.filter(
 );
 const leadsWithTermin = leads.filter((l) => l.terminBeimAmt);
 
+/* ── Amt-Termine: parse, filter auf diese + nächste Woche, sortieren ── */
+function parseTerminDate(s: string): Date {
+  const [day, month, year] = s.split(".").map(Number);
+  return new Date(year, month - 1, day);
+}
+
+const today = new Date();
+// Montag dieser Woche (getDay: 0=So,1=Mo…)
+const dayOfWeek = today.getDay();
+const diffToMonday = dayOfWeek === 0 ? 6 : dayOfWeek - 1;
+const thisMonday = new Date(today.getFullYear(), today.getMonth(), today.getDate() - diffToMonday);
+const nextSunday = new Date(thisMonday.getFullYear(), thisMonday.getMonth(), thisMonday.getDate() + 13, 23, 59, 59);
+const nextMonday = new Date(thisMonday.getFullYear(), thisMonday.getMonth(), thisMonday.getDate() + 7);
+
+const termineSorted = leadsWithTermin
+  .map((l) => ({ ...l, _terminDate: parseTerminDate(l.terminBeimAmt) }))
+  .filter((l) => l._terminDate >= thisMonday && l._terminDate <= nextSunday)
+  .sort((a, b) => a._terminDate.getTime() - b._terminDate.getTime());
+
+const termineThisWeek = termineSorted.filter((l) => l._terminDate < nextMonday);
+const termineNextWeek = termineSorted.filter((l) => l._terminDate >= nextMonday);
+
+function weekLabel(start: Date): string {
+  const end = new Date(start.getFullYear(), start.getMonth(), start.getDate() + 6);
+  const fmt = (d: Date) => `${d.getDate()}.${d.getMonth() + 1}.`;
+  return `${fmt(start)} – ${fmt(end)}`;
+}
+
 const STATUS_BADGE: Record<string, string> = {
   "Vertriebsqualifiziert": "bg-[rgba(226,169,110,0.12)] text-[#e2a96e]",
   "Reterminierung": "bg-[rgba(167,139,250,0.12)] text-[#a78bfa]",
@@ -252,27 +280,37 @@ export default function SalesPage() {
 
       {/* Amt-Termine */}
       <SectionCard title="Amt-Termine">
-        {leadsWithTermin.length > 0 ? (
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 stagger-in">
-            {leadsWithTermin.map((l) => (
-              <div
-                key={l.id}
-                className="relative rounded-xl border border-[rgba(255,255,255,0.04)] bg-[rgba(255,255,255,0.02)] p-4 hover:border-[rgba(226,169,110,0.15)] transition-all duration-300 group"
-              >
-                <div className="absolute top-3 right-3 h-2 w-2 rounded-full bg-[#5eead4] shadow-[0_0_8px_rgba(94,234,212,0.4)]" />
-                <div className="text-[13px] font-medium text-[#fafaf9]">{l.name}</div>
-                <div className="mt-2 flex items-center gap-2 text-[12px] text-[#e2a96e] tabular-nums font-medium">
-                  <svg className="h-3.5 w-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="3" width="12" height="11" rx="2"/><path d="M5 1v3m6-3v3M2 7h12"/></svg>
-                  {l.terminBeimAmt}
-                </div>
-                <div className="mt-1.5 text-[11px] text-[#57534e]">
-                  {l.leadStatus} · {l.platform}
+        {termineSorted.length > 0 ? (
+          <div className="space-y-6">
+            {[
+              { label: `Diese Woche · ${weekLabel(thisMonday)}`, items: termineThisWeek },
+              { label: `Nächste Woche · ${weekLabel(nextMonday)}`, items: termineNextWeek },
+            ].map((group) => group.items.length > 0 && (
+              <div key={group.label}>
+                <div className="mb-3 text-[12px] font-medium text-[#78716c] uppercase tracking-wider">{group.label}</div>
+                <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 stagger-in">
+                  {group.items.map((l) => (
+                    <div
+                      key={l.id}
+                      className="relative rounded-xl border border-[rgba(255,255,255,0.04)] bg-[rgba(255,255,255,0.02)] p-4 hover:border-[rgba(226,169,110,0.15)] transition-all duration-300 group"
+                    >
+                      <div className="absolute top-3 right-3 h-2 w-2 rounded-full bg-[#5eead4] shadow-[0_0_8px_rgba(94,234,212,0.4)]" />
+                      <div className="text-[13px] font-medium text-[#fafaf9]">{l.name}</div>
+                      <div className="mt-2 flex items-center gap-2 text-[12px] text-[#e2a96e] tabular-nums font-medium">
+                        <svg className="h-3.5 w-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="3" width="12" height="11" rx="2"/><path d="M5 1v3m6-3v3M2 7h12"/></svg>
+                        {l.terminBeimAmt}
+                      </div>
+                      <div className="mt-1.5 text-[11px] text-[#57534e]">
+                        {l.leadStatus} · {l.platform}
+                      </div>
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}
           </div>
         ) : (
-          <div className="text-[#44403c]">Keine Amt-Termine erfasst</div>
+          <div className="text-[#44403c]">Keine Amt-Termine in dieser oder nächster Woche</div>
         )}
       </SectionCard>
     </div>
