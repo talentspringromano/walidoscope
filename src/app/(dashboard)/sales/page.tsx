@@ -84,7 +84,7 @@ export default function SalesPage() {
       </div>
 
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-5 stagger-in">
-        <KpiCard label="In Pipeline" value={pipelineLeads.length} sub="Qualifiziert + Gespräche" accent />
+        <KpiCard label="In Pipeline" value={pipelineLeads.length} sub="VQ + KLG + BG" accent />
         <KpiCard label="BGs (Gewonnen)" value={gewonnenLeads.length} sub={Object.entries(gewonnenBySeller).map(([name, count]) => `${name.split(" ")[0]}: ${count}`).join(" · ") || "Keine"} />
         <KpiCard label="Angebote erstellt" value={angebotLeads.length} sub="Deal: Angebot schicken" />
         <KpiCard label="Verloren" value={lostLeads.length} sub={`${lostNoReason.length} ohne Grund`} />
