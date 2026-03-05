@@ -19,7 +19,46 @@ import {
   Cell,
   FunnelChart,
   Funnel,
+  ReferenceLine,
 } from "recharts";
+
+/* ── Soll-Ist Targets pro Kanal ── */
+const CHANNEL_TARGETS = {
+  meta:    { leads: 80, spend: 500, cpl: 5.00, conversion: 10 },
+  kursnet: { leads: 15, spend: 0,   cpl: 0,    conversion: 15 },
+  indeed:  { leads: 10, spend: 0,   cpl: 0,    conversion: 10 },
+} as const;
+
+type ChannelKey = keyof typeof CHANNEL_TARGETS;
+
+function computeChannelIST(channel: ChannelKey) {
+  const platformFilter = channel === "meta"
+    ? (l: (typeof leads)[0]) => l.platform === "Instagram" || l.platform === "Facebook"
+    : channel === "kursnet"
+    ? (l: (typeof leads)[0]) => l.platform === "Kursnet"
+    : (l: (typeof leads)[0]) => l.platform === "Indeed";
+
+  const channelLeads = leads.filter(platformFilter);
+  const leadCount = channelLeads.length;
+  const gewonnen = channelLeads.filter((l) => l.leadStatus === "Gewonnen").length;
+  const spend = channel === "meta" ? totalMetaSpend : 0;
+  const cpl = channel === "meta" ? avgCPL : 0;
+  const conversion = leadCount > 0 ? (gewonnen / leadCount) * 100 : 0;
+
+  return { leads: leadCount, spend, cpl, conversion, gewonnen };
+}
+
+const CHANNELS: { key: ChannelKey; label: string }[] = [
+  { key: "meta", label: "Meta" },
+  { key: "kursnet", label: "Kursnet" },
+  { key: "indeed", label: "Indeed" },
+];
+
+const channelData = CHANNELS.map(({ key, label }) => {
+  const ist = computeChannelIST(key);
+  const soll = CHANNEL_TARGETS[key];
+  return { key, label, ist, soll };
+});
 
 /* ── Lead Segmentierung ── */
 function classifyLead(l: (typeof leads)[0]) {
@@ -121,6 +160,133 @@ export default function MarketingPage() {
       <div>
         <h1 className="text-[26px] font-bold tracking-tight text-[#fafaf9]">Marketing Analytics</h1>
         <p className="mt-1 text-[13px] text-[#57534e]">Ad Performance, Lead-Segmentierung & Kursnet Funnel</p>
+      </div>
+
+      {/* ── Soll-Ist-Vergleich ── */}
+      <div className="space-y-6">
+        <h2 className="text-[13px] font-semibold tracking-wide text-[#a8a29e]">Soll-Ist pro Kanal</h2>
+
+        {/* Channel Cards */}
+        <div className="grid gap-4 lg:grid-cols-3">
+          {channelData.map(({ key, label, ist, soll }) => {
+            const metrics: { name: string; istVal: string; sollVal: string; diff: number; unit: string }[] = [
+              {
+                name: "Leads",
+                istVal: String(ist.leads),
+                sollVal: String(soll.leads),
+                diff: ist.leads - soll.leads,
+                unit: "",
+              },
+              {
+                name: "Spend",
+                istVal: `€${ist.spend.toFixed(0)}`,
+                sollVal: `€${soll.spend}`,
+                diff: soll.spend > 0 ? ist.spend - soll.spend : 0,
+                unit: "€",
+              },
+              {
+                name: "CPL",
+                istVal: ist.cpl > 0 ? `€${ist.cpl.toFixed(2)}` : "—",
+                sollVal: soll.cpl > 0 ? `€${soll.cpl.toFixed(2)}` : "—",
+                diff: soll.cpl > 0 ? -(ist.cpl - soll.cpl) : 0, // lower CPL is better
+                unit: "€",
+              },
+              {
+                name: "Conversion",
+                istVal: `${ist.conversion.toFixed(1)}%`,
+                sollVal: `${soll.conversion}%`,
+                diff: ist.conversion - soll.conversion,
+                unit: "%",
+              },
+            ];
+
+            const leadProgress = soll.leads > 0 ? Math.min(100, Math.round((ist.leads / soll.leads) * 100)) : 100;
+            const onTrack = ist.leads >= soll.leads;
+
+            return (
+              <div key={key} className="glass-card p-5 space-y-4">
+                <div className="flex items-center justify-between">
+                  <h3 className="text-[15px] font-semibold text-[#fafaf9]">{label}</h3>
+                  <span className={`text-[11px] font-medium px-2 py-0.5 rounded-md ${
+                    onTrack
+                      ? "bg-[rgba(94,234,212,0.1)] text-[#5eead4]"
+                      : "bg-[rgba(251,113,133,0.1)] text-[#fb7185]"
+                  }`}>
+                    {onTrack ? "On Track" : "Unter SOLL"}
+                  </span>
+                </div>
+
+                {/* Mini-Metrics */}
+                <div className="grid grid-cols-2 gap-3">
+                  {metrics.map((m) => {
+                    const positive = m.diff >= 0;
+                    return (
+                      <div key={m.name} className="space-y-1">
+                        <div className="text-[10px] font-medium uppercase tracking-wider text-[#57534e]">{m.name}</div>
+                        <div className="text-[18px] font-bold tabular-nums text-[#fafaf9]">{m.istVal}</div>
+                        <div className="flex items-center gap-2 text-[10px]">
+                          <span className="text-[#57534e]">SOLL {m.sollVal}</span>
+                          {m.diff !== 0 && (
+                            <span className={positive ? "text-[#5eead4]" : "text-[#fb7185]"}>
+                              {m.diff > 0 ? "+" : ""}{m.name === "CPL" ? (m.diff > 0 ? "besser" : "schlechter") : m.name === "Conversion" ? `${m.diff.toFixed(1)}pp` : Math.round(m.diff)}
+                            </span>
+                          )}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                {/* Progress Bar */}
+                <div>
+                  <div className="flex items-center justify-between text-[10px] mb-1.5">
+                    <span className="text-[#57534e]">Lead-Fortschritt</span>
+                    <span className="tabular-nums font-medium text-[#a8a29e]">{ist.leads} / {soll.leads} ({leadProgress}%)</span>
+                  </div>
+                  <div className="h-2 rounded-full bg-[rgba(255,255,255,0.04)] overflow-hidden">
+                    <div
+                      className={`h-full rounded-full transition-all duration-500 ${
+                        onTrack
+                          ? "bg-gradient-to-r from-[#5eead4] to-[#2dd4bf]"
+                          : "bg-gradient-to-r from-[#818cf8] to-[#6366f1]"
+                      }`}
+                      style={{ width: `${leadProgress}%` }}
+                    />
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* IST vs SOLL Bar Chart */}
+        <div className="glass-card p-6">
+          <h3 className="text-[13px] font-semibold tracking-wide text-[#a8a29e] mb-4">Leads: IST vs. SOLL pro Kanal</h3>
+          <ResponsiveContainer width="100%" height={260}>
+            <BarChart
+              data={channelData.map((c) => ({
+                name: c.label,
+                IST: c.ist.leads,
+                SOLL: c.soll.leads,
+              }))}
+              barGap={4}
+              barCategoryGap="30%"
+            >
+              <XAxis dataKey="name" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+              <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} />
+              <Tooltip {...TOOLTIP_STYLE} />
+              <ReferenceLine
+                y={Object.values(CHANNEL_TARGETS).reduce((s, t) => s + t.leads, 0)}
+                stroke="#78716c"
+                strokeDasharray="6 4"
+                strokeWidth={1.5}
+                label={{ value: "Gesamt-Ziel", position: "right", fill: "#78716c", fontSize: 10 }}
+              />
+              <Bar dataKey="SOLL" fill="rgba(255,255,255,0.08)" radius={[6, 6, 0, 0]} name="SOLL" />
+              <Bar dataKey="IST" fill={PALETTE.indigo} radius={[6, 6, 0, 0]} name="IST" />
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
       </div>
 
       {/* KPIs */}
