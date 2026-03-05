@@ -20,6 +20,8 @@ import {
   FunnelChart,
   Funnel,
   ReferenceLine,
+  CartesianGrid,
+  Legend,
 } from "recharts";
 
 /* ── Soll-Ist Targets pro Kanal ── */
@@ -79,6 +81,40 @@ leads.forEach((l) => {
   segmentCounts[seg] = (segmentCounts[seg] || 0) + 1;
 });
 const segmentData = Object.entries(segmentCounts).map(([name, value]) => ({ name, value }));
+
+/* ── Lead-Segmentierung im Zeitverlauf ── */
+function parseDE(dateStr: string): Date {
+  const [dayMonthYear] = dateStr.split(" ");
+  const [day, month, year] = dayMonthYear.split(".");
+  return new Date(Number(year), Number(month) - 1, Number(day));
+}
+
+function getISOWeek(d: Date): number {
+  const date = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+  date.setUTCDate(date.getUTCDate() + 4 - (date.getUTCDay() || 7));
+  const yearStart = new Date(Date.UTC(date.getUTCFullYear(), 0, 1));
+  return Math.ceil(((date.getTime() - yearStart.getTime()) / 86400000 + 1) / 7);
+}
+
+const allSegments = Object.keys(segmentCounts);
+
+const segmentWeekMap = new Map<number, Record<string, number>>();
+leads.forEach((l) => {
+  const date = parseDE(l.createdOn);
+  if (isNaN(date.getTime())) return;
+  const wk = getISOWeek(date);
+  const seg = classifyLead(l);
+  const entry = segmentWeekMap.get(wk) ?? {};
+  entry[seg] = (entry[seg] || 0) + 1;
+  segmentWeekMap.set(wk, entry);
+});
+
+const segmentWeeklyData = Array.from(segmentWeekMap.entries())
+  .sort((a, b) => a[0] - b[0])
+  .map(([wk, counts]) => ({
+    week: `KW ${wk}`,
+    ...Object.fromEntries(allSegments.map((s) => [s, counts[s] || 0])),
+  }));
 
 /* ── Creative Deep-Funnel ── */
 const creativeDeepFunnel = metaAds.map((ad) => {
@@ -408,6 +444,30 @@ export default function MarketingPage() {
           </div>
         </SectionCard>
       </div>
+
+      {/* Lead-Segmentierung im Zeitverlauf */}
+      {segmentWeeklyData.length > 0 && (
+        <SectionCard title="Lead-Segmentierung im Zeitverlauf">
+          <ResponsiveContainer width="100%" height={340}>
+            <BarChart data={segmentWeeklyData} barCategoryGap="20%">
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
+              <XAxis dataKey="week" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+              <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} />
+              <Tooltip {...TOOLTIP_STYLE} />
+              <Legend wrapperStyle={{ fontSize: 11, color: "#78716c" }} />
+              {allSegments.map((seg, i) => (
+                <Bar
+                  key={seg}
+                  dataKey={seg}
+                  stackId="seg"
+                  fill={SEGMENT_COLORS[i % SEGMENT_COLORS.length]}
+                  radius={i === allSegments.length - 1 ? [4, 4, 0, 0] : undefined}
+                />
+              ))}
+            </BarChart>
+          </ResponsiveContainer>
+        </SectionCard>
+      )}
 
       {/* CRM Gap Warning */}
       <div className="rounded-xl border border-amber-500/30 px-5 py-4 flex items-start gap-3" style={{ background: "rgba(245, 158, 11, 0.12)" }}>

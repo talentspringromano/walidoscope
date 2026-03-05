@@ -2,7 +2,7 @@
 
 import { KpiCard, SectionCard } from "@/components/kpi-card";
 import { leads } from "@/data/leads";
-import { TOOLTIP_STYLE, AXIS_STYLE, STATUS_COLORS, LOSS_COLORS } from "@/components/chart-theme";
+import { TOOLTIP_STYLE, AXIS_STYLE, STATUS_COLORS, LOSS_COLORS, PALETTE } from "@/components/chart-theme";
 import {
   BarChart,
   Bar,
@@ -13,6 +13,8 @@ import {
   PieChart,
   Pie,
   Cell,
+  CartesianGrid,
+  Legend,
 } from "recharts";
 
 const statusOrder = [
@@ -41,6 +43,43 @@ const verlustData = Object.entries(verlustgruende)
   .sort((a, b) => b[1] - a[1])
   .map(([name, value]) => ({ name, value }));
 
+/* ── Helpers: week grouping ── */
+function parseDE(dateStr: string): Date {
+  const [dayMonthYear] = dateStr.split(" ");
+  const [day, month, year] = dayMonthYear.split(".");
+  return new Date(Number(year), Number(month) - 1, Number(day));
+}
+
+function getISOWeek(d: Date): number {
+  const date = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+  date.setUTCDate(date.getUTCDate() + 4 - (date.getUTCDay() || 7));
+  const yearStart = new Date(Date.UTC(date.getUTCFullYear(), 0, 1));
+  return Math.ceil(((date.getTime() - yearStart.getTime()) / 86400000 + 1) / 7);
+}
+
+/* ── Verlustgründe im Zeitverlauf ── */
+const lossWeekMap = new Map<number, Record<string, number>>();
+lostLeads.forEach((l) => {
+  const date = parseDE(l.createdOn);
+  if (isNaN(date.getTime())) return;
+  const wk = getISOWeek(date);
+  const entry = lossWeekMap.get(wk) ?? {};
+  const reason = l.verlustgrund || "Kein Grund angegeben";
+  entry[reason] = (entry[reason] || 0) + 1;
+  lossWeekMap.set(wk, entry);
+});
+
+const allLossReasons = Array.from(
+  new Set(lostLeads.map((l) => l.verlustgrund || "Kein Grund angegeben"))
+);
+
+const lossWeeklyData = Array.from(lossWeekMap.entries())
+  .sort((a, b) => a[0] - b[0])
+  .map(([wk, counts]) => ({
+    week: `KW ${wk}`,
+    ...Object.fromEntries(allLossReasons.map((r) => [r, counts[r] || 0])),
+  }));
+
 // Lost by seller
 const lostBySeller: Record<string, { total: number; noReason: number }> = {};
 lostLeads.forEach((l) => {
@@ -66,6 +105,24 @@ const pipelineLeads = leads.filter(
     l.leadStatus === "Beratungsgespräch gebucht"
 );
 const leadsWithTermin = leads.filter((l) => l.terminBeimAmt);
+
+/* ── Termine im Zeitverlauf ── */
+function parseTerminDateDE(s: string): Date {
+  const [day, month, year] = s.split(".").map(Number);
+  return new Date(year, month - 1, day);
+}
+
+const terminWeekMap = new Map<number, number>();
+leadsWithTermin.forEach((l) => {
+  const date = parseTerminDateDE(l.terminBeimAmt);
+  if (isNaN(date.getTime())) return;
+  const wk = getISOWeek(date);
+  terminWeekMap.set(wk, (terminWeekMap.get(wk) || 0) + 1);
+});
+
+const terminWeeklyData = Array.from(terminWeekMap.entries())
+  .sort((a, b) => a[0] - b[0])
+  .map(([wk, count]) => ({ week: `KW ${wk}`, Termine: count }));
 
 /* ── Amt-Termine: parse, filter auf diese + nächste Woche, sortieren ── */
 function parseTerminDate(s: string): Date {
@@ -173,6 +230,30 @@ export default function SalesPage() {
           )}
         </SectionCard>
       </div>
+
+      {/* Verlustgründe im Zeitverlauf */}
+      {lossWeeklyData.length > 0 && (
+        <SectionCard title="Verlustgründe im Zeitverlauf">
+          <ResponsiveContainer width="100%" height={340}>
+            <BarChart data={lossWeeklyData} barCategoryGap="20%">
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
+              <XAxis dataKey="week" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+              <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} />
+              <Tooltip {...TOOLTIP_STYLE} />
+              <Legend wrapperStyle={{ fontSize: 11, color: "#78716c" }} />
+              {allLossReasons.map((reason, i) => (
+                <Bar
+                  key={reason}
+                  dataKey={reason}
+                  stackId="loss"
+                  fill={LOSS_COLORS[i % LOSS_COLORS.length]}
+                  radius={i === allLossReasons.length - 1 ? [4, 4, 0, 0] : undefined}
+                />
+              ))}
+            </BarChart>
+          </ResponsiveContainer>
+        </SectionCard>
+      )}
 
       {/* Verluste pro Vertriebler */}
       {lostLeads.length > 0 && (
@@ -313,6 +394,21 @@ export default function SalesPage() {
           <div className="text-[#44403c]">Keine Amt-Termine in dieser oder nächster Woche</div>
         )}
       </SectionCard>
+
+      {/* Termine im Zeitverlauf */}
+      {terminWeeklyData.length > 0 && (
+        <SectionCard title="Amt-Termine im Zeitverlauf">
+          <ResponsiveContainer width="100%" height={300}>
+            <BarChart data={terminWeeklyData} barCategoryGap="20%">
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
+              <XAxis dataKey="week" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+              <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} />
+              <Tooltip {...TOOLTIP_STYLE} />
+              <Bar dataKey="Termine" fill={PALETTE.teal} radius={[6, 6, 0, 0]} />
+            </BarChart>
+          </ResponsiveContainer>
+        </SectionCard>
+      )}
     </div>
   );
 }
