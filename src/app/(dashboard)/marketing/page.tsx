@@ -25,7 +25,7 @@ import {
 /* ── Soll-Ist Targets pro Kanal ── */
 const CHANNEL_TARGETS = {
   meta:    { leads: 80, spend: 500, cpl: 5.00, conversion: 10 },
-  kursnet: { leads: 15, spend: 0,   cpl: 0,    conversion: 15 },
+  kursnet: { leads: 30, spend: 0,   cpl: 0,    conversion: 15 },
   indeed:  { leads: 10, spend: 0,   cpl: 0,    conversion: 10 },
 } as const;
 
