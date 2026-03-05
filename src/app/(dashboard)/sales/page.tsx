@@ -3,6 +3,8 @@
 import { KpiCard, SectionCard } from "@/components/kpi-card";
 import { leads } from "@/data/leads";
 import { TOOLTIP_STYLE, AXIS_STYLE, STATUS_COLORS, LOSS_COLORS, PALETTE } from "@/components/chart-theme";
+import { Lightbulb, AlertTriangle, CheckCircle, Clock } from "lucide-react";
+import type { ReactNode } from "react";
 import {
   BarChart,
   Bar,
@@ -152,6 +154,153 @@ function weekLabel(start: Date): string {
   return `${fmt(start)} – ${fmt(end)}`;
 }
 
+/* ── Handlungsempfehlungen Engine ── */
+type Priority = "high" | "medium" | "low";
+interface Recommendation {
+  icon: ReactNode;
+  priority: Priority;
+  title: string;
+  detail: string;
+}
+
+const recommendations: Recommendation[] = [];
+
+// Regel 1: Verluste ohne Grund
+const noReasonPct = lostLeads.length > 0 ? (lostNoReason.length / lostLeads.length) * 100 : 0;
+if (noReasonPct > 30) {
+  recommendations.push({
+    icon: <AlertTriangle className="h-4 w-4" />,
+    priority: "high",
+    title: "Verlustgründe konsequent dokumentieren",
+    detail: `${lostNoReason.length} von ${lostLeads.length} Verlusten ohne Grund (${Math.round(noReasonPct)}%). Ohne Verlustgrund-Daten kann die Pipeline nicht optimiert werden.`,
+  });
+}
+
+// Regel 2: Falsche Kontaktinformationen
+const falscheKontakte = lostLeads.filter((l) => l.verlustgrund === "Falsche Kontaktinformationen").length;
+const falscheKontaktePct = lostLeads.length > 0 ? (falscheKontakte / lostLeads.length) * 100 : 0;
+if (falscheKontaktePct > 10) {
+  recommendations.push({
+    icon: <AlertTriangle className="h-4 w-4" />,
+    priority: "high",
+    title: "Kontaktdaten-Validierung bei Lead-Erfassung einführen",
+    detail: `${falscheKontakte} Verluste (${Math.round(falscheKontaktePct)}%) wegen falscher Kontaktinformationen. Eine Validierung bei der Erfassung spart Vertriebszeit.`,
+  });
+}
+
+// Regel 3: Stale Leads (>14 Tage ohne Fortschritt)
+const staleLeads = leads.filter((l) => {
+  if (l.leadStatus !== "Neuer Lead" && l.leadStatus !== "Rückruf") return false;
+  const created = parseDE(l.createdOn);
+  if (isNaN(created.getTime())) return false;
+  const daysSince = (today.getTime() - created.getTime()) / (1000 * 60 * 60 * 24);
+  return daysSince > 14;
+});
+if (staleLeads.length > 0) {
+  recommendations.push({
+    icon: <Clock className="h-4 w-4" />,
+    priority: "high",
+    title: `${staleLeads.length} Leads seit >2 Wochen ohne Fortschritt`,
+    detail: `${staleLeads.length} Leads stehen seit über 14 Tagen auf „${staleLeads[0].leadStatus}" — Nachfassen oder Status aktualisieren.`,
+  });
+}
+
+// Regel 4: Angestellt / Arbeitet nebenher
+const angestelltLost = lostLeads.filter((l) =>
+  l.verlustgrund === "Angestellt" || l.verlustgrund === "Arbeitet nebenher"
+).length;
+const angestelltPct = lostLeads.length > 0 ? (angestelltLost / lostLeads.length) * 100 : 0;
+if (angestelltPct > 15) {
+  recommendations.push({
+    icon: <Lightbulb className="h-4 w-4" />,
+    priority: "medium",
+    title: "Arbeitslos-Status vor Qualifizierung verifizieren",
+    detail: `${angestelltLost} Verluste (${Math.round(angestelltPct)}%) weil Leads angestellt sind oder nebenher arbeiten. Früherer Filter spart Vertriebskapazität.`,
+  });
+}
+
+// Regel 5: Sprachkenntnisse
+const sprachLost = lostLeads.filter((l) =>
+  l.verlustgrund === "Sprachkenntnisse" || l.verlustgrund?.includes("Sprach")
+).length;
+const sprachPct = lostLeads.length > 0 ? (sprachLost / lostLeads.length) * 100 : 0;
+if (sprachPct > 5) {
+  recommendations.push({
+    icon: <Lightbulb className="h-4 w-4" />,
+    priority: "medium",
+    title: "Sprachkenntnisse früher im Funnel prüfen",
+    detail: `${sprachLost} Verluste (${Math.round(sprachPct)}%) wegen Sprachkenntnissen. Frühzeitige Prüfung im Qualifizierungsprozess empfohlen.`,
+  });
+}
+
+// Regel 6: Seller mit überdurchschnittlicher Verlustquote
+const sellerTotal: Record<string, { won: number; lost: number }> = {};
+leads.forEach((l) => {
+  if (!l.vertriebler) return;
+  const entry = sellerTotal[l.vertriebler] ?? { won: 0, lost: 0 };
+  if (l.leadStatus === "Gewonnen") entry.won++;
+  if (l.leadStatus === "Verloren") entry.lost++;
+  sellerTotal[l.vertriebler] = entry;
+});
+const teamLossRate = (() => {
+  const totalWon = Object.values(sellerTotal).reduce((s, e) => s + e.won, 0);
+  const totalLost = Object.values(sellerTotal).reduce((s, e) => s + e.lost, 0);
+  return totalWon + totalLost > 0 ? (totalLost / (totalWon + totalLost)) * 100 : 0;
+})();
+Object.entries(sellerTotal).forEach(([name, data]) => {
+  const total = data.won + data.lost;
+  if (total < 5) return; // skip sellers with too few closed leads
+  const lossRate = (data.lost / total) * 100;
+  if (lossRate > teamLossRate * 1.5) {
+    recommendations.push({
+      icon: <Lightbulb className="h-4 w-4" />,
+      priority: "medium",
+      title: `${name.split(" ")[0]}: Überdurchschnittliche Verlustquote`,
+      detail: `${Math.round(lossRate)}% Verlustquote (Team: ${Math.round(teamLossRate)}%). ${data.lost} verloren bei ${total} abgeschlossenen Leads — Coaching-Gespräch prüfen.`,
+    });
+  }
+});
+
+// Regel 7: Nicht-arbeitslose Leads verlieren häufiger
+const nichtArbeitslosLeads = leads.filter((l) => l.arbeitslosGemeldet === "Nein, aktuell nicht");
+const nichtArbeitslosLost = nichtArbeitslosLeads.filter((l) => l.leadStatus === "Verloren").length;
+const nichtArbeitslosPct = nichtArbeitslosLeads.length > 0 ? (nichtArbeitslosLost / nichtArbeitslosLeads.length) * 100 : 0;
+if (nichtArbeitslosPct > 50 && nichtArbeitslosLeads.length > 5) {
+  recommendations.push({
+    icon: <Lightbulb className="h-4 w-4" />,
+    priority: "low",
+    title: "Nicht-arbeitslose Leads haben niedrige Conversion",
+    detail: `${Math.round(nichtArbeitslosPct)}% der nicht-arbeitslosen Leads gehen verloren (${nichtArbeitslosLost} von ${nichtArbeitslosLeads.length}). Vorfilter oder niedrigere Priorität in der Bearbeitung empfohlen.`,
+  });
+}
+
+// Sort: high → medium → low
+const priorityOrder: Record<Priority, number> = { high: 0, medium: 1, low: 2 };
+recommendations.sort((a, b) => priorityOrder[a.priority] - priorityOrder[b.priority]);
+
+const PRIORITY_STYLES: Record<Priority, { badge: string; border: string; bg: string; icon: string }> = {
+  high: {
+    badge: "bg-[rgba(248,113,113,0.12)] text-[#f87171] border-[rgba(248,113,113,0.2)]",
+    border: "border-[rgba(248,113,113,0.2)]",
+    bg: "bg-[rgba(248,113,113,0.05)]",
+    icon: "text-[#f87171]",
+  },
+  medium: {
+    badge: "bg-[rgba(245,158,11,0.12)] text-amber-400 border-[rgba(245,158,11,0.2)]",
+    border: "border-[rgba(245,158,11,0.2)]",
+    bg: "bg-[rgba(245,158,11,0.05)]",
+    icon: "text-amber-400",
+  },
+  low: {
+    badge: "bg-[rgba(129,140,248,0.12)] text-[#818cf8] border-[rgba(129,140,248,0.2)]",
+    border: "border-[rgba(129,140,248,0.15)]",
+    bg: "bg-[rgba(129,140,248,0.04)]",
+    icon: "text-[#818cf8]",
+  },
+};
+
+const PRIORITY_LABELS: Record<Priority, string> = { high: "Hoch", medium: "Mittel", low: "Niedrig" };
+
 const STATUS_BADGE: Record<string, string> = {
   "Vertriebsqualifiziert": "bg-[rgba(226,169,110,0.12)] text-[#e2a96e]",
   "Reterminierung": "bg-[rgba(167,139,250,0.12)] text-[#a78bfa]",
@@ -175,6 +324,42 @@ export default function SalesPage() {
         <KpiCard label="Verloren" value={lostLeads.length} sub={`${lostNoReason.length} ohne Grund`} />
         <KpiCard label="Amt-Termine" value={leadsWithTermin.length} sub="Termine gebucht" />
       </div>
+
+      {/* Handlungsempfehlungen */}
+      <SectionCard title="Handlungsempfehlungen">
+        {recommendations.length > 0 ? (
+          <div className="space-y-3">
+            {recommendations.map((rec, i) => {
+              const styles = PRIORITY_STYLES[rec.priority];
+              return (
+                <div
+                  key={i}
+                  className={`rounded-xl border ${styles.border} ${styles.bg} p-4 flex items-start gap-3`}
+                >
+                  <span className={`mt-0.5 shrink-0 ${styles.icon}`}>{rec.icon}</span>
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <span className="text-[14px] font-medium text-[#fafaf9]">{rec.title}</span>
+                      <span className={`text-[10px] font-medium px-2 py-0.5 rounded-md border ${styles.badge}`}>
+                        {PRIORITY_LABELS[rec.priority]}
+                      </span>
+                    </div>
+                    <p className="mt-1 text-[12px] text-[#a8a29e] leading-relaxed">{rec.detail}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        ) : (
+          <div className="flex items-center gap-3 p-4 rounded-xl border border-[rgba(94,234,212,0.2)] bg-[rgba(94,234,212,0.05)]">
+            <CheckCircle className="h-5 w-5 text-[#5eead4] shrink-0" />
+            <div>
+              <p className="text-[14px] font-medium text-[#5eead4]">Alles im grünen Bereich</p>
+              <p className="text-[12px] text-[#78716c] mt-0.5">Keine kritischen Muster erkannt — weiter so!</p>
+            </div>
+          </div>
+        )}
+      </SectionCard>
 
       <div className="grid gap-6 lg:grid-cols-2 stagger-in">
         <SectionCard title="Lead-Status Verteilung">
