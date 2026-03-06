@@ -3,34 +3,34 @@
     {
       "name": "Walid Karimi",
       "userId": 1093878,
-      "outboundCalls": 135,
+      "outboundCalls": 129,
       "inboundCalls": 6,
-      "answeredCalls": 141,
+      "answeredCalls": 135,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 24473,
-      "avgDurationSec": 174,
+      "totalDurationSec": 21258,
+      "avgDurationSec": 157,
       "longestCallSec": 1668,
       "reachabilityPct": 100,
-      "callsPerDay": 12.8,
-      "totalCalls": 141,
-      "firstCallDate": "2026-02-23",
+      "callsPerDay": 12.3,
+      "totalCalls": 135,
+      "firstCallDate": "2026-02-24",
       "lastCallDate": "2026-03-06"
     },
     {
       "name": "Nele Pfau",
       "userId": 1862427,
-      "outboundCalls": 366,
+      "outboundCalls": 353,
       "inboundCalls": 20,
-      "answeredCalls": 386,
+      "answeredCalls": 373,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 54897,
-      "avgDurationSec": 142,
+      "totalDurationSec": 53891,
+      "avgDurationSec": 144,
       "longestCallSec": 2126,
       "reachabilityPct": 100,
-      "callsPerDay": 35.1,
-      "totalCalls": 386,
+      "callsPerDay": 33.9,
+      "totalCalls": 373,
       "firstCallDate": "2026-02-24",
       "lastCallDate": "2026-03-06"
     },
@@ -54,50 +54,44 @@
     {
       "name": "Michel G.",
       "userId": 1862761,
-      "outboundCalls": 106,
-      "inboundCalls": 4,
-      "answeredCalls": 110,
+      "outboundCalls": 100,
+      "inboundCalls": 3,
+      "answeredCalls": 103,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 12982,
-      "avgDurationSec": 118,
+      "totalDurationSec": 11897,
+      "avgDurationSec": 116,
       "longestCallSec": 1125,
       "reachabilityPct": 100,
-      "callsPerDay": 10,
-      "totalCalls": 110,
+      "callsPerDay": 9.4,
+      "totalCalls": 103,
       "firstCallDate": "2026-02-24",
       "lastCallDate": "2026-03-06"
     },
     {
       "name": "Bastian Wuske",
       "userId": 1875176,
-      "outboundCalls": 141,
-      "inboundCalls": 2,
-      "answeredCalls": 143,
+      "outboundCalls": 156,
+      "inboundCalls": 5,
+      "answeredCalls": 161,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 15624,
-      "avgDurationSec": 109,
+      "totalDurationSec": 19849,
+      "avgDurationSec": 123,
       "longestCallSec": 1427,
       "reachabilityPct": 100,
-      "callsPerDay": 47.7,
-      "totalCalls": 143,
+      "callsPerDay": 53.7,
+      "totalCalls": 161,
       "firstCallDate": "2026-03-04",
       "lastCallDate": "2026-03-06"
     }
   ],
   "daily": [
     {
-      "date": "2026-02-23",
-      "dials": 9,
-      "reached": 9,
-      "calltimeSec": 992
-    },
-    {
       "date": "2026-02-24",
-      "dials": 98,
-      "reached": 98,
-      "calltimeSec": 11870
+      "dials": 79,
+      "reached": 79,
+      "calltimeSec": 8946
     },
     {
       "date": "2026-02-25",
@@ -119,9 +113,9 @@
     },
     {
       "date": "2026-03-02",
-      "dials": 98,
-      "reached": 98,
-      "calltimeSec": 14829
+      "dials": 97,
+      "reached": 97,
+      "calltimeSec": 13611
     },
     {
       "date": "2026-03-03",
@@ -131,9 +125,9 @@
     },
     {
       "date": "2026-03-04",
-      "dials": 160,
-      "reached": 160,
-      "calltimeSec": 16615
+      "dials": 158,
+      "reached": 158,
+      "calltimeSec": 16568
     },
     {
       "date": "2026-03-05",
@@ -143,39 +137,32 @@
     },
     {
       "date": "2026-03-06",
-      "dials": 93,
-      "reached": 93,
-      "calltimeSec": 12079
+      "dials": 114,
+      "reached": 114,
+      "calltimeSec": 14061
     }
   ],
   "sellerDaily": [
     {
-      "seller": "Walid Karimi",
-      "date": "2026-02-23",
-      "dials": 9,
-      "reached": 9,
-      "calltimeSec": 992
-    },
-    {
       "seller": "Michel G.",
       "date": "2026-02-24",
-      "dials": 21,
-      "reached": 21,
-      "calltimeSec": 2513
+      "dials": 15,
+      "reached": 15,
+      "calltimeSec": 1694
     },
     {
       "seller": "Nele Pfau",
       "date": "2026-02-24",
-      "dials": 73,
-      "reached": 73,
-      "calltimeSec": 5829
+      "dials": 61,
+      "reached": 61,
+      "calltimeSec": 4847
     },
     {
       "seller": "Walid Karimi",
       "date": "2026-02-24",
-      "dials": 4,
-      "reached": 4,
-      "calltimeSec": 3528
+      "dials": 3,
+      "reached": 3,
+      "calltimeSec": 2405
     },
     {
       "seller": "Nele Pfau",
@@ -257,9 +244,9 @@
     {
       "seller": "Walid Karimi",
       "date": "2026-03-02",
-      "dials": 17,
-      "reached": 17,
-      "calltimeSec": 6169
+      "dials": 16,
+      "reached": 16,
+      "calltimeSec": 4951
     },
     {
       "seller": "Eric H.",
@@ -292,9 +279,9 @@
     {
       "seller": "Bastian Wuske",
       "date": "2026-03-04",
-      "dials": 64,
-      "reached": 64,
-      "calltimeSec": 7007
+      "dials": 63,
+      "reached": 63,
+      "calltimeSec": 6984
     },
     {
       "seller": "Eric H.",
@@ -306,9 +293,9 @@
     {
       "seller": "Nele Pfau",
       "date": "2026-03-04",
-      "dials": 40,
-      "reached": 40,
-      "calltimeSec": 6153
+      "dials": 39,
+      "reached": 39,
+      "calltimeSec": 6129
     },
     {
       "seller": "Walid Karimi",
@@ -355,9 +342,9 @@
     {
       "seller": "Bastian Wuske",
       "date": "2026-03-06",
-      "dials": 32,
-      "reached": 32,
-      "calltimeSec": 1261
+      "dials": 48,
+      "reached": 48,
+      "calltimeSec": 3125
     },
     {
       "seller": "Michel G.",
@@ -376,10 +363,10 @@
     {
       "seller": "Walid Karimi",
       "date": "2026-03-06",
-      "dials": 2,
-      "reached": 2,
-      "calltimeSec": 259
+      "dials": 7,
+      "reached": 7,
+      "calltimeSec": 377
     }
   ],
-  "fetchedAt": "2026-03-06T14:10:01.766Z"
+  "fetchedAt": "2026-03-06T19:53:42.759Z"
 }
