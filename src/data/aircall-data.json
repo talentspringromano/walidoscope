@@ -3,17 +3,17 @@
     {
       "name": "Walid Karimi",
       "userId": 1093878,
-      "outboundCalls": 143,
+      "outboundCalls": 142,
       "inboundCalls": 5,
-      "answeredCalls": 148,
+      "answeredCalls": 147,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 25620,
+      "totalDurationSec": 25493,
       "avgDurationSec": 173,
       "longestCallSec": 1668,
       "reachabilityPct": 100,
-      "callsPerDay": 13.5,
-      "totalCalls": 148,
+      "callsPerDay": 13.4,
+      "totalCalls": 147,
       "firstCallDate": "2026-02-23",
       "lastCallDate": "2026-03-05"
     },
@@ -54,19 +54,19 @@
     {
       "name": "Michel G.",
       "userId": 1862761,
-      "outboundCalls": 77,
+      "outboundCalls": 79,
       "inboundCalls": 3,
-      "answeredCalls": 80,
+      "answeredCalls": 82,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 9758,
-      "avgDurationSec": 122,
-      "longestCallSec": 890,
+      "totalDurationSec": 10885,
+      "avgDurationSec": 133,
+      "longestCallSec": 1125,
       "reachabilityPct": 100,
-      "callsPerDay": 8,
-      "totalCalls": 80,
+      "callsPerDay": 8.2,
+      "totalCalls": 82,
       "firstCallDate": "2026-02-24",
-      "lastCallDate": "2026-03-05"
+      "lastCallDate": "2026-03-06"
     },
     {
       "name": "Bastian Wuske",
@@ -89,9 +89,9 @@
   "daily": [
     {
       "date": "2026-02-23",
-      "dials": 31,
-      "reached": 31,
-      "calltimeSec": 7585
+      "dials": 30,
+      "reached": 30,
+      "calltimeSec": 7458
     },
     {
       "date": "2026-02-24",
@@ -140,6 +140,12 @@
       "dials": 160,
       "reached": 160,
       "calltimeSec": 22331
+    },
+    {
+      "date": "2026-03-06",
+      "dials": 2,
+      "reached": 2,
+      "calltimeSec": 1127
     }
   ],
   "sellerDaily": [
@@ -160,9 +166,9 @@
     {
       "seller": "Walid Karimi",
       "date": "2026-02-23",
-      "dials": 20,
-      "reached": 20,
-      "calltimeSec": 3685
+      "dials": 19,
+      "reached": 19,
+      "calltimeSec": 3558
     },
     {
       "seller": "Michel G.",
@@ -359,7 +365,14 @@
       "dials": 8,
       "reached": 8,
       "calltimeSec": 1943
+    },
+    {
+      "seller": "Michel G.",
+      "date": "2026-03-06",
+      "dials": 2,
+      "reached": 2,
+      "calltimeSec": 1127
     }
   ],
-  "fetchedAt": "2026-03-06T06:59:15.670Z"
+  "fetchedAt": "2026-03-06T07:58:11.688Z"
 }
