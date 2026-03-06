@@ -16,10 +16,10 @@ import {
 } from "lucide-react";
 
 const navItems = [
-  { href: "/", label: "Overview", icon: LayoutDashboard },
+  { href: "/", label: "Übersicht", icon: LayoutDashboard },
   { href: "/marketing", label: "Marketing", icon: Megaphone },
-  { href: "/sales", label: "Sales", icon: HandshakeIcon },
-  { href: "/seller", label: "Seller", icon: Users },
+  { href: "/sales", label: "Vertrieb", icon: HandshakeIcon },
+  { href: "/seller", label: "Vertriebler", icon: Users },
   { href: "/cohort", label: "Kohorte", icon: CalendarDays },
 ];
 
@@ -55,7 +55,7 @@ export function Sidebar() {
                   Walidoscope
                 </span>
                 <span className="block text-[10px] font-medium tracking-wider uppercase text-[#57534e]">
-                  Analytics
+                  Analytik
                 </span>
               </div>
             )}

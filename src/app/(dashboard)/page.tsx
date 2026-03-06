@@ -97,7 +97,7 @@ export default function OverviewPage() {
       {/* Header */}
       <div>
         <h1 className="text-[26px] font-bold tracking-tight text-[#fafaf9]">
-          Overview
+          Übersicht
         </h1>
         <p className="mt-1 text-[13px] text-[#57534e]">
           Talentspring Payroll Academy — Gesamtübersicht

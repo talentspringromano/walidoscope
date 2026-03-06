@@ -195,7 +195,7 @@ export default function SellerPage() {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-[26px] font-bold tracking-tight text-[#fafaf9]">Seller-Ansicht</h1>
+        <h1 className="text-[26px] font-bold tracking-tight text-[#fafaf9]">Vertriebler-Ansicht</h1>
         <p className="mt-1 text-[13px] text-[#57534e]">
           Performance-Vergleich der Vertriebler · Aircall-Daten vom {new Date(aircallFetchedAt).toLocaleDateString("de-DE")}
         </p>

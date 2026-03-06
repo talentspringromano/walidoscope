@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Walidoscope – Talentspring Analytics",
-  description: "Internes Analytics-Dashboard für Talentspring",
+  title: "Walidoscope – Talentspring Analytik",
+  description: "Internes Analytik-Dashboard für Talentspring",
 };
 
 export default function RootLayout({

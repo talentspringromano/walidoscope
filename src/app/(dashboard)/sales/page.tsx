@@ -313,8 +313,8 @@ export default function SalesPage() {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-[26px] font-bold tracking-tight text-[#fafaf9]">Sales Analytics</h1>
-        <p className="mt-1 text-[13px] text-[#57534e]">Lead-Pipeline, Verlustgründe & Deal-Tracking</p>
+        <h1 className="text-[26px] font-bold tracking-tight text-[#fafaf9]">Vertriebs-Analytik</h1>
+        <p className="mt-1 text-[13px] text-[#57534e]">Lead-Pipeline, Verlustgründe & Deal-Verfolgung</p>
       </div>
 
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-5 stagger-in">
@@ -509,7 +509,7 @@ export default function SalesPage() {
       )}
 
       {/* Deal Tracking */}
-      <SectionCard title="Deal-Tracking — Angebote in Pipeline">
+      <SectionCard title="Deal-Verfolgung — Angebote in Pipeline">
         <div className="overflow-x-auto -mx-2">
           <table className="w-full premium-table">
             <thead>

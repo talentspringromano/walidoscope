@@ -194,7 +194,7 @@ export default function MarketingPage() {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-[26px] font-bold tracking-tight text-[#fafaf9]">Marketing Analytics</h1>
+        <h1 className="text-[26px] font-bold tracking-tight text-[#fafaf9]">Marketing-Analytik</h1>
         <p className="mt-1 text-[13px] text-[#57534e]">Ad Performance, Lead-Segmentierung & Kursnet Funnel</p>
       </div>
 
@@ -248,7 +248,7 @@ export default function MarketingPage() {
                       ? "bg-[rgba(94,234,212,0.1)] text-[#5eead4]"
                       : "bg-[rgba(251,113,133,0.1)] text-[#fb7185]"
                   }`}>
-                    {onTrack ? "On Track" : "Unter SOLL"}
+                    {onTrack ? "Im Soll" : "Unter SOLL"}
                   </span>
                 </div>
 
@@ -334,7 +334,7 @@ export default function MarketingPage() {
       </div>
 
       {/* Creative Performance Table */}
-      <SectionCard title="Creative Performance (Deep-Funnel)">
+      <SectionCard title="Creative-Leistung (Deep-Funnel)">
         {/* Filter Chips */}
         <div className="flex items-center gap-2 mb-4">
           {FILTER_PRESETS.map((f) => (

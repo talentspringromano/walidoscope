@@ -251,7 +251,7 @@ export function ActivityCalendar() {
               }`}
             >
               <Clock className="h-3.5 w-3.5" />
-              Calltime
+              Gesprächszeit
             </button>
             <button
               onClick={() => setMode("dials")}
@@ -300,7 +300,7 @@ export function ActivityCalendar() {
         <div className="flex items-center gap-2">
           <div className="h-3 w-3 rounded-full bg-gradient-to-br from-[#e2a96e] to-[#d4915a]" />
           <span className="text-[11px] text-[#78716c]">
-            {mode === "dials" ? "Dials (Größe = Anzahl)" : "Calltime (Größe = Dauer)"}
+            {mode === "dials" ? "Dials (Größe = Anzahl)" : "Gesprächszeit (Größe = Dauer)"}
           </span>
         </div>
         <div className="flex items-center gap-2">
