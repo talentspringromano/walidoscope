@@ -5358,5 +5358,24 @@ export const leads: Lead[] = [
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": ""
+  },
+  {
+    "id": 283,
+    "name": "Sonja Scharl",
+    "leadStatus": "Neuer Lead",
+    "dealStatus": "",
+    "verlustgrund": "",
+    "adId": "120240861711360128",
+    "adName": "C7.1 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Facebook",
+    "arbeitslosGemeldet": "Nein, aber in den nächsten 3 Monaten",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "46 – 60 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "5.3.2026 20:31",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": ""
   }
 ];
