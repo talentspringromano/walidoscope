@@ -281,7 +281,7 @@ export default function SellerPage() {
       </div>
 
       {/* Seller Cards */}
-      <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3 stagger-in">
+      <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3 stagger-in" style={{ gridAutoRows: "1fr" }}>
         {sellerData.map((s, idx) => (
           <div key={s.name} className="glass-card overflow-hidden flex flex-col">
             {/* Header with gradient */}
