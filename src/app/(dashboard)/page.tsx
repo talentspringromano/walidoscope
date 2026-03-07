@@ -4,15 +4,13 @@ import { useState, useMemo } from "react";
 import { KpiCard, SectionCard } from "@/components/kpi-card";
 import { TimeRangeFilter } from "@/components/time-range-filter";
 import { leads } from "@/data/leads";
-import { totalMetaSpend, totalMetaLeads } from "@/data/meta-ads";
+import { metaAds, totalMetaSpend, totalMetaLeads } from "@/data/meta-ads";
 import { perspectiveVisits } from "@/data/perspective";
 import { TOOLTIP_STYLE, AXIS_STYLE, FUNNEL_COLORS, STATUS_COLORS } from "@/components/chart-theme";
 import { Users, DollarSign, MousePointerClick, TrendingUp } from "lucide-react";
 import {
   BarChart,
   Bar,
-  LineChart,
-  Line,
   XAxis,
   YAxis,
   Tooltip,
@@ -22,7 +20,40 @@ import {
   Legend,
 } from "recharts";
 import type { TimeRange } from "@/lib/date-utils";
-import { filterLeadsByRange, parseDEtoISO, filterPerspectiveByRange, computePerspectiveSummary } from "@/lib/date-utils";
+import {
+  filterLeadsByRange,
+  parseDEtoISO,
+  parseDE,
+  getISOWeek,
+  classifyLead,
+  filterPerspectiveByRange,
+  computePerspectiveSummary,
+} from "@/lib/date-utils";
+
+/* ── Helpers for cohort spend calculation ── */
+
+function matchesAd(lead: (typeof leads)[0], adId: string): boolean {
+  return (
+    lead.adId === adId ||
+    lead.adId === `ag:${adId}` ||
+    lead.adId.includes(adId.slice(-10))
+  );
+}
+
+const QUALIFIED_STATUSES = new Set([
+  "Vertriebsqualifiziert",
+  "Kennenlerngespräch gebucht",
+  "Beratungsgespräch gebucht",
+]);
+
+const adTotalLeads = new Map<string, number>();
+leads.forEach((lead) => {
+  metaAds.forEach((ad) => {
+    if (matchesAd(lead, ad.adId)) {
+      adTotalLeads.set(ad.adId, (adTotalLeads.get(ad.adId) ?? 0) + 1);
+    }
+  });
+});
 
 export default function OverviewPage() {
   const [range, setRange] = useState<TimeRange>("all");
@@ -31,7 +62,7 @@ export default function OverviewPage() {
     metaLeads, kursnetLeads, indeedLeads, totalLeads,
     gewonnen, terminCount, qualifiedPlusHistorical,
     funnelData, statusData, channelData, timelineData,
-    perspSummary,
+    perspSummary, cohortWeeks,
   } = useMemo(() => {
     const filtered = filterLeadsByRange(leads, range);
     const metaLeads = filtered.filter(
@@ -82,15 +113,15 @@ export default function OverviewPage() {
       { name: "Kursnet", leads: kursnetLeads.length, spend: 0, sub: "Organisch via Kursnet/meinNOW", hasSpend: false },
     ];
 
-    /* Timeline */
-    const timelineMap = new Map<string, { Facebook: number; Instagram: number; Kursnet: number; Indeed: number }>();
+    /* Timeline — Meta (FB+IG zusammengefasst), Kursnet, Indeed */
+    const timelineMap = new Map<string, { Meta: number; Kursnet: number; Indeed: number }>();
     filtered.forEach((l) => {
       const date = parseDEtoISO(l.createdOn);
       if (!date || date === "NaN-NaN-NaN") return;
-      const entry = timelineMap.get(date) ?? { Facebook: 0, Instagram: 0, Kursnet: 0, Indeed: 0 };
-      if (l.platform === "Facebook" || l.platform === "Instagram" || l.platform === "Kursnet" || l.platform === "Indeed") {
-        entry[l.platform]++;
-      }
+      const entry = timelineMap.get(date) ?? { Meta: 0, Kursnet: 0, Indeed: 0 };
+      if (l.platform === "Facebook" || l.platform === "Instagram") entry.Meta++;
+      else if (l.platform === "Kursnet") entry.Kursnet++;
+      else if (l.platform === "Indeed") entry.Indeed++;
       timelineMap.set(date, entry);
     });
 
@@ -98,8 +129,7 @@ export default function OverviewPage() {
       .sort(([a], [b]) => a.localeCompare(b))
       .map(([date, counts]) => ({
         date: new Date(date).toLocaleDateString("de-DE", { day: "numeric", month: "short" }),
-        Facebook: counts.Facebook,
-        Instagram: counts.Instagram,
+        Meta: counts.Meta,
         Kursnet: counts.Kursnet,
         Indeed: counts.Indeed,
       }));
@@ -108,11 +138,82 @@ export default function OverviewPage() {
     const perspFiltered = filterPerspectiveByRange(perspectiveVisits, range);
     const perspSummary = computePerspectiveSummary(perspFiltered);
 
+    /* ── Cohort: Wochengruppierung ── */
+    const weekMap = new Map<number, { leads: (typeof filtered)[number][] }>();
+    filtered.forEach((lead) => {
+      const date = parseDE(lead.createdOn);
+      if (isNaN(date.getTime())) return;
+      const wk = getISOWeek(date);
+      const entry = weekMap.get(wk) ?? { leads: [] };
+      entry.leads.push(lead);
+      weekMap.set(wk, entry);
+    });
+
+    const cohortWeeks = Array.from(weekMap.entries())
+      .sort((a, b) => a[0] - b[0])
+      .map(([weekNum, { leads: wl }]) => {
+        const totalLeads = wl.length;
+        const qualified = wl.filter(
+          (l) => QUALIFIED_STATUSES.has(l.leadStatus) || l.leadStatus === "Gewonnen"
+        ).length;
+        const won = wl.filter((l) => l.leadStatus === "Gewonnen").length;
+        const lost = wl.filter((l) => l.leadStatus === "Verloren").length;
+        const conversionRate = totalLeads > 0 ? (won / totalLeads) * 100 : 0;
+
+        let weeklySpend = 0;
+        metaAds.forEach((ad) => {
+          const k = wl.filter((l) => matchesAd(l, ad.adId)).length;
+          const n = adTotalLeads.get(ad.adId) ?? 0;
+          if (n > 0 && k > 0) weeklySpend += (k / n) * ad.amountSpent;
+        });
+
+        const cpl = totalLeads > 0 ? weeklySpend / totalLeads : 0;
+        const cpa = won > 0 ? weeklySpend / won : 0;
+        const highTouch = wl.filter((l) => classifyLead(l) === "High-Touch").length;
+        const lowTouchAngebote = wl.filter(
+          (l) =>
+            classifyLead(l) === "Low-Touch" &&
+            (l.dealStatus === "Angebot schicken" || l.leadStatus === "Beratungsgespräch gebucht")
+        ).length;
+        const kostenProHighTouch = highTouch > 0 ? weeklySpend / highTouch : 0;
+        const termineAmt = wl.filter(
+          (l) => l.terminBeimAmt && l.terminBeimAmt.trim() !== ""
+        ).length;
+
+        return {
+          week: `KW ${weekNum}`,
+          weekNum,
+          totalLeads,
+          qualified,
+          won,
+          lost,
+          conversionRate,
+          spend: weeklySpend,
+          cpl,
+          cpa,
+          highTouch,
+          lowTouchAngebote,
+          kostenProHighTouch,
+          termineAmt,
+          "Neuer Lead": wl.filter((l) => l.leadStatus === "Neuer Lead").length,
+          Rückruf: wl.filter((l) => l.leadStatus === "Rückruf").length,
+          Qualifiziert: wl.filter((l) => l.leadStatus === "Vertriebsqualifiziert").length,
+          Reterminierung: wl.filter((l) => l.leadStatus === "Reterminierung").length,
+          Gespräch: wl.filter(
+            (l) =>
+              l.leadStatus === "Kennenlerngespräch gebucht" ||
+              l.leadStatus === "Beratungsgespräch gebucht"
+          ).length,
+          Gewonnen: won,
+          Verloren: lost,
+        };
+      });
+
     return {
       metaLeads, kursnetLeads, indeedLeads, totalLeads,
       gewonnen, terminCount, qualifiedPlusHistorical,
       funnelData, statusData, channelData, timelineData,
-      perspSummary,
+      perspSummary, cohortWeeks,
     };
   }, [range]);
 
@@ -217,61 +318,124 @@ export default function OverviewPage() {
         </SectionCard>
       </div>
 
-      {/* Leads im Zeitverlauf */}
+      {/* Kanal-Vergleich Kacheln (über dem Timeline-Chart) */}
+      <div className="grid gap-4 md:grid-cols-3">
+        {channelData.map((ch) => (
+          <div
+            key={ch.name}
+            className="relative rounded-2xl border border-[rgba(255,255,255,0.04)] bg-[rgba(255,255,255,0.02)] p-6 overflow-hidden group hover:border-[rgba(255,255,255,0.08)] transition-all duration-300"
+          >
+            <div className={`absolute -top-12 -right-12 h-32 w-32 rounded-full blur-[60px] pointer-events-none transition-opacity duration-500 opacity-0 group-hover:opacity-100 ${ch.hasSpend ? "bg-[rgba(226,169,110,0.1)]" : "bg-[rgba(94,234,212,0.1)]"}`} />
+            <div className="relative">
+              <div className="text-[12px] font-medium uppercase tracking-wider text-[#57534e]">
+                {ch.name}
+              </div>
+              <div className="mt-3 flex items-baseline gap-2">
+                <span className={`text-[40px] font-bold tracking-tight tabular-nums ${ch.hasSpend ? "text-[#e2a96e]" : "text-[#5eead4]"}`}>
+                  {ch.leads}
+                </span>
+                <span className="text-[13px] font-medium text-[#44403c]">Leads</span>
+              </div>
+              {ch.hasSpend && ch.spend > 0 ? (
+                <div className="mt-2 flex gap-4 text-[12px] text-[#78716c]">
+                  <span>€{ch.spend.toFixed(2)} Spend</span>
+                  <span>{ch.sub}</span>
+                </div>
+              ) : (
+                <div className="mt-2 text-[12px] text-[#57534e]">
+                  {ch.sub}
+                </div>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Leads im Zeitverlauf — Stacked Bar Chart */}
       <SectionCard title="Leads im Zeitverlauf nach Quelle">
         <ResponsiveContainer width="100%" height={300}>
-          <LineChart data={timelineData}>
+          <BarChart data={timelineData} barCategoryGap="20%">
             <CartesianGrid strokeDasharray="3 3" stroke="#1c1917" vertical={false} />
             <XAxis dataKey="date" {...AXIS_STYLE} axisLine={false} tickLine={false} />
             <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} allowDecimals={false} />
-            <Tooltip
-              {...TOOLTIP_STYLE}
-              formatter={(val, name) => [val, name]}
-              labelFormatter={(label) => `${label}`}
-            />
+            <Tooltip {...TOOLTIP_STYLE} />
             <Legend wrapperStyle={{ fontSize: 12, color: "#78716c" }} />
-            <Line type="monotone" dataKey="Facebook" stroke="#818cf8" strokeWidth={2} dot={false} />
-            <Line type="monotone" dataKey="Instagram" stroke="#e2a96e" strokeWidth={2} dot={false} />
-            <Line type="monotone" dataKey="Kursnet" stroke="#5eead4" strokeWidth={2} dot={false} />
-            <Line type="monotone" dataKey="Indeed" stroke="#fb923c" strokeWidth={2} dot={false} />
-          </LineChart>
+            <Bar dataKey="Meta" stackId="a" fill="#818cf8" />
+            <Bar dataKey="Kursnet" stackId="a" fill="#5eead4" />
+            <Bar dataKey="Indeed" stackId="a" fill="#fb923c" radius={[4, 4, 0, 0]} />
+          </BarChart>
         </ResponsiveContainer>
       </SectionCard>
 
-      {/* Channel Comparison */}
-      <SectionCard title="Kanal-Vergleich">
-        <div className="grid gap-5 md:grid-cols-2">
-          {channelData.map((ch) => (
-            <div
-              key={ch.name}
-              className="relative rounded-2xl border border-[rgba(255,255,255,0.04)] bg-[rgba(255,255,255,0.02)] p-6 overflow-hidden group hover:border-[rgba(255,255,255,0.08)] transition-all duration-300"
-            >
-              {/* subtle ambient glow */}
-              <div className={`absolute -top-12 -right-12 h-32 w-32 rounded-full blur-[60px] pointer-events-none transition-opacity duration-500 opacity-0 group-hover:opacity-100 ${ch.hasSpend ? "bg-[rgba(226,169,110,0.1)]" : "bg-[rgba(94,234,212,0.1)]"}`} />
+      {/* Leads nach Status pro Woche — from Cohort */}
+      <SectionCard title="Leads nach Status pro Woche">
+        <ResponsiveContainer width="100%" height={340}>
+          <BarChart data={cohortWeeks} barCategoryGap="20%">
+            <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
+            <XAxis dataKey="week" {...AXIS_STYLE} />
+            <YAxis {...AXIS_STYLE} />
+            <Tooltip {...TOOLTIP_STYLE} />
+            <Legend wrapperStyle={{ fontSize: 11, color: "#78716c" }} />
+            <Bar dataKey="Neuer Lead" stackId="a" fill={STATUS_COLORS["Neuer Lead"]} />
+            <Bar dataKey="Rückruf" stackId="a" fill={STATUS_COLORS["Rückruf"]} />
+            <Bar dataKey="Qualifiziert" stackId="a" fill={STATUS_COLORS["Vertriebsqualifiziert"]} />
+            <Bar dataKey="Reterminierung" stackId="a" fill={STATUS_COLORS["Reterminierung"]} />
+            <Bar dataKey="Gespräch" stackId="a" fill={STATUS_COLORS["Kennenlerngespräch gebucht"]} />
+            <Bar dataKey="Gewonnen" stackId="a" fill={STATUS_COLORS["Gewonnen"]} />
+            <Bar dataKey="Verloren" stackId="a" fill={STATUS_COLORS["Verloren"]} radius={[4, 4, 0, 0]} />
+          </BarChart>
+        </ResponsiveContainer>
+      </SectionCard>
 
-              <div className="relative">
-                <div className="text-[12px] font-medium uppercase tracking-wider text-[#57534e]">
-                  {ch.name}
-                </div>
-                <div className="mt-3 flex items-baseline gap-2">
-                  <span className={`text-[40px] font-bold tracking-tight tabular-nums ${ch.hasSpend ? "text-[#e2a96e]" : "text-[#5eead4]"}`}>
-                    {ch.leads}
-                  </span>
-                  <span className="text-[13px] font-medium text-[#44403c]">Leads</span>
-                </div>
-                {ch.hasSpend && ch.spend > 0 ? (
-                  <div className="mt-2 flex gap-4 text-[12px] text-[#78716c]">
-                    <span>€{ch.spend.toFixed(2)} Spend</span>
-                    <span>{ch.sub}</span>
-                  </div>
-                ) : (
-                  <div className="mt-2 text-[12px] text-[#57534e]">
-                    {ch.sub}
-                  </div>
-                )}
-              </div>
-            </div>
-          ))}
+      {/* Wochendetails Tabelle — from Cohort */}
+      <SectionCard title="Wochendetails">
+        <div className="overflow-x-auto -mx-2">
+          <table className="w-full premium-table">
+            <thead>
+              <tr>
+                <th className="text-left pl-2">Woche</th>
+                <th className="text-right">Leads</th>
+                <th className="text-right">Qualifiziert</th>
+                <th className="text-right">High-Touch</th>
+                <th className="text-right">LT-Angebote</th>
+                <th className="text-right">€/High-Touch</th>
+                <th className="text-right">Amt-Termine</th>
+                <th className="text-right">Gewonnen</th>
+                <th className="text-right">Verloren</th>
+                <th className="text-right">Spend</th>
+                <th className="text-right">CPL</th>
+                <th className="text-right">CPA</th>
+                <th className="text-right pr-2">Conv.&nbsp;%</th>
+              </tr>
+            </thead>
+            <tbody>
+              {cohortWeeks.map((w) => (
+                <tr key={w.week}>
+                  <td className="text-left pl-2 text-[#e2a96e] font-medium">{w.week}</td>
+                  <td className="text-right">{w.totalLeads}</td>
+                  <td className="text-right">{w.qualified}</td>
+                  <td className="text-right">{w.highTouch}</td>
+                  <td className="text-right">{w.lowTouchAngebote}</td>
+                  <td className="text-right">
+                    {w.kostenProHighTouch > 0 ? `€${w.kostenProHighTouch.toFixed(2)}` : "–"}
+                  </td>
+                  <td className="text-right">{w.termineAmt}</td>
+                  <td className="text-right text-[#fbbf24]">{w.won}</td>
+                  <td className="text-right text-[#fb7185]">{w.lost}</td>
+                  <td className="text-right">
+                    {w.spend > 0 ? `€${w.spend.toFixed(2)}` : "–"}
+                  </td>
+                  <td className="text-right">
+                    {w.cpl > 0 ? `€${w.cpl.toFixed(2)}` : "–"}
+                  </td>
+                  <td className="text-right">
+                    {w.cpa > 0 && w.cpa < Infinity ? `€${w.cpa.toFixed(2)}` : "–"}
+                  </td>
+                  <td className="text-right pr-2">{w.conversionRate.toFixed(1)}%</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </SectionCard>
     </div>

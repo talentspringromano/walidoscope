@@ -9,7 +9,6 @@ import {
   Megaphone,
   HandshakeIcon,
   Users,
-  CalendarDays,
   PanelLeftClose,
   PanelLeftOpen,
   LogOut,
@@ -20,7 +19,6 @@ const navItems = [
   { href: "/marketing", label: "Marketing", icon: Megaphone },
   { href: "/sales", label: "Vertrieb", icon: HandshakeIcon },
   { href: "/seller", label: "Vertriebler", icon: Users },
-  { href: "/cohort", label: "Kohorte", icon: CalendarDays },
 ];
 
 export function Sidebar() {
