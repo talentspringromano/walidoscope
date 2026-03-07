@@ -241,6 +241,12 @@ export default function SellerPage() {
         />
       </div>
 
+      {/* Bestenliste */}
+      <Bestenliste data={sellerData} />
+
+      {/* Aktivitätskalender */}
+      <ActivityCalendar />
+
       {/* Comparison Chart + Radar */}
       <div className="grid gap-6 lg:grid-cols-2 stagger-in">
         <SectionCard title="Vertriebler-Vergleich">
@@ -382,12 +388,6 @@ export default function SellerPage() {
           </div>
         ))}
       </div>
-
-      {/* Aktivitätskalender (unberührt) */}
-      <ActivityCalendar />
-
-      {/* Bestenliste */}
-      <Bestenliste data={sellerData} />
     </div>
   );
 }
