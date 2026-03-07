@@ -322,29 +322,42 @@ export default function MarketingPage() {
         {/* Leads pro Kanal im Zeitverlauf – Stacked Bar */}
         {channelWeeklyData.length > 0 && (
         <div className="glass-card p-6">
-          <h3 className="text-[13px] font-semibold tracking-wide text-[#a8a29e] mb-4">Leads pro Kanal im Zeitverlauf</h3>
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-[13px] font-semibold tracking-wide text-[#a8a29e]">Leads pro Kanal im Zeitverlauf</h3>
+            <div className="flex items-center gap-2">
+              {(["Meta", "Kursnet", "Indeed"] as const).map((ch) => {
+                const active = !hiddenChannels.has(ch);
+                const color = ch === "Meta" ? PALETTE.indigo : ch === "Kursnet" ? PALETTE.teal : PALETTE.amber;
+                return (
+                  <button
+                    key={ch}
+                    onClick={() =>
+                      setHiddenChannels((prev) => {
+                        const next = new Set(prev);
+                        next.has(ch) ? next.delete(ch) : next.add(ch);
+                        return next;
+                      })
+                    }
+                    className="px-3 py-1 rounded-lg text-[11px] font-medium transition-all border"
+                    style={{
+                      background: active ? `${color}18` : "transparent",
+                      borderColor: active ? `${color}40` : "rgba(255,255,255,0.06)",
+                      color: active ? color : "#57534e",
+                      opacity: active ? 1 : 0.5,
+                    }}
+                  >
+                    {ch}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
           <ResponsiveContainer width="100%" height={300}>
             <BarChart data={channelWeeklyData} barCategoryGap="20%">
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
               <XAxis dataKey="week" {...AXIS_STYLE} axisLine={false} tickLine={false} />
               <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} allowDecimals={false} />
               <Tooltip {...TOOLTIP_STYLE} />
-              <Legend
-                wrapperStyle={{ fontSize: 11 }}
-                onClick={(e) => {
-                  const ch = e.value as string;
-                  setHiddenChannels((prev) => {
-                    const next = new Set(prev);
-                    next.has(ch) ? next.delete(ch) : next.add(ch);
-                    return next;
-                  });
-                }}
-                formatter={(value: string) => (
-                  <span style={{ color: hiddenChannels.has(value) ? "rgba(120,113,108,0.4)" : "#a8a29e" }}>
-                    {value}
-                  </span>
-                )}
-              />
               {(["Meta", "Kursnet", "Indeed"] as const)
                 .filter((ch) => !hiddenChannels.has(ch))
                 .map((ch, i, arr) => (
