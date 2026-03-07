@@ -2,9 +2,10 @@
 
 import { useState, useMemo } from "react";
 import { KpiCard, SectionCard } from "@/components/kpi-card";
+import { TimeRangeFilter } from "@/components/time-range-filter";
 import { leads } from "@/data/leads";
 import { metaAds, totalMetaSpend, totalMetaLeads, avgCPL } from "@/data/meta-ads";
-import { perspectiveSummary } from "@/data/perspective";
+import { perspectiveVisits } from "@/data/perspective";
 import { TOOLTIP_STYLE, AXIS_STYLE, PALETTE, SEGMENT_COLORS, FUNNEL_COLORS } from "@/components/chart-theme";
 import { AlertTriangle, ArrowUpDown, ArrowUp, ArrowDown } from "lucide-react";
 import {
@@ -23,6 +24,14 @@ import {
   CartesianGrid,
   Legend,
 } from "recharts";
+import type { TimeRange } from "@/lib/date-utils";
+import {
+  filterLeadsByRange,
+  filterPerspectiveByRange,
+  computePerspectiveSummary,
+  parseDE,
+  getISOWeek,
+} from "@/lib/date-utils";
 
 /* ── Soll-Ist Targets pro Kanal ── */
 const CHANNEL_TARGETS = {
@@ -33,14 +42,14 @@ const CHANNEL_TARGETS = {
 
 type ChannelKey = keyof typeof CHANNEL_TARGETS;
 
-function computeChannelIST(channel: ChannelKey) {
+function computeChannelIST(channel: ChannelKey, leadsSubset: typeof leads) {
   const platformFilter = channel === "meta"
     ? (l: (typeof leads)[0]) => l.platform === "Instagram" || l.platform === "Facebook"
     : channel === "kursnet"
     ? (l: (typeof leads)[0]) => l.platform === "Kursnet"
     : (l: (typeof leads)[0]) => l.platform === "Indeed";
 
-  const channelLeads = leads.filter(platformFilter);
+  const channelLeads = leadsSubset.filter(platformFilter);
   const leadCount = channelLeads.length;
   const gewonnen = channelLeads.filter((l) => l.leadStatus === "Gewonnen").length;
   const spend = channel === "meta" ? totalMetaSpend : 0;
@@ -56,12 +65,6 @@ const CHANNELS: { key: ChannelKey; label: string }[] = [
   { key: "indeed", label: "Indeed" },
 ];
 
-const channelData = CHANNELS.map(({ key, label }) => {
-  const ist = computeChannelIST(key);
-  const soll = CHANNEL_TARGETS[key];
-  return { key, label, ist, soll };
-});
-
 /* ── Lead Segmentierung ── */
 function classifyLead(l: (typeof leads)[0]) {
   if (l.platform === "Kursnet") return "High-Touch";
@@ -75,70 +78,7 @@ function classifyLead(l: (typeof leads)[0]) {
   return "Nicht qualifiziert";
 }
 
-const segmentCounts: Record<string, number> = {};
-leads.forEach((l) => {
-  const seg = classifyLead(l);
-  segmentCounts[seg] = (segmentCounts[seg] || 0) + 1;
-});
-const segmentData = Object.entries(segmentCounts).map(([name, value]) => ({ name, value }));
-
-/* ── Lead-Segmentierung im Zeitverlauf ── */
-function parseDE(dateStr: string): Date {
-  const [dayMonthYear] = dateStr.split(" ");
-  const [day, month, year] = dayMonthYear.split(".");
-  return new Date(Number(year), Number(month) - 1, Number(day));
-}
-
-function getISOWeek(d: Date): number {
-  const date = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
-  date.setUTCDate(date.getUTCDate() + 4 - (date.getUTCDay() || 7));
-  const yearStart = new Date(Date.UTC(date.getUTCFullYear(), 0, 1));
-  return Math.ceil(((date.getTime() - yearStart.getTime()) / 86400000 + 1) / 7);
-}
-
-const allSegments = Object.keys(segmentCounts);
-
-const segmentWeekMap = new Map<number, Record<string, number>>();
-leads.forEach((l) => {
-  const date = parseDE(l.createdOn);
-  if (isNaN(date.getTime())) return;
-  const wk = getISOWeek(date);
-  const seg = classifyLead(l);
-  const entry = segmentWeekMap.get(wk) ?? {};
-  entry[seg] = (entry[seg] || 0) + 1;
-  segmentWeekMap.set(wk, entry);
-});
-
-const segmentWeeklyData = Array.from(segmentWeekMap.entries())
-  .sort((a, b) => a[0] - b[0])
-  .map(([wk, counts]) => ({
-    week: `KW ${wk}`,
-    ...Object.fromEntries(allSegments.map((s) => [s, counts[s] || 0])),
-  }));
-
-/* ── Creative Deep-Funnel ── */
-const creativeDeepFunnel = metaAds.map((ad) => {
-  const adLeads = leads.filter(
-    (l) => l.adId === ad.adId || l.adId === `ag:${ad.adId}` || l.adId.includes(ad.adId.slice(-10))
-  );
-  const qualified = adLeads.filter(
-    (l) => l.leadStatus === "Vertriebsqualifiziert" || l.leadStatus === "Kennenlerngespräch gebucht" || l.leadStatus === "Beratungsgespräch gebucht"
-  ).length;
-  const angebot = adLeads.filter(
-    (l) => l.leadStatus === "Gewonnen"
-  ).length;
-  return { ...ad, airtableLeads: adLeads.length, discovery: qualified, angebot };
-});
-
-/* ── Perspective Funnel ── */
-const gewonnenKursnet = leads.filter((l) => l.platform === "Kursnet" && l.leadStatus === "Gewonnen").length;
-const perspFunnelData = [
-  { name: "LP Visits", value: perspectiveSummary.totalVisits },
-  { name: "Konvertiert", value: perspectiveSummary.converted },
-  { name: "Gewonnen (BG)", value: gewonnenKursnet },
-];
-
-/* ── Cost per Ad ── */
+/* ── Cost per Ad (module-level, not filterable) ── */
 const costData = metaAds.map((ad) => ({
   name: ad.shortName,
   spend: ad.amountSpent,
@@ -160,6 +100,79 @@ export default function MarketingPage() {
   const [sortKey, setSortKey] = useState<SortKey>("results");
   const [sortDir, setSortDir] = useState<SortDir>("desc");
   const [filter, setFilter] = useState<FilterPreset>("all");
+  const [range, setRange] = useState<TimeRange>("all");
+
+  const {
+    channelData, segmentCounts, segmentData, allSegments, segmentWeeklyData,
+    creativeDeepFunnel, gewonnenKursnet, perspFunnelData, perspSummary,
+    filteredLeads,
+  } = useMemo(() => {
+    const filteredLeads = filterLeadsByRange(leads, range);
+
+    const channelData = CHANNELS.map(({ key, label }) => {
+      const ist = computeChannelIST(key, filteredLeads);
+      const soll = CHANNEL_TARGETS[key];
+      return { key, label, ist, soll };
+    });
+
+    const segmentCounts: Record<string, number> = {};
+    filteredLeads.forEach((l) => {
+      const seg = classifyLead(l);
+      segmentCounts[seg] = (segmentCounts[seg] || 0) + 1;
+    });
+    const segmentData = Object.entries(segmentCounts).map(([name, value]) => ({ name, value }));
+
+    const allSegments = Object.keys(segmentCounts);
+
+    const segmentWeekMap = new Map<number, Record<string, number>>();
+    filteredLeads.forEach((l) => {
+      const date = parseDE(l.createdOn);
+      if (isNaN(date.getTime())) return;
+      const wk = getISOWeek(date);
+      const seg = classifyLead(l);
+      const entry = segmentWeekMap.get(wk) ?? {};
+      entry[seg] = (entry[seg] || 0) + 1;
+      segmentWeekMap.set(wk, entry);
+    });
+
+    const segmentWeeklyData = Array.from(segmentWeekMap.entries())
+      .sort((a, b) => a[0] - b[0])
+      .map(([wk, counts]) => ({
+        week: `KW ${wk}`,
+        ...Object.fromEntries(allSegments.map((s) => [s, counts[s] || 0])),
+      }));
+
+    /* Creative Deep-Funnel */
+    const creativeDeepFunnel = metaAds.map((ad) => {
+      const adLeads = filteredLeads.filter(
+        (l) => l.adId === ad.adId || l.adId === `ag:${ad.adId}` || l.adId.includes(ad.adId.slice(-10))
+      );
+      const qualified = adLeads.filter(
+        (l) => l.leadStatus === "Vertriebsqualifiziert" || l.leadStatus === "Kennenlerngespräch gebucht" || l.leadStatus === "Beratungsgespräch gebucht"
+      ).length;
+      const angebot = adLeads.filter(
+        (l) => l.leadStatus === "Gewonnen"
+      ).length;
+      return { ...ad, airtableLeads: adLeads.length, discovery: qualified, angebot };
+    });
+
+    /* Perspective */
+    const perspFiltered = filterPerspectiveByRange(perspectiveVisits, range);
+    const perspSummary = computePerspectiveSummary(perspFiltered);
+
+    const gewonnenKursnet = filteredLeads.filter((l) => l.platform === "Kursnet" && l.leadStatus === "Gewonnen").length;
+    const perspFunnelData = [
+      { name: "LP Visits", value: perspSummary.totalVisits },
+      { name: "Konvertiert", value: perspSummary.converted },
+      { name: "Gewonnen (BG)", value: gewonnenKursnet },
+    ];
+
+    return {
+      channelData, segmentCounts, segmentData, allSegments, segmentWeeklyData,
+      creativeDeepFunnel, gewonnenKursnet, perspFunnelData, perspSummary,
+      filteredLeads,
+    };
+  }, [range]);
 
   const filteredAndSorted = useMemo(() => {
     let data = [...creativeDeepFunnel];
@@ -177,7 +190,7 @@ export default function MarketingPage() {
     });
 
     return data;
-  }, [sortKey, sortDir, filter]);
+  }, [sortKey, sortDir, filter, creativeDeepFunnel]);
 
   function toggleSort(key: SortKey) {
     if (sortKey === key) setSortDir((d) => (d === "asc" ? "desc" : "asc"));
@@ -191,11 +204,16 @@ export default function MarketingPage() {
       : <ArrowUp className="h-3 w-3 ml-1 text-[#e2a96e]" />;
   }
 
+  const kursnetLeadsCount = filteredLeads.filter((l) => l.platform === "Kursnet").length;
+
   return (
     <div className="space-y-8">
-      <div>
-        <h1 className="text-[26px] font-bold tracking-tight text-[#fafaf9]">Marketing-Analytik</h1>
-        <p className="mt-1 text-[13px] text-[#57534e]">Ad Performance, Lead-Segmentierung & Kursnet Funnel</p>
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="text-[26px] font-bold tracking-tight text-[#fafaf9]">Marketing-Analytik</h1>
+          <p className="mt-1 text-[13px] text-[#57534e]">Ad Performance, Lead-Segmentierung & Kursnet Funnel</p>
+        </div>
+        <TimeRangeFilter value={range} onChange={setRange} />
       </div>
 
       {/* ── Soll-Ist-Vergleich ── */}
@@ -205,6 +223,7 @@ export default function MarketingPage() {
         {/* Channel Cards */}
         <div className="grid gap-4 lg:grid-cols-3">
           {channelData.map(({ key, label, ist, soll }) => {
+            const showSpend = range === "all";
             const metrics: { name: string; istVal: string; sollVal: string; diff: number; unit: string }[] = [
               {
                 name: "Leads",
@@ -215,16 +234,16 @@ export default function MarketingPage() {
               },
               {
                 name: "Spend",
-                istVal: `€${ist.spend.toFixed(0)}`,
+                istVal: showSpend ? `€${ist.spend.toFixed(0)}` : "—",
                 sollVal: `€${soll.spend}`,
-                diff: soll.spend > 0 ? ist.spend - soll.spend : 0,
+                diff: showSpend && soll.spend > 0 ? ist.spend - soll.spend : 0,
                 unit: "€",
               },
               {
                 name: "CPL",
-                istVal: ist.cpl > 0 ? `€${ist.cpl.toFixed(2)}` : "—",
+                istVal: showSpend && ist.cpl > 0 ? `€${ist.cpl.toFixed(2)}` : "—",
                 sollVal: soll.cpl > 0 ? `€${soll.cpl.toFixed(2)}` : "—",
-                diff: soll.cpl > 0 ? -(ist.cpl - soll.cpl) : 0, // lower CPL is better
+                diff: showSpend && soll.cpl > 0 ? -(ist.cpl - soll.cpl) : 0,
                 unit: "€",
               },
               {
@@ -327,10 +346,10 @@ export default function MarketingPage() {
 
       {/* KPIs */}
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 stagger-in">
-        <KpiCard label="Meta Spend" value={`€${totalMetaSpend.toFixed(2)}`} sub="7 Creatives" accent />
-        <KpiCard label="Meta Leads" value={totalMetaLeads} sub={`€${avgCPL.toFixed(2)} CPL`} />
-        <KpiCard label="Kursnet Visits" value={perspectiveSummary.totalVisits} sub={`${perspectiveSummary.converted} konvertiert`} />
-        <KpiCard label="Kursnet Leads" value={leads.filter((l) => l.platform === "Kursnet").length} sub={`${leads.filter((l) => l.platform === "Kursnet").length} im CRM · ${perspectiveSummary.converted} konvertiert`} />
+        <KpiCard label="Meta Spend" value={range === "all" ? `€${totalMetaSpend.toFixed(2)}` : "—"} sub={range === "all" ? "7 Creatives" : "Nicht filterbar"} accent />
+        <KpiCard label="Meta Leads" value={range === "all" ? totalMetaLeads : filteredLeads.filter((l) => l.platform === "Facebook" || l.platform === "Instagram").length} sub={range === "all" ? `€${avgCPL.toFixed(2)} CPL` : "Gefilterte Meta-Leads"} />
+        <KpiCard label="Kursnet Visits" value={perspSummary.totalVisits} sub={`${perspSummary.converted} konvertiert`} />
+        <KpiCard label="Kursnet Leads" value={kursnetLeadsCount} sub={`${kursnetLeadsCount} im CRM · ${perspSummary.converted} konvertiert`} />
       </div>
 
       {/* Creative Performance Table */}
@@ -475,7 +494,7 @@ export default function MarketingPage() {
         <div>
           <p className="text-[14px] font-semibold text-amber-300">CRM-Erfassungslücke erkannt</p>
           <p className="text-[13px] text-amber-400/80 mt-1">
-            12 von {perspectiveSummary.converted} Perspective-Konversionen fehlen im CRM. Nur {leads.filter((l) => l.platform === "Kursnet").length} wurden in Airtable als Kursnet-Leads erfasst.
+            {perspSummary.converted - kursnetLeadsCount} von {perspSummary.converted} Perspective-Konversionen fehlen im CRM. Nur {kursnetLeadsCount} wurden in Airtable als Kursnet-Leads erfasst.
           </p>
         </div>
       </div>
@@ -508,13 +527,13 @@ export default function MarketingPage() {
                 <div className="flex items-center justify-between">
                   <span className="text-[12px] text-[#57534e]">Visit → Gewonnen</span>
                   <span className="text-[16px] font-bold text-[#e2a96e] tabular-nums">
-                    {perspectiveSummary.totalVisits > 0 ? ((gewonnenKursnet / perspectiveSummary.totalVisits) * 100).toFixed(1) : "0"}%
+                    {perspSummary.totalVisits > 0 ? ((gewonnenKursnet / perspSummary.totalVisits) * 100).toFixed(1) : "0"}%
                   </span>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-[12px] text-[#57534e]">Konvertiert → Gewonnen</span>
                   <span className="text-[16px] font-bold text-[#5eead4] tabular-nums">
-                    {perspectiveSummary.converted > 0 ? ((gewonnenKursnet / perspectiveSummary.converted) * 100).toFixed(1) : "0"}%
+                    {perspSummary.converted > 0 ? ((gewonnenKursnet / perspSummary.converted) * 100).toFixed(1) : "0"}%
                   </span>
                 </div>
               </div>
@@ -527,9 +546,9 @@ export default function MarketingPage() {
               CRM-Erfassungs-Gap
             </h3>
             {[
-              { label: "Perspective konvertiert", value: perspectiveSummary.converted, color: "text-[#818cf8]" },
-              { label: "Im CRM erfasst", value: leads.filter((l) => l.platform === "Kursnet").length, color: "text-[#5eead4]" },
-              { label: "Fehlend", value: perspectiveSummary.converted - leads.filter((l) => l.platform === "Kursnet").length, color: "text-amber-400" },
+              { label: "Perspective konvertiert", value: perspSummary.converted, color: "text-[#818cf8]" },
+              { label: "Im CRM erfasst", value: kursnetLeadsCount, color: "text-[#5eead4]" },
+              { label: "Fehlend", value: perspSummary.converted - kursnetLeadsCount, color: "text-amber-400" },
             ].map((row) => (
               <div key={row.label} className="flex items-center justify-between">
                 <span className="text-[12px] text-[#a8a29e]">{row.label}</span>
@@ -539,11 +558,11 @@ export default function MarketingPage() {
             <div className="h-2 rounded-full bg-[rgba(255,255,255,0.04)] overflow-hidden mt-1">
               <div
                 className="h-full rounded-full bg-gradient-to-r from-[#5eead4] to-[#5eead4]"
-                style={{ width: `${Math.round((leads.filter((l) => l.platform === "Kursnet").length / perspectiveSummary.converted) * 100)}%` }}
+                style={{ width: `${perspSummary.converted > 0 ? Math.round((kursnetLeadsCount / perspSummary.converted) * 100) : 0}%` }}
               />
             </div>
             <p className="text-[11px] text-[#57534e]">
-              {Math.round((leads.filter((l) => l.platform === "Kursnet").length / perspectiveSummary.converted) * 100)}% Erfassungsrate
+              {perspSummary.converted > 0 ? Math.round((kursnetLeadsCount / perspSummary.converted) * 100) : 0}% Erfassungsrate
             </p>
           </div>
 
@@ -551,11 +570,11 @@ export default function MarketingPage() {
             <h3 className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#57534e] mb-4">
               Visits nach Kurs-Titel
             </h3>
-            {Object.entries(perspectiveSummary.byTitle)
+            {Object.entries(perspSummary.byTitle)
               .sort((a, b) => b[1].visits - a[1].visits)
               .slice(0, 6)
               .map(([title, data]) => {
-                const pct = Math.round((data.visits / perspectiveSummary.totalVisits) * 100);
+                const pct = perspSummary.totalVisits > 0 ? Math.round((data.visits / perspSummary.totalVisits) * 100) : 0;
                 return (
                   <div key={title} className="group">
                     <div className="flex items-center justify-between text-[12px] mb-1.5">

@@ -1,6 +1,8 @@
 "use client";
 
+import { useState, useMemo } from "react";
 import { KpiCard, SectionCard } from "@/components/kpi-card";
+import { TimeRangeFilter } from "@/components/time-range-filter";
 import { leads } from "@/data/leads";
 import { TOOLTIP_STYLE, AXIS_STYLE, STATUS_COLORS, LOSS_COLORS, PALETTE } from "@/components/chart-theme";
 import { Lightbulb, AlertTriangle, CheckCircle, Clock } from "lucide-react";
@@ -18,129 +20,29 @@ import {
   CartesianGrid,
   Legend,
 } from "recharts";
+import type { TimeRange } from "@/lib/date-utils";
+import { filterLeadsByRange, parseDE, getISOWeek } from "@/lib/date-utils";
 
 const statusOrder = [
   "Neuer Lead", "Rückruf", "Vertriebsqualifiziert", "Reterminierung",
   "Kennenlerngespräch gebucht", "Beratungsgespräch gebucht", "Gewonnen", "Verloren",
 ] as const;
 
-const statusData = statusOrder.map((s) => ({
-  name: s,
-  count: leads.filter((l) => l.leadStatus === s).length,
-}));
-
-const lostLeads = leads.filter((l) => l.leadStatus === "Verloren");
-const lostWithReason = lostLeads.filter((l) => l.verlustgrund);
-const lostNoReason = lostLeads.filter((l) => !l.verlustgrund);
-
-const verlustgruende: Record<string, number> = {};
-lostWithReason.forEach((l) => {
-  verlustgruende[l.verlustgrund] = (verlustgruende[l.verlustgrund] || 0) + 1;
-});
-// Add "Kein Grund angegeben" to pie
-if (lostNoReason.length > 0) {
-  verlustgruende["Kein Grund angegeben"] = lostNoReason.length;
-}
-const verlustData = Object.entries(verlustgruende)
-  .sort((a, b) => b[1] - a[1])
-  .map(([name, value]) => ({ name, value }));
-
-/* ── Helpers: week grouping ── */
-function parseDE(dateStr: string): Date {
-  const [dayMonthYear] = dateStr.split(" ");
-  const [day, month, year] = dayMonthYear.split(".");
-  return new Date(Number(year), Number(month) - 1, Number(day));
-}
-
-function getISOWeek(d: Date): number {
-  const date = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
-  date.setUTCDate(date.getUTCDate() + 4 - (date.getUTCDay() || 7));
-  const yearStart = new Date(Date.UTC(date.getUTCFullYear(), 0, 1));
-  return Math.ceil(((date.getTime() - yearStart.getTime()) / 86400000 + 1) / 7);
-}
-
-/* ── Verlustgründe im Zeitverlauf ── */
-const lossWeekMap = new Map<number, Record<string, number>>();
-lostLeads.forEach((l) => {
-  const date = parseDE(l.createdOn);
-  if (isNaN(date.getTime())) return;
-  const wk = getISOWeek(date);
-  const entry = lossWeekMap.get(wk) ?? {};
-  const reason = l.verlustgrund || "Kein Grund angegeben";
-  entry[reason] = (entry[reason] || 0) + 1;
-  lossWeekMap.set(wk, entry);
-});
-
-const allLossReasons = Array.from(
-  new Set(lostLeads.map((l) => l.verlustgrund || "Kein Grund angegeben"))
-);
-
-const lossWeeklyData = Array.from(lossWeekMap.entries())
-  .sort((a, b) => a[0] - b[0])
-  .map(([wk, counts]) => ({
-    week: `KW ${wk}`,
-    ...Object.fromEntries(allLossReasons.map((r) => [r, counts[r] || 0])),
-  }));
-
-// Lost by seller
-const lostBySeller: Record<string, { total: number; noReason: number }> = {};
-lostLeads.forEach((l) => {
-  const entry = lostBySeller[l.vertriebler] ?? { total: 0, noReason: 0 };
-  entry.total++;
-  if (!l.verlustgrund) entry.noReason++;
-  lostBySeller[l.vertriebler] = entry;
-});
-
-const gewonnenLeads = leads.filter((l) => l.leadStatus === "Gewonnen");
-const gewonnenBySeller: Record<string, number> = {};
-gewonnenLeads.forEach((l) => {
-  gewonnenBySeller[l.vertriebler] = (gewonnenBySeller[l.vertriebler] || 0) + 1;
-});
-
-const angebotLeads = leads.filter(
-  (l) => l.dealStatus === "Angebot schicken" || l.leadStatus === "Beratungsgespräch gebucht"
-);
-const pipelineLeads = leads.filter(
-  (l) =>
-    l.leadStatus === "Vertriebsqualifiziert" ||
-    l.leadStatus === "Kennenlerngespräch gebucht" ||
-    l.leadStatus === "Beratungsgespräch gebucht"
-);
-const leadsWithTermin = leads.filter((l) => l.terminBeimAmt);
-
-/* ── Termine im Zeitverlauf ── */
-function parseTerminDateDE(s: string): Date {
-  const [day, month, year] = s.split(".").map(Number);
-  return new Date(year, month - 1, day);
-}
-
-const terminWeekMap = new Map<number, number>();
-leadsWithTermin.forEach((l) => {
-  const date = parseTerminDateDE(l.terminBeimAmt);
-  if (isNaN(date.getTime())) return;
-  const wk = getISOWeek(date);
-  terminWeekMap.set(wk, (terminWeekMap.get(wk) || 0) + 1);
-});
-
-const terminWeeklyData = Array.from(terminWeekMap.entries())
-  .sort((a, b) => a[0] - b[0])
-  .map(([wk, count]) => ({ week: `KW ${wk}`, Termine: count }));
-
-/* ── Amt-Termine: parse, filter auf diese + nächste Woche, sortieren ── */
+/* ── Amt-Termine: parse, filter auf diese + nächste Woche, sortieren (real-date-based) ── */
 function parseTerminDate(s: string): Date {
   const [day, month, year] = s.split(".").map(Number);
   return new Date(year, month - 1, day);
 }
 
 const today = new Date();
-// Montag dieser Woche (getDay: 0=So,1=Mo…)
 const dayOfWeek = today.getDay();
 const diffToMonday = dayOfWeek === 0 ? 6 : dayOfWeek - 1;
 const thisMonday = new Date(today.getFullYear(), today.getMonth(), today.getDate() - diffToMonday);
 const nextSunday = new Date(thisMonday.getFullYear(), thisMonday.getMonth(), thisMonday.getDate() + 13, 23, 59, 59);
 const nextMonday = new Date(thisMonday.getFullYear(), thisMonday.getMonth(), thisMonday.getDate() + 7);
 
-const termineSorted = leadsWithTermin
+const allLeadsWithTermin = leads.filter((l) => l.terminBeimAmt);
+const termineSorted = allLeadsWithTermin
   .map((l) => ({ ...l, _terminDate: parseTerminDate(l.terminBeimAmt) }))
   .filter((l) => l._terminDate >= thisMonday && l._terminDate <= nextSunday)
   .sort((a, b) => a._terminDate.getTime() - b._terminDate.getTime());
@@ -154,7 +56,7 @@ function weekLabel(start: Date): string {
   return `${fmt(start)} – ${fmt(end)}`;
 }
 
-/* ── Handlungsempfehlungen Engine ── */
+/* ── Priority types ── */
 type Priority = "high" | "medium" | "low";
 interface Recommendation {
   icon: ReactNode;
@@ -162,121 +64,6 @@ interface Recommendation {
   title: string;
   detail: string;
 }
-
-const recommendations: Recommendation[] = [];
-
-// Regel 1: Verluste ohne Grund
-const noReasonPct = lostLeads.length > 0 ? (lostNoReason.length / lostLeads.length) * 100 : 0;
-if (noReasonPct > 30) {
-  recommendations.push({
-    icon: <AlertTriangle className="h-4 w-4" />,
-    priority: "high",
-    title: "Verlustgründe konsequent dokumentieren",
-    detail: `${lostNoReason.length} von ${lostLeads.length} Verlusten ohne Grund (${Math.round(noReasonPct)}%). Ohne Verlustgrund-Daten kann die Pipeline nicht optimiert werden.`,
-  });
-}
-
-// Regel 2: Falsche Kontaktinformationen
-const falscheKontakte = lostLeads.filter((l) => l.verlustgrund === "Falsche Kontaktinformationen").length;
-const falscheKontaktePct = lostLeads.length > 0 ? (falscheKontakte / lostLeads.length) * 100 : 0;
-if (falscheKontaktePct > 10) {
-  recommendations.push({
-    icon: <AlertTriangle className="h-4 w-4" />,
-    priority: "high",
-    title: "Kontaktdaten-Validierung bei Lead-Erfassung einführen",
-    detail: `${falscheKontakte} Verluste (${Math.round(falscheKontaktePct)}%) wegen falscher Kontaktinformationen. Eine Validierung bei der Erfassung spart Vertriebszeit.`,
-  });
-}
-
-// Regel 3: Stale Leads (>14 Tage ohne Fortschritt)
-const staleLeads = leads.filter((l) => {
-  if (l.leadStatus !== "Neuer Lead" && l.leadStatus !== "Rückruf") return false;
-  const created = parseDE(l.createdOn);
-  if (isNaN(created.getTime())) return false;
-  const daysSince = (today.getTime() - created.getTime()) / (1000 * 60 * 60 * 24);
-  return daysSince > 14;
-});
-if (staleLeads.length > 0) {
-  recommendations.push({
-    icon: <Clock className="h-4 w-4" />,
-    priority: "high",
-    title: `${staleLeads.length} Leads seit >2 Wochen ohne Fortschritt`,
-    detail: `${staleLeads.length} Leads stehen seit über 14 Tagen auf „${staleLeads[0].leadStatus}" — Nachfassen oder Status aktualisieren.`,
-  });
-}
-
-// Regel 4: Angestellt / Arbeitet nebenher
-const angestelltLost = lostLeads.filter((l) =>
-  l.verlustgrund === "Angestellt" || l.verlustgrund === "Arbeitet nebenher"
-).length;
-const angestelltPct = lostLeads.length > 0 ? (angestelltLost / lostLeads.length) * 100 : 0;
-if (angestelltPct > 15) {
-  recommendations.push({
-    icon: <Lightbulb className="h-4 w-4" />,
-    priority: "medium",
-    title: "Arbeitslos-Status vor Qualifizierung verifizieren",
-    detail: `${angestelltLost} Verluste (${Math.round(angestelltPct)}%) weil Leads angestellt sind oder nebenher arbeiten. Früherer Filter spart Vertriebskapazität.`,
-  });
-}
-
-// Regel 5: Sprachkenntnisse
-const sprachLost = lostLeads.filter((l) =>
-  l.verlustgrund === "Sprachkenntnisse" || l.verlustgrund?.includes("Sprach")
-).length;
-const sprachPct = lostLeads.length > 0 ? (sprachLost / lostLeads.length) * 100 : 0;
-if (sprachPct > 5) {
-  recommendations.push({
-    icon: <Lightbulb className="h-4 w-4" />,
-    priority: "medium",
-    title: "Sprachkenntnisse früher im Funnel prüfen",
-    detail: `${sprachLost} Verluste (${Math.round(sprachPct)}%) wegen Sprachkenntnissen. Frühzeitige Prüfung im Qualifizierungsprozess empfohlen.`,
-  });
-}
-
-// Regel 6: Seller mit überdurchschnittlicher Verlustquote
-const sellerTotal: Record<string, { won: number; lost: number }> = {};
-leads.forEach((l) => {
-  if (!l.vertriebler) return;
-  const entry = sellerTotal[l.vertriebler] ?? { won: 0, lost: 0 };
-  if (l.leadStatus === "Gewonnen") entry.won++;
-  if (l.leadStatus === "Verloren") entry.lost++;
-  sellerTotal[l.vertriebler] = entry;
-});
-const teamLossRate = (() => {
-  const totalWon = Object.values(sellerTotal).reduce((s, e) => s + e.won, 0);
-  const totalLost = Object.values(sellerTotal).reduce((s, e) => s + e.lost, 0);
-  return totalWon + totalLost > 0 ? (totalLost / (totalWon + totalLost)) * 100 : 0;
-})();
-Object.entries(sellerTotal).forEach(([name, data]) => {
-  const total = data.won + data.lost;
-  if (total < 5) return; // skip sellers with too few closed leads
-  const lossRate = (data.lost / total) * 100;
-  if (lossRate > teamLossRate * 1.5) {
-    recommendations.push({
-      icon: <Lightbulb className="h-4 w-4" />,
-      priority: "medium",
-      title: `${name.split(" ")[0]}: Überdurchschnittliche Verlustquote`,
-      detail: `${Math.round(lossRate)}% Verlustquote (Team: ${Math.round(teamLossRate)}%). ${data.lost} verloren bei ${total} abgeschlossenen Leads — Coaching-Gespräch prüfen.`,
-    });
-  }
-});
-
-// Regel 7: Nicht-arbeitslose Leads verlieren häufiger
-const nichtArbeitslosLeads = leads.filter((l) => l.arbeitslosGemeldet === "Nein, aktuell nicht");
-const nichtArbeitslosLost = nichtArbeitslosLeads.filter((l) => l.leadStatus === "Verloren").length;
-const nichtArbeitslosPct = nichtArbeitslosLeads.length > 0 ? (nichtArbeitslosLost / nichtArbeitslosLeads.length) * 100 : 0;
-if (nichtArbeitslosPct > 50 && nichtArbeitslosLeads.length > 5) {
-  recommendations.push({
-    icon: <Lightbulb className="h-4 w-4" />,
-    priority: "low",
-    title: "Nicht-arbeitslose Leads haben niedrige Conversion",
-    detail: `${Math.round(nichtArbeitslosPct)}% der nicht-arbeitslosen Leads gehen verloren (${nichtArbeitslosLost} von ${nichtArbeitslosLeads.length}). Vorfilter oder niedrigere Priorität in der Bearbeitung empfohlen.`,
-  });
-}
-
-// Sort: high → medium → low
-const priorityOrder: Record<Priority, number> = { high: 0, medium: 1, low: 2 };
-recommendations.sort((a, b) => priorityOrder[a.priority] - priorityOrder[b.priority]);
 
 const PRIORITY_STYLES: Record<Priority, { badge: string; border: string; bg: string; icon: string }> = {
   high: {
@@ -310,11 +97,229 @@ const STATUS_BADGE: Record<string, string> = {
 };
 
 export default function SalesPage() {
+  const [range, setRange] = useState<TimeRange>("all");
+
+  const {
+    statusData, lostLeads, lostNoReason, verlustData,
+    lossWeeklyData, allLossReasons,
+    lostBySeller, gewonnenLeads, gewonnenBySeller,
+    angebotLeads, pipelineLeads, leadsWithTermin,
+    terminWeeklyData, recommendations,
+  } = useMemo(() => {
+    const filtered = filterLeadsByRange(leads, range);
+
+    const statusData = statusOrder.map((s) => ({
+      name: s,
+      count: filtered.filter((l) => l.leadStatus === s).length,
+    }));
+
+    const lostLeads = filtered.filter((l) => l.leadStatus === "Verloren");
+    const lostWithReason = lostLeads.filter((l) => l.verlustgrund);
+    const lostNoReason = lostLeads.filter((l) => !l.verlustgrund);
+
+    const verlustgruende: Record<string, number> = {};
+    lostWithReason.forEach((l) => {
+      verlustgruende[l.verlustgrund] = (verlustgruende[l.verlustgrund] || 0) + 1;
+    });
+    if (lostNoReason.length > 0) {
+      verlustgruende["Kein Grund angegeben"] = lostNoReason.length;
+    }
+    const verlustData = Object.entries(verlustgruende)
+      .sort((a, b) => b[1] - a[1])
+      .map(([name, value]) => ({ name, value }));
+
+    /* Loss weekly */
+    const lossWeekMap = new Map<number, Record<string, number>>();
+    lostLeads.forEach((l) => {
+      const date = parseDE(l.createdOn);
+      if (isNaN(date.getTime())) return;
+      const wk = getISOWeek(date);
+      const entry = lossWeekMap.get(wk) ?? {};
+      const reason = l.verlustgrund || "Kein Grund angegeben";
+      entry[reason] = (entry[reason] || 0) + 1;
+      lossWeekMap.set(wk, entry);
+    });
+
+    const allLossReasons = Array.from(
+      new Set(lostLeads.map((l) => l.verlustgrund || "Kein Grund angegeben"))
+    );
+
+    const lossWeeklyData = Array.from(lossWeekMap.entries())
+      .sort((a, b) => a[0] - b[0])
+      .map(([wk, counts]) => ({
+        week: `KW ${wk}`,
+        ...Object.fromEntries(allLossReasons.map((r) => [r, counts[r] || 0])),
+      }));
+
+    /* Lost/Won by seller */
+    const lostBySeller: Record<string, { total: number; noReason: number }> = {};
+    lostLeads.forEach((l) => {
+      const entry = lostBySeller[l.vertriebler] ?? { total: 0, noReason: 0 };
+      entry.total++;
+      if (!l.verlustgrund) entry.noReason++;
+      lostBySeller[l.vertriebler] = entry;
+    });
+
+    const gewonnenLeads = filtered.filter((l) => l.leadStatus === "Gewonnen");
+    const gewonnenBySeller: Record<string, number> = {};
+    gewonnenLeads.forEach((l) => {
+      gewonnenBySeller[l.vertriebler] = (gewonnenBySeller[l.vertriebler] || 0) + 1;
+    });
+
+    const angebotLeads = filtered.filter(
+      (l) => l.dealStatus === "Angebot schicken" || l.leadStatus === "Beratungsgespräch gebucht"
+    );
+    const pipelineLeads = filtered.filter(
+      (l) =>
+        l.leadStatus === "Vertriebsqualifiziert" ||
+        l.leadStatus === "Kennenlerngespräch gebucht" ||
+        l.leadStatus === "Beratungsgespräch gebucht"
+    );
+    const leadsWithTermin = filtered.filter((l) => l.terminBeimAmt);
+
+    /* Termine im Zeitverlauf */
+    function parseTerminDateDE(s: string): Date {
+      const [day, month, year] = s.split(".").map(Number);
+      return new Date(year, month - 1, day);
+    }
+
+    const terminWeekMap = new Map<number, number>();
+    leadsWithTermin.forEach((l) => {
+      const date = parseTerminDateDE(l.terminBeimAmt);
+      if (isNaN(date.getTime())) return;
+      const wk = getISOWeek(date);
+      terminWeekMap.set(wk, (terminWeekMap.get(wk) || 0) + 1);
+    });
+
+    const terminWeeklyData = Array.from(terminWeekMap.entries())
+      .sort((a, b) => a[0] - b[0])
+      .map(([wk, count]) => ({ week: `KW ${wk}`, Termine: count }));
+
+    /* Recommendations */
+    const recommendations: Recommendation[] = [];
+
+    const noReasonPct = lostLeads.length > 0 ? (lostNoReason.length / lostLeads.length) * 100 : 0;
+    if (noReasonPct > 30) {
+      recommendations.push({
+        icon: <AlertTriangle className="h-4 w-4" />,
+        priority: "high",
+        title: "Verlustgründe konsequent dokumentieren",
+        detail: `${lostNoReason.length} von ${lostLeads.length} Verlusten ohne Grund (${Math.round(noReasonPct)}%). Ohne Verlustgrund-Daten kann die Pipeline nicht optimiert werden.`,
+      });
+    }
+
+    const falscheKontakte = lostLeads.filter((l) => l.verlustgrund === "Falsche Kontaktinformationen").length;
+    const falscheKontaktePct = lostLeads.length > 0 ? (falscheKontakte / lostLeads.length) * 100 : 0;
+    if (falscheKontaktePct > 10) {
+      recommendations.push({
+        icon: <AlertTriangle className="h-4 w-4" />,
+        priority: "high",
+        title: "Kontaktdaten-Validierung bei Lead-Erfassung einführen",
+        detail: `${falscheKontakte} Verluste (${Math.round(falscheKontaktePct)}%) wegen falscher Kontaktinformationen. Eine Validierung bei der Erfassung spart Vertriebszeit.`,
+      });
+    }
+
+    const staleLeads = filtered.filter((l) => {
+      if (l.leadStatus !== "Neuer Lead" && l.leadStatus !== "Rückruf") return false;
+      const created = parseDE(l.createdOn);
+      if (isNaN(created.getTime())) return false;
+      const daysSince = (today.getTime() - created.getTime()) / (1000 * 60 * 60 * 24);
+      return daysSince > 14;
+    });
+    if (staleLeads.length > 0) {
+      recommendations.push({
+        icon: <Clock className="h-4 w-4" />,
+        priority: "high",
+        title: `${staleLeads.length} Leads seit >2 Wochen ohne Fortschritt`,
+        detail: `${staleLeads.length} Leads stehen seit über 14 Tagen auf „${staleLeads[0].leadStatus}" — Nachfassen oder Status aktualisieren.`,
+      });
+    }
+
+    const angestelltLost = lostLeads.filter((l) =>
+      l.verlustgrund === "Angestellt" || l.verlustgrund === "Arbeitet nebenher"
+    ).length;
+    const angestelltPct = lostLeads.length > 0 ? (angestelltLost / lostLeads.length) * 100 : 0;
+    if (angestelltPct > 15) {
+      recommendations.push({
+        icon: <Lightbulb className="h-4 w-4" />,
+        priority: "medium",
+        title: "Arbeitslos-Status vor Qualifizierung verifizieren",
+        detail: `${angestelltLost} Verluste (${Math.round(angestelltPct)}%) weil Leads angestellt sind oder nebenher arbeiten. Früherer Filter spart Vertriebskapazität.`,
+      });
+    }
+
+    const sprachLost = lostLeads.filter((l) =>
+      l.verlustgrund === "Sprachkenntnisse" || l.verlustgrund?.includes("Sprach")
+    ).length;
+    const sprachPct = lostLeads.length > 0 ? (sprachLost / lostLeads.length) * 100 : 0;
+    if (sprachPct > 5) {
+      recommendations.push({
+        icon: <Lightbulb className="h-4 w-4" />,
+        priority: "medium",
+        title: "Sprachkenntnisse früher im Funnel prüfen",
+        detail: `${sprachLost} Verluste (${Math.round(sprachPct)}%) wegen Sprachkenntnissen. Frühzeitige Prüfung im Qualifizierungsprozess empfohlen.`,
+      });
+    }
+
+    const sellerTotal: Record<string, { won: number; lost: number }> = {};
+    filtered.forEach((l) => {
+      if (!l.vertriebler) return;
+      const entry = sellerTotal[l.vertriebler] ?? { won: 0, lost: 0 };
+      if (l.leadStatus === "Gewonnen") entry.won++;
+      if (l.leadStatus === "Verloren") entry.lost++;
+      sellerTotal[l.vertriebler] = entry;
+    });
+    const teamLossRate = (() => {
+      const totalWon = Object.values(sellerTotal).reduce((s, e) => s + e.won, 0);
+      const totalLost = Object.values(sellerTotal).reduce((s, e) => s + e.lost, 0);
+      return totalWon + totalLost > 0 ? (totalLost / (totalWon + totalLost)) * 100 : 0;
+    })();
+    Object.entries(sellerTotal).forEach(([name, data]) => {
+      const total = data.won + data.lost;
+      if (total < 5) return;
+      const lossRate = (data.lost / total) * 100;
+      if (lossRate > teamLossRate * 1.5) {
+        recommendations.push({
+          icon: <Lightbulb className="h-4 w-4" />,
+          priority: "medium",
+          title: `${name.split(" ")[0]}: Überdurchschnittliche Verlustquote`,
+          detail: `${Math.round(lossRate)}% Verlustquote (Team: ${Math.round(teamLossRate)}%). ${data.lost} verloren bei ${total} abgeschlossenen Leads — Coaching-Gespräch prüfen.`,
+        });
+      }
+    });
+
+    const nichtArbeitslosLeads = filtered.filter((l) => l.arbeitslosGemeldet === "Nein, aktuell nicht");
+    const nichtArbeitslosLost = nichtArbeitslosLeads.filter((l) => l.leadStatus === "Verloren").length;
+    const nichtArbeitslosPct = nichtArbeitslosLeads.length > 0 ? (nichtArbeitslosLost / nichtArbeitslosLeads.length) * 100 : 0;
+    if (nichtArbeitslosPct > 50 && nichtArbeitslosLeads.length > 5) {
+      recommendations.push({
+        icon: <Lightbulb className="h-4 w-4" />,
+        priority: "low",
+        title: "Nicht-arbeitslose Leads haben niedrige Conversion",
+        detail: `${Math.round(nichtArbeitslosPct)}% der nicht-arbeitslosen Leads gehen verloren (${nichtArbeitslosLost} von ${nichtArbeitslosLeads.length}). Vorfilter oder niedrigere Priorität in der Bearbeitung empfohlen.`,
+      });
+    }
+
+    const priorityOrder: Record<Priority, number> = { high: 0, medium: 1, low: 2 };
+    recommendations.sort((a, b) => priorityOrder[a.priority] - priorityOrder[b.priority]);
+
+    return {
+      statusData, lostLeads, lostNoReason, verlustData,
+      lossWeeklyData, allLossReasons,
+      lostBySeller, gewonnenLeads, gewonnenBySeller,
+      angebotLeads, pipelineLeads, leadsWithTermin,
+      terminWeeklyData, recommendations,
+    };
+  }, [range]);
+
   return (
     <div className="space-y-8">
-      <div>
-        <h1 className="text-[26px] font-bold tracking-tight text-[#fafaf9]">Vertriebs-Analytik</h1>
-        <p className="mt-1 text-[13px] text-[#57534e]">Lead-Pipeline, Verlustgründe & Deal-Verfolgung</p>
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="text-[26px] font-bold tracking-tight text-[#fafaf9]">Vertriebs-Analytik</h1>
+          <p className="mt-1 text-[13px] text-[#57534e]">Lead-Pipeline, Verlustgründe & Deal-Verfolgung</p>
+        </div>
+        <TimeRangeFilter value={range} onChange={setRange} />
       </div>
 
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-5 stagger-in">
@@ -462,11 +467,11 @@ export default function SalesPage() {
                   <div className="mt-3 h-1.5 rounded-full bg-[rgba(255,255,255,0.04)] overflow-hidden">
                     <div
                       className="h-full rounded-full bg-[#f87171]"
-                      style={{ width: `${Math.round((data.noReason / data.total) * 100)}%` }}
+                      style={{ width: `${data.total > 0 ? Math.round((data.noReason / data.total) * 100) : 0}%` }}
                     />
                   </div>
                   <div className="text-[10px] text-[#57534e] mt-1">
-                    {Math.round(((data.total - data.noReason) / data.total) * 100)}% mit Grund erfasst
+                    {data.total > 0 ? Math.round(((data.total - data.noReason) / data.total) * 100) : 100}% mit Grund erfasst
                   </div>
                 </div>
               ))}
@@ -544,7 +549,7 @@ export default function SalesPage() {
         </div>
       </SectionCard>
 
-      {/* Amt-Termine */}
+      {/* Amt-Termine (always real-date-based, independent of range filter) */}
       <SectionCard title="Amt-Termine">
         {termineSorted.length > 0 ? (
           <div className="space-y-6">

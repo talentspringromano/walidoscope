@@ -1,12 +1,13 @@
 "use client";
 
+import { useState, useMemo } from "react";
 import { KpiCard, SectionCard } from "@/components/kpi-card";
+import { TimeRangeFilter } from "@/components/time-range-filter";
 import { ActivityCalendar } from "@/components/activity-calendar";
 import { TargetTracker } from "@/components/target-tracker";
 import { leads } from "@/data/leads";
 import { aircallSellers, aircallFetchedAt, formatDuration } from "@/data/aircall";
 import { TOOLTIP_STYLE, AXIS_STYLE, PALETTE, SELLER_BAR_COLORS } from "@/components/chart-theme";
-import { useState, useMemo } from "react";
 import { Phone, PhoneOutgoing, PhoneIncoming, Clock, ArrowUpDown, ArrowUp, ArrowDown } from "lucide-react";
 import {
   BarChart,
@@ -22,11 +23,13 @@ import {
   Radar,
   Legend,
 } from "recharts";
+import type { TimeRange } from "@/lib/date-utils";
+import { filterLeadsByRange } from "@/lib/date-utils";
 
 const sellers = ["Walid Karimi", "Nele Pfau", "Bastian Wuske", "Eric Hardt", "Michel Grosser"];
 
-function sellerStats(name: string) {
-  const sellerLeads = leads.filter((l) => l.vertriebler === name);
+function sellerStats(name: string, leadsSubset: typeof leads) {
+  const sellerLeads = leadsSubset.filter((l) => l.vertriebler === name);
   const qualified = sellerLeads.filter(
     (l) => l.leadStatus === "Vertriebsqualifiziert" || l.leadStatus === "Kennenlerngespräch gebucht" || l.leadStatus === "Beratungsgespräch gebucht"
   ).length;
@@ -58,24 +61,6 @@ function sellerStats(name: string) {
     aircall,
   };
 }
-
-const sellerData = sellers.map((s) => sellerStats(s));
-
-const comparisonData = sellerData.map((s) => ({
-  name: s.name.split(" ")[0],
-  Leads: s.total,
-  "Qualifiziert+": s.qualified,
-  Gewonnen: s.gewonnen,
-}));
-
-// Radar data for skill comparison
-const radarData = [
-  { metric: "Leads", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.total])) },
-  { metric: "Qualifiziert", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.qualified])) },
-  { metric: "Gewonnen", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.gewonnen])) },
-  { metric: "Termine", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.termine])) },
-  { metric: "Calls", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.aircall?.totalCalls ?? 0])) },
-];
 
 const RADAR_COLORS = ["#e2a96e", "#5eead4", "#818cf8", "#fb923c", "#a78bfa", "#f472b6"];
 
@@ -192,19 +177,46 @@ function Bestenliste({ data }: { data: ReturnType<typeof sellerStats>[] }) {
 }
 
 export default function SellerPage() {
+  const [range, setRange] = useState<TimeRange>("all");
+
+  const { sellerData, comparisonData, radarData } = useMemo(() => {
+    const filteredLeads = filterLeadsByRange(leads, range);
+    const sellerData = sellers.map((s) => sellerStats(s, filteredLeads));
+
+    const comparisonData = sellerData.map((s) => ({
+      name: s.name.split(" ")[0],
+      Leads: s.total,
+      "Qualifiziert+": s.qualified,
+      Gewonnen: s.gewonnen,
+    }));
+
+    const radarData = [
+      { metric: "Leads", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.total])) },
+      { metric: "Qualifiziert", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.qualified])) },
+      { metric: "Gewonnen", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.gewonnen])) },
+      { metric: "Termine", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.termine])) },
+      { metric: "Calls", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.aircall?.totalCalls ?? 0])) },
+    ];
+
+    return { sellerData, comparisonData, radarData };
+  }, [range]);
+
   return (
     <div className="space-y-8">
-      <div>
-        <h1 className="text-[26px] font-bold tracking-tight text-[#fafaf9]">Vertriebler-Ansicht</h1>
-        <p className="mt-1 text-[13px] text-[#57534e]">
-          Performance-Vergleich der Vertriebler · Aircall-Daten vom {new Date(aircallFetchedAt).toLocaleDateString("de-DE")}
-        </p>
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="text-[26px] font-bold tracking-tight text-[#fafaf9]">Vertriebler-Ansicht</h1>
+          <p className="mt-1 text-[13px] text-[#57534e]">
+            Performance-Vergleich der Vertriebler · Aircall-Daten vom {new Date(aircallFetchedAt).toLocaleDateString("de-DE")}
+          </p>
+        </div>
+        <TimeRangeFilter value={range} onChange={setRange} />
       </div>
 
       {/* Zielerreichung */}
       <TargetTracker />
 
-      {/* Aircall KPIs */}
+      {/* Aircall KPIs (ungefiltert — Aggregat ohne Datumsdimension) */}
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 stagger-in">
         <KpiCard
           label="Gesamt-Calls"
@@ -371,7 +383,7 @@ export default function SellerPage() {
         ))}
       </div>
 
-      {/* Aktivitätskalender */}
+      {/* Aktivitätskalender (unberührt) */}
       <ActivityCalendar />
 
       {/* Bestenliste */}

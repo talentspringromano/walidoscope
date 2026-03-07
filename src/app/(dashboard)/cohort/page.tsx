@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { KpiCard, SectionCard } from "@/components/kpi-card";
+import { TimeRangeFilter } from "@/components/time-range-filter";
 import { leads } from "@/data/leads";
 import { metaAds } from "@/data/meta-ads";
 import {
@@ -24,23 +25,8 @@ import {
   CartesianGrid,
   Legend,
 } from "recharts";
-
-/* ── Helpers ── */
-
-function parseDE(dateStr: string): Date {
-  const [dayMonthYear] = dateStr.split(" ");
-  const [day, month, year] = dayMonthYear.split(".");
-  return new Date(Number(year), Number(month) - 1, Number(day));
-}
-
-function getISOWeek(d: Date): number {
-  const date = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
-  date.setUTCDate(date.getUTCDate() + 4 - (date.getUTCDay() || 7));
-  const yearStart = new Date(Date.UTC(date.getUTCFullYear(), 0, 1));
-  return Math.ceil(
-    ((date.getTime() - yearStart.getTime()) / 86400000 + 1) / 7
-  );
-}
+import type { TimeRange } from "@/lib/date-utils";
+import { filterLeadsByRange, parseDE, getISOWeek } from "@/lib/date-utils";
 
 function matchesAd(lead: (typeof leads)[0], adId: string): boolean {
   return (
@@ -74,17 +60,21 @@ leads.forEach((lead) => {
 export default function CohortPage() {
   const [platformFilter, setPlatformFilter] =
     useState<PlatformFilter>("Alle");
+  const [range, setRange] = useState<TimeRange>("all");
 
   const cohortData = useMemo(() => {
-    // Filter leads by platform
+    // First filter by time range
+    const rangeFiltered = filterLeadsByRange(leads, range);
+
+    // Then filter by platform
     const filtered =
       platformFilter === "Alle"
-        ? leads
+        ? rangeFiltered
         : platformFilter === "Meta"
-          ? leads.filter(
+          ? rangeFiltered.filter(
               (l) => l.platform === "Facebook" || l.platform === "Instagram"
             )
-          : leads.filter((l) => l.platform === platformFilter);
+          : rangeFiltered.filter((l) => l.platform === platformFilter);
 
     // Group by calendar week
     const weekMap = new Map<
@@ -177,18 +167,21 @@ export default function CohortPage() {
       totalLeadsAll > 0 ? (totalWon / totalLeadsAll) * 100 : 0;
 
     return { weeks, totalWeeks, bestWeek, avgCPL, overallConversion };
-  }, [platformFilter]);
+  }, [platformFilter, range]);
 
   return (
     <div className="space-y-8">
       {/* Header */}
-      <div>
-        <h1 className="text-[26px] font-bold tracking-tight text-[#fafaf9]">
-          Kohortenanalyse
-        </h1>
-        <p className="mt-1 text-[13px] text-[#57534e]">
-          Woche-für-Woche ROI &amp; Conversion-Analyse
-        </p>
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="text-[26px] font-bold tracking-tight text-[#fafaf9]">
+            Kohortenanalyse
+          </h1>
+          <p className="mt-1 text-[13px] text-[#57534e]">
+            Woche-für-Woche ROI &amp; Conversion-Analyse
+          </p>
+        </div>
+        <TimeRangeFilter value={range} onChange={setRange} />
       </div>
 
       {/* Platform Filter */}
