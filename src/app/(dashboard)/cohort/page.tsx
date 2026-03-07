@@ -26,7 +26,7 @@ import {
   Legend,
 } from "recharts";
 import type { TimeRange } from "@/lib/date-utils";
-import { filterLeadsByRange, parseDE, getISOWeek } from "@/lib/date-utils";
+import { filterLeadsByRange, parseDE, getISOWeek, classifyLead } from "@/lib/date-utils";
 
 function matchesAd(lead: (typeof leads)[0], adId: string): boolean {
   return (
@@ -45,6 +45,9 @@ const QUALIFIED_STATUSES = new Set([
 type PlatformFilter = "Alle" | "Meta" | "Kursnet" | "Indeed";
 const PLATFORM_FILTERS: PlatformFilter[] = ["Alle", "Meta", "Kursnet", "Indeed"];
 
+const CREATIVE_OPTIONS = ["Alle", ...metaAds.map((ad) => ad.shortName)] as const;
+type CreativeFilter = (typeof CREATIVE_OPTIONS)[number];
+
 /* ── Pre-compute: total leads per ad (stable denominator) ── */
 const adTotalLeads = new Map<string, number>();
 leads.forEach((lead) => {
@@ -60,6 +63,7 @@ leads.forEach((lead) => {
 export default function CohortPage() {
   const [platformFilter, setPlatformFilter] =
     useState<PlatformFilter>("Alle");
+  const [creativeFilter, setCreativeFilter] = useState<string>("Alle");
   const [range, setRange] = useState<TimeRange>("all");
 
   const cohortData = useMemo(() => {
@@ -67,7 +71,7 @@ export default function CohortPage() {
     const rangeFiltered = filterLeadsByRange(leads, range);
 
     // Then filter by platform
-    const filtered =
+    const platformFiltered =
       platformFilter === "Alle"
         ? rangeFiltered
         : platformFilter === "Meta"
@@ -75,6 +79,13 @@ export default function CohortPage() {
               (l) => l.platform === "Facebook" || l.platform === "Instagram"
             )
           : rangeFiltered.filter((l) => l.platform === platformFilter);
+
+    // Then filter by creative
+    const selectedAd = metaAds.find((ad) => ad.shortName === creativeFilter);
+    const filtered =
+      creativeFilter === "Alle" || !selectedAd
+        ? platformFiltered
+        : platformFiltered.filter((l) => matchesAd(l, selectedAd.adId));
 
     // Group by calendar week
     const weekMap = new Map<
@@ -119,6 +130,18 @@ export default function CohortPage() {
         const cpl = totalLeads > 0 ? weeklySpend / totalLeads : 0;
         const cpa = won > 0 ? weeklySpend / won : 0;
 
+        const highTouch = wl.filter((l) => classifyLead(l) === "High-Touch").length;
+        const lowTouchAngebote = wl.filter(
+          (l) =>
+            classifyLead(l) === "Low-Touch" &&
+            (l.dealStatus === "Angebot schicken" ||
+              l.leadStatus === "Beratungsgespräch gebucht")
+        ).length;
+        const kostenProHighTouch = highTouch > 0 ? weeklySpend / highTouch : 0;
+        const termineAmt = wl.filter(
+          (l) => l.terminBeimAmt && l.terminBeimAmt.trim() !== ""
+        ).length;
+
         return {
           week: `KW ${weekNum}`,
           weekNum,
@@ -130,6 +153,10 @@ export default function CohortPage() {
           spend: weeklySpend,
           cpl,
           cpa,
+          highTouch,
+          lowTouchAngebote,
+          kostenProHighTouch,
+          termineAmt,
           // Stacked bar breakdown
           "Neuer Lead": wl.filter((l) => l.leadStatus === "Neuer Lead").length,
           Rückruf: wl.filter((l) => l.leadStatus === "Rückruf").length,
@@ -167,7 +194,7 @@ export default function CohortPage() {
       totalLeadsAll > 0 ? (totalWon / totalLeadsAll) * 100 : 0;
 
     return { weeks, totalWeeks, bestWeek, avgCPL, overallConversion };
-  }, [platformFilter, range]);
+  }, [platformFilter, creativeFilter, range]);
 
   return (
     <div className="space-y-8">
@@ -197,6 +224,23 @@ export default function CohortPage() {
             }`}
           >
             {f}
+          </button>
+        ))}
+      </div>
+
+      {/* Creative Filter */}
+      <div className="flex items-center gap-2 flex-wrap">
+        {CREATIVE_OPTIONS.map((c) => (
+          <button
+            key={c}
+            onClick={() => setCreativeFilter(c)}
+            className={`px-3 py-1 rounded-lg text-[11px] font-medium transition-all ${
+              creativeFilter === c
+                ? "bg-[rgba(226,169,110,0.12)] text-[#e2a96e] border border-[rgba(226,169,110,0.25)]"
+                : "text-[#78716c] border border-[rgba(255,255,255,0.06)] hover:text-[#a8a29e] hover:bg-[rgba(255,255,255,0.03)]"
+            }`}
+          >
+            {c}
           </button>
         ))}
       </div>
@@ -378,6 +422,10 @@ export default function CohortPage() {
                 <th className="text-left pl-2">Woche</th>
                 <th className="text-right">Leads</th>
                 <th className="text-right">Qualifiziert</th>
+                <th className="text-right">High-Touch</th>
+                <th className="text-right">LT-Angebote</th>
+                <th className="text-right">€/High-Touch</th>
+                <th className="text-right">Amt-Termine</th>
                 <th className="text-right">Gewonnen</th>
                 <th className="text-right">Verloren</th>
                 <th className="text-right">Spend</th>
@@ -394,6 +442,14 @@ export default function CohortPage() {
                   </td>
                   <td className="text-right">{w.totalLeads}</td>
                   <td className="text-right">{w.qualified}</td>
+                  <td className="text-right">{w.highTouch}</td>
+                  <td className="text-right">{w.lowTouchAngebote}</td>
+                  <td className="text-right">
+                    {w.kostenProHighTouch > 0
+                      ? `€${w.kostenProHighTouch.toFixed(2)}`
+                      : "–"}
+                  </td>
+                  <td className="text-right">{w.termineAmt}</td>
                   <td className="text-right text-[#fbbf24]">{w.won}</td>
                   <td className="text-right text-[#fb7185]">{w.lost}</td>
                   <td className="text-right">
