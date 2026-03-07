@@ -216,7 +216,7 @@ export function TargetTracker() {
 
             {/* SOLL line */}
             <ReferenceLine
-              y={DAILY_TARGET}
+              y={target}
               stroke="#78716c"
               strokeDasharray="6 4"
               strokeWidth={1.5}
