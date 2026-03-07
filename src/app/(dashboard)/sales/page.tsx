@@ -429,9 +429,26 @@ export default function SalesPage() {
 
       <div className="grid gap-6 lg:grid-cols-2 stagger-in">
         <SectionCard title="Lead-Status Verteilung">
-          <ResponsiveContainer width="100%" height={300}>
-            <BarChart data={statusData} barCategoryGap="18%">
-              <XAxis dataKey="name" {...AXIS_STYLE} angle={-15} textAnchor="end" height={55} axisLine={false} tickLine={false} />
+          <ResponsiveContainer width="100%" height={340}>
+            <BarChart data={statusData} barCategoryGap="18%" margin={{ bottom: 10 }}>
+              <XAxis
+                dataKey="name"
+                {...AXIS_STYLE}
+                axisLine={false}
+                tickLine={false}
+                angle={-30}
+                textAnchor="end"
+                height={90}
+                interval={0}
+                tickFormatter={(v: string) => {
+                  const SHORT: Record<string, string> = {
+                    "Vertriebsqualifiziert": "Qualifiziert",
+                    "Kennenlerngespräch gebucht": "Kennenlernen",
+                    "Beratungsgespräch gebucht": "Beratung",
+                  };
+                  return SHORT[v] ?? v;
+                }}
+              />
               <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} />
               <Tooltip {...TOOLTIP_STYLE} />
               <Bar dataKey="count" radius={[6, 6, 0, 0]} animationDuration={800}>
