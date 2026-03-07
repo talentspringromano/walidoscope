@@ -283,7 +283,7 @@ export default function SellerPage() {
       {/* Seller Cards */}
       <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3 stagger-in">
         {sellerData.map((s, idx) => (
-          <div key={s.name} className="glass-card overflow-hidden">
+          <div key={s.name} className="glass-card overflow-hidden flex flex-col">
             {/* Header with gradient */}
             <div className="relative px-6 pt-6 pb-4">
               <div className="absolute inset-0 opacity-[0.03]" style={{
@@ -313,7 +313,7 @@ export default function SellerPage() {
               </div>
             </div>
 
-            <div className="px-6 pb-2">
+            <div className="px-6 pb-5 flex-1 flex flex-col">
               {/* CRM Stats */}
               <div className="grid grid-cols-4 gap-3 mb-5">
                 {[
@@ -372,18 +372,20 @@ export default function SellerPage() {
                 </div>
               )}
 
-              <ResponsiveContainer width="100%" height={160}>
-                <BarChart data={s.statusData} layout="vertical" barCategoryGap="25%">
-                  <XAxis type="number" {...AXIS_STYLE} axisLine={false} tickLine={false} />
-                  <YAxis type="category" dataKey="name" width={85} {...AXIS_STYLE} axisLine={false} tickLine={false} />
-                  <Tooltip {...TOOLTIP_STYLE} />
-                  <Bar dataKey="count" radius={[0, 6, 6, 0]} animationDuration={800}>
-                    {s.statusData.map((_, i) => (
-                      <Cell key={i} fill={SELLER_BAR_COLORS[i]} />
-                    ))}
-                  </Bar>
-                </BarChart>
-              </ResponsiveContainer>
+              <div className="mt-auto pt-2">
+                <ResponsiveContainer width="100%" height={160}>
+                  <BarChart data={s.statusData} layout="vertical" barCategoryGap="25%">
+                    <XAxis type="number" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+                    <YAxis type="category" dataKey="name" width={85} {...AXIS_STYLE} axisLine={false} tickLine={false} />
+                    <Tooltip {...TOOLTIP_STYLE} />
+                    <Bar dataKey="count" radius={[0, 6, 6, 0]} animationDuration={800}>
+                      {s.statusData.map((_, i) => (
+                        <Cell key={i} fill={SELLER_BAR_COLORS[i]} />
+                      ))}
+                    </Bar>
+                  </BarChart>
+                </ResponsiveContainer>
+              </div>
             </div>
           </div>
         ))}
