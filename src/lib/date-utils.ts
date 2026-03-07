@@ -1,5 +1,18 @@
 import type { Lead, PerspectiveVisit } from "@/data/types";
 
+/* ── Lead Segmentierung ── */
+export function classifyLead(l: Lead): string {
+  if (l.platform === "Kursnet") return "High-Touch";
+  const arbeitslos = l.arbeitslosGemeldet === "Ja";
+  const baldArbeitslos = l.arbeitslosGemeldet.includes("3 Monaten");
+  const vorerfahrung = l.vorerfahrung.includes("relevante Erfahrung");
+  const interesse = l.vorerfahrung.includes("Interesse");
+  if (arbeitslos && (vorerfahrung || interesse)) return "High-Touch";
+  if (baldArbeitslos) return "Low-Touch";
+  if (arbeitslos) return "Medium";
+  return "Nicht qualifiziert";
+}
+
 export type TimeRange = "7d" | "30d" | "all";
 
 /** Parse German date string "DD.M.YYYY HH:mm" → Date */

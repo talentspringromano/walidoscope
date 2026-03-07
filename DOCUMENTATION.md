@@ -18,7 +18,7 @@
 | **React** | 19.2.4 | UI-Library |
 | **TypeScript** | 5.9.3 | Typsicherheit (Strict Mode) |
 | **Tailwind CSS** | 4.2.1 | Styling (Dark Theme, Glassmorphism) |
-| **Recharts** | 3.7.0 | Charts (Bar, Line, Pie, Funnel, Radar) |
+| **Recharts** | 3.7.0 | Charts (Bar, Stacked Bar, Line, Pie, Funnel, Radar, Composed) |
 | **Lucide React** | 0.577.0 | Icons (30+) |
 | **PostCSS** | 8.5.8 | CSS-Processing mit @tailwindcss/postcss |
 
@@ -37,6 +37,7 @@ walidoscope/
 │   │   │   ├── page.tsx                  # Overview-Seite
 │   │   │   ├── marketing/page.tsx        # Marketing-Analytics
 │   │   │   ├── sales/page.tsx            # Sales-Pipeline & Verlustanalyse
+│   │   │   ├── cohort/page.tsx           # Kohortenanalyse (Woche-für-Woche)
 │   │   │   └── seller/page.tsx           # Vertriebler-Performance
 │   │   ├── api/
 │   │   │   └── auth/route.ts             # POST (Login), DELETE (Logout)
@@ -46,7 +47,7 @@ walidoscope/
 │   ├── components/
 │   │   ├── sidebar.tsx                   # Hauptnavigation (kollapsbar)
 │   │   ├── kpi-card.tsx                  # KPI-Card & Section-Card
-│   │   ├── chart-theme.ts               # Gemeinsame Chart-Styles & Farben
+│   │   ├── chart-theme.ts               # Gemeinsame Chart-Styles & Farbpaletten (TOOLTIP_STYLE, AXIS_STYLE, PALETTE, STATUS_COLORS, LOSS_COLORS, SEGMENT_COLORS, FUNNEL_COLORS)
 │   │   ├── activity-calendar.tsx         # Aircall Wochen-Heatmap
 │   │   └── target-tracker.tsx            # Tägliche Dial-Ziele vs. Ist
 │   ├── data/
@@ -287,6 +288,18 @@ Impressions → Clicks → Lead (Meta-Formular / Kursnet LP)
     → Beratungsgespräch → Amt-Termin → Gewonnen
 ```
 
+### Zeitverlauf-Patterns (wiederverwendbar)
+
+Alle Zeitverlauf-Charts nutzen die gleichen Hilfsfunktionen:
+
+- **`parseDE(dateStr)`** — Parst deutsches Datumsformat `"DD.M.YYYY HH:MM"` in ein `Date`-Objekt
+- **`getISOWeek(date)`** — Berechnet die ISO-Kalenderwoche (KW) aus einem `Date`
+- **Wochen-Gruppierung:** Leads werden nach KW gruppiert, pro KW werden Metriken gezählt
+- **Stacked BarChart:** X-Achse = KW, Y-Achse = Anzahl, Stacks = Kategorien (Verlustgründe, Segmente, Status)
+- **Farb-Paletten:** `LOSS_COLORS`, `SEGMENT_COLORS`, `STATUS_COLORS` aus `chart-theme.ts`
+
+Diese Patterns sind in `cohort/page.tsx`, `sales/page.tsx` und `marketing/page.tsx` implementiert.
+
 ---
 
 ## Dashboard-Seiten
@@ -304,20 +317,35 @@ Impressions → Clicks → Lead (Meta-Formular / Kursnet LP)
 ### Marketing (`/marketing`)
 
 **Sektionen:**
-- **Lead-Segmentierung:** High-Touch / Low-Touch / Medium / Nicht qualifiziert (Tortendiagramm)
-- **Creative Deep-Funnel:** Performance pro Meta-Ad (Spend → Impressions → Leads → Qualified → Won)
-- **Perspective-Funnel:** LP-Besuche → Converted → Won (Kursnet/meinNOW)
+- **Soll-Ist-Vergleich:** Pro-Kanal-Karten (Meta, Kursnet, Indeed) mit Lead-Fortschritt, Spend, CPL, Conversion vs. Zielwerten
+- **IST vs. SOLL Balkendiagramm:** Leads pro Kanal gegenüber Soll-Werten
+- **Creative Deep-Funnel:** Performance pro Meta-Ad (Spend → Impressions → Leads → Qualified → Won), sortierbar mit Filterpresets
 - **Kosten pro Ad:** Spend vs. CPL (Balkendiagramm)
-- **Sortierbare Ad-Tabelle:** Sortierung nach CPL, Impressions, Results mit Filterpresets
+- **Lead-Segmentierung:** High-Touch / Low-Touch / Medium / Nicht qualifiziert (Tortendiagramm)
+- **Lead-Segmentierung im Zeitverlauf:** Stacked BarChart — Segmente pro Kalenderwoche (KW), zeigt Entwicklung der Lead-Qualität über die Wochen
+- **CRM-Erfassungslücke:** Warnung bei Differenz zwischen Perspective-Konversionen und CRM-Einträgen
+- **Perspective-Funnel:** LP-Besuche → Converted → Won (Kursnet/meinNOW) mit Gap-Visualisierung und Visits nach Kurs-Titel
 
 ### Sales (`/sales`)
 
 **Sektionen:**
-- **Pipeline-Metriken:** Total Leads, Pipeline Value, Angebote, Amt-Termine
-- **Pipeline nach Status:** Segmentierter Fortschritt
-- **Verlustanalyse:** Tortendiagramm der Verlustgründe + Verluste pro Seller
-- **Amt-Termine:** Wochenkalender (diese & nächste Woche)
-- **Deal-Tracking:** Leads im Status "Angebot schicken"
+- **Pipeline-Metriken:** In Pipeline, BGs (Gewonnen), Angebote, Verloren, Amt-Termine
+- **Lead-Status Verteilung:** Balkendiagramm aller 8 Lead-Status
+- **Verlustanalyse:** Tortendiagramm der Verlustgründe + Verluste pro Seller + Tabelle der Leads ohne Verlustgrund
+- **Verlustgründe im Zeitverlauf:** Stacked BarChart — Verlustgründe pro Kalenderwoche (KW), zeigt Entwicklung der Verlustmuster über die Wochen
+- **Deal-Tracking:** Tabelle der Leads im Status "Angebot schicken" mit Closing-Wahrscheinlichkeit
+- **Amt-Termine:** Karten für diese & nächste Woche mit Datum und Status
+- **Amt-Termine im Zeitverlauf:** BarChart — gebuchte Termine pro Kalenderwoche (KW)
+
+### Cohort (`/cohort`)
+
+**Sektionen:**
+- **Plattform-Filter:** Alle / Meta / Kursnet / Indeed
+- **KPIs:** Wochen erfasst, Beste Woche, Ø CPL, Conversion Rate
+- **Leads nach Status pro Woche:** Stacked BarChart — alle 7 Lead-Status pro KW
+- **CPL-Trend:** Liniendiagramm — Cost per Lead pro Woche
+- **Spend & Conversion:** Dual-Axis ComposedChart — Spend (Balken) + Conversion % (Linie) pro Woche
+- **Wochendetails:** Detailtabelle mit Leads, Qualified, Won, Lost, Spend, CPL, CPA, Conv.%
 
 ### Seller (`/seller`)
 
@@ -377,7 +405,7 @@ Passwörter sind als SHA-256-Hashes in `auth.ts` gespeichert.
 ### Session-Flow
 
 1. **Login** (`POST /api/auth`) — Prüft E-Mail + Passwort-Hash, erstellt HMAC-signierten Token, setzt `session`-Cookie (httpOnly, 7 Tage)
-2. **Route-Schutz** (`middleware.ts`) — Alle Dashboard-Routen (`/`, `/marketing`, `/sales`, `/seller`) erfordern gültigen Session-Token
+2. **Route-Schutz** (`middleware.ts`) — Alle Dashboard-Routen (`/`, `/marketing`, `/sales`, `/cohort`, `/seller`) erfordern gültigen Session-Token
 3. **Logout** (`DELETE /api/auth`) — Löscht Session-Cookie, Redirect zu `/login`
 
 ### Environment Variables
@@ -414,7 +442,7 @@ npm run build        # Static Export nach /out
 
 Walidoscope ist ein schlankes, gut strukturiertes Analytics-MVP mit:
 - **4 Datenquellen** (Airtable, Aircall, Perspective, Meta Ads)
-- **4 Dashboard-Seiten** (Overview, Marketing, Sales, Seller)
+- **5 Dashboard-Seiten** (Overview, Marketing, Sales, Cohort, Seller)
 - **Automatische Aktualisierung** alle 6 Stunden (Airtable + Aircall via GitHub Actions)
 - **Vercel Auto-Deploy** bei jedem Push auf `main`
 - **HMAC-Auth** mit 2 Benutzern

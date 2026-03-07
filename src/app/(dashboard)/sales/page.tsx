@@ -19,9 +19,11 @@ import {
   Cell,
   CartesianGrid,
   Legend,
+  ComposedChart,
+  Line,
 } from "recharts";
 import type { TimeRange } from "@/lib/date-utils";
-import { filterLeadsByRange, parseDE, getISOWeek } from "@/lib/date-utils";
+import { filterLeadsByRange, parseDE, getISOWeek, classifyLead } from "@/lib/date-utils";
 
 const statusOrder = [
   "Neuer Lead", "Rückruf", "Vertriebsqualifiziert", "Reterminierung",
@@ -104,7 +106,7 @@ export default function SalesPage() {
     lossWeeklyData, allLossReasons,
     lostBySeller, gewonnenLeads, gewonnenBySeller,
     angebotLeads, pipelineLeads, leadsWithTermin,
-    terminWeeklyData, recommendations,
+    terminWeeklyData, recommendations, pipelineWeeklyData,
   } = useMemo(() => {
     const filtered = filterLeadsByRange(leads, range);
 
@@ -303,12 +305,36 @@ export default function SalesPage() {
     const priorityOrder: Record<Priority, number> = { high: 0, medium: 1, low: 2 };
     recommendations.sort((a, b) => priorityOrder[a.priority] - priorityOrder[b.priority]);
 
+    /* Pipeline-Entwicklung im Zeitverlauf */
+    const pipelineSegments = ["High-Touch", "Medium", "Low-Touch", "Nicht qualifiziert"] as const;
+    const pipelineWeekMap = new Map<number, Record<string, number>>();
+    filtered.forEach((l) => {
+      const date = parseDE(l.createdOn);
+      if (isNaN(date.getTime())) return;
+      const wk = getISOWeek(date);
+      const seg = classifyLead(l);
+      const entry = pipelineWeekMap.get(wk) ?? {};
+      entry[seg] = (entry[seg] || 0) + 1;
+      if (l.dealStatus === "Angebot schicken" || l.leadStatus === "Beratungsgespräch gebucht") {
+        entry["Angebote"] = (entry["Angebote"] || 0) + 1;
+      }
+      pipelineWeekMap.set(wk, entry);
+    });
+
+    const pipelineWeeklyData = Array.from(pipelineWeekMap.entries())
+      .sort((a, b) => a[0] - b[0])
+      .map(([wk, counts]) => ({
+        week: `KW ${wk}`,
+        ...Object.fromEntries(pipelineSegments.map((s) => [s, counts[s] || 0])),
+        Angebote: counts["Angebote"] || 0,
+      }));
+
     return {
       statusData, lostLeads, lostNoReason, verlustData,
       lossWeeklyData, allLossReasons,
       lostBySeller, gewonnenLeads, gewonnenBySeller,
       angebotLeads, pipelineLeads, leadsWithTermin,
-      terminWeeklyData, recommendations,
+      terminWeeklyData, recommendations, pipelineWeeklyData,
     };
   }, [range]);
 
@@ -341,6 +367,26 @@ export default function SalesPage() {
               <Tooltip {...TOOLTIP_STYLE} />
               <Bar dataKey="Termine" fill={PALETTE.teal} radius={[6, 6, 0, 0]} />
             </BarChart>
+          </ResponsiveContainer>
+        </SectionCard>
+      )}
+
+      {/* Pipeline-Entwicklung im Zeitverlauf */}
+      {pipelineWeeklyData.length > 0 && (
+        <SectionCard title="Pipeline-Entwicklung im Zeitverlauf">
+          <ResponsiveContainer width="100%" height={340}>
+            <ComposedChart data={pipelineWeeklyData} barCategoryGap="20%">
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
+              <XAxis dataKey="week" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+              <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} />
+              <Tooltip {...TOOLTIP_STYLE} />
+              <Legend wrapperStyle={{ fontSize: 11, color: "#78716c" }} />
+              <Bar dataKey="High-Touch" stackId="seg" fill="#5eead4" radius={undefined} />
+              <Bar dataKey="Medium" stackId="seg" fill="#818cf8" radius={undefined} />
+              <Bar dataKey="Low-Touch" stackId="seg" fill="#a78bfa" radius={undefined} />
+              <Bar dataKey="Nicht qualifiziert" stackId="seg" fill="#fb7185" radius={[4, 4, 0, 0]} />
+              <Line type="monotone" dataKey="Angebote" stroke="#e2a96e" strokeWidth={2} dot={{ r: 3, fill: "#e2a96e" }} />
+            </ComposedChart>
           </ResponsiveContainer>
         </SectionCard>
       )}

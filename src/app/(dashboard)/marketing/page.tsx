@@ -31,6 +31,7 @@ import {
   computePerspectiveSummary,
   parseDE,
   getISOWeek,
+  classifyLead,
 } from "@/lib/date-utils";
 
 /* ── Soll-Ist Targets pro Kanal ── */
@@ -64,19 +65,6 @@ const CHANNELS: { key: ChannelKey; label: string }[] = [
   { key: "kursnet", label: "Kursnet" },
   { key: "indeed", label: "Indeed" },
 ];
-
-/* ── Lead Segmentierung ── */
-function classifyLead(l: (typeof leads)[0]) {
-  if (l.platform === "Kursnet") return "High-Touch";
-  const arbeitslos = l.arbeitslosGemeldet === "Ja";
-  const baldArbeitslos = l.arbeitslosGemeldet.includes("3 Monaten");
-  const vorerfahrung = l.vorerfahrung.includes("relevante Erfahrung");
-  const interesse = l.vorerfahrung.includes("Interesse");
-  if (arbeitslos && (vorerfahrung || interesse)) return "High-Touch";
-  if (baldArbeitslos) return "Low-Touch";
-  if (arbeitslos) return "Medium";
-  return "Nicht qualifiziert";
-}
 
 /* ── Cost per Ad (module-level, not filterable) ── */
 const costData = metaAds.map((ad) => ({
