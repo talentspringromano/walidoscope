@@ -89,11 +89,12 @@ export default function MarketingPage() {
   const [sortDir, setSortDir] = useState<SortDir>("desc");
   const [filter, setFilter] = useState<FilterPreset>("all");
   const [range, setRange] = useState<TimeRange>("all");
+  const [hiddenChannels, setHiddenChannels] = useState<Set<string>>(new Set());
 
   const {
     channelData, segmentCounts, segmentData, allSegments, segmentWeeklyData,
     creativeDeepFunnel, gewonnenKursnet, perspFunnelData, perspSummary,
-    filteredLeads,
+    filteredLeads, channelWeeklyData,
   } = useMemo(() => {
     const filteredLeads = filterLeadsByRange(leads, range);
 
@@ -155,10 +156,26 @@ export default function MarketingPage() {
       { name: "Gewonnen (BG)", value: gewonnenKursnet },
     ];
 
+    /* Channel weekly (stacked bar) */
+    const channelWeekMap = new Map<number, { Meta: number; Kursnet: number; Indeed: number }>();
+    filteredLeads.forEach((l) => {
+      const date = parseDE(l.createdOn);
+      if (isNaN(date.getTime())) return;
+      const wk = getISOWeek(date);
+      const entry = channelWeekMap.get(wk) ?? { Meta: 0, Kursnet: 0, Indeed: 0 };
+      if (l.platform === "Facebook" || l.platform === "Instagram") entry.Meta++;
+      else if (l.platform === "Kursnet") entry.Kursnet++;
+      else if (l.platform === "Indeed") entry.Indeed++;
+      channelWeekMap.set(wk, entry);
+    });
+    const channelWeeklyData = Array.from(channelWeekMap.entries())
+      .sort((a, b) => a[0] - b[0])
+      .map(([wk, counts]) => ({ week: `KW ${wk}`, ...counts }));
+
     return {
       channelData, segmentCounts, segmentData, allSegments, segmentWeeklyData,
       creativeDeepFunnel, gewonnenKursnet, perspFunnelData, perspSummary,
-      filteredLeads,
+      filteredLeads, channelWeeklyData,
     };
   }, [range]);
 
@@ -302,34 +319,47 @@ export default function MarketingPage() {
           })}
         </div>
 
-        {/* IST vs SOLL Bar Chart */}
+        {/* Leads pro Kanal im Zeitverlauf – Stacked Bar */}
+        {channelWeeklyData.length > 0 && (
         <div className="glass-card p-6">
-          <h3 className="text-[13px] font-semibold tracking-wide text-[#a8a29e] mb-4">Leads: IST vs. SOLL pro Kanal</h3>
-          <ResponsiveContainer width="100%" height={260}>
-            <BarChart
-              data={channelData.map((c) => ({
-                name: c.label,
-                IST: c.ist.leads,
-                SOLL: c.soll.leads,
-              }))}
-              barGap={4}
-              barCategoryGap="30%"
-            >
-              <XAxis dataKey="name" {...AXIS_STYLE} axisLine={false} tickLine={false} />
-              <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} />
+          <h3 className="text-[13px] font-semibold tracking-wide text-[#a8a29e] mb-4">Leads pro Kanal im Zeitverlauf</h3>
+          <ResponsiveContainer width="100%" height={300}>
+            <BarChart data={channelWeeklyData} barCategoryGap="20%">
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
+              <XAxis dataKey="week" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+              <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} allowDecimals={false} />
               <Tooltip {...TOOLTIP_STYLE} />
-              <ReferenceLine
-                y={Object.values(CHANNEL_TARGETS).reduce((s, t) => s + t.leads, 0)}
-                stroke="#78716c"
-                strokeDasharray="6 4"
-                strokeWidth={1.5}
-                label={{ value: "Gesamt-Ziel", position: "right", fill: "#78716c", fontSize: 10 }}
+              <Legend
+                wrapperStyle={{ fontSize: 11 }}
+                onClick={(e) => {
+                  const ch = e.value as string;
+                  setHiddenChannels((prev) => {
+                    const next = new Set(prev);
+                    next.has(ch) ? next.delete(ch) : next.add(ch);
+                    return next;
+                  });
+                }}
+                formatter={(value: string) => (
+                  <span style={{ color: hiddenChannels.has(value) ? "rgba(120,113,108,0.4)" : "#a8a29e" }}>
+                    {value}
+                  </span>
+                )}
               />
-              <Bar dataKey="SOLL" fill="rgba(255,255,255,0.08)" radius={[6, 6, 0, 0]} name="SOLL" />
-              <Bar dataKey="IST" fill={PALETTE.indigo} radius={[6, 6, 0, 0]} name="IST" />
+              {(["Meta", "Kursnet", "Indeed"] as const)
+                .filter((ch) => !hiddenChannels.has(ch))
+                .map((ch, i, arr) => (
+                  <Bar
+                    key={ch}
+                    dataKey={ch}
+                    stackId="a"
+                    fill={ch === "Meta" ? PALETTE.indigo : ch === "Kursnet" ? PALETTE.teal : PALETTE.amber}
+                    radius={i === arr.length - 1 ? [4, 4, 0, 0] : undefined}
+                  />
+                ))}
             </BarChart>
           </ResponsiveContainer>
         </div>
+        )}
       </div>
 
       {/* KPIs */}
