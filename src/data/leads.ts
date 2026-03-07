@@ -3480,25 +3480,6 @@ export const leads: Lead[] = [
   },
   {
     "id": 184,
-    "name": "",
-    "leadStatus": "Kennenlerngespräch gebucht",
-    "dealStatus": "",
-    "verlustgrund": "",
-    "adId": "",
-    "adName": "",
-    "platform": "",
-    "arbeitslosGemeldet": "",
-    "deutschkenntnisse": "",
-    "alter": "Keine Angabe",
-    "vorerfahrung": "",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 09:06",
-    "terminBeimAmt": "",
-    "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
-  },
-  {
-    "id": 185,
     "name": "Sonja Ittner",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -3517,7 +3498,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 186,
+    "id": 185,
     "name": "Philipp Regnat",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -3536,26 +3517,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 187,
-    "name": "",
-    "leadStatus": "Rückruf",
-    "dealStatus": "",
-    "verlustgrund": "",
-    "adId": "",
-    "adName": "",
-    "platform": "",
-    "arbeitslosGemeldet": "",
-    "deutschkenntnisse": "",
-    "alter": "Keine Angabe",
-    "vorerfahrung": "",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 13:00",
-    "terminBeimAmt": "",
-    "closingWahrscheinlichkeit": "",
-    "utmTitle": ""
-  },
-  {
-    "id": 188,
+    "id": 186,
     "name": "Justine Zürker",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -3574,7 +3536,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 189,
+    "id": 187,
     "name": "Diana Schneider",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -3593,7 +3555,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 190,
+    "id": 188,
     "name": "Alexander Galbory",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -3612,7 +3574,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 191,
+    "id": 189,
     "name": "Iren Drexler",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -3631,7 +3593,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 192,
+    "id": 190,
     "name": "Carla Schwerb",
     "leadStatus": "Beratungsgespräch gebucht",
     "dealStatus": "",
@@ -3650,7 +3612,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 193,
+    "id": 191,
     "name": "Dennis Jovanovic",
     "leadStatus": "Reterminierung",
     "dealStatus": "",
@@ -3669,7 +3631,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 194,
+    "id": 192,
     "name": "Schugufa Aria",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -3688,7 +3650,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 195,
+    "id": 193,
     "name": "Anita Parfimczyk",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -3707,7 +3669,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 196,
+    "id": 194,
     "name": "Yasar Abdullah",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -3726,7 +3688,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 197,
+    "id": 195,
     "name": "Thomas Sugar",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -3745,7 +3707,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 198,
+    "id": 196,
     "name": "Tioma Marakati",
     "leadStatus": "Rückruf",
     "dealStatus": "",
@@ -3764,7 +3726,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 199,
+    "id": 197,
     "name": "Adam Balihodzic",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -3783,7 +3745,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 200,
+    "id": 198,
     "name": "Agid Bajo",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -3802,7 +3764,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 201,
+    "id": 199,
     "name": "Hannes Hungerbühler",
     "leadStatus": "Rückruf",
     "dealStatus": "",
@@ -3821,7 +3783,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 202,
+    "id": 200,
     "name": "Gökalphan Akkoyunlu",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -3840,7 +3802,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 203,
+    "id": 201,
     "name": "Dragana Stanisic",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -3859,7 +3821,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 204,
+    "id": 202,
     "name": "Ela Akaba",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -3878,7 +3840,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 205,
+    "id": 203,
     "name": "Florian Schneider",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -3897,7 +3859,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 206,
+    "id": 204,
     "name": "Marko Krezic",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -3916,7 +3878,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 207,
+    "id": 205,
     "name": "Maab Ouhaddou",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -3935,7 +3897,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 208,
+    "id": 206,
     "name": "Leotrim Ibrahimi",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -3954,7 +3916,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 209,
+    "id": 207,
     "name": "Melek Yörük",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -3973,7 +3935,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 210,
+    "id": 208,
     "name": "Jessica Rume",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -3992,7 +3954,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 211,
+    "id": 209,
     "name": "Hannelore Tempfli",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -4011,7 +3973,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 212,
+    "id": 210,
     "name": "Inga Movsesyan",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -4030,7 +3992,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 213,
+    "id": 211,
     "name": "Mehmet Akif Yilmaz",
     "leadStatus": "Rückruf",
     "dealStatus": "",
@@ -4049,7 +4011,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 214,
+    "id": 212,
     "name": "Nico Huster",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -4068,7 +4030,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 215,
+    "id": 213,
     "name": "Rafael Muresan",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -4087,7 +4049,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 216,
+    "id": 214,
     "name": "Melisa Cena",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -4106,7 +4068,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 217,
+    "id": 215,
     "name": "Nicolaij Kolbe",
     "leadStatus": "Rückruf",
     "dealStatus": "",
@@ -4125,7 +4087,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 218,
+    "id": 216,
     "name": "Petra Ashington",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -4144,7 +4106,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 219,
+    "id": 217,
     "name": "Snezana Lukic",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -4163,7 +4125,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 220,
+    "id": 218,
     "name": "Conny Pilz",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -4182,7 +4144,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 221,
+    "id": 219,
     "name": "Chrissi Ruth",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -4201,7 +4163,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 222,
+    "id": 220,
     "name": "Siranush Gevorgyan",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -4220,7 +4182,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 223,
+    "id": 221,
     "name": "Nicole Schnaß Schnaß",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -4239,7 +4201,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 224,
+    "id": 222,
     "name": "Idriss-Yannick Diabate",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -4258,7 +4220,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 225,
+    "id": 223,
     "name": "Felix Fetzer",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -4277,7 +4239,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 226,
+    "id": 224,
     "name": "Uschi_ Herrmann",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -4296,7 +4258,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 227,
+    "id": 225,
     "name": "Isabella Berghoffer",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -4315,7 +4277,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 228,
+    "id": 226,
     "name": "Nicole Jung",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -4334,7 +4296,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 229,
+    "id": 227,
     "name": "Susanne Borowsky",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -4353,7 +4315,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 230,
+    "id": 228,
     "name": "Gina Nguyen",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -4372,7 +4334,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 231,
+    "id": 229,
     "name": "Ayten Avutan Berkyürek",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -4391,7 +4353,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 232,
+    "id": 230,
     "name": "Birgit Brückmann",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -4410,7 +4372,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 233,
+    "id": 231,
     "name": "Cigdem Gürbüz",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -4429,7 +4391,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 234,
+    "id": 232,
     "name": "Liv Ndive",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -4448,7 +4410,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 235,
+    "id": 233,
     "name": "Bianca Koob",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -4467,7 +4429,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 236,
+    "id": 234,
     "name": "Aysenur Kuecuekarpaci",
     "leadStatus": "Reterminierung",
     "dealStatus": "",
@@ -4486,7 +4448,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 237,
+    "id": 235,
     "name": "Chanti Corlette",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -4505,7 +4467,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 238,
+    "id": 236,
     "name": "Deborah Plath",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -4524,7 +4486,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 239,
+    "id": 237,
     "name": "Maria Gelevska",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -4543,7 +4505,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 240,
+    "id": 238,
     "name": "Liam Day",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -4562,7 +4524,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 241,
+    "id": 239,
     "name": "Cath Leen Wunderlich",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -4581,7 +4543,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 242,
+    "id": 240,
     "name": "Katrin Wittmann",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -4600,7 +4562,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 243,
+    "id": 241,
     "name": "Melly Fundke",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -4619,7 +4581,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 244,
+    "id": 242,
     "name": "Emin Thaqi",
     "leadStatus": "Reterminierung",
     "dealStatus": "",
@@ -4638,7 +4600,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 245,
+    "id": 243,
     "name": "Oliver Schimming",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -4657,7 +4619,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 246,
+    "id": 244,
     "name": "Shenoll Dindari",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -4676,7 +4638,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 247,
+    "id": 245,
     "name": "Tim Napieralski",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -4695,7 +4657,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 248,
+    "id": 246,
     "name": "Nicole Schmerker",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -4714,7 +4676,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 249,
+    "id": 247,
     "name": "Eva Rainer",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -4733,7 +4695,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 250,
+    "id": 248,
     "name": "Sabrina Kilpo",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -4752,7 +4714,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 251,
+    "id": 249,
     "name": "Joanna Mannarino",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -4771,7 +4733,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 252,
+    "id": 250,
     "name": "Thao Nguyen",
     "leadStatus": "Gewonnen",
     "dealStatus": "",
@@ -4790,7 +4752,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 253,
+    "id": 251,
     "name": "Beate Pilz",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -4809,7 +4771,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 254,
+    "id": 252,
     "name": "Sally Ebner",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -4828,7 +4790,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 255,
+    "id": 253,
     "name": "Shabbir Sheikh",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -4847,7 +4809,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 256,
+    "id": 254,
     "name": "Erik Kokenov",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -4866,7 +4828,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 257,
+    "id": 255,
     "name": "Annette Enners",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -4885,7 +4847,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 258,
+    "id": 256,
     "name": "Vanessa Müller",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -4904,7 +4866,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 259,
+    "id": 257,
     "name": "Sandra Grauel",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -4923,7 +4885,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 260,
+    "id": 258,
     "name": "Sonja Arnst",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -4942,7 +4904,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 261,
+    "id": 259,
     "name": "Alexandra Schneemayer",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -4961,7 +4923,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 262,
+    "id": 260,
     "name": "Sayed Menayar",
     "leadStatus": "Beratungsgespräch gebucht",
     "dealStatus": "",
@@ -4980,7 +4942,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 263,
+    "id": 261,
     "name": "Christine Kulozik",
     "leadStatus": "Rückruf",
     "dealStatus": "",
@@ -4999,7 +4961,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 264,
+    "id": 262,
     "name": "Nicole Hudek",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -5018,7 +4980,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 265,
+    "id": 263,
     "name": "Ieva Elksne-Diessner",
     "leadStatus": "Rückruf",
     "dealStatus": "",
@@ -5037,7 +4999,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 266,
+    "id": 264,
     "name": "Farida Bouda",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -5056,7 +5018,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 267,
+    "id": 265,
     "name": "Yuliya Haysan",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -5075,7 +5037,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 268,
+    "id": 266,
     "name": "Mika Wrede",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -5094,7 +5056,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 269,
+    "id": 267,
     "name": "Dana Schmidt",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -5113,7 +5075,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 270,
+    "id": 268,
     "name": "Anaïs Fortas",
     "leadStatus": "Kennenlerngespräch gebucht",
     "dealStatus": "",
@@ -5132,7 +5094,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 271,
+    "id": 269,
     "name": "Susanne Amann",
     "leadStatus": "Beratungsgespräch gebucht",
     "dealStatus": "",
@@ -5151,7 +5113,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 272,
+    "id": 270,
     "name": "Daniel Olligschläger",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -5170,7 +5132,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 273,
+    "id": 271,
     "name": "Katrin Herrmann",
     "leadStatus": "Rückruf",
     "dealStatus": "",
@@ -5189,7 +5151,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 274,
+    "id": 272,
     "name": "Isabell Prediger",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -5208,7 +5170,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 275,
+    "id": 273,
     "name": "Daniela Lukic",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -5227,7 +5189,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 276,
+    "id": 274,
     "name": "Gio Bagnis",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -5246,7 +5208,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 277,
+    "id": 275,
     "name": "Sabine Altmann",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -5265,7 +5227,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 278,
+    "id": 276,
     "name": "Michaela Petri",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -5284,7 +5246,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 279,
+    "id": 277,
     "name": "Manda Grün",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -5303,7 +5265,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 280,
+    "id": 278,
     "name": "Jeannette Schmolke",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -5322,7 +5284,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 281,
+    "id": 279,
     "name": "Constanze Mackedanz",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -5341,7 +5303,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 282,
+    "id": 280,
     "name": "Valerie Kravchenko",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -5360,7 +5322,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 283,
+    "id": 281,
     "name": "Sonja Scharl",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -5379,7 +5341,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 284,
+    "id": 282,
     "name": "Carolin Kunz",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -5398,7 +5360,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 285,
+    "id": 283,
     "name": "Annett Schwarzer",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -5417,7 +5379,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 286,
+    "id": 284,
     "name": "Soukaina Alaoui Mdaghri",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -5436,7 +5398,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 287,
+    "id": 285,
     "name": "Donyas Tej",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -5455,7 +5417,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 288,
+    "id": 286,
     "name": "Valmira Beqiri",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -5474,7 +5436,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 289,
+    "id": 287,
     "name": "Nicole Würtele",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -5493,7 +5455,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 290,
+    "id": 288,
     "name": "O S",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -5512,7 +5474,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 291,
+    "id": 289,
     "name": "Nadine Nowak",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -5531,7 +5493,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 292,
+    "id": 290,
     "name": "Isabell Sauter",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -5550,7 +5512,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 293,
+    "id": 291,
     "name": "Charlotte Beck",
     "leadStatus": "Verloren",
     "dealStatus": "",
@@ -5569,7 +5531,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 294,
+    "id": 292,
     "name": "Theresa Wolf",
     "leadStatus": "Rückruf",
     "dealStatus": "",
@@ -5588,7 +5550,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 295,
+    "id": 293,
     "name": "Melinda Csicsek",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -5607,7 +5569,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 296,
+    "id": 294,
     "name": "Rim Soumer",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -5626,7 +5588,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 297,
+    "id": 295,
     "name": "Despina Pro",
     "leadStatus": "Kennenlerngespräch gebucht",
     "dealStatus": "",
@@ -5645,7 +5607,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 298,
+    "id": 296,
     "name": "Melanie Grotz",
     "leadStatus": "Vertriebsqualifiziert",
     "dealStatus": "",
@@ -5664,7 +5626,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 299,
+    "id": 297,
     "name": "Andre Weberpals",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -5683,7 +5645,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 300,
+    "id": 298,
     "name": "Patrick Schmal",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -5702,7 +5664,7 @@ export const leads: Lead[] = [
     "utmTitle": ""
   },
   {
-    "id": 301,
+    "id": 299,
     "name": "Marlena Twardowska",
     "leadStatus": "Neuer Lead",
     "dealStatus": "",
@@ -5716,6 +5678,63 @@ export const leads: Lead[] = [
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
     "createdOn": "6.3.2026 18:39",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": ""
+  },
+  {
+    "id": 300,
+    "name": "Ursula Wolf",
+    "leadStatus": "Neuer Lead",
+    "dealStatus": "",
+    "verlustgrund": "",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Facebook",
+    "arbeitslosGemeldet": "Nein, aber in den nächsten 3 Monaten",
+    "deutschkenntnisse": "Fließend (C1/C2)",
+    "alter": "46 – 60 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "6.3.2026 20:40",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": ""
+  },
+  {
+    "id": 301,
+    "name": "Heike Wötzel",
+    "leadStatus": "Neuer Lead",
+    "dealStatus": "",
+    "verlustgrund": "",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Facebook",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "46 – 60 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "6.3.2026 21:58",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": ""
+  },
+  {
+    "id": 302,
+    "name": "Christoph Krupp",
+    "leadStatus": "Neuer Lead",
+    "dealStatus": "",
+    "verlustgrund": "",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Facebook",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "46 – 60 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "6.3.2026 22:23",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": ""
