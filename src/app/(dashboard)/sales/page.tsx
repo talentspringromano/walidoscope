@@ -330,6 +330,21 @@ export default function SalesPage() {
         <KpiCard label="Amt-Termine" value={leadsWithTermin.length} sub="Termine gebucht" />
       </div>
 
+      {/* Amt-Termine im Zeitverlauf */}
+      {terminWeeklyData.length > 0 && (
+        <SectionCard title="Amt-Termine im Zeitverlauf">
+          <ResponsiveContainer width="100%" height={300}>
+            <BarChart data={terminWeeklyData} barCategoryGap="20%">
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
+              <XAxis dataKey="week" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+              <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} />
+              <Tooltip {...TOOLTIP_STYLE} />
+              <Bar dataKey="Termine" fill={PALETTE.teal} radius={[6, 6, 0, 0]} />
+            </BarChart>
+          </ResponsiveContainer>
+        </SectionCard>
+      )}
+
       {/* Handlungsempfehlungen */}
       <SectionCard title="Handlungsempfehlungen">
         {recommendations.length > 0 ? (
@@ -585,20 +600,6 @@ export default function SalesPage() {
         )}
       </SectionCard>
 
-      {/* Termine im Zeitverlauf */}
-      {terminWeeklyData.length > 0 && (
-        <SectionCard title="Amt-Termine im Zeitverlauf">
-          <ResponsiveContainer width="100%" height={300}>
-            <BarChart data={terminWeeklyData} barCategoryGap="20%">
-              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
-              <XAxis dataKey="week" {...AXIS_STYLE} axisLine={false} tickLine={false} />
-              <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} />
-              <Tooltip {...TOOLTIP_STYLE} />
-              <Bar dataKey="Termine" fill={PALETTE.teal} radius={[6, 6, 0, 0]} />
-            </BarChart>
-          </ResponsiveContainer>
-        </SectionCard>
-      )}
     </div>
   );
 }
