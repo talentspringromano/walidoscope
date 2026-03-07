@@ -303,12 +303,12 @@ export default function OverviewPage() {
         </SectionCard>
 
         <SectionCard title="Lead-Status Verteilung">
-          <ResponsiveContainer width="100%" height={280}>
-            <BarChart data={statusData} layout="vertical" barCategoryGap="20%">
-              <XAxis type="number" {...AXIS_STYLE} axisLine={false} tickLine={false} />
-              <YAxis type="category" dataKey="name" width={110} {...AXIS_STYLE} axisLine={false} tickLine={false} />
+          <ResponsiveContainer width="100%" height={320}>
+            <BarChart data={statusData} barCategoryGap="20%" margin={{ bottom: 20 }}>
+              <XAxis dataKey="name" {...AXIS_STYLE} axisLine={false} tickLine={false} angle={-25} textAnchor="end" height={60} interval={0} />
+              <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} />
               <Tooltip {...TOOLTIP_STYLE} />
-              <Bar dataKey="count" radius={[0, 6, 6, 0]} animationDuration={800}>
+              <Bar dataKey="count" radius={[6, 6, 0, 0]} animationDuration={800}>
                 {statusData.map((entry) => (
                   <Cell key={entry.name} fill={STATUS_COLORS[entry.name] || "#818cf8"} />
                 ))}
