@@ -455,13 +455,13 @@ export default function MarketingPage() {
       <div className="grid gap-6 lg:grid-cols-2 stagger-in">
         {/* Cost Analysis */}
         <SectionCard title="Spend & CPL pro Creative">
-          <ResponsiveContainer width="100%" height={380}>
-            <BarChart data={costData} barGap={4}>
-              <XAxis dataKey="name" {...AXIS_STYLE} angle={-90} textAnchor="end" height={140} axisLine={false} tickLine={false} interval={0} />
-              <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} />
+          <ResponsiveContainer width="100%" height={340}>
+            <BarChart data={costData} barGap={4} layout="vertical">
+              <XAxis type="number" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+              <YAxis type="category" dataKey="name" {...AXIS_STYLE} width={160} axisLine={false} tickLine={false} interval={0} />
               <Tooltip {...TOOLTIP_STYLE} formatter={(val) => typeof val === "number" ? `€${val.toFixed(2)}` : val} />
-              <Bar dataKey="spend" fill={PALETTE.indigo} name="Spend" radius={[6, 6, 0, 0]} />
-              <Bar dataKey="cpl" fill={PALETTE.teal} name="CPL" radius={[6, 6, 0, 0]} />
+              <Bar dataKey="spend" fill={PALETTE.indigo} name="Spend" radius={[0, 6, 6, 0]} />
+              <Bar dataKey="cpl" fill={PALETTE.teal} name="CPL" radius={[0, 6, 6, 0]} />
             </BarChart>
           </ResponsiveContainer>
         </SectionCard>
