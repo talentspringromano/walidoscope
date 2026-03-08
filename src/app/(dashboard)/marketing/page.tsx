@@ -468,12 +468,12 @@ export default function MarketingPage() {
 
         {/* Lead Segmentation Pie */}
         <SectionCard title="Lead-Segmentierung">
-          <ResponsiveContainer width="100%" height={260}>
+          <ResponsiveContainer width="100%" height={310}>
             <PieChart>
               <Pie
                 data={segmentData}
                 cx="50%"
-                cy="50%"
+                cy="52%"
                 innerRadius={65}
                 outerRadius={105}
                 dataKey="value"
