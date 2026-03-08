@@ -384,7 +384,7 @@ export default function MarketingPage() {
       </div>
 
       {/* Creative Performance Table */}
-      <SectionCard title="Creative-Leistung (Deep-Funnel)">
+      <SectionCard title="Creative-Leistung (Deep-Funnel)" className="overflow-visible">
         {/* Filter Chips */}
         <div className="flex items-center gap-2 mb-4">
           {FILTER_PRESETS.map((f) => (
