@@ -22,8 +22,8 @@ function WelcomeContent() {
   const [leaving, setLeaving] = useState(false);
 
   useEffect(() => {
-    const fadeTimer = setTimeout(() => setLeaving(true), 1900);
-    const redirectTimer = setTimeout(() => router.replace("/"), 2200);
+    const fadeTimer = setTimeout(() => setLeaving(true), 3100);
+    const redirectTimer = setTimeout(() => router.replace("/"), 3500);
     return () => {
       clearTimeout(fadeTimer);
       clearTimeout(redirectTimer);
@@ -167,7 +167,7 @@ function WelcomeContent() {
             className="h-full rounded-full bg-gradient-to-r from-[#e2a96e] to-[#5eead4]"
             initial={{ width: "0%" }}
             animate={{ width: "100%" }}
-            transition={{ duration: 1.6, ease: [0.25, 0.1, 0.25, 1], delay: 0.4 }}
+            transition={{ duration: 2.8, ease: [0.25, 0.1, 0.25, 1], delay: 0.4 }}
           />
         </motion.div>
       </motion.div>
