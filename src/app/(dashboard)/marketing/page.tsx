@@ -405,7 +405,7 @@ export default function MarketingPage() {
           </span>
         </div>
 
-        <div className="overflow-x-auto -mx-2">
+        <div className="overflow-x-auto">
           <table className="w-full premium-table">
             <thead>
               <tr>
