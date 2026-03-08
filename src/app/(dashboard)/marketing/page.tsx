@@ -557,13 +557,13 @@ export default function MarketingPage() {
                 </div>
               ))}
               <div className="mt-1 pt-3 border-t border-[rgba(255,255,255,0.06)] space-y-1.5">
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between gap-6">
                   <span className="text-[12px] text-[#57534e]">Visit → Gewonnen</span>
                   <span className="text-[16px] font-bold text-[#e2a96e] tabular-nums">
                     {perspSummary.totalVisits > 0 ? ((gewonnenKursnet / perspSummary.totalVisits) * 100).toFixed(1) : "0"}%
                   </span>
                 </div>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between gap-6">
                   <span className="text-[12px] text-[#57534e]">Konvertiert → Gewonnen</span>
                   <span className="text-[16px] font-bold text-[#5eead4] tabular-nums">
                     {perspSummary.converted > 0 ? ((gewonnenKursnet / perspSummary.converted) * 100).toFixed(1) : "0"}%
