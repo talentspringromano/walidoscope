@@ -60,7 +60,7 @@ function ParticleField() {
   return (
     <div className="absolute inset-0">
       {/* Lines between nearby particles */}
-      <svg className="absolute inset-0 w-full h-full opacity-[0.06]">
+      <svg className="absolute inset-0 w-full h-full opacity-[0.12]">
         {lines.map((line, i) => (
           <motion.line
             key={i}
@@ -68,11 +68,11 @@ function ParticleField() {
             y1={`${line.y1}%`}
             x2={`${line.x2}%`}
             y2={`${line.y2}%`}
-            stroke="rgba(255,255,255,0.4)"
+            stroke="rgba(255,255,255,0.5)"
             strokeWidth="0.5"
             initial={{ opacity: 0 }}
             animate={{ opacity: line.opacity }}
-            transition={{ duration: 2, delay: 0.5 + i * 0.08 }}
+            transition={{ duration: 0.6, delay: 0.2 + i * 0.03 }}
           />
         ))}
       </svg>
