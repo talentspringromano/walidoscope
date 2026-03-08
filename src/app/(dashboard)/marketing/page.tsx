@@ -520,15 +520,17 @@ export default function MarketingPage() {
       )}
 
       {/* CRM Gap Warning */}
-      <div className="rounded-xl border border-amber-500/30 px-5 py-4 flex items-start gap-3" style={{ background: "rgba(245, 158, 11, 0.12)" }}>
-        <AlertTriangle className="h-5 w-5 text-amber-400 mt-0.5 shrink-0" />
-        <div>
-          <p className="text-[14px] font-semibold text-amber-300">CRM-Erfassungslücke erkannt</p>
-          <p className="text-[13px] text-amber-400/80 mt-1">
-            {perspSummary.converted - kursnetLeadsCount} von {perspSummary.converted} Perspective-Konversionen fehlen im CRM. Nur {kursnetLeadsCount} wurden in Airtable als Kursnet-Leads erfasst.
-          </p>
+      {perspSummary.converted - kursnetLeadsCount > 0 && (
+        <div className="rounded-xl border border-amber-500/30 px-5 py-4 flex items-start gap-3" style={{ background: "rgba(245, 158, 11, 0.12)" }}>
+          <AlertTriangle className="h-5 w-5 text-amber-400 mt-0.5 shrink-0" />
+          <div>
+            <p className="text-[14px] font-semibold text-amber-300">CRM-Erfassungslücke erkannt</p>
+            <p className="text-[13px] text-amber-400/80 mt-1">
+              {perspSummary.converted - kursnetLeadsCount} von {perspSummary.converted} Perspective-Konversionen fehlen im CRM. Nur {kursnetLeadsCount} wurden in Airtable als Kursnet-Leads erfasst.
+            </p>
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Perspective Funnel */}
       <SectionCard title="Kursnet/meinNOW Landing Page Funnel">
