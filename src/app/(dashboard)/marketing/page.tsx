@@ -418,7 +418,7 @@ export default function MarketingPage() {
                   ["costPerResult", "CPL", "text-right pr-5"],
                   ["airtableLeads", "CRM", "text-right pr-5"],
                   ["discovery", "Discovery+", "text-right pr-5"],
-                  ["angebot", "Angebot", "text-right pr-5"],
+                  ["angebot", "Angebot", "text-right pr-8"],
                 ] as [SortKey, string, string][]).map(([key, label, cls]) => (
                   <th
                     key={key}
@@ -444,7 +444,7 @@ export default function MarketingPage() {
                   <td className="text-right pr-5 tabular-nums text-[#78716c]">€{ad.costPerResult.toFixed(2)}</td>
                   <td className="text-right pr-5 tabular-nums text-[#a8a29e]">{ad.airtableLeads}</td>
                   <td className="text-right pr-5 tabular-nums text-[#a8a29e]">{ad.discovery}</td>
-                  <td className="text-right pr-5 tabular-nums font-semibold text-[#5eead4] glow-badge">{ad.angebot}</td>
+                  <td className="text-right pr-8 tabular-nums font-semibold text-[#5eead4] glow-badge">{ad.angebot}</td>
                 </tr>
               ))}
             </tbody>
