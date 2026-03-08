@@ -11,6 +11,12 @@ const USERS = [
     passwordHash:
       "975d704d76d198bc6a10f64b67ec7ba1d67109e60e189f12a317c00c3f331fb0",
   },
+  {
+    email: "walid@talentspring-academy.com",
+    role: "admin" as const,
+    passwordHash:
+      "06ef96d285781e0308ce4bbff9fa933b083efe72eb53b6cbd5dfda52cf92c344",
+  },
 ];
 
 async function sha256(message: string): Promise<string> {
