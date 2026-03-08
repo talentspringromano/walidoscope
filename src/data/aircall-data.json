@@ -35,7 +35,7 @@
       "lastCallDate": "2026-03-06"
     },
     {
-      "name": "Eric H.",
+      "name": "Eric Hardt",
       "userId": 1862760,
       "outboundCalls": 172,
       "inboundCalls": 4,
@@ -52,7 +52,7 @@
       "lastCallDate": "2026-03-05"
     },
     {
-      "name": "Michel G.",
+      "name": "Michel Grosser",
       "userId": 1862761,
       "outboundCalls": 99,
       "inboundCalls": 3,
@@ -150,7 +150,7 @@
   ],
   "sellerDaily": [
     {
-      "seller": "Michel G.",
+      "seller": "Michel Grosser",
       "date": "2026-02-24",
       "dials": 14,
       "reached": 14,
@@ -185,7 +185,7 @@
       "calltimeSec": 269
     },
     {
-      "seller": "Michel G.",
+      "seller": "Michel Grosser",
       "date": "2026-02-26",
       "dials": 4,
       "reached": 4,
@@ -206,7 +206,7 @@
       "calltimeSec": 1443
     },
     {
-      "seller": "Eric H.",
+      "seller": "Eric Hardt",
       "date": "2026-02-27",
       "dials": 15,
       "reached": 15,
@@ -227,14 +227,14 @@
       "calltimeSec": 541
     },
     {
-      "seller": "Eric H.",
+      "seller": "Eric Hardt",
       "date": "2026-03-02",
       "dials": 9,
       "reached": 9,
       "calltimeSec": 691
     },
     {
-      "seller": "Michel G.",
+      "seller": "Michel Grosser",
       "date": "2026-03-02",
       "dials": 25,
       "reached": 25,
@@ -255,14 +255,14 @@
       "calltimeSec": 4951
     },
     {
-      "seller": "Eric H.",
+      "seller": "Eric Hardt",
       "date": "2026-03-03",
       "dials": 45,
       "reached": 45,
       "calltimeSec": 2951
     },
     {
-      "seller": "Michel G.",
+      "seller": "Michel Grosser",
       "date": "2026-03-03",
       "dials": 2,
       "reached": 2,
@@ -290,7 +290,7 @@
       "calltimeSec": 6984
     },
     {
-      "seller": "Eric H.",
+      "seller": "Eric Hardt",
       "date": "2026-03-04",
       "dials": 53,
       "reached": 53,
@@ -318,14 +318,14 @@
       "calltimeSec": 6020
     },
     {
-      "seller": "Eric H.",
+      "seller": "Eric Hardt",
       "date": "2026-03-05",
       "dials": 50,
       "reached": 50,
       "calltimeSec": 2754
     },
     {
-      "seller": "Michel G.",
+      "seller": "Michel Grosser",
       "date": "2026-03-05",
       "dials": 25,
       "reached": 25,
@@ -353,7 +353,7 @@
       "calltimeSec": 3125
     },
     {
-      "seller": "Michel G.",
+      "seller": "Michel Grosser",
       "date": "2026-03-06",
       "dials": 29,
       "reached": 29,
