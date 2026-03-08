@@ -13,7 +13,7 @@ const USERS = [
   },
   {
     email: "walid@talentspring-academy.com",
-    role: "admin" as const,
+    role: "user" as const,
     passwordHash:
       "06ef96d285781e0308ce4bbff9fa933b083efe72eb53b6cbd5dfda52cf92c344",
   },
