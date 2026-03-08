@@ -61,43 +61,90 @@ function WelcomeContent() {
           }}
         />
 
-        {/* Animated scan line */}
-        <motion.div
-          className="absolute left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[rgba(226,169,110,0.15)] to-transparent"
-          initial={{ top: "20%" }}
-          animate={{ top: "80%" }}
-          transition={{
-            duration: 3,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-        />
-
-        {/* Subtle chart line SVG */}
-        <svg
-          className="absolute bottom-[25%] left-1/2 -translate-x-1/2 w-[600px] h-[120px] opacity-[0.04]"
-          viewBox="0 0 600 120"
+        {/* Dashboard wireframe */}
+        <motion.svg
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[520px]"
+          viewBox="0 0 900 520"
           fill="none"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.04 }}
+          transition={{ duration: 1.5, ease: "easeOut", delay: 0.3 }}
         >
-          <motion.path
-            d="M0 100 Q50 90, 100 70 T200 50 T300 60 T400 30 T500 40 T600 15"
-            stroke="#e2a96e"
-            strokeWidth="2"
-            strokeLinecap="round"
-            initial={{ pathLength: 0 }}
-            animate={{ pathLength: 1 }}
-            transition={{ duration: 2, ease: "easeInOut" }}
+          {/* Sidebar */}
+          <rect x="0" y="0" width="80" height="520" rx="12" stroke="rgba(255,255,255,0.5)" strokeWidth="1" />
+          <circle cx="40" cy="40" r="14" stroke="rgba(255,255,255,0.5)" strokeWidth="1" />
+          <rect x="20" y="80" width="40" height="4" rx="2" fill="rgba(255,255,255,0.3)" />
+          <rect x="20" y="100" width="40" height="4" rx="2" fill="rgba(255,255,255,0.3)" />
+          <rect x="20" y="120" width="40" height="4" rx="2" fill="rgba(255,255,255,0.3)" />
+          <rect x="20" y="140" width="40" height="4" rx="2" fill="rgba(255,255,255,0.3)" />
+
+          {/* KPI cards row */}
+          <rect x="110" y="10" width="180" height="90" rx="10" stroke="rgba(255,255,255,0.5)" strokeWidth="1" />
+          <rect x="305" y="10" width="180" height="90" rx="10" stroke="rgba(255,255,255,0.5)" strokeWidth="1" />
+          <rect x="500" y="10" width="180" height="90" rx="10" stroke="rgba(255,255,255,0.5)" strokeWidth="1" />
+          <motion.rect
+            x="695" y="10" width="180" height="90" rx="10"
+            stroke="#e2a96e" strokeWidth="1" opacity="0.6"
+            animate={{ opacity: [0.3, 0.6, 0.3] }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
           />
-          <motion.path
-            d="M0 110 Q80 95, 150 85 T300 75 T450 55 T600 45"
-            stroke="#5eead4"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            initial={{ pathLength: 0 }}
-            animate={{ pathLength: 1 }}
-            transition={{ duration: 2.2, ease: "easeInOut", delay: 0.3 }}
-          />
-        </svg>
+
+          {/* KPI card inner labels */}
+          <rect x="125" y="30" width="50" height="4" rx="2" fill="rgba(255,255,255,0.2)" />
+          <rect x="125" y="55" width="80" height="8" rx="3" fill="rgba(255,255,255,0.25)" />
+          <rect x="320" y="30" width="50" height="4" rx="2" fill="rgba(255,255,255,0.2)" />
+          <rect x="320" y="55" width="80" height="8" rx="3" fill="rgba(255,255,255,0.25)" />
+          <rect x="515" y="30" width="50" height="4" rx="2" fill="rgba(255,255,255,0.2)" />
+          <rect x="515" y="55" width="80" height="8" rx="3" fill="rgba(255,255,255,0.25)" />
+          <rect x="710" y="30" width="50" height="4" rx="2" fill="rgba(226,169,110,0.2)" />
+          <rect x="710" y="55" width="80" height="8" rx="3" fill="rgba(226,169,110,0.25)" />
+
+          {/* Main chart area */}
+          <rect x="110" y="120" width="560" height="280" rx="10" stroke="rgba(255,255,255,0.5)" strokeWidth="1" />
+
+          {/* Bar chart bars — staggered scaleY animation */}
+          {[
+            { x: 165, h: 140, color: "rgba(255,255,255,0.3)" },
+            { x: 245, h: 190, color: "rgba(226,169,110,0.4)" },
+            { x: 325, h: 120, color: "rgba(255,255,255,0.3)" },
+            { x: 405, h: 220, color: "rgba(94,234,212,0.35)" },
+            { x: 485, h: 160, color: "rgba(255,255,255,0.3)" },
+            { x: 565, h: 200, color: "rgba(226,169,110,0.4)" },
+          ].map((bar, i) => (
+            <motion.rect
+              key={i}
+              x={bar.x}
+              y={380 - bar.h}
+              width="50"
+              height={bar.h}
+              rx="6"
+              fill={bar.color}
+              initial={{ scaleY: 0 }}
+              animate={{ scaleY: 1 }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 + i * 0.12 }}
+              style={{ transformOrigin: `${bar.x + 25}px 380px` }}
+            />
+          ))}
+
+          {/* Chart baseline */}
+          <line x1="140" y1="385" x2="640" y2="385" stroke="rgba(255,255,255,0.2)" strokeWidth="1" />
+
+          {/* Side panel */}
+          <rect x="695" y="120" width="180" height="130" rx="10" stroke="rgba(255,255,255,0.5)" strokeWidth="1" />
+          <rect x="695" y="265" width="180" height="135" rx="10" stroke="rgba(255,255,255,0.5)" strokeWidth="1" />
+
+          {/* Side panel inner details */}
+          <circle cx="730" cy="150" r="6" fill="rgba(94,234,212,0.3)" />
+          <rect x="745" y="147" width="60" height="4" rx="2" fill="rgba(255,255,255,0.2)" />
+          <circle cx="730" cy="172" r="6" fill="rgba(226,169,110,0.3)" />
+          <rect x="745" y="169" width="45" height="4" rx="2" fill="rgba(255,255,255,0.2)" />
+          <circle cx="730" cy="194" r="6" fill="rgba(255,255,255,0.2)" />
+          <rect x="745" y="191" width="55" height="4" rx="2" fill="rgba(255,255,255,0.2)" />
+
+          {/* Bottom cards */}
+          <rect x="110" y="420" width="270" height="90" rx="10" stroke="rgba(255,255,255,0.5)" strokeWidth="1" />
+          <rect x="400" y="420" width="270" height="90" rx="10" stroke="rgba(255,255,255,0.5)" strokeWidth="1" />
+        </motion.svg>
       </div>
 
       {/* Content */}
