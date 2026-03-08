@@ -313,7 +313,7 @@ export default function SellerPage() {
               </div>
             </div>
 
-            <div className="px-6 pb-5 flex-1 flex flex-col">
+            <div className="px-6 pt-4 pb-5 flex-1 flex flex-col">
               {/* CRM Stats */}
               <div className="grid grid-cols-4 gap-3 mb-5">
                 {[
