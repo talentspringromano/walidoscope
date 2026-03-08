@@ -285,7 +285,7 @@ export default function SellerPage() {
         {sellerData.map((s, idx) => (
           <div key={s.name} className="glass-card overflow-hidden flex flex-col">
             {/* Header with gradient */}
-            <div className="relative px-6 pt-6 pb-4">
+            <div className="relative px-6 pt-6 pb-6">
               <div className="absolute inset-0 opacity-[0.03]" style={{
                 background: `linear-gradient(135deg, ${GRADIENT_PAIRS[idx].from}, ${GRADIENT_PAIRS[idx].to})`
               }} />
