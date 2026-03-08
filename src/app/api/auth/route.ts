@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { verifyPassword, createSession } from "@/lib/auth";
+import { USER_DISPLAY_NAMES } from "@/lib/users";
 
 export async function POST(request: Request) {
   const { email, password } = await request.json();
@@ -13,8 +14,9 @@ export async function POST(request: Request) {
   }
 
   const token = await createSession(user);
+  const firstName = USER_DISPLAY_NAMES[user.email] ?? "";
 
-  const response = NextResponse.json({ ok: true });
+  const response = NextResponse.json({ ok: true, firstName });
   response.cookies.set("session", token, {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",

@@ -23,13 +23,14 @@ export default function LoginPage() {
         body: JSON.stringify({ email, password }),
       });
 
+      const data = await res.json();
+
       if (!res.ok) {
-        const data = await res.json();
         setError(data.error || "Login fehlgeschlagen");
         return;
       }
 
-      router.push("/");
+      router.replace(`/welcome?name=${encodeURIComponent(data.firstName || "")}`);
     } catch {
       setError("Verbindungsfehler");
     } finally {
