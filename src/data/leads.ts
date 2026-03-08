@@ -6080,5 +6080,24 @@ export const leads: Lead[] = [
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": ""
+  },
+  {
+    "id": 321,
+    "name": "Stefan Schaefer",
+    "leadStatus": "Neuer Lead",
+    "dealStatus": "",
+    "verlustgrund": "",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Instagram",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Fließend (C1/C2)",
+    "alter": "25 – 45 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "8.3.2026 07:52",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": ""
   }
 ];
