@@ -101,17 +101,17 @@ function ParticleCanvas() {
       for (const d of dots) {
         const [r, g, b] = hexToRgb(d.color);
         // Glow
-        const glow = ctx.createRadialGradient(d.x, d.y, 0, d.x, d.y, d.r * 6);
-        glow.addColorStop(0, `rgba(${r},${g},${b},0.3)`);
+        const glow = ctx.createRadialGradient(d.x, d.y, 0, d.x, d.y, d.r * 4);
+        glow.addColorStop(0, `rgba(${r},${g},${b},0.15)`);
         glow.addColorStop(1, `rgba(${r},${g},${b},0)`);
         ctx.beginPath();
-        ctx.arc(d.x, d.y, d.r * 6, 0, Math.PI * 2);
+        ctx.arc(d.x, d.y, d.r * 4, 0, Math.PI * 2);
         ctx.fillStyle = glow;
         ctx.fill();
         // Core
         ctx.beginPath();
         ctx.arc(d.x, d.y, d.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(${r},${g},${b},0.7)`;
+        ctx.fillStyle = `rgba(${r},${g},${b},0.45)`;
         ctx.fill();
       }
 
@@ -155,7 +155,7 @@ function WelcomeContent() {
   const [leaving, setLeaving] = useState(false);
 
   useEffect(() => {
-    const fadeTimer = setTimeout(() => setLeaving(true), 3600);
+    const fadeTimer = setTimeout(() => setLeaving(true), 3200);
     const redirectTimer = setTimeout(() => router.replace("/"), 4000);
     return () => {
       clearTimeout(fadeTimer);
@@ -202,7 +202,7 @@ function WelcomeContent() {
       <motion.div
         className="relative z-10 flex flex-col items-center text-center px-6"
         animate={{ opacity: leaving ? 0 : 1 }}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: leaving ? 0.8 : 0.3, ease: "easeInOut" }}
       >
         {/* Logo icon */}
         <motion.div
