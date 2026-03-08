@@ -17,7 +17,7 @@ interface Particle {
 
 const PARTICLE_COLORS = ["#e2a96e", "#5eead4", "#818cf8", "#a78bfa"];
 const PARTICLE_COUNT = 16;
-const LINE_DISTANCE = 150;
+const LINE_DISTANCE = 400;
 
 function createParticles(): Particle[] {
   return Array.from({ length: PARTICLE_COUNT }, (_, i) => ({
@@ -60,7 +60,7 @@ function ParticleField() {
   return (
     <div className="absolute inset-0">
       {/* Lines between nearby particles */}
-      <svg className="absolute inset-0 w-full h-full opacity-[0.12]">
+      <svg className="absolute inset-0 w-full h-full">
         {lines.map((line, i) => (
           <motion.line
             key={i}
@@ -68,8 +68,8 @@ function ParticleField() {
             y1={`${line.y1}%`}
             x2={`${line.x2}%`}
             y2={`${line.y2}%`}
-            stroke="rgba(255,255,255,0.5)"
-            strokeWidth="0.5"
+            stroke="rgba(255,255,255,0.12)"
+            strokeWidth="1"
             initial={{ opacity: 0 }}
             animate={{ opacity: line.opacity }}
             transition={{ duration: 0.6, delay: 0.2 + i * 0.03 }}
