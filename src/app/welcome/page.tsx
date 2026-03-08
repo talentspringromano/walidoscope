@@ -1,111 +1,139 @@
 "use client";
 
-import { Suspense, useEffect, useMemo, useState } from "react";
+import { Suspense, useCallback, useEffect, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 
-/* ── Particle system ── */
-interface Particle {
-  id: number;
+/* ── Canvas Particle Network ── */
+const COLORS = ["#e2a96e", "#5eead4", "#818cf8", "#a78bfa"];
+const PARTICLE_COUNT = 20;
+const LINE_DIST = 180; // px distance for connections
+const SPEED = 0.4;
+
+interface Dot {
   x: number;
   y: number;
-  dx: number;
-  dy: number;
-  size: number;
+  vx: number;
+  vy: number;
+  r: number;
   color: string;
 }
 
-const PARTICLE_COLORS = ["#e2a96e", "#5eead4", "#818cf8", "#a78bfa"];
-const PARTICLE_COUNT = 16;
-const LINE_DISTANCE = 400;
-
-function createParticles(): Particle[] {
-  return Array.from({ length: PARTICLE_COUNT }, (_, i) => ({
-    id: i,
-    x: Math.random() * 100,
-    y: Math.random() * 100,
-    dx: (Math.random() - 0.5) * 6,
-    dy: (Math.random() - 0.5) * 6,
-    size: 2 + Math.random() * 3,
-    color: PARTICLE_COLORS[Math.floor(Math.random() * PARTICLE_COLORS.length)],
-  }));
+function hexToRgb(hex: string) {
+  const n = parseInt(hex.slice(1), 16);
+  return [(n >> 16) & 255, (n >> 8) & 255, n & 255] as const;
 }
 
-function ParticleField() {
-  const particles = useMemo(() => createParticles(), []);
+function ParticleCanvas() {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const dotsRef = useRef<Dot[]>([]);
+  const rafRef = useRef<number>(0);
 
-  // Calculate lines between nearby particles (based on initial positions)
-  const lines = useMemo(() => {
-    const result: { x1: number; y1: number; x2: number; y2: number; opacity: number }[] = [];
-    for (let i = 0; i < particles.length; i++) {
-      for (let j = i + 1; j < particles.length; j++) {
-        const a = particles[i];
-        const b = particles[j];
-        // Use viewport-relative distance (percentage * 10 for rough px equivalent)
-        const dist = Math.hypot((a.x - b.x) * 10, (a.y - b.y) * 10);
-        if (dist < LINE_DISTANCE) {
-          result.push({
-            x1: a.x,
-            y1: a.y,
-            x2: b.x,
-            y2: b.y,
-            opacity: 1 - dist / LINE_DISTANCE,
-          });
+  const init = useCallback((w: number, h: number) => {
+    dotsRef.current = Array.from({ length: PARTICLE_COUNT }, () => ({
+      x: Math.random() * w,
+      y: Math.random() * h,
+      vx: (Math.random() - 0.5) * SPEED * 2,
+      vy: (Math.random() - 0.5) * SPEED * 2,
+      r: 1.5 + Math.random() * 2,
+      color: COLORS[Math.floor(Math.random() * COLORS.length)],
+    }));
+  }, []);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    const resize = () => {
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = window.innerWidth * dpr;
+      canvas.height = window.innerHeight * dpr;
+      canvas.style.width = `${window.innerWidth}px`;
+      canvas.style.height = `${window.innerHeight}px`;
+      ctx.scale(dpr, dpr);
+      if (dotsRef.current.length === 0) init(window.innerWidth, window.innerHeight);
+    };
+    resize();
+    window.addEventListener("resize", resize);
+
+    const draw = () => {
+      const w = window.innerWidth;
+      const h = window.innerHeight;
+      ctx.clearRect(0, 0, w, h);
+      const dots = dotsRef.current;
+
+      // Update positions
+      for (const d of dots) {
+        d.x += d.vx;
+        d.y += d.vy;
+        if (d.x < 0 || d.x > w) d.vx *= -1;
+        if (d.y < 0 || d.y > h) d.vy *= -1;
+        d.x = Math.max(0, Math.min(w, d.x));
+        d.y = Math.max(0, Math.min(h, d.y));
+      }
+
+      // Draw lines with gradient colors
+      for (let i = 0; i < dots.length; i++) {
+        for (let j = i + 1; j < dots.length; j++) {
+          const a = dots[i];
+          const b = dots[j];
+          const dist = Math.hypot(a.x - b.x, a.y - b.y);
+          if (dist < LINE_DIST) {
+            const alpha = (1 - dist / LINE_DIST) * 0.15;
+            const grad = ctx.createLinearGradient(a.x, a.y, b.x, b.y);
+            const [r1, g1, b1] = hexToRgb(a.color);
+            const [r2, g2, b2] = hexToRgb(b.color);
+            grad.addColorStop(0, `rgba(${r1},${g1},${b1},${alpha})`);
+            grad.addColorStop(1, `rgba(${r2},${g2},${b2},${alpha})`);
+            ctx.beginPath();
+            ctx.moveTo(a.x, a.y);
+            ctx.lineTo(b.x, b.y);
+            ctx.strokeStyle = grad;
+            ctx.lineWidth = 1;
+            ctx.stroke();
+          }
         }
       }
-    }
-    return result;
-  }, [particles]);
+
+      // Draw particles with glow
+      for (const d of dots) {
+        const [r, g, b] = hexToRgb(d.color);
+        // Glow
+        const glow = ctx.createRadialGradient(d.x, d.y, 0, d.x, d.y, d.r * 6);
+        glow.addColorStop(0, `rgba(${r},${g},${b},0.3)`);
+        glow.addColorStop(1, `rgba(${r},${g},${b},0)`);
+        ctx.beginPath();
+        ctx.arc(d.x, d.y, d.r * 6, 0, Math.PI * 2);
+        ctx.fillStyle = glow;
+        ctx.fill();
+        // Core
+        ctx.beginPath();
+        ctx.arc(d.x, d.y, d.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${r},${g},${b},0.7)`;
+        ctx.fill();
+      }
+
+      rafRef.current = requestAnimationFrame(draw);
+    };
+
+    rafRef.current = requestAnimationFrame(draw);
+
+    return () => {
+      cancelAnimationFrame(rafRef.current);
+      window.removeEventListener("resize", resize);
+    };
+  }, [init]);
 
   return (
-    <div className="absolute inset-0">
-      {/* Lines between nearby particles */}
-      <svg className="absolute inset-0 w-full h-full">
-        {lines.map((line, i) => (
-          <motion.line
-            key={i}
-            x1={`${line.x1}%`}
-            y1={`${line.y1}%`}
-            x2={`${line.x2}%`}
-            y2={`${line.y2}%`}
-            stroke="rgba(255,255,255,0.12)"
-            strokeWidth="1"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: line.opacity }}
-            transition={{ duration: 0.6, delay: 0.2 + i * 0.03 }}
-          />
-        ))}
-      </svg>
-
-      {/* Particles */}
-      {particles.map((p) => (
-        <motion.div
-          key={p.id}
-          className="absolute rounded-full"
-          style={{
-            width: p.size,
-            height: p.size,
-            backgroundColor: p.color,
-            boxShadow: `0 0 ${p.size * 3}px ${p.color}`,
-            left: `${p.x}%`,
-            top: `${p.y}%`,
-          }}
-          initial={{ opacity: 0, scale: 0 }}
-          animate={{
-            opacity: [0, 0.6, 0.4, 0.6],
-            scale: [0, 1, 0.8, 1],
-            x: [0, p.dx * 8, p.dx * 16, p.dx * 24],
-            y: [0, p.dy * 8, p.dy * 16, p.dy * 24],
-          }}
-          transition={{
-            duration: 6,
-            repeat: Infinity,
-            ease: "easeInOut",
-            delay: p.id * 0.1,
-          }}
-        />
-      ))}
-    </div>
+    <motion.canvas
+      ref={canvasRef}
+      className="absolute inset-0"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    />
   );
 }
 
@@ -167,7 +195,7 @@ function WelcomeContent() {
         />
 
         {/* Particle network */}
-        <ParticleField />
+        <ParticleCanvas />
       </div>
 
       {/* Content */}
