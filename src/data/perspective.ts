@@ -2,6 +2,240 @@ import { PerspectiveVisit } from "./types";
 
 export const perspectiveVisits: PerspectiveVisit[] = [
   {
+    "contactId": "69ae81311ec8ac001392c2f9",
+    "firstSeenAt": "2026-03-09T08:13:36.953Z",
+    "utmSource": "Kursnet",
+    "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
+    "hasConverted": true,
+    "hasCompleted": true,
+    "hasEmail": true
+  },
+  {
+    "contactId": "69ae7f9cca11a00013038dcc",
+    "firstSeenAt": "2026-03-09T08:06:52.297Z",
+    "utmSource": "Kursnet",
+    "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
+    "hasConverted": false,
+    "hasCompleted": false,
+    "hasEmail": false
+  },
+  {
+    "contactId": "69ae7f4985596a0013282284",
+    "firstSeenAt": "2026-03-09T08:05:28.890Z",
+    "utmSource": "Kursnet",
+    "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
+    "hasConverted": false,
+    "hasCompleted": false,
+    "hasEmail": false
+  },
+  {
+    "contactId": "69ad0db367fc66001369bc51",
+    "firstSeenAt": "2026-03-08T05:48:34.843Z",
+    "utmSource": "meinNOW",
+    "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
+    "hasConverted": false,
+    "hasCompleted": false,
+    "hasEmail": false
+  },
+  {
+    "contactId": "69ac585e14b9ac0013c685b4",
+    "firstSeenAt": "2026-03-07T16:54:54.077Z",
+    "utmSource": "meinNOW",
+    "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics",
+    "hasConverted": false,
+    "hasCompleted": false,
+    "hasEmail": false
+  },
+  {
+    "contactId": "69ac58588984bc0013b152c3",
+    "firstSeenAt": "2026-03-07T16:54:48.643Z",
+    "utmSource": "meinNOW",
+    "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics",
+    "hasConverted": false,
+    "hasCompleted": false,
+    "hasEmail": false
+  },
+  {
+    "contactId": "69ac58469e51eb00131aa7e7",
+    "firstSeenAt": "2026-03-07T16:54:30.106Z",
+    "utmSource": "meinNOW",
+    "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics",
+    "hasConverted": false,
+    "hasCompleted": false,
+    "hasEmail": false
+  },
+  {
+    "contactId": "69abc364bf8a220013024117",
+    "firstSeenAt": "2026-03-07T06:19:16.366Z",
+    "utmSource": "meinNOW",
+    "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
+    "hasConverted": false,
+    "hasCompleted": false,
+    "hasEmail": false
+  },
+  {
+    "contactId": "69aabb524aa95f001356af18",
+    "firstSeenAt": "2026-03-06T11:32:34.122Z",
+    "utmSource": "Kursnet",
+    "utmTitle": "lohnabrechnung",
+    "hasConverted": false,
+    "hasCompleted": false,
+    "hasEmail": false
+  },
+  {
+    "contactId": "69aab9c059c74000132ba6ea",
+    "firstSeenAt": "2026-03-06T11:25:51.650Z",
+    "utmSource": "Kursnet",
+    "utmTitle": "lohnabrechnung",
+    "hasConverted": false,
+    "hasCompleted": false,
+    "hasEmail": false
+  },
+  {
+    "contactId": "69aa9d1ac42a9c0013520ffc",
+    "firstSeenAt": "2026-03-06T09:23:38.419Z",
+    "utmSource": "Kursnet",
+    "utmTitle": "lohnabrechnung",
+    "hasConverted": false,
+    "hasCompleted": false,
+    "hasEmail": false
+  },
+  {
+    "contactId": "69aa9d09a5625b0013357132",
+    "firstSeenAt": "2026-03-06T09:23:20.711Z",
+    "utmSource": "Kursnet",
+    "utmTitle": "lohnabrechnung",
+    "hasConverted": false,
+    "hasCompleted": false,
+    "hasEmail": false
+  },
+  {
+    "contactId": "69aa9c535bd9c20013bea192",
+    "firstSeenAt": "2026-03-06T09:20:19.317Z",
+    "utmSource": "Kursnet",
+    "utmTitle": "lohnabrechnung",
+    "hasConverted": false,
+    "hasCompleted": false,
+    "hasEmail": false
+  },
+  {
+    "contactId": "69aa9c49932b510013bc306f",
+    "firstSeenAt": "2026-03-06T09:20:08.744Z",
+    "utmSource": "Kursnet",
+    "utmTitle": "lohnabrechnung",
+    "hasConverted": false,
+    "hasCompleted": false,
+    "hasEmail": false
+  },
+  {
+    "contactId": "69a9580f4d1bda00138bf23a",
+    "firstSeenAt": "2026-03-05T10:16:47.077Z",
+    "utmSource": "Kursnet",
+    "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
+    "hasConverted": false,
+    "hasCompleted": false,
+    "hasEmail": false
+  },
+  {
+    "contactId": "69a957f6578639001359f565",
+    "firstSeenAt": "2026-03-05T10:16:22.439Z",
+    "utmSource": "Kursnet",
+    "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
+    "hasConverted": false,
+    "hasCompleted": false,
+    "hasEmail": false
+  },
+  {
+    "contactId": "69a957e0b333530013656f85",
+    "firstSeenAt": "2026-03-05T10:16:00.497Z",
+    "utmSource": "Kursnet",
+    "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
+    "hasConverted": false,
+    "hasCompleted": false,
+    "hasEmail": false
+  },
+  {
+    "contactId": "69a94aa5af34ff0013e7530f",
+    "firstSeenAt": "2026-03-05T09:19:33.171Z",
+    "utmSource": "Kursnet",
+    "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
+    "hasConverted": true,
+    "hasCompleted": true,
+    "hasEmail": true
+  },
+  {
+    "contactId": "69a936953e757b001328aff0",
+    "firstSeenAt": "2026-03-05T07:53:57.710Z",
+    "utmSource": "meinNOW",
+    "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
+    "hasConverted": false,
+    "hasCompleted": false,
+    "hasEmail": false
+  },
+  {
+    "contactId": "69a93658c91c090013bcbe80",
+    "firstSeenAt": "2026-03-05T07:52:55.877Z",
+    "utmSource": "meinNOW",
+    "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
+    "hasConverted": true,
+    "hasCompleted": true,
+    "hasEmail": true
+  },
+  {
+    "contactId": "69a887b7ed5c240013fff5cb",
+    "firstSeenAt": "2026-03-04T19:27:51.636Z",
+    "utmSource": "Kursnet",
+    "utmTitle": "lohnbuchhaltung",
+    "hasConverted": false,
+    "hasCompleted": false,
+    "hasEmail": false
+  },
+  {
+    "contactId": "69a8638a5d844200132c8488",
+    "firstSeenAt": "2026-03-04T16:53:30.606Z",
+    "utmSource": "meinNOW",
+    "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
+    "hasConverted": false,
+    "hasCompleted": false,
+    "hasEmail": false
+  },
+  {
+    "contactId": "69a84392449fd700136758cd",
+    "firstSeenAt": "2026-03-04T14:37:06.598Z",
+    "utmSource": "Kursnet",
+    "utmTitle": "hr-assistenz-und-tech-im-hr",
+    "hasConverted": false,
+    "hasCompleted": false,
+    "hasEmail": false
+  },
+  {
+    "contactId": "69a82f2521ee520013652eba",
+    "firstSeenAt": "2026-03-04T13:09:57.819Z",
+    "utmSource": "meinNOW",
+    "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
+    "hasConverted": false,
+    "hasCompleted": false,
+    "hasEmail": false
+  },
+  {
+    "contactId": "69a82f1c5544410013cfd93e",
+    "firstSeenAt": "2026-03-04T13:09:48.534Z",
+    "utmSource": "meinNOW",
+    "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
+    "hasConverted": false,
+    "hasCompleted": false,
+    "hasEmail": false
+  },
+  {
+    "contactId": "69a82f0121ee520013652c9b",
+    "firstSeenAt": "2026-03-04T13:09:21.270Z",
+    "utmSource": "meinNOW",
+    "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
+    "hasConverted": false,
+    "hasCompleted": false,
+    "hasEmail": false
+  },
+  {
     "contactId": "69a7d97c592a0b0013f20c42",
     "firstSeenAt": "2026-03-04T07:04:28.492Z",
     "utmSource": "meinNOW",
@@ -31,7 +265,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a6c07d2d21c10013b89c11",
     "firstSeenAt": "2026-03-03T11:05:34.134Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": false,
     "hasCompleted": false,
@@ -40,7 +274,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a6bf2b609baf0013c9388c",
     "firstSeenAt": "2026-03-03T10:59:55.080Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -49,7 +283,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a6bf2a8e6fef0013262007",
     "firstSeenAt": "2026-03-03T10:59:53.991Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung",
     "hasConverted": true,
     "hasCompleted": true,
@@ -76,7 +310,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a5cdd58f98f6001339e7c4",
     "firstSeenAt": "2026-03-02T17:50:57.944Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "hr-manager-mit-hris",
     "hasConverted": false,
     "hasCompleted": false,
@@ -85,7 +319,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a599e50dd2160013085f8c",
     "firstSeenAt": "2026-03-02T14:08:37.546Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "hr-manager-mit-hris",
     "hasConverted": false,
     "hasCompleted": false,
@@ -112,7 +346,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a58e92aa7d050013391b43",
     "firstSeenAt": "2026-03-02T13:20:18.528Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "hr-assistenz-und-tech-im-hr",
     "hasConverted": false,
     "hasCompleted": false,
@@ -121,7 +355,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a55c484cf9480013cdfa74",
     "firstSeenAt": "2026-03-02T09:45:44.263Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnbuchhaltung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -139,7 +373,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a39c9476848d00138016bd",
     "firstSeenAt": "2026-03-01T01:55:32.442Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": false,
     "hasCompleted": false,
@@ -157,7 +391,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a2c1812e1c9600130151a1",
     "firstSeenAt": "2026-02-28T10:20:49.738Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": false,
     "hasCompleted": false,
@@ -175,7 +409,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a1cdd3a0baa800137f0c1b",
     "firstSeenAt": "2026-02-27T17:01:07.812Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -184,7 +418,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a1ccc89d94230013b6c804",
     "firstSeenAt": "2026-02-27T16:56:40.643Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": false,
     "hasCompleted": false,
@@ -193,7 +427,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a18014910801001341bdbc",
     "firstSeenAt": "2026-02-27T11:29:24.450Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "hr-manager-mit-hris",
     "hasConverted": false,
     "hasCompleted": false,
@@ -229,7 +463,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a07ee7869b650013b3273c",
     "firstSeenAt": "2026-02-26T17:12:06.959Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "entgeltabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -274,7 +508,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699f003f74c44200136e3c7b",
     "firstSeenAt": "2026-02-25T13:59:27.103Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "hr-manager-mit-hris",
     "hasConverted": false,
     "hasCompleted": false,
@@ -283,7 +517,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699ed91bf535e1001387a7e4",
     "firstSeenAt": "2026-02-25T11:12:27.354Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "entgeltabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -301,7 +535,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699deeda48a307001368221d",
     "firstSeenAt": "2026-02-24T18:32:58.466Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "hr-manager-mit-hris",
     "hasConverted": false,
     "hasCompleted": false,
@@ -310,7 +544,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699dc4ebec8b660013002316",
     "firstSeenAt": "2026-02-24T15:34:03.434Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": false,
     "hasCompleted": false,
@@ -319,7 +553,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699dbaee0d0e36001363c653",
     "firstSeenAt": "2026-02-24T14:51:26.648Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -328,7 +562,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699dba7434a2470013ad1769",
     "firstSeenAt": "2026-02-24T14:49:24.536Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": false,
     "hasCompleted": false,
@@ -337,7 +571,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699d865f8f2ea6001327ee25",
     "firstSeenAt": "2026-02-24T11:07:11.077Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "hr-manager-mit-hris",
     "hasConverted": false,
     "hasCompleted": false,
@@ -355,7 +589,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699d7ef587e5770013a7077d",
     "firstSeenAt": "2026-02-24T10:35:34.042Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "hr-assistenz-und-tech-im-hr",
     "hasConverted": false,
     "hasCompleted": false,
@@ -373,7 +607,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699d7a38b83e4a00133c04f5",
     "firstSeenAt": "2026-02-24T10:15:20.138Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": true,
     "hasCompleted": true,
@@ -382,7 +616,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699d740887e5770013a63bcf",
     "firstSeenAt": "2026-02-24T09:48:56.236Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "hr-manager-mit-hris",
     "hasConverted": false,
     "hasCompleted": false,
@@ -391,7 +625,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699d73e23b9b7a0013e12ca3",
     "firstSeenAt": "2026-02-24T09:48:17.907Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "hr-manager-mit-hris",
     "hasConverted": false,
     "hasCompleted": false,
@@ -409,7 +643,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699d68aec7fd360013644299",
     "firstSeenAt": "2026-02-24T09:00:41.565Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "entgeltabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -418,7 +652,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699d63d73b9b7a0013e0324f",
     "firstSeenAt": "2026-02-24T08:39:51.456Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": false,
     "hasCompleted": false,
@@ -427,7 +661,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699ceae40d0e360013598c4a",
     "firstSeenAt": "2026-02-24T00:03:48.605Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "hr-assistenz-und-tech-im-hr",
     "hasConverted": false,
     "hasCompleted": false,
@@ -436,7 +670,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699c9e8248683b0013d0f492",
     "firstSeenAt": "2026-02-23T18:38:08.035Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": false,
     "hasCompleted": false,
@@ -445,7 +679,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699c8a5383c190001308c075",
     "firstSeenAt": "2026-02-23T17:11:47.518Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": true,
     "hasCompleted": true,
@@ -481,110 +715,29 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699c7ace83c19000130797a1",
     "firstSeenAt": "2026-02-23T16:05:33.885Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": true,
-    "hasCompleted": false,
+    "hasCompleted": true,
     "hasEmail": true
-  },
-  {
-    "contactId": "Habe bereits durch Restaurantleiterin Erfahrung in dem Bereich.",
-    "firstSeenAt": "",
-    "utmSource": "",
-    "utmTitle": "",
-    "hasConverted": false,
-    "hasCompleted": false,
-    "hasEmail": false
-  },
-  {
-    "contactId": "VG Anna Kronhardt,true,2026-02-23T16:07:33.253Z,Danke",
-    "firstSeenAt": "",
-    "utmSource": "",
-    "utmTitle": "",
-    "hasConverted": false,
-    "hasCompleted": false,
-    "hasEmail": false
   },
   {
     "contactId": "699c79bb79c7ee0013b2f3d5",
     "firstSeenAt": "2026-02-23T16:00:59.190Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": true,
-    "hasCompleted": false,
+    "hasCompleted": true,
     "hasEmail": true
-  },
-  {
-    "contactId": "mein Name ist Niloufar Bayat Turk. Ich habe einen Bachelorabschluss in Buchhaltung aus dem Iran und wohne derzeit in Bonn. Mein Abschluss wurde in Deutschland anerkannt.",
-    "firstSeenAt": "",
-    "utmSource": "",
-    "utmTitle": "",
-    "hasConverted": false,
-    "hasCompleted": false,
-    "hasEmail": false
-  },
-  {
-    "contactId": "Ich möchte gerne im Auftrag der Arbeitsagentur an einem Buchhaltungskurs teilnehmen",
-    "firstSeenAt": "",
-    "utmSource": "",
-    "utmTitle": "",
-    "hasConverted": false,
-    "hasCompleted": false,
-    "hasEmail": false
-  },
-  {
-    "contactId": "Ich bitte Sie",
-    "firstSeenAt": "",
-    "utmSource": "",
-    "utmTitle": "",
-    "hasConverted": false,
-    "hasCompleted": false,
-    "hasEmail": false
-  },
-  {
-    "contactId": "Vielen Dank im Voraus für Ihre Unterstützung.",
-    "firstSeenAt": "",
-    "utmSource": "",
-    "utmTitle": "",
-    "hasConverted": false,
-    "hasCompleted": false,
-    "hasEmail": false
-  },
-  {
-    "contactId": "Mit freundlichen Grüßen",
-    "firstSeenAt": "",
-    "utmSource": "",
-    "utmTitle": "",
-    "hasConverted": false,
-    "hasCompleted": false,
-    "hasEmail": false
-  },
-  {
-    "contactId": "Niloufar Bayat Turk,true,2026-02-23T16:02:46.059Z,Danke",
-    "firstSeenAt": "",
-    "utmSource": "",
-    "utmTitle": "",
-    "hasConverted": false,
-    "hasCompleted": false,
-    "hasEmail": false
   },
   {
     "contactId": "699c7993712da30013f558eb",
     "firstSeenAt": "2026-02-23T16:00:19.259Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung",
     "hasConverted": true,
-    "hasCompleted": false,
+    "hasCompleted": true,
     "hasEmail": true
-  },
-  {
-    "contactId": "Ich möchte gerne Büro Tätigkeiten verrichten",
-    "firstSeenAt": "",
-    "utmSource": "",
-    "utmTitle": "",
-    "hasConverted": false,
-    "hasCompleted": false,
-    "hasEmail": false
   },
   {
     "contactId": "699c4c6f13793f00138bbf79",
@@ -598,7 +751,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699c2a465adae9001301be9d",
     "firstSeenAt": "2026-02-23T10:21:58.169Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": false,
     "hasCompleted": false,
@@ -607,7 +760,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699c2a0919993c001300c739",
     "firstSeenAt": "2026-02-23T10:20:57.727Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": true,
     "hasCompleted": true,
@@ -616,7 +769,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699c1b8a55001f0013f32f07",
     "firstSeenAt": "2026-02-23T09:19:06.207Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -625,7 +778,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699c13dc83c19000130027a6",
     "firstSeenAt": "2026-02-23T08:46:19.523Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "entgeltabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -733,7 +886,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6996ca99e13044001315f9c5",
     "firstSeenAt": "2026-02-19T08:32:24.845Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": false,
     "hasCompleted": false,
@@ -742,7 +895,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6995fcc8c5189b0013141e7c",
     "firstSeenAt": "2026-02-18T17:54:16.169Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": false,
     "hasCompleted": false,
@@ -787,7 +940,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6995a2f22baa6f0013a40da5",
     "firstSeenAt": "2026-02-18T11:30:58.990Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnbuchhaltung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -823,7 +976,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69957634e4d1e500135ae5c1",
     "firstSeenAt": "2026-02-18T08:20:04.349Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": true,
     "hasCompleted": true,
@@ -832,7 +985,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6994979140faaa00139c9045",
     "firstSeenAt": "2026-02-17T16:30:09.579Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -841,7 +994,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69949672b8a8880013ce4da8",
     "firstSeenAt": "2026-02-17T16:25:22.051Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -859,7 +1012,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699490f3a9e2250013664862",
     "firstSeenAt": "2026-02-17T16:01:55.796Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "hr-assistenz-und-tech-im-hr",
     "hasConverted": false,
     "hasCompleted": false,
@@ -868,7 +1021,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699483aa6c6bae0013c7795a",
     "firstSeenAt": "2026-02-17T15:05:13.697Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "hr-manager-mit-hris",
     "hasConverted": false,
     "hasCompleted": false,
@@ -877,7 +1030,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6994342dfbbcca0013e2524f",
     "firstSeenAt": "2026-02-17T09:26:05.139Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnbuchhaltung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -886,7 +1039,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69942b850e339d001367207c",
     "firstSeenAt": "2026-02-17T08:49:09.850Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "hr-assistenz-und-tech-im-hr",
     "hasConverted": false,
     "hasCompleted": false,
@@ -895,7 +1048,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699426888572f7001303adf6",
     "firstSeenAt": "2026-02-17T08:27:50.575Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnbuchhaltung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -904,7 +1057,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6994268591b5c3001356dfcc",
     "firstSeenAt": "2026-02-17T08:27:49.347Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnbuchhaltung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -922,17 +1075,8 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69931d7a3cd8ac0013a78a0c",
     "firstSeenAt": "2026-02-16T13:36:58.621Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "hr-manager-mit-hris",
-    "hasConverted": false,
-    "hasCompleted": false,
-    "hasEmail": false
-  },
-  {
-    "contactId": "699312b34c262100138a1708",
-    "firstSeenAt": "2026-02-16T12:50:30.979Z",
-    "utmSource": "meinNOW",
-    "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": false,
     "hasCompleted": false,
     "hasEmail": false
@@ -940,6 +1084,15 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699312a60a5cf10013a437f8",
     "firstSeenAt": "2026-02-16T12:50:46.466Z",
+    "utmSource": "meinNOW",
+    "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
+    "hasConverted": false,
+    "hasCompleted": false,
+    "hasEmail": false
+  },
+  {
+    "contactId": "699312b34c262100138a1708",
+    "firstSeenAt": "2026-02-16T12:50:30.979Z",
     "utmSource": "meinNOW",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": false,
@@ -958,7 +1111,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69930f6223e91e001330b454",
     "firstSeenAt": "2026-02-16T12:36:50.289Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "entgeltabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -967,7 +1120,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6993068cb7ccf300131774a4",
     "firstSeenAt": "2026-02-16T11:58:53.600Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnbuchhaltung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -976,7 +1129,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6993049f2dd0fc0013fb74c9",
     "firstSeenAt": "2026-02-16T11:50:55.966Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": false,
     "hasCompleted": false,
@@ -994,7 +1147,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69926cfaeb131b0013abf64e",
     "firstSeenAt": "2026-02-16T01:03:53.811Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1021,7 +1174,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6991eb6c0b75920013b4fc4d",
     "firstSeenAt": "2026-02-15T15:51:08.335Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "hr-manager-mit-hris",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1030,7 +1183,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6991acad0c39780013b476fa",
     "firstSeenAt": "2026-02-15T11:23:25.521Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "hr-assistenz-und-tech-im-hr",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1039,7 +1192,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6991aca8a089030013b520e3",
     "firstSeenAt": "2026-02-15T11:23:20.171Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "hr-assistenz-und-tech-im-hr",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1048,7 +1201,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698f44f0b24907001372f97f",
     "firstSeenAt": "2026-02-13T15:36:15.842Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "hr-manager-mit-hris",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1075,7 +1228,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698f08e2cfbebb0013d7b3ce",
     "firstSeenAt": "2026-02-13T11:20:02.212Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "hr-assistenz-und-tech-im-hr",
     "hasConverted": true,
     "hasCompleted": true,
@@ -1111,7 +1264,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698ee3c4a8ceef0013896160",
     "firstSeenAt": "2026-02-13T08:41:40.060Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1120,7 +1273,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698edc2114ff5b0013abbc17",
     "firstSeenAt": "2026-02-13T08:09:04.773Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1129,7 +1282,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698dfb40fa62500013eff280",
     "firstSeenAt": "2026-02-12T16:09:36.128Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1138,7 +1291,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698df0d878575a00138dc677",
     "firstSeenAt": "2026-02-12T15:25:11.628Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1147,7 +1300,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698daa6278575a00138972d7",
     "firstSeenAt": "2026-02-12T10:24:34.206Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "hr-manager-mit-hris",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1156,7 +1309,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698da12e7750b30013d002f0",
     "firstSeenAt": "2026-02-12T09:45:18.599Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "hr-manager-mit-hris",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1165,7 +1318,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698d9ffddfeafa00131623f1",
     "firstSeenAt": "2026-02-12T09:40:13.037Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1174,7 +1327,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698d9df329a16700135cc8ff",
     "firstSeenAt": "2026-02-12T09:31:31.716Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "hr-manager-mit-hris",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1183,7 +1336,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698d85151f92b5001301ba8e",
     "firstSeenAt": "2026-02-12T07:45:26.198Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": true,
     "hasCompleted": true,
@@ -1192,7 +1345,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698d8499f5afae00132184e0",
     "firstSeenAt": "2026-02-12T07:43:22.237Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1201,7 +1354,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698c8ba2bb48d1001395ff5d",
     "firstSeenAt": "2026-02-11T14:01:04.770Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1228,7 +1381,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698c5f7fe7b4360013dc5044",
     "firstSeenAt": "2026-02-11T10:52:47.287Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": true,
     "hasCompleted": true,
@@ -1237,7 +1390,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698c5f66c8b86a001366419d",
     "firstSeenAt": "2026-02-11T10:52:21.869Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1246,7 +1399,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698c5395e7b4360013db93ff",
     "firstSeenAt": "2026-02-11T10:01:57.422Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1255,7 +1408,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698bc9ff7e01070013725e02",
     "firstSeenAt": "2026-02-11T00:14:55.850Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "hr-manager-mit-hris",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1264,7 +1417,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698bc8d830aeaf00137134ca",
     "firstSeenAt": "2026-02-11T00:09:59.602Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1273,7 +1426,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698bc2f19e43e2001384bf79",
     "firstSeenAt": "2026-02-10T23:44:47.435Z",
-    "utmSource": "kursnet",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1505,60 +1658,3 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "hasEmail": false
   }
 ];
-
-export const perspectiveSummary = {
-  totalVisits: 167,
-  converted: 22,
-  completed: 17,
-  bySource: {
-    meinNOW: 69,
-    kursnet: 75,
-    other: 23,
-  },
-  byTitle: {
-    "datev-lohnabrechnung-und-sozialversicherung": {
-        "visits": 21,
-        "converted": 5
-    },
-    "lohnabrechnung-grundlagen-gehaltsabrechnung": {
-        "visits": 25,
-        "converted": 3
-    },
-    "agile-automatisierung-hr-tech-und-people-analytics": {
-        "visits": 15,
-        "converted": 1
-    },
-    "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap": {
-        "visits": 29,
-        "converted": 8
-    },
-    "lohnabrechnung": {
-        "visits": 11,
-        "converted": 2
-    },
-    "hr-manager-mit-hris": {
-        "visits": 16,
-        "converted": 0
-    },
-    "Unbekannt": {
-        "visits": 22,
-        "converted": 0
-    },
-    "hr-assistenz-und-tech-im-hr": {
-        "visits": 8,
-        "converted": 1
-    },
-    "lohnbuchhaltung": {
-        "visits": 6,
-        "converted": 0
-    },
-    "personalgewinnung-mit-ats-und-recruiting-analytics": {
-        "visits": 9,
-        "converted": 2
-    },
-    "entgeltabrechnung": {
-        "visits": 5,
-        "converted": 0
-    }
-},
-};
