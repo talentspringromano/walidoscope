@@ -565,6 +565,7 @@ export default function MarketingPage() {
                 <thead>
                   <tr className="text-[10px] font-medium uppercase tracking-wider text-amber-400/60">
                     <th className="text-left py-2 pr-4">Kontakt-ID</th>
+                    <th className="text-left py-2 pr-4">Name</th>
                     <th className="text-left py-2 pr-4">Kurs-Titel</th>
                     <th className="text-left py-2 pr-4">Erstbesuch</th>
                     <th className="text-left py-2">Status</th>
@@ -574,6 +575,7 @@ export default function MarketingPage() {
                   {unmatchedConversions.map((v) => (
                     <tr key={v.contactId} className="border-t border-amber-500/10">
                       <td className="py-2 pr-4 tabular-nums text-amber-300/80 font-mono">{v.contactId.slice(0, 8)}</td>
+                      <td className="py-2 pr-4 text-amber-200/90">{v.firstName && v.lastName ? `${v.firstName} ${v.lastName}` : "—"}</td>
                       <td className="py-2 pr-4 text-amber-200/90">
                         {v.utmTitle.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase())}
                       </td>

@@ -8,7 +8,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": true,
     "hasCompleted": true,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "Nicole",
+    "lastName": "Krohn"
   },
   {
     "contactId": "69ae7f9cca11a00013038dcc",
@@ -161,7 +163,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": true,
     "hasCompleted": true,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "Yuliya",
+    "lastName": "Haysan"
   },
   {
     "contactId": "69a936953e757b001328aff0",
@@ -179,7 +183,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": true,
     "hasCompleted": true,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "Farida",
+    "lastName": "Bouda"
   },
   {
     "contactId": "69a887b7ed5c240013fff5cb",
@@ -287,7 +293,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "lohnabrechnung",
     "hasConverted": true,
     "hasCompleted": true,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "Florian",
+    "lastName": "Baumgärtner"
   },
   {
     "contactId": "69a6b79a4ab0260013deacf8",
@@ -386,7 +394,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "personalgewinnung-mit-ats-und-recruiting-analytics",
     "hasConverted": true,
     "hasCompleted": true,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "Astrid",
+    "lastName": "Kornelius"
   },
   {
     "contactId": "69a2c1812e1c9600130151a1",
@@ -494,7 +504,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": true,
     "hasCompleted": false,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "Claudia",
+    "lastName": "Danneberg"
   },
   {
     "contactId": "699f1a476d3d1000137db0a4",
@@ -611,7 +623,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": true,
     "hasCompleted": true,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "Thao",
+    "lastName": "Nguyen"
   },
   {
     "contactId": "699d740887e5770013a63bcf",
@@ -683,7 +697,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": true,
     "hasCompleted": true,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "Olha",
+    "lastName": "Asaulenko"
   },
   {
     "contactId": "699c807313793f00138f7ebc",
@@ -719,7 +735,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": true,
     "hasCompleted": true,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "Anna",
+    "lastName": "Kronhardt"
   },
   {
     "contactId": "699c79bb79c7ee0013b2f3d5",
@@ -728,7 +746,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": true,
     "hasCompleted": true,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "Niloofar",
+    "lastName": "Bayattork"
   },
   {
     "contactId": "699c7993712da30013f558eb",
@@ -737,7 +757,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "lohnabrechnung",
     "hasConverted": true,
     "hasCompleted": true,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "Anna",
+    "lastName": "Kronhardt"
   },
   {
     "contactId": "699c4c6f13793f00138bbf79",
@@ -764,7 +786,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": true,
     "hasCompleted": true,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "Susan",
+    "lastName": "Zippel"
   },
   {
     "contactId": "699c1b8a55001f0013f32f07",
@@ -863,7 +887,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "personalgewinnung-mit-ats-und-recruiting-analytics",
     "hasConverted": true,
     "hasCompleted": true,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "Remy",
+    "lastName": "Stabile"
   },
   {
     "contactId": "6997a04a7bce520013a79062",
@@ -935,7 +961,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics",
     "hasConverted": true,
     "hasCompleted": true,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "Fatimah",
+    "lastName": "Frase"
   },
   {
     "contactId": "6995a2f22baa6f0013a40da5",
@@ -980,7 +1008,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": true,
     "hasCompleted": true,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "Zehra",
+    "lastName": "Demircan"
   },
   {
     "contactId": "6994979140faaa00139c9045",
@@ -1142,7 +1172,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": true,
     "hasCompleted": true,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "parwana",
+    "lastName": "rahmani"
   },
   {
     "contactId": "69926cfaeb131b0013abf64e",
@@ -1214,7 +1246,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": true,
     "hasCompleted": true,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "Nicole",
+    "lastName": "Klann"
   },
   {
     "contactId": "698f2e57d1d77800139a4b9b",
@@ -1232,7 +1266,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "hr-assistenz-und-tech-im-hr",
     "hasConverted": true,
     "hasCompleted": true,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "Kamilla",
+    "lastName": "Gomon"
   },
   {
     "contactId": "698f00482512670013902c2e",
@@ -1259,7 +1295,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": true,
     "hasCompleted": false,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "Dicle",
+    "lastName": "Uzuner"
   },
   {
     "contactId": "698ee3c4a8ceef0013896160",
@@ -1340,7 +1378,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": true,
     "hasCompleted": true,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "Heike",
+    "lastName": "Link-Würdinger"
   },
   {
     "contactId": "698d8499f5afae00132184e0",
@@ -1385,7 +1425,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
     "hasConverted": true,
     "hasCompleted": true,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "Sara",
+    "lastName": "Mohebi"
   },
   {
     "contactId": "698c5f66c8b86a001366419d",
@@ -1448,7 +1490,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": true,
     "hasCompleted": true,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "Catherina",
+    "lastName": "Weihmann"
   },
   {
     "contactId": "698b2ef84eb8920013a844fa",
@@ -1457,7 +1501,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": true,
     "hasCompleted": true,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "Florian",
+    "lastName": "Kissig"
   },
   {
     "contactId": "698b1047cafa980013567c10",
@@ -1556,7 +1602,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": true,
     "hasCompleted": true,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "Jing",
+    "lastName": "fei"
   },
   {
     "contactId": "6984a156f85b05001390ab55",
@@ -1619,7 +1667,9 @@ export const perspectiveVisits: PerspectiveVisit[] = [
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": true,
     "hasCompleted": true,
-    "hasEmail": true
+    "hasEmail": true,
+    "firstName": "Sabrina",
+    "lastName": "Knezovic"
   },
   {
     "contactId": "6981d032cedb0000137d920c",

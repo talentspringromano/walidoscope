@@ -57,4 +57,6 @@ export interface PerspectiveVisit {
   hasConverted: boolean;
   hasCompleted: boolean;
   hasEmail: boolean;
+  firstName?: string;
+  lastName?: string;
 }
