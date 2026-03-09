@@ -540,7 +540,7 @@ export default function MarketingPage() {
       )}
 
       {/* CRM Gap Warning */}
-      {perspSummary.converted - kursnetLeadsCount > 0 && (
+      {unmatchedConversions.length > 0 && (
         <div className="rounded-xl border border-amber-500/30 overflow-hidden" style={{ background: "rgba(245, 158, 11, 0.12)" }}>
           <div
             className="px-5 py-4 flex items-start gap-3 cursor-pointer select-none"
@@ -550,7 +550,7 @@ export default function MarketingPage() {
             <div className="flex-1">
               <p className="text-[14px] font-semibold text-amber-300">CRM-Erfassungslücke erkannt</p>
               <p className="text-[13px] text-amber-400/80 mt-1">
-                {perspSummary.converted - kursnetLeadsCount} von {perspSummary.converted} Perspective-Konversionen fehlen im CRM. Nur {kursnetLeadsCount} wurden in Airtable als Kursnet-Leads erfasst.
+                {unmatchedConversions.length} von {perspSummary.converted} Perspective-Konversionen fehlen im CRM. Nur {kursnetLeadsCount} wurden in Airtable als Kursnet-Leads erfasst.
               </p>
             </div>
             {gapExpanded
@@ -558,7 +558,7 @@ export default function MarketingPage() {
               : <ChevronDown className="h-5 w-5 text-amber-400 mt-0.5 shrink-0" />
             }
           </div>
-          {gapExpanded && unmatchedConversions.length > 0 && (
+          {gapExpanded && (
             <div className="px-5 pb-4 overflow-x-auto">
               <table className="w-full text-[12px]">
                 <thead>
