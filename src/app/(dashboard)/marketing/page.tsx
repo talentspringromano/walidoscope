@@ -7,7 +7,7 @@ import { leads } from "@/data/leads";
 import { metaAds, totalMetaSpend, totalMetaLeads, avgCPL } from "@/data/meta-ads";
 import { perspectiveVisits } from "@/data/perspective";
 import { TOOLTIP_STYLE, AXIS_STYLE, PALETTE, SEGMENT_COLORS, FUNNEL_COLORS } from "@/components/chart-theme";
-import { AlertTriangle, ArrowUpDown, ArrowUp, ArrowDown, ChevronDown, ChevronUp } from "lucide-react";
+import { ArrowUpDown, ArrowUp, ArrowDown } from "lucide-react";
 import {
   BarChart,
   Bar,
@@ -90,12 +90,10 @@ export default function MarketingPage() {
   const [filter, setFilter] = useState<FilterPreset>("all");
   const [range, setRange] = useState<TimeRange>("all");
   const [hiddenChannels, setHiddenChannels] = useState<Set<string>>(new Set());
-  const [gapExpanded, setGapExpanded] = useState(false);
-
   const {
     channelData, segmentCounts, segmentData, allSegments, segmentWeeklyData,
     creativeDeepFunnel, gewonnenKursnet, perspFunnelData, perspSummary,
-    filteredLeads, channelWeeklyData, unmatchedConversions,
+    filteredLeads, channelWeeklyData,
   } = useMemo(() => {
     const filteredLeads = filterLeadsByRange(leads, range);
 
@@ -173,30 +171,10 @@ export default function MarketingPage() {
       .sort((a, b) => a[0] - b[0])
       .map(([wk, counts]) => ({ week: `KW ${wk}`, ...counts }));
 
-    /* Unmatched Perspective conversions (name match, fallback utmTitle + ±30 day window) */
-    const convertedVisits = perspFiltered.filter(v => v.hasConverted);
-    const allKursnetLeads = leads.filter(l => l.platform === "Kursnet");
-    const unmatchedConversions = convertedVisits.filter(visit => {
-      const visitName = (visit.firstName && visit.lastName)
-        ? `${visit.firstName} ${visit.lastName}`.toLowerCase().trim()
-        : null;
-
-      return !allKursnetLeads.some(lead => {
-        // Primary: match by name (most reliable)
-        if (visitName && lead.name.toLowerCase().trim() === visitName) return true;
-
-        // Fallback: only when no name available, use utmTitle + ±30 day window
-        if (visitName) return false;
-        if (lead.utmTitle !== visit.utmTitle) return false;
-        const diffMs = Math.abs(new Date(visit.firstSeenAt).getTime() - parseDE(lead.createdOn).getTime());
-        return diffMs <= 30 * 24 * 60 * 60 * 1000;
-      });
-    });
-
     return {
       channelData, segmentCounts, segmentData, allSegments, segmentWeeklyData,
       creativeDeepFunnel, gewonnenKursnet, perspFunnelData, perspSummary,
-      filteredLeads, channelWeeklyData, unmatchedConversions,
+      filteredLeads, channelWeeklyData,
     };
   }, [range]);
 
@@ -538,70 +516,6 @@ export default function MarketingPage() {
             </BarChart>
           </ResponsiveContainer>
         </SectionCard>
-      )}
-
-      {/* CRM Gap Warning */}
-      {unmatchedConversions.length > 0 && (
-        <div className="rounded-xl border border-amber-500/30 overflow-hidden" style={{ background: "rgba(245, 158, 11, 0.12)" }}>
-          <div
-            className="px-5 py-4 flex items-start gap-3 cursor-pointer select-none"
-            onClick={() => setGapExpanded(!gapExpanded)}
-          >
-            <AlertTriangle className="h-5 w-5 text-amber-400 mt-0.5 shrink-0" />
-            <div className="flex-1">
-              <p className="text-[14px] font-semibold text-amber-300">CRM-Erfassungslücke erkannt</p>
-              <p className="text-[13px] text-amber-400/80 mt-1">
-                {unmatchedConversions.length} von {perspSummary.converted} Perspective-Konversionen fehlen im CRM. Nur {kursnetLeadsCount} wurden in Airtable als Kursnet-Leads erfasst.
-              </p>
-            </div>
-            {gapExpanded
-              ? <ChevronUp className="h-5 w-5 text-amber-400 mt-0.5 shrink-0" />
-              : <ChevronDown className="h-5 w-5 text-amber-400 mt-0.5 shrink-0" />
-            }
-          </div>
-          {gapExpanded && (
-            <div className="px-5 pb-4 overflow-x-auto">
-              <table className="w-full text-[12px]">
-                <thead>
-                  <tr className="text-[10px] font-medium uppercase tracking-wider text-amber-400/60">
-                    <th className="text-left py-2 pr-4">Kontakt-ID</th>
-                    <th className="text-left py-2 pr-4">Name</th>
-                    <th className="text-left py-2 pr-4">Kurs-Titel</th>
-                    <th className="text-left py-2 pr-4">Erstbesuch</th>
-                    <th className="text-left py-2">Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {unmatchedConversions.map((v) => (
-                    <tr key={v.contactId} className="border-t border-amber-500/10">
-                      <td className="py-2 pr-4 tabular-nums text-amber-300/80 font-mono">{v.contactId.slice(0, 8)}</td>
-                      <td className="py-2 pr-4 text-amber-200/90">{v.firstName && v.lastName ? `${v.firstName} ${v.lastName}` : "—"}</td>
-                      <td className="py-2 pr-4 text-amber-200/90">
-                        {v.utmTitle.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase())}
-                      </td>
-                      <td className="py-2 pr-4 tabular-nums text-amber-300/70">
-                        {new Date(v.firstSeenAt).toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit", year: "numeric" })}
-                      </td>
-                      <td className="py-2">
-                        <span className="inline-flex gap-1.5">
-                          {v.hasCompleted && (
-                            <span className="px-1.5 py-0.5 rounded text-[10px] font-medium bg-[rgba(94,234,212,0.15)] text-[#5eead4]">Abgeschlossen</span>
-                          )}
-                          {v.hasEmail && (
-                            <span className="px-1.5 py-0.5 rounded text-[10px] font-medium bg-[rgba(129,140,248,0.15)] text-[#818cf8]">E-Mail</span>
-                          )}
-                          {!v.hasCompleted && !v.hasEmail && (
-                            <span className="px-1.5 py-0.5 rounded text-[10px] font-medium bg-[rgba(255,255,255,0.05)] text-[#78716c]">Nur konvertiert</span>
-                          )}
-                        </span>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          )}
-        </div>
       )}
 
       {/* Perspective Funnel */}
