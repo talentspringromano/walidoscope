@@ -8,8 +8,8 @@
       "answeredCalls": 156,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 24776,
-      "avgDurationSec": 159,
+      "totalDurationSec": 25559,
+      "avgDurationSec": 164,
       "longestCallSec": 1929,
       "reachabilityPct": 100,
       "callsPerDay": 13,
@@ -20,34 +20,34 @@
     {
       "name": "Nele Pfau",
       "userId": 1862427,
-      "outboundCalls": 319,
+      "outboundCalls": 308,
       "inboundCalls": 17,
-      "answeredCalls": 336,
+      "answeredCalls": 325,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 56100,
-      "avgDurationSec": 167,
+      "totalDurationSec": 55137,
+      "avgDurationSec": 170,
       "longestCallSec": 2126,
       "reachabilityPct": 100,
-      "callsPerDay": 25.8,
-      "totalCalls": 336,
+      "callsPerDay": 25,
+      "totalCalls": 325,
       "firstCallDate": "2026-02-25",
       "lastCallDate": "2026-03-09"
     },
     {
       "name": "Eric Hardt",
       "userId": 1862760,
-      "outboundCalls": 172,
+      "outboundCalls": 173,
       "inboundCalls": 4,
-      "answeredCalls": 176,
+      "answeredCalls": 177,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 11995,
+      "totalDurationSec": 12022,
       "avgDurationSec": 68,
       "longestCallSec": 1076,
       "reachabilityPct": 100,
-      "callsPerDay": 25.1,
-      "totalCalls": 176,
+      "callsPerDay": 25.3,
+      "totalCalls": 177,
       "firstCallDate": "2026-02-27",
       "lastCallDate": "2026-03-05"
     },
@@ -71,17 +71,17 @@
     {
       "name": "Bastian Wuske",
       "userId": 1875176,
-      "outboundCalls": 164,
+      "outboundCalls": 171,
       "inboundCalls": 5,
-      "answeredCalls": 169,
+      "answeredCalls": 176,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 22275,
-      "avgDurationSec": 132,
+      "totalDurationSec": 24552,
+      "avgDurationSec": 140,
       "longestCallSec": 1976,
       "reachabilityPct": 100,
-      "callsPerDay": 28.2,
-      "totalCalls": 169,
+      "callsPerDay": 29.3,
+      "totalCalls": 176,
       "firstCallDate": "2026-03-04",
       "lastCallDate": "2026-03-09"
     }
@@ -89,9 +89,9 @@
   "daily": [
     {
       "date": "2026-02-25",
-      "dials": 31,
-      "reached": 31,
-      "calltimeSec": 2463
+      "dials": 20,
+      "reached": 20,
+      "calltimeSec": 1500
     },
     {
       "date": "2026-02-26",
@@ -125,9 +125,9 @@
     },
     {
       "date": "2026-03-05",
-      "dials": 160,
-      "reached": 160,
-      "calltimeSec": 22331
+      "dials": 161,
+      "reached": 161,
+      "calltimeSec": 22358
     },
     {
       "date": "2026-03-06",
@@ -143,18 +143,18 @@
     },
     {
       "date": "2026-03-09",
-      "dials": 77,
-      "reached": 77,
-      "calltimeSec": 15920
+      "dials": 84,
+      "reached": 84,
+      "calltimeSec": 18980
     }
   ],
   "sellerDaily": [
     {
       "seller": "Nele Pfau",
       "date": "2026-02-25",
-      "dials": 31,
-      "reached": 31,
-      "calltimeSec": 2463
+      "dials": 20,
+      "reached": 20,
+      "calltimeSec": 1500
     },
     {
       "seller": "Michel Grosser",
@@ -292,9 +292,9 @@
     {
       "seller": "Eric Hardt",
       "date": "2026-03-05",
-      "dials": 50,
-      "reached": 50,
-      "calltimeSec": 2754
+      "dials": 51,
+      "reached": 51,
+      "calltimeSec": 2781
     },
     {
       "seller": "Michel Grosser",
@@ -355,9 +355,9 @@
     {
       "seller": "Bastian Wuske",
       "date": "2026-03-09",
-      "dials": 8,
-      "reached": 8,
-      "calltimeSec": 2426
+      "dials": 15,
+      "reached": 15,
+      "calltimeSec": 4703
     },
     {
       "seller": "Nele Pfau",
@@ -371,8 +371,8 @@
       "date": "2026-03-09",
       "dials": 19,
       "reached": 19,
-      "calltimeSec": 3372
+      "calltimeSec": 4155
     }
   ],
-  "fetchedAt": "2026-03-09T14:44:39.107Z"
+  "fetchedAt": "2026-03-09T15:34:49.528Z"
 }
