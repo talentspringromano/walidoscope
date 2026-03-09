@@ -185,7 +185,8 @@ export default function MarketingPage() {
         // Primary: match by name (most reliable)
         if (visitName && lead.name.toLowerCase().trim() === visitName) return true;
 
-        // Fallback: utmTitle + ±30 day window
+        // Fallback: only when no name available, use utmTitle + ±30 day window
+        if (visitName) return false;
         if (lead.utmTitle !== visit.utmTitle) return false;
         const diffMs = Math.abs(new Date(visit.firstSeenAt).getTime() - parseDE(lead.createdOn).getTime());
         return diffMs <= 30 * 24 * 60 * 60 * 1000;
