@@ -175,29 +175,21 @@ export default function MarketingPage() {
 
     /* Unmatched Perspective conversions (name match, fallback utmTitle + ±30 day window) */
     const convertedVisits = perspFiltered.filter(v => v.hasConverted);
-    const kursnetCrmLeads = filteredLeads.filter(l => l.platform === "Kursnet");
-    const usedLeadIds = new Set<number>();
+    const allKursnetLeads = leads.filter(l => l.platform === "Kursnet");
     const unmatchedConversions = convertedVisits.filter(visit => {
       const visitName = (visit.firstName && visit.lastName)
         ? `${visit.firstName} ${visit.lastName}`.toLowerCase().trim()
         : null;
 
-      const match = kursnetCrmLeads.find(lead => {
-        if (usedLeadIds.has(lead.id)) return false;
-
+      return !allKursnetLeads.some(lead => {
         // Primary: match by name (most reliable)
         if (visitName && lead.name.toLowerCase().trim() === visitName) return true;
 
         // Fallback: utmTitle + ±30 day window
         if (lead.utmTitle !== visit.utmTitle) return false;
-        const visitDate = new Date(visit.firstSeenAt);
-        const leadDate = parseDE(lead.createdOn);
-        const diffMs = Math.abs(visitDate.getTime() - leadDate.getTime());
+        const diffMs = Math.abs(new Date(visit.firstSeenAt).getTime() - parseDE(lead.createdOn).getTime());
         return diffMs <= 30 * 24 * 60 * 60 * 1000;
       });
-
-      if (match) { usedLeadIds.add(match.id); return false; }
-      return true;
     });
 
     return {
