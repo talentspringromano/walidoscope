@@ -236,8 +236,8 @@ export default function OverviewPage() {
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 stagger-in">
         <KpiCard
           label="Gesamte Leads"
-          value={totalLeads}
-          sub={`${metaLeads.length} Meta · ${kursnetLeads.length} Kursnet · ${indeedLeads.length} Indeed`}
+          value={range === "all" ? totalMetaLeads + kursnetLeads.length + indeedLeads.length : totalLeads}
+          sub={`${range === "all" ? totalMetaLeads : metaLeads.length} Meta · ${kursnetLeads.length} Kursnet · ${indeedLeads.length} Indeed`}
           icon={<Users className="h-4 w-4" />}
           accent
         />
