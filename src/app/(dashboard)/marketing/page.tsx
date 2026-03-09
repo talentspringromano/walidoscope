@@ -51,7 +51,7 @@ function computeChannelIST(channel: ChannelKey, leadsSubset: typeof leads) {
     : (l: (typeof leads)[0]) => l.platform === "Indeed";
 
   const channelLeads = leadsSubset.filter(platformFilter);
-  const leadCount = channelLeads.length;
+  const leadCount = channel === "meta" ? totalMetaLeads : channelLeads.length;
   const gewonnen = channelLeads.filter((l) => l.leadStatus === "Gewonnen").length;
   const spend = channel === "meta" ? totalMetaSpend : 0;
   const cpl = channel === "meta" ? avgCPL : 0;
