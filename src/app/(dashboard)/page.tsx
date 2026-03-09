@@ -110,7 +110,7 @@ export default function OverviewPage() {
         hasSpend: range === "all",
       },
       { name: "Indeed", leads: indeedLeads.length, spend: 0, sub: "Organisch via Indeed", hasSpend: false },
-      { name: "Kursnet", leads: kursnetLeads.length, spend: 0, sub: "Organisch via Kursnet/meinNOW", hasSpend: false },
+      { name: "Kursnet", leads: kursnetLeads.length, spend: 0, sub: "Organisch via Kursnet", hasSpend: false },
     ];
 
     /* Timeline — Meta (FB+IG zusammengefasst), Kursnet, Indeed */

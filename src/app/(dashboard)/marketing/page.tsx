@@ -533,7 +533,7 @@ export default function MarketingPage() {
       )}
 
       {/* Perspective Funnel */}
-      <SectionCard title="Kursnet/meinNOW Landing Page Funnel">
+      <SectionCard title="Kursnet Landing Page Funnel">
         <div className="grid gap-8 lg:grid-cols-3">
           <div className="lg:col-span-1 flex items-stretch gap-4">
             <div className="flex-1">

@@ -31,7 +31,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69ad0db367fc66001369bc51",
     "firstSeenAt": "2026-03-08T05:48:34.843Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -40,7 +40,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69ac585e14b9ac0013c685b4",
     "firstSeenAt": "2026-03-07T16:54:54.077Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics",
     "hasConverted": false,
     "hasCompleted": false,
@@ -49,7 +49,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69ac58588984bc0013b152c3",
     "firstSeenAt": "2026-03-07T16:54:48.643Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics",
     "hasConverted": false,
     "hasCompleted": false,
@@ -58,7 +58,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69ac58469e51eb00131aa7e7",
     "firstSeenAt": "2026-03-07T16:54:30.106Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics",
     "hasConverted": false,
     "hasCompleted": false,
@@ -67,7 +67,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69abc364bf8a220013024117",
     "firstSeenAt": "2026-03-07T06:19:16.366Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -166,7 +166,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a936953e757b001328aff0",
     "firstSeenAt": "2026-03-05T07:53:57.710Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -175,7 +175,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a93658c91c090013bcbe80",
     "firstSeenAt": "2026-03-05T07:52:55.877Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": true,
     "hasCompleted": true,
@@ -193,7 +193,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a8638a5d844200132c8488",
     "firstSeenAt": "2026-03-04T16:53:30.606Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -211,7 +211,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a82f2521ee520013652eba",
     "firstSeenAt": "2026-03-04T13:09:57.819Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -220,7 +220,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a82f1c5544410013cfd93e",
     "firstSeenAt": "2026-03-04T13:09:48.534Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -229,7 +229,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a82f0121ee520013652c9b",
     "firstSeenAt": "2026-03-04T13:09:21.270Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -238,7 +238,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a7d97c592a0b0013f20c42",
     "firstSeenAt": "2026-03-04T07:04:28.492Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -247,7 +247,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a6fe878e6fef00132a2d72",
     "firstSeenAt": "2026-03-03T15:30:14.253Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -256,7 +256,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a6d8fd38198400135244e7",
     "firstSeenAt": "2026-03-03T12:50:05.351Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics",
     "hasConverted": false,
     "hasCompleted": false,
@@ -292,7 +292,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a6b79a4ab0260013deacf8",
     "firstSeenAt": "2026-03-03T10:27:37.619Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -301,7 +301,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a5cff781e5040013f6b7df",
     "firstSeenAt": "2026-03-02T17:59:20.959Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics",
     "hasConverted": false,
     "hasCompleted": false,
@@ -337,7 +337,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a592f20dd216001307f7fd",
     "firstSeenAt": "2026-03-02T13:38:57.518Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -364,7 +364,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a4599a7f85b2001334a63f",
     "firstSeenAt": "2026-03-01T15:22:02.511Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -382,7 +382,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a2cf5d50a4e700131e6264",
     "firstSeenAt": "2026-02-28T11:19:55.966Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "personalgewinnung-mit-ats-und-recruiting-analytics",
     "hasConverted": true,
     "hasCompleted": true,
@@ -436,7 +436,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a17d7f49602f0013e7d2a4",
     "firstSeenAt": "2026-02-27T11:18:23.145Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics",
     "hasConverted": false,
     "hasCompleted": false,
@@ -445,7 +445,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a17d23af94070013d06420",
     "firstSeenAt": "2026-02-27T11:16:51.150Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "personalgewinnung-mit-ats-und-recruiting-analytics",
     "hasConverted": false,
     "hasCompleted": false,
@@ -454,7 +454,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a17ac66e9f590013b5d6d9",
     "firstSeenAt": "2026-02-27T11:06:45.379Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "personalgewinnung-mit-ats-und-recruiting-analytics",
     "hasConverted": false,
     "hasCompleted": false,
@@ -472,7 +472,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a045d03d763c0013c5b544",
     "firstSeenAt": "2026-02-26T13:08:31.839Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -481,7 +481,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a045c53d763c0013c5b48c",
     "firstSeenAt": "2026-02-26T13:08:21.245Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -490,7 +490,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69a03e5904dec90013d905c8",
     "firstSeenAt": "2026-02-26T12:36:40.939Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": true,
     "hasCompleted": false,
@@ -499,7 +499,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699f1a476d3d1000137db0a4",
     "firstSeenAt": "2026-02-25T15:50:31.550Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -526,7 +526,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699e0ed28af7620013f2b3f1",
     "firstSeenAt": "2026-02-24T20:49:24.639Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -580,7 +580,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699d823b5e6aed0013518527",
     "firstSeenAt": "2026-02-24T10:49:31.429Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -598,7 +598,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699d7a7248a30700135fd1c7",
     "firstSeenAt": "2026-02-24T10:16:17.874Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -634,7 +634,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699d6e6c0273e00013e40fec",
     "firstSeenAt": "2026-02-24T09:25:00.317Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -706,7 +706,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699c80665adae900130808fa",
     "firstSeenAt": "2026-02-23T16:29:27.167Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics",
     "hasConverted": false,
     "hasCompleted": false,
@@ -742,7 +742,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699c4c6f13793f00138bbf79",
     "firstSeenAt": "2026-02-23T12:47:44.282Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -787,7 +787,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699be72d34eaa500132fdebe",
     "firstSeenAt": "2026-02-23T00:00:00.040Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -796,7 +796,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699afbffc6452c00136cc989",
     "firstSeenAt": "2026-02-22T12:52:15.824Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -823,7 +823,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699a23e4c6452c00136378de",
     "firstSeenAt": "2026-02-21T21:30:11.107Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics",
     "hasConverted": false,
     "hasCompleted": false,
@@ -832,7 +832,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699883b9e6f5710013860e6c",
     "firstSeenAt": "2026-02-20T15:54:35.394Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "personalgewinnung-mit-ats-und-recruiting-analytics",
     "hasConverted": false,
     "hasCompleted": false,
@@ -841,7 +841,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699880818504b50013dee185",
     "firstSeenAt": "2026-02-20T15:40:51.531Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "personalgewinnung-mit-ats-und-recruiting-analytics",
     "hasConverted": false,
     "hasCompleted": false,
@@ -850,7 +850,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6998530e44ead80013a0ed55",
     "firstSeenAt": "2026-02-20T12:26:54.097Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics",
     "hasConverted": false,
     "hasCompleted": false,
@@ -859,7 +859,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699849a166c77d0013f526cf",
     "firstSeenAt": "2026-02-20T11:46:43.769Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "personalgewinnung-mit-ats-und-recruiting-analytics",
     "hasConverted": true,
     "hasCompleted": true,
@@ -868,7 +868,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6997a04a7bce520013a79062",
     "firstSeenAt": "2026-02-19T23:44:11.545Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "personalgewinnung-mit-ats-und-recruiting-analytics",
     "hasConverted": false,
     "hasCompleted": false,
@@ -877,7 +877,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699708068537e50013fbd7be",
     "firstSeenAt": "2026-02-19T12:54:30.125Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -904,7 +904,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6995fc1316d2630013a34cba",
     "firstSeenAt": "2026-02-18T17:51:14.469Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "personalgewinnung-mit-ats-und-recruiting-analytics",
     "hasConverted": false,
     "hasCompleted": false,
@@ -922,7 +922,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6995f9ec01ffb900130c10e3",
     "firstSeenAt": "2026-02-18T17:42:04.009Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "personalgewinnung-mit-ats-und-recruiting-analytics",
     "hasConverted": false,
     "hasCompleted": false,
@@ -931,7 +931,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6995a9138bbe49001369a671",
     "firstSeenAt": "2026-02-18T11:57:08.475Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics",
     "hasConverted": true,
     "hasCompleted": true,
@@ -949,7 +949,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6995a2368ff477001306744f",
     "firstSeenAt": "2026-02-18T11:27:51.548Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics",
     "hasConverted": false,
     "hasCompleted": false,
@@ -958,7 +958,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69959e0aed0da90013f65296",
     "firstSeenAt": "2026-02-18T11:10:02.137Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -967,7 +967,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69959dd36989e9001396d331",
     "firstSeenAt": "2026-02-18T11:09:08.702Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1066,7 +1066,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6993460bb366f50013ee51cf",
     "firstSeenAt": "2026-02-16T16:30:02.678Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1084,7 +1084,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699312a60a5cf10013a437f8",
     "firstSeenAt": "2026-02-16T12:50:46.466Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1093,7 +1093,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "699312b34c262100138a1708",
     "firstSeenAt": "2026-02-16T12:50:30.979Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1138,7 +1138,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6992e5b8c238e80013c18841",
     "firstSeenAt": "2026-02-16T09:39:03.978Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": true,
     "hasCompleted": true,
@@ -1156,7 +1156,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69924a7f11e0e80013c254a9",
     "firstSeenAt": "2026-02-15T22:36:47.969Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1165,7 +1165,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69922b1a2dd0fc0013f19f20",
     "firstSeenAt": "2026-02-15T20:22:49.561Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1210,7 +1210,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698f2e8731260d0013831ca1",
     "firstSeenAt": "2026-02-13T14:00:39.731Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": true,
     "hasCompleted": true,
@@ -1219,7 +1219,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698f2e57d1d77800139a4b9b",
     "firstSeenAt": "2026-02-13T13:59:50.981Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1237,7 +1237,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698f00482512670013902c2e",
     "firstSeenAt": "2026-02-13T10:43:19.696Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1246,7 +1246,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698ee70af7749400132a3f36",
     "firstSeenAt": "2026-02-13T08:55:38.231Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1255,7 +1255,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698ee4f98a48010013ad104a",
     "firstSeenAt": "2026-02-13T08:46:49.779Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": true,
     "hasCompleted": false,
@@ -1363,7 +1363,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698c67210744ea0013f38743",
     "firstSeenAt": "2026-02-11T11:25:20.886Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1435,7 +1435,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698b697cacc73c001366db71",
     "firstSeenAt": "2026-02-10T17:23:07.870Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1444,7 +1444,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698b34d570b8400013d8a6ec",
     "firstSeenAt": "2026-02-10T13:38:29.576Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": true,
     "hasCompleted": true,
@@ -1453,7 +1453,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698b2ef84eb8920013a844fa",
     "firstSeenAt": "2026-02-10T13:13:27.639Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": true,
     "hasCompleted": true,
@@ -1462,7 +1462,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "698b1047cafa980013567c10",
     "firstSeenAt": "2026-02-10T11:02:30.987Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1471,7 +1471,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6989f4fd17cb1f0013e4dfd3",
     "firstSeenAt": "2026-02-09T14:53:49.751Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1489,7 +1489,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6989ae17b51f13001364e072",
     "firstSeenAt": "2026-02-09T09:51:14.317Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1498,7 +1498,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6988f60daf2ec900137b2175",
     "firstSeenAt": "2026-02-08T20:46:05.719Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1507,7 +1507,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6988d7e6aef5130013f4896c",
     "firstSeenAt": "2026-02-08T18:37:23.862Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1516,7 +1516,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6988b3966c9caf00131c88d7",
     "firstSeenAt": "2026-02-08T16:02:30.870Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1534,7 +1534,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6985e5d2c945a80013ee5a04",
     "firstSeenAt": "2026-02-06T13:00:01.958Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1543,7 +1543,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6985d3492bfa5f001354e570",
     "firstSeenAt": "2026-02-06T11:40:58.540Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1552,7 +1552,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6984a18844145200139b9a82",
     "firstSeenAt": "2026-02-05T13:56:24.096Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": true,
     "hasCompleted": true,
@@ -1561,7 +1561,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6984a156f85b05001390ab55",
     "firstSeenAt": "2026-02-05T13:55:34.280Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1570,7 +1570,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6984a138f2b7ca00136d1e29",
     "firstSeenAt": "2026-02-05T13:55:04.479Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1579,7 +1579,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69848d6d9efd5f0013939342",
     "firstSeenAt": "2026-02-05T12:30:37.052Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1588,7 +1588,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6984124d337bd60013d0c8c2",
     "firstSeenAt": "2026-02-05T03:45:17.260Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1615,7 +1615,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6981f38a8afb6d00131dee3e",
     "firstSeenAt": "2026-02-03T13:09:30.322Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": true,
     "hasCompleted": true,
@@ -1624,7 +1624,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6981d032cedb0000137d920c",
     "firstSeenAt": "2026-02-03T10:38:41.936Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1633,7 +1633,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "69812f3c355caa0013b6ac4f",
     "firstSeenAt": "2026-02-02T23:11:56.430Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1642,7 +1642,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6980eb2b39d0010013acc594",
     "firstSeenAt": "2026-02-02T18:21:31.730Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
@@ -1651,7 +1651,7 @@ export const perspectiveVisits: PerspectiveVisit[] = [
   {
     "contactId": "6980e99b22539300139dd81a",
     "firstSeenAt": "2026-02-02T18:14:50.872Z",
-    "utmSource": "meinNOW",
+    "utmSource": "Kursnet",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hasConverted": false,
     "hasCompleted": false,
