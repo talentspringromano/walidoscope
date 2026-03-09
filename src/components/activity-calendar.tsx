@@ -62,7 +62,9 @@ function buildWeeks(entries: AircallDailyEntry[]): WeekRow[] {
 
   const allDates = [...byDate.keys()].map((d) => new Date(d + "T00:00:00"));
   const minDate = new Date(Math.min(...allDates.map((d) => d.getTime())));
-  const maxDate = new Date(Math.max(...allDates.map((d) => d.getTime())));
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const maxDate = new Date(Math.max(...allDates.map((d) => d.getTime()), today.getTime()));
 
   const firstMonday = getMonday(minDate);
   const lastMonday = getMonday(maxDate);
