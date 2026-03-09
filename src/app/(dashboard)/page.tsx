@@ -60,7 +60,7 @@ export default function OverviewPage() {
 
   const {
     metaLeads, kursnetLeads, indeedLeads, totalLeads,
-    gewonnen, terminCount, qualifiedPlusHistorical,
+    gewonnen, terminCount, qualifiedCount,
     funnelData, statusData, channelData, timelineData,
     perspSummary, cohortWeeks,
   } = useMemo(() => {
@@ -74,17 +74,30 @@ export default function OverviewPage() {
 
     const gewonnen = filtered.filter((l) => l.leadStatus === "Gewonnen").length;
     const terminCount = filtered.filter((l) => l.terminBeimAmt).length;
-    const qualifiedPlusHistorical = filtered.filter(
+    const qualifiedCount = filtered.filter(
       (l) =>
         l.leadStatus === "Vertriebsqualifiziert" ||
         l.leadStatus === "Kennenlerngespräch gebucht" ||
         l.leadStatus === "Beratungsgespräch gebucht" ||
         l.leadStatus === "Gewonnen"
     ).length;
+    const kennenlernCount = filtered.filter(
+      (l) =>
+        l.leadStatus === "Kennenlerngespräch gebucht" ||
+        l.leadStatus === "Beratungsgespräch gebucht" ||
+        l.leadStatus === "Gewonnen"
+    ).length;
+    const beratungCount = filtered.filter(
+      (l) =>
+        l.leadStatus === "Beratungsgespräch gebucht" ||
+        l.leadStatus === "Gewonnen"
+    ).length;
 
     const funnelData = [
       { name: "Leads", value: totalLeads },
-      { name: "Qualifiziert+", value: qualifiedPlusHistorical },
+      { name: "Vertriebsqualifiziert", value: qualifiedCount },
+      { name: "Kennenlerngespräch", value: kennenlernCount },
+      { name: "Beratungsgespräch", value: beratungCount },
       { name: "Amt-Termin", value: terminCount },
       { name: "Gewonnen (BG)", value: gewonnen },
     ];
@@ -211,7 +224,7 @@ export default function OverviewPage() {
 
     return {
       metaLeads, kursnetLeads, indeedLeads, totalLeads,
-      gewonnen, terminCount, qualifiedPlusHistorical,
+      gewonnen, terminCount, qualifiedCount,
       funnelData, statusData, channelData, timelineData,
       perspSummary, cohortWeeks,
     };
@@ -269,7 +282,7 @@ export default function OverviewPage() {
               const maxValue = funnelData[0].value;
               const widthPct = maxValue > 0 ? Math.max(8, (stage.value / maxValue) * 100) : 8;
               const overallRate = i > 0 && maxValue > 0 ? ((stage.value / maxValue) * 100).toFixed(1) : null;
-              const barOpacity = 1 - i * 0.2;
+              const barOpacity = 1 - i * 0.12;
 
               return (
                 <div key={stage.name}>

@@ -27,7 +27,7 @@ export type LeadStatus =
 
 export type DealStatus = "Neuer Lead" | "Angebot schicken" | "";
 
-export type Platform = "Facebook" | "Instagram" | "Kursnet" | "Indeed" | "";
+export type Platform = "Facebook" | "Instagram" | "Kursnet" | "Indeed" | "Unsicher" | "";
 
 export interface Lead {
   id: number;
