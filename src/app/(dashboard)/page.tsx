@@ -4,7 +4,7 @@ import { useState, useMemo } from "react";
 import { KpiCard, SectionCard } from "@/components/kpi-card";
 import { TimeRangeFilter } from "@/components/time-range-filter";
 import { leads } from "@/data/leads";
-import { metaAds, totalMetaSpend, totalMetaLeads } from "@/data/meta-ads";
+import { metaAds, totalMetaSpend, totalMetaLeads, avgCPL } from "@/data/meta-ads";
 import { perspectiveVisits } from "@/data/perspective";
 import { TOOLTIP_STYLE, AXIS_STYLE, FUNNEL_COLORS, STATUS_COLORS } from "@/components/chart-theme";
 import { Users, DollarSign, MousePointerClick, TrendingUp } from "lucide-react";
@@ -102,10 +102,10 @@ export default function OverviewPage() {
     const channelData = [
       {
         name: "Meta (FB/IG)",
-        leads: metaLeads.length,
+        leads: range === "all" ? totalMetaLeads : metaLeads.length,
         spend: range === "all" ? totalMetaSpend : 0,
-        sub: range === "all" && metaLeads.length > 0
-          ? `€${(totalMetaSpend / metaLeads.length).toFixed(2)} CPL`
+        sub: range === "all" && totalMetaLeads > 0
+          ? `€${avgCPL.toFixed(2)} CPL`
           : range === "all" ? "Keine Meta-Leads" : "Spend nicht filterbar",
         hasSpend: range === "all",
       },
