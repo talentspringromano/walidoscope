@@ -3,52 +3,52 @@
     {
       "name": "Walid Karimi",
       "userId": 1093878,
-      "outboundCalls": 153,
-      "inboundCalls": 11,
-      "answeredCalls": 164,
+      "outboundCalls": 149,
+      "inboundCalls": 10,
+      "answeredCalls": 159,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 28103,
-      "avgDurationSec": 171,
+      "totalDurationSec": 27765,
+      "avgDurationSec": 175,
       "longestCallSec": 1929,
       "reachabilityPct": 100,
-      "callsPerDay": 13.7,
-      "totalCalls": 164,
-      "firstCallDate": "2026-02-26",
+      "callsPerDay": 13.3,
+      "totalCalls": 159,
+      "firstCallDate": "2026-02-27",
       "lastCallDate": "2026-03-10"
     },
     {
       "name": "Nele Pfau",
       "userId": 1862427,
-      "outboundCalls": 345,
-      "inboundCalls": 13,
-      "answeredCalls": 358,
+      "outboundCalls": 387,
+      "inboundCalls": 10,
+      "answeredCalls": 397,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 60136,
-      "avgDurationSec": 168,
+      "totalDurationSec": 60568,
+      "avgDurationSec": 153,
       "longestCallSec": 2126,
       "reachabilityPct": 100,
-      "callsPerDay": 29.8,
-      "totalCalls": 358,
+      "callsPerDay": 33.1,
+      "totalCalls": 397,
       "firstCallDate": "2026-02-27",
       "lastCallDate": "2026-03-10"
     },
     {
       "name": "Eric Hardt",
       "userId": 1862760,
-      "outboundCalls": 172,
+      "outboundCalls": 157,
       "inboundCalls": 4,
-      "answeredCalls": 176,
+      "answeredCalls": 161,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 11995,
-      "avgDurationSec": 68,
-      "longestCallSec": 1076,
+      "totalDurationSec": 9899,
+      "avgDurationSec": 61,
+      "longestCallSec": 606,
       "reachabilityPct": 100,
-      "callsPerDay": 25.1,
-      "totalCalls": 176,
-      "firstCallDate": "2026-02-27",
+      "callsPerDay": 40.3,
+      "totalCalls": 161,
+      "firstCallDate": "2026-03-02",
       "lastCallDate": "2026-03-05"
     },
     {
@@ -71,33 +71,27 @@
     {
       "name": "Bastian Wuske",
       "userId": 1875176,
-      "outboundCalls": 232,
-      "inboundCalls": 8,
-      "answeredCalls": 240,
+      "outboundCalls": 267,
+      "inboundCalls": 9,
+      "answeredCalls": 276,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 30937,
-      "avgDurationSec": 129,
+      "totalDurationSec": 34660,
+      "avgDurationSec": 126,
       "longestCallSec": 1976,
       "reachabilityPct": 100,
-      "callsPerDay": 34.3,
-      "totalCalls": 240,
+      "callsPerDay": 39.4,
+      "totalCalls": 276,
       "firstCallDate": "2026-03-04",
       "lastCallDate": "2026-03-10"
     }
   ],
   "daily": [
     {
-      "date": "2026-02-26",
-      "dials": 2,
-      "reached": 2,
-      "calltimeSec": 805
-    },
-    {
       "date": "2026-02-27",
-      "dials": 41,
-      "reached": 41,
-      "calltimeSec": 4288
+      "dials": 4,
+      "reached": 4,
+      "calltimeSec": 589
     },
     {
       "date": "2026-03-02",
@@ -143,39 +137,25 @@
     },
     {
       "date": "2026-03-10",
-      "dials": 94,
-      "reached": 94,
-      "calltimeSec": 12497
+      "dials": 191,
+      "reached": 191,
+      "calltimeSec": 18336
     }
   ],
   "sellerDaily": [
     {
-      "seller": "Walid Karimi",
-      "date": "2026-02-26",
-      "dials": 2,
-      "reached": 2,
-      "calltimeSec": 805
-    },
-    {
-      "seller": "Eric Hardt",
-      "date": "2026-02-27",
-      "dials": 15,
-      "reached": 15,
-      "calltimeSec": 2096
-    },
-    {
       "seller": "Nele Pfau",
       "date": "2026-02-27",
-      "dials": 21,
-      "reached": 21,
-      "calltimeSec": 1651
+      "dials": 2,
+      "reached": 2,
+      "calltimeSec": 196
     },
     {
       "seller": "Walid Karimi",
       "date": "2026-02-27",
-      "dials": 5,
-      "reached": 5,
-      "calltimeSec": 541
+      "dials": 2,
+      "reached": 2,
+      "calltimeSec": 393
     },
     {
       "seller": "Eric Hardt",
@@ -355,24 +335,24 @@
     {
       "seller": "Bastian Wuske",
       "date": "2026-03-10",
-      "dials": 18,
-      "reached": 18,
-      "calltimeSec": 1723
+      "dials": 53,
+      "reached": 53,
+      "calltimeSec": 4606
     },
     {
       "seller": "Nele Pfau",
       "date": "2026-03-10",
-      "dials": 55,
-      "reached": 55,
-      "calltimeSec": 8695
+      "dials": 116,
+      "reached": 116,
+      "calltimeSec": 10797
     },
     {
       "seller": "Walid Karimi",
       "date": "2026-03-10",
-      "dials": 21,
-      "reached": 21,
-      "calltimeSec": 2079
+      "dials": 22,
+      "reached": 22,
+      "calltimeSec": 2933
     }
   ],
-  "fetchedAt": "2026-03-10T14:40:04.499Z"
+  "fetchedAt": "2026-03-10T19:58:09.618Z"
 }
