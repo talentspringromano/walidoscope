@@ -21,7 +21,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -45,7 +45,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -69,7 +69,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "9x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -93,7 +93,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -117,7 +117,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -139,9 +139,9 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -165,7 +165,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -189,7 +189,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -213,7 +213,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -235,9 +235,9 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -261,7 +261,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -285,7 +285,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -309,7 +309,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -333,7 +333,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -357,7 +357,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -381,7 +381,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -405,7 +405,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -426,10 +426,10 @@ export const leads: Lead[] = [
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
-    "hotLead": false,
-    "angebotVerschicken": false,
+    "hotLead": true,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -453,7 +453,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -477,7 +477,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -499,11 +499,11 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 22,
@@ -549,7 +549,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -573,7 +573,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -597,7 +597,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -621,7 +621,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -643,9 +643,9 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -669,7 +669,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -693,7 +693,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -717,7 +717,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -736,12 +736,12 @@ export const leads: Lead[] = [
     "vertriebler": "Walid Karimi",
     "createdOn": "12.2.2026 07:48",
     "terminBeimAmt": "",
-    "closingWahrscheinlichkeit": "",
+    "closingWahrscheinlichkeit": "30%",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
-    "hotLead": false,
-    "angebotVerschicken": false,
+    "hotLead": true,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -762,10 +762,10 @@ export const leads: Lead[] = [
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
-    "hotLead": false,
+    "hotLead": true,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -786,10 +786,10 @@ export const leads: Lead[] = [
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
-    "hotLead": false,
+    "hotLead": true,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -808,12 +808,12 @@ export const leads: Lead[] = [
     "vertriebler": "Walid Karimi",
     "createdOn": "13.2.2026 08:48",
     "terminBeimAmt": "",
-    "closingWahrscheinlichkeit": "",
+    "closingWahrscheinlichkeit": "100%",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
-    "hotLead": false,
+    "hotLead": true,
     "angebotVerschicken": false,
-    "bgVerschickt": "",
-    "anrufversuch": "",
+    "bgVerschickt": "true",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -837,7 +837,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -859,9 +859,9 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -880,12 +880,12 @@ export const leads: Lead[] = [
     "vertriebler": "Paul Barbig",
     "createdOn": "16.2.2026 09:39",
     "terminBeimAmt": "4.3.2026",
-    "closingWahrscheinlichkeit": "",
+    "closingWahrscheinlichkeit": "70%",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
-    "hotLead": false,
+    "hotLead": true,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -904,12 +904,12 @@ export const leads: Lead[] = [
     "vertriebler": "Walid Karimi",
     "createdOn": "18.2.2026 08:20",
     "terminBeimAmt": "",
-    "closingWahrscheinlichkeit": "",
+    "closingWahrscheinlichkeit": "70%",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
-    "hotLead": false,
+    "hotLead": true,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -933,7 +933,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -957,7 +957,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -981,7 +981,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1002,10 +1002,10 @@ export const leads: Lead[] = [
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
-    "hotLead": false,
+    "hotLead": true,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1027,9 +1027,9 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1053,7 +1053,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1077,7 +1077,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1098,12 +1098,12 @@ export const leads: Lead[] = [
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
-    "hotLead": false,
-    "angebotVerschicken": false,
+    "hotLead": true,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 47,
@@ -1125,7 +1125,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1149,7 +1149,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "10x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1173,7 +1173,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1197,7 +1197,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1221,7 +1221,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1245,7 +1245,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "10x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1269,7 +1269,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "10x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1293,7 +1293,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1317,7 +1317,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "10x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1341,7 +1341,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1360,12 +1360,12 @@ export const leads: Lead[] = [
     "vertriebler": "Walid Karimi",
     "createdOn": "19.2.2026 09:38",
     "terminBeimAmt": "",
-    "closingWahrscheinlichkeit": "",
+    "closingWahrscheinlichkeit": "60%",
     "utmTitle": "",
-    "hotLead": false,
+    "hotLead": true,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1389,7 +1389,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1413,7 +1413,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1432,12 +1432,12 @@ export const leads: Lead[] = [
     "vertriebler": "Nele Pfau",
     "createdOn": "19.2.2026 13:19",
     "terminBeimAmt": "3.3.2026",
-    "closingWahrscheinlichkeit": "",
+    "closingWahrscheinlichkeit": "100%",
     "utmTitle": "",
-    "hotLead": false,
+    "hotLead": true,
     "angebotVerschicken": false,
-    "bgVerschickt": "",
-    "anrufversuch": "",
+    "bgVerschickt": "true",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1456,14 +1456,14 @@ export const leads: Lead[] = [
     "vertriebler": "Paul Barbig",
     "createdOn": "19.2.2026 13:23",
     "terminBeimAmt": "5.3.2026",
-    "closingWahrscheinlichkeit": "",
+    "closingWahrscheinlichkeit": "50%",
     "utmTitle": "",
-    "hotLead": false,
-    "angebotVerschicken": false,
+    "hotLead": true,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 62,
@@ -1483,9 +1483,9 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1507,11 +1507,11 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 64,
@@ -1533,7 +1533,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1557,7 +1557,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1605,7 +1605,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "6x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1629,9 +1629,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 69,
@@ -1653,7 +1653,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "6x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1677,7 +1677,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1701,7 +1701,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1725,7 +1725,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1749,7 +1749,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1773,7 +1773,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1794,10 +1794,10 @@ export const leads: Lead[] = [
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
-    "hotLead": false,
+    "hotLead": true,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1821,7 +1821,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1843,9 +1843,9 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1869,7 +1869,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1893,7 +1893,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1917,7 +1917,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1936,14 +1936,14 @@ export const leads: Lead[] = [
     "vertriebler": "Nele Pfau",
     "createdOn": "19.2.2026 19:17",
     "terminBeimAmt": "",
-    "closingWahrscheinlichkeit": "",
+    "closingWahrscheinlichkeit": "80%",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 82,
@@ -1965,7 +1965,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -1987,10 +1987,10 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
-    "kennenlernDatum": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "25.2.2026",
     "betreuungsart": ""
   },
   {
@@ -2011,11 +2011,11 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 85,
@@ -2037,7 +2037,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2061,7 +2061,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2080,14 +2080,14 @@ export const leads: Lead[] = [
     "vertriebler": "Walid Karimi",
     "createdOn": "20.2.2026 09:16",
     "terminBeimAmt": "",
-    "closingWahrscheinlichkeit": "",
+    "closingWahrscheinlichkeit": "80%",
     "utmTitle": "",
-    "hotLead": false,
-    "angebotVerschicken": false,
+    "hotLead": true,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
-    "kennenlernDatum": "",
-    "betreuungsart": ""
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "26.2.2026",
+    "betreuungsart": "High Touch"
   },
   {
     "id": 88,
@@ -2109,8 +2109,8 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
-    "kennenlernDatum": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "26.2.2026",
     "betreuungsart": ""
   },
   {
@@ -2133,7 +2133,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2181,7 +2181,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2205,7 +2205,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2229,7 +2229,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2251,11 +2251,11 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "6x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 95,
@@ -2277,7 +2277,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2301,7 +2301,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2325,7 +2325,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2349,7 +2349,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2370,10 +2370,10 @@ export const leads: Lead[] = [
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "lohnabrechnung",
-    "hotLead": false,
+    "hotLead": true,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2397,9 +2397,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 101,
@@ -2416,12 +2416,12 @@ export const leads: Lead[] = [
     "vertriebler": "Walid Karimi",
     "createdOn": "23.2.2026 16:05",
     "terminBeimAmt": "",
-    "closingWahrscheinlichkeit": "",
+    "closingWahrscheinlichkeit": "60%",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
-    "hotLead": false,
+    "hotLead": true,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2440,14 +2440,14 @@ export const leads: Lead[] = [
     "vertriebler": "Paul Barbig",
     "createdOn": "23.2.2026 16:42",
     "terminBeimAmt": "9.3.2026",
-    "closingWahrscheinlichkeit": "",
+    "closingWahrscheinlichkeit": "50%",
     "utmTitle": "",
-    "hotLead": false,
+    "hotLead": true,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 103,
@@ -2464,14 +2464,14 @@ export const leads: Lead[] = [
     "vertriebler": "Walid Karimi",
     "createdOn": "23.2.2026 16:47",
     "terminBeimAmt": "4.3.2026",
-    "closingWahrscheinlichkeit": "",
+    "closingWahrscheinlichkeit": "100%",
     "utmTitle": "",
-    "hotLead": false,
+    "hotLead": true,
     "angebotVerschicken": false,
-    "bgVerschickt": "",
-    "anrufversuch": "",
+    "bgVerschickt": "true",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 104,
@@ -2493,9 +2493,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 105,
@@ -2515,11 +2515,11 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 106,
@@ -2563,9 +2563,9 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2589,7 +2589,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2608,14 +2608,14 @@ export const leads: Lead[] = [
     "vertriebler": "Bastian Wuske",
     "createdOn": "26.2.2026 08:59",
     "terminBeimAmt": "",
-    "closingWahrscheinlichkeit": "",
+    "closingWahrscheinlichkeit": "90%",
     "utmTitle": "",
-    "hotLead": false,
-    "angebotVerschicken": false,
+    "hotLead": true,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 110,
@@ -2661,7 +2661,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2685,9 +2685,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 113,
@@ -2707,9 +2707,9 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2733,7 +2733,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2757,7 +2757,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2781,7 +2781,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2805,7 +2805,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2827,11 +2827,11 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 119,
@@ -2853,7 +2853,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2877,7 +2877,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2901,7 +2901,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "10x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2925,9 +2925,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 123,
@@ -2949,7 +2949,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2973,7 +2973,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -2997,7 +2997,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3021,9 +3021,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 127,
@@ -3045,7 +3045,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3064,14 +3064,14 @@ export const leads: Lead[] = [
     "vertriebler": "Walid Karimi",
     "createdOn": "26.2.2026 16:26",
     "terminBeimAmt": "2.3.2026",
-    "closingWahrscheinlichkeit": "",
+    "closingWahrscheinlichkeit": "100%",
     "utmTitle": "",
-    "hotLead": false,
-    "angebotVerschicken": false,
-    "bgVerschickt": "",
+    "hotLead": true,
+    "angebotVerschicken": true,
+    "bgVerschickt": "true",
     "anrufversuch": "",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 129,
@@ -3093,7 +3093,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "10x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3117,7 +3117,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3136,12 +3136,12 @@ export const leads: Lead[] = [
     "vertriebler": "Nele Pfau",
     "createdOn": "26.2.2026 19:29",
     "terminBeimAmt": "",
-    "closingWahrscheinlichkeit": "",
+    "closingWahrscheinlichkeit": "70%",
     "utmTitle": "",
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3165,7 +3165,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3189,7 +3189,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3213,7 +3213,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3237,7 +3237,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3261,7 +3261,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3285,9 +3285,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 138,
@@ -3309,7 +3309,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3333,7 +3333,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3357,7 +3357,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3381,7 +3381,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3405,9 +3405,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 143,
@@ -3429,7 +3429,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3453,7 +3453,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3477,7 +3477,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3498,12 +3498,12 @@ export const leads: Lead[] = [
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
-    "hotLead": false,
-    "angebotVerschicken": false,
+    "hotLead": true,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 147,
@@ -3525,7 +3525,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3549,9 +3549,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 149,
@@ -3573,7 +3573,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3597,7 +3597,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3621,9 +3621,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 152,
@@ -3645,9 +3645,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 153,
@@ -3669,9 +3669,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 154,
@@ -3688,14 +3688,14 @@ export const leads: Lead[] = [
     "vertriebler": "Nele Pfau",
     "createdOn": "1.3.2026 13:47",
     "terminBeimAmt": "",
-    "closingWahrscheinlichkeit": "",
+    "closingWahrscheinlichkeit": "100%",
     "utmTitle": "",
-    "hotLead": false,
+    "hotLead": true,
     "angebotVerschicken": false,
-    "bgVerschickt": "",
-    "anrufversuch": "",
+    "bgVerschickt": "true",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 155,
@@ -3717,7 +3717,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3741,7 +3741,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3762,12 +3762,12 @@ export const leads: Lead[] = [
     "terminBeimAmt": "2.4.2026",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
-    "hotLead": false,
-    "angebotVerschicken": false,
+    "hotLead": true,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 158,
@@ -3789,9 +3789,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 159,
@@ -3813,7 +3813,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3837,7 +3837,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3861,7 +3861,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3885,9 +3885,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 163,
@@ -3909,7 +3909,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3933,7 +3933,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3957,7 +3957,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -3981,7 +3981,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4005,7 +4005,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "10x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4029,7 +4029,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4053,7 +4053,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4074,10 +4074,10 @@ export const leads: Lead[] = [
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
-    "hotLead": false,
-    "angebotVerschicken": false,
+    "hotLead": true,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4101,7 +4101,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4125,7 +4125,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4149,7 +4149,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4173,7 +4173,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4195,11 +4195,11 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
-    "kennenlernDatum": "",
-    "betreuungsart": ""
+    "anrufversuch": "5x nicht erreicht",
+    "kennenlernDatum": "5.3.2026",
+    "betreuungsart": "High Touch"
   },
   {
     "id": 176,
@@ -4221,7 +4221,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4245,7 +4245,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4269,7 +4269,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4293,7 +4293,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4315,9 +4315,9 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4341,7 +4341,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4365,7 +4365,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4389,7 +4389,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4413,7 +4413,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4437,7 +4437,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4458,12 +4458,12 @@ export const leads: Lead[] = [
     "terminBeimAmt": "12.3.2026",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
-    "hotLead": false,
-    "angebotVerschicken": false,
+    "hotLead": true,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
-    "kennenlernDatum": "",
-    "betreuungsart": ""
+    "anrufversuch": "1x nicht erreicht",
+    "kennenlernDatum": "3.3.2026",
+    "betreuungsart": "High Touch"
   },
   {
     "id": 187,
@@ -4485,7 +4485,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4509,7 +4509,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4533,7 +4533,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4555,11 +4555,11 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
-    "kennenlernDatum": "",
-    "betreuungsart": ""
+    "anrufversuch": "1x nicht erreicht",
+    "kennenlernDatum": "4.3.2026",
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 191,
@@ -4581,7 +4581,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4605,9 +4605,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 193,
@@ -4629,7 +4629,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4653,9 +4653,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 195,
@@ -4677,9 +4677,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 196,
@@ -4701,7 +4701,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4725,7 +4725,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4749,9 +4749,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 199,
@@ -4773,7 +4773,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4797,7 +4797,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4821,9 +4821,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 202,
@@ -4845,7 +4845,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4869,7 +4869,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4893,7 +4893,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4917,7 +4917,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4941,9 +4941,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 207,
@@ -4965,7 +4965,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -4989,9 +4989,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 209,
@@ -5013,7 +5013,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5034,12 +5034,12 @@ export const leads: Lead[] = [
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
-    "hotLead": false,
+    "hotLead": true,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 211,
@@ -5061,7 +5061,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5085,9 +5085,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 213,
@@ -5109,7 +5109,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5133,9 +5133,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 215,
@@ -5154,12 +5154,12 @@ export const leads: Lead[] = [
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
-    "hotLead": false,
+    "hotLead": true,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 216,
@@ -5181,9 +5181,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 217,
@@ -5203,9 +5203,9 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5229,9 +5229,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 219,
@@ -5253,7 +5253,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5277,9 +5277,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 221,
@@ -5301,7 +5301,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5325,7 +5325,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5349,7 +5349,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5373,7 +5373,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5395,11 +5395,11 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 226,
@@ -5421,7 +5421,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5445,7 +5445,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5469,7 +5469,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5493,7 +5493,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5517,7 +5517,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5541,7 +5541,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5565,9 +5565,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 233,
@@ -5589,7 +5589,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5613,7 +5613,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5637,7 +5637,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5659,11 +5659,11 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
-    "kennenlernDatum": "",
-    "betreuungsart": ""
+    "anrufversuch": "3x nicht erreicht",
+    "kennenlernDatum": "5.3.2026",
+    "betreuungsart": "High Touch"
   },
   {
     "id": 237,
@@ -5680,14 +5680,14 @@ export const leads: Lead[] = [
     "vertriebler": "Bastian Wuske",
     "createdOn": "4.3.2026 08:19",
     "terminBeimAmt": "",
-    "closingWahrscheinlichkeit": "",
+    "closingWahrscheinlichkeit": "40%",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
-    "kennenlernDatum": "",
-    "betreuungsart": ""
+    "anrufversuch": "1x nicht erreicht",
+    "kennenlernDatum": "4.3.2026",
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 238,
@@ -5709,7 +5709,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5728,14 +5728,14 @@ export const leads: Lead[] = [
     "vertriebler": "Nele Pfau",
     "createdOn": "4.3.2026 10:51",
     "terminBeimAmt": "",
-    "closingWahrscheinlichkeit": "",
+    "closingWahrscheinlichkeit": "Bitte nichtmehr anrufen hier bestand bereits Kontakt wird heute im Laufe des Tages verwaltet",
     "utmTitle": "",
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 240,
@@ -5757,7 +5757,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5781,7 +5781,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5805,7 +5805,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5829,7 +5829,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5853,9 +5853,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 245,
@@ -5877,7 +5877,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5901,7 +5901,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5920,14 +5920,14 @@ export const leads: Lead[] = [
     "vertriebler": "Bastian Wuske",
     "createdOn": "4.3.2026 14:18",
     "terminBeimAmt": "19.3.2026",
-    "closingWahrscheinlichkeit": "",
+    "closingWahrscheinlichkeit": "80%",
     "utmTitle": "",
-    "hotLead": false,
-    "angebotVerschicken": false,
+    "hotLead": true,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
-    "kennenlernDatum": "",
-    "betreuungsart": ""
+    "anrufversuch": "1x nicht erreicht",
+    "kennenlernDatum": "4.3.2026",
+    "betreuungsart": "High Touch"
   },
   {
     "id": 248,
@@ -5949,7 +5949,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5973,7 +5973,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -5992,14 +5992,14 @@ export const leads: Lead[] = [
     "vertriebler": "Walid Karimi",
     "createdOn": "4.3.2026 16:52",
     "terminBeimAmt": "2.3.2026",
-    "closingWahrscheinlichkeit": "",
+    "closingWahrscheinlichkeit": "100%",
     "utmTitle": "",
-    "hotLead": false,
-    "angebotVerschicken": false,
-    "bgVerschickt": "",
-    "anrufversuch": "",
+    "hotLead": true,
+    "angebotVerschicken": true,
+    "bgVerschickt": "true",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 251,
@@ -6021,7 +6021,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6045,7 +6045,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6067,11 +6067,11 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 254,
@@ -6093,7 +6093,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6117,7 +6117,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6141,9 +6141,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 257,
@@ -6165,7 +6165,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6189,7 +6189,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6213,7 +6213,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6234,12 +6234,12 @@ export const leads: Lead[] = [
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
-    "hotLead": false,
+    "hotLead": true,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
-    "kennenlernDatum": "",
-    "betreuungsart": ""
+    "anrufversuch": "1x nicht erreicht",
+    "kennenlernDatum": "9.3.2026",
+    "betreuungsart": "High Touch"
   },
   {
     "id": 261,
@@ -6261,9 +6261,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 262,
@@ -6285,7 +6285,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6309,7 +6309,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6330,10 +6330,10 @@ export const leads: Lead[] = [
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
-    "hotLead": false,
-    "angebotVerschicken": false,
+    "hotLead": true,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6354,12 +6354,12 @@ export const leads: Lead[] = [
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
-    "hotLead": false,
+    "hotLead": true,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 266,
@@ -6381,7 +6381,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6405,7 +6405,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6429,8 +6429,8 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
-    "kennenlernDatum": "",
+    "anrufversuch": "2x nicht erreicht",
+    "kennenlernDatum": "9.3.2026",
     "betreuungsart": ""
   },
   {
@@ -6450,12 +6450,12 @@ export const leads: Lead[] = [
     "terminBeimAmt": "30.6.2026",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
-    "hotLead": false,
+    "hotLead": true,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 270,
@@ -6477,7 +6477,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6501,9 +6501,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 272,
@@ -6523,11 +6523,11 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
-    "kennenlernDatum": "",
-    "betreuungsart": ""
+    "anrufversuch": "2x nicht erreicht",
+    "kennenlernDatum": "5.3.2026",
+    "betreuungsart": "High Touch"
   },
   {
     "id": 273,
@@ -6547,11 +6547,11 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 274,
@@ -6571,11 +6571,11 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 275,
@@ -6597,8 +6597,8 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
-    "kennenlernDatum": "",
+    "anrufversuch": "3x nicht erreicht",
+    "kennenlernDatum": "5.3.2026",
     "betreuungsart": ""
   },
   {
@@ -6621,7 +6621,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6645,7 +6645,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6669,7 +6669,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6693,7 +6693,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6717,8 +6717,8 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
-    "kennenlernDatum": "",
+    "anrufversuch": "2x nicht erreicht",
+    "kennenlernDatum": "10.3.2026",
     "betreuungsart": ""
   },
   {
@@ -6741,7 +6741,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6765,7 +6765,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6789,7 +6789,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6813,7 +6813,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6837,7 +6837,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6861,7 +6861,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6885,9 +6885,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 288,
@@ -6909,7 +6909,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6933,7 +6933,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6957,7 +6957,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -6981,7 +6981,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7005,7 +7005,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7029,7 +7029,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7051,10 +7051,10 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
-    "kennenlernDatum": "",
+    "anrufversuch": "2x nicht erreicht",
+    "kennenlernDatum": "6.3.2026",
     "betreuungsart": ""
   },
   {
@@ -7077,7 +7077,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7098,12 +7098,12 @@ export const leads: Lead[] = [
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
-    "hotLead": false,
-    "angebotVerschicken": false,
+    "hotLead": true,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
-    "kennenlernDatum": "",
-    "betreuungsart": ""
+    "anrufversuch": "1x nicht erreicht",
+    "kennenlernDatum": "6.3.2026",
+    "betreuungsart": "High Touch"
   },
   {
     "id": 297,
@@ -7125,7 +7125,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7149,7 +7149,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7173,9 +7173,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 300,
@@ -7197,7 +7197,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7221,7 +7221,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7245,7 +7245,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7269,7 +7269,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7290,12 +7290,12 @@ export const leads: Lead[] = [
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
-    "hotLead": false,
+    "hotLead": true,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "10x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 305,
@@ -7317,7 +7317,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7341,7 +7341,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7365,7 +7365,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7389,7 +7389,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7413,7 +7413,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7437,7 +7437,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7461,7 +7461,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7485,9 +7485,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 313,
@@ -7509,7 +7509,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7533,7 +7533,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7557,7 +7557,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7581,7 +7581,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7605,7 +7605,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7629,7 +7629,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7653,7 +7653,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7677,7 +7677,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7701,7 +7701,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7725,7 +7725,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7749,7 +7749,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7773,7 +7773,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7797,9 +7797,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 326,
@@ -7821,7 +7821,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7845,9 +7845,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 328,
@@ -7869,7 +7869,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7893,7 +7893,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7917,7 +7917,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7941,7 +7941,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -7965,9 +7965,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 333,
@@ -7987,11 +7987,11 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
-    "kennenlernDatum": "",
-    "betreuungsart": ""
+    "anrufversuch": "1x nicht erreicht",
+    "kennenlernDatum": "9.3.2026",
+    "betreuungsart": "High Touch"
   },
   {
     "id": 334,
@@ -8013,7 +8013,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -8034,12 +8034,12 @@ export const leads: Lead[] = [
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
-    "hotLead": false,
+    "hotLead": true,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 336,
@@ -8061,7 +8061,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -8085,7 +8085,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -8109,7 +8109,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -8133,7 +8133,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -8155,11 +8155,11 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 341,
@@ -8181,7 +8181,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -8205,7 +8205,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -8226,12 +8226,12 @@ export const leads: Lead[] = [
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
-    "hotLead": false,
-    "angebotVerschicken": false,
+    "hotLead": true,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 344,
@@ -8253,7 +8253,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -8277,7 +8277,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -8301,7 +8301,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -8322,12 +8322,12 @@ export const leads: Lead[] = [
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
-    "hotLead": false,
-    "angebotVerschicken": false,
+    "hotLead": true,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 348,
@@ -8349,7 +8349,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -8370,12 +8370,12 @@ export const leads: Lead[] = [
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
-    "hotLead": false,
-    "angebotVerschicken": false,
+    "hotLead": true,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
-    "kennenlernDatum": "",
-    "betreuungsart": ""
+    "anrufversuch": "1x nicht erreicht",
+    "kennenlernDatum": "9.3.2026",
+    "betreuungsart": "High Touch"
   },
   {
     "id": 350,
@@ -8395,11 +8395,11 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 351,
@@ -8421,8 +8421,8 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
-    "kennenlernDatum": "",
+    "anrufversuch": "1x nicht erreicht",
+    "kennenlernDatum": "9.3.2026",
     "betreuungsart": ""
   },
   {
@@ -8445,7 +8445,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -8469,8 +8469,8 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
-    "kennenlernDatum": "",
+    "anrufversuch": "2x nicht erreicht",
+    "kennenlernDatum": "9.3.2026",
     "betreuungsart": ""
   },
   {
@@ -8491,11 +8491,11 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch"
   },
   {
     "id": 355,
@@ -8517,8 +8517,8 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
-    "kennenlernDatum": "",
+    "anrufversuch": "1x nicht erreicht",
+    "kennenlernDatum": "9.3.2026",
     "betreuungsart": ""
   },
   {
@@ -8541,7 +8541,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -8565,9 +8565,9 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch"
   },
   {
     "id": 358,
@@ -8589,7 +8589,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -8613,7 +8613,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -8637,7 +8637,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -8661,7 +8661,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -8685,7 +8685,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -8709,7 +8709,7 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   },
@@ -8733,7 +8733,79 @@ export const leads: Lead[] = [
     "hotLead": false,
     "angebotVerschicken": false,
     "bgVerschickt": "",
-    "anrufversuch": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": ""
+  },
+  {
+    "id": 365,
+    "name": "Kristin Seifert",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Facebook",
+    "arbeitslosGemeldet": "Nein, aber in den nächsten 3 Monaten",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "46 – 60 Jahre",
+    "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "10.3.2026 05:51",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": ""
+  },
+  {
+    "id": 366,
+    "name": "Christine Rinnert",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Facebook",
+    "arbeitslosGemeldet": "Nein, aber in den nächsten 3 Monaten",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "25 – 45 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "10.3.2026 06:23",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": ""
+  },
+  {
+    "id": 367,
+    "name": "Jennifer Conrad",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Instagram",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "25 – 45 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "10.3.2026 07:21",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
   }
