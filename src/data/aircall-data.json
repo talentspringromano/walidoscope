@@ -20,17 +20,17 @@
     {
       "name": "Nele Pfau",
       "userId": 1862427,
-      "outboundCalls": 327,
+      "outboundCalls": 325,
       "inboundCalls": 15,
-      "answeredCalls": 342,
+      "answeredCalls": 340,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 56204,
-      "avgDurationSec": 164,
+      "totalDurationSec": 56168,
+      "avgDurationSec": 165,
       "longestCallSec": 2126,
       "reachabilityPct": 100,
-      "callsPerDay": 26.3,
-      "totalCalls": 342,
+      "callsPerDay": 26.2,
+      "totalCalls": 340,
       "firstCallDate": "2026-02-25",
       "lastCallDate": "2026-03-09"
     },
@@ -89,9 +89,9 @@
   "daily": [
     {
       "date": "2026-02-25",
-      "dials": 11,
-      "reached": 11,
-      "calltimeSec": 234
+      "dials": 9,
+      "reached": 9,
+      "calltimeSec": 198
     },
     {
       "date": "2026-02-26",
@@ -152,9 +152,9 @@
     {
       "seller": "Nele Pfau",
       "date": "2026-02-25",
-      "dials": 11,
-      "reached": 11,
-      "calltimeSec": 234
+      "dials": 9,
+      "reached": 9,
+      "calltimeSec": 198
     },
     {
       "seller": "Michel Grosser",
@@ -374,5 +374,5 @@
       "calltimeSec": 4179
     }
   ],
-  "fetchedAt": "2026-03-10T05:04:48.135Z"
+  "fetchedAt": "2026-03-10T08:01:33.144Z"
 }
