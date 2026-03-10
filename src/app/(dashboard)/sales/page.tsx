@@ -169,7 +169,7 @@ export default function SalesPage() {
     });
 
     const angebotLeads = filtered.filter(
-      (l) => l.dealStatus === "Angebot schicken" || l.leadStatus === "Beratungsgespräch gebucht"
+      (l) => l.angebotVerschicken
     );
     const pipelineLeads = filtered.filter(
       (l) =>
@@ -315,7 +315,7 @@ export default function SalesPage() {
       const seg = classifyLead(l);
       const entry = pipelineWeekMap.get(wk) ?? {};
       entry[seg] = (entry[seg] || 0) + 1;
-      if (l.dealStatus === "Angebot schicken" || l.leadStatus === "Beratungsgespräch gebucht") {
+      if (l.angebotVerschicken) {
         entry["Angebote"] = (entry["Angebote"] || 0) + 1;
       }
       pipelineWeekMap.set(wk, entry);
@@ -614,7 +614,7 @@ export default function SalesPage() {
                       {l.leadStatus}
                     </span>
                   </td>
-                  <td className="pl-4 text-[13px] text-[#a8a29e]">{l.dealStatus}</td>
+                  <td className="pl-4 text-[13px] text-[#a8a29e]">{l.angebotVerschicken ? "Angebot verschickt" : "—"}</td>
                   <td className="pl-4 text-[13px] text-[#fafaf9] font-medium">{l.vertriebler}</td>
                   <td className="text-right pr-5 tabular-nums text-[#e2a96e] font-medium text-[13px]">{l.closingWahrscheinlichkeit || "—"}</td>
                   <td className="text-right pr-2 tabular-nums text-[12px] text-[#57534e]">{l.createdOn}</td>

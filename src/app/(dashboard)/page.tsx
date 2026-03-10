@@ -186,7 +186,7 @@ export default function OverviewPage() {
         const lowTouchAngebote = wl.filter(
           (l) =>
             classifyLead(l) === "Low-Touch" &&
-            (l.dealStatus === "Angebot schicken" || l.leadStatus === "Beratungsgespräch gebucht")
+            l.angebotVerschicken
         ).length;
         const kostenProHighTouch = highTouch > 0 ? weeklySpend / highTouch : 0;
         const termineAmt = wl.filter(

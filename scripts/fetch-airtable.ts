@@ -93,7 +93,6 @@ function mapRecord(record: AirtableRecord, index: number) {
     id: index + 1,
     name: str(f["Name"]),
     leadStatus: str(f["Status"]) || str(f["Lead - Status"]),
-    dealStatus: str(f["Deal - Status"]) || str(f["Deal Status"]),
     verlustgrund: str(f["Verlustgrund"]),
     adId: str(f["Ad ID"]),
     adName: str(f["Ad Name"]),
@@ -105,8 +104,14 @@ function mapRecord(record: AirtableRecord, index: number) {
     vertriebler: str(f["Zuständiger Vertriebler"]),
     createdOn: formatDateDE(f["Datum - Created on"] || f["Timestamp - Created on"] || record.createdTime),
     terminBeimAmt: formatDateShort(f["Termin beim Amt"]),
-    closingWahrscheinlichkeit: str(f["Closing Wahrscheinlichkeit"]),
+    closingWahrscheinlichkeit: str(f["Closing Chance"]),
     utmTitle: str(f["utm_title"]),
+    hotLead: f["Hot Lead"] === "checked" || f["Hot Lead"] === true,
+    angebotVerschicken: f["Angebot verschicken"] === "checked" || f["Angebot verschicken"] === true,
+    bgVerschickt: str(f["BG verschickt"]),
+    anrufversuch: str(f["Anrufversuch"]),
+    kennenlernDatum: formatDateShort(f["Datum - Kennenlerngespräch am"]),
+    betreuungsart: str(f["Prozess - Betreuungsart"]),
   };
 }
 

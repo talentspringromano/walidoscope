@@ -23,9 +23,8 @@ export type LeadStatus =
   | "Kennenlerngespräch gebucht"
   | "Beratungsgespräch gebucht"
   | "Gewonnen"
-  | "Verloren";
-
-export type DealStatus = "Neuer Lead" | "Angebot schicken" | "";
+  | "Verloren"
+  | "Onboarding";
 
 export type Platform = "Facebook" | "Instagram" | "Kursnet" | "Indeed" | "Unsicher" | "";
 
@@ -33,7 +32,6 @@ export interface Lead {
   id: number;
   name: string;
   leadStatus: LeadStatus;
-  dealStatus: DealStatus;
   verlustgrund: string;
   adId: string;
   adName: string;
@@ -47,6 +45,12 @@ export interface Lead {
   terminBeimAmt: string;
   closingWahrscheinlichkeit: string;
   utmTitle: string;
+  hotLead: boolean;
+  angebotVerschicken: boolean;
+  bgVerschickt: string;
+  anrufversuch: string;
+  kennenlernDatum: string;
+  betreuungsart: string;
 }
 
 export interface PerspectiveVisit {
