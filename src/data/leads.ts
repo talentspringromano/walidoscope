@@ -9336,5 +9336,29 @@ export const leads: Lead[] = [
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": ""
+  },
+  {
+    "id": 390,
+    "name": "Sibel Asani",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "",
+    "adName": "",
+    "platform": "Indeed",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "Keine Angabe",
+    "vorerfahrung": "",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "11.3.2026 06:43",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": ""
   }
 ];
