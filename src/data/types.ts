@@ -54,6 +54,7 @@ export interface Lead {
   kennenlernDatum: string;
   betreuungsart: string;
   lastModified?: string;
+  angebotsprozessDatum?: string;
 }
 
 export interface PerspectiveVisit {

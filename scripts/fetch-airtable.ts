@@ -115,6 +115,7 @@ function mapRecord(record: AirtableRecord, index: number) {
     kennenlernDatum: formatDateShort(f["Datum - Kennenlerngespräch am"]),
     betreuungsart: str(f["Prozess - Betreuungsart"]),
     lastModified: formatDateDE(f["Datum - Last modified"]),
+    angebotsprozessDatum: formatDateDE(f["Datum - Last modified - Angebotsprozess"]),
   };
 }
 

@@ -115,6 +115,7 @@ export default function SalesPage() {
     erreichbarkeit, attemptDistribution, reachWeeklyData,
     staleStageData, totalStale,
     htOhneAmtWithDays,
+    angebotWeeklyData,
   } = useMemo(() => {
     const filtered = filterLeadsByRange(leads, range);
 
@@ -179,6 +180,31 @@ export default function SalesPage() {
     const angebotLeads = filtered.filter(
       (l) => l.angebotVerschicken
     );
+
+    // Angebote pro KW — nur Leads wo angebotsprozessDatum !== createdOn
+    const angebotWeekMap = new Map<number, { htMitAmt: number; htOhneAmt: number; lt: number }>();
+    filtered.forEach((l) => {
+      if (!l.angebotsprozessDatum || l.angebotsprozessDatum === l.createdOn) return;
+      const date = parseDE(l.angebotsprozessDatum);
+      if (isNaN(date.getTime())) return;
+      const wk = getISOWeek(date);
+      const entry = angebotWeekMap.get(wk) ?? { htMitAmt: 0, htOhneAmt: 0, lt: 0 };
+      const isHT = l.prozessStarten.includes("High Touch") || l.betreuungsart === "High Touch";
+      const isLT = l.prozessStarten.includes("Low Touch") || l.betreuungsart === "Low Touch";
+      if (isHT && l.terminBeimAmtCheck) entry.htMitAmt++;
+      else if (isHT) entry.htOhneAmt++;
+      else if (isLT) entry.lt++;
+      angebotWeekMap.set(wk, entry);
+    });
+    const angebotWeeklyData = Array.from(angebotWeekMap.entries())
+      .sort((a, b) => a[0] - b[0])
+      .map(([wk, counts]) => ({
+        week: `KW ${wk}`,
+        "HT + Amt": counts.htMitAmt,
+        "HT ohne Amt": counts.htOhneAmt,
+        "Low-Touch": counts.lt,
+      }));
+
     const pipelineLeads = filtered.filter(
       (l) =>
         l.leadStatus === "Vertriebsqualifiziert" ||
@@ -472,6 +498,7 @@ export default function SalesPage() {
       erreichbarkeit, attemptDistribution, reachWeeklyData,
       staleStageData, totalStale,
       htOhneAmtWithDays,
+      angebotWeeklyData,
     };
   }, [range]);
 
@@ -1268,6 +1295,24 @@ export default function SalesPage() {
           </table>
         </div>
       </SectionCard>
+
+      {/* Angebote rausgeschickt pro KW */}
+      {angebotWeeklyData.length > 0 && (
+        <SectionCard title="Angebote rausgeschickt pro KW">
+          <ResponsiveContainer width="100%" height={300}>
+            <BarChart data={angebotWeeklyData} barCategoryGap="20%" margin={{ left: 0, right: 10 }}>
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
+              <XAxis dataKey="week" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+              <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} allowDecimals={false} />
+              <Tooltip {...TOOLTIP_STYLE} />
+              <Legend wrapperStyle={{ fontSize: 11, color: "#78716c" }} />
+              <Bar dataKey="HT + Amt" stackId="a" fill="#5eead4" />
+              <Bar dataKey="HT ohne Amt" stackId="a" fill="#f87171" />
+              <Bar dataKey="Low-Touch" stackId="a" fill="#a78bfa" radius={[4, 4, 0, 0]} />
+            </BarChart>
+          </ResponsiveContainer>
+        </SectionCard>
+      )}
 
       {/* Amt-Termine (always real-date-based, independent of range filter) */}
       <SectionCard title="Amt-Termine">
