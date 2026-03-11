@@ -8,7 +8,7 @@ import { TargetTracker } from "@/components/target-tracker";
 import { leads } from "@/data/leads";
 import { aircallSellers, aircallSellerDaily, aircallFetchedAt, formatDuration } from "@/data/aircall";
 import { TOOLTIP_STYLE, AXIS_STYLE, PALETTE, SELLER_BAR_COLORS } from "@/components/chart-theme";
-import { Phone, PhoneOutgoing, PhoneIncoming, Clock, ArrowUpDown, ArrowUp, ArrowDown, AlertTriangle } from "lucide-react";
+import { Phone, PhoneOutgoing, PhoneIncoming, Clock, ArrowUpDown, ArrowUp, ArrowDown, AlertTriangle, XCircle } from "lucide-react";
 import {
   BarChart,
   Bar,
@@ -65,6 +65,17 @@ function sellerStats(name: string, leadsSubset: typeof leads) {
     return daysSince >= STALE_THRESHOLD_DAYS;
   }).length;
 
+  // Verlustgründe
+  const verlorenLeads = sellerLeads.filter((l) => l.leadStatus === "Verloren");
+  const verlustgruende: Record<string, number> = {};
+  verlorenLeads.forEach((l) => {
+    const grund = l.verlustgrund || "Kein Grund angegeben";
+    verlustgruende[grund] = (verlustgruende[grund] || 0) + 1;
+  });
+  const topVerlustgruende = Object.entries(verlustgruende)
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 3);
+
   // Reachability from daily data
   const sellerDailyEntries = aircallSellerDaily.filter((e) => e.seller === name);
   const totalDials = sellerDailyEntries.reduce((sum, e) => sum + e.dials, 0);
@@ -98,6 +109,7 @@ function sellerStats(name: string, leadsSubset: typeof leads) {
     touchTotal,
     staleLeads,
     activeLeadsCount: activeLeads.length,
+    topVerlustgruende,
   };
 }
 
@@ -475,9 +487,26 @@ export default function SellerPage() {
                     </div>
                     <div className="text-[10px] text-[#57534e]">
                       {s.activeLeadsCount > 0
-                        ? `${((s.staleLeads / s.activeLeadsCount) * 100).toFixed(0)}% der aktiven Leads`
+                        ? `${s.staleLeads} von ${s.activeLeadsCount} aktiven Leads`
                         : "–"}
                     </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Top Verlustgründe */}
+              {s.verloren > 0 && s.topVerlustgruende.length > 0 && (
+                <div className="mb-5">
+                  <h3 className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#57534e] mb-3 flex items-center gap-1.5">
+                    <XCircle className="h-3 w-3" /> Top Verlustgründe
+                  </h3>
+                  <div className="space-y-1.5">
+                    {s.topVerlustgruende.map(([grund, count]) => (
+                      <div key={grund} className="flex items-center justify-between py-1.5 px-3 rounded-lg bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.03)]">
+                        <span className="text-[11px] text-[#a8a29e] truncate mr-2">{grund}</span>
+                        <span className="text-[13px] font-semibold tabular-nums text-[#f87171] shrink-0">{count}</span>
+                      </div>
+                    ))}
                   </div>
                 </div>
               )}
