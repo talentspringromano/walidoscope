@@ -1024,8 +1024,8 @@ export default function SalesPage() {
                     <th className="text-left pl-2">Name</th>
                     <th className="text-left pl-4">Status</th>
                     <th className="text-left pl-4">Vertriebler</th>
-                    <th className="text-right pr-8">Tage ohne Aktivität</th>
-                    <th className="text-left pl-6">Angebot</th>
+                    <th className="text-right pr-6 w-[180px]">Tage ohne Aktivität</th>
+                    <th className="text-center w-[80px]">Angebot</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -1038,7 +1038,7 @@ export default function SalesPage() {
                         </span>
                       </td>
                       <td className="pl-4 text-[13px] text-[#fafaf9] font-medium">{l.vertriebler}</td>
-                      <td className="text-right pr-8 tabular-nums text-[13px] font-medium">
+                      <td className="text-right pr-6 tabular-nums text-[13px] font-medium">
                         <span className={
                           l.daysSince === null ? "text-[#57534e]"
                             : l.daysSince <= 3 ? "text-[#5eead4]"
@@ -1048,7 +1048,7 @@ export default function SalesPage() {
                           {l.daysSince !== null ? `${l.daysSince}d` : "—"}
                         </span>
                       </td>
-                      <td className="pl-6 text-[13px]">
+                      <td className="text-center text-[13px]">
                         {l.angebotVerschicken
                           ? <span className="text-[#5eead4]">Ja</span>
                           : <span className="text-[#57534e]">Nein</span>
