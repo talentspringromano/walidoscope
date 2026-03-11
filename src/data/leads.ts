@@ -2636,8 +2636,8 @@ export const leads: Lead[] = [
   {
     "id": 95,
     "name": "Tanja Anders",
-    "leadStatus": "Rückruf",
-    "verlustgrund": "",
+    "leadStatus": "Verloren",
+    "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
     "adId": "120240346581020128",
     "adName": "C7 - Aktuell arbeitslos und Vorerfahrung HR",
     "platform": "Instagram",
@@ -2650,15 +2650,15 @@ export const leads: Lead[] = [
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
-    "hotLead": false,
+    "hotLead": true,
     "angebotVerschicken": false,
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "7x nicht erreicht",
+    "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "11.3.2026 13:28",
+    "lastModified": "11.3.2026 14:52",
     "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
@@ -3042,15 +3042,15 @@ export const leads: Lead[] = [
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "90%",
     "utmTitle": "",
-    "hotLead": true,
+    "hotLead": false,
     "angebotVerschicken": true,
     "prozessStarten": "Angebot wurde erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "7x nicht erreicht",
+    "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "High Touch",
-    "lastModified": "11.3.2026 13:38",
+    "lastModified": "11.3.2026 14:55",
     "angebotsprozessDatum": "4.3.2026 15:41"
   },
   {
@@ -5567,10 +5567,10 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "5x nicht erreicht",
+    "anrufversuch": "6x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "11.3.2026 13:34",
+    "lastModified": "11.3.2026 14:55",
     "angebotsprozessDatum": "3.3.2026 16:14"
   },
   {
@@ -7499,10 +7499,10 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "5x nicht erreicht",
+    "anrufversuch": "6x nicht erreicht",
     "kennenlernDatum": "9.3.2026",
     "betreuungsart": "",
-    "lastModified": "11.3.2026 13:39",
+    "lastModified": "11.3.2026 14:53",
     "angebotsprozessDatum": "5.3.2026 09:38"
   },
   {
@@ -7639,10 +7639,10 @@ export const leads: Lead[] = [
     "prozessStarten": "Angebot wurde erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "4x nicht erreicht",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "Low Touch",
-    "lastModified": "11.3.2026 13:39",
+    "lastModified": "11.3.2026 14:53",
     "angebotsprozessDatum": "5.3.2026 15:33"
   },
   {
@@ -7922,7 +7922,7 @@ export const leads: Lead[] = [
     "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "11.3.2026 13:48",
+    "lastModified": "11.3.2026 14:42",
     "angebotsprozessDatum": "6.3.2026 06:21"
   },
   {
@@ -7975,10 +7975,10 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "4x nicht erreicht",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "11.3.2026 13:41",
+    "lastModified": "11.3.2026 14:54",
     "angebotsprozessDatum": "6.3.2026 07:18"
   },
   {
@@ -8227,10 +8227,10 @@ export const leads: Lead[] = [
     "prozessStarten": "High Touch - Angebot erstellen",
     "terminBeimAmtCheck": true,
     "bgVerschickt": "",
-    "anrufversuch": "4x nicht erreicht",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "6.3.2026",
     "betreuungsart": "",
-    "lastModified": "11.3.2026 13:42",
+    "lastModified": "11.3.2026 14:55",
     "angebotsprozessDatum": "6.3.2026 16:32"
   },
   {
@@ -8282,11 +8282,11 @@ export const leads: Lead[] = [
     "angebotVerschicken": true,
     "prozessStarten": "Angebot wurde erstellt",
     "terminBeimAmtCheck": false,
-    "bgVerschickt": "",
+    "bgVerschickt": "true",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "6.3.2026",
     "betreuungsart": "High Touch",
-    "lastModified": "11.3.2026 14:37",
+    "lastModified": "11.3.2026 15:05",
     "angebotsprozessDatum": "6.3.2026 15:21"
   },
   {
@@ -8314,7 +8314,7 @@ export const leads: Lead[] = [
     "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "11.3.2026 13:48",
+    "lastModified": "11.3.2026 14:42",
     "angebotsprozessDatum": "6.3.2026 16:00"
   },
   {
@@ -8566,7 +8566,7 @@ export const leads: Lead[] = [
     "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "11.3.2026 13:49",
+    "lastModified": "11.3.2026 14:42",
     "angebotsprozessDatum": "7.3.2026 10:21"
   },
   {
@@ -8790,7 +8790,7 @@ export const leads: Lead[] = [
     "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "11.3.2026 13:50",
+    "lastModified": "11.3.2026 14:42",
     "angebotsprozessDatum": "7.3.2026 18:43"
   },
   {
@@ -8986,7 +8986,7 @@ export const leads: Lead[] = [
     "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "11.3.2026 13:57",
+    "lastModified": "11.3.2026 14:42",
     "angebotsprozessDatum": "8.3.2026 07:52"
   },
   {
@@ -9014,7 +9014,7 @@ export const leads: Lead[] = [
     "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "11.3.2026 13:55",
+    "lastModified": "11.3.2026 14:42",
     "angebotsprozessDatum": "8.3.2026 15:47"
   },
   {
@@ -9067,10 +9067,10 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "11.3.2026 13:42",
+    "lastModified": "11.3.2026 14:46",
     "angebotsprozessDatum": "8.3.2026 19:58"
   },
   {
@@ -9266,7 +9266,7 @@ export const leads: Lead[] = [
     "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "11.3.2026 14:37",
+    "lastModified": "11.3.2026 14:39",
     "angebotsprozessDatum": "9.3.2026 06:03"
   },
   {
@@ -9938,7 +9938,7 @@ export const leads: Lead[] = [
     "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "11.3.2026 13:54",
+    "lastModified": "11.3.2026 14:43",
     "angebotsprozessDatum": "9.3.2026 17:59"
   },
   {
@@ -10050,7 +10050,7 @@ export const leads: Lead[] = [
     "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "11.3.2026 13:59",
+    "lastModified": "11.3.2026 14:43",
     "angebotsprozessDatum": "9.3.2026 19:06"
   },
   {
@@ -10666,7 +10666,7 @@ export const leads: Lead[] = [
     "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "11.3.2026 13:53",
+    "lastModified": "11.3.2026 14:42",
     "angebotsprozessDatum": "10.3.2026 16:09"
   },
   {
@@ -10915,10 +10915,10 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "2x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "11.3.2026 14:13",
+    "lastModified": "11.3.2026 14:40",
     "angebotsprozessDatum": "11.3.2026 06:43"
   },
   {
@@ -11086,7 +11086,7 @@ export const leads: Lead[] = [
     "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "11.3.2026 13:58",
+    "lastModified": "11.3.2026 14:43",
     "angebotsprozessDatum": "11.3.2026 11:11"
   },
   {
@@ -11139,10 +11139,10 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "1x nicht erreicht",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "11.3.2026 14:13",
+    "lastModified": "11.3.2026 14:41",
     "angebotsprozessDatum": "11.3.2026 12:39"
   },
   {
@@ -11167,10 +11167,10 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "1x nicht erreicht",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "11.3.2026 14:13",
+    "lastModified": "11.3.2026 14:42",
     "angebotsprozessDatum": "11.3.2026 12:39"
   },
   {
@@ -11195,10 +11195,10 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "1x nicht erreicht",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "11.3.2026 13:52",
+    "lastModified": "11.3.2026 14:43",
     "angebotsprozessDatum": "11.3.2026 13:16"
   },
   {
@@ -11279,10 +11279,10 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "1x nicht erreicht",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "11.3.2026 13:51",
+    "lastModified": "11.3.2026 14:44",
     "angebotsprozessDatum": "11.3.2026 13:50"
   }
 ];
