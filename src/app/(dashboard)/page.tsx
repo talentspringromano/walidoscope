@@ -413,7 +413,10 @@ export default function OverviewPage() {
                 <th className="text-right">HT</th>
                 <th className="text-right">HT+Amt</th>
                 <th className="text-right">HT−Amt</th>
-                <th className="text-right pr-2">LT</th>
+                <th className="text-right">LT</th>
+                <th className="text-right">Gewonnen</th>
+                <th className="text-right">Verloren</th>
+                <th className="text-right pr-2">Conv%</th>
               </tr>
             </thead>
             <tbody>
@@ -425,7 +428,10 @@ export default function OverviewPage() {
                   <td className="text-right">{w.ht}</td>
                   <td className="text-right">{w.htMitAmt}</td>
                   <td className="text-right">{w.htOhneAmt}</td>
-                  <td className="text-right pr-2">{w.lt}</td>
+                  <td className="text-right">{w.lt}</td>
+                  <td className="text-right">{w.won}</td>
+                  <td className="text-right">{w.lost}</td>
+                  <td className="text-right pr-2">{w.conversionRate.toFixed(1)}%</td>
                 </tr>
               ))}
             </tbody>
