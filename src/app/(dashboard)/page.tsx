@@ -182,7 +182,7 @@ export default function OverviewPage() {
         const cpl = totalLeads > 0 ? weeklySpend / totalLeads : 0;
         const cpa = won > 0 ? weeklySpend / won : 0;
         // Exklusive Zuordnung: jeder Lead in genau einer Kategorie
-        let nAngr = 0, nErr = 0, sql = 0, htMitAmt = 0, htOhneAmt = 0, lt = 0;
+        let nAngr = 0, nErr = 0, oProz = 0, htMitAmt = 0, htOhneAmt = 0, lt = 0;
         wl.forEach((l) => {
           if (l.leadStatus === "Gewonnen") { /* won already counted */ }
           else if (l.leadStatus === "Verloren") { /* lost already counted */ }
@@ -190,10 +190,11 @@ export default function OverviewPage() {
             if (l.terminBeimAmtCheck) htMitAmt++; else htOhneAmt++;
           }
           else if (l.prozessStarten.includes("Low Touch") || l.betreuungsart === "Low Touch") { lt++; }
-          else if (["Vertriebsqualifiziert", "Reterminierung", "Kennenlerngespräch gebucht", "Beratungsgespräch gebucht"].includes(l.leadStatus)) { sql++; }
+          else if (["Vertriebsqualifiziert", "Reterminierung", "Kennenlerngespräch gebucht", "Beratungsgespräch gebucht"].includes(l.leadStatus)) { oProz++; }
           else if (l.anrufversuch.includes("nicht erreicht")) { nErr++; }
           else { nAngr++; }
         });
+        const sql = htMitAmt + htOhneAmt + lt + oProz;
 
         return {
           week: `KW ${weekNum}`,
@@ -212,6 +213,7 @@ export default function OverviewPage() {
           htMitAmt,
           htOhneAmt,
           lt,
+          oProz,
           "Neuer Lead": wl.filter((l) => l.leadStatus === "Neuer Lead").length,
           Rückruf: wl.filter((l) => l.leadStatus === "Rückruf").length,
           Qualifiziert: wl.filter((l) => l.leadStatus === "Vertriebsqualifiziert").length,
@@ -418,6 +420,7 @@ export default function OverviewPage() {
                 <th className="text-right">HT+Amt</th>
                 <th className="text-right">HT−Amt</th>
                 <th className="text-right">LT</th>
+                <th className="text-right">o.Proz.</th>
                 <th className="text-right">Gew</th>
                 <th className="text-right">Verl</th>
                 <th className="text-right pr-2">Conv%</th>
@@ -434,6 +437,7 @@ export default function OverviewPage() {
                   <td className="text-right">{w.htMitAmt}</td>
                   <td className="text-right">{w.htOhneAmt}</td>
                   <td className="text-right">{w.lt}</td>
+                  <td className="text-right">{w.oProz}</td>
                   <td className="text-right">{w.won}</td>
                   <td className="text-right">{w.lost}</td>
                   <td className="text-right pr-2">{w.conversionRate.toFixed(1)}%</td>
