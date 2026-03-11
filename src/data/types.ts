@@ -53,6 +53,7 @@ export interface Lead {
   anrufversuch: string;
   kennenlernDatum: string;
   betreuungsart: string;
+  lastModified?: string;
 }
 
 export interface PerspectiveVisit {

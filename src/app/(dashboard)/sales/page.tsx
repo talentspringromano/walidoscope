@@ -92,6 +92,8 @@ const PRIORITY_STYLES: Record<Priority, { badge: string; border: string; bg: str
 const PRIORITY_LABELS: Record<Priority, string> = { high: "Hoch", medium: "Mittel", low: "Niedrig" };
 
 const STATUS_BADGE: Record<string, string> = {
+  "Neuer Lead": "bg-[rgba(129,140,248,0.12)] text-[#818cf8]",
+  "Rückruf": "bg-[rgba(251,191,36,0.12)] text-[#fbbf24]",
   "Vertriebsqualifiziert": "bg-[rgba(226,169,110,0.12)] text-[#e2a96e]",
   "Reterminierung": "bg-[rgba(167,139,250,0.12)] text-[#a78bfa]",
   "Kennenlerngespräch gebucht": "bg-[rgba(94,234,212,0.12)] text-[#5eead4]",
@@ -111,6 +113,7 @@ export default function SalesPage() {
     funnelStages,
     nochNichtAngerufen, nichtErreichtLeads, erreichtLeads,
     erreichbarkeit, attemptDistribution, reachWeeklyData,
+    staleStageData, totalStale,
   } = useMemo(() => {
     const filtered = filterLeadsByRange(leads, range);
 
@@ -225,19 +228,34 @@ export default function SalesPage() {
       });
     }
 
-    const staleLeads = filtered.filter((l) => {
-      if (l.leadStatus !== "Neuer Lead" && l.leadStatus !== "Rückruf") return false;
-      const created = parseDE(l.createdOn);
-      if (isNaN(created.getTime())) return false;
-      const daysSince = (today.getTime() - created.getTime()) / (1000 * 60 * 60 * 24);
-      return daysSince > 14;
+    const STALE_THRESHOLD_DAYS = 3;
+    const activeStages: string[] = ["Neuer Lead", "Rückruf", "Vertriebsqualifiziert", "Reterminierung",
+      "Kennenlerngespräch gebucht", "Beratungsgespräch gebucht"];
+
+    const staleByStage = new Map<string, { total: number; sellers: Record<string, number> }>();
+    filtered.forEach((l) => {
+      if (!activeStages.includes(l.leadStatus)) return;
+      const lastActivity = l.lastModified ? parseDE(l.lastModified) : parseDE(l.createdOn);
+      if (isNaN(lastActivity.getTime())) return;
+      const daysSince = (today.getTime() - lastActivity.getTime()) / (1000 * 60 * 60 * 24);
+      if (daysSince < STALE_THRESHOLD_DAYS) return;
+      const entry = staleByStage.get(l.leadStatus) ?? { total: 0, sellers: {} };
+      entry.total++;
+      const seller = l.vertriebler || "Unbekannt";
+      entry.sellers[seller] = (entry.sellers[seller] || 0) + 1;
+      staleByStage.set(l.leadStatus, entry);
     });
-    if (staleLeads.length > 0) {
+    const totalStale = Array.from(staleByStage.values()).reduce((s, e) => s + e.total, 0);
+    const staleStageData = statusOrder
+      .filter((s) => staleByStage.has(s))
+      .map((s) => ({ stage: s, ...staleByStage.get(s)! }));
+
+    if (totalStale > 0) {
       recommendations.push({
         icon: <Clock className="h-4 w-4" />,
         priority: "high",
-        title: `${staleLeads.length} Leads seit >2 Wochen ohne Fortschritt`,
-        detail: `${staleLeads.length} Leads stehen seit über 14 Tagen auf „${staleLeads[0].leadStatus}" — Nachfassen oder Status aktualisieren.`,
+        title: `${totalStale} Leads seit 3+ Tagen ohne Aktivität`,
+        detail: `${totalStale} Leads in aktiven Stages ohne Update — Details im Stale-Leads-Block unten.`,
       });
     }
 
@@ -437,6 +455,7 @@ export default function SalesPage() {
       funnelStages,
       nochNichtAngerufen, nichtErreichtLeads, erreichtLeads,
       erreichbarkeit, attemptDistribution, reachWeeklyData,
+      staleStageData, totalStale,
     };
   }, [range]);
 
@@ -918,6 +937,54 @@ export default function SalesPage() {
             <div>
               <p className="text-[14px] font-medium text-[#5eead4]">Alles im grünen Bereich</p>
               <p className="text-[12px] text-[#78716c] mt-0.5">Keine kritischen Muster erkannt — weiter so!</p>
+            </div>
+          </div>
+        )}
+      </SectionCard>
+
+      {/* Stale Leads nach Stage */}
+      <SectionCard title="Stale Leads (3+ Tage ohne Aktivität)">
+        {totalStale > 0 ? (
+          <div className="space-y-3">
+            <div className="flex items-center gap-3 mb-1">
+              <AlertTriangle className={`h-5 w-5 shrink-0 ${totalStale > 10 ? "text-[#f87171]" : "text-amber-400"}`} />
+              <span className={`text-[20px] font-bold tabular-nums ${totalStale > 10 ? "text-[#f87171]" : "text-amber-400"}`}>
+                {totalStale}
+              </span>
+              <span className="text-[13px] text-[#a8a29e]">Leads ohne Aktivität seit 3+ Tagen</span>
+            </div>
+            {staleStageData.map((row) => {
+              const sortedSellers = Object.entries(row.sellers).sort((a, b) => b[1] - a[1]);
+              return (
+                <div
+                  key={row.stage}
+                  className="rounded-xl border border-[rgba(255,255,255,0.06)] bg-[rgba(255,255,255,0.02)] p-4 flex items-center gap-4 flex-wrap"
+                >
+                  <span className={`inline-block rounded-full px-2.5 py-0.5 text-[11px] font-medium ${STATUS_BADGE[row.stage] || "bg-[rgba(255,255,255,0.05)] text-[#a8a29e]"}`}>
+                    {row.stage}
+                  </span>
+                  <span className="text-[16px] font-bold tabular-nums text-[#fafaf9]">{row.total}</span>
+                  <div className="flex flex-wrap gap-1.5">
+                    {sortedSellers.map(([name, count]) => (
+                      <span
+                        key={name}
+                        className="inline-flex items-center gap-1 rounded-md bg-[rgba(255,255,255,0.05)] px-2 py-0.5 text-[11px] text-[#d6d3d1]"
+                      >
+                        {name.split(" ")[0]}
+                        <span className="font-semibold tabular-nums text-[#e2a96e]">{count}</span>
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        ) : (
+          <div className="flex items-center gap-3 p-4 rounded-xl border border-[rgba(94,234,212,0.2)] bg-[rgba(94,234,212,0.05)]">
+            <CheckCircle className="h-5 w-5 text-[#5eead4] shrink-0" />
+            <div>
+              <p className="text-[14px] font-medium text-[#5eead4]">Alles aktuell</p>
+              <p className="text-[12px] text-[#78716c] mt-0.5">Keine Leads seit 3+ Tagen ohne Aktivität — Pipeline läuft!</p>
             </div>
           </div>
         )}
