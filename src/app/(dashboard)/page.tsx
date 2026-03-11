@@ -421,15 +421,15 @@ export default function OverviewPage() {
               {/* Spalten-Header */}
               <tr>
                 <th className="text-left pl-2">KW</th>
-                <th className="text-right pr-3">MQL</th>
-                <th className="text-right pl-3 border-l border-[rgba(255,255,255,0.06)]">N.angr.</th>
-                <th className="text-right pr-3">N.err.</th>
-                <th className="text-right pl-3 border-l border-[rgba(255,255,255,0.06)]">SQL</th>
+                <th className="text-right pr-6">MQL</th>
+                <th className="text-right pl-6 border-l border-[rgba(255,255,255,0.06)]">N.angr.</th>
+                <th className="text-right pr-6">N.err.</th>
+                <th className="text-right pl-6 border-l border-[rgba(255,255,255,0.06)]">SQL</th>
                 <th className="text-right">HT+Amt</th>
                 <th className="text-right">HT−Amt</th>
                 <th className="text-right">LT</th>
-                <th className="text-right pr-3">o.Proz.</th>
-                <th className="text-right pl-3 border-l border-[rgba(255,255,255,0.06)]">Gew</th>
+                <th className="text-right pr-6">o.Proz.</th>
+                <th className="text-right pl-6 border-l border-[rgba(255,255,255,0.06)]">Gew</th>
                 <th className="text-right">Verl</th>
                 <th className="text-right pr-2">Conv%</th>
               </tr>
@@ -438,15 +438,15 @@ export default function OverviewPage() {
               {cohortWeeks.map((w) => (
                 <tr key={w.week}>
                   <td className="text-left pl-2 text-[#e2a96e] font-medium">{w.week}</td>
-                  <td className="text-right text-[#fafaf9] font-semibold pr-3">{w.totalLeads}</td>
-                  <td className="text-right pl-3 border-l border-[rgba(255,255,255,0.06)]">{w.nAngr}</td>
-                  <td className="text-right pr-3">{w.nErr}</td>
-                  <td className="text-right pl-3 border-l border-[rgba(255,255,255,0.06)] text-[#e2a96e] font-medium">{w.sql}</td>
+                  <td className="text-right text-[#fafaf9] font-semibold pr-6">{w.totalLeads}</td>
+                  <td className="text-right pl-6 border-l border-[rgba(255,255,255,0.06)]">{w.nAngr}</td>
+                  <td className="text-right pr-6">{w.nErr}</td>
+                  <td className="text-right pl-6 border-l border-[rgba(255,255,255,0.06)] text-[#e2a96e] font-medium">{w.sql}</td>
                   <td className="text-right text-[#78716c]">{w.htMitAmt}</td>
                   <td className="text-right text-[#78716c]">{w.htOhneAmt}</td>
                   <td className="text-right text-[#78716c]">{w.lt}</td>
-                  <td className="text-right text-[#78716c] pr-3">{w.oProz}</td>
-                  <td className="text-right pl-3 border-l border-[rgba(255,255,255,0.06)] text-[#5eead4]">{w.won}</td>
+                  <td className="text-right text-[#78716c] pr-6">{w.oProz}</td>
+                  <td className="text-right pl-6 border-l border-[rgba(255,255,255,0.06)] text-[#5eead4]">{w.won}</td>
                   <td className="text-right text-[#fb7185]">{w.lost}</td>
                   <td className={`text-right pr-2 ${w.conversionRate > 0 ? "text-[#5eead4]" : "text-[#57534e]"}`}>{w.conversionRate.toFixed(1)}%</td>
                 </tr>
@@ -455,15 +455,15 @@ export default function OverviewPage() {
             <tfoot>
               <tr className="border-t border-[rgba(255,255,255,0.1)]">
                 <td className="text-left pl-2 font-semibold pt-3">Σ</td>
-                <td className="text-right font-semibold text-[#fafaf9] pr-3 pt-3">{cohortWeeks.reduce((s, w) => s + w.totalLeads, 0)}</td>
-                <td className="text-right pl-3 border-l border-[rgba(255,255,255,0.06)] pt-3">{cohortWeeks.reduce((s, w) => s + w.nAngr, 0)}</td>
-                <td className="text-right pr-3 pt-3">{cohortWeeks.reduce((s, w) => s + w.nErr, 0)}</td>
-                <td className="text-right pl-3 border-l border-[rgba(255,255,255,0.06)] text-[#e2a96e] font-medium pt-3">{cohortWeeks.reduce((s, w) => s + w.sql, 0)}</td>
+                <td className="text-right font-semibold text-[#fafaf9] pr-6 pt-3">{cohortWeeks.reduce((s, w) => s + w.totalLeads, 0)}</td>
+                <td className="text-right pl-6 border-l border-[rgba(255,255,255,0.06)] pt-3">{cohortWeeks.reduce((s, w) => s + w.nAngr, 0)}</td>
+                <td className="text-right pr-6 pt-3">{cohortWeeks.reduce((s, w) => s + w.nErr, 0)}</td>
+                <td className="text-right pl-6 border-l border-[rgba(255,255,255,0.06)] text-[#e2a96e] font-medium pt-3">{cohortWeeks.reduce((s, w) => s + w.sql, 0)}</td>
                 <td className="text-right text-[#78716c] pt-3">{cohortWeeks.reduce((s, w) => s + w.htMitAmt, 0)}</td>
                 <td className="text-right text-[#78716c] pt-3">{cohortWeeks.reduce((s, w) => s + w.htOhneAmt, 0)}</td>
                 <td className="text-right text-[#78716c] pt-3">{cohortWeeks.reduce((s, w) => s + w.lt, 0)}</td>
-                <td className="text-right text-[#78716c] pr-3 pt-3">{cohortWeeks.reduce((s, w) => s + w.oProz, 0)}</td>
-                <td className="text-right pl-3 border-l border-[rgba(255,255,255,0.06)] text-[#5eead4] pt-3">{cohortWeeks.reduce((s, w) => s + w.won, 0)}</td>
+                <td className="text-right text-[#78716c] pr-6 pt-3">{cohortWeeks.reduce((s, w) => s + w.oProz, 0)}</td>
+                <td className="text-right pl-6 border-l border-[rgba(255,255,255,0.06)] text-[#5eead4] pt-3">{cohortWeeks.reduce((s, w) => s + w.won, 0)}</td>
                 <td className="text-right text-[#fb7185] pt-3">{cohortWeeks.reduce((s, w) => s + w.lost, 0)}</td>
                 <td className="text-right pr-2 text-[#5eead4] pt-3">
                   {(() => { const t = cohortWeeks.reduce((s, w) => s + w.totalLeads, 0); const g = cohortWeeks.reduce((s, w) => s + w.won, 0); return t > 0 ? (g / t * 100).toFixed(1) : "0.0"; })()}%
