@@ -108,6 +108,8 @@ export default function SalesPage() {
     angebotLeads, pipelineLeads, leadsWithTermin,
     terminWeeklyData, recommendations, pipelineWeeklyData,
     funnelStages,
+    nochNichtAngerufen, nichtErreichtLeads, erreichtLeads,
+    erreichbarkeit, attemptDistribution, reachWeeklyData,
   } = useMemo(() => {
     const filtered = filterLeadsByRange(leads, range);
 
@@ -371,6 +373,47 @@ export default function SalesPage() {
     ).length;
     const gewonnenCount = filtered.filter((l) => l.leadStatus === "Gewonnen").length;
 
+    /* ── Erreichbarkeitsquote ── */
+    const nochNichtAngerufen = filtered.filter(
+      (l) => l.anrufversuch === "Noch nicht angerufen" || l.anrufversuch === ""
+    );
+    const nichtErreichtLeads = filtered.filter((l) => l.anrufversuch.includes("nicht erreicht"));
+    const erreichtLeads = filtered.filter(
+      (l) => !l.anrufversuch.includes("nicht erreicht") && l.anrufversuch !== "Noch nicht angerufen" && l.anrufversuch !== ""
+    );
+    const kontaktiert = nichtErreichtLeads.length + erreichtLeads.length;
+    const erreichbarkeit = kontaktiert > 0 ? (erreichtLeads.length / kontaktiert) * 100 : 0;
+
+    // Versuchsverteilung: wie viele Leads stecken bei 1x, 2x, ... nicht erreicht
+    const attemptDistribution: { attempts: string; count: number }[] = [];
+    for (let n = 1; n <= 10; n++) {
+      const count = nichtErreichtLeads.filter((l) => l.anrufversuch === `${n}x nicht erreicht`).length;
+      if (count > 0) attemptDistribution.push({ attempts: `${n}×`, count });
+    }
+
+    // Erreichbarkeit pro Woche
+    const reachWeekMap = new Map<number, { erreicht: number; nichtErreicht: number }>();
+    filtered.forEach((l) => {
+      if (l.anrufversuch === "Noch nicht angerufen" || l.anrufversuch === "") return;
+      const date = parseDE(l.createdOn);
+      if (isNaN(date.getTime())) return;
+      const wk = getISOWeek(date);
+      const entry = reachWeekMap.get(wk) ?? { erreicht: 0, nichtErreicht: 0 };
+      if (l.anrufversuch.includes("nicht erreicht")) entry.nichtErreicht++;
+      else entry.erreicht++;
+      reachWeekMap.set(wk, entry);
+    });
+    const reachWeeklyData = Array.from(reachWeekMap.entries())
+      .sort((a, b) => a[0] - b[0])
+      .map(([wk, counts]) => ({
+        week: `KW ${wk}`,
+        Erreicht: counts.erreicht,
+        "Nicht erreicht": counts.nichtErreicht,
+        quote: counts.erreicht + counts.nichtErreicht > 0
+          ? Math.round((counts.erreicht / (counts.erreicht + counts.nichtErreicht)) * 100)
+          : 0,
+      }));
+
     const funnelStages = {
       mql: { name: "MQL", desc: "Alle Leads", value: mqlCount },
       erreicht: { name: "Erreicht", desc: "Kontakt hergestellt", value: erreichtCount },
@@ -391,6 +434,8 @@ export default function SalesPage() {
       angebotLeads, pipelineLeads, leadsWithTermin,
       terminWeeklyData, recommendations, pipelineWeeklyData,
       funnelStages,
+      nochNichtAngerufen, nichtErreichtLeads, erreichtLeads,
+      erreichbarkeit, attemptDistribution, reachWeeklyData,
     };
   }, [range]);
 
@@ -569,6 +614,105 @@ export default function SalesPage() {
               </>
             );
           })()}
+        </div>
+      </SectionCard>
+
+      {/* Erreichbarkeitsquote */}
+      <SectionCard title="Erreichbarkeitsquote">
+        {/* KPI-Zeile */}
+        <div className="grid grid-cols-2 gap-3 lg:grid-cols-4 mb-6">
+          {[
+            { label: "Kontaktiert", value: nichtErreichtLeads.length + erreichtLeads.length, color: "text-[#fafaf9]", sub: "Anrufversuch gemacht" },
+            { label: "Erreicht", value: erreichtLeads.length, color: "text-[#5eead4]", sub: "Erfolgreich kontaktiert" },
+            { label: "Nicht erreicht", value: nichtErreichtLeads.length, color: "text-[#fb7185]", sub: `Ø ${nichtErreichtLeads.length > 0 ? (nichtErreichtLeads.reduce((s, l) => { const m = l.anrufversuch.match(/^(\d+)x/); return s + (m ? parseInt(m[1]) : 0); }, 0) / nichtErreichtLeads.length).toFixed(1) : "0"} Versuche` },
+            { label: "Noch nicht angerufen", value: nochNichtAngerufen.length, color: "text-[#78716c]", sub: "Kein Versuch bisher" },
+          ].map((kpi) => (
+            <div key={kpi.label} className="rounded-xl border border-[rgba(255,255,255,0.04)] bg-[rgba(255,255,255,0.02)] p-4">
+              <div className="text-[10px] font-medium uppercase tracking-wider text-[#57534e]">{kpi.label}</div>
+              <div className={`text-[24px] font-bold tabular-nums mt-1 ${kpi.color}`}>{kpi.value}</div>
+              <div className="text-[10px] text-[#57534e] mt-0.5">{kpi.sub}</div>
+            </div>
+          ))}
+        </div>
+
+        {/* Erreichbarkeitsquote Progress */}
+        <div className="mb-6">
+          <div className="flex items-center justify-between text-[12px] mb-2">
+            <span className="text-[#a8a29e] font-medium">Erreichbarkeitsquote (nur kontaktierte Leads)</span>
+            <span className="tabular-nums font-bold text-[16px]" style={{ color: erreichbarkeit >= 50 ? "#5eead4" : erreichbarkeit >= 30 ? "#e2a96e" : "#fb7185" }}>
+              {erreichbarkeit.toFixed(1)}%
+            </span>
+          </div>
+          <div className="h-3 rounded-full bg-[rgba(255,255,255,0.04)] overflow-hidden flex">
+            <div
+              className="h-full rounded-l-full bg-[#5eead4] transition-all duration-500"
+              style={{ width: `${erreichbarkeit}%` }}
+            />
+            <div
+              className="h-full rounded-r-full bg-[#fb7185] transition-all duration-500"
+              style={{ width: `${100 - erreichbarkeit}%` }}
+            />
+          </div>
+          <div className="flex items-center justify-between mt-1.5 text-[10px]">
+            <span className="text-[#5eead4]">{erreichtLeads.length} erreicht</span>
+            <span className="text-[#fb7185]">{nichtErreichtLeads.length} nicht erreicht</span>
+          </div>
+        </div>
+
+        <div className="grid gap-6 lg:grid-cols-2">
+          {/* Kontaktversuche-Verteilung */}
+          {attemptDistribution.length > 0 && (
+            <div>
+              <h3 className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#57534e] mb-3">
+                Kontaktversuche — Wo bleiben Leads stecken?
+              </h3>
+              <ResponsiveContainer width="100%" height={attemptDistribution.length * 36 + 20}>
+                <BarChart data={attemptDistribution} layout="vertical" barCategoryGap="25%" margin={{ left: 5, right: 20 }}>
+                  <XAxis type="number" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+                  <YAxis type="category" dataKey="attempts" {...AXIS_STYLE} axisLine={false} tickLine={false} width={35} />
+                  <Tooltip
+                    {...TOOLTIP_STYLE}
+                    formatter={(val) => [`${val} Leads`, "Nicht erreicht"]}
+                  />
+                  <Bar dataKey="count" radius={[0, 6, 6, 0]} animationDuration={600}>
+                    {attemptDistribution.map((_, i) => (
+                      <Cell key={i} fill={i < 3 ? "#fb923c" : i < 6 ? "#fb7185" : "#f87171"} />
+                    ))}
+                  </Bar>
+                </BarChart>
+              </ResponsiveContainer>
+              <p className="text-[10px] text-[#57534e] mt-2">
+                {attemptDistribution.filter((d) => parseInt(d.attempts) >= 5).reduce((s, d) => s + d.count, 0)} Leads mit 5+ Versuchen — ggf. Kontaktdaten prüfen
+              </p>
+            </div>
+          )}
+
+          {/* Erreichbarkeit pro Woche */}
+          {reachWeeklyData.length > 0 && (
+            <div>
+              <h3 className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#57534e] mb-3">
+                Erreichbarkeit pro Woche
+              </h3>
+              <ResponsiveContainer width="100%" height={280}>
+                <BarChart data={reachWeeklyData} barCategoryGap="20%">
+                  <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
+                  <XAxis dataKey="week" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+                  <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} />
+                  <Tooltip
+                    {...TOOLTIP_STYLE}
+                    formatter={(val, name) => [val, name]}
+                    labelFormatter={(label) => {
+                      const w = reachWeeklyData.find((d) => d.week === label);
+                      return w ? `${label} — ${w.quote}% Erreichbarkeit` : label;
+                    }}
+                  />
+                  <Legend wrapperStyle={{ fontSize: 11, color: "#78716c" }} />
+                  <Bar dataKey="Erreicht" stackId="r" fill="#5eead4" />
+                  <Bar dataKey="Nicht erreicht" stackId="r" fill="#fb7185" radius={[4, 4, 0, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          )}
         </div>
       </SectionCard>
 
