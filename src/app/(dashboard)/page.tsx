@@ -414,27 +414,27 @@ export default function OverviewPage() {
               {/* Gruppen-Header */}
               <tr>
                 <th colSpan={2} />
-                <th className="w-px" />
+                <th className="!p-0 w-[20px]" />
                 <th colSpan={2} className="text-center pb-1 text-[10px] font-normal normal-case tracking-wider text-[#44403c]">Offen</th>
-                <th className="w-px" />
+                <th className="!p-0 w-[20px]" />
                 <th colSpan={5} className="text-center pb-1 text-[10px] font-normal normal-case tracking-wider text-[#44403c]">SQL-Qualifiziert</th>
-                <th className="w-px" />
+                <th className="!p-0 w-[20px]" />
                 <th colSpan={3} className="text-center pb-1 text-[10px] font-normal normal-case tracking-wider text-[#44403c]">Ergebnis</th>
               </tr>
               {/* Spalten-Header */}
               <tr>
                 <th className="text-left pl-2">KW</th>
                 <th className="text-right">MQL</th>
-                <th className="w-px bg-[rgba(255,255,255,0.06)]" />
+                <th className="!p-0 w-[20px]"><div className="mx-auto w-px h-full bg-[rgba(255,255,255,0.06)]">&nbsp;</div></th>
                 <th className="text-right">N.angr.</th>
                 <th className="text-right">N.err.</th>
-                <th className="w-px bg-[rgba(255,255,255,0.06)]" />
+                <th className="!p-0 w-[20px]"><div className="mx-auto w-px h-full bg-[rgba(255,255,255,0.06)]">&nbsp;</div></th>
                 <th className="text-right">SQL</th>
                 <th className="text-right">HT+Amt</th>
                 <th className="text-right">HT−Amt</th>
                 <th className="text-right">LT</th>
                 <th className="text-right">o.Proz.</th>
-                <th className="w-px bg-[rgba(255,255,255,0.06)]" />
+                <th className="!p-0 w-[20px]"><div className="mx-auto w-px h-full bg-[rgba(255,255,255,0.06)]">&nbsp;</div></th>
                 <th className="text-right">Gew</th>
                 <th className="text-right">Verl</th>
                 <th className="text-right pr-2">Conv%</th>
@@ -445,16 +445,16 @@ export default function OverviewPage() {
                 <tr key={w.week}>
                   <td className="text-left pl-2 text-[#e2a96e] font-medium">{w.week}</td>
                   <td className="text-right text-[#fafaf9] font-semibold">{w.totalLeads}</td>
-                  <td className="w-px bg-[rgba(255,255,255,0.06)]" />
+                  <td className="!p-0 w-[20px] relative"><div className="absolute inset-y-0 left-1/2 w-px bg-[rgba(255,255,255,0.06)]" /></td>
                   <td className="text-right">{w.nAngr}</td>
                   <td className="text-right">{w.nErr}</td>
-                  <td className="w-px bg-[rgba(255,255,255,0.06)]" />
+                  <td className="!p-0 w-[20px] relative"><div className="absolute inset-y-0 left-1/2 w-px bg-[rgba(255,255,255,0.06)]" /></td>
                   <td className="text-right text-[#e2a96e] font-medium">{w.sql}</td>
                   <td className="text-right text-[#78716c]">{w.htMitAmt}</td>
                   <td className="text-right text-[#78716c]">{w.htOhneAmt}</td>
                   <td className="text-right text-[#78716c]">{w.lt}</td>
                   <td className="text-right text-[#78716c]">{w.oProz}</td>
-                  <td className="w-px bg-[rgba(255,255,255,0.06)]" />
+                  <td className="!p-0 w-[20px] relative"><div className="absolute inset-y-0 left-1/2 w-px bg-[rgba(255,255,255,0.06)]" /></td>
                   <td className="text-right text-[#5eead4]">{w.won}</td>
                   <td className="text-right text-[#fb7185]">{w.lost}</td>
                   <td className={`text-right pr-2 ${w.conversionRate > 0 ? "text-[#5eead4]" : "text-[#57534e]"}`}>{w.conversionRate.toFixed(1)}%</td>
@@ -465,16 +465,16 @@ export default function OverviewPage() {
               <tr className="border-t border-[rgba(255,255,255,0.1)]">
                 <td className="text-left pl-2 font-semibold pt-3">Σ</td>
                 <td className="text-right font-semibold text-[#fafaf9] pt-3">{cohortWeeks.reduce((s, w) => s + w.totalLeads, 0)}</td>
-                <td className="w-px bg-[rgba(255,255,255,0.06)] pt-3" />
+                <td className="!p-0 w-[20px] relative"><div className="absolute inset-y-0 left-1/2 w-px bg-[rgba(255,255,255,0.06)]" /></td>
                 <td className="text-right pt-3">{cohortWeeks.reduce((s, w) => s + w.nAngr, 0)}</td>
                 <td className="text-right pt-3">{cohortWeeks.reduce((s, w) => s + w.nErr, 0)}</td>
-                <td className="w-px bg-[rgba(255,255,255,0.06)] pt-3" />
+                <td className="!p-0 w-[20px] relative"><div className="absolute inset-y-0 left-1/2 w-px bg-[rgba(255,255,255,0.06)]" /></td>
                 <td className="text-right text-[#e2a96e] font-medium pt-3">{cohortWeeks.reduce((s, w) => s + w.sql, 0)}</td>
                 <td className="text-right text-[#78716c] pt-3">{cohortWeeks.reduce((s, w) => s + w.htMitAmt, 0)}</td>
                 <td className="text-right text-[#78716c] pt-3">{cohortWeeks.reduce((s, w) => s + w.htOhneAmt, 0)}</td>
                 <td className="text-right text-[#78716c] pt-3">{cohortWeeks.reduce((s, w) => s + w.lt, 0)}</td>
                 <td className="text-right text-[#78716c] pt-3">{cohortWeeks.reduce((s, w) => s + w.oProz, 0)}</td>
-                <td className="w-px bg-[rgba(255,255,255,0.06)] pt-3" />
+                <td className="!p-0 w-[20px] relative"><div className="absolute inset-y-0 left-1/2 w-px bg-[rgba(255,255,255,0.06)]" /></td>
                 <td className="text-right text-[#5eead4] pt-3">{cohortWeeks.reduce((s, w) => s + w.won, 0)}</td>
                 <td className="text-right text-[#fb7185] pt-3">{cohortWeeks.reduce((s, w) => s + w.lost, 0)}</td>
                 <td className="text-right pr-2 text-[#5eead4] pt-3">
