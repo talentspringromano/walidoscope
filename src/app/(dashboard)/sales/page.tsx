@@ -465,6 +465,7 @@ export default function SalesPage() {
         week: key.split("-")[1],
         Erreicht: v.reached,
         "Nicht erreicht": v.notReached,
+        Dials: v.reached + v.notReached,
         quote: v.reached + v.notReached > 0
           ? Math.round((v.reached / (v.reached + v.notReached)) * 100)
           : 0,
@@ -718,23 +719,76 @@ export default function SalesPage() {
                 Erreichbarkeit pro Woche
               </h3>
               <ResponsiveContainer width="100%" height={280}>
-                <BarChart data={aircall.weeklyData} barCategoryGap="20%">
+                <ComposedChart data={aircall.weeklyData} barCategoryGap="20%">
                   <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
                   <XAxis dataKey="week" {...AXIS_STYLE} axisLine={false} tickLine={false} />
-                  <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} />
+                  <YAxis yAxisId="left" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+                  <YAxis yAxisId="right" orientation="right" domain={[0, 100]} tickFormatter={(v) => `${v}%`} {...AXIS_STYLE} axisLine={false} tickLine={false} />
                   <Tooltip
                     {...TOOLTIP_STYLE}
-                    formatter={(val, name) => [val, name]}
+                    formatter={(val, name) => {
+                      if (name === "Quote %") return [`${val}%`, name];
+                      return [val, name];
+                    }}
                     labelFormatter={(label) => {
                       const w = aircall.weeklyData.find((d) => d.week === label);
                       return w ? `${label} — ${w.quote}% Erreichbarkeit` : label;
                     }}
                   />
                   <Legend wrapperStyle={{ fontSize: 11, color: "#78716c" }} />
-                  <Bar dataKey="Erreicht" stackId="r" fill="#5eead4" />
-                  <Bar dataKey="Nicht erreicht" stackId="r" fill="#fb7185" radius={[4, 4, 0, 0]} />
-                </BarChart>
+                  <Bar yAxisId="left" dataKey="Erreicht" stackId="r" fill="#5eead4" />
+                  <Bar yAxisId="left" dataKey="Nicht erreicht" stackId="r" fill="#fb7185" radius={[4, 4, 0, 0]} />
+                  <Line yAxisId="right" type="monotone" dataKey="quote" name="Quote %" stroke={PALETTE.gold} strokeWidth={2} dot={{ fill: PALETTE.gold, r: 3 }} activeDot={{ r: 5 }} />
+                </ComposedChart>
               </ResponsiveContainer>
+
+              {/* Diagnostik */}
+              {aircall.weeklyData.length >= 2 && (() => {
+                const data = aircall.weeklyData;
+                const last = data[data.length - 1];
+                const prev = data[data.length - 2];
+                const quoteDiff = last.quote - prev.quote;
+                const dialsDiff = last.Dials - prev.Dials;
+
+                let icon: ReactNode;
+                let color: string;
+                let message: string;
+
+                if (quoteDiff < -5 && dialsDiff >= 0) {
+                  icon = <AlertTriangle className="h-4 w-4 text-[#fb7185]" />;
+                  color = "border-[rgba(251,113,133,0.2)] bg-[rgba(251,113,133,0.05)]";
+                  message = "Erreichbarkeit sinkt — möglicherweise schlechte Kontaktdaten oder ungünstige Anrufzeiten";
+                } else if (Math.abs(quoteDiff) <= 5 && dialsDiff < -10) {
+                  icon = <Clock className="h-4 w-4 text-amber-400" />;
+                  color = "border-[rgba(245,158,11,0.2)] bg-[rgba(245,158,11,0.05)]";
+                  message = "Weniger Anrufversuche — Kapazitätsproblem?";
+                } else if (quoteDiff > 3) {
+                  icon = <CheckCircle className="h-4 w-4 text-[#5eead4]" />;
+                  color = "border-[rgba(94,234,212,0.2)] bg-[rgba(94,234,212,0.05)]";
+                  message = "Erreichbarkeit verbessert sich";
+                } else {
+                  icon = <Lightbulb className="h-4 w-4 text-[#a8a29e]" />;
+                  color = "border-[rgba(255,255,255,0.06)] bg-[rgba(255,255,255,0.02)]";
+                  message = "Erreichbarkeit stabil";
+                }
+
+                return (
+                  <div className={`mt-3 flex items-start gap-2.5 rounded-lg border p-3 ${color}`}>
+                    <div className="mt-0.5 shrink-0">{icon}</div>
+                    <div className="text-[12px] leading-relaxed text-[#d6d3d1]">
+                      <span className="font-medium">{message}</span>
+                      <span className="ml-2 text-[#78716c]">
+                        {last.week}: {last.quote}% ({last.Dials} Dials) vs. {prev.week}: {prev.quote}% ({prev.Dials} Dials)
+                        {quoteDiff !== 0 && (
+                          <span className={quoteDiff > 0 ? "text-[#5eead4]" : "text-[#fb7185]"}>
+                            {" "}({quoteDiff > 0 ? "+" : ""}{quoteDiff}pp)
+                          </span>
+                        )}
+                      </span>
+                    </div>
+                  </div>
+                );
+              })()}
             </div>
           )}
 
