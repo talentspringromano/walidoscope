@@ -14,7 +14,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "27.1.2026 18:11",
+    "createdOn": "27.1.2026 17:11",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -25,7 +25,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 2,
@@ -40,7 +42,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "27.1.2026 19:29",
+    "createdOn": "27.1.2026 18:29",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -51,7 +53,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 18:27",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 3,
@@ -66,7 +70,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Eric Hardt",
-    "createdOn": "27.1.2026 19:31",
+    "createdOn": "27.1.2026 18:31",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -77,7 +81,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "9x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "5.3.2026 13:41",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 4,
@@ -92,7 +98,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, ich bin noch unsicher, ob es zu mir passt",
     "vertriebler": "Nele Pfau",
-    "createdOn": "27.1.2026 19:50",
+    "createdOn": "27.1.2026 18:50",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -103,7 +109,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "25.2.2026 10:15",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 5,
@@ -118,7 +126,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "27.1.2026 19:52",
+    "createdOn": "27.1.2026 18:52",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -129,7 +137,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 6,
@@ -144,7 +154,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "27.1.2026 21:15",
+    "createdOn": "27.1.2026 20:15",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -153,9 +163,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "6x nicht erreicht",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:42",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 7,
@@ -170,7 +182,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "27.1.2026 21:29",
+    "createdOn": "27.1.2026 20:29",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -181,7 +193,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 8,
@@ -196,7 +210,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Walid Karimi",
-    "createdOn": "27.1.2026 22:09",
+    "createdOn": "27.1.2026 21:09",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -207,7 +221,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 9,
@@ -222,7 +238,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "27.1.2026 22:35",
+    "createdOn": "27.1.2026 21:35",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -233,7 +249,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "3.3.2026 16:00",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 10,
@@ -248,7 +266,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "27.1.2026 22:40",
+    "createdOn": "27.1.2026 21:40",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -259,7 +277,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 11,
@@ -274,7 +294,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "28.1.2026 00:17",
+    "createdOn": "27.1.2026 23:17",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -285,7 +305,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 12,
@@ -300,7 +322,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "28.1.2026 00:40",
+    "createdOn": "27.1.2026 23:40",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -311,7 +333,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "25.2.2026 10:59",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 13,
@@ -326,7 +350,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Walid Karimi",
-    "createdOn": "28.1.2026 01:02",
+    "createdOn": "28.1.2026 00:02",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -337,7 +361,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 14,
@@ -352,7 +378,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "28.1.2026 02:03",
+    "createdOn": "28.1.2026 01:03",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -363,7 +389,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 18:28",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 15,
@@ -378,7 +406,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "28.1.2026 02:15",
+    "createdOn": "28.1.2026 01:15",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -389,7 +417,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 18:28",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 16,
@@ -404,7 +434,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "28.1.2026 03:24",
+    "createdOn": "28.1.2026 02:24",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -415,7 +445,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 17,
@@ -430,7 +462,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Walid Karimi",
-    "createdOn": "28.1.2026 12:24",
+    "createdOn": "28.1.2026 11:24",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -441,7 +473,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 18,
@@ -456,7 +490,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Walid Karimi",
-    "createdOn": "28.1.2026 13:28",
+    "createdOn": "28.1.2026 12:28",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -467,7 +501,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "3.3.2026 09:23",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 19,
@@ -482,7 +518,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, ich bin noch unsicher, ob es zu mir passt",
     "vertriebler": "Walid Karimi",
-    "createdOn": "28.1.2026 15:10",
+    "createdOn": "28.1.2026 14:10",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -493,7 +529,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 20,
@@ -508,7 +546,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "28.1.2026 16:16",
+    "createdOn": "28.1.2026 15:16",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -519,7 +557,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 21,
@@ -534,7 +574,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "29.1.2026 07:12",
+    "createdOn": "29.1.2026 06:12",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -545,7 +585,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "10.3.2026 14:37",
+    "angebotsprozessDatum": "3.3.2026 15:22"
   },
   {
     "id": 22,
@@ -560,7 +602,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "29.1.2026 09:07",
+    "createdOn": "29.1.2026 08:07",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -571,7 +613,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 10:46",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 23,
@@ -586,7 +630,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "29.1.2026 09:19",
+    "createdOn": "29.1.2026 08:19",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -597,7 +641,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 24,
@@ -612,7 +658,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "29.1.2026 09:32",
+    "createdOn": "29.1.2026 08:32",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -623,7 +669,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 25,
@@ -638,7 +686,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "29.1.2026 09:37",
+    "createdOn": "29.1.2026 08:37",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -649,7 +697,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 26,
@@ -664,7 +714,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "29.1.2026 10:24",
+    "createdOn": "29.1.2026 09:24",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -675,7 +725,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 27,
@@ -690,7 +742,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "29.1.2026 11:17",
+    "createdOn": "29.1.2026 10:17",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -701,7 +753,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "25.2.2026 10:51",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 28,
@@ -716,7 +770,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "29.1.2026 11:26",
+    "createdOn": "29.1.2026 10:26",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -727,7 +781,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 29,
@@ -742,7 +798,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Michel Grosser",
-    "createdOn": "29.1.2026 13:58",
+    "createdOn": "29.1.2026 12:58",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -753,7 +809,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 30,
@@ -768,7 +826,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Walid Karimi",
-    "createdOn": "29.1.2026 14:13",
+    "createdOn": "29.1.2026 13:13",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -779,7 +837,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "4.3.2026 13:30",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 31,
@@ -794,7 +854,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Walid Karimi",
-    "createdOn": "12.2.2026 08:48",
+    "createdOn": "12.2.2026 07:48",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "30%",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
@@ -805,7 +865,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 12:21",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 32,
@@ -820,7 +882,7 @@ export const leads: Lead[] = [
     "alter": "25 - 45 Jahre",
     "vorerfahrung": "",
     "vertriebler": "Walid Karimi",
-    "createdOn": "13.2.2026 09:44",
+    "createdOn": "13.2.2026 08:44",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
@@ -831,7 +893,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "26.2.2026 09:29",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 33,
@@ -846,7 +910,7 @@ export const leads: Lead[] = [
     "alter": "25 - 45 Jahre",
     "vorerfahrung": "",
     "vertriebler": "Walid Karimi",
-    "createdOn": "13.2.2026 09:45",
+    "createdOn": "13.2.2026 08:45",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
@@ -857,7 +921,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "9.3.2026 13:33",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 34,
@@ -872,7 +938,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Walid Karimi",
-    "createdOn": "13.2.2026 09:48",
+    "createdOn": "13.2.2026 08:48",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "100%",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
@@ -883,7 +949,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "true",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:18",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 35,
@@ -898,7 +966,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "13.2.2026 12:20",
+    "createdOn": "13.2.2026 11:20",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "hr-assistenz-und-tech-im-hr",
@@ -909,7 +977,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 16:23",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 36,
@@ -924,7 +994,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Michel Grosser",
-    "createdOn": "13.2.2026 15:01",
+    "createdOn": "13.2.2026 14:01",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "lohnabrechnung-grundlagen-gehaltsabrechnung",
@@ -935,7 +1005,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 37,
@@ -950,7 +1022,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Paul Barbig",
-    "createdOn": "16.2.2026 10:39",
+    "createdOn": "16.2.2026 09:39",
     "terminBeimAmt": "4.3.2026",
     "closingWahrscheinlichkeit": "70%",
     "utmTitle": "datev-lohnabrechnung-und-sozialversicherung",
@@ -961,7 +1033,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "9.3.2026 14:10",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 38,
@@ -976,7 +1050,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Walid Karimi",
-    "createdOn": "18.2.2026 09:20",
+    "createdOn": "18.2.2026 08:20",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "70%",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
@@ -987,7 +1061,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "9.3.2026 14:11",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 39,
@@ -1002,7 +1078,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Walid Karimi",
-    "createdOn": "18.2.2026 12:57",
+    "createdOn": "18.2.2026 11:57",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "agile-automatisierung-hr-tech-und-people-analytics",
@@ -1013,7 +1089,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 40,
@@ -1028,7 +1106,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, ich bin noch unsicher, ob es zu mir passt",
     "vertriebler": "Nele Pfau",
-    "createdOn": "18.2.2026 20:29",
+    "createdOn": "18.2.2026 19:29",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1039,7 +1117,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 18:29",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 41,
@@ -1054,7 +1134,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "18.2.2026 21:18",
+    "createdOn": "18.2.2026 20:18",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1065,7 +1145,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 42,
@@ -1080,7 +1162,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Walid Karimi",
-    "createdOn": "18.2.2026 22:48",
+    "createdOn": "18.2.2026 21:48",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1091,7 +1173,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 43,
@@ -1106,7 +1190,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "18.2.2026 22:54",
+    "createdOn": "18.2.2026 21:54",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1117,7 +1201,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 44,
@@ -1132,7 +1218,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "18.2.2026 23:06",
+    "createdOn": "18.2.2026 22:06",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1143,7 +1229,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 18:29",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 45,
@@ -1158,7 +1246,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "19.2.2026 00:08",
+    "createdOn": "18.2.2026 23:08",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1169,7 +1257,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 18:30",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 46,
@@ -1184,7 +1274,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Walid Karimi",
-    "createdOn": "19.2.2026 00:20",
+    "createdOn": "18.2.2026 23:20",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1195,7 +1285,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "6.3.2026 13:02",
+    "angebotsprozessDatum": "26.2.2026 13:35"
   },
   {
     "id": 47,
@@ -1210,7 +1302,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "19.2.2026 00:23",
+    "createdOn": "18.2.2026 23:23",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1221,7 +1313,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 48,
@@ -1236,7 +1330,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "19.2.2026 02:04",
+    "createdOn": "19.2.2026 01:04",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1247,7 +1341,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "10x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 14:11",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 49,
@@ -1262,7 +1358,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "19.2.2026 07:11",
+    "createdOn": "19.2.2026 06:11",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1273,7 +1369,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 50,
@@ -1288,7 +1386,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "19.2.2026 07:17",
+    "createdOn": "19.2.2026 06:17",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1299,7 +1397,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 11:56",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 51,
@@ -1314,7 +1414,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "19.2.2026 07:27",
+    "createdOn": "19.2.2026 06:27",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1325,7 +1425,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 18:31",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 52,
@@ -1340,7 +1442,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "19.2.2026 07:32",
+    "createdOn": "19.2.2026 06:32",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1351,7 +1453,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "10x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 13:41",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 53,
@@ -1366,7 +1470,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "19.2.2026 08:30",
+    "createdOn": "19.2.2026 07:30",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1377,7 +1481,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "10x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 14:11",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 54,
@@ -1392,7 +1498,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "19.2.2026 09:08",
+    "createdOn": "19.2.2026 08:08",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1403,7 +1509,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 55,
@@ -1418,7 +1526,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "19.2.2026 09:50",
+    "createdOn": "19.2.2026 08:50",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1429,7 +1537,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "10x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 14:11",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 56,
@@ -1444,7 +1554,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "19.2.2026 10:21",
+    "createdOn": "19.2.2026 09:21",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1455,7 +1565,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 13:35",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 57,
@@ -1470,7 +1582,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "19.2.2026 10:38",
+    "createdOn": "19.2.2026 09:38",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "60%",
     "utmTitle": "",
@@ -1481,7 +1593,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "3.3.2026 09:25",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 58,
@@ -1496,7 +1610,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Michel Grosser",
-    "createdOn": "19.2.2026 12:35",
+    "createdOn": "19.2.2026 11:35",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1507,7 +1621,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "25.2.2026 08:23",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 59,
@@ -1522,7 +1638,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "19.2.2026 14:16",
+    "createdOn": "19.2.2026 13:16",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1533,7 +1649,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "28.2.2026 18:39",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 60,
@@ -1548,7 +1666,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "19.2.2026 14:19",
+    "createdOn": "19.2.2026 13:19",
     "terminBeimAmt": "3.3.2026",
     "closingWahrscheinlichkeit": "100%",
     "utmTitle": "",
@@ -1559,7 +1677,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "true",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:17",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 61,
@@ -1574,7 +1694,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Paul Barbig",
-    "createdOn": "19.2.2026 14:23",
+    "createdOn": "19.2.2026 13:23",
     "terminBeimAmt": "5.3.2026",
     "closingWahrscheinlichkeit": "50%",
     "utmTitle": "",
@@ -1585,7 +1705,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "4.3.2026 15:03",
+    "angebotsprozessDatum": "2.3.2026 10:44"
   },
   {
     "id": 62,
@@ -1600,7 +1722,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "19.2.2026 14:32",
+    "createdOn": "19.2.2026 13:32",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1609,9 +1731,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 10:07",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 63,
@@ -1626,7 +1750,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "19.2.2026 14:47",
+    "createdOn": "19.2.2026 13:47",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1637,7 +1761,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "10.3.2026 12:56",
+    "angebotsprozessDatum": "27.2.2026 09:29"
   },
   {
     "id": 64,
@@ -1652,7 +1778,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "19.2.2026 15:17",
+    "createdOn": "19.2.2026 14:17",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1663,7 +1789,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 18:31",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 65,
@@ -1678,7 +1806,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "19.2.2026 15:18",
+    "createdOn": "19.2.2026 14:18",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1689,7 +1817,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "25.2.2026 10:49",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 66,
@@ -1704,7 +1834,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "19.2.2026 15:28",
+    "createdOn": "19.2.2026 14:28",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1715,7 +1845,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 11:02",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 67,
@@ -1730,7 +1862,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "19.2.2026 15:49",
+    "createdOn": "19.2.2026 14:49",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1741,7 +1873,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 14:05",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 68,
@@ -1756,7 +1890,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Walid Karimi",
-    "createdOn": "19.2.2026 16:11",
+    "createdOn": "19.2.2026 15:11",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1767,13 +1901,15 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "25.2.2026 17:41",
+    "angebotsprozessDatum": "24.2.2026 18:45"
   },
   {
     "id": 69,
     "name": "Klaus Ringkamp",
-    "leadStatus": "Neuer Lead",
-    "verlustgrund": "",
+    "leadStatus": "Verloren",
+    "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
     "adId": "120239534604040128",
     "adName": "C2 - Aktuell arbeitslos - LuBuHa gesucht",
     "platform": "Instagram",
@@ -1782,7 +1918,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "19.2.2026 16:47",
+    "createdOn": "19.2.2026 15:47",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1791,9 +1927,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "7x nicht erreicht",
+    "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 12:15",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 70,
@@ -1808,7 +1946,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Michel Grosser",
-    "createdOn": "19.2.2026 17:08",
+    "createdOn": "19.2.2026 16:08",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1819,7 +1957,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 71,
@@ -1834,7 +1974,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Michel Grosser",
-    "createdOn": "19.2.2026 17:19",
+    "createdOn": "19.2.2026 16:19",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1845,7 +1985,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 72,
@@ -1860,7 +2002,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Eric Hardt",
-    "createdOn": "19.2.2026 17:29",
+    "createdOn": "19.2.2026 16:29",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1871,7 +2013,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "4.3.2026 19:23",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 73,
@@ -1886,7 +2030,7 @@ export const leads: Lead[] = [
     "alter": "24 – 25 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "19.2.2026 17:45",
+    "createdOn": "19.2.2026 16:45",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1897,7 +2041,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 13:38",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 74,
@@ -1912,7 +2058,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "19.2.2026 18:28",
+    "createdOn": "19.2.2026 17:28",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1923,7 +2069,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 10:46",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 75,
@@ -1938,7 +2086,7 @@ export const leads: Lead[] = [
     "alter": "Über 60 Jahre",
     "vorerfahrung": "Nein, ich bin noch unsicher, ob es zu mir passt",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "19.2.2026 18:30",
+    "createdOn": "19.2.2026 17:30",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1949,7 +2097,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "9x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 14:07",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 76,
@@ -1964,7 +2114,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "19.2.2026 18:36",
+    "createdOn": "19.2.2026 17:36",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -1975,7 +2125,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "3.3.2026 16:32",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 77,
@@ -1990,7 +2142,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "19.2.2026 18:38",
+    "createdOn": "19.2.2026 17:38",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2001,7 +2153,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 78,
@@ -2016,7 +2170,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "19.2.2026 19:28",
+    "createdOn": "19.2.2026 18:28",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2027,7 +2181,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "25.2.2026 08:54",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 79,
@@ -2042,7 +2198,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "19.2.2026 19:42",
+    "createdOn": "19.2.2026 18:42",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2053,7 +2209,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 80,
@@ -2068,7 +2226,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "19.2.2026 20:17",
+    "createdOn": "19.2.2026 19:17",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2079,7 +2237,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "25.2.2026 08:55",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 81,
@@ -2094,7 +2254,7 @@ export const leads: Lead[] = [
     "alter": "Über 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "19.2.2026 20:17",
+    "createdOn": "19.2.2026 19:17",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "80%",
     "utmTitle": "",
@@ -2105,7 +2265,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "4.3.2026 08:59",
+    "angebotsprozessDatum": "3.3.2026 09:46"
   },
   {
     "id": 82,
@@ -2120,7 +2282,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "20.2.2026 07:46",
+    "createdOn": "20.2.2026 06:46",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2131,7 +2293,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 83,
@@ -2146,7 +2310,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "20.2.2026 08:37",
+    "createdOn": "20.2.2026 07:37",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2157,7 +2321,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "25.2.2026",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 10:40",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 84,
@@ -2172,7 +2338,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "20.2.2026 08:51",
+    "createdOn": "20.2.2026 07:51",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2183,7 +2349,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "6x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "10.3.2026 16:17",
+    "angebotsprozessDatum": "6.3.2026 15:59"
   },
   {
     "id": 85,
@@ -2198,7 +2366,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "20.2.2026 09:34",
+    "createdOn": "20.2.2026 08:34",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2209,7 +2377,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 86,
@@ -2224,7 +2394,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "20.2.2026 10:03",
+    "createdOn": "20.2.2026 09:03",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2235,7 +2405,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 87,
@@ -2250,7 +2422,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "20.2.2026 10:16",
+    "createdOn": "20.2.2026 09:16",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "80%",
     "utmTitle": "",
@@ -2261,7 +2433,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "26.2.2026",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "10.3.2026 09:23",
+    "angebotsprozessDatum": "27.2.2026 08:17"
   },
   {
     "id": 88,
@@ -2276,7 +2450,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "20.2.2026 10:29",
+    "createdOn": "20.2.2026 09:29",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2287,7 +2461,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "26.2.2026",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 10:41",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 89,
@@ -2302,7 +2478,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "20.2.2026 10:33",
+    "createdOn": "20.2.2026 09:33",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2313,7 +2489,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 10:45",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 90,
@@ -2328,7 +2506,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Michel Grosser",
-    "createdOn": "20.2.2026 10:46",
+    "createdOn": "20.2.2026 09:46",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2339,7 +2517,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 10:48",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 91,
@@ -2354,7 +2534,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Michel Grosser",
-    "createdOn": "20.2.2026 11:20",
+    "createdOn": "20.2.2026 10:20",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2365,7 +2545,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 92,
@@ -2380,7 +2562,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "20.2.2026 12:20",
+    "createdOn": "20.2.2026 11:20",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2391,7 +2573,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "3.3.2026 14:31",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 93,
@@ -2406,7 +2590,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Walid Karimi",
-    "createdOn": "20.2.2026 12:47",
+    "createdOn": "20.2.2026 11:47",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "personalgewinnung-mit-ats-und-recruiting-analytics",
@@ -2417,7 +2601,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "24.2.2026 18:12",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 94,
@@ -2432,7 +2618,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "20.2.2026 13:31",
+    "createdOn": "20.2.2026 12:31",
     "terminBeimAmt": "7.4.2026",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2443,7 +2629,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "6x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "11.3.2026 08:51",
+    "angebotsprozessDatum": "10.3.2026 13:20"
   },
   {
     "id": 95,
@@ -2458,7 +2646,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "20.2.2026 14:03",
+    "createdOn": "20.2.2026 13:03",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2467,9 +2655,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "6x nicht erreicht",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:28",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 96,
@@ -2484,7 +2674,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "20.2.2026 14:44",
+    "createdOn": "20.2.2026 13:44",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2495,7 +2685,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 18:32",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 97,
@@ -2510,7 +2702,7 @@ export const leads: Lead[] = [
     "alter": "Über 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "20.2.2026 16:54",
+    "createdOn": "20.2.2026 15:54",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2521,7 +2713,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "25.2.2026 08:06",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 98,
@@ -2536,7 +2730,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "23.2.2026 11:21",
+    "createdOn": "23.2.2026 10:21",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
@@ -2547,7 +2741,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 16:23",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 99,
@@ -2562,7 +2758,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Walid Karimi",
-    "createdOn": "23.2.2026 17:01",
+    "createdOn": "23.2.2026 16:01",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "lohnabrechnung",
@@ -2573,7 +2769,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "5.3.2026 10:17",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 100,
@@ -2588,7 +2786,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Walid Karimi",
-    "createdOn": "23.2.2026 17:01",
+    "createdOn": "23.2.2026 16:01",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
@@ -2599,7 +2797,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "6.3.2026 16:24",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 101,
@@ -2614,7 +2814,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Walid Karimi",
-    "createdOn": "23.2.2026 17:05",
+    "createdOn": "23.2.2026 16:05",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "60%",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
@@ -2625,7 +2825,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "9.3.2026 14:11",
+    "angebotsprozessDatum": "24.2.2026 18:12"
   },
   {
     "id": 102,
@@ -2640,7 +2842,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Paul Barbig",
-    "createdOn": "23.2.2026 17:42",
+    "createdOn": "23.2.2026 16:42",
     "terminBeimAmt": "9.3.2026",
     "closingWahrscheinlichkeit": "50%",
     "utmTitle": "",
@@ -2651,7 +2853,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "9.3.2026 10:12",
+    "angebotsprozessDatum": "7.3.2026 10:36"
   },
   {
     "id": 103,
@@ -2666,7 +2870,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Walid Karimi",
-    "createdOn": "23.2.2026 17:47",
+    "createdOn": "23.2.2026 16:47",
     "terminBeimAmt": "4.3.2026",
     "closingWahrscheinlichkeit": "100%",
     "utmTitle": "",
@@ -2677,7 +2881,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "true",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "11.3.2026 14:16",
+    "angebotsprozessDatum": "26.2.2026 13:35"
   },
   {
     "id": 104,
@@ -2692,7 +2898,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Michel Grosser",
-    "createdOn": "23.2.2026 18:12",
+    "createdOn": "23.2.2026 17:12",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "digitale-lohn-und-gehaltsabrechnung-vertiefte Kompetenzen-mit-datev-und-sap",
@@ -2703,7 +2909,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "6.3.2026 17:09",
+    "angebotsprozessDatum": "24.2.2026 18:45"
   },
   {
     "id": 105,
@@ -2718,7 +2926,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 09:57",
+    "createdOn": "26.2.2026 08:57",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2729,7 +2937,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "26.2.2026 11:59",
+    "angebotsprozessDatum": "26.2.2026 11:59"
   },
   {
     "id": 106,
@@ -2744,7 +2954,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Michel Grosser",
-    "createdOn": "26.2.2026 09:59",
+    "createdOn": "26.2.2026 08:59",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2755,7 +2965,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "26.2.2026 11:07",
+    "angebotsprozessDatum": ""
   },
   {
     "id": 107,
@@ -2770,7 +2982,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 09:59",
+    "createdOn": "26.2.2026 08:59",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2781,7 +2993,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "26.2.2026 11:07",
+    "angebotsprozessDatum": ""
   },
   {
     "id": 108,
@@ -2796,7 +3010,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 09:59",
+    "createdOn": "26.2.2026 08:59",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2807,7 +3021,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "27.2.2026 12:30",
+    "angebotsprozessDatum": ""
   },
   {
     "id": 109,
@@ -2822,7 +3038,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "26.2.2026 09:59",
+    "createdOn": "26.2.2026 08:59",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "90%",
     "utmTitle": "",
@@ -2831,9 +3047,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Angebot wurde erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "6x nicht erreicht",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "11.3.2026 13:38",
+    "angebotsprozessDatum": "4.3.2026 15:41"
   },
   {
     "id": 110,
@@ -2848,7 +3066,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 09:59",
+    "createdOn": "26.2.2026 08:59",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2859,7 +3077,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 11:02",
+    "angebotsprozessDatum": ""
   },
   {
     "id": 111,
@@ -2874,7 +3094,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 09:59",
+    "createdOn": "26.2.2026 08:59",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2885,7 +3105,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 15:32",
+    "angebotsprozessDatum": ""
   },
   {
     "id": 112,
@@ -2900,7 +3122,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 09:59",
+    "createdOn": "26.2.2026 08:59",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2911,7 +3133,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "27.2.2026 13:16",
+    "angebotsprozessDatum": "27.2.2026 13:16"
   },
   {
     "id": 113,
@@ -2926,7 +3150,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 09:59",
+    "createdOn": "26.2.2026 08:59",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2937,7 +3161,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "26.2.2026 10:13",
+    "angebotsprozessDatum": ""
   },
   {
     "id": 114,
@@ -2952,7 +3178,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 09:59",
+    "createdOn": "26.2.2026 08:59",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2963,7 +3189,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "3.3.2026 14:22",
+    "angebotsprozessDatum": ""
   },
   {
     "id": 115,
@@ -2978,7 +3206,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 09:59",
+    "createdOn": "26.2.2026 08:59",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -2989,7 +3217,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "26.2.2026 11:11",
+    "angebotsprozessDatum": ""
   },
   {
     "id": 116,
@@ -3004,7 +3234,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 09:59",
+    "createdOn": "26.2.2026 08:59",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3015,7 +3245,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 15:31",
+    "angebotsprozessDatum": ""
   },
   {
     "id": 117,
@@ -3030,7 +3262,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 09:59",
+    "createdOn": "26.2.2026 08:59",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3041,7 +3273,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "3.3.2026 14:24",
+    "angebotsprozessDatum": ""
   },
   {
     "id": 118,
@@ -3056,7 +3290,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 09:59",
+    "createdOn": "26.2.2026 08:59",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3067,7 +3301,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "26.2.2026 10:05",
+    "angebotsprozessDatum": "26.2.2026 10:05"
   },
   {
     "id": 119,
@@ -3082,7 +3318,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 09:59",
+    "createdOn": "26.2.2026 08:59",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3093,7 +3329,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 15:32",
+    "angebotsprozessDatum": ""
   },
   {
     "id": 120,
@@ -3108,7 +3346,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 09:59",
+    "createdOn": "26.2.2026 08:59",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3119,7 +3357,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "3.3.2026 13:00",
+    "angebotsprozessDatum": ""
   },
   {
     "id": 121,
@@ -3134,7 +3374,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 09:59",
+    "createdOn": "26.2.2026 08:59",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3145,7 +3385,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "10x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 15:30",
+    "angebotsprozessDatum": ""
   },
   {
     "id": 122,
@@ -3160,7 +3402,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 09:59",
+    "createdOn": "26.2.2026 08:59",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3171,7 +3413,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "10.3.2026 11:25",
+    "angebotsprozessDatum": "27.2.2026 13:14"
   },
   {
     "id": 123,
@@ -3186,7 +3430,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "26.2.2026 09:59",
+    "createdOn": "26.2.2026 08:59",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3197,7 +3441,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 14:35",
+    "angebotsprozessDatum": ""
   },
   {
     "id": 124,
@@ -3212,7 +3458,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "26.2.2026 09:59",
+    "createdOn": "26.2.2026 08:59",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3223,7 +3469,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "9x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 13:39",
+    "angebotsprozessDatum": ""
   },
   {
     "id": 125,
@@ -3238,7 +3486,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 11:15",
+    "createdOn": "26.2.2026 10:15",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3249,7 +3497,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "27.2.2026 08:19",
+    "angebotsprozessDatum": "26.2.2026 10:15"
   },
   {
     "id": 126,
@@ -3264,7 +3514,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 11:21",
+    "createdOn": "26.2.2026 10:21",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3275,7 +3525,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "3.3.2026 12:03",
+    "angebotsprozessDatum": "3.3.2026 12:02"
   },
   {
     "id": 127,
@@ -3290,7 +3542,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 11:38",
+    "createdOn": "26.2.2026 10:38",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3301,7 +3553,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "26.2.2026 10:38",
+    "angebotsprozessDatum": "26.2.2026 10:38"
   },
   {
     "id": 128,
@@ -3316,7 +3570,7 @@ export const leads: Lead[] = [
     "alter": "Über 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "26.2.2026 17:26",
+    "createdOn": "26.2.2026 16:26",
     "terminBeimAmt": "2.3.2026",
     "closingWahrscheinlichkeit": "100%",
     "utmTitle": "",
@@ -3327,7 +3581,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "true",
     "anrufversuch": "",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "11.3.2026 14:17",
+    "angebotsprozessDatum": "26.2.2026 16:34"
   },
   {
     "id": 129,
@@ -3342,7 +3598,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 17:57",
+    "createdOn": "26.2.2026 16:57",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3353,7 +3609,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "10x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 14:11",
+    "angebotsprozessDatum": "26.2.2026 16:57"
   },
   {
     "id": 130,
@@ -3368,7 +3626,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 20:28",
+    "createdOn": "26.2.2026 19:28",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3379,7 +3637,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 10:45",
+    "angebotsprozessDatum": "26.2.2026 19:28"
   },
   {
     "id": 131,
@@ -3394,7 +3654,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 20:29",
+    "createdOn": "26.2.2026 19:29",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "70%",
     "utmTitle": "",
@@ -3405,7 +3665,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 10:46",
+    "angebotsprozessDatum": "26.2.2026 19:29"
   },
   {
     "id": 132,
@@ -3420,7 +3682,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 21:03",
+    "createdOn": "26.2.2026 20:03",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3429,9 +3691,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "6x nicht erreicht",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 12:16",
+    "angebotsprozessDatum": "26.2.2026 20:03"
   },
   {
     "id": 133,
@@ -3446,7 +3710,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "26.2.2026 21:03",
+    "createdOn": "26.2.2026 20:03",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3457,7 +3721,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 13:27",
+    "angebotsprozessDatum": "26.2.2026 20:03"
   },
   {
     "id": 134,
@@ -3472,7 +3738,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 21:09",
+    "createdOn": "26.2.2026 20:09",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3481,9 +3747,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "6x nicht erreicht",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 12:16",
+    "angebotsprozessDatum": "26.2.2026 20:09"
   },
   {
     "id": 135,
@@ -3498,7 +3766,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Eric Hardt",
-    "createdOn": "26.2.2026 21:46",
+    "createdOn": "26.2.2026 20:46",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3509,7 +3777,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "4.3.2026 13:59",
+    "angebotsprozessDatum": "26.2.2026 20:46"
   },
   {
     "id": 136,
@@ -3524,7 +3794,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Eric Hardt",
-    "createdOn": "26.2.2026 22:17",
+    "createdOn": "26.2.2026 21:17",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3535,7 +3805,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "2.3.2026 10:02",
+    "angebotsprozessDatum": "26.2.2026 21:17"
   },
   {
     "id": 137,
@@ -3550,7 +3822,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Eric Hardt",
-    "createdOn": "26.2.2026 22:46",
+    "createdOn": "26.2.2026 21:46",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3561,7 +3833,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "27.2.2026 17:09",
+    "angebotsprozessDatum": "27.2.2026 17:09"
   },
   {
     "id": 138,
@@ -3576,7 +3850,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Eric Hardt",
-    "createdOn": "27.2.2026 02:18",
+    "createdOn": "27.2.2026 01:18",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3587,7 +3861,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "3.3.2026 15:46",
+    "angebotsprozessDatum": "27.2.2026 01:18"
   },
   {
     "id": 139,
@@ -3602,7 +3878,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "27.2.2026 10:26",
+    "createdOn": "27.2.2026 09:26",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3613,7 +3889,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "27.2.2026 09:46",
+    "angebotsprozessDatum": "27.2.2026 09:26"
   },
   {
     "id": 140,
@@ -3628,7 +3906,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "27.2.2026 15:18",
+    "createdOn": "27.2.2026 14:18",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3639,7 +3917,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "2.3.2026 13:14",
+    "angebotsprozessDatum": "27.2.2026 14:18"
   },
   {
     "id": 141,
@@ -3654,7 +3934,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "27.2.2026 21:40",
+    "createdOn": "27.2.2026 20:40",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3663,9 +3943,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "6x nicht erreicht",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 12:17",
+    "angebotsprozessDatum": "27.2.2026 20:40"
   },
   {
     "id": 142,
@@ -3680,7 +3962,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "27.2.2026 22:56",
+    "createdOn": "27.2.2026 21:56",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3689,9 +3971,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Angebot wurde erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "1x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "11.3.2026 09:42",
+    "angebotsprozessDatum": "2.3.2026 12:46"
   },
   {
     "id": 143,
@@ -3706,7 +3990,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "28.2.2026 10:03",
+    "createdOn": "28.2.2026 09:03",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3715,9 +3999,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "6x nicht erreicht",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 12:18",
+    "angebotsprozessDatum": "28.2.2026 09:03"
   },
   {
     "id": 144,
@@ -3732,7 +4018,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "28.2.2026 10:34",
+    "createdOn": "28.2.2026 09:34",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3743,7 +4029,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "2.3.2026 13:14",
+    "angebotsprozessDatum": "28.2.2026 09:34"
   },
   {
     "id": 145,
@@ -3758,7 +4046,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "28.2.2026 11:02",
+    "createdOn": "28.2.2026 10:02",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3767,9 +4055,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "6x nicht erreicht",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 12:18",
+    "angebotsprozessDatum": "28.2.2026 10:02"
   },
   {
     "id": 146,
@@ -3784,7 +4074,7 @@ export const leads: Lead[] = [
     "alter": "Über 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "28.2.2026 11:36",
+    "createdOn": "28.2.2026 10:36",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3795,7 +4085,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "10.3.2026 12:56",
+    "angebotsprozessDatum": "2.3.2026 12:14"
   },
   {
     "id": 147,
@@ -3810,7 +4102,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "1.3.2026 07:12",
+    "createdOn": "1.3.2026 06:12",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3821,7 +4113,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "4.3.2026 14:03",
+    "angebotsprozessDatum": "1.3.2026 06:12"
   },
   {
     "id": 148,
@@ -3836,7 +4130,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "1.3.2026 09:58",
+    "createdOn": "1.3.2026 08:58",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3847,7 +4141,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "3.3.2026 10:03",
+    "angebotsprozessDatum": "2.3.2026 13:10"
   },
   {
     "id": 149,
@@ -3862,7 +4158,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "1.3.2026 10:39",
+    "createdOn": "1.3.2026 09:39",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3873,7 +4169,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "3.3.2026 11:35",
+    "angebotsprozessDatum": "1.3.2026 09:39"
   },
   {
     "id": 150,
@@ -3888,7 +4186,7 @@ export const leads: Lead[] = [
     "alter": "Über 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "1.3.2026 10:41",
+    "createdOn": "1.3.2026 09:41",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3899,7 +4197,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "2.3.2026 13:14",
+    "angebotsprozessDatum": "1.3.2026 09:41"
   },
   {
     "id": 151,
@@ -3914,7 +4214,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "1.3.2026 11:38",
+    "createdOn": "1.3.2026 10:38",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3925,7 +4225,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "9.3.2026 11:44",
+    "angebotsprozessDatum": "2.3.2026 10:38"
   },
   {
     "id": 152,
@@ -3940,7 +4242,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "1.3.2026 12:29",
+    "createdOn": "1.3.2026 11:29",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3951,7 +4253,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "2.3.2026 21:21",
+    "angebotsprozessDatum": "2.3.2026 21:21"
   },
   {
     "id": 153,
@@ -3966,7 +4270,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Eric Hardt",
-    "createdOn": "1.3.2026 13:18",
+    "createdOn": "1.3.2026 12:18",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -3977,7 +4281,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "4.3.2026 19:02",
+    "angebotsprozessDatum": "4.3.2026 19:02"
   },
   {
     "id": 154,
@@ -3992,7 +4298,7 @@ export const leads: Lead[] = [
     "alter": "Über 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "1.3.2026 14:47",
+    "createdOn": "1.3.2026 13:47",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "100%",
     "utmTitle": "",
@@ -4003,7 +4309,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "true",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "11.3.2026 14:18",
+    "angebotsprozessDatum": "2.3.2026 10:18"
   },
   {
     "id": 155,
@@ -4018,7 +4326,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "1.3.2026 20:45",
+    "createdOn": "1.3.2026 19:45",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4029,7 +4337,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "2.3.2026 13:14",
+    "angebotsprozessDatum": "1.3.2026 19:45"
   },
   {
     "id": 156,
@@ -4044,7 +4354,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "1.3.2026 21:07",
+    "createdOn": "1.3.2026 20:07",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4055,7 +4365,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 09:18",
+    "angebotsprozessDatum": "1.3.2026 20:07"
   },
   {
     "id": 157,
@@ -4070,7 +4382,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "1.3.2026 21:13",
+    "createdOn": "1.3.2026 20:13",
     "terminBeimAmt": "2.4.2026",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4081,7 +4393,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "3.3.2026 16:57",
+    "angebotsprozessDatum": "3.3.2026 16:52"
   },
   {
     "id": 158,
@@ -4096,7 +4410,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Eric Hardt",
-    "createdOn": "1.3.2026 21:27",
+    "createdOn": "1.3.2026 20:27",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4107,7 +4421,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "5.3.2026 18:11",
+    "angebotsprozessDatum": "5.3.2026 18:11"
   },
   {
     "id": 159,
@@ -4122,7 +4438,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "1.3.2026 22:15",
+    "createdOn": "1.3.2026 21:15",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4133,7 +4449,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "2.3.2026 13:14",
+    "angebotsprozessDatum": "1.3.2026 21:15"
   },
   {
     "id": 160,
@@ -4148,7 +4466,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "1.3.2026 22:59",
+    "createdOn": "1.3.2026 21:59",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4159,7 +4477,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "4.3.2026 14:01",
+    "angebotsprozessDatum": "1.3.2026 21:59"
   },
   {
     "id": 161,
@@ -4174,7 +4494,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Eric Hardt",
-    "createdOn": "1.3.2026 23:27",
+    "createdOn": "1.3.2026 22:27",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4185,7 +4505,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 10:27",
+    "angebotsprozessDatum": "1.3.2026 22:27"
   },
   {
     "id": 162,
@@ -4200,7 +4522,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "1.3.2026 23:32",
+    "createdOn": "1.3.2026 22:32",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4211,7 +4533,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "2.3.2026 13:13",
+    "angebotsprozessDatum": "2.3.2026 11:49"
   },
   {
     "id": 163,
@@ -4226,7 +4550,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "2.3.2026 02:02",
+    "createdOn": "2.3.2026 01:02",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4235,9 +4559,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "6x nicht erreicht",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 12:18",
+    "angebotsprozessDatum": "2.3.2026 01:02"
   },
   {
     "id": 164,
@@ -4252,7 +4578,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "2.3.2026 06:35",
+    "createdOn": "2.3.2026 05:35",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4261,9 +4587,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "6x nicht erreicht",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 12:19",
+    "angebotsprozessDatum": "2.3.2026 05:35"
   },
   {
     "id": 165,
@@ -4278,7 +4606,7 @@ export const leads: Lead[] = [
     "alter": "Über 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "2.3.2026 06:52",
+    "createdOn": "2.3.2026 05:52",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4289,7 +4617,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "3.3.2026 11:47",
+    "angebotsprozessDatum": "2.3.2026 05:52"
   },
   {
     "id": 166,
@@ -4304,7 +4634,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "2.3.2026 06:57",
+    "createdOn": "2.3.2026 05:57",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4313,9 +4643,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "6x nicht erreicht",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 12:19",
+    "angebotsprozessDatum": "2.3.2026 05:57"
   },
   {
     "id": 167,
@@ -4330,7 +4662,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "2.3.2026 08:51",
+    "createdOn": "2.3.2026 07:51",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4341,7 +4673,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "10x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 14:11",
+    "angebotsprozessDatum": "2.3.2026 07:51"
   },
   {
     "id": 168,
@@ -4356,7 +4690,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "2.3.2026 10:44",
+    "createdOn": "2.3.2026 09:44",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4367,7 +4701,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 10:46",
+    "angebotsprozessDatum": "2.3.2026 09:44"
   },
   {
     "id": 169,
@@ -4382,7 +4718,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "2.3.2026 11:32",
+    "createdOn": "2.3.2026 10:32",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4393,7 +4729,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "3.3.2026 12:26",
+    "angebotsprozessDatum": "2.3.2026 10:32"
   },
   {
     "id": 170,
@@ -4408,7 +4746,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "",
     "vertriebler": "Walid Karimi",
-    "createdOn": "2.3.2026 14:53",
+    "createdOn": "2.3.2026 13:53",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4419,7 +4757,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "3.3.2026 16:01",
+    "angebotsprozessDatum": "2.3.2026 13:53"
   },
   {
     "id": 171,
@@ -4434,7 +4774,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "2.3.2026 15:57",
+    "createdOn": "2.3.2026 14:57",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4445,7 +4785,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "3.3.2026 10:38",
+    "angebotsprozessDatum": "2.3.2026 14:57"
   },
   {
     "id": 172,
@@ -4460,7 +4802,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "2.3.2026 18:43",
+    "createdOn": "2.3.2026 17:43",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4471,7 +4813,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "3.3.2026 10:59",
+    "angebotsprozessDatum": "2.3.2026 17:43"
   },
   {
     "id": 173,
@@ -4486,7 +4830,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "2.3.2026 19:58",
+    "createdOn": "2.3.2026 18:58",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4497,7 +4841,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "3.3.2026 13:00",
+    "angebotsprozessDatum": "2.3.2026 18:58"
   },
   {
     "id": 174,
@@ -4512,7 +4858,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Eric Hardt",
-    "createdOn": "2.3.2026 20:20",
+    "createdOn": "2.3.2026 19:20",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4521,9 +4867,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "4x nicht erreicht",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 12:07",
+    "angebotsprozessDatum": "2.3.2026 19:20"
   },
   {
     "id": 175,
@@ -4538,7 +4886,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "2.3.2026 20:35",
+    "createdOn": "2.3.2026 19:35",
     "terminBeimAmt": "19.3.2026",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4549,7 +4897,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "5.3.2026",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "5.3.2026 16:48",
+    "angebotsprozessDatum": "5.3.2026 16:48"
   },
   {
     "id": 176,
@@ -4564,7 +4914,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "2.3.2026 20:39",
+    "createdOn": "2.3.2026 19:39",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4573,9 +4923,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "4x nicht erreicht",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 12:08",
+    "angebotsprozessDatum": "2.3.2026 19:39"
   },
   {
     "id": 177,
@@ -4590,7 +4942,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "2.3.2026 21:33",
+    "createdOn": "2.3.2026 20:33",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4601,7 +4953,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "4.3.2026 16:21",
+    "angebotsprozessDatum": "2.3.2026 20:33"
   },
   {
     "id": 178,
@@ -4616,7 +4970,7 @@ export const leads: Lead[] = [
     "alter": "Über 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "2.3.2026 23:30",
+    "createdOn": "2.3.2026 22:30",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4627,7 +4981,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "3.3.2026 11:06",
+    "angebotsprozessDatum": "2.3.2026 22:30"
   },
   {
     "id": 179,
@@ -4642,7 +4998,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "2.3.2026 23:59",
+    "createdOn": "2.3.2026 22:59",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4653,7 +5009,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "4.3.2026 09:22",
+    "angebotsprozessDatum": "2.3.2026 22:59"
   },
   {
     "id": 180,
@@ -4668,7 +5026,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 07:10",
+    "createdOn": "3.3.2026 06:10",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4679,7 +5037,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 09:20",
+    "angebotsprozessDatum": "3.3.2026 06:10"
   },
   {
     "id": 181,
@@ -4694,7 +5054,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Eric Hardt",
-    "createdOn": "3.3.2026 08:11",
+    "createdOn": "3.3.2026 07:11",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4703,9 +5063,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "4x nicht erreicht",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 12:08",
+    "angebotsprozessDatum": "3.3.2026 07:11"
   },
   {
     "id": 182,
@@ -4720,7 +5082,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 09:15",
+    "createdOn": "3.3.2026 08:15",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4731,7 +5093,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "3.3.2026 11:31",
+    "angebotsprozessDatum": "3.3.2026 08:15"
   },
   {
     "id": 183,
@@ -4746,7 +5110,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 10:05",
+    "createdOn": "3.3.2026 09:05",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4757,7 +5121,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 10:46",
+    "angebotsprozessDatum": "3.3.2026 09:05"
   },
   {
     "id": 184,
@@ -4772,7 +5138,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 11:36",
+    "createdOn": "3.3.2026 10:36",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4783,7 +5149,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 18:43",
+    "angebotsprozessDatum": "3.3.2026 10:36"
   },
   {
     "id": 185,
@@ -4798,7 +5166,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 12:38",
+    "createdOn": "3.3.2026 11:38",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4809,13 +5177,15 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "9x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 14:12",
+    "angebotsprozessDatum": "3.3.2026 11:38"
   },
   {
     "id": 186,
     "name": "Justine Zürker",
-    "leadStatus": "Vertriebsqualifiziert",
-    "verlustgrund": "",
+    "leadStatus": "Verloren",
+    "verlustgrund": "Angestellt",
     "adId": "120240346581020128",
     "adName": "C7 - Aktuell arbeitslos und Vorerfahrung HR",
     "platform": "Facebook",
@@ -4824,7 +5194,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "3.3.2026 14:23",
+    "createdOn": "3.3.2026 13:23",
     "terminBeimAmt": "12.3.2026",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4835,13 +5205,15 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "3.3.2026",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "11.3.2026 13:23",
+    "angebotsprozessDatum": "3.3.2026 13:57"
   },
   {
     "id": 187,
     "name": "Diana Schneider",
-    "leadStatus": "Neuer Lead",
-    "verlustgrund": "",
+    "leadStatus": "Verloren",
+    "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
     "adId": "",
     "adName": "",
     "platform": "Indeed",
@@ -4849,8 +5221,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "",
     "alter": "Keine Angabe",
     "vorerfahrung": "",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 14:57",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "3.3.2026 13:57",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4859,9 +5231,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "6x nicht erreicht",
+    "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:11",
+    "angebotsprozessDatum": "3.3.2026 13:57"
   },
   {
     "id": 188,
@@ -4876,7 +5250,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 16:37",
+    "createdOn": "3.3.2026 15:37",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4887,7 +5261,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "3.3.2026 15:45",
+    "angebotsprozessDatum": "3.3.2026 15:45"
   },
   {
     "id": 189,
@@ -4902,7 +5278,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 16:53",
+    "createdOn": "3.3.2026 15:53",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4911,9 +5287,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "4x nicht erreicht",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 12:08",
+    "angebotsprozessDatum": "3.3.2026 15:53"
   },
   {
     "id": 190,
@@ -4928,7 +5306,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "3.3.2026 16:54",
+    "createdOn": "3.3.2026 15:54",
     "terminBeimAmt": "18.3.2026",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4939,7 +5317,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "4.3.2026",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "4.3.2026 16:57",
+    "angebotsprozessDatum": "4.3.2026 16:55"
   },
   {
     "id": 191,
@@ -4954,7 +5334,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 17:12",
+    "createdOn": "3.3.2026 16:12",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4965,7 +5345,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 10:46",
+    "angebotsprozessDatum": "3.3.2026 16:12"
   },
   {
     "id": 192,
@@ -4980,7 +5362,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Eric Hardt",
-    "createdOn": "3.3.2026 17:12",
+    "createdOn": "3.3.2026 16:12",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -4991,7 +5373,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "3.3.2026 17:11",
+    "angebotsprozessDatum": "3.3.2026 17:11"
   },
   {
     "id": 193,
@@ -5006,7 +5390,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 17:12",
+    "createdOn": "3.3.2026 16:12",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5017,7 +5401,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "5.3.2026 13:13",
+    "angebotsprozessDatum": "3.3.2026 16:12"
   },
   {
     "id": 194,
@@ -5032,7 +5418,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 17:12",
+    "createdOn": "3.3.2026 16:12",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5043,12 +5429,14 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "5.3.2026 13:12",
+    "angebotsprozessDatum": "4.3.2026 10:08"
   },
   {
     "id": 195,
     "name": "Thomas Sugar",
-    "leadStatus": "Vertriebsqualifiziert",
+    "leadStatus": "Gewonnen",
     "verlustgrund": "Falsche Kontaktinformationen",
     "adId": "",
     "adName": "",
@@ -5058,18 +5446,20 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 17:12",
+    "createdOn": "3.3.2026 16:12",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
+    "angebotVerschicken": true,
     "prozessStarten": "Angebot wurde erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "11.3.2026 14:37",
+    "angebotsprozessDatum": "5.3.2026 12:03"
   },
   {
     "id": 196,
@@ -5084,7 +5474,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 17:12",
+    "createdOn": "3.3.2026 16:12",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5093,9 +5483,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 09:42",
+    "angebotsprozessDatum": "3.3.2026 16:12"
   },
   {
     "id": 197,
@@ -5110,7 +5502,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 17:12",
+    "createdOn": "3.3.2026 16:12",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5121,7 +5513,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "5.3.2026 13:12",
+    "angebotsprozessDatum": "3.3.2026 16:12"
   },
   {
     "id": 198,
@@ -5136,7 +5530,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 17:12",
+    "createdOn": "3.3.2026 16:12",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5147,7 +5541,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "5.3.2026 13:12",
+    "angebotsprozessDatum": "5.3.2026 11:52"
   },
   {
     "id": 199,
@@ -5162,7 +5558,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "3.3.2026 17:14",
+    "createdOn": "3.3.2026 16:14",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5171,9 +5567,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "4x nicht erreicht",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:34",
+    "angebotsprozessDatum": "3.3.2026 16:14"
   },
   {
     "id": 200,
@@ -5188,7 +5586,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 17:14",
+    "createdOn": "3.3.2026 16:14",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5199,7 +5597,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "5.3.2026 13:12",
+    "angebotsprozessDatum": "3.3.2026 16:14"
   },
   {
     "id": 201,
@@ -5214,7 +5614,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 17:14",
+    "createdOn": "3.3.2026 16:14",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5225,7 +5625,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "6.3.2026 10:25",
+    "angebotsprozessDatum": "6.3.2026 10:25"
   },
   {
     "id": 202,
@@ -5240,7 +5642,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 17:14",
+    "createdOn": "3.3.2026 16:14",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5251,7 +5653,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "5.3.2026 13:12",
+    "angebotsprozessDatum": "3.3.2026 16:14"
   },
   {
     "id": 203,
@@ -5266,7 +5670,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 17:14",
+    "createdOn": "3.3.2026 16:14",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5277,7 +5681,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 15:37",
+    "angebotsprozessDatum": "3.3.2026 16:14"
   },
   {
     "id": 204,
@@ -5292,7 +5698,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 17:16",
+    "createdOn": "3.3.2026 16:16",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5303,7 +5709,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "5.3.2026 13:12",
+    "angebotsprozessDatum": "3.3.2026 16:16"
   },
   {
     "id": 205,
@@ -5318,7 +5726,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 17:16",
+    "createdOn": "3.3.2026 16:16",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5329,7 +5737,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "5.3.2026 13:13",
+    "angebotsprozessDatum": "3.3.2026 16:16"
   },
   {
     "id": 206,
@@ -5344,7 +5754,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 17:16",
+    "createdOn": "3.3.2026 16:16",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5355,7 +5765,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "5.3.2026 13:12",
+    "angebotsprozessDatum": "4.3.2026 10:25"
   },
   {
     "id": 207,
@@ -5370,7 +5782,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "3.3.2026 17:16",
+    "createdOn": "3.3.2026 16:16",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5381,7 +5793,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "10.3.2026 16:03",
+    "angebotsprozessDatum": "10.3.2026 16:03"
   },
   {
     "id": 208,
@@ -5396,7 +5810,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 17:16",
+    "createdOn": "3.3.2026 16:16",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5407,7 +5821,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "5.3.2026 13:12",
+    "angebotsprozessDatum": "5.3.2026 12:44"
   },
   {
     "id": 209,
@@ -5422,7 +5838,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "3.3.2026 17:16",
+    "createdOn": "3.3.2026 16:16",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5433,7 +5849,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "10.3.2026 15:47",
+    "angebotsprozessDatum": "10.3.2026 15:47"
   },
   {
     "id": 210,
@@ -5448,7 +5866,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 17:16",
+    "createdOn": "3.3.2026 16:16",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5459,7 +5877,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "5.3.2026 13:25",
+    "angebotsprozessDatum": "5.3.2026 13:25"
   },
   {
     "id": 211,
@@ -5474,7 +5894,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 17:16",
+    "createdOn": "3.3.2026 16:16",
     "terminBeimAmt": "18.3.2026",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5485,7 +5905,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 10:48",
+    "angebotsprozessDatum": "3.3.2026 16:16"
   },
   {
     "id": 212,
@@ -5500,7 +5922,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 17:18",
+    "createdOn": "3.3.2026 16:18",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5511,7 +5933,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "5.3.2026 13:12",
+    "angebotsprozessDatum": "5.3.2026 12:04"
   },
   {
     "id": 213,
@@ -5526,7 +5950,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 17:18",
+    "createdOn": "3.3.2026 16:18",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5537,7 +5961,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "5.3.2026 13:12",
+    "angebotsprozessDatum": "3.3.2026 16:18"
   },
   {
     "id": 214,
@@ -5552,7 +5978,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Eric Hardt",
-    "createdOn": "3.3.2026 17:18",
+    "createdOn": "3.3.2026 16:18",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5563,7 +5989,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "5.3.2026 17:31",
+    "angebotsprozessDatum": "5.3.2026 17:31"
   },
   {
     "id": 215,
@@ -5578,7 +6006,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 17:18",
+    "createdOn": "3.3.2026 16:18",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5589,7 +6017,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "11.3.2026 11:47",
+    "angebotsprozessDatum": "6.3.2026 10:04"
   },
   {
     "id": 216,
@@ -5604,7 +6034,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 17:18",
+    "createdOn": "3.3.2026 16:18",
     "terminBeimAmt": "19.3.2026",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5615,7 +6045,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "9.3.2026 10:44",
+    "angebotsprozessDatum": "4.3.2026 11:50"
   },
   {
     "id": 217,
@@ -5630,7 +6062,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "3.3.2026 17:18",
+    "createdOn": "3.3.2026 16:18",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5641,7 +6073,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 13:13",
+    "angebotsprozessDatum": "6.3.2026 15:04"
   },
   {
     "id": 218,
@@ -5656,7 +6090,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 18:00",
+    "createdOn": "3.3.2026 17:00",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5667,7 +6101,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "6.3.2026 10:38",
+    "angebotsprozessDatum": "6.3.2026 10:38"
   },
   {
     "id": 219,
@@ -5682,7 +6118,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 18:06",
+    "createdOn": "3.3.2026 17:06",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5693,7 +6129,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "5.3.2026 13:12",
+    "angebotsprozessDatum": "3.3.2026 17:06"
   },
   {
     "id": 220,
@@ -5708,7 +6146,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 18:17",
+    "createdOn": "3.3.2026 17:17",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5719,7 +6157,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "6.3.2026 10:51",
+    "angebotsprozessDatum": "6.3.2026 10:51"
   },
   {
     "id": 221,
@@ -5734,7 +6174,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 18:42",
+    "createdOn": "3.3.2026 17:42",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5743,9 +6183,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "4x nicht erreicht",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 12:09",
+    "angebotsprozessDatum": "3.3.2026 17:42"
   },
   {
     "id": 222,
@@ -5760,7 +6202,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 18:51",
+    "createdOn": "3.3.2026 17:51",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5771,7 +6213,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "5.3.2026 13:12",
+    "angebotsprozessDatum": "3.3.2026 17:51"
   },
   {
     "id": 223,
@@ -5786,7 +6230,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 19:25",
+    "createdOn": "3.3.2026 18:25",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5797,7 +6241,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "5.3.2026 14:27",
+    "angebotsprozessDatum": "3.3.2026 18:25"
   },
   {
     "id": 224,
@@ -5812,7 +6258,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "3.3.2026 19:40",
+    "createdOn": "3.3.2026 18:40",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5823,7 +6269,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 14:12",
+    "angebotsprozessDatum": "3.3.2026 18:40"
   },
   {
     "id": 225,
@@ -5838,7 +6286,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 20:04",
+    "createdOn": "3.3.2026 19:04",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5849,7 +6297,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "5.3.2026 13:12",
+    "angebotsprozessDatum": "4.3.2026 14:27"
   },
   {
     "id": 226,
@@ -5864,7 +6314,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 20:44",
+    "createdOn": "3.3.2026 19:44",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5873,9 +6323,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "4x nicht erreicht",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 12:11",
+    "angebotsprozessDatum": "3.3.2026 19:44"
   },
   {
     "id": 227,
@@ -5890,7 +6342,7 @@ export const leads: Lead[] = [
     "alter": "Über 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 20:46",
+    "createdOn": "3.3.2026 19:46",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5899,9 +6351,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 09:35",
+    "angebotsprozessDatum": "3.3.2026 19:46"
   },
   {
     "id": 228,
@@ -5916,7 +6370,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Eric Hardt",
-    "createdOn": "3.3.2026 21:48",
+    "createdOn": "3.3.2026 20:48",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5927,7 +6381,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "9.3.2026 10:26",
+    "angebotsprozessDatum": "5.3.2026 18:57"
   },
   {
     "id": 229,
@@ -5942,7 +6398,7 @@ export const leads: Lead[] = [
     "alter": "Über 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "3.3.2026 22:38",
+    "createdOn": "3.3.2026 21:38",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5953,7 +6409,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "5.3.2026 13:12",
+    "angebotsprozessDatum": "3.3.2026 21:38"
   },
   {
     "id": 230,
@@ -5968,7 +6426,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "4.3.2026 00:16",
+    "createdOn": "3.3.2026 23:16",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -5979,7 +6437,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 14:13",
+    "angebotsprozessDatum": "3.3.2026 23:16"
   },
   {
     "id": 231,
@@ -5994,7 +6454,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "4.3.2026 00:39",
+    "createdOn": "3.3.2026 23:39",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6003,9 +6463,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 09:35",
+    "angebotsprozessDatum": "3.3.2026 23:39"
   },
   {
     "id": 232,
@@ -6020,7 +6482,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Eric Hardt",
-    "createdOn": "4.3.2026 01:41",
+    "createdOn": "4.3.2026 00:41",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6031,7 +6493,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "4.3.2026 18:34",
+    "angebotsprozessDatum": "4.3.2026 18:34"
   },
   {
     "id": 233,
@@ -6046,7 +6510,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "4.3.2026 05:14",
+    "createdOn": "4.3.2026 04:14",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6055,9 +6519,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 09:36",
+    "angebotsprozessDatum": "4.3.2026 04:14"
   },
   {
     "id": 234,
@@ -6072,7 +6538,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "4.3.2026 06:48",
+    "createdOn": "4.3.2026 05:48",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6083,7 +6549,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 10:46",
+    "angebotsprozessDatum": "4.3.2026 05:48"
   },
   {
     "id": 235,
@@ -6098,7 +6566,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "4.3.2026 07:04",
+    "createdOn": "4.3.2026 06:04",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6107,9 +6575,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 09:37",
+    "angebotsprozessDatum": "4.3.2026 06:04"
   },
   {
     "id": 236,
@@ -6124,7 +6594,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "4.3.2026 07:23",
+    "createdOn": "4.3.2026 06:23",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6135,7 +6605,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "5.3.2026",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "9.3.2026 15:12",
+    "angebotsprozessDatum": "5.3.2026 14:33"
   },
   {
     "id": 237,
@@ -6150,7 +6622,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "4.3.2026 09:19",
+    "createdOn": "4.3.2026 08:19",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "40%",
     "utmTitle": "",
@@ -6161,13 +6633,15 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "4.3.2026",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "4.3.2026 12:37",
+    "angebotsprozessDatum": "4.3.2026 12:33"
   },
   {
     "id": 238,
     "name": "Liam Day",
-    "leadStatus": "Neuer Lead",
-    "verlustgrund": "",
+    "leadStatus": "Verloren",
+    "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
     "adId": "",
     "adName": "",
     "platform": "Indeed",
@@ -6175,8 +6649,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "Keine Angabe",
     "vorerfahrung": "",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "4.3.2026 09:22",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "4.3.2026 08:22",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6185,9 +6659,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "6x nicht erreicht",
+    "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:10",
+    "angebotsprozessDatum": "4.3.2026 08:22"
   },
   {
     "id": 239,
@@ -6202,7 +6678,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "4.3.2026 11:51",
+    "createdOn": "4.3.2026 10:51",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "Bitte nichtmehr anrufen hier bestand bereits Kontakt wird heute im Laufe des Tages verwaltet",
     "utmTitle": "",
@@ -6213,7 +6689,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "6.3.2026 10:46",
+    "angebotsprozessDatum": "6.3.2026 10:46"
   },
   {
     "id": 240,
@@ -6228,7 +6706,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "4.3.2026 12:46",
+    "createdOn": "4.3.2026 11:46",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6237,9 +6715,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 09:37",
+    "angebotsprozessDatum": "4.3.2026 11:46"
   },
   {
     "id": 241,
@@ -6254,7 +6734,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "4.3.2026 13:04",
+    "createdOn": "4.3.2026 12:04",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6265,7 +6745,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "9.3.2026 18:25",
+    "angebotsprozessDatum": "4.3.2026 12:04"
   },
   {
     "id": 242,
@@ -6280,7 +6762,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "4.3.2026 13:19",
+    "createdOn": "4.3.2026 12:19",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6291,7 +6773,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 10:46",
+    "angebotsprozessDatum": "4.3.2026 12:19"
   },
   {
     "id": 243,
@@ -6306,7 +6790,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "4.3.2026 13:58",
+    "createdOn": "4.3.2026 12:58",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6315,9 +6799,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "4x nicht erreicht",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 12:10",
+    "angebotsprozessDatum": "4.3.2026 12:58"
   },
   {
     "id": 244,
@@ -6332,7 +6818,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Eric Hardt",
-    "createdOn": "4.3.2026 15:18",
+    "createdOn": "4.3.2026 14:18",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6343,7 +6829,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "5.3.2026 17:45",
+    "angebotsprozessDatum": "5.3.2026 17:43"
   },
   {
     "id": 245,
@@ -6358,7 +6846,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "4.3.2026 15:18",
+    "createdOn": "4.3.2026 14:18",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6369,13 +6857,15 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 14:21",
+    "angebotsprozessDatum": "4.3.2026 14:18"
   },
   {
     "id": 246,
     "name": "Nicole Schmerker",
-    "leadStatus": "Neuer Lead",
-    "verlustgrund": "",
+    "leadStatus": "Verloren",
+    "verlustgrund": "Kein Interesse an HR/Payroll",
     "adId": "120240346581020128",
     "adName": "C7 - Aktuell arbeitslos und Vorerfahrung HR",
     "platform": "Facebook",
@@ -6384,7 +6874,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "4.3.2026 15:18",
+    "createdOn": "4.3.2026 14:18",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6395,7 +6885,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 09:40",
+    "angebotsprozessDatum": "4.3.2026 14:18"
   },
   {
     "id": 247,
@@ -6410,7 +6902,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "4.3.2026 15:18",
+    "createdOn": "4.3.2026 14:18",
     "terminBeimAmt": "19.3.2026",
     "closingWahrscheinlichkeit": "80%",
     "utmTitle": "",
@@ -6421,7 +6913,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "4.3.2026",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "10.3.2026 13:32",
+    "angebotsprozessDatum": "4.3.2026 14:47"
   },
   {
     "id": 248,
@@ -6436,7 +6930,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Eric Hardt",
-    "createdOn": "4.3.2026 15:41",
+    "createdOn": "4.3.2026 14:41",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6447,7 +6941,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 10:12",
+    "angebotsprozessDatum": "4.3.2026 14:41"
   },
   {
     "id": 249,
@@ -6462,7 +6958,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "4.3.2026 16:23",
+    "createdOn": "4.3.2026 15:23",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6473,7 +6969,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "4.3.2026 16:12",
+    "angebotsprozessDatum": "4.3.2026 15:23"
   },
   {
     "id": 250,
@@ -6488,7 +6986,7 @@ export const leads: Lead[] = [
     "alter": "Über 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "4.3.2026 17:52",
+    "createdOn": "4.3.2026 16:52",
     "terminBeimAmt": "2.3.2026",
     "closingWahrscheinlichkeit": "100%",
     "utmTitle": "",
@@ -6499,13 +6997,15 @@ export const leads: Lead[] = [
     "bgVerschickt": "true",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "11.3.2026 14:18",
+    "angebotsprozessDatum": "4.3.2026 16:52"
   },
   {
     "id": 251,
     "name": "Beate Pilz",
-    "leadStatus": "Neuer Lead",
-    "verlustgrund": "",
+    "leadStatus": "Verloren",
+    "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
     "adId": "120240861711360128",
     "adName": "C7.1 - Aktuell arbeitslos und Vorerfahrung HR - v2",
     "platform": "Instagram",
@@ -6514,7 +7014,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "4.3.2026 18:36",
+    "createdOn": "4.3.2026 17:36",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6523,9 +7023,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "7x nicht erreicht",
+    "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 12:15",
+    "angebotsprozessDatum": "4.3.2026 17:36"
   },
   {
     "id": 252,
@@ -6540,7 +7042,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "4.3.2026 19:11",
+    "createdOn": "4.3.2026 18:11",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6551,7 +7053,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "9.3.2026 18:25",
+    "angebotsprozessDatum": "4.3.2026 18:11"
   },
   {
     "id": 253,
@@ -6566,7 +7070,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "4.3.2026 19:29",
+    "createdOn": "4.3.2026 18:29",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6577,7 +7081,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "5.3.2026 13:24",
+    "angebotsprozessDatum": "5.3.2026 13:19"
   },
   {
     "id": 254,
@@ -6592,7 +7098,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "4.3.2026 19:31",
+    "createdOn": "4.3.2026 18:31",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6603,7 +7109,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "9.3.2026 18:50",
+    "angebotsprozessDatum": "4.3.2026 18:31"
   },
   {
     "id": 255,
@@ -6618,7 +7126,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "4.3.2026 19:37",
+    "createdOn": "4.3.2026 18:37",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6629,7 +7137,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "11.3.2026 14:34",
+    "angebotsprozessDatum": "10.3.2026 14:36"
   },
   {
     "id": 256,
@@ -6644,7 +7154,7 @@ export const leads: Lead[] = [
     "alter": "24 – 25 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "4.3.2026 20:11",
+    "createdOn": "4.3.2026 19:11",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6655,13 +7165,15 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "9.3.2026 19:01",
+    "angebotsprozessDatum": "9.3.2026 19:01"
   },
   {
     "id": 257,
     "name": "Sandra Grauel",
-    "leadStatus": "Neuer Lead",
-    "verlustgrund": "",
+    "leadStatus": "Verloren",
+    "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
     "adId": "120240861711360128",
     "adName": "C7.1 - Aktuell arbeitslos und Vorerfahrung HR - v2",
     "platform": "Instagram",
@@ -6669,8 +7181,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "4.3.2026 20:13",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "4.3.2026 19:13",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6679,9 +7191,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "6x nicht erreicht",
+    "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:45",
+    "angebotsprozessDatum": "4.3.2026 19:13"
   },
   {
     "id": 258,
@@ -6696,7 +7210,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "4.3.2026 20:35",
+    "createdOn": "4.3.2026 19:35",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6707,7 +7221,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 10:14",
+    "angebotsprozessDatum": "4.3.2026 19:35"
   },
   {
     "id": 259,
@@ -6722,7 +7238,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "4.3.2026 20:46",
+    "createdOn": "4.3.2026 19:46",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6733,7 +7249,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 13:35",
+    "angebotsprozessDatum": "4.3.2026 19:46"
   },
   {
     "id": 260,
@@ -6748,7 +7266,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "4.3.2026 23:15",
+    "createdOn": "4.3.2026 22:15",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6759,7 +7277,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "9.3.2026",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "10.3.2026 10:13",
+    "angebotsprozessDatum": "6.3.2026 12:09"
   },
   {
     "id": 261,
@@ -6774,7 +7294,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "4.3.2026 23:16",
+    "createdOn": "4.3.2026 22:16",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6785,13 +7305,15 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "10.3.2026 12:23",
+    "angebotsprozessDatum": "6.3.2026 11:18"
   },
   {
     "id": 262,
     "name": "Nicole Hudek",
-    "leadStatus": "Neuer Lead",
-    "verlustgrund": "",
+    "leadStatus": "Verloren",
+    "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
     "adId": "120240861711360128",
     "adName": "C7.1 - Aktuell arbeitslos und Vorerfahrung HR - v2",
     "platform": "Instagram",
@@ -6800,7 +7322,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "5.3.2026 03:02",
+    "createdOn": "5.3.2026 02:02",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6809,9 +7331,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "6x nicht erreicht",
+    "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:46",
+    "angebotsprozessDatum": "5.3.2026 02:02"
   },
   {
     "id": 263,
@@ -6826,7 +7350,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "5.3.2026 09:41",
+    "createdOn": "5.3.2026 08:41",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6835,9 +7359,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 09:43",
+    "angebotsprozessDatum": "5.3.2026 08:41"
   },
   {
     "id": 264,
@@ -6852,7 +7378,7 @@ export const leads: Lead[] = [
     "alter": "25 - 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "5.3.2026 10:09",
+    "createdOn": "5.3.2026 09:09",
     "terminBeimAmt": "11.3.2026",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6863,7 +7389,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 08:32",
+    "angebotsprozessDatum": "5.3.2026 12:47"
   },
   {
     "id": 265,
@@ -6878,7 +7406,7 @@ export const leads: Lead[] = [
     "alter": "25 - 45 Jahre",
     "vorerfahrung": "",
     "vertriebler": "Walid Karimi",
-    "createdOn": "5.3.2026 10:21",
+    "createdOn": "5.3.2026 09:21",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6889,7 +7417,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "10.3.2026 10:30",
+    "angebotsprozessDatum": "5.3.2026 10:43"
   },
   {
     "id": 266,
@@ -6904,7 +7434,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "5.3.2026 10:38",
+    "createdOn": "5.3.2026 09:38",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6915,7 +7445,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 14:27",
+    "angebotsprozessDatum": "5.3.2026 09:38"
   },
   {
     "id": 267,
@@ -6930,7 +7462,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "5.3.2026 10:38",
+    "createdOn": "5.3.2026 09:38",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6941,7 +7473,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "5.3.2026 13:12",
+    "angebotsprozessDatum": "5.3.2026 09:38"
   },
   {
     "id": 268,
@@ -6956,7 +7490,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "5.3.2026 10:38",
+    "createdOn": "5.3.2026 09:38",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6965,9 +7499,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "4x nicht erreicht",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "9.3.2026",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:39",
+    "angebotsprozessDatum": "5.3.2026 09:38"
   },
   {
     "id": 269,
@@ -6982,7 +7518,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "5.3.2026 10:41",
+    "createdOn": "5.3.2026 09:41",
     "terminBeimAmt": "30.6.2026",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -6993,7 +7529,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "5.3.2026 13:12",
+    "angebotsprozessDatum": "5.3.2026 11:12"
   },
   {
     "id": 270,
@@ -7008,7 +7546,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "5.3.2026 12:09",
+    "createdOn": "5.3.2026 11:09",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7019,7 +7557,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 10:22",
+    "angebotsprozessDatum": "5.3.2026 11:09"
   },
   {
     "id": 271,
@@ -7034,7 +7574,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "5.3.2026 12:10",
+    "createdOn": "5.3.2026 11:10",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7045,7 +7585,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "5.3.2026 13:12",
+    "angebotsprozessDatum": "5.3.2026 11:36"
   },
   {
     "id": 272,
@@ -7060,7 +7602,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "5.3.2026 12:46",
+    "createdOn": "5.3.2026 11:46",
     "terminBeimAmt": "13.3.2026",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7071,7 +7613,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "5.3.2026",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "5.3.2026 16:10",
+    "angebotsprozessDatum": "5.3.2026 16:10"
   },
   {
     "id": 273,
@@ -7086,7 +7630,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "5.3.2026 13:54",
+    "createdOn": "5.3.2026 12:54",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7095,9 +7639,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Angebot wurde erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "11.3.2026 13:39",
+    "angebotsprozessDatum": "5.3.2026 15:33"
   },
   {
     "id": 274,
@@ -7112,7 +7658,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "5.3.2026 14:29",
+    "createdOn": "5.3.2026 13:29",
     "terminBeimAmt": "20.3.2026",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7123,7 +7669,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "5.3.2026 15:02",
+    "angebotsprozessDatum": "5.3.2026 15:01"
   },
   {
     "id": 275,
@@ -7137,8 +7685,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "Keine Angabe",
     "vorerfahrung": "",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "5.3.2026 16:21",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "5.3.2026 15:21",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7147,9 +7695,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "5x nicht erreicht",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "5.3.2026",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:21",
+    "angebotsprozessDatum": "5.3.2026 15:21"
   },
   {
     "id": 276,
@@ -7164,7 +7714,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "5.3.2026 16:47",
+    "createdOn": "5.3.2026 15:47",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7173,15 +7723,17 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 11:11",
+    "angebotsprozessDatum": "5.3.2026 15:47"
   },
   {
     "id": 277,
     "name": "Manda Grün",
-    "leadStatus": "Neuer Lead",
-    "verlustgrund": "",
+    "leadStatus": "Verloren",
+    "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
     "adId": "120240870704370128",
     "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
     "platform": "Facebook",
@@ -7189,8 +7741,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "5.3.2026 18:07",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "5.3.2026 17:07",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7199,9 +7751,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "6x nicht erreicht",
+    "anrufversuch": "8x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:46",
+    "angebotsprozessDatum": "5.3.2026 17:07"
   },
   {
     "id": 278,
@@ -7216,7 +7770,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Eric Hardt",
-    "createdOn": "5.3.2026 18:19",
+    "createdOn": "5.3.2026 17:19",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7227,7 +7781,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 10:13",
+    "angebotsprozessDatum": "5.3.2026 17:19"
   },
   {
     "id": 279,
@@ -7242,7 +7798,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "5.3.2026 20:09",
+    "createdOn": "5.3.2026 19:09",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7253,7 +7809,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "9.3.2026 18:06",
+    "angebotsprozessDatum": "5.3.2026 19:09"
   },
   {
     "id": 280,
@@ -7268,7 +7826,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "5.3.2026 20:09",
+    "createdOn": "5.3.2026 19:09",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7279,7 +7837,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "10.3.2026",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "9.3.2026 16:32",
+    "angebotsprozessDatum": "5.3.2026 19:09"
   },
   {
     "id": 281,
@@ -7294,7 +7854,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "5.3.2026 21:31",
+    "createdOn": "5.3.2026 20:31",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7303,9 +7863,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 11:11",
+    "angebotsprozessDatum": "5.3.2026 20:31"
   },
   {
     "id": 282,
@@ -7319,8 +7881,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "6.3.2026 06:48",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "6.3.2026 05:48",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7329,9 +7891,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "5x nicht erreicht",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:47",
+    "angebotsprozessDatum": "6.3.2026 05:48"
   },
   {
     "id": 283,
@@ -7346,7 +7910,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "6.3.2026 07:21",
+    "createdOn": "6.3.2026 06:21",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7355,9 +7919,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "5x nicht erreicht",
+    "anrufversuch": "7x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:48",
+    "angebotsprozessDatum": "6.3.2026 06:21"
   },
   {
     "id": 284,
@@ -7371,8 +7937,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "Keine Angabe",
     "vorerfahrung": "",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "6.3.2026 08:18",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "6.3.2026 07:18",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7381,9 +7947,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "4x nicht erreicht",
+    "anrufversuch": "6x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:21",
+    "angebotsprozessDatum": "6.3.2026 07:18"
   },
   {
     "id": 285,
@@ -7398,7 +7966,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "6.3.2026 08:18",
+    "createdOn": "6.3.2026 07:18",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7407,15 +7975,17 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:41",
+    "angebotsprozessDatum": "6.3.2026 07:18"
   },
   {
     "id": 286,
     "name": "Valmira Beqiri",
-    "leadStatus": "Neuer Lead",
-    "verlustgrund": "",
+    "leadStatus": "Verloren",
+    "verlustgrund": "Angestellt",
     "adId": "",
     "adName": "",
     "platform": "Indeed",
@@ -7423,8 +7993,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "Keine Angabe",
     "vorerfahrung": "",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "6.3.2026 08:18",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "6.3.2026 07:18",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7433,9 +8003,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:16",
+    "angebotsprozessDatum": "6.3.2026 07:18"
   },
   {
     "id": 287,
@@ -7450,7 +8022,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "6.3.2026 09:18",
+    "createdOn": "6.3.2026 08:18",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7461,7 +8033,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "9.3.2026 18:21",
+    "angebotsprozessDatum": "9.3.2026 18:17"
   },
   {
     "id": 288,
@@ -7476,7 +8050,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "6.3.2026 10:11",
+    "createdOn": "6.3.2026 09:11",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7487,7 +8061,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 09:26",
+    "angebotsprozessDatum": "6.3.2026 09:11"
   },
   {
     "id": 289,
@@ -7502,7 +8078,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "6.3.2026 11:24",
+    "createdOn": "6.3.2026 10:24",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7511,9 +8087,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 11:12",
+    "angebotsprozessDatum": "6.3.2026 10:24"
   },
   {
     "id": 290,
@@ -7527,8 +8105,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "Keine Angabe",
     "vorerfahrung": "",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "6.3.2026 11:34",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "6.3.2026 10:34",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7537,9 +8115,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:14",
+    "angebotsprozessDatum": "6.3.2026 10:34"
   },
   {
     "id": 291,
@@ -7554,7 +8134,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "6.3.2026 11:34",
+    "createdOn": "6.3.2026 10:34",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7565,7 +8145,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "6.3.2026 12:37",
+    "angebotsprozessDatum": "6.3.2026 10:34"
   },
   {
     "id": 292,
@@ -7580,7 +8162,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "6.3.2026 12:28",
+    "createdOn": "6.3.2026 11:28",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7591,7 +8173,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:36",
+    "angebotsprozessDatum": "6.3.2026 11:28"
   },
   {
     "id": 293,
@@ -7605,8 +8189,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "Keine Angabe",
     "vorerfahrung": "",
-    "vertriebler": "",
-    "createdOn": "6.3.2026 13:47",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "6.3.2026 12:47",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7615,9 +8199,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:21",
+    "angebotsprozessDatum": "6.3.2026 12:47"
   },
   {
     "id": 294,
@@ -7632,7 +8218,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "6.3.2026 13:47",
+    "createdOn": "6.3.2026 12:47",
     "terminBeimAmt": "18.3.2026",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7641,9 +8227,11 @@ export const leads: Lead[] = [
     "prozessStarten": "High Touch - Angebot erstellen",
     "terminBeimAmtCheck": true,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "6.3.2026",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:42",
+    "angebotsprozessDatum": "6.3.2026 16:32"
   },
   {
     "id": 295,
@@ -7658,7 +8246,7 @@ export const leads: Lead[] = [
     "alter": "Über 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "6.3.2026 13:54",
+    "createdOn": "6.3.2026 12:54",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7669,7 +8257,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "10.3.2026 16:38",
+    "angebotsprozessDatum": "10.3.2026 16:38"
   },
   {
     "id": 296,
@@ -7684,7 +8274,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "6.3.2026 15:43",
+    "createdOn": "6.3.2026 14:43",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7695,7 +8285,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "6.3.2026",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "11.3.2026 14:37",
+    "angebotsprozessDatum": "6.3.2026 15:21"
   },
   {
     "id": 297,
@@ -7709,8 +8301,36 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "6.3.2026 16:00",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "5x nicht erreicht",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:48",
+    "angebotsprozessDatum": "6.3.2026 16:00"
+  },
+  {
+    "id": 298,
+    "name": "Patrick Schmal",
+    "leadStatus": "Verloren",
+    "verlustgrund": "aktuell keine BG-Bewilligung",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Instagram",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "24 – 25 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "6.3.2026 17:00",
+    "createdOn": "6.3.2026 16:51",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7721,33 +8341,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
-  },
-  {
-    "id": 298,
-    "name": "Patrick Schmal",
-    "leadStatus": "Rückruf",
-    "verlustgrund": "",
-    "adId": "120240870704370128",
-    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
-    "platform": "Instagram",
-    "arbeitslosGemeldet": "Ja",
-    "deutschkenntnisse": "Muttersprache",
-    "alter": "24 – 25 Jahre",
-    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "6.3.2026 17:51",
-    "terminBeimAmt": "",
-    "closingWahrscheinlichkeit": "",
-    "utmTitle": "",
-    "hotLead": false,
-    "angebotVerschicken": false,
-    "prozessStarten": "Noch kein Angebot erstellt",
-    "terminBeimAmtCheck": false,
-    "bgVerschickt": "",
-    "anrufversuch": "2x nicht erreicht",
-    "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 10:48",
+    "angebotsprozessDatum": "6.3.2026 16:51"
   },
   {
     "id": 299,
@@ -7762,7 +8358,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "6.3.2026 19:39",
+    "createdOn": "6.3.2026 18:39",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7773,7 +8369,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "9.3.2026 11:10",
+    "angebotsprozessDatum": "9.3.2026 11:06"
   },
   {
     "id": 300,
@@ -7788,7 +8386,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "6.3.2026 21:40",
+    "createdOn": "6.3.2026 20:40",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7797,15 +8395,17 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 11:52",
+    "angebotsprozessDatum": "6.3.2026 20:40"
   },
   {
     "id": 301,
     "name": "Heike Wötzel",
-    "leadStatus": "Neuer Lead",
-    "verlustgrund": "",
+    "leadStatus": "Verloren",
+    "verlustgrund": "aktuell keine BG-Bewilligung",
     "adId": "120240870704370128",
     "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
     "platform": "Facebook",
@@ -7813,8 +8413,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "6.3.2026 22:58",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "6.3.2026 21:58",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7823,9 +8423,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:04",
+    "angebotsprozessDatum": "6.3.2026 21:58"
   },
   {
     "id": 302,
@@ -7840,7 +8442,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "6.3.2026 23:23",
+    "createdOn": "6.3.2026 22:23",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7851,7 +8453,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "9.3.2026 11:24",
+    "angebotsprozessDatum": "6.3.2026 22:23"
   },
   {
     "id": 303,
@@ -7866,7 +8470,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, ich bin noch unsicher, ob es zu mir passt",
     "vertriebler": "Walid Karimi",
-    "createdOn": "7.3.2026 09:17",
+    "createdOn": "7.3.2026 08:17",
     "terminBeimAmt": "12.3.2026",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7877,7 +8481,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "10.3.2026 14:13",
+    "angebotsprozessDatum": "10.3.2026 09:57"
   },
   {
     "id": 304,
@@ -7892,7 +8498,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "7.3.2026 09:51",
+    "createdOn": "7.3.2026 08:51",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7903,7 +8509,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "10x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "10.3.2026 11:10",
+    "angebotsprozessDatum": "7.3.2026 10:36"
   },
   {
     "id": 305,
@@ -7918,7 +8526,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "7.3.2026 11:06",
+    "createdOn": "7.3.2026 10:06",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7927,9 +8535,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "2x nicht erreicht",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 09:20",
+    "angebotsprozessDatum": "7.3.2026 10:06"
   },
   {
     "id": 306,
@@ -7943,8 +8553,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "Über 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "7.3.2026 11:21",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "7.3.2026 10:21",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7953,9 +8563,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:49",
+    "angebotsprozessDatum": "7.3.2026 10:21"
   },
   {
     "id": 307,
@@ -7970,7 +8582,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "7.3.2026 11:24",
+    "createdOn": "7.3.2026 10:24",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -7981,7 +8593,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "9.3.2026 11:28",
+    "angebotsprozessDatum": "7.3.2026 10:24"
   },
   {
     "id": 308,
@@ -7996,7 +8610,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "7.3.2026 11:41",
+    "createdOn": "7.3.2026 10:41",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8005,9 +8619,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 11:54",
+    "angebotsprozessDatum": "7.3.2026 10:41"
   },
   {
     "id": 309,
@@ -8022,7 +8638,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "7.3.2026 12:55",
+    "createdOn": "7.3.2026 11:55",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8033,7 +8649,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 13:40",
+    "angebotsprozessDatum": "7.3.2026 11:55"
   },
   {
     "id": 310,
@@ -8048,7 +8666,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "7.3.2026 14:51",
+    "createdOn": "7.3.2026 13:51",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8059,7 +8677,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "9.3.2026 11:31",
+    "angebotsprozessDatum": "7.3.2026 13:51"
   },
   {
     "id": 311,
@@ -8074,7 +8694,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "7.3.2026 16:55",
+    "createdOn": "7.3.2026 15:55",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8085,7 +8705,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "9.3.2026 11:33",
+    "angebotsprozessDatum": "7.3.2026 15:55"
   },
   {
     "id": 312,
@@ -8100,7 +8722,7 @@ export const leads: Lead[] = [
     "alter": "Über 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "7.3.2026 16:55",
+    "createdOn": "7.3.2026 15:55",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8111,7 +8733,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "9.3.2026 11:56",
+    "angebotsprozessDatum": "9.3.2026 11:54"
   },
   {
     "id": 313,
@@ -8126,7 +8750,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "7.3.2026 17:53",
+    "createdOn": "7.3.2026 16:53",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8137,7 +8761,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "9.3.2026 11:56",
+    "angebotsprozessDatum": "7.3.2026 16:53"
   },
   {
     "id": 314,
@@ -8151,8 +8777,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "7.3.2026 19:43",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "7.3.2026 18:43",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8161,9 +8787,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:50",
+    "angebotsprozessDatum": "7.3.2026 18:43"
   },
   {
     "id": 315,
@@ -8178,7 +8806,7 @@ export const leads: Lead[] = [
     "alter": "Über 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "7.3.2026 21:00",
+    "createdOn": "7.3.2026 20:00",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8189,7 +8817,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 12:52",
+    "angebotsprozessDatum": "7.3.2026 20:00"
   },
   {
     "id": 316,
@@ -8204,7 +8834,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "7.3.2026 21:08",
+    "createdOn": "7.3.2026 20:08",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8213,9 +8843,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "4x nicht erreicht",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 12:11",
+    "angebotsprozessDatum": "7.3.2026 20:08"
   },
   {
     "id": 317,
@@ -8230,7 +8862,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "7.3.2026 21:57",
+    "createdOn": "7.3.2026 20:57",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8239,9 +8871,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "2x nicht erreicht",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 10:36",
+    "angebotsprozessDatum": "7.3.2026 20:57"
   },
   {
     "id": 318,
@@ -8256,7 +8890,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "8.3.2026 02:18",
+    "createdOn": "8.3.2026 01:18",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8267,7 +8901,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "9.3.2026 12:09",
+    "angebotsprozessDatum": "8.3.2026 01:18"
   },
   {
     "id": 319,
@@ -8282,7 +8918,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "8.3.2026 07:28",
+    "createdOn": "8.3.2026 06:28",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8291,9 +8927,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 11:58",
+    "angebotsprozessDatum": "8.3.2026 06:28"
   },
   {
     "id": 320,
@@ -8308,7 +8946,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "8.3.2026 08:40",
+    "createdOn": "8.3.2026 07:40",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8319,7 +8957,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "9.3.2026 12:10",
+    "angebotsprozessDatum": "8.3.2026 07:40"
   },
   {
     "id": 321,
@@ -8333,8 +8973,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Fließend (C1/C2)",
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "8.3.2026 08:52",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "8.3.2026 07:52",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8343,9 +8983,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:57",
+    "angebotsprozessDatum": "8.3.2026 07:52"
   },
   {
     "id": 322,
@@ -8359,8 +9001,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "8.3.2026 16:47",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "8.3.2026 15:47",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8369,9 +9011,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "2x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:55",
+    "angebotsprozessDatum": "8.3.2026 15:47"
   },
   {
     "id": 323,
@@ -8386,7 +9030,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "8.3.2026 18:26",
+    "createdOn": "8.3.2026 17:26",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8395,9 +9039,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "2x nicht erreicht",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 09:28",
+    "angebotsprozessDatum": "8.3.2026 17:26"
   },
   {
     "id": 324,
@@ -8412,7 +9058,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "8.3.2026 20:58",
+    "createdOn": "8.3.2026 19:58",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8421,9 +9067,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "2x nicht erreicht",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:42",
+    "angebotsprozessDatum": "8.3.2026 19:58"
   },
   {
     "id": 325,
@@ -8438,7 +9086,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "8.3.2026 21:24",
+    "createdOn": "8.3.2026 20:24",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8449,7 +9097,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "9.3.2026 12:42",
+    "angebotsprozessDatum": "9.3.2026 12:42"
   },
   {
     "id": 326,
@@ -8463,8 +9113,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "8.3.2026 22:07",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "8.3.2026 21:07",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8473,9 +9123,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "2x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:54",
+    "angebotsprozessDatum": "8.3.2026 21:07"
   },
   {
     "id": 327,
@@ -8490,7 +9142,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "9.3.2026 01:17",
+    "createdOn": "9.3.2026 00:17",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8501,7 +9153,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "9.3.2026 10:00",
+    "angebotsprozessDatum": "9.3.2026 09:58"
   },
   {
     "id": 328,
@@ -8516,7 +9170,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "9.3.2026 05:50",
+    "createdOn": "9.3.2026 04:50",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8527,7 +9181,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "10.3.2026 14:58",
+    "angebotsprozessDatum": "10.3.2026 14:58"
   },
   {
     "id": 329,
@@ -8542,7 +9198,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "9.3.2026 07:03",
+    "createdOn": "9.3.2026 06:03",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8553,7 +9209,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "9.3.2026 17:16",
+    "angebotsprozessDatum": "9.3.2026 06:03"
   },
   {
     "id": 330,
@@ -8568,7 +9226,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "9.3.2026 07:03",
+    "createdOn": "9.3.2026 06:03",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8579,7 +9237,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 12:58",
+    "angebotsprozessDatum": "9.3.2026 06:03"
   },
   {
     "id": 331,
@@ -8593,8 +9253,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "Keine Angabe",
     "vorerfahrung": "",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "9.3.2026 07:03",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "9.3.2026 06:03",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8603,9 +9263,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "2x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:37",
+    "angebotsprozessDatum": "9.3.2026 06:03"
   },
   {
     "id": 332,
@@ -8620,7 +9282,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "9.3.2026 07:03",
+    "createdOn": "9.3.2026 06:03",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8631,7 +9293,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "9.3.2026 13:06",
+    "angebotsprozessDatum": "9.3.2026 12:57"
   },
   {
     "id": 333,
@@ -8646,7 +9310,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "9.3.2026 07:03",
+    "createdOn": "9.3.2026 06:03",
     "terminBeimAmt": "13.3.2026",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8657,13 +9321,15 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "9.3.2026",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "9.3.2026 16:14",
+    "angebotsprozessDatum": "9.3.2026 16:14"
   },
   {
     "id": 334,
     "name": "Jan Landje",
-    "leadStatus": "Neuer Lead",
-    "verlustgrund": "",
+    "leadStatus": "Verloren",
+    "verlustgrund": "Kurs für Job gehalten",
     "adId": "",
     "adName": "",
     "platform": "Indeed",
@@ -8671,8 +9337,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "Keine Angabe",
     "vorerfahrung": "",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "9.3.2026 07:03",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "9.3.2026 06:03",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8681,9 +9347,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:18",
+    "angebotsprozessDatum": "9.3.2026 06:03"
   },
   {
     "id": 335,
@@ -8698,7 +9366,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "9.3.2026 07:25",
+    "createdOn": "9.3.2026 06:25",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8709,7 +9377,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "10.3.2026 09:57",
+    "angebotsprozessDatum": "9.3.2026 09:32"
   },
   {
     "id": 336,
@@ -8724,7 +9394,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "9.3.2026 08:32",
+    "createdOn": "9.3.2026 07:32",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8735,7 +9405,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "9.3.2026 15:47",
+    "angebotsprozessDatum": "9.3.2026 07:32"
   },
   {
     "id": 337,
@@ -8749,8 +9421,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "Keine Angabe",
     "vorerfahrung": "",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "9.3.2026 08:32",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "9.3.2026 07:32",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8759,9 +9431,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:21",
+    "angebotsprozessDatum": "9.3.2026 07:32"
   },
   {
     "id": 338,
@@ -8775,8 +9449,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "Keine Angabe",
     "vorerfahrung": "",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "9.3.2026 08:32",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "9.3.2026 07:32",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8785,9 +9459,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:19",
+    "angebotsprozessDatum": "9.3.2026 07:32"
   },
   {
     "id": 339,
@@ -8801,8 +9477,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "Keine Angabe",
     "vorerfahrung": "",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "9.3.2026 08:32",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "9.3.2026 07:32",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8811,9 +9487,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:20",
+    "angebotsprozessDatum": "9.3.2026 07:32"
   },
   {
     "id": 340,
@@ -8828,7 +9506,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "9.3.2026 08:32",
+    "createdOn": "9.3.2026 07:32",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8839,7 +9517,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "9.3.2026 15:36",
+    "angebotsprozessDatum": "9.3.2026 15:35"
   },
   {
     "id": 341,
@@ -8853,8 +9533,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "Keine Angabe",
     "vorerfahrung": "",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "9.3.2026 08:32",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "9.3.2026 07:32",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8863,9 +9543,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:21",
+    "angebotsprozessDatum": "9.3.2026 07:32"
   },
   {
     "id": 342,
@@ -8880,7 +9562,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "9.3.2026 08:51",
+    "createdOn": "9.3.2026 07:51",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8891,7 +9573,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "9.3.2026 16:54",
+    "angebotsprozessDatum": "9.3.2026 07:51"
   },
   {
     "id": 343,
@@ -8906,7 +9590,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Walid Karimi",
-    "createdOn": "9.3.2026 09:14",
+    "createdOn": "9.3.2026 08:14",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8917,7 +9601,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "11.3.2026 14:37",
+    "angebotsprozessDatum": "9.3.2026 08:37"
   },
   {
     "id": 344,
@@ -8932,7 +9618,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "9.3.2026 10:39",
+    "createdOn": "9.3.2026 09:39",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8943,7 +9629,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 18:36",
+    "angebotsprozessDatum": "9.3.2026 09:39"
   },
   {
     "id": 345,
@@ -8957,8 +9645,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "Keine Angabe",
     "vorerfahrung": "",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "9.3.2026 10:39",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "9.3.2026 09:39",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8967,9 +9655,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:22",
+    "angebotsprozessDatum": "9.3.2026 09:39"
   },
   {
     "id": 346,
@@ -8984,7 +9674,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Walid Karimi",
-    "createdOn": "9.3.2026 11:15",
+    "createdOn": "9.3.2026 10:15",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -8995,7 +9685,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 10:10",
+    "angebotsprozessDatum": "9.3.2026 10:15"
   },
   {
     "id": 347,
@@ -9010,7 +9702,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Walid Karimi",
-    "createdOn": "9.3.2026 11:17",
+    "createdOn": "9.3.2026 10:17",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9021,7 +9713,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "10.3.2026 09:21",
+    "angebotsprozessDatum": "9.3.2026 12:59"
   },
   {
     "id": 348,
@@ -9036,7 +9730,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "9.3.2026 13:39",
+    "createdOn": "9.3.2026 12:39",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9047,7 +9741,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "9.3.2026 17:12",
+    "angebotsprozessDatum": "9.3.2026 12:39"
   },
   {
     "id": 349,
@@ -9062,7 +9758,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "9.3.2026 13:53",
+    "createdOn": "9.3.2026 12:53",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9073,7 +9769,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "9.3.2026",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "9.3.2026 15:16",
+    "angebotsprozessDatum": "9.3.2026 15:10"
   },
   {
     "id": 350,
@@ -9088,7 +9786,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "9.3.2026 14:27",
+    "createdOn": "9.3.2026 13:27",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9099,7 +9797,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "9.3.2026 17:19",
+    "angebotsprozessDatum": "9.3.2026 17:19"
   },
   {
     "id": 351,
@@ -9114,7 +9814,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "9.3.2026 15:03",
+    "createdOn": "9.3.2026 14:03",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9125,7 +9825,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "9.3.2026",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "9.3.2026 14:22",
+    "angebotsprozessDatum": "9.3.2026 14:11"
   },
   {
     "id": 352,
@@ -9140,18 +9842,20 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "9.3.2026 15:07",
+    "createdOn": "9.3.2026 14:07",
     "terminBeimAmt": "23.3.2026",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
-    "hotLead": false,
+    "hotLead": true,
     "angebotVerschicken": false,
     "prozessStarten": "Angebot wurde erstellt",
     "terminBeimAmtCheck": true,
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:23",
+    "angebotsprozessDatum": "9.3.2026 14:08"
   },
   {
     "id": 353,
@@ -9166,7 +9870,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "9.3.2026 15:23",
+    "createdOn": "9.3.2026 14:23",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9175,9 +9879,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "9.3.2026",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 12:04",
+    "angebotsprozessDatum": "9.3.2026 14:23"
   },
   {
     "id": 354,
@@ -9192,7 +9898,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "9.3.2026 16:00",
+    "createdOn": "9.3.2026 15:00",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9203,7 +9909,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "9.3.2026 17:37",
+    "angebotsprozessDatum": "9.3.2026 17:37"
   },
   {
     "id": 355,
@@ -9217,8 +9925,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "9.3.2026 18:59",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "9.3.2026 17:59",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9227,9 +9935,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "2x nicht erreicht",
-    "kennenlernDatum": "9.3.2026",
-    "betreuungsart": ""
+    "anrufversuch": "4x nicht erreicht",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:54",
+    "angebotsprozessDatum": "9.3.2026 17:59"
   },
   {
     "id": 356,
@@ -9244,7 +9954,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "9.3.2026 19:35",
+    "createdOn": "9.3.2026 18:35",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9255,7 +9965,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "10.3.2026 12:16",
+    "angebotsprozessDatum": "10.3.2026 12:16"
   },
   {
     "id": 357,
@@ -9270,7 +9982,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "9.3.2026 19:38",
+    "createdOn": "9.3.2026 18:38",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9281,7 +9993,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "9.3.2026 18:49",
+    "angebotsprozessDatum": "9.3.2026 18:48"
   },
   {
     "id": 358,
@@ -9296,7 +10010,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "9.3.2026 19:40",
+    "createdOn": "9.3.2026 18:40",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9307,7 +10021,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "9.3.2026 18:49",
+    "angebotsprozessDatum": "9.3.2026 18:40"
   },
   {
     "id": 359,
@@ -9321,8 +10037,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "9.3.2026 20:06",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "9.3.2026 19:06",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9331,9 +10047,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "2x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:59",
+    "angebotsprozessDatum": "9.3.2026 19:06"
   },
   {
     "id": 360,
@@ -9348,7 +10066,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "9.3.2026 21:25",
+    "createdOn": "9.3.2026 20:25",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9359,7 +10077,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 11:00",
+    "angebotsprozessDatum": "9.3.2026 20:25"
   },
   {
     "id": 361,
@@ -9374,7 +10094,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "9.3.2026 22:15",
+    "createdOn": "9.3.2026 21:15",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9383,9 +10103,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "2x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "10.3.2026",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 12:04",
+    "angebotsprozessDatum": "9.3.2026 21:15"
   },
   {
     "id": 362,
@@ -9400,7 +10122,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "10.3.2026 00:05",
+    "createdOn": "9.3.2026 23:05",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9411,7 +10133,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 16:11",
+    "angebotsprozessDatum": "9.3.2026 23:05"
   },
   {
     "id": 363,
@@ -9426,7 +10150,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "10.3.2026 00:26",
+    "createdOn": "9.3.2026 23:26",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9437,7 +10161,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 10:21",
+    "angebotsprozessDatum": "9.3.2026 23:26"
   },
   {
     "id": 364,
@@ -9452,7 +10178,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "10.3.2026 00:49",
+    "createdOn": "9.3.2026 23:49",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9463,7 +10189,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 10:34",
+    "angebotsprozessDatum": "9.3.2026 23:49"
   },
   {
     "id": 365,
@@ -9478,7 +10206,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "10.3.2026 06:51",
+    "createdOn": "10.3.2026 05:51",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9487,9 +10215,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "10.3.2026",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 12:05",
+    "angebotsprozessDatum": "10.3.2026 05:51"
   },
   {
     "id": 366,
@@ -9504,7 +10234,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "10.3.2026 07:23",
+    "createdOn": "10.3.2026 06:23",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9515,7 +10245,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 10:54",
+    "angebotsprozessDatum": "10.3.2026 06:23"
   },
   {
     "id": 367,
@@ -9530,7 +10262,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "10.3.2026 08:21",
+    "createdOn": "10.3.2026 07:21",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9541,7 +10273,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 11:49",
+    "angebotsprozessDatum": "10.3.2026 07:21"
   },
   {
     "id": 368,
@@ -9556,7 +10290,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Nele Pfau",
-    "createdOn": "10.3.2026 09:21",
+    "createdOn": "10.3.2026 08:21",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9567,7 +10301,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "10.3.2026 10:34",
+    "angebotsprozessDatum": "10.3.2026 10:31"
   },
   {
     "id": 369,
@@ -9581,8 +10317,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "Keine Angabe",
     "vorerfahrung": "",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "10.3.2026 09:21",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "10.3.2026 08:21",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9591,9 +10327,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "2x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:38",
+    "angebotsprozessDatum": "10.3.2026 08:21"
   },
   {
     "id": 370,
@@ -9608,7 +10346,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "10.3.2026 09:37",
+    "createdOn": "10.3.2026 08:37",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9617,9 +10355,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "2x nicht erreicht",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 09:32",
+    "angebotsprozessDatum": "10.3.2026 08:37"
   },
   {
     "id": 371,
@@ -9634,7 +10374,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "10.3.2026 10:11",
+    "createdOn": "10.3.2026 09:11",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9645,7 +10385,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 11:07",
+    "angebotsprozessDatum": "10.3.2026 09:11"
   },
   {
     "id": 372,
@@ -9660,7 +10402,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "10.3.2026 12:29",
+    "createdOn": "10.3.2026 11:29",
     "terminBeimAmt": "30.3.2026",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9671,7 +10413,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "10.3.2026 18:19",
+    "angebotsprozessDatum": "10.3.2026 18:16"
   },
   {
     "id": 373,
@@ -9686,7 +10430,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "10.3.2026 13:06",
+    "createdOn": "10.3.2026 12:06",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9695,9 +10439,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "2x nicht erreicht",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 09:33",
+    "angebotsprozessDatum": "10.3.2026 12:06"
   },
   {
     "id": 374,
@@ -9712,7 +10458,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "10.3.2026 13:25",
+    "createdOn": "10.3.2026 12:25",
     "terminBeimAmt": "13.3.2026",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9723,7 +10469,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "10.3.2026",
-    "betreuungsart": "High Touch"
+    "betreuungsart": "High Touch",
+    "lastModified": "10.3.2026 12:48",
+    "angebotsprozessDatum": "10.3.2026 12:47"
   },
   {
     "id": 375,
@@ -9738,7 +10486,7 @@ export const leads: Lead[] = [
     "alter": "Keine Angabe",
     "vorerfahrung": "",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "10.3.2026 14:16",
+    "createdOn": "10.3.2026 13:16",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9747,9 +10495,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "2x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:38",
+    "angebotsprozessDatum": "10.3.2026 13:16"
   },
   {
     "id": 376,
@@ -9764,7 +10514,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "10.3.2026 14:16",
+    "createdOn": "10.3.2026 13:16",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9775,7 +10525,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "10.3.2026",
-    "betreuungsart": "Low Touch"
+    "betreuungsart": "Low Touch",
+    "lastModified": "10.3.2026 15:20",
+    "angebotsprozessDatum": "10.3.2026 15:17"
   },
   {
     "id": 377,
@@ -9790,7 +10542,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "10.3.2026 15:31",
+    "createdOn": "10.3.2026 14:31",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9799,9 +10551,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "1x nicht erreicht",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 09:22",
+    "angebotsprozessDatum": "10.3.2026 14:31"
   },
   {
     "id": 378,
@@ -9816,7 +10570,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "10.3.2026 15:57",
+    "createdOn": "10.3.2026 14:57",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9825,9 +10579,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "3x nicht erreicht",
+    "anrufversuch": "5x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:51",
+    "angebotsprozessDatum": "10.3.2026 14:57"
   },
   {
     "id": 379,
@@ -9842,7 +10598,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Bastian Wuske",
-    "createdOn": "10.3.2026 16:05",
+    "createdOn": "10.3.2026 15:05",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9853,7 +10609,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 15:21",
+    "angebotsprozessDatum": "10.3.2026 15:05"
   },
   {
     "id": 380,
@@ -9868,7 +10626,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "10.3.2026 16:27",
+    "createdOn": "10.3.2026 15:27",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9877,9 +10635,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "1x nicht erreicht",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 09:23",
+    "angebotsprozessDatum": "10.3.2026 15:27"
   },
   {
     "id": 381,
@@ -9893,8 +10653,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "10.3.2026 17:09",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "10.3.2026 16:09",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9903,15 +10663,17 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "2x nicht erreicht",
+    "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:53",
+    "angebotsprozessDatum": "10.3.2026 16:09"
   },
   {
     "id": 382,
     "name": "Nicole Mack",
-    "leadStatus": "Rückruf",
-    "verlustgrund": "",
+    "leadStatus": "Verloren",
+    "verlustgrund": "Kein Interesse an HR/Payroll",
     "adId": "120240870704370128",
     "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
     "platform": "Instagram",
@@ -9920,7 +10682,7 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "10.3.2026 17:12",
+    "createdOn": "10.3.2026 16:12",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9931,7 +10693,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 10:05",
+    "angebotsprozessDatum": "10.3.2026 16:12"
   },
   {
     "id": 383,
@@ -9945,8 +10709,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "10.3.2026 18:20",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "10.3.2026 17:20",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9955,14 +10719,16 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "1x nicht erreicht",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:09",
+    "angebotsprozessDatum": "10.3.2026 17:20"
   },
   {
     "id": 384,
     "name": "Stefan Booke",
-    "leadStatus": "Neuer Lead",
+    "leadStatus": "Rückruf",
     "verlustgrund": "",
     "adId": "120240870704370128",
     "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
@@ -9972,7 +10738,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
     "vertriebler": "Nele Pfau",
-    "createdOn": "10.3.2026 18:32",
+    "createdOn": "10.3.2026 17:32",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -9983,7 +10749,9 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 09:26",
+    "angebotsprozessDatum": "10.3.2026 17:32"
   },
   {
     "id": 385,
@@ -9998,7 +10766,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "10.3.2026 18:33",
+    "createdOn": "10.3.2026 17:33",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -10009,12 +10777,14 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "10.3.2026 18:03",
+    "angebotsprozessDatum": "10.3.2026 17:33"
   },
   {
     "id": 386,
     "name": "Isabelle Brückner",
-    "leadStatus": "Rückruf",
+    "leadStatus": "Beratungsgespräch gebucht",
     "verlustgrund": "",
     "adId": "120240870704370128",
     "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
@@ -10024,23 +10794,25 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "10.3.2026 21:19",
-    "terminBeimAmt": "",
+    "createdOn": "10.3.2026 20:19",
+    "terminBeimAmt": "19.3.2026",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
-    "hotLead": false,
+    "hotLead": true,
     "angebotVerschicken": false,
-    "prozessStarten": "Noch kein Angebot erstellt",
-    "terminBeimAmtCheck": false,
+    "prozessStarten": "Angebot wurde erstellt",
+    "terminBeimAmtCheck": true,
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "High Touch",
+    "lastModified": "11.3.2026 11:45",
+    "angebotsprozessDatum": "11.3.2026 11:32"
   },
   {
     "id": 387,
     "name": "Tina Jose",
-    "leadStatus": "Neuer Lead",
+    "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
     "adId": "120240870704370128",
     "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
@@ -10050,18 +10822,20 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "10.3.2026 21:19",
+    "createdOn": "10.3.2026 20:19",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
     "angebotVerschicken": false,
-    "prozessStarten": "Noch kein Angebot erstellt",
+    "prozessStarten": "Angebot wurde erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "1x nicht erreicht",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch",
+    "lastModified": "11.3.2026 10:31",
+    "angebotsprozessDatum": "11.3.2026 10:29"
   },
   {
     "id": 388,
@@ -10075,8 +10849,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Fließend (C1/C2)",
     "alter": "Über 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "10.3.2026 23:50",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "10.3.2026 22:50",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -10085,9 +10859,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "1x nicht erreicht",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:09",
+    "angebotsprozessDatum": "10.3.2026 22:50"
   },
   {
     "id": 389,
@@ -10102,7 +10878,7 @@ export const leads: Lead[] = [
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "11.3.2026 00:22",
+    "createdOn": "10.3.2026 23:22",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -10111,9 +10887,11 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "1x nicht erreicht",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 12:36",
+    "angebotsprozessDatum": "10.3.2026 23:22"
   },
   {
     "id": 390,
@@ -10127,8 +10905,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "Keine Angabe",
     "vorerfahrung": "",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "11.3.2026 07:43",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "11.3.2026 06:43",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -10137,14 +10915,16 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "1x nicht erreicht",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:13",
+    "angebotsprozessDatum": "11.3.2026 06:43"
   },
   {
     "id": 391,
     "name": "Jürgen Braun",
-    "leadStatus": "Neuer Lead",
+    "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
     "adId": "120240870704370128",
     "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
@@ -10153,24 +10933,26 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "Über 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "11.3.2026 09:16",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "11.3.2026 08:16",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
-    "angebotVerschicken": false,
-    "prozessStarten": "Noch kein Angebot erstellt",
+    "angebotVerschicken": true,
+    "prozessStarten": "Angebot wurde erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "1x nicht erreicht",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch",
+    "lastModified": "11.3.2026 14:08",
+    "angebotsprozessDatum": "11.3.2026 14:08"
   },
   {
     "id": 392,
     "name": "Kerstin Jeske",
-    "leadStatus": "Neuer Lead",
+    "leadStatus": "Rückruf",
     "verlustgrund": "",
     "adId": "120240870704370128",
     "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
@@ -10180,18 +10962,20 @@ export const leads: Lead[] = [
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
     "vertriebler": "Nele Pfau",
-    "createdOn": "11.3.2026 09:50",
+    "createdOn": "11.3.2026 08:50",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
     "angebotVerschicken": false,
-    "prozessStarten": "Noch kein Angebot erstellt",
+    "prozessStarten": "Angebot wurde erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "1x nicht erreicht",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "Low Touch",
+    "lastModified": "11.3.2026 12:54",
+    "angebotsprozessDatum": "11.3.2026 12:53"
   },
   {
     "id": 393,
@@ -10205,8 +10989,8 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "",
     "alter": "Keine Angabe",
     "vorerfahrung": "",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "11.3.2026 09:57",
+    "vertriebler": "Walid Karimi",
+    "createdOn": "11.3.2026 08:57",
     "terminBeimAmt": "16.3.2026",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -10217,6 +11001,288 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": ""
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 09:22",
+    "angebotsprozessDatum": "11.3.2026 08:57"
+  },
+  {
+    "id": 394,
+    "name": "Malika Gawri",
+    "leadStatus": "Rückruf",
+    "verlustgrund": "",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Instagram",
+    "arbeitslosGemeldet": "Nein, aber in den nächsten 3 Monaten",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "24 – 25 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "11.3.2026 09:49",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 10:35",
+    "angebotsprozessDatum": "11.3.2026 09:49"
+  },
+  {
+    "id": 395,
+    "name": "Razan Gerblinger",
+    "leadStatus": "Vertriebsqualifiziert",
+    "verlustgrund": "",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Instagram",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Gute Kenntnisse (B2)",
+    "alter": "25 – 45 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "11.3.2026 10:29",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Angebot wurde erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "Low Touch",
+    "lastModified": "11.3.2026 11:09",
+    "angebotsprozessDatum": "11.3.2026 11:08"
+  },
+  {
+    "id": 396,
+    "name": "Judith Vicari",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Facebook",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "46 – 60 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "11.3.2026 11:11",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "3x nicht erreicht",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:58",
+    "angebotsprozessDatum": "11.3.2026 11:11"
+  },
+  {
+    "id": 397,
+    "name": "Stephanie Mineau",
+    "leadStatus": "Verloren",
+    "verlustgrund": "Falsche Kontaktinformationen",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Facebook",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Gute Kenntnisse (B2)",
+    "alter": "25 – 45 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "11.3.2026 11:47",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 11:49",
+    "angebotsprozessDatum": "11.3.2026 11:47"
+  },
+  {
+    "id": 398,
+    "name": "Lesley Boateng",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "",
+    "adName": "",
+    "platform": "Indeed",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "Keine Angabe",
+    "vorerfahrung": "",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "11.3.2026 12:39",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "1x nicht erreicht",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:13",
+    "angebotsprozessDatum": "11.3.2026 12:39"
+  },
+  {
+    "id": 399,
+    "name": "Feyyaz Erdem",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "",
+    "adName": "",
+    "platform": "Indeed",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "Keine Angabe",
+    "vorerfahrung": "",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "11.3.2026 12:39",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "1x nicht erreicht",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 14:13",
+    "angebotsprozessDatum": "11.3.2026 12:39"
+  },
+  {
+    "id": 400,
+    "name": "Doreen Marohn",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Facebook",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "46 – 60 Jahre",
+    "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "11.3.2026 13:16",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "1x nicht erreicht",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:52",
+    "angebotsprozessDatum": "11.3.2026 13:16"
+  },
+  {
+    "id": 401,
+    "name": "Inga Runkel-Hobert",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Facebook",
+    "arbeitslosGemeldet": "Nein, aber in den nächsten 3 Monaten",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "46 – 60 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "11.3.2026 13:26",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:26",
+    "angebotsprozessDatum": "11.3.2026 13:26"
+  },
+  {
+    "id": 402,
+    "name": "David Niederhofer",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Instagram",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "25 – 45 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "11.3.2026 13:44",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:44",
+    "angebotsprozessDatum": "11.3.2026 13:44"
+  },
+  {
+    "id": 403,
+    "name": "Kerstin Bliedung",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Facebook",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "Über 60 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "Bastian Wuske",
+    "createdOn": "11.3.2026 13:50",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "1x nicht erreicht",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "11.3.2026 13:51",
+    "angebotsprozessDatum": "11.3.2026 13:50"
   }
 ];
