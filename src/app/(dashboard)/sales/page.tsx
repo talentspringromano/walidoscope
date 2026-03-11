@@ -107,6 +107,7 @@ export default function SalesPage() {
     lostBySeller, gewonnenLeads, gewonnenBySeller,
     angebotLeads, pipelineLeads, leadsWithTermin,
     terminWeeklyData, recommendations, pipelineWeeklyData,
+    funnelStages,
   } = useMemo(() => {
     const filtered = filterLeadsByRange(leads, range);
 
@@ -329,12 +330,67 @@ export default function SalesPage() {
         Angebote: counts["Angebote"] || 0,
       }));
 
+    /* ── Stage-to-Stage Funnel ── */
+    const mqlCount = filtered.length;
+    // Erreicht = alle außer "nicht erreicht" und "Verloren wegen falscher Kontaktdaten"
+    const nichtErreicht = filtered.filter((l) =>
+      l.anrufversuch.includes("nicht erreicht")
+    ).length;
+    const erreichtCount = mqlCount - nichtErreicht;
+
+    // SQL = High Touch + Low Touch + ohne Prozess (aktiver Vertrieb)
+    let htCount = 0;
+    let ltCount = 0;
+    let oProzCount = 0;
+    filtered.forEach((l) => {
+      if (l.leadStatus === "Gewonnen" || l.leadStatus === "Verloren") return;
+      if (l.prozessStarten.includes("High Touch") || l.betreuungsart === "High Touch") {
+        htCount++;
+      } else if (l.prozessStarten.includes("Low Touch") || l.betreuungsart === "Low Touch") {
+        ltCount++;
+      } else if (
+        ["Vertriebsqualifiziert", "Reterminierung", "Kennenlerngespräch gebucht", "Beratungsgespräch gebucht"].includes(l.leadStatus)
+      ) {
+        oProzCount++;
+      }
+    });
+    // Gewonnene die HT/LT waren zählen auch zum SQL-Trichter
+    const gewonnenHT = filtered.filter(
+      (l) => l.leadStatus === "Gewonnen" && (l.prozessStarten.includes("High Touch") || l.betreuungsart === "High Touch")
+    ).length;
+    const gewonnenLT = filtered.filter(
+      (l) => l.leadStatus === "Gewonnen" && (l.prozessStarten.includes("Low Touch") || l.betreuungsart === "Low Touch")
+    ).length;
+    const totalHT = htCount + gewonnenHT;
+    const totalLT = ltCount + gewonnenLT;
+    const sqlCount = totalHT + totalLT + oProzCount;
+    const htMitAmt = filtered.filter(
+      (l) =>
+        (l.prozessStarten.includes("High Touch") || l.betreuungsart === "High Touch") &&
+        l.terminBeimAmtCheck
+    ).length;
+    const gewonnenCount = filtered.filter((l) => l.leadStatus === "Gewonnen").length;
+
+    const funnelStages = {
+      mql: { name: "MQL", desc: "Alle Leads", value: mqlCount },
+      erreicht: { name: "Erreicht", desc: "Kontakt hergestellt", value: erreichtCount },
+      sql: { name: "SQL", desc: "Sales Qualified (HT + LT + o.Proz)", value: sqlCount },
+      ht: { name: "High-Touch", desc: "Intensivbetreuung", value: totalHT },
+      lt: { name: "Low-Touch", desc: "Leichtbetreuung", value: totalLT },
+      htAmt: { name: "HT + Amt", desc: "Termin beim Amt bestätigt", value: htMitAmt },
+      gewonnen: { name: "Gewonnen", desc: "Abschluss (BG)", value: gewonnenCount },
+      gewonnenHT,
+      gewonnenLT,
+      oProzCount,
+    };
+
     return {
       statusData, lostLeads, lostNoReason, verlustData,
       lossWeeklyData, allLossReasons,
       lostBySeller, gewonnenLeads, gewonnenBySeller,
       angebotLeads, pipelineLeads, leadsWithTermin,
       terminWeeklyData, recommendations, pipelineWeeklyData,
+      funnelStages,
     };
   }, [range]);
 
@@ -355,6 +411,166 @@ export default function SalesPage() {
         <KpiCard label="Verloren" value={lostLeads.length} sub={`${lostNoReason.length} ohne Grund`} />
         <KpiCard label="Amt-Termine" value={leadsWithTermin.length} sub="Termine gebucht" />
       </div>
+
+      {/* Stage-to-Stage Conversion Funnel */}
+      <SectionCard title="Conversion Rate — Stage zu Stage">
+        <div className="space-y-1">
+          {(() => {
+            const mainPath = [
+              funnelStages.mql,
+              funnelStages.erreicht,
+              funnelStages.sql,
+              funnelStages.gewonnen,
+            ];
+            const stageColors = ["#818cf8", "#a78bfa", "#e2a96e", "#5eead4"];
+
+            return (
+              <>
+                {mainPath.map((stage, i) => {
+                  const maxVal = mainPath[0].value;
+                  const widthPct = maxVal > 0 ? Math.max(10, (stage.value / maxVal) * 100) : 10;
+                  const prevStage = i > 0 ? mainPath[i - 1] : null;
+                  const stageRate = prevStage && prevStage.value > 0
+                    ? ((stage.value / prevStage.value) * 100).toFixed(1)
+                    : null;
+
+                  return (
+                    <div key={stage.name}>
+                      {stageRate && prevStage && (
+                        <div className="flex items-center gap-3 py-2 pl-4">
+                          <div className="flex items-center gap-1.5">
+                            <svg className="h-3.5 w-3.5 text-[#44403c]" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5">
+                              <path d="M8 3v10m0 0l-3-3m3 3l3-3" />
+                            </svg>
+                            <span className="text-[13px] font-semibold tabular-nums text-[#e2a96e]">{stageRate}%</span>
+                            <span className="text-[11px] text-[#57534e]">
+                              von {prevStage.value} {prevStage.name}
+                            </span>
+                          </div>
+                          {prevStage.value - stage.value > 0 && (
+                            <span className="text-[11px] text-[#fb7185] tabular-nums">
+                              −{prevStage.value - stage.value} verloren
+                            </span>
+                          )}
+                        </div>
+                      )}
+
+                      <div className="flex items-center gap-4">
+                        <div className="w-[100px] shrink-0 text-right">
+                          <div className="text-[13px] font-medium text-[#fafaf9]">{stage.name}</div>
+                          <div className="text-[10px] text-[#57534e]">{stage.desc}</div>
+                        </div>
+                        <div className="flex-1 relative">
+                          <div className="h-9 w-full rounded-lg bg-[rgba(255,255,255,0.02)]">
+                            <div
+                              className="h-full rounded-lg flex items-center justify-end pr-3 transition-all duration-700"
+                              style={{
+                                width: `${widthPct}%`,
+                                background: `linear-gradient(90deg, ${stageColors[i]}30, ${stageColors[i]}60)`,
+                                borderLeft: `3px solid ${stageColors[i]}`,
+                              }}
+                            >
+                              <span className="text-[15px] font-bold tabular-nums text-[#fafaf9]">
+                                {stage.value}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+
+                {/* SQL Aufschlüsselung */}
+                <div className="mt-6 pt-5 border-t border-[rgba(255,255,255,0.06)]">
+                  <h3 className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#57534e] mb-4">
+                    SQL-Aufschlüsselung — Wohin gehen die {funnelStages.sql.value} SQLs?
+                  </h3>
+                  <div className="grid gap-3 md:grid-cols-3">
+                    {[
+                      { label: "High-Touch", value: funnelStages.ht.value, color: "#5eead4", desc: "Intensivbetreuung" },
+                      { label: "Low-Touch", value: funnelStages.lt.value, color: "#818cf8", desc: "Leichtbetreuung" },
+                      { label: "Ohne Prozess", value: funnelStages.oProzCount, color: "#78716c", desc: "Noch kein Prozess zugewiesen" },
+                    ].map((seg) => {
+                      const sqlTotal = funnelStages.sql.value;
+                      const pct = sqlTotal > 0 ? ((seg.value / sqlTotal) * 100).toFixed(1) : "0";
+                      return (
+                        <div key={seg.label} className="rounded-xl border border-[rgba(255,255,255,0.04)] bg-[rgba(255,255,255,0.02)] p-4">
+                          <div className="flex items-center justify-between mb-2">
+                            <span className="text-[13px] font-medium text-[#fafaf9]">{seg.label}</span>
+                            <span className="text-[13px] font-bold tabular-nums" style={{ color: seg.color }}>{pct}%</span>
+                          </div>
+                          <div className="text-[22px] font-bold tabular-nums text-[#fafaf9]">{seg.value}</div>
+                          <div className="text-[10px] text-[#57534e] mt-1">{seg.desc}</div>
+                          <div className="mt-3 h-1.5 rounded-full bg-[rgba(255,255,255,0.04)] overflow-hidden">
+                            <div
+                              className="h-full rounded-full transition-all duration-500"
+                              style={{ width: `${pct}%`, background: seg.color }}
+                            />
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                {/* HT/LT → Gewonnen */}
+                <div className="mt-5 pt-5 border-t border-[rgba(255,255,255,0.06)]">
+                  <h3 className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#57534e] mb-4">
+                    Abschlussquote nach Betreuungsart
+                  </h3>
+                  <div className="grid gap-3 md:grid-cols-2">
+                    {[
+                      {
+                        label: "High-Touch → Gewonnen",
+                        total: funnelStages.ht.value,
+                        won: funnelStages.gewonnenHT,
+                        color: "#5eead4",
+                        amtCount: funnelStages.htAmt.value,
+                      },
+                      {
+                        label: "Low-Touch → Gewonnen",
+                        total: funnelStages.lt.value,
+                        won: funnelStages.gewonnenLT,
+                        color: "#818cf8",
+                        amtCount: null,
+                      },
+                    ].map((seg) => {
+                      const pct = seg.total > 0 ? ((seg.won / seg.total) * 100).toFixed(1) : "0";
+                      return (
+                        <div key={seg.label} className="rounded-xl border border-[rgba(255,255,255,0.04)] bg-[rgba(255,255,255,0.02)] p-5">
+                          <div className="text-[13px] font-medium text-[#fafaf9] mb-3">{seg.label}</div>
+                          <div className="flex items-end gap-3">
+                            <div>
+                              <div className="text-[36px] font-bold tabular-nums" style={{ color: seg.color }}>{pct}%</div>
+                              <div className="text-[11px] text-[#57534e]">
+                                {seg.won} von {seg.total} Leads
+                              </div>
+                            </div>
+                            <div className="flex-1">
+                              <div className="h-3 rounded-full bg-[rgba(255,255,255,0.04)] overflow-hidden">
+                                <div
+                                  className="h-full rounded-full transition-all duration-500"
+                                  style={{ width: `${pct}%`, background: seg.color }}
+                                />
+                              </div>
+                              {seg.amtCount !== null && (
+                                <div className="mt-2 text-[11px] text-[#78716c]">
+                                  davon {seg.amtCount} mit Amt-Termin
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              </>
+            );
+          })()}
+        </div>
+      </SectionCard>
 
       {/* Amt-Termine im Zeitverlauf */}
       {terminWeeklyData.length > 0 && (
