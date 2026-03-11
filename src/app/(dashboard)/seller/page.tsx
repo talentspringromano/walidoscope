@@ -8,7 +8,7 @@ import { TargetTracker } from "@/components/target-tracker";
 import { leads } from "@/data/leads";
 import { aircallSellers, aircallSellerDaily, aircallFetchedAt, formatDuration } from "@/data/aircall";
 import { TOOLTIP_STYLE, AXIS_STYLE, PALETTE, SELLER_BAR_COLORS } from "@/components/chart-theme";
-import { Phone, PhoneOutgoing, PhoneIncoming, Clock, ArrowUpDown, ArrowUp, ArrowDown } from "lucide-react";
+import { Phone, PhoneOutgoing, PhoneIncoming, Clock, ArrowUpDown, ArrowUp, ArrowDown, AlertTriangle } from "lucide-react";
 import {
   BarChart,
   Bar,
@@ -24,7 +24,7 @@ import {
   Legend,
 } from "recharts";
 import type { TimeRange } from "@/lib/date-utils";
-import { filterLeadsByRange } from "@/lib/date-utils";
+import { filterLeadsByRange, parseDE } from "@/lib/date-utils";
 
 const sellers = ["Walid Karimi", "Nele Pfau", "Bastian Wuske", "Eric Hardt", "Michel Grosser"];
 
@@ -53,6 +53,17 @@ function sellerStats(name: string, leadsSubset: typeof leads) {
   }).length;
   const ltCount = activeLeads.filter((l) => l.prozessStarten.includes("Low Touch") || l.betreuungsart === "Low Touch").length;
   const touchTotal = htMitTermin + htOhneTermin + ltCount;
+
+  // Stale leads: 3+ Tage ohne Aktivität (nur aktive Leads)
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const STALE_THRESHOLD_DAYS = 3;
+  const staleLeads = activeLeads.filter((l) => {
+    const lastActivity = l.lastModified ? parseDE(l.lastModified) : parseDE(l.createdOn);
+    if (isNaN(lastActivity.getTime())) return false;
+    const daysSince = (today.getTime() - lastActivity.getTime()) / (1000 * 60 * 60 * 24);
+    return daysSince >= STALE_THRESHOLD_DAYS;
+  }).length;
 
   // Reachability from daily data
   const sellerDailyEntries = aircallSellerDaily.filter((e) => e.seller === name);
@@ -85,6 +96,8 @@ function sellerStats(name: string, leadsSubset: typeof leads) {
     htOhneTermin,
     ltCount,
     touchTotal,
+    staleLeads,
+    activeLeadsCount: activeLeads.length,
   };
 }
 
@@ -444,6 +457,26 @@ export default function SellerPage() {
                       <div className="h-2 w-2 rounded-full bg-[#818cf8]" />
                       <span className="text-[#a8a29e]">Low-Touch</span>
                       <span className="font-medium tabular-nums text-[#fafaf9]">{s.ltCount}</span>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Stale Leads */}
+              {s.staleLeads > 0 && (
+                <div className="mb-5 flex items-center gap-2.5 py-2.5 px-3 rounded-lg bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.03)]">
+                  <AlertTriangle className={`h-4 w-4 shrink-0 ${s.staleLeads > 5 ? "text-[#f87171]" : "text-[#fbbf24]"}`} />
+                  <div>
+                    <div className="flex items-center gap-2">
+                      <span className={`text-[16px] font-semibold tabular-nums ${s.staleLeads > 5 ? "text-[#f87171]" : "text-[#fbbf24]"}`}>
+                        {s.staleLeads}
+                      </span>
+                      <span className="text-[11px] text-[#a8a29e]">Stale Leads (3+ Tage ohne Aktivität)</span>
+                    </div>
+                    <div className="text-[10px] text-[#57534e]">
+                      {s.activeLeadsCount > 0
+                        ? `${((s.staleLeads / s.activeLeadsCount) * 100).toFixed(0)}% der aktiven Leads`
+                        : "–"}
                     </div>
                   </div>
                 </div>
