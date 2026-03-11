@@ -10,7 +10,7 @@
 
 ---
 
-## Tech-Stack
+## Tech-Stackja
 
 | Technologie | Version | Zweck |
 |-------------|---------|-------|

@@ -181,17 +181,19 @@ export default function OverviewPage() {
 
         const cpl = totalLeads > 0 ? weeklySpend / totalLeads : 0;
         const cpa = won > 0 ? weeklySpend / won : 0;
-        const sql = wl.filter((l) => l.leadStatus === "Vertriebsqualifiziert").length;
-        const ht = wl.filter(
-          (l) => l.betreuungsart === "High Touch" || l.prozessStarten === "High Touch - Angebot erstellen"
-        ).length;
-        const htMitAmt = wl.filter(
-          (l) => (l.betreuungsart === "High Touch" || l.prozessStarten === "High Touch - Angebot erstellen") && l.terminBeimAmtCheck
-        ).length;
-        const htOhneAmt = ht - htMitAmt;
-        const lt = wl.filter(
-          (l) => l.betreuungsart === "Low Touch" || l.prozessStarten === "Low Touch - Angebot erstellen"
-        ).length;
+        // Exklusive Zuordnung: jeder Lead in genau einer Kategorie
+        let nAngr = 0, nErr = 0, sql = 0, htMitAmt = 0, htOhneAmt = 0, lt = 0;
+        wl.forEach((l) => {
+          if (l.leadStatus === "Gewonnen") { /* won already counted */ }
+          else if (l.leadStatus === "Verloren") { /* lost already counted */ }
+          else if (l.prozessStarten.includes("High Touch") || l.betreuungsart === "High Touch") {
+            if (l.terminBeimAmtCheck) htMitAmt++; else htOhneAmt++;
+          }
+          else if (l.prozessStarten.includes("Low Touch") || l.betreuungsart === "Low Touch") { lt++; }
+          else if (["Vertriebsqualifiziert", "Reterminierung", "Kennenlerngespräch gebucht", "Beratungsgespräch gebucht"].includes(l.leadStatus)) { sql++; }
+          else if (l.anrufversuch.includes("nicht erreicht")) { nErr++; }
+          else { nAngr++; }
+        });
 
         return {
           week: `KW ${weekNum}`,
@@ -204,8 +206,9 @@ export default function OverviewPage() {
           spend: weeklySpend,
           cpl,
           cpa,
+          nAngr,
+          nErr,
           sql,
-          ht,
           htMitAmt,
           htOhneAmt,
           lt,
@@ -409,13 +412,14 @@ export default function OverviewPage() {
               <tr>
                 <th className="text-left pl-2">KW</th>
                 <th className="text-right">MQL</th>
+                <th className="text-right">N.angr.</th>
+                <th className="text-right">N.err.</th>
                 <th className="text-right">SQL</th>
-                <th className="text-right">HT</th>
                 <th className="text-right">HT+Amt</th>
                 <th className="text-right">HT−Amt</th>
                 <th className="text-right">LT</th>
-                <th className="text-right">Gewonnen</th>
-                <th className="text-right">Verloren</th>
+                <th className="text-right">Gew</th>
+                <th className="text-right">Verl</th>
                 <th className="text-right pr-2">Conv%</th>
               </tr>
             </thead>
@@ -424,8 +428,9 @@ export default function OverviewPage() {
                 <tr key={w.week}>
                   <td className="text-left pl-2 text-[#e2a96e] font-medium">{w.week}</td>
                   <td className="text-right">{w.totalLeads}</td>
+                  <td className="text-right">{w.nAngr}</td>
+                  <td className="text-right">{w.nErr}</td>
                   <td className="text-right">{w.sql}</td>
-                  <td className="text-right">{w.ht}</td>
                   <td className="text-right">{w.htMitAmt}</td>
                   <td className="text-right">{w.htOhneAmt}</td>
                   <td className="text-right">{w.lt}</td>
