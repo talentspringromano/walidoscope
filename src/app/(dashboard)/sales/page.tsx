@@ -114,6 +114,7 @@ export default function SalesPage() {
     nochNichtAngerufen, nichtErreichtLeads, erreichtLeads,
     erreichbarkeit, attemptDistribution, reachWeeklyData,
     staleStageData, totalStale,
+    htOhneAmtWithDays,
   } = useMemo(() => {
     const filtered = filterLeadsByRange(leads, range);
 
@@ -392,6 +393,20 @@ export default function SalesPage() {
     ).length;
     const gewonnenCount = filtered.filter((l) => l.leadStatus === "Gewonnen").length;
 
+    // High-Touch ohne Amt-Termin — kritische Follow-up-Gruppe
+    const htOhneAmt = filtered.filter((l) => {
+      if (l.leadStatus === "Gewonnen" || l.leadStatus === "Verloren") return false;
+      const isHT = l.prozessStarten.includes("High Touch") || l.betreuungsart === "High Touch";
+      return isHT && !l.terminBeimAmtCheck;
+    });
+    const htOhneAmtWithDays = htOhneAmt.map((l) => {
+      const lastActivity = l.lastModified ? parseDE(l.lastModified) : parseDE(l.createdOn);
+      const daysSince = !isNaN(lastActivity.getTime())
+        ? Math.floor((today.getTime() - lastActivity.getTime()) / (1000 * 60 * 60 * 24))
+        : null;
+      return { ...l, daysSince };
+    }).sort((a, b) => (b.daysSince ?? 0) - (a.daysSince ?? 0));
+
     /* ── Erreichbarkeitsquote ── */
     const nochNichtAngerufen = filtered.filter(
       (l) => l.anrufversuch === "Noch nicht angerufen" || l.anrufversuch === ""
@@ -456,6 +471,7 @@ export default function SalesPage() {
       nochNichtAngerufen, nichtErreichtLeads, erreichtLeads,
       erreichbarkeit, attemptDistribution, reachWeeklyData,
       staleStageData, totalStale,
+      htOhneAmtWithDays,
     };
   }, [range]);
 
@@ -985,6 +1001,71 @@ export default function SalesPage() {
             <div>
               <p className="text-[14px] font-medium text-[#5eead4]">Alles aktuell</p>
               <p className="text-[12px] text-[#78716c] mt-0.5">Keine Leads seit 3+ Tagen ohne Aktivität — Pipeline läuft!</p>
+            </div>
+          </div>
+        )}
+      </SectionCard>
+
+      {/* High-Touch ohne Amt-Termin — kritische Follow-up-Gruppe */}
+      <SectionCard title="High-Touch ohne Amt-Termin">
+        {htOhneAmtWithDays.length > 0 ? (
+          <div className="space-y-4">
+            <div className="flex items-center gap-3">
+              <AlertTriangle className={`h-5 w-5 shrink-0 ${htOhneAmtWithDays.length > 5 ? "text-[#f87171]" : "text-amber-400"}`} />
+              <span className={`text-[20px] font-bold tabular-nums ${htOhneAmtWithDays.length > 5 ? "text-[#f87171]" : "text-amber-400"}`}>
+                {htOhneAmtWithDays.length}
+              </span>
+              <span className="text-[13px] text-[#a8a29e]">Nur Angebot hochladen — kein Amt-Termin bestätigt</span>
+            </div>
+            <div className="overflow-x-auto -mx-2">
+              <table className="w-full premium-table">
+                <thead>
+                  <tr>
+                    <th className="text-left pl-2">Name</th>
+                    <th className="text-left pl-4">Status</th>
+                    <th className="text-left pl-4">Vertriebler</th>
+                    <th className="text-right pr-4">Tage ohne Aktivität</th>
+                    <th className="text-left pl-4">Angebot</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {htOhneAmtWithDays.map((l) => (
+                    <tr key={l.id}>
+                      <td className="pl-2 text-[13px] font-medium text-[#fafaf9]">{l.name}</td>
+                      <td className="pl-4">
+                        <span className={`inline-block rounded-full px-2.5 py-0.5 text-[11px] font-medium ${STATUS_BADGE[l.leadStatus] || "bg-[rgba(255,255,255,0.05)] text-[#a8a29e]"}`}>
+                          {l.leadStatus}
+                        </span>
+                      </td>
+                      <td className="pl-4 text-[13px] text-[#fafaf9] font-medium">{l.vertriebler}</td>
+                      <td className="text-right pr-4 tabular-nums text-[13px] font-medium">
+                        <span className={
+                          l.daysSince === null ? "text-[#57534e]"
+                            : l.daysSince <= 3 ? "text-[#5eead4]"
+                            : l.daysSince <= 7 ? "text-amber-400"
+                            : "text-[#f87171]"
+                        }>
+                          {l.daysSince !== null ? `${l.daysSince}d` : "—"}
+                        </span>
+                      </td>
+                      <td className="pl-4 text-[13px]">
+                        {l.angebotVerschicken
+                          ? <span className="text-[#5eead4]">Ja</span>
+                          : <span className="text-[#57534e]">Nein</span>
+                        }
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        ) : (
+          <div className="flex items-center gap-3 p-4 rounded-xl border border-[rgba(94,234,212,0.2)] bg-[rgba(94,234,212,0.05)]">
+            <CheckCircle className="h-5 w-5 text-[#5eead4] shrink-0" />
+            <div>
+              <p className="text-[14px] font-medium text-[#5eead4]">Alle High-Touch-Leads haben Amt-Termin</p>
+              <p className="text-[12px] text-[#78716c] mt-0.5">Kein Follow-up nötig — alle HT-Leads sind versorgt.</p>
             </div>
           </div>
         )}
