@@ -41,6 +41,19 @@ function sellerStats(name: string, leadsSubset: typeof leads) {
 
   const aircall = aircallSellers.find((a) => a.name === name);
 
+  // High-Touch / Low-Touch distribution (only qualified+ leads, excl. Gewonnen/Verloren)
+  const activeLeads = sellerLeads.filter((l) => l.leadStatus !== "Gewonnen" && l.leadStatus !== "Verloren");
+  const htMitTermin = activeLeads.filter((l) => {
+    const isHT = l.prozessStarten.includes("High Touch") || l.betreuungsart === "High Touch";
+    return isHT && l.terminBeimAmtCheck;
+  }).length;
+  const htOhneTermin = activeLeads.filter((l) => {
+    const isHT = l.prozessStarten.includes("High Touch") || l.betreuungsart === "High Touch";
+    return isHT && !l.terminBeimAmtCheck;
+  }).length;
+  const ltCount = activeLeads.filter((l) => l.prozessStarten.includes("Low Touch") || l.betreuungsart === "Low Touch").length;
+  const touchTotal = htMitTermin + htOhneTermin + ltCount;
+
   // Reachability from daily data
   const sellerDailyEntries = aircallSellerDaily.filter((e) => e.seller === name);
   const totalDials = sellerDailyEntries.reduce((sum, e) => sum + e.dials, 0);
@@ -68,6 +81,10 @@ function sellerStats(name: string, leadsSubset: typeof leads) {
     totalDials,
     totalReached,
     reachabilityPct,
+    htMitTermin,
+    htOhneTermin,
+    ltCount,
+    touchTotal,
   };
 }
 
@@ -390,6 +407,44 @@ export default function SellerPage() {
                   <div className="mt-2 flex items-center justify-between text-[11px] text-[#57534e]">
                     <span>Gesprächszeit: {formatDuration(s.aircall.totalDurationSec)}</span>
                     <span>Längster: {formatDuration(s.aircall.longestCallSec)}</span>
+                  </div>
+                </div>
+              )}
+
+              {/* High-Touch / Low-Touch Verteilung */}
+              {s.touchTotal > 0 && (
+                <div className="mb-5">
+                  <h3 className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#57534e] mb-3 flex items-center gap-1.5">
+                    <ArrowUpDown className="h-3 w-3" /> Touch-Verteilung
+                  </h3>
+                  {/* Stacked bar */}
+                  <div className="flex h-3 rounded-full overflow-hidden mb-2">
+                    {s.htMitTermin > 0 && (
+                      <div className="bg-[#5eead4]" style={{ width: `${(s.htMitTermin / s.touchTotal) * 100}%` }} />
+                    )}
+                    {s.htOhneTermin > 0 && (
+                      <div className="bg-[#fbbf24]" style={{ width: `${(s.htOhneTermin / s.touchTotal) * 100}%` }} />
+                    )}
+                    {s.ltCount > 0 && (
+                      <div className="bg-[#818cf8]" style={{ width: `${(s.ltCount / s.touchTotal) * 100}%` }} />
+                    )}
+                  </div>
+                  <div className="flex items-center gap-4 text-[11px]">
+                    <div className="flex items-center gap-1.5">
+                      <div className="h-2 w-2 rounded-full bg-[#5eead4]" />
+                      <span className="text-[#a8a29e]">HT + Termin</span>
+                      <span className="font-medium tabular-nums text-[#fafaf9]">{s.htMitTermin}</span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      <div className="h-2 w-2 rounded-full bg-[#fbbf24]" />
+                      <span className="text-[#a8a29e]">HT ohne Termin</span>
+                      <span className="font-medium tabular-nums text-[#fafaf9]">{s.htOhneTermin}</span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                      <div className="h-2 w-2 rounded-full bg-[#818cf8]" />
+                      <span className="text-[#a8a29e]">Low-Touch</span>
+                      <span className="font-medium tabular-nums text-[#fafaf9]">{s.ltCount}</span>
+                    </div>
                   </div>
                 </div>
               )}
