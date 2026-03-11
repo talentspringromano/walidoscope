@@ -108,6 +108,8 @@ function mapRecord(record: AirtableRecord, index: number) {
     utmTitle: str(f["utm_title"]),
     hotLead: f["Hot Lead"] === "checked" || f["Hot Lead"] === true,
     angebotVerschicken: f["Angebot verschicken"] === "checked" || f["Angebot verschicken"] === true,
+    prozessStarten: str(f["Prozess starten"]),
+    terminBeimAmtCheck: f["Termin beim Amt?"] === "checked" || f["Termin beim Amt?"] === true,
     bgVerschickt: str(f["BG verschickt"]),
     anrufversuch: str(f["Anrufversuch"]),
     kennenlernDatum: formatDateShort(f["Datum - Kennenlerngespräch am"]),

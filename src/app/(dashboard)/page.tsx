@@ -25,7 +25,6 @@ import {
   parseDEtoISO,
   parseDE,
   getISOWeek,
-  classifyLead,
   filterPerspectiveByRange,
   computePerspectiveSummary,
 } from "@/lib/date-utils";
@@ -182,15 +181,16 @@ export default function OverviewPage() {
 
         const cpl = totalLeads > 0 ? weeklySpend / totalLeads : 0;
         const cpa = won > 0 ? weeklySpend / won : 0;
-        const highTouch = wl.filter((l) => classifyLead(l) === "High-Touch").length;
-        const lowTouchAngebote = wl.filter(
-          (l) =>
-            classifyLead(l) === "Low-Touch" &&
-            l.angebotVerschicken
+        const sql = wl.filter((l) => l.leadStatus === "Vertriebsqualifiziert").length;
+        const ht = wl.filter(
+          (l) => l.betreuungsart === "High Touch" || l.prozessStarten === "High Touch - Angebot erstellen"
         ).length;
-        const kostenProHighTouch = highTouch > 0 ? weeklySpend / highTouch : 0;
-        const termineAmt = wl.filter(
-          (l) => l.terminBeimAmt && l.terminBeimAmt.trim() !== ""
+        const htMitAmt = wl.filter(
+          (l) => (l.betreuungsart === "High Touch" || l.prozessStarten === "High Touch - Angebot erstellen") && l.terminBeimAmtCheck
+        ).length;
+        const htOhneAmt = ht - htMitAmt;
+        const lt = wl.filter(
+          (l) => l.betreuungsart === "Low Touch" || l.prozessStarten === "Low Touch - Angebot erstellen"
         ).length;
 
         return {
@@ -204,10 +204,11 @@ export default function OverviewPage() {
           spend: weeklySpend,
           cpl,
           cpa,
-          highTouch,
-          lowTouchAngebote,
-          kostenProHighTouch,
-          termineAmt,
+          sql,
+          ht,
+          htMitAmt,
+          htOhneAmt,
+          lt,
           "Neuer Lead": wl.filter((l) => l.leadStatus === "Neuer Lead").length,
           Rückruf: wl.filter((l) => l.leadStatus === "Rückruf").length,
           Qualifiziert: wl.filter((l) => l.leadStatus === "Vertriebsqualifiziert").length,
@@ -406,19 +407,13 @@ export default function OverviewPage() {
           <table className="w-full premium-table">
             <thead>
               <tr>
-                <th className="text-left pl-2">Woche</th>
-                <th className="text-right">Leads</th>
-                <th className="text-right">Qualifiziert</th>
-                <th className="text-right">High-Touch</th>
-                <th className="text-right">LT-Angebote</th>
-                <th className="text-right">€/High-Touch</th>
-                <th className="text-right">Amt-Termine</th>
-                <th className="text-right">Gewonnen</th>
-                <th className="text-right">Verloren</th>
-                <th className="text-right">Spend</th>
-                <th className="text-right">CPL</th>
-                <th className="text-right">CPA</th>
-                <th className="text-right pr-2">Conv.&nbsp;%</th>
+                <th className="text-left pl-2">KW</th>
+                <th className="text-right">MQL</th>
+                <th className="text-right">SQL</th>
+                <th className="text-right">HT</th>
+                <th className="text-right">HT+Amt</th>
+                <th className="text-right">HT−Amt</th>
+                <th className="text-right pr-2">LT</th>
               </tr>
             </thead>
             <tbody>
@@ -426,25 +421,11 @@ export default function OverviewPage() {
                 <tr key={w.week}>
                   <td className="text-left pl-2 text-[#e2a96e] font-medium">{w.week}</td>
                   <td className="text-right">{w.totalLeads}</td>
-                  <td className="text-right">{w.qualified}</td>
-                  <td className="text-right">{w.highTouch}</td>
-                  <td className="text-right">{w.lowTouchAngebote}</td>
-                  <td className="text-right">
-                    {w.kostenProHighTouch > 0 ? `€${w.kostenProHighTouch.toFixed(2)}` : "–"}
-                  </td>
-                  <td className="text-right">{w.termineAmt}</td>
-                  <td className="text-right text-[#fbbf24]">{w.won}</td>
-                  <td className="text-right text-[#fb7185]">{w.lost}</td>
-                  <td className="text-right">
-                    {w.spend > 0 ? `€${w.spend.toFixed(2)}` : "–"}
-                  </td>
-                  <td className="text-right">
-                    {w.cpl > 0 ? `€${w.cpl.toFixed(2)}` : "–"}
-                  </td>
-                  <td className="text-right">
-                    {w.cpa > 0 && w.cpa < Infinity ? `€${w.cpa.toFixed(2)}` : "–"}
-                  </td>
-                  <td className="text-right pr-2">{w.conversionRate.toFixed(1)}%</td>
+                  <td className="text-right">{w.sql}</td>
+                  <td className="text-right">{w.ht}</td>
+                  <td className="text-right">{w.htMitAmt}</td>
+                  <td className="text-right">{w.htOhneAmt}</td>
+                  <td className="text-right pr-2">{w.lt}</td>
                 </tr>
               ))}
             </tbody>

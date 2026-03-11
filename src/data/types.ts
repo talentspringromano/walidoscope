@@ -47,6 +47,8 @@ export interface Lead {
   utmTitle: string;
   hotLead: boolean;
   angebotVerschicken: boolean;
+  prozessStarten: string;
+  terminBeimAmtCheck: boolean;
   bgVerschickt: string;
   anrufversuch: string;
   kennenlernDatum: string;
