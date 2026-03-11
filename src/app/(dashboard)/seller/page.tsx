@@ -6,7 +6,7 @@ import { TimeRangeFilter } from "@/components/time-range-filter";
 import { ActivityCalendar } from "@/components/activity-calendar";
 import { TargetTracker } from "@/components/target-tracker";
 import { leads } from "@/data/leads";
-import { aircallSellers, aircallFetchedAt, formatDuration } from "@/data/aircall";
+import { aircallSellers, aircallSellerDaily, aircallFetchedAt, formatDuration } from "@/data/aircall";
 import { TOOLTIP_STYLE, AXIS_STYLE, PALETTE, SELLER_BAR_COLORS } from "@/components/chart-theme";
 import { Phone, PhoneOutgoing, PhoneIncoming, Clock, ArrowUpDown, ArrowUp, ArrowDown } from "lucide-react";
 import {
@@ -41,6 +41,12 @@ function sellerStats(name: string, leadsSubset: typeof leads) {
 
   const aircall = aircallSellers.find((a) => a.name === name);
 
+  // Reachability from daily data
+  const sellerDailyEntries = aircallSellerDaily.filter((e) => e.seller === name);
+  const totalDials = sellerDailyEntries.reduce((sum, e) => sum + e.dials, 0);
+  const totalReached = sellerDailyEntries.reduce((sum, e) => sum + e.reached, 0);
+  const reachabilityPct = totalDials > 0 ? (totalReached / totalDials) * 100 : 0;
+
   return {
     name,
     total: sellerLeads.length,
@@ -59,6 +65,9 @@ function sellerStats(name: string, leadsSubset: typeof leads) {
       { name: "Verloren", count: verloren },
     ],
     aircall,
+    totalDials,
+    totalReached,
+    reachabilityPct,
   };
 }
 
@@ -363,6 +372,19 @@ export default function SellerPage() {
                         <div className="text-[16px] font-semibold tabular-nums text-[#fafaf9]">{s.aircall.callsPerDay}/Tag</div>
                         <div className="text-[9px] uppercase tracking-wider text-[#57534e]">Frequenz</div>
                       </div>
+                    </div>
+                  </div>
+                  {/* Erreichbarkeit */}
+                  <div className="mt-2 flex items-center gap-2 py-2 px-3 rounded-lg bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.03)]">
+                    <PhoneOutgoing className="h-3.5 w-3.5" style={{ color: s.reachabilityPct >= 50 ? "#5eead4" : s.reachabilityPct >= 30 ? "#fbbf24" : "#ef4444" }} />
+                    <div className="flex-1">
+                      <div className="flex items-center gap-2">
+                        <span className="text-[16px] font-semibold tabular-nums" style={{ color: s.reachabilityPct >= 50 ? "#5eead4" : s.reachabilityPct >= 30 ? "#fbbf24" : "#ef4444" }}>
+                          {s.totalDials > 0 ? s.reachabilityPct.toFixed(1) : "–"}%
+                        </span>
+                        <span className="text-[9px] uppercase tracking-wider text-[#57534e]">Erreichbarkeit</span>
+                      </div>
+                      <div className="text-[10px] text-[#57534e]">{s.totalReached} / {s.totalDials} erreicht</div>
                     </div>
                   </div>
                   <div className="mt-2 flex items-center justify-between text-[11px] text-[#57534e]">

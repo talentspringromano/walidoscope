@@ -41,6 +41,7 @@ interface WeekRow {
   monday: Date;
   label: string;
   totalDials: number;
+  totalReached: number;
   totalCalltimeSec: number;
   days: (AircallDailyEntry | null)[];
 }
@@ -75,6 +76,7 @@ function buildWeeks(entries: AircallDailyEntry[]): WeekRow[] {
   while (current <= lastMonday) {
     const days: (AircallDailyEntry | null)[] = [];
     let totalDials = 0;
+    let totalReached = 0;
     let totalCalltimeSec = 0;
 
     for (let i = 0; i < 7; i++) {
@@ -85,6 +87,7 @@ function buildWeeks(entries: AircallDailyEntry[]): WeekRow[] {
       days.push(entry);
       if (entry) {
         totalDials += entry.dials;
+        totalReached += entry.reached;
         totalCalltimeSec += entry.calltimeSec;
       }
     }
@@ -93,6 +96,7 @@ function buildWeeks(entries: AircallDailyEntry[]): WeekRow[] {
       monday: new Date(current),
       label: formatWeekLabel(new Date(current)),
       totalDials,
+      totalReached,
       totalCalltimeSec,
       days,
     });
@@ -128,7 +132,8 @@ function BubbleCell({ entry, mode, maxVal }: { entry: AircallDailyEntry | null; 
   const size = Math.round(minSize + ratio * (maxSize - minSize));
 
   const displayValue = mode === "dials" ? entry.dials : formatDuration(entry.calltimeSec);
-  const subLabel = mode === "dials" ? `${entry.reached} erreicht` : `${entry.dials} Dials`;
+  const reachRate = mode === "dials" && entry.dials > 0 ? ((entry.reached / entry.dials) * 100).toFixed(0) : null;
+  const subLabel = mode === "dials" ? `${entry.reached}/${entry.dials} erreicht${reachRate ? ` (${reachRate}%)` : ""}` : `${entry.dials} Dials`;
   const isToday = entry.date === today;
 
   return (
@@ -286,7 +291,7 @@ export function ActivityCalendar() {
               <div className="text-[13px] font-medium text-[#fafaf9]">{week.label}</div>
               <div className="text-[11px] font-medium text-[#e2a96e]">
                 {mode === "dials"
-                  ? `${week.totalDials} Dials`
+                  ? `${week.totalDials} Dials · ${week.totalReached} erreicht${week.totalDials > 0 ? ` (${((week.totalReached / week.totalDials) * 100).toFixed(0)}%)` : ""}`
                   : formatDuration(week.totalCalltimeSec)}
               </div>
             </div>
