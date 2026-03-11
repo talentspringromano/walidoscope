@@ -5,6 +5,7 @@ import { KpiCard, SectionCard } from "@/components/kpi-card";
 import { TimeRangeFilter } from "@/components/time-range-filter";
 import { leads } from "@/data/leads";
 import { TOOLTIP_STYLE, AXIS_STYLE, STATUS_COLORS, LOSS_COLORS, PALETTE } from "@/components/chart-theme";
+import { aircallDaily, aircallSellerDaily } from "@/data/aircall";
 import { Lightbulb, AlertTriangle, CheckCircle, Clock } from "lucide-react";
 import type { ReactNode } from "react";
 import {
@@ -439,6 +440,56 @@ export default function SalesPage() {
     };
   }, [range]);
 
+  /* ── Aircall-basierte Erreichbarkeitsquote ── */
+  const aircall = useMemo(() => {
+    const totalDials = aircallDaily.reduce((s, d) => s + d.dials, 0);
+    const totalReached = aircallDaily.reduce((s, d) => s + d.reached, 0);
+    const totalNotReached = totalDials - totalReached;
+    const reachPct = totalDials > 0 ? (totalReached / totalDials) * 100 : 0;
+
+    // Weekly aggregation
+    const weekMap = new Map<string, { reached: number; notReached: number }>();
+    for (const d of aircallDaily) {
+      const date = new Date(d.date);
+      const wk = getISOWeek(date);
+      const year = date.getFullYear();
+      const key = `${year}-KW ${wk}`;
+      const entry = weekMap.get(key) ?? { reached: 0, notReached: 0 };
+      entry.reached += d.reached;
+      entry.notReached += d.dials - d.reached;
+      weekMap.set(key, entry);
+    }
+    const weeklyData = Array.from(weekMap.entries())
+      .sort((a, b) => a[0].localeCompare(b[0]))
+      .map(([key, v]) => ({
+        week: key.split("-")[1],
+        Erreicht: v.reached,
+        "Nicht erreicht": v.notReached,
+        quote: v.reached + v.notReached > 0
+          ? Math.round((v.reached / (v.reached + v.notReached)) * 100)
+          : 0,
+      }));
+
+    // Per-seller aggregation
+    const sellerMap = new Map<string, { dials: number; reached: number }>();
+    for (const d of aircallSellerDaily) {
+      const entry = sellerMap.get(d.seller) ?? { dials: 0, reached: 0 };
+      entry.dials += d.dials;
+      entry.reached += d.reached;
+      sellerMap.set(d.seller, entry);
+    }
+    const sellerData = Array.from(sellerMap.entries())
+      .map(([seller, v]) => ({
+        seller: seller.split(" ")[0],
+        Erreicht: v.reached,
+        "Nicht erreicht": v.dials - v.reached,
+        quote: v.dials > 0 ? Math.round((v.reached / v.dials) * 100) : 0,
+      }))
+      .sort((a, b) => b.quote - a.quote);
+
+    return { totalDials, totalReached, totalNotReached, reachPct, weeklyData, sellerData };
+  }, []);
+
   return (
     <div className="space-y-8">
       <div className="flex items-center justify-between">
@@ -617,15 +668,15 @@ export default function SalesPage() {
         </div>
       </SectionCard>
 
-      {/* Erreichbarkeitsquote */}
-      <SectionCard title="Erreichbarkeitsquote">
+      {/* Erreichbarkeitsquote (Aircall-basiert) */}
+      <SectionCard title="Erreichbarkeitsquote (Aircall)">
         {/* KPI-Zeile */}
         <div className="grid grid-cols-2 gap-3 lg:grid-cols-4 mb-6">
           {[
-            { label: "Kontaktiert", value: nichtErreichtLeads.length + erreichtLeads.length, color: "text-[#fafaf9]", sub: "Anrufversuch gemacht" },
-            { label: "Erreicht", value: erreichtLeads.length, color: "text-[#5eead4]", sub: "Erfolgreich kontaktiert" },
-            { label: "Nicht erreicht", value: nichtErreichtLeads.length, color: "text-[#fb7185]", sub: `Ø ${nichtErreichtLeads.length > 0 ? (nichtErreichtLeads.reduce((s, l) => { const m = l.anrufversuch.match(/^(\d+)x/); return s + (m ? parseInt(m[1]) : 0); }, 0) / nichtErreichtLeads.length).toFixed(1) : "0"} Versuche` },
-            { label: "Noch nicht angerufen", value: nochNichtAngerufen.length, color: "text-[#78716c]", sub: "Kein Versuch bisher" },
+            { label: "Gesamt Dials", value: aircall.totalDials, color: "text-[#fafaf9]", sub: "Outbound-Anrufe" },
+            { label: "Erreicht", value: aircall.totalReached, color: "text-[#5eead4]", sub: "Anruf angenommen" },
+            { label: "Nicht erreicht", value: aircall.totalNotReached, color: "text-[#fb7185]", sub: "Nicht rangegangen" },
+            { label: "Erreichbarkeitsquote", value: `${aircall.reachPct.toFixed(1)}%`, color: aircall.reachPct >= 50 ? "text-[#5eead4]" : aircall.reachPct >= 30 ? "text-[#e2a96e]" : "text-[#fb7185]", sub: "Reached / Dials" },
           ].map((kpi) => (
             <div key={kpi.label} className="rounded-xl border border-[rgba(255,255,255,0.04)] bg-[rgba(255,255,255,0.02)] p-4">
               <div className="text-[10px] font-medium uppercase tracking-wider text-[#57534e]">{kpi.label}</div>
@@ -638,30 +689,88 @@ export default function SalesPage() {
         {/* Erreichbarkeitsquote Progress */}
         <div className="mb-6">
           <div className="flex items-center justify-between text-[12px] mb-2">
-            <span className="text-[#a8a29e] font-medium">Erreichbarkeitsquote (nur kontaktierte Leads)</span>
-            <span className="tabular-nums font-bold text-[16px]" style={{ color: erreichbarkeit >= 50 ? "#5eead4" : erreichbarkeit >= 30 ? "#e2a96e" : "#fb7185" }}>
-              {erreichbarkeit.toFixed(1)}%
+            <span className="text-[#a8a29e] font-medium">Erreichbarkeitsquote (Aircall-Daten)</span>
+            <span className="tabular-nums font-bold text-[16px]" style={{ color: aircall.reachPct >= 50 ? "#5eead4" : aircall.reachPct >= 30 ? "#e2a96e" : "#fb7185" }}>
+              {aircall.reachPct.toFixed(1)}%
             </span>
           </div>
           <div className="h-3 rounded-full bg-[rgba(255,255,255,0.04)] overflow-hidden flex">
             <div
               className="h-full rounded-l-full bg-[#5eead4] transition-all duration-500"
-              style={{ width: `${erreichbarkeit}%` }}
+              style={{ width: `${aircall.reachPct}%` }}
             />
             <div
               className="h-full rounded-r-full bg-[#fb7185] transition-all duration-500"
-              style={{ width: `${100 - erreichbarkeit}%` }}
+              style={{ width: `${100 - aircall.reachPct}%` }}
             />
           </div>
           <div className="flex items-center justify-between mt-1.5 text-[10px]">
-            <span className="text-[#5eead4]">{erreichtLeads.length} erreicht</span>
-            <span className="text-[#fb7185]">{nichtErreichtLeads.length} nicht erreicht</span>
+            <span className="text-[#5eead4]">{aircall.totalReached} erreicht</span>
+            <span className="text-[#fb7185]">{aircall.totalNotReached} nicht erreicht</span>
           </div>
         </div>
 
         <div className="grid gap-6 lg:grid-cols-2">
-          {/* Kontaktversuche-Verteilung */}
-          {attemptDistribution.length > 0 && (
+          {/* Erreichbarkeit pro Woche */}
+          {aircall.weeklyData.length > 0 && (
+            <div>
+              <h3 className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#57534e] mb-3">
+                Erreichbarkeit pro Woche
+              </h3>
+              <ResponsiveContainer width="100%" height={280}>
+                <BarChart data={aircall.weeklyData} barCategoryGap="20%">
+                  <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
+                  <XAxis dataKey="week" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+                  <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} />
+                  <Tooltip
+                    {...TOOLTIP_STYLE}
+                    formatter={(val, name) => [val, name]}
+                    labelFormatter={(label) => {
+                      const w = aircall.weeklyData.find((d) => d.week === label);
+                      return w ? `${label} — ${w.quote}% Erreichbarkeit` : label;
+                    }}
+                  />
+                  <Legend wrapperStyle={{ fontSize: 11, color: "#78716c" }} />
+                  <Bar dataKey="Erreicht" stackId="r" fill="#5eead4" />
+                  <Bar dataKey="Nicht erreicht" stackId="r" fill="#fb7185" radius={[4, 4, 0, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          )}
+
+          {/* Erreichbarkeit pro Seller */}
+          {aircall.sellerData.length > 0 && (
+            <div>
+              <h3 className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#57534e] mb-3">
+                Erreichbarkeit pro Seller
+              </h3>
+              <ResponsiveContainer width="100%" height={280}>
+                <BarChart data={aircall.sellerData} barCategoryGap="20%">
+                  <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
+                  <XAxis dataKey="seller" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+                  <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} />
+                  <Tooltip
+                    {...TOOLTIP_STYLE}
+                    formatter={(val, name) => [val, name]}
+                    labelFormatter={(label) => {
+                      const s = aircall.sellerData.find((d) => d.seller === label);
+                      return s ? `${label} — ${s.quote}% Erreichbarkeit` : label;
+                    }}
+                  />
+                  <Legend wrapperStyle={{ fontSize: 11, color: "#78716c" }} />
+                  <Bar dataKey="Erreicht" stackId="r" fill="#5eead4" />
+                  <Bar dataKey="Nicht erreicht" stackId="r" fill="#fb7185" radius={[4, 4, 0, 0]} />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          )}
+        </div>
+      </SectionCard>
+
+      {/* CRM-Kontaktversuche */}
+      {attemptDistribution.length > 0 && (
+        <SectionCard title="CRM-Kontaktversuche">
+          <div className="grid gap-6 lg:grid-cols-2">
             <div>
               <h3 className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#57534e] mb-3">
                 Kontaktversuche — Wo bleiben Leads stecken?
@@ -685,36 +794,9 @@ export default function SalesPage() {
                 {attemptDistribution.filter((d) => parseInt(d.attempts) >= 5).reduce((s, d) => s + d.count, 0)} Leads mit 5+ Versuchen — ggf. Kontaktdaten prüfen
               </p>
             </div>
-          )}
-
-          {/* Erreichbarkeit pro Woche */}
-          {reachWeeklyData.length > 0 && (
-            <div>
-              <h3 className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#57534e] mb-3">
-                Erreichbarkeit pro Woche
-              </h3>
-              <ResponsiveContainer width="100%" height={280}>
-                <BarChart data={reachWeeklyData} barCategoryGap="20%">
-                  <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
-                  <XAxis dataKey="week" {...AXIS_STYLE} axisLine={false} tickLine={false} />
-                  <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} />
-                  <Tooltip
-                    {...TOOLTIP_STYLE}
-                    formatter={(val, name) => [val, name]}
-                    labelFormatter={(label) => {
-                      const w = reachWeeklyData.find((d) => d.week === label);
-                      return w ? `${label} — ${w.quote}% Erreichbarkeit` : label;
-                    }}
-                  />
-                  <Legend wrapperStyle={{ fontSize: 11, color: "#78716c" }} />
-                  <Bar dataKey="Erreicht" stackId="r" fill="#5eead4" />
-                  <Bar dataKey="Nicht erreicht" stackId="r" fill="#fb7185" radius={[4, 4, 0, 0]} />
-                </BarChart>
-              </ResponsiveContainer>
-            </div>
-          )}
-        </div>
-      </SectionCard>
+          </div>
+        </SectionCard>
+      )}
 
       {/* Amt-Termine im Zeitverlauf */}
       {terminWeeklyData.length > 0 && (

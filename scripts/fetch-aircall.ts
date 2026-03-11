@@ -104,7 +104,7 @@ function aggregate(calls: RawCall[]): SellerAgg[] {
 
     const outbound = sellerCalls.filter((c) => c.direction === "outbound");
     const inbound = sellerCalls.filter((c) => c.direction === "inbound");
-    const answered = sellerCalls.filter((c) => c.status === "done" || c.status === "answered");
+    const answered = sellerCalls.filter((c) => c.answered_at !== null);
     const missed = sellerCalls.filter((c) => c.status === "missed" || c.missed_call_reason);
     const voicemail = sellerCalls.filter((c) => c.voicemail !== null);
 
@@ -113,7 +113,7 @@ function aggregate(calls: RawCall[]): SellerAgg[] {
     const avgDuration = answered.length > 0 ? Math.round(totalDuration / answered.length) : 0;
 
     const inboundTotal = inbound.length;
-    const inboundAnswered = inbound.filter((c) => c.status === "done" || c.status === "answered").length;
+    const inboundAnswered = inbound.filter((c) => c.answered_at !== null).length;
     const reachability = inboundTotal > 0 ? Math.round((inboundAnswered / inboundTotal) * 100) : 0;
 
     // Date range
@@ -170,7 +170,7 @@ function aggregateDaily(calls: RawCall[]): DailyEntry[] {
 
     if (c.direction === "outbound") {
       entry.dials++;
-      if (c.status === "done" || c.status === "answered") {
+      if (c.answered_at !== null) {
         entry.reached++;
         entry.calltimeSec += c.duration || 0;
       }
@@ -197,7 +197,7 @@ function aggregateSellerDaily(calls: RawCall[]): SellerDailyEntry[] {
 
     if (c.direction === "outbound") {
       entry.dials++;
-      if (c.status === "done" || c.status === "answered") {
+      if (c.answered_at !== null) {
         entry.reached++;
         entry.calltimeSec += c.duration || 0;
       }
