@@ -558,7 +558,7 @@ export default function SalesPage() {
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-[26px] font-bold tracking-tight text-[#fafaf9]">Vertriebs-Analytik</h1>
-          <p className="mt-1 text-[13px] text-[#57534e]">Lead-Pipeline, Verlustgründe & Deal-Verfolgung</p>
+          <p className="mt-1 text-[13px] text-[#57534e]">Lead-Pipeline & Verlustgründe</p>
         </div>
         <TimeRangeFilter value={range} onChange={setRange} />
       </div>
@@ -1259,42 +1259,6 @@ export default function SalesPage() {
           )}
         </SectionCard>
       )}
-
-      {/* Deal Tracking */}
-      <SectionCard title="Deal-Verfolgung — Angebote in Pipeline">
-        <div className="overflow-x-auto -mx-2">
-          <table className="w-full premium-table">
-            <thead>
-              <tr>
-                <th className="text-left pl-2">#</th>
-                <th className="text-left pl-4">Name</th>
-                <th className="text-left pl-4">Status</th>
-                <th className="text-left pl-4">Deal</th>
-                <th className="text-left pl-4">Vertriebler</th>
-                <th className="text-right pr-5">Closing %</th>
-                <th className="text-right pr-2">Erstellt</th>
-              </tr>
-            </thead>
-            <tbody>
-              {angebotLeads.map((l, i) => (
-                <tr key={l.id}>
-                  <td className="pl-2 tabular-nums text-[#44403c] text-[12px]">{i + 1}</td>
-                  <td className="pl-4 text-[13px] font-medium text-[#fafaf9]">{l.name}</td>
-                  <td className="pl-4">
-                    <span className={`inline-block rounded-full px-2.5 py-0.5 text-[11px] font-medium ${STATUS_BADGE[l.leadStatus] || "bg-[rgba(255,255,255,0.05)] text-[#a8a29e]"}`}>
-                      {l.leadStatus}
-                    </span>
-                  </td>
-                  <td className="pl-4 text-[13px] text-[#a8a29e]">{l.angebotVerschicken ? "Angebot verschickt" : "—"}</td>
-                  <td className="pl-4 text-[13px] text-[#fafaf9] font-medium">{l.vertriebler}</td>
-                  <td className="text-right pr-5 tabular-nums text-[#e2a96e] font-medium text-[13px]">{l.closingWahrscheinlichkeit || "—"}</td>
-                  <td className="text-right pr-2 tabular-nums text-[12px] text-[#57534e]">{l.createdOn}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </SectionCard>
 
       {/* Angebote rausgeschickt pro KW */}
       {angebotWeeklyData.length > 0 && (
