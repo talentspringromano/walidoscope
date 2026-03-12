@@ -366,12 +366,13 @@ export default function SellerPage() {
 
             <div className="px-6 pt-4 pb-5 flex-1 flex flex-col">
               {/* CRM Stats */}
-              <div className="grid grid-cols-4 gap-3 mb-5">
+              <div className="grid grid-cols-5 gap-3 mb-5">
                 {[
                   { label: "Leads", val: s.total },
                   { label: "Qualifiziert+", val: s.qualified },
                   { label: "Gewonnen", val: s.gewonnen },
                   { label: "Verloren", val: s.verloren },
+                  { label: "Termine", val: s.termine },
                 ].map((m) => (
                   <div key={m.label} className="text-center py-3 rounded-lg bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.03)]">
                     <div className="text-[20px] font-semibold tabular-nums text-[#fafaf9]">{m.val}</div>
