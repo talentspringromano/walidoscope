@@ -30,9 +30,6 @@ const sellers = ["Walid Karimi", "Nele Pfau", "Bastian Wuske", "Eric Hardt", "Mi
 
 function sellerStats(name: string, leadsSubset: typeof leads) {
   const sellerLeads = leadsSubset.filter((l) => l.vertriebler === name);
-  const qualified = sellerLeads.filter(
-    (l) => l.leadStatus === "Vertriebsqualifiziert" || l.leadStatus === "Kennenlerngespräch gebucht" || l.leadStatus === "Beratungsgespräch gebucht"
-  ).length;
   const gewonnen = sellerLeads.filter((l) => l.leadStatus === "Gewonnen").length;
   const verloren = sellerLeads.filter((l) => l.leadStatus === "Verloren").length;
   const termine = sellerLeads.filter((l) => l.terminBeimAmt).length;
@@ -52,6 +49,12 @@ function sellerStats(name: string, leadsSubset: typeof leads) {
     return isHT && !l.terminBeimAmtCheck;
   }).length;
   const ltCount = activeLeads.filter((l) => l.prozessStarten.includes("Low Touch") || l.betreuungsart === "Low Touch").length;
+  const oProz = activeLeads.filter((l) =>
+    ["Vertriebsqualifiziert", "Reterminierung", "Kennenlerngespräch gebucht", "Beratungsgespräch gebucht"].includes(l.leadStatus)
+    && !l.prozessStarten.includes("High Touch") && l.betreuungsart !== "High Touch"
+    && !l.prozessStarten.includes("Low Touch") && l.betreuungsart !== "Low Touch"
+  ).length;
+  const sql = htMitTermin + htOhneTermin + ltCount + oProz;
   const touchTotal = htMitTermin + htOhneTermin + ltCount;
 
   // Stale leads: 3+ Tage ohne Aktivität (nur aktive Leads)
@@ -101,17 +104,17 @@ function sellerStats(name: string, leadsSubset: typeof leads) {
   return {
     name,
     total: sellerLeads.length,
-    qualified,
+    sql,
     gewonnen,
     verloren,
     termine,
     neuerLead,
     rueckruf,
-    conversionRate: sellerLeads.length > 0 ? ((qualified / sellerLeads.length) * 100) : 0,
+    conversionRate: sellerLeads.length > 0 ? ((sql / sellerLeads.length) * 100) : 0,
     statusData: [
       { name: "Neuer Lead", count: neuerLead },
       { name: "Rückruf", count: rueckruf },
-      { name: "Qualifiziert+", count: qualified },
+      { name: "SQL", count: sql },
       { name: "Gewonnen", count: gewonnen },
       { name: "Verloren", count: verloren },
     ],
@@ -141,7 +144,7 @@ const GRADIENT_PAIRS = [
   { from: "#f472b6", to: "#db2777" },
 ];
 
-type BLSortKey = "total" | "qualified" | "gewonnen" | "conversionRate" | "bgConvRate" | "calls" | "avgDuration";
+type BLSortKey = "total" | "sql" | "gewonnen" | "conversionRate" | "bgConvRate" | "calls" | "avgDuration";
 type BLSortDir = "asc" | "desc";
 
 function Bestenliste({ data }: { data: ReturnType<typeof sellerStats>[] }) {
@@ -151,7 +154,7 @@ function Bestenliste({ data }: { data: ReturnType<typeof sellerStats>[] }) {
   function getValue(s: ReturnType<typeof sellerStats>, key: BLSortKey): number {
     switch (key) {
       case "total": return s.total;
-      case "qualified": return s.qualified;
+      case "sql": return s.sql;
       case "gewonnen": return s.gewonnen;
       case "conversionRate": return s.conversionRate;
       case "bgConvRate": return s.total > 0 ? (s.gewonnen / s.total) * 100 : 0;
@@ -183,7 +186,7 @@ function Bestenliste({ data }: { data: ReturnType<typeof sellerStats>[] }) {
     [null, "Rang", "text-left pl-2"],
     [null, "Vertriebler", "text-left pl-4"],
     ["total", "Leads", "text-right pr-5"],
-    ["qualified", "Qualifiziert+", "text-right pr-5"],
+    ["sql", "SQL", "text-right pr-5"],
     ["gewonnen", "Gewonnen", "text-right pr-5"],
     ["conversionRate", "Conversion %", "text-right pr-5"],
     ["bgConvRate", "BG-Conv %", "text-right pr-5"],
@@ -225,7 +228,7 @@ function Bestenliste({ data }: { data: ReturnType<typeof sellerStats>[] }) {
                 </td>
                 <td className="pl-4 text-[14px] font-medium text-[#fafaf9]">{s.name}</td>
                 <td className="text-right pr-5 tabular-nums text-[#a8a29e]">{s.total}</td>
-                <td className="text-right pr-5 tabular-nums text-[#a8a29e]">{s.qualified}</td>
+                <td className="text-right pr-5 tabular-nums text-[#a8a29e]">{s.sql}</td>
                 <td className="text-right pr-5 tabular-nums font-semibold text-[#5eead4] glow-badge">{s.gewonnen}</td>
                 <td className="text-right pr-5 tabular-nums text-[#e2a96e] font-medium">
                   {s.total > 0 ? s.conversionRate.toFixed(1) : "–"}%
@@ -254,13 +257,13 @@ export default function SellerPage() {
     const comparisonData = sellerData.map((s) => ({
       name: s.name.split(" ")[0],
       Leads: s.total,
-      "Qualifiziert+": s.qualified,
+      "SQL": s.sql,
       Gewonnen: s.gewonnen,
     }));
 
     const radarData = [
       { metric: "Leads", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.total])) },
-      { metric: "Qualifiziert", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.qualified])) },
+      { metric: "SQL", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.sql])) },
       { metric: "Gewonnen", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.gewonnen])) },
       { metric: "Termine", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.termine])) },
       { metric: "Calls", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.aircall?.totalCalls ?? 0])) },
@@ -324,7 +327,7 @@ export default function SellerPage() {
               <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} />
               <Tooltip {...TOOLTIP_STYLE} />
               <Bar dataKey="Leads" fill={PALETTE.indigo} radius={[6, 6, 0, 0]} />
-              <Bar dataKey="Qualifiziert+" fill={PALETTE.teal} radius={[6, 6, 0, 0]} />
+              <Bar dataKey="SQL" fill={PALETTE.teal} radius={[6, 6, 0, 0]} />
               <Bar dataKey="Gewonnen" fill={PALETTE.amber} radius={[6, 6, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
@@ -386,7 +389,7 @@ export default function SellerPage() {
               <div className="grid grid-cols-6 gap-3 mb-5">
                 {[
                   { label: "Leads", val: s.total },
-                  { label: "Qualifiziert+", val: s.qualified },
+                  { label: "SQL", val: s.sql },
                   { label: "Gewonnen", val: s.gewonnen },
                   { label: "Verloren", val: s.verloren },
                   { label: "Termine", val: s.termine },
