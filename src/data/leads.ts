@@ -11676,5 +11676,33 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "12.3.2026 04:28",
     "angebotsprozessDatum": "12.3.2026 04:28"
+  },
+  {
+    "id": 418,
+    "name": "Sanja Maaßen-Neumann",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Instagram",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "25 – 45 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "12.3.2026 07:48",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "12.3.2026 07:48",
+    "angebotsprozessDatum": "12.3.2026 07:48"
   }
 ];
