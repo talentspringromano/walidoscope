@@ -374,9 +374,6 @@ export default function SalesPage() {
       else if (l.anrufversuch.includes("nicht erreicht")) { seg = "Nicht erreicht"; }
       else { seg = "Nicht angerufen"; }
       entry[seg] = (entry[seg] || 0) + 1;
-      if (l.angebotVerschicken) {
-        entry["Angebote"] = (entry["Angebote"] || 0) + 1;
-      }
       pipelineWeekMap.set(wk, entry);
     });
 
@@ -385,7 +382,6 @@ export default function SalesPage() {
       .map(([wk, counts]) => ({
         week: `KW ${wk}`,
         ...Object.fromEntries(pipelineSegments.map((s) => [s, counts[s] || 0])),
-        Angebote: counts["Angebote"] || 0,
       }));
 
     /* ── Stage-to-Stage Funnel ── */
@@ -957,7 +953,6 @@ export default function SalesPage() {
               <Bar dataKey="SQL o. Prozess" stackId="seg" fill="#818cf8" radius={undefined} />
               <Bar dataKey="Nicht erreicht" stackId="seg" fill="#fb923c" radius={undefined} />
               <Bar dataKey="Nicht angerufen" stackId="seg" fill="#57534e" radius={[4, 4, 0, 0]} />
-              <Line type="monotone" dataKey="Angebote" stroke="#e2a96e" strokeWidth={2} dot={{ r: 3, fill: "#e2a96e" }} />
             </ComposedChart>
           </ResponsiveContainer>
         </SectionCard>
