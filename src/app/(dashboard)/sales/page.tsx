@@ -24,7 +24,7 @@ import {
   Line,
 } from "recharts";
 import type { TimeRange } from "@/lib/date-utils";
-import { filterLeadsByRange, parseDE, getISOWeek, classifyLead } from "@/lib/date-utils";
+import { filterLeadsByRange, parseDE, getISOWeek } from "@/lib/date-utils";
 
 const statusOrder = [
   "Neuer Lead", "Rückruf", "Vertriebsqualifiziert", "Reterminierung",
@@ -355,14 +355,24 @@ export default function SalesPage() {
     recommendations.sort((a, b) => priorityOrder[a.priority] - priorityOrder[b.priority]);
 
     /* Pipeline-Entwicklung im Zeitverlauf */
-    const pipelineSegments = ["High-Touch", "Medium", "Low-Touch", "Nicht qualifiziert"] as const;
+    const pipelineSegments = ["Gewonnen", "Verloren", "HT + Amt", "HT ohne Amt", "Low-Touch", "SQL o. Prozess", "Nicht erreicht", "Nicht angerufen"] as const;
     const pipelineWeekMap = new Map<number, Record<string, number>>();
     filtered.forEach((l) => {
       const date = parseDE(l.createdOn);
       if (isNaN(date.getTime())) return;
       const wk = getISOWeek(date);
-      const seg = classifyLead(l);
       const entry = pipelineWeekMap.get(wk) ?? {};
+      // Exklusive Zuordnung: jeder Lead in genau einer Kategorie
+      let seg: string;
+      if (l.leadStatus === "Gewonnen") { seg = "Gewonnen"; }
+      else if (l.leadStatus === "Verloren") { seg = "Verloren"; }
+      else if (l.prozessStarten.includes("High Touch") || l.betreuungsart === "High Touch") {
+        seg = l.terminBeimAmtCheck ? "HT + Amt" : "HT ohne Amt";
+      }
+      else if (l.prozessStarten.includes("Low Touch") || l.betreuungsart === "Low Touch") { seg = "Low-Touch"; }
+      else if (["Vertriebsqualifiziert", "Reterminierung", "Kennenlerngespräch gebucht", "Beratungsgespräch gebucht"].includes(l.leadStatus)) { seg = "SQL o. Prozess"; }
+      else if (l.anrufversuch.includes("nicht erreicht")) { seg = "Nicht erreicht"; }
+      else { seg = "Nicht angerufen"; }
       entry[seg] = (entry[seg] || 0) + 1;
       if (l.angebotVerschicken) {
         entry["Angebote"] = (entry["Angebote"] || 0) + 1;
@@ -939,10 +949,14 @@ export default function SalesPage() {
               <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} />
               <Tooltip {...TOOLTIP_STYLE} />
               <Legend wrapperStyle={{ fontSize: 11, color: "#78716c" }} />
-              <Bar dataKey="High-Touch" stackId="seg" fill="#5eead4" radius={undefined} />
-              <Bar dataKey="Medium" stackId="seg" fill="#818cf8" radius={undefined} />
+              <Bar dataKey="Gewonnen" stackId="seg" fill="#5eead4" radius={undefined} />
+              <Bar dataKey="Verloren" stackId="seg" fill="#f87171" radius={undefined} />
+              <Bar dataKey="HT + Amt" stackId="seg" fill="#34d399" radius={undefined} />
+              <Bar dataKey="HT ohne Amt" stackId="seg" fill="#fbbf24" radius={undefined} />
               <Bar dataKey="Low-Touch" stackId="seg" fill="#a78bfa" radius={undefined} />
-              <Bar dataKey="Nicht qualifiziert" stackId="seg" fill="#fb7185" radius={[4, 4, 0, 0]} />
+              <Bar dataKey="SQL o. Prozess" stackId="seg" fill="#818cf8" radius={undefined} />
+              <Bar dataKey="Nicht erreicht" stackId="seg" fill="#fb923c" radius={undefined} />
+              <Bar dataKey="Nicht angerufen" stackId="seg" fill="#57534e" radius={[4, 4, 0, 0]} />
               <Line type="monotone" dataKey="Angebote" stroke="#e2a96e" strokeWidth={2} dot={{ r: 3, fill: "#e2a96e" }} />
             </ComposedChart>
           </ResponsiveContainer>
