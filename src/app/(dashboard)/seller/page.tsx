@@ -65,6 +65,22 @@ function sellerStats(name: string, leadsSubset: typeof leads) {
     return daysSince >= STALE_THRESHOLD_DAYS;
   }).length;
 
+  // Time-to-Qualify (Durchschnitt in Tagen)
+  const qualiDiffs: number[] = [];
+  for (const l of sellerLeads) {
+    if (l.vertriebsqualifiziertAm && l.createdOn) {
+      const created = parseDE(l.createdOn);
+      const qualified = parseDE(l.vertriebsqualifiziertAm);
+      if (!isNaN(created.getTime()) && !isNaN(qualified.getTime())) {
+        const diffDays = (qualified.getTime() - created.getTime()) / (1000 * 60 * 60 * 24);
+        if (diffDays >= 0) qualiDiffs.push(diffDays);
+      }
+    }
+  }
+  const avgTimeToQualify = qualiDiffs.length > 0
+    ? Math.round((qualiDiffs.reduce((a, b) => a + b, 0) / qualiDiffs.length) * 10) / 10
+    : null;
+
   // Verlustgründe
   const verlorenLeads = sellerLeads.filter((l) => l.leadStatus === "Verloren");
   const verlustgruende: Record<string, number> = {};
@@ -110,6 +126,7 @@ function sellerStats(name: string, leadsSubset: typeof leads) {
     staleLeads,
     activeLeadsCount: activeLeads.length,
     topVerlustgruende,
+    avgTimeToQualify,
   };
 }
 
@@ -366,13 +383,14 @@ export default function SellerPage() {
 
             <div className="px-6 pt-4 pb-5 flex-1 flex flex-col">
               {/* CRM Stats */}
-              <div className="grid grid-cols-5 gap-3 mb-5">
+              <div className="grid grid-cols-6 gap-3 mb-5">
                 {[
                   { label: "Leads", val: s.total },
                   { label: "Qualifiziert+", val: s.qualified },
                   { label: "Gewonnen", val: s.gewonnen },
                   { label: "Verloren", val: s.verloren },
                   { label: "Termine", val: s.termine },
+                  { label: "Ø Quali-Tage", val: s.avgTimeToQualify ?? "–" },
                 ].map((m) => (
                   <div key={m.label} className="text-center py-3 rounded-lg bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.03)]">
                     <div className="text-[20px] font-semibold tabular-nums text-[#fafaf9]">{m.val}</div>

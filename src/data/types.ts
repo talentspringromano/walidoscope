@@ -55,6 +55,7 @@ export interface Lead {
   betreuungsart: string;
   lastModified?: string;
   angebotsprozessDatum?: string;
+  vertriebsqualifiziertAm?: string;
 }
 
 export interface PerspectiveVisit {
