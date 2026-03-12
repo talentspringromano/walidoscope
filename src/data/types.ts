@@ -26,7 +26,7 @@ export type LeadStatus =
   | "Verloren"
   | "Onboarding";
 
-export type Platform = "Facebook" | "Instagram" | "Kursnet" | "Indeed" | "Unsicher" | "";
+export type Platform = "Facebook" | "Instagram" | "Kursnet" | "Indeed" | "Unsicher" | "TS Academy Group Website" | "";
 
 export interface Lead {
   id: number;
