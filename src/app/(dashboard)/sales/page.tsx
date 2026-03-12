@@ -1138,43 +1138,6 @@ export default function SalesPage() {
           </ResponsiveContainer>
         </SectionCard>
 
-        <SectionCard title="Verlustgründe">
-          {verlustData.length > 0 ? (
-            <>
-              <ResponsiveContainer width="100%" height={240}>
-                <PieChart>
-                  <Pie
-                    data={verlustData}
-                    cx="50%"
-                    cy="50%"
-                    innerRadius={55}
-                    outerRadius={95}
-                    dataKey="value"
-                    stroke="none"
-                    label={({ name, value }) => `${name} (${value})`}
-                    labelLine={{ stroke: "#44403c", strokeWidth: 1 }}
-                    fontSize={10}
-                  >
-                    {verlustData.map((_, i) => (
-                      <Cell key={i} fill={LOSS_COLORS[i % LOSS_COLORS.length]} />
-                    ))}
-                  </Pie>
-                  <Tooltip {...TOOLTIP_STYLE} />
-                </PieChart>
-              </ResponsiveContainer>
-              <div className="flex flex-wrap gap-3 mt-3">
-                {verlustData.map((d, i) => (
-                  <span key={d.name} className="flex items-center gap-1.5 text-[11px] text-[#78716c]">
-                    <span className="h-2 w-2 rounded-full" style={{ background: LOSS_COLORS[i % LOSS_COLORS.length] }} />
-                    {d.name}
-                  </span>
-                ))}
-              </div>
-            </>
-          ) : (
-            <div className="flex h-[300px] items-center justify-center text-[#44403c]">Keine Verlustgründe erfasst</div>
-          )}
-        </SectionCard>
       </div>
 
       {/* Verlustgründe im Zeitverlauf */}
