@@ -20,17 +20,17 @@
     {
       "name": "Nele Pfau",
       "userId": 1862427,
-      "outboundCalls": 457,
+      "outboundCalls": 458,
       "inboundCalls": 9,
-      "answeredCalls": 320,
+      "answeredCalls": 321,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 56991,
-      "avgDurationSec": 178,
+      "totalDurationSec": 59117,
+      "avgDurationSec": 184,
       "longestCallSec": 2432,
       "reachabilityPct": 100,
-      "callsPerDay": 58.3,
-      "totalCalls": 466,
+      "callsPerDay": 58.4,
+      "totalCalls": 467,
       "firstCallDate": "2026-03-05",
       "lastCallDate": "2026-03-12"
     },
@@ -71,17 +71,17 @@
     {
       "name": "Bastian Wuske",
       "userId": 1875176,
-      "outboundCalls": 354,
+      "outboundCalls": 350,
       "inboundCalls": 16,
-      "answeredCalls": 280,
+      "answeredCalls": 277,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 40931,
-      "avgDurationSec": 146,
+      "totalDurationSec": 40825,
+      "avgDurationSec": 147,
       "longestCallSec": 1976,
       "reachabilityPct": 100,
-      "callsPerDay": 41.1,
-      "totalCalls": 370,
+      "callsPerDay": 40.7,
+      "totalCalls": 366,
       "firstCallDate": "2026-03-04",
       "lastCallDate": "2026-03-12"
     }
@@ -89,9 +89,9 @@
   "daily": [
     {
       "date": "2026-03-04",
-      "dials": 115,
-      "reached": 83,
-      "calltimeSec": 8820
+      "dials": 111,
+      "reached": 80,
+      "calltimeSec": 8714
     },
     {
       "date": "2026-03-05",
@@ -101,9 +101,9 @@
     },
     {
       "date": "2026-03-06",
-      "dials": 114,
-      "reached": 83,
-      "calltimeSec": 13455
+      "dials": 115,
+      "reached": 84,
+      "calltimeSec": 15581
     },
     {
       "date": "2026-03-07",
@@ -140,9 +140,9 @@
     {
       "seller": "Bastian Wuske",
       "date": "2026-03-04",
-      "dials": 59,
-      "reached": 44,
-      "calltimeSec": 5888
+      "dials": 55,
+      "reached": 41,
+      "calltimeSec": 5782
     },
     {
       "seller": "Eric Hardt",
@@ -210,9 +210,9 @@
     {
       "seller": "Nele Pfau",
       "date": "2026-03-06",
-      "dials": 30,
-      "reached": 23,
-      "calltimeSec": 7281
+      "dials": 31,
+      "reached": 24,
+      "calltimeSec": 9407
     },
     {
       "seller": "Walid Karimi",
@@ -313,5 +313,5 @@
       "calltimeSec": 1011
     }
   ],
-  "fetchedAt": "2026-03-13T05:09:22.940Z"
+  "fetchedAt": "2026-03-13T08:03:26.497Z"
 }
