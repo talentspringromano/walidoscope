@@ -386,11 +386,12 @@ export default function SalesPage() {
 
     /* ── Stage-to-Stage Funnel ── */
     const mqlCount = filtered.length;
-    // Erreicht = alle außer "nicht erreicht" und "Verloren wegen falscher Kontaktdaten"
-    const nichtErreicht = filtered.filter((l) =>
-      l.anrufversuch.includes("nicht erreicht")
+    // Erreicht = kontaktiert und erfolgreich erreicht (nicht "nicht erreicht", nicht "Noch nicht angerufen"/leer)
+    const erreichtCount = filtered.filter((l) =>
+      l.anrufversuch !== "" &&
+      l.anrufversuch !== "Noch nicht angerufen" &&
+      !l.anrufversuch.includes("nicht erreicht")
     ).length;
-    const erreichtCount = mqlCount - nichtErreicht;
 
     // SQL = High Touch + Low Touch + ohne Prozess (aktiver Vertrieb)
     let htCount = 0;
