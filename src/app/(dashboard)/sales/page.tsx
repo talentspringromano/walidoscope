@@ -386,11 +386,10 @@ export default function SalesPage() {
 
     /* ── Stage-to-Stage Funnel ── */
     const mqlCount = filtered.length;
-    // Erreicht = kontaktiert und erfolgreich erreicht (nicht "nicht erreicht", nicht "Noch nicht angerufen"/leer)
+    // Erreicht = Lead wurde erfolgreich kontaktiert und weiterqualifiziert
+    // (alles außer "Neuer Lead" und "Rückruf", die noch im Erstkontakt stecken)
     const erreichtCount = filtered.filter((l) =>
-      l.anrufversuch !== "" &&
-      l.anrufversuch !== "Noch nicht angerufen" &&
-      !l.anrufversuch.includes("nicht erreicht")
+      l.leadStatus !== "Neuer Lead" && l.leadStatus !== "Rückruf"
     ).length;
 
     // SQL = High Touch + Low Touch + ohne Prozess (aktiver Vertrieb)
