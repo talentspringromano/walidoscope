@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { Phone, PhoneOutgoing, Clock, ChevronDown } from "lucide-react";
-import { aircallDaily, aircallSellerDaily, type AircallDailyEntry } from "@/data/aircall";
+import type { AircallDailyEntry, AircallSellerDailyEntry } from "@/data/aircall";
 import { formatDuration } from "@/data/aircall";
 
 type Mode = "dials" | "calltime";
@@ -154,7 +154,12 @@ function BubbleCell({ entry, mode, maxVal }: { entry: AircallDailyEntry | null; 
   );
 }
 
-export function ActivityCalendar() {
+interface ActivityCalendarProps {
+  filteredDaily: AircallDailyEntry[];
+  filteredSellerDaily: AircallSellerDailyEntry[];
+}
+
+export function ActivityCalendar({ filteredDaily, filteredSellerDaily }: ActivityCalendarProps) {
   const [mode, setMode] = useState<Mode>("dials");
   const [selectedSeller, setSelectedSeller] = useState<string>("all");
   const [selectedWeek, setSelectedWeek] = useState<string>("all");
@@ -162,11 +167,11 @@ export function ActivityCalendar() {
   // Get filtered daily entries based on seller selection
   const filteredEntries = useMemo(() => {
     if (selectedSeller === "all") {
-      return aircallDaily;
+      return filteredDaily;
     }
     // Filter sellerDaily for selected seller
-    return aircallSellerDaily.filter((e) => e.seller === selectedSeller);
-  }, [selectedSeller]);
+    return filteredSellerDaily.filter((e) => e.seller === selectedSeller);
+  }, [selectedSeller, filteredDaily, filteredSellerDaily]);
 
   const weeks = useMemo(() => buildWeeks(filteredEntries), [filteredEntries]);
 

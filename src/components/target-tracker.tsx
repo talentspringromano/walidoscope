@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { aircallDaily, aircallSellerDaily, aircallSellers } from "@/data/aircall";
+import { aircallSellers } from "@/data/aircall";
 import { formatDuration } from "@/data/aircall";
+import type { AircallDailyEntry, AircallSellerDailyEntry } from "@/data/aircall";
 import { TOOLTIP_STYLE, AXIS_STYLE } from "@/components/chart-theme";
 import { Target, TrendingUp, TrendingDown, AlertTriangle, CheckCircle } from "lucide-react";
 import {
@@ -24,13 +25,18 @@ const WORKING_DAYS_MONTH = 20;
 
 const sellerNames = aircallSellers.map((s) => s.name);
 
-export function TargetTracker() {
+interface TargetTrackerProps {
+  filteredDaily: AircallDailyEntry[];
+  filteredSellerDaily: AircallSellerDailyEntry[];
+}
+
+export function TargetTracker({ filteredDaily, filteredSellerDaily }: TargetTrackerProps) {
   const [activeSeller, setActiveSeller] = useState("all");
 
   const daily =
     activeSeller === "all"
-      ? aircallDaily
-      : aircallSellerDaily.filter((e) => e.seller === activeSeller);
+      ? filteredDaily
+      : filteredSellerDaily.filter((e) => e.seller === activeSeller);
 
   const target = activeSeller === "all" ? DAILY_TARGET : DAILY_TARGET_PER_SELLER;
   const monthlyTarget = target * WORKING_DAYS_MONTH;

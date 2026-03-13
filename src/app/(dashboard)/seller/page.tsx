@@ -7,7 +7,7 @@ import { ActivityCalendar } from "@/components/activity-calendar";
 import { TargetTracker } from "@/components/target-tracker";
 import { leads } from "@/data/leads";
 import type { AircallSellerDailyEntry } from "@/data/aircall";
-import { aircallSellerDaily, aircallFetchedAt, formatDuration } from "@/data/aircall";
+import { aircallSellerDaily, aircallDaily, aircallFetchedAt, formatDuration } from "@/data/aircall";
 import { TOOLTIP_STYLE, AXIS_STYLE, PALETTE, SELLER_BAR_COLORS } from "@/components/chart-theme";
 import { Phone, PhoneOutgoing, PhoneIncoming, Clock, ArrowUpDown, ArrowUp, ArrowDown, AlertTriangle, XCircle } from "lucide-react";
 import {
@@ -264,10 +264,11 @@ function Bestenliste({ data }: { data: ReturnType<typeof sellerStats>[] }) {
 export default function SellerPage() {
   const [range, setRange] = useState<TimeRange>("all");
 
-  const { sellerData, comparisonData, radarData, filteredDaily } = useMemo(() => {
+  const { sellerData, comparisonData, radarData, filteredDaily, filteredTeamDaily } = useMemo(() => {
     const filteredLeads = filterLeadsByRange(leads, range);
     const anchor = getAnchorDate(leads);
     const filteredDaily = filterAircallDailyByRange(aircallSellerDaily, anchor, range);
+    const filteredTeamDaily = filterAircallDailyByRange(aircallDaily, anchor, range);
     const sellerData = sellers.map((s) => sellerStats(s, filteredLeads, filteredDaily));
 
     const comparisonData = sellerData.map((s) => ({
@@ -285,7 +286,7 @@ export default function SellerPage() {
       { metric: "Calls", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.totalCalls])) },
     ];
 
-    return { sellerData, comparisonData, radarData, filteredDaily };
+    return { sellerData, comparisonData, radarData, filteredDaily, filteredTeamDaily };
   }, [range]);
 
   return (
@@ -301,7 +302,7 @@ export default function SellerPage() {
       </div>
 
       {/* Zielerreichung */}
-      <TargetTracker />
+      <TargetTracker filteredDaily={filteredTeamDaily} filteredSellerDaily={filteredDaily} />
 
       {/* Aircall KPIs (zeitgefiltert) */}
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 stagger-in">
@@ -337,7 +338,7 @@ export default function SellerPage() {
       <Bestenliste data={sellerData} />
 
       {/* Aktivitätskalender */}
-      <ActivityCalendar />
+      <ActivityCalendar filteredDaily={filteredTeamDaily} filteredSellerDaily={filteredDaily} />
 
       {/* Comparison Chart + Radar */}
       <div className="grid gap-6 lg:grid-cols-2 stagger-in">
