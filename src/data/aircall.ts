@@ -27,11 +27,20 @@ export interface AircallDailyEntry {
 
 export interface AircallSellerDailyEntry extends AircallDailyEntry {
   seller: string;
+  outboundCalls: number;
+  inboundCalls: number;
+  answeredCalls: number;
+  totalDurationSec: number;
+  longestCallSec: number;
 }
 
 export const aircallSellers: AircallSeller[] = data.sellers;
 export const aircallDaily: AircallDailyEntry[] = (data as { daily?: AircallDailyEntry[] }).daily ?? [];
-export const aircallSellerDaily: AircallSellerDailyEntry[] = (data as { sellerDaily?: AircallSellerDailyEntry[] }).sellerDaily ?? [];
+const SELLER_DAILY_DEFAULTS = { outboundCalls: 0, inboundCalls: 0, answeredCalls: 0, totalDurationSec: 0, longestCallSec: 0 };
+export const aircallSellerDaily: AircallSellerDailyEntry[] = ((data as unknown as { sellerDaily?: Partial<AircallSellerDailyEntry>[] }).sellerDaily ?? []).map((e) => ({
+  ...SELLER_DAILY_DEFAULTS,
+  ...e,
+} as AircallSellerDailyEntry));
 export const aircallFetchedAt: string = data.fetchedAt;
 
 export function formatDuration(sec: number): string {

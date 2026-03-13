@@ -58,6 +58,19 @@ export function filterLeadsByRange(leads: Lead[], range: TimeRange): Lead[] {
   });
 }
 
+/** Filter Aircall daily entries by time range relative to anchor date */
+export function filterAircallDailyByRange<T extends { date: string }>(
+  entries: T[],
+  anchorDate: Date,
+  range: TimeRange
+): T[] {
+  if (range === "all") return entries;
+  const days = range === "7d" ? 7 : 30;
+  const cutoff = new Date(anchorDate.getTime() - days * 86_400_000);
+  const cutoffStr = cutoff.toISOString().split("T")[0];
+  return entries.filter((e) => e.date >= cutoffStr);
+}
+
 /** Filter perspective visits by time range relative to max firstSeenAt */
 export function filterPerspectiveByRange(
   visits: PerspectiveVisit[],

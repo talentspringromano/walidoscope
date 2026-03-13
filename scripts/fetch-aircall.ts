@@ -158,6 +158,11 @@ interface DailyEntry {
 
 interface SellerDailyEntry extends DailyEntry {
   seller: string;
+  outboundCalls: number;
+  inboundCalls: number;
+  answeredCalls: number;
+  totalDurationSec: number;
+  longestCallSec: number;
 }
 
 function aggregateDaily(calls: RawCall[]): DailyEntry[] {
@@ -185,7 +190,7 @@ function aggregateDaily(calls: RawCall[]): DailyEntry[] {
 }
 
 function aggregateSellerDaily(calls: RawCall[]): SellerDailyEntry[] {
-  const map = new Map<string, { dials: number; reached: number; calltimeSec: number }>();
+  const map = new Map<string, { dials: number; reached: number; calltimeSec: number; outboundCalls: number; inboundCalls: number; answeredCalls: number; totalDurationSec: number; longestCallSec: number }>();
 
   for (const c of calls) {
     if (!c.started_at || !c.user) continue;
@@ -193,13 +198,24 @@ function aggregateSellerDaily(calls: RawCall[]): SellerDailyEntry[] {
     if (!sellerName) continue;
     const date = new Date(c.started_at * 1000).toLocaleDateString("sv-SE", { timeZone: "Europe/Berlin" });
     const key = `${sellerName}::${date}`;
-    const entry = map.get(key) ?? { dials: 0, reached: 0, calltimeSec: 0 };
+    const entry = map.get(key) ?? { dials: 0, reached: 0, calltimeSec: 0, outboundCalls: 0, inboundCalls: 0, answeredCalls: 0, totalDurationSec: 0, longestCallSec: 0 };
 
     if (c.direction === "outbound") {
+      entry.outboundCalls++;
       entry.dials++;
       if (c.answered_at !== null) {
         entry.reached++;
         entry.calltimeSec += c.duration || 0;
+      }
+    } else if (c.direction === "inbound") {
+      entry.inboundCalls++;
+    }
+
+    if (c.answered_at !== null) {
+      entry.answeredCalls++;
+      entry.totalDurationSec += c.duration || 0;
+      if ((c.duration || 0) > entry.longestCallSec) {
+        entry.longestCallSec = c.duration || 0;
       }
     }
 

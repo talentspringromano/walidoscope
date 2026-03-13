@@ -6,7 +6,8 @@ import { TimeRangeFilter } from "@/components/time-range-filter";
 import { ActivityCalendar } from "@/components/activity-calendar";
 import { TargetTracker } from "@/components/target-tracker";
 import { leads } from "@/data/leads";
-import { aircallSellers, aircallSellerDaily, aircallFetchedAt, formatDuration } from "@/data/aircall";
+import type { AircallSellerDailyEntry } from "@/data/aircall";
+import { aircallSellerDaily, aircallFetchedAt, formatDuration } from "@/data/aircall";
 import { TOOLTIP_STYLE, AXIS_STYLE, PALETTE, SELLER_BAR_COLORS } from "@/components/chart-theme";
 import { Phone, PhoneOutgoing, PhoneIncoming, Clock, ArrowUpDown, ArrowUp, ArrowDown, AlertTriangle, XCircle } from "lucide-react";
 import {
@@ -24,19 +25,17 @@ import {
   Legend,
 } from "recharts";
 import type { TimeRange } from "@/lib/date-utils";
-import { filterLeadsByRange, parseDE } from "@/lib/date-utils";
+import { filterLeadsByRange, filterAircallDailyByRange, getAnchorDate, parseDE } from "@/lib/date-utils";
 
 const sellers = ["Walid Karimi", "Nele Pfau", "Bastian Wuske", "Eric Hardt", "Michel Grosser"];
 
-function sellerStats(name: string, leadsSubset: typeof leads) {
+function sellerStats(name: string, leadsSubset: typeof leads, filteredSellerDaily: AircallSellerDailyEntry[]) {
   const sellerLeads = leadsSubset.filter((l) => l.vertriebler === name);
   const gewonnen = sellerLeads.filter((l) => l.leadStatus === "Gewonnen").length;
   const verloren = sellerLeads.filter((l) => l.leadStatus === "Verloren").length;
   const termine = sellerLeads.filter((l) => l.terminBeimAmt).length;
   const neuerLead = sellerLeads.filter((l) => l.leadStatus === "Neuer Lead").length;
   const rueckruf = sellerLeads.filter((l) => l.leadStatus === "Rückruf").length;
-
-  const aircall = aircallSellers.find((a) => a.name === name);
 
   // High-Touch / Low-Touch distribution (only qualified+ leads, excl. Gewonnen/Verloren)
   const activeLeads = sellerLeads.filter((l) => l.leadStatus !== "Gewonnen" && l.leadStatus !== "Verloren");
@@ -95,10 +94,19 @@ function sellerStats(name: string, leadsSubset: typeof leads) {
     .sort((a, b) => b[1] - a[1])
     .slice(0, 3);
 
-  // Reachability from daily data
-  const sellerDailyEntries = aircallSellerDaily.filter((e) => e.seller === name);
-  const totalDials = sellerDailyEntries.reduce((sum, e) => sum + e.dials, 0);
-  const totalReached = sellerDailyEntries.reduce((sum, e) => sum + e.reached, 0);
+  // Aircall KPIs from filtered daily data
+  const dailyEntries = filteredSellerDaily.filter((e) => e.seller === name);
+  const outboundCalls = dailyEntries.reduce((s, e) => s + e.outboundCalls, 0);
+  const inboundCalls = dailyEntries.reduce((s, e) => s + e.inboundCalls, 0);
+  const totalDurationSec = dailyEntries.reduce((s, e) => s + e.totalDurationSec, 0);
+  const answeredCalls = dailyEntries.reduce((s, e) => s + e.answeredCalls, 0);
+  const avgDurationSec = answeredCalls > 0 ? Math.round(totalDurationSec / answeredCalls) : 0;
+  const longestCallSec = Math.max(0, ...dailyEntries.map((e) => e.longestCallSec));
+  const uniqueDays = new Set(dailyEntries.map((e) => e.date)).size;
+  const callsPerDay = uniqueDays > 0 ? Math.round(((outboundCalls + inboundCalls) / uniqueDays) * 10) / 10 : 0;
+  const totalCalls = outboundCalls + inboundCalls;
+  const totalDials = dailyEntries.reduce((s, e) => s + e.dials, 0);
+  const totalReached = dailyEntries.reduce((s, e) => s + e.reached, 0);
   const reachabilityPct = totalDials > 0 ? (totalReached / totalDials) * 100 : 0;
 
   return {
@@ -118,7 +126,13 @@ function sellerStats(name: string, leadsSubset: typeof leads) {
       { name: "Gewonnen", count: gewonnen },
       { name: "Verloren", count: verloren },
     ],
-    aircall,
+    outboundCalls,
+    inboundCalls,
+    totalCalls,
+    totalDurationSec,
+    avgDurationSec,
+    longestCallSec,
+    callsPerDay,
     totalDials,
     totalReached,
     reachabilityPct,
@@ -158,8 +172,8 @@ function Bestenliste({ data }: { data: ReturnType<typeof sellerStats>[] }) {
       case "gewonnen": return s.gewonnen;
       case "conversionRate": return s.conversionRate;
       case "bgConvRate": return s.total > 0 ? (s.gewonnen / s.total) * 100 : 0;
-      case "calls": return s.aircall?.totalCalls ?? 0;
-      case "avgDuration": return s.aircall?.avgDurationSec ?? 0;
+      case "calls": return s.totalCalls;
+      case "avgDuration": return s.avgDurationSec;
     }
   }
 
@@ -236,8 +250,8 @@ function Bestenliste({ data }: { data: ReturnType<typeof sellerStats>[] }) {
                 <td className="text-right pr-5 tabular-nums text-[#5eead4] font-medium">
                   {s.total > 0 ? ((s.gewonnen / s.total) * 100).toFixed(1) : "–"}%
                 </td>
-                <td className="text-right pr-5 tabular-nums text-[#a8a29e]">{s.aircall?.totalCalls ?? "–"}</td>
-                <td className="text-right pr-2 tabular-nums text-[#a8a29e]">{s.aircall ? formatDuration(s.aircall.avgDurationSec) : "–"}</td>
+                <td className="text-right pr-5 tabular-nums text-[#a8a29e]">{s.totalCalls}</td>
+                <td className="text-right pr-2 tabular-nums text-[#a8a29e]">{formatDuration(s.avgDurationSec)}</td>
               </tr>
             ))}
           </tbody>
@@ -250,9 +264,11 @@ function Bestenliste({ data }: { data: ReturnType<typeof sellerStats>[] }) {
 export default function SellerPage() {
   const [range, setRange] = useState<TimeRange>("all");
 
-  const { sellerData, comparisonData, radarData } = useMemo(() => {
+  const { sellerData, comparisonData, radarData, filteredDaily } = useMemo(() => {
     const filteredLeads = filterLeadsByRange(leads, range);
-    const sellerData = sellers.map((s) => sellerStats(s, filteredLeads));
+    const anchor = getAnchorDate(leads);
+    const filteredDaily = filterAircallDailyByRange(aircallSellerDaily, anchor, range);
+    const sellerData = sellers.map((s) => sellerStats(s, filteredLeads, filteredDaily));
 
     const comparisonData = sellerData.map((s) => ({
       name: s.name.split(" ")[0],
@@ -266,10 +282,10 @@ export default function SellerPage() {
       { metric: "SQL", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.sql])) },
       { metric: "Gewonnen", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.gewonnen])) },
       { metric: "Termine", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.termine])) },
-      { metric: "Calls", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.aircall?.totalCalls ?? 0])) },
+      { metric: "Calls", ...Object.fromEntries(sellerData.map(s => [s.name.split(" ")[0], s.totalCalls])) },
     ];
 
-    return { sellerData, comparisonData, radarData };
+    return { sellerData, comparisonData, radarData, filteredDaily };
   }, [range]);
 
   return (
@@ -287,28 +303,33 @@ export default function SellerPage() {
       {/* Zielerreichung */}
       <TargetTracker />
 
-      {/* Aircall KPIs (ungefiltert — Aggregat ohne Datumsdimension) */}
+      {/* Aircall KPIs (zeitgefiltert) */}
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 stagger-in">
         <KpiCard
           label="Gesamt-Calls"
-          value={aircallSellers.reduce((s, a) => s + a.totalCalls, 0)}
-          sub={`${aircallSellers.reduce((s, a) => s + a.outboundCalls, 0)} outbound`}
+          value={sellerData.reduce((s, a) => s + a.totalCalls, 0)}
+          sub={`${sellerData.reduce((s, a) => s + a.outboundCalls, 0)} outbound`}
           accent
         />
         <KpiCard
           label="Gesprächszeit"
-          value={formatDuration(aircallSellers.reduce((s, a) => s + a.totalDurationSec, 0))}
+          value={formatDuration(sellerData.reduce((s, a) => s + a.totalDurationSec, 0))}
           sub="Alle Seller"
         />
         <KpiCard
           label="Avg Dauer"
-          value={formatDuration(Math.round(aircallSellers.reduce((s, a) => s + a.avgDurationSec, 0) / aircallSellers.length))}
+          value={formatDuration((() => {
+            const totalAnswered = sellerData.reduce((s, a) => s + (a.totalDurationSec > 0 ? 1 : 0), 0);
+            const totalDur = sellerData.reduce((s, a) => s + a.totalDurationSec, 0);
+            const totalAns = filteredDaily.reduce((s, e) => s + e.answeredCalls, 0);
+            return totalAns > 0 ? Math.round(totalDur / totalAns) : 0;
+          })())}
           sub="Pro Gespräch"
         />
         <KpiCard
           label="Längster Call"
-          value={formatDuration(Math.max(...aircallSellers.map((a) => a.longestCallSec)))}
-          sub={aircallSellers.reduce((best, a) => a.longestCallSec > best.longestCallSec ? a : best).name}
+          value={formatDuration(Math.max(0, ...sellerData.map((a) => a.longestCallSec)))}
+          sub={sellerData.reduce((best, a) => a.longestCallSec > best.longestCallSec ? a : best, sellerData[0])?.name ?? "–"}
         />
       </div>
 
@@ -403,7 +424,7 @@ export default function SellerPage() {
               </div>
 
               {/* Aircall Stats */}
-              {s.aircall && (
+              {s.totalCalls > 0 && (
                 <div className="mb-5">
                   <h3 className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#57534e] mb-3 flex items-center gap-1.5">
                     <Phone className="h-3 w-3" /> Aircall
@@ -412,28 +433,28 @@ export default function SellerPage() {
                     <div className="flex items-center gap-2 py-2 px-3 rounded-lg bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.03)]">
                       <PhoneOutgoing className="h-3.5 w-3.5 text-[#e2a96e]" />
                       <div>
-                        <div className="text-[16px] font-semibold tabular-nums text-[#fafaf9]">{s.aircall.outboundCalls}</div>
+                        <div className="text-[16px] font-semibold tabular-nums text-[#fafaf9]">{s.outboundCalls}</div>
                         <div className="text-[9px] uppercase tracking-wider text-[#57534e]">Outbound</div>
                       </div>
                     </div>
                     <div className="flex items-center gap-2 py-2 px-3 rounded-lg bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.03)]">
                       <PhoneIncoming className="h-3.5 w-3.5 text-[#5eead4]" />
                       <div>
-                        <div className="text-[16px] font-semibold tabular-nums text-[#fafaf9]">{s.aircall.inboundCalls}</div>
+                        <div className="text-[16px] font-semibold tabular-nums text-[#fafaf9]">{s.inboundCalls}</div>
                         <div className="text-[9px] uppercase tracking-wider text-[#57534e]">Inbound</div>
                       </div>
                     </div>
                     <div className="flex items-center gap-2 py-2 px-3 rounded-lg bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.03)]">
                       <Clock className="h-3.5 w-3.5 text-[#818cf8]" />
                       <div>
-                        <div className="text-[16px] font-semibold tabular-nums text-[#fafaf9]">{formatDuration(s.aircall.avgDurationSec)}</div>
+                        <div className="text-[16px] font-semibold tabular-nums text-[#fafaf9]">{formatDuration(s.avgDurationSec)}</div>
                         <div className="text-[9px] uppercase tracking-wider text-[#57534e]">Avg Dauer</div>
                       </div>
                     </div>
                     <div className="flex items-center gap-2 py-2 px-3 rounded-lg bg-[rgba(255,255,255,0.02)] border border-[rgba(255,255,255,0.03)]">
                       <Phone className="h-3.5 w-3.5 text-[#a78bfa]" />
                       <div>
-                        <div className="text-[16px] font-semibold tabular-nums text-[#fafaf9]">{s.aircall.callsPerDay}/Tag</div>
+                        <div className="text-[16px] font-semibold tabular-nums text-[#fafaf9]">{s.callsPerDay}/Tag</div>
                         <div className="text-[9px] uppercase tracking-wider text-[#57534e]">Frequenz</div>
                       </div>
                     </div>
@@ -452,8 +473,8 @@ export default function SellerPage() {
                     </div>
                   </div>
                   <div className="mt-2 flex items-center justify-between text-[11px] text-[#57534e]">
-                    <span>Gesprächszeit: {formatDuration(s.aircall.totalDurationSec)}</span>
-                    <span>Längster: {formatDuration(s.aircall.longestCallSec)}</span>
+                    <span>Gesprächszeit: {formatDuration(s.totalDurationSec)}</span>
+                    <span>Längster: {formatDuration(s.longestCallSec)}</span>
                   </div>
                 </div>
               )}
