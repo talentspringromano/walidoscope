@@ -54,17 +54,17 @@
     {
       "name": "Michel Grosser",
       "userId": 1862761,
-      "outboundCalls": 38,
+      "outboundCalls": 37,
       "inboundCalls": 1,
-      "answeredCalls": 26,
+      "answeredCalls": 25,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 4807,
-      "avgDurationSec": 185,
+      "totalDurationSec": 4717,
+      "avgDurationSec": 189,
       "longestCallSec": 1125,
       "reachabilityPct": 100,
-      "callsPerDay": 39,
-      "totalCalls": 39,
+      "callsPerDay": 38,
+      "totalCalls": 38,
       "firstCallDate": "2026-03-05",
       "lastCallDate": "2026-03-06"
     },
@@ -89,9 +89,9 @@
   "daily": [
     {
       "date": "2026-03-05",
-      "dials": 82,
-      "reached": 59,
-      "calltimeSec": 7412
+      "dials": 81,
+      "reached": 58,
+      "calltimeSec": 7322
     },
     {
       "date": "2026-03-06",
@@ -164,13 +164,13 @@
     {
       "seller": "Michel Grosser",
       "date": "2026-03-05",
-      "dials": 9,
-      "reached": 8,
-      "calltimeSec": 1776,
-      "outboundCalls": 9,
+      "dials": 8,
+      "reached": 7,
+      "calltimeSec": 1686,
+      "outboundCalls": 8,
       "inboundCalls": 0,
-      "answeredCalls": 8,
-      "totalDurationSec": 1776,
+      "answeredCalls": 7,
+      "totalDurationSec": 1686,
       "longestCallSec": 677
     },
     {
@@ -414,5 +414,5 @@
       "longestCallSec": 855
     }
   ],
-  "fetchedAt": "2026-03-13T19:51:48.664Z"
+  "fetchedAt": "2026-03-14T05:05:58.507Z"
 }
