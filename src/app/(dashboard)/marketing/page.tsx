@@ -93,7 +93,7 @@ export default function MarketingPage() {
   const {
     channelData, segmentCounts, segmentData, allSegments, segmentWeeklyData,
     creativeDeepFunnel, gewonnenKursnet, sqlKursnet, perspFunnelData, perspSummary,
-    filteredLeads, channelWeeklyData, platformData,
+    filteredLeads, channelWeeklyData, platformData, platformAggData,
   } = useMemo(() => {
     const filteredLeads = filterLeadsByRange(leads, range);
 
@@ -188,10 +188,21 @@ export default function MarketingPage() {
       .map(([platform, count]) => ({ platform, count }))
       .sort((a, b) => b.count - a.count);
 
+    /* Aggregierte Platform-Daten: Instagram + Facebook → Meta */
+    const platformAggCounts: Record<string, number> = {};
+    filteredLeads.forEach((l) => {
+      const p = l.platform || "(leer)";
+      const key = (p === "Instagram" || p === "Facebook") ? "Meta (Instagram + Facebook)" : p;
+      platformAggCounts[key] = (platformAggCounts[key] || 0) + 1;
+    });
+    const platformAggData = Object.entries(platformAggCounts)
+      .map(([platform, count]) => ({ platform, count }))
+      .sort((a, b) => b.count - a.count);
+
     return {
       channelData, segmentCounts, segmentData, allSegments, segmentWeeklyData,
       creativeDeepFunnel, gewonnenKursnet, sqlKursnet, perspFunnelData, perspSummary,
-      filteredLeads, channelWeeklyData, platformData,
+      filteredLeads, channelWeeklyData, platformData, platformAggData,
     };
   }, [range]);
 
@@ -362,6 +373,33 @@ export default function MarketingPage() {
             </div>
             <div className="mt-3 text-[11px] text-[#57534e]">
               Gesamt: {platformData.reduce((sum, d) => sum + d.count, 0)} Leads
+            </div>
+
+            {/* Aggregierte Ansicht */}
+            <div className="mt-4 pt-4 border-t border-[rgba(255,255,255,0.06)]">
+              <div className="text-[11px] text-[#57534e] mb-2.5">Aggregiert</div>
+              <div className="space-y-2.5">
+                {platformAggData.map(({ platform, count }) => {
+                  const maxCount = platformAggData[0].count;
+                  const pct = maxCount > 0 ? Math.round((count / maxCount) * 100) : 0;
+                  return (
+                    <div key={platform} className="flex items-center gap-3">
+                      <span className="text-[12px] text-[#a8a29e] w-[160px] truncate shrink-0" title={platform}>
+                        {platform}
+                      </span>
+                      <div className="flex-1 h-[18px] rounded bg-[rgba(255,255,255,0.04)] overflow-hidden">
+                        <div
+                          className="h-full rounded bg-gradient-to-r from-[#e2a96e] to-[#d97706] transition-all duration-500"
+                          style={{ width: `${pct}%` }}
+                        />
+                      </div>
+                      <span className="text-[13px] font-semibold tabular-nums text-[#fafaf9] w-[36px] text-right shrink-0">
+                        {count}
+                      </span>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </SectionCard>
         )}
