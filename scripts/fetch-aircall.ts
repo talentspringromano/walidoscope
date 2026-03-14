@@ -56,9 +56,10 @@ async function fetchAllCalls(): Promise<RawCall[]> {
   const allCalls: RawCall[] = [];
   let page = 1;
   const perPage = 50;
+  const fromTimestamp = Math.floor((Date.now() - 60 * 86_400_000) / 1000);
 
   while (true) {
-    const url = `https://api.aircall.io/v1/calls?per_page=${perPage}&page=${page}&order=desc`;
+    const url = `https://api.aircall.io/v1/calls?per_page=${perPage}&page=${page}&order=desc&from=${fromTimestamp}`;
     console.log(`  GET page ${page}...`);
 
     const res = await fetch(url, {
