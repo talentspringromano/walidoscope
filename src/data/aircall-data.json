@@ -54,34 +54,34 @@
     {
       "name": "Michel Grosser",
       "userId": 1862761,
-      "outboundCalls": 37,
+      "outboundCalls": 35,
       "inboundCalls": 1,
-      "answeredCalls": 25,
+      "answeredCalls": 23,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 4717,
-      "avgDurationSec": 189,
+      "totalDurationSec": 3981,
+      "avgDurationSec": 173,
       "longestCallSec": 1125,
       "reachabilityPct": 100,
-      "callsPerDay": 38,
-      "totalCalls": 38,
+      "callsPerDay": 36,
+      "totalCalls": 36,
       "firstCallDate": "2026-03-05",
       "lastCallDate": "2026-03-06"
     },
     {
       "name": "Bastian Wuske",
       "userId": 1875176,
-      "outboundCalls": 323,
+      "outboundCalls": 319,
       "inboundCalls": 17,
-      "answeredCalls": 247,
+      "answeredCalls": 244,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 34231,
-      "avgDurationSec": 139,
+      "totalDurationSec": 33356,
+      "avgDurationSec": 137,
       "longestCallSec": 1976,
       "reachabilityPct": 100,
-      "callsPerDay": 37.8,
-      "totalCalls": 340,
+      "callsPerDay": 37.3,
+      "totalCalls": 336,
       "firstCallDate": "2026-03-05",
       "lastCallDate": "2026-03-13"
     }
@@ -89,9 +89,9 @@
   "daily": [
     {
       "date": "2026-03-05",
-      "dials": 81,
-      "reached": 58,
-      "calltimeSec": 7322
+      "dials": 75,
+      "reached": 53,
+      "calltimeSec": 5711
     },
     {
       "date": "2026-03-06",
@@ -140,13 +140,13 @@
     {
       "seller": "Bastian Wuske",
       "date": "2026-03-05",
-      "dials": 23,
-      "reached": 18,
-      "calltimeSec": 3203,
-      "outboundCalls": 23,
+      "dials": 19,
+      "reached": 15,
+      "calltimeSec": 2328,
+      "outboundCalls": 19,
       "inboundCalls": 1,
-      "answeredCalls": 19,
-      "totalDurationSec": 4399,
+      "answeredCalls": 16,
+      "totalDurationSec": 3524,
       "longestCallSec": 1340
     },
     {
@@ -164,14 +164,14 @@
     {
       "seller": "Michel Grosser",
       "date": "2026-03-05",
-      "dials": 8,
-      "reached": 7,
-      "calltimeSec": 1686,
-      "outboundCalls": 8,
+      "dials": 6,
+      "reached": 5,
+      "calltimeSec": 950,
+      "outboundCalls": 6,
       "inboundCalls": 0,
-      "answeredCalls": 7,
-      "totalDurationSec": 1686,
-      "longestCallSec": 677
+      "answeredCalls": 5,
+      "totalDurationSec": 950,
+      "longestCallSec": 396
     },
     {
       "seller": "Bastian Wuske",
@@ -414,5 +414,5 @@
       "longestCallSec": 855
     }
   ],
-  "fetchedAt": "2026-03-14T07:55:07.181Z"
+  "fetchedAt": "2026-03-14T09:01:19.940Z"
 }
