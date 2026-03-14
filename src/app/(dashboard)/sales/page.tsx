@@ -116,6 +116,8 @@ export default function SalesPage() {
     staleStageData, totalStale,
     htOhneAmtWithDays,
     angebotWeeklyData,
+    openSQLs,
+    avgDealCycle,
   } = useMemo(() => {
     const filtered = filterLeadsByRange(leads, range);
 
@@ -493,6 +495,20 @@ export default function SalesPage() {
       oProzCount,
     };
 
+    // Offene SQLs: aktive Leads mit SQL-Status (nicht Gewonnen/Verloren)
+    const openSQLs = htCount + ltCount + oProzCount;
+
+    // Deal Cycle Length: Ø Tage von createdOn bis lastModified für Gewonnene
+    const cycleDays = gewonnenLeads
+      .map((l) => {
+        const created = parseDE(l.createdOn);
+        const closed = l.lastModified ? parseDE(l.lastModified) : null;
+        if (!closed || isNaN(created.getTime()) || isNaN(closed.getTime())) return null;
+        return Math.max(0, Math.floor((closed.getTime() - created.getTime()) / (1000 * 60 * 60 * 24)));
+      })
+      .filter((d): d is number => d !== null);
+    const avgDealCycle = cycleDays.length > 0 ? Math.round(cycleDays.reduce((s, d) => s + d, 0) / cycleDays.length) : null;
+
     return {
       statusData, lostLeads, lostNoReason, verlustData,
       lossWeeklyData, allLossReasons,
@@ -505,6 +521,8 @@ export default function SalesPage() {
       staleStageData, totalStale,
       htOhneAmtWithDays,
       angebotWeeklyData,
+      openSQLs,
+      avgDealCycle,
     };
   }, [range]);
 
@@ -577,12 +595,14 @@ export default function SalesPage() {
         <TimeRangeFilter value={range} onChange={setRange} />
       </div>
 
-      <div className="grid grid-cols-2 gap-4 lg:grid-cols-5 stagger-in">
+      <div className="grid grid-cols-2 gap-4 lg:grid-cols-7 stagger-in">
         <KpiCard label="In Pipeline" value={pipelineLeads.length} sub="VQ + KLG + BG" accent />
         <KpiCard label="BGs (Gewonnen)" value={gewonnenLeads.length} sub={Object.entries(gewonnenBySeller).map(([name, count]) => `${name.split(" ")[0]}: ${count}`).join(" · ") || "Keine"} />
         <KpiCard label="Angebote erstellt" value={angebotLeads.length} sub="Deal: Angebot schicken" />
         <KpiCard label="Verloren" value={lostLeads.length} sub={`${lostNoReason.length} ohne Grund`} />
         <KpiCard label="Amt-Termine" value={leadsWithTermin.length} sub="Termine gebucht" />
+        <KpiCard label="Offene SQLs" value={openSQLs} sub="HT + LT + ohne Prozess" accent />
+        <KpiCard label="Ø Deal Cycle" value={avgDealCycle !== null ? `${avgDealCycle}d` : "—"} sub={avgDealCycle !== null ? `Ø ${avgDealCycle} Tage bis Abschluss` : "Keine Daten"} />
       </div>
 
       {/* Stage-to-Stage Conversion Funnel */}
