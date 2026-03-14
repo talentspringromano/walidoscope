@@ -24,7 +24,7 @@ import {
   Line,
 } from "recharts";
 import type { TimeRange } from "@/lib/date-utils";
-import { filterLeadsByRange, parseDE, getISOWeek } from "@/lib/date-utils";
+import { filterLeadsByRange, filterAircallDailyByRange, getAnchorDate, parseDE, getISOWeek } from "@/lib/date-utils";
 
 const statusOrder = [
   "Neuer Lead", "Rückruf", "Vertriebsqualifiziert", "Reterminierung",
@@ -510,14 +510,18 @@ export default function SalesPage() {
 
   /* ── Aircall-basierte Erreichbarkeitsquote ── */
   const aircall = useMemo(() => {
-    const totalDials = aircallDaily.reduce((s, d) => s + d.dials, 0);
-    const totalReached = aircallDaily.reduce((s, d) => s + d.reached, 0);
+    const anchor = getAnchorDate(leads);
+    const filteredAircallDaily = filterAircallDailyByRange(aircallDaily, anchor, range);
+    const filteredAircallSellerDaily = filterAircallDailyByRange(aircallSellerDaily, anchor, range);
+
+    const totalDials = filteredAircallDaily.reduce((s, d) => s + d.dials, 0);
+    const totalReached = filteredAircallDaily.reduce((s, d) => s + d.reached, 0);
     const totalNotReached = totalDials - totalReached;
     const reachPct = totalDials > 0 ? (totalReached / totalDials) * 100 : 0;
 
     // Weekly aggregation
     const weekMap = new Map<string, { reached: number; notReached: number }>();
-    for (const d of aircallDaily) {
+    for (const d of filteredAircallDaily) {
       const date = new Date(d.date);
       const wk = getISOWeek(date);
       const year = date.getFullYear();
@@ -541,7 +545,7 @@ export default function SalesPage() {
 
     // Per-seller aggregation
     const sellerMap = new Map<string, { dials: number; reached: number }>();
-    for (const d of aircallSellerDaily) {
+    for (const d of filteredAircallSellerDaily) {
       const entry = sellerMap.get(d.seller) ?? { dials: 0, reached: 0 };
       entry.dials += d.dials;
       entry.reached += d.reached;
@@ -557,7 +561,7 @@ export default function SalesPage() {
       .sort((a, b) => b.quote - a.quote);
 
     return { totalDials, totalReached, totalNotReached, reachPct, weeklyData, sellerData };
-  }, []);
+  }, [range]);
 
   return (
     <div className="space-y-8">
