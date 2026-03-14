@@ -21,7 +21,7 @@ const USERS = [
     email: "malte@talentspring-academy.com",
     role: "user" as const,
     passwordHash:
-      "490f4b42931df38979da64f0391ad82d62c92869d34f5fc06a356fdc99aead7f",
+      "15e7ec199bbf937c531040b374c7f26d9fd0acf279277d7c0f5e1ebc0afcf21e",
   },
 ];
 
