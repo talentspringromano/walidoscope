@@ -5,7 +5,7 @@ import { aircallSellers } from "@/data/aircall";
 import { formatDuration } from "@/data/aircall";
 import type { AircallDailyEntry, AircallSellerDailyEntry } from "@/data/aircall";
 import { TOOLTIP_STYLE, AXIS_STYLE } from "@/components/chart-theme";
-import { Target, TrendingUp, TrendingDown, AlertTriangle, CheckCircle } from "lucide-react";
+import { TrendingUp, TrendingDown, AlertTriangle, CheckCircle, Target } from "lucide-react";
 import {
   BarChart,
   Bar,
@@ -16,14 +16,50 @@ import {
   ReferenceLine,
   CartesianGrid,
   Cell,
+  LineChart,
+  Line,
 } from "recharts";
 
 /* ── Targets ── */
-const DAILY_TARGET = 75; // Dials pro Tag (Team)
-const DAILY_TARGET_PER_SELLER = 15; // Dials pro Tag (Einzelperson)
+const DAILY_TARGET = 100; // Dials pro Tag (Team)
+const DAILY_TARGET_PER_SELLER = 20; // Dials pro Tag (Einzelperson)
 const WORKING_DAYS_MONTH = 20;
 
 const sellerNames = aircallSellers.map((s) => s.name);
+
+/* ── Progress Ring SVG ── */
+function ProgressRing({ percent, size = 36 }: { percent: number; size?: number }) {
+  const strokeWidth = 3.5;
+  const radius = (size - strokeWidth) / 2;
+  const circumference = 2 * Math.PI * radius;
+  const offset = circumference - (Math.min(percent, 100) / 100) * circumference;
+  const color = percent >= 90 ? "#5eead4" : percent >= 70 ? "#818cf8" : "#f87171";
+
+  return (
+    <svg width={size} height={size} className="-rotate-90">
+      <circle
+        cx={size / 2}
+        cy={size / 2}
+        r={radius}
+        fill="none"
+        stroke="rgba(255,255,255,0.06)"
+        strokeWidth={strokeWidth}
+      />
+      <circle
+        cx={size / 2}
+        cy={size / 2}
+        r={radius}
+        fill="none"
+        stroke={color}
+        strokeWidth={strokeWidth}
+        strokeDasharray={circumference}
+        strokeDashoffset={offset}
+        strokeLinecap="round"
+        className="transition-all duration-700"
+      />
+    </svg>
+  );
+}
 
 interface TargetTrackerProps {
   filteredDaily: AircallDailyEntry[];
@@ -63,6 +99,19 @@ export function TargetTracker({ filteredDaily, filteredSellerDaily }: TargetTrac
 
   const overTarget = abweichung >= 0;
 
+  // Progress percentage for the combined card
+  const progressPct = Math.round((totalDials / sollBisher) * 100);
+
+  // Sparkline data — daily dials
+  const sparklineData = daily.map((d) => ({ dials: d.dials }));
+
+  // Trend: compare avg of last 3 days vs previous 3 days
+  const recentDays = daily.slice(-3);
+  const previousDays = daily.slice(-6, -3);
+  const recentAvg = recentDays.length > 0 ? recentDays.reduce((s, d) => s + d.dials, 0) / recentDays.length : 0;
+  const previousAvg = previousDays.length > 0 ? previousDays.reduce((s, d) => s + d.dials, 0) / previousDays.length : 0;
+  const trendUp = recentAvg >= previousAvg;
+
   // Chart data
   const chartData = daily.map((d) => ({
     date: new Date(d.date + "T00:00:00").toLocaleDateString("de-DE", { day: "numeric", month: "short" }),
@@ -73,39 +122,83 @@ export function TargetTracker({ filteredDaily, filteredSellerDaily }: TargetTrac
 
   const maxDials = Math.max(...daily.map((d) => d.dials), target);
 
+  // Empfehlung logic (bug-fixed)
+  const empfehlungLabel = overTarget
+    ? "Über Target"
+    : catchUpRate === 0
+      ? "Im Plan"
+      : "Aufholen";
+
+  const empfehlungIsPositive = overTarget || catchUpRate === 0;
+
+  const daysRemainingLabel = daysRemaining === 1 ? "Tag" : "Tage";
+
   return (
     <div className="space-y-6">
       {/* KPI Row */}
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
-        {/* IST */}
+        {/* 1. Fortschritt (combined IST/SOLL) */}
         <div className="glass-card p-5">
           <div className="flex items-start justify-between">
-            <div>
-              <div className="text-[11px] font-medium uppercase tracking-wider text-[#57534e]">IST</div>
-              <div className="text-[32px] font-bold tracking-tight tabular-nums text-[#fafaf9] mt-1">{totalDials}</div>
-              <div className="text-[11px] text-[#57534e] mt-0.5">{activeDays} Arbeitstage</div>
+            <div className="flex-1 min-w-0">
+              <div className="text-[11px] font-medium uppercase tracking-wider text-[#57534e]">Fortschritt</div>
+              <div className="text-[32px] font-bold tracking-tight tabular-nums text-[#fafaf9] mt-1">
+                {totalDials} <span className="text-[18px] font-semibold text-[#57534e]">/ {sollBisher}</span>
+              </div>
+              {/* Progress bar */}
+              <div className="h-1.5 rounded-full bg-[rgba(255,255,255,0.06)] overflow-hidden mt-2 mb-1.5">
+                <div
+                  className={`h-full rounded-full transition-all duration-500 ${
+                    progressPct >= 100
+                      ? "bg-gradient-to-r from-[#5eead4] to-[#2dd4bf]"
+                      : "bg-gradient-to-r from-[#818cf8] to-[#6366f1]"
+                  }`}
+                  style={{ width: `${Math.min(100, progressPct)}%` }}
+                />
+              </div>
+              <div className="text-[11px] text-[#57534e]">
+                {abweichungPct}% · {activeDays} Arbeitstage
+              </div>
             </div>
-            <div className="h-9 w-9 rounded-xl bg-[rgba(129,140,248,0.1)] flex items-center justify-center">
-              <TrendingUp className="h-4 w-4 text-[#818cf8]" />
+            <div className="h-9 w-9 rounded-xl bg-[rgba(129,140,248,0.08)] flex items-center justify-center ml-3">
+              <ProgressRing percent={progressPct} />
             </div>
           </div>
         </div>
 
-        {/* SOLL */}
+        {/* 2. Ø Dials/Tag (Sparkline + Trend) */}
         <div className="glass-card p-5">
           <div className="flex items-start justify-between">
-            <div>
-              <div className="text-[11px] font-medium uppercase tracking-wider text-[#57534e]">SOLL</div>
-              <div className="text-[32px] font-bold tracking-tight tabular-nums text-[#fafaf9] mt-1">{sollBisher}</div>
-              <div className="text-[11px] text-[#57534e] mt-0.5">{target}/Tag × {daysElapsed} Tage</div>
-            </div>
-            <div className="h-9 w-9 rounded-xl bg-[rgba(255,255,255,0.04)] flex items-center justify-center">
-              <Target className="h-4 w-4 text-[#78716c]" />
+            <div className="flex-1 min-w-0">
+              <div className="text-[11px] font-medium uppercase tracking-wider text-[#57534e]">Ø Dials/Tag</div>
+              <div className="flex items-baseline gap-2 mt-1">
+                <div className="text-[32px] font-bold tracking-tight tabular-nums text-[#fafaf9]">{avgPerDay}</div>
+                <div className={`flex items-center gap-0.5 text-[11px] font-medium ${trendUp ? "text-[#5eead4]" : "text-[#f87171]"}`}>
+                  {trendUp ? <TrendingUp className="h-3 w-3" /> : <TrendingDown className="h-3 w-3" />}
+                  {trendUp ? "steigend" : "fallend"}
+                </div>
+              </div>
+              {/* Sparkline */}
+              {sparklineData.length > 1 && (
+                <div className="mt-1.5 -mx-1">
+                  <ResponsiveContainer width="100%" height={40}>
+                    <LineChart data={sparklineData}>
+                      <Line
+                        type="monotone"
+                        dataKey="dials"
+                        stroke={trendUp ? "#5eead4" : "#f87171"}
+                        strokeWidth={1.5}
+                        dot={false}
+                      />
+                    </LineChart>
+                  </ResponsiveContainer>
+                </div>
+              )}
             </div>
           </div>
         </div>
 
-        {/* Abweichung */}
+        {/* 3. Abweichung */}
         <div className="glass-card p-5">
           <div className="flex items-start justify-between">
             <div>
@@ -126,23 +219,25 @@ export function TargetTracker({ filteredDaily, filteredSellerDaily }: TargetTrac
           </div>
         </div>
 
-        {/* Empfehlung */}
+        {/* 4. Empfehlung (bug-fixed) */}
         <div className="glass-card p-5">
           <div className="flex items-start justify-between">
             <div>
               <div className="text-[11px] font-medium uppercase tracking-wider text-[#57534e]">Empfehlung</div>
-              <div className={`text-[18px] font-bold mt-1 ${overTarget ? "text-[#5eead4]" : "text-[#e2a96e]"}`}>
-                {overTarget ? "Über Target" : "Aufholen"}
+              <div className={`text-[18px] font-bold mt-1 ${empfehlungIsPositive ? "text-[#5eead4]" : "text-[#e2a96e]"}`}>
+                {empfehlungLabel}
               </div>
-              <div className={`text-[11px] mt-0.5 ${overTarget ? "text-[#5eead4]" : "text-[#e2a96e]"}`}>
+              <div className={`text-[11px] mt-0.5 ${empfehlungIsPositive ? "text-[#5eead4]" : "text-[#e2a96e]"}`}>
                 {overTarget
                   ? `${avgPerDay}/Tag halten · +${abweichung} Puffer`
-                  : `${catchUpRate}/Tag nötig · noch ${daysRemaining} Tage`
+                  : catchUpRate === 0
+                    ? `${avgPerDay}/Tag halten · im Zeitplan`
+                    : `${catchUpRate}/Tag nötig · noch ${daysRemaining} ${daysRemainingLabel}`
                 }
               </div>
             </div>
-            <div className={`h-9 w-9 rounded-xl flex items-center justify-center ${overTarget ? "bg-[rgba(94,234,212,0.1)]" : "bg-[rgba(226,169,110,0.1)]"}`}>
-              {overTarget
+            <div className={`h-9 w-9 rounded-xl flex items-center justify-center ${empfehlungIsPositive ? "bg-[rgba(94,234,212,0.1)]" : "bg-[rgba(226,169,110,0.1)]"}`}>
+              {empfehlungIsPositive
                 ? <CheckCircle className="h-4 w-4 text-[#5eead4]" />
                 : <AlertTriangle className="h-4 w-4 text-[#e2a96e]" />
               }
