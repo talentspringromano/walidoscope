@@ -498,13 +498,13 @@ export default function SalesPage() {
     // Offene SQLs: aktive Leads mit SQL-Status (nicht Gewonnen/Verloren)
     const openSQLs = htCount + ltCount + oProzCount;
 
-    // Deal Cycle Length: Ø Tage von createdOn bis lastModified für Gewonnene
+    // Deal Cycle Length: Ø Tage von createdOn bis gewonnenAm
     const cycleDays = gewonnenLeads
       .map((l) => {
         const created = parseDE(l.createdOn);
-        const closed = l.lastModified ? parseDE(l.lastModified) : null;
-        if (!closed || isNaN(created.getTime()) || isNaN(closed.getTime())) return null;
-        return Math.max(0, Math.floor((closed.getTime() - created.getTime()) / (1000 * 60 * 60 * 24)));
+        const won = l.gewonnenAm ? parseDE(l.gewonnenAm) : null;
+        if (!won || isNaN(created.getTime()) || isNaN(won.getTime())) return null;
+        return Math.max(0, Math.floor((won.getTime() - created.getTime()) / (1000 * 60 * 60 * 24)));
       })
       .filter((d): d is number => d !== null);
     const avgDealCycle = cycleDays.length > 0 ? Math.round(cycleDays.reduce((s, d) => s + d, 0) / cycleDays.length) : null;

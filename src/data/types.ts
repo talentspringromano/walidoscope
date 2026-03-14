@@ -56,6 +56,7 @@ export interface Lead {
   lastModified?: string;
   angebotsprozessDatum?: string;
   vertriebsqualifiziertAm?: string;
+  gewonnenAm?: string;
 }
 
 export interface PerspectiveVisit {
