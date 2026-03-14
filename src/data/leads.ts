@@ -28,7 +28,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 2,
@@ -57,7 +58,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 18:27",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 3,
@@ -86,7 +88,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "5.3.2026 13:41",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 4,
@@ -115,7 +118,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "25.2.2026 10:15",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 5,
@@ -144,7 +148,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 6,
@@ -173,7 +178,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "12.3.2026 11:35",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 7,
@@ -202,7 +208,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 8,
@@ -231,7 +238,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 9,
@@ -260,7 +268,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "3.3.2026 16:00",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 10,
@@ -289,7 +298,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 11,
@@ -318,7 +328,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 12,
@@ -347,7 +358,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "25.2.2026 10:59",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 13,
@@ -376,7 +388,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 14,
@@ -405,7 +418,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 18:28",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 15,
@@ -434,7 +448,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 18:28",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 16,
@@ -463,7 +478,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 17,
@@ -492,7 +508,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 18,
@@ -521,7 +538,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "3.3.2026 09:23",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 19,
@@ -550,7 +568,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 20,
@@ -579,7 +598,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 21,
@@ -608,7 +628,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "13.3.2026 14:42",
     "angebotsprozessDatum": "3.3.2026 15:22",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 22,
@@ -637,7 +658,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 10:46",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 23,
@@ -666,7 +688,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 24,
@@ -695,7 +718,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 25,
@@ -724,7 +748,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 26,
@@ -753,7 +778,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 27,
@@ -782,7 +808,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "25.2.2026 10:51",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 28,
@@ -811,7 +838,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 29,
@@ -840,7 +868,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 30,
@@ -869,7 +898,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "4.3.2026 13:30",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 31,
@@ -898,7 +928,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 12:21",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 32,
@@ -927,7 +958,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "26.2.2026 09:29",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 33,
@@ -956,7 +988,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "9.3.2026 13:33",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 34,
@@ -985,7 +1018,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "12.3.2026 15:03",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 35,
@@ -1014,7 +1048,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 16:23",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 36,
@@ -1043,7 +1078,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 37,
@@ -1072,7 +1108,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "9.3.2026 14:10",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 38,
@@ -1101,7 +1138,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "9.3.2026 14:11",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 39,
@@ -1130,7 +1168,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 40,
@@ -1159,7 +1198,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 18:29",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 41,
@@ -1188,7 +1228,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 42,
@@ -1217,7 +1258,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 43,
@@ -1246,7 +1288,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 44,
@@ -1275,7 +1318,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 18:29",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 45,
@@ -1304,7 +1348,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 18:30",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 46,
@@ -1333,7 +1378,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "6.3.2026 13:02",
     "angebotsprozessDatum": "26.2.2026 13:35",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 47,
@@ -1362,7 +1408,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 48,
@@ -1391,7 +1438,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 14:11",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 49,
@@ -1420,7 +1468,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 50,
@@ -1449,7 +1498,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 11:56",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 51,
@@ -1478,7 +1528,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 18:31",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 52,
@@ -1507,7 +1558,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 14:42",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 53,
@@ -1536,7 +1588,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 14:11",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 54,
@@ -1565,7 +1618,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 55,
@@ -1594,7 +1648,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 14:11",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 56,
@@ -1623,7 +1678,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 14:42",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 57,
@@ -1652,7 +1708,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "3.3.2026 09:25",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 58,
@@ -1681,7 +1738,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "25.2.2026 08:23",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 59,
@@ -1710,7 +1768,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "28.2.2026 18:39",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 60,
@@ -1739,7 +1798,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "12.3.2026 15:03",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 61,
@@ -1768,7 +1828,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "4.3.2026 15:03",
     "angebotsprozessDatum": "2.3.2026 10:44",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 62,
@@ -1797,7 +1858,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 11:18",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 63,
@@ -1826,7 +1888,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "10.3.2026 12:56",
     "angebotsprozessDatum": "27.2.2026 09:29",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 64,
@@ -1855,7 +1918,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 18:31",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 65,
@@ -1882,9 +1946,10 @@ export const leads: Lead[] = [
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "25.2.2026 10:49",
+    "lastModified": "14.3.2026 11:49",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 66,
@@ -1913,7 +1978,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 11:02",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 67,
@@ -1942,7 +2008,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 14:42",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 68,
@@ -1971,7 +2038,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "25.2.2026 17:41",
     "angebotsprozessDatum": "24.2.2026 18:45",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 69,
@@ -2000,7 +2068,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "11.3.2026 12:15",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 70,
@@ -2029,7 +2098,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 71,
@@ -2058,7 +2128,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 72,
@@ -2087,7 +2158,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "4.3.2026 19:23",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 73,
@@ -2116,7 +2188,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 14:42",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 74,
@@ -2145,7 +2218,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 10:46",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 75,
@@ -2174,7 +2248,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 14:42",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 76,
@@ -2203,7 +2278,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "3.3.2026 16:32",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 77,
@@ -2232,7 +2308,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 78,
@@ -2261,7 +2338,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "25.2.2026 08:54",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 79,
@@ -2290,7 +2368,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 80,
@@ -2319,7 +2398,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "25.2.2026 08:55",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 81,
@@ -2348,7 +2428,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "4.3.2026 08:59",
     "angebotsprozessDatum": "3.3.2026 09:46",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 82,
@@ -2377,7 +2458,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 83,
@@ -2406,7 +2488,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 10:40",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 84,
@@ -2435,7 +2518,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "13.3.2026 14:50",
     "angebotsprozessDatum": "6.3.2026 15:59",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 85,
@@ -2464,7 +2548,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 86,
@@ -2493,7 +2578,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 87,
@@ -2522,7 +2608,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "10.3.2026 09:23",
     "angebotsprozessDatum": "27.2.2026 08:17",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 88,
@@ -2551,7 +2638,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 10:41",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 89,
@@ -2580,7 +2668,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 10:45",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 90,
@@ -2609,7 +2698,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 10:48",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 91,
@@ -2638,7 +2728,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 92,
@@ -2667,7 +2758,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "3.3.2026 14:31",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 93,
@@ -2696,7 +2788,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 94,
@@ -2725,7 +2818,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "11.3.2026 08:51",
     "angebotsprozessDatum": "10.3.2026 13:20",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 95,
@@ -2754,7 +2848,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 14:47",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 96,
@@ -2783,7 +2878,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 18:32",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 97,
@@ -2812,7 +2908,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "25.2.2026 08:06",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 98,
@@ -2841,7 +2938,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 16:23",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 99,
@@ -2870,7 +2968,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "5.3.2026 10:17",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 100,
@@ -2899,7 +2998,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "6.3.2026 16:24",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 101,
@@ -2928,7 +3028,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "9.3.2026 14:11",
     "angebotsprozessDatum": "24.2.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 102,
@@ -2957,7 +3058,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "9.3.2026 10:12",
     "angebotsprozessDatum": "7.3.2026 10:36",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 103,
@@ -2986,7 +3088,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "12.3.2026 15:03",
     "angebotsprozessDatum": "26.2.2026 13:35",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 104,
@@ -3015,7 +3118,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "6.3.2026 17:09",
     "angebotsprozessDatum": "24.2.2026 18:45",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 105,
@@ -3044,7 +3148,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "26.2.2026 11:59",
     "angebotsprozessDatum": "26.2.2026 11:59",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 106,
@@ -3073,7 +3178,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "26.2.2026 11:07",
     "angebotsprozessDatum": "",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 107,
@@ -3102,7 +3208,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "26.2.2026 11:07",
     "angebotsprozessDatum": "",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 108,
@@ -3131,7 +3238,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "27.2.2026 12:30",
     "angebotsprozessDatum": "",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 109,
@@ -3160,7 +3268,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "13.3.2026 15:03",
     "angebotsprozessDatum": "4.3.2026 15:41",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 110,
@@ -3189,7 +3298,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 11:02",
     "angebotsprozessDatum": "",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 111,
@@ -3218,7 +3328,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 15:32",
     "angebotsprozessDatum": "",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 112,
@@ -3247,7 +3358,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "27.2.2026 13:16",
     "angebotsprozessDatum": "27.2.2026 13:16",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 113,
@@ -3276,7 +3388,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "26.2.2026 10:13",
     "angebotsprozessDatum": "",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 114,
@@ -3305,7 +3418,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "3.3.2026 14:22",
     "angebotsprozessDatum": "",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 115,
@@ -3334,7 +3448,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "26.2.2026 11:11",
     "angebotsprozessDatum": "",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 116,
@@ -3363,7 +3478,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 15:31",
     "angebotsprozessDatum": "",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 117,
@@ -3392,7 +3508,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "3.3.2026 14:24",
     "angebotsprozessDatum": "",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 118,
@@ -3421,7 +3538,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "26.2.2026 10:05",
     "angebotsprozessDatum": "26.2.2026 10:05",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 119,
@@ -3450,7 +3568,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 15:32",
     "angebotsprozessDatum": "",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 120,
@@ -3479,7 +3598,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "3.3.2026 13:00",
     "angebotsprozessDatum": "",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 121,
@@ -3508,7 +3628,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 15:30",
     "angebotsprozessDatum": "",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 122,
@@ -3537,7 +3658,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "10.3.2026 11:25",
     "angebotsprozessDatum": "27.2.2026 13:14",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 123,
@@ -3566,7 +3688,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 14:47",
     "angebotsprozessDatum": "",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 124,
@@ -3595,7 +3718,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 14:43",
     "angebotsprozessDatum": "",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 125,
@@ -3624,7 +3748,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "27.2.2026 08:19",
     "angebotsprozessDatum": "26.2.2026 10:15",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 126,
@@ -3653,7 +3778,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "3.3.2026 12:03",
     "angebotsprozessDatum": "3.3.2026 12:02",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 127,
@@ -3682,7 +3808,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "26.2.2026 10:38",
     "angebotsprozessDatum": "26.2.2026 10:38",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 128,
@@ -3711,7 +3838,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "12.3.2026 15:03",
     "angebotsprozessDatum": "26.2.2026 16:34",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 129,
@@ -3740,7 +3868,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 14:11",
     "angebotsprozessDatum": "26.2.2026 16:57",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 130,
@@ -3769,7 +3898,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 10:45",
     "angebotsprozessDatum": "26.2.2026 19:28",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 131,
@@ -3798,7 +3928,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 10:46",
     "angebotsprozessDatum": "26.2.2026 19:29",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 132,
@@ -3827,7 +3958,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 12:04",
     "angebotsprozessDatum": "26.2.2026 20:03",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 133,
@@ -3856,7 +3988,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 13:27",
     "angebotsprozessDatum": "26.2.2026 20:03",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 134,
@@ -3885,7 +4018,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 12:05",
     "angebotsprozessDatum": "26.2.2026 20:09",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 135,
@@ -3914,7 +4048,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "4.3.2026 13:59",
     "angebotsprozessDatum": "26.2.2026 20:46",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 136,
@@ -3943,7 +4078,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "2.3.2026 10:02",
     "angebotsprozessDatum": "26.2.2026 21:17",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 137,
@@ -3972,7 +4108,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "27.2.2026 17:09",
     "angebotsprozessDatum": "27.2.2026 17:09",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 138,
@@ -4001,7 +4138,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "3.3.2026 15:46",
     "angebotsprozessDatum": "27.2.2026 01:18",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 139,
@@ -4030,7 +4168,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "27.2.2026 09:46",
     "angebotsprozessDatum": "27.2.2026 09:26",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 140,
@@ -4059,7 +4198,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "2.3.2026 13:14",
     "angebotsprozessDatum": "27.2.2026 14:18",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 141,
@@ -4088,7 +4228,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 12:06",
     "angebotsprozessDatum": "27.2.2026 20:40",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 142,
@@ -4117,7 +4258,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "12.3.2026 11:46",
     "angebotsprozessDatum": "2.3.2026 12:46",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 143,
@@ -4146,7 +4288,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 12:06",
     "angebotsprozessDatum": "28.2.2026 09:03",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 144,
@@ -4175,7 +4318,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "2.3.2026 13:14",
     "angebotsprozessDatum": "28.2.2026 09:34",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 145,
@@ -4204,7 +4348,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "13.3.2026 17:42",
     "angebotsprozessDatum": "13.3.2026 17:26",
-    "vertriebsqualifiziertAm": "13.3.2026 17:26"
+    "vertriebsqualifiziertAm": "13.3.2026 17:26",
+    "gewonnenAm": ""
   },
   {
     "id": 146,
@@ -4233,7 +4378,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "13.3.2026 14:42",
     "angebotsprozessDatum": "2.3.2026 12:14",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 147,
@@ -4262,7 +4408,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "4.3.2026 14:03",
     "angebotsprozessDatum": "1.3.2026 06:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 148,
@@ -4291,7 +4438,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "3.3.2026 10:03",
     "angebotsprozessDatum": "2.3.2026 13:10",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 149,
@@ -4320,7 +4468,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "3.3.2026 11:35",
     "angebotsprozessDatum": "1.3.2026 09:39",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 150,
@@ -4349,7 +4498,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "2.3.2026 13:14",
     "angebotsprozessDatum": "1.3.2026 09:41",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 151,
@@ -4378,7 +4528,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "9.3.2026 11:44",
     "angebotsprozessDatum": "2.3.2026 10:38",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 152,
@@ -4407,7 +4558,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "2.3.2026 21:21",
     "angebotsprozessDatum": "2.3.2026 21:21",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 153,
@@ -4436,7 +4588,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "4.3.2026 19:02",
     "angebotsprozessDatum": "4.3.2026 19:02",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 154,
@@ -4465,7 +4618,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "12.3.2026 15:03",
     "angebotsprozessDatum": "2.3.2026 10:18",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 155,
@@ -4494,7 +4648,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "2.3.2026 13:14",
     "angebotsprozessDatum": "1.3.2026 19:45",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 156,
@@ -4523,7 +4678,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "11.3.2026 09:18",
     "angebotsprozessDatum": "1.3.2026 20:07",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 157,
@@ -4552,7 +4708,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "13.3.2026 15:13",
     "angebotsprozessDatum": "3.3.2026 16:52",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 158,
@@ -4581,7 +4738,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "5.3.2026 18:11",
     "angebotsprozessDatum": "5.3.2026 18:11",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 159,
@@ -4610,7 +4768,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "2.3.2026 13:14",
     "angebotsprozessDatum": "1.3.2026 21:15",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 160,
@@ -4639,7 +4798,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "4.3.2026 14:01",
     "angebotsprozessDatum": "1.3.2026 21:59",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 161,
@@ -4668,7 +4828,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 10:27",
     "angebotsprozessDatum": "1.3.2026 22:27",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 162,
@@ -4697,7 +4858,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "2.3.2026 13:13",
     "angebotsprozessDatum": "2.3.2026 11:49",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 163,
@@ -4726,7 +4888,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 12:08",
     "angebotsprozessDatum": "2.3.2026 01:02",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 164,
@@ -4755,7 +4918,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 12:09",
     "angebotsprozessDatum": "2.3.2026 05:35",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 165,
@@ -4784,7 +4948,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "3.3.2026 11:47",
     "angebotsprozessDatum": "2.3.2026 05:52",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 166,
@@ -4813,7 +4978,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 12:09",
     "angebotsprozessDatum": "2.3.2026 05:57",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 167,
@@ -4842,7 +5008,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 14:11",
     "angebotsprozessDatum": "2.3.2026 07:51",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 168,
@@ -4871,7 +5038,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 10:46",
     "angebotsprozessDatum": "2.3.2026 09:44",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 169,
@@ -4900,7 +5068,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "3.3.2026 12:26",
     "angebotsprozessDatum": "2.3.2026 10:32",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 170,
@@ -4929,7 +5098,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "3.3.2026 16:01",
     "angebotsprozessDatum": "2.3.2026 13:53",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 171,
@@ -4958,7 +5128,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "3.3.2026 10:38",
     "angebotsprozessDatum": "2.3.2026 14:57",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 172,
@@ -4987,7 +5158,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "3.3.2026 10:59",
     "angebotsprozessDatum": "2.3.2026 17:43",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 173,
@@ -5016,7 +5188,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "3.3.2026 13:00",
     "angebotsprozessDatum": "2.3.2026 18:58",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 174,
@@ -5045,7 +5218,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 11:35",
     "angebotsprozessDatum": "2.3.2026 19:20",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 175,
@@ -5074,7 +5248,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "13.3.2026 14:47",
     "angebotsprozessDatum": "5.3.2026 16:48",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 176,
@@ -5103,7 +5278,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 11:31",
     "angebotsprozessDatum": "2.3.2026 19:39",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 177,
@@ -5132,7 +5308,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "4.3.2026 16:21",
     "angebotsprozessDatum": "2.3.2026 20:33",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 178,
@@ -5161,7 +5338,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "3.3.2026 11:06",
     "angebotsprozessDatum": "2.3.2026 22:30",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 179,
@@ -5190,7 +5368,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "4.3.2026 09:22",
     "angebotsprozessDatum": "2.3.2026 22:59",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 180,
@@ -5219,7 +5398,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 09:39",
     "angebotsprozessDatum": "3.3.2026 06:10",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 181,
@@ -5248,7 +5428,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 11:36",
     "angebotsprozessDatum": "3.3.2026 07:11",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 182,
@@ -5277,7 +5458,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "3.3.2026 11:31",
     "angebotsprozessDatum": "3.3.2026 08:15",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 183,
@@ -5306,7 +5488,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 10:46",
     "angebotsprozessDatum": "3.3.2026 09:05",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 184,
@@ -5335,7 +5518,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 18:43",
     "angebotsprozessDatum": "3.3.2026 10:36",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 185,
@@ -5364,7 +5548,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 14:12",
     "angebotsprozessDatum": "3.3.2026 11:38",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 186,
@@ -5393,7 +5578,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "13.3.2026 14:47",
     "angebotsprozessDatum": "3.3.2026 13:57",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 187,
@@ -5422,7 +5608,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "11.3.2026 14:11",
     "angebotsprozessDatum": "3.3.2026 13:57",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 188,
@@ -5451,7 +5638,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "3.3.2026 15:45",
     "angebotsprozessDatum": "3.3.2026 15:45",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 189,
@@ -5480,7 +5668,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 11:36",
     "angebotsprozessDatum": "3.3.2026 15:53",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 190,
@@ -5509,7 +5698,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "4.3.2026 16:57",
     "angebotsprozessDatum": "4.3.2026 16:55",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 191,
@@ -5538,7 +5728,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 10:46",
     "angebotsprozessDatum": "3.3.2026 16:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 192,
@@ -5567,7 +5758,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "3.3.2026 17:11",
     "angebotsprozessDatum": "3.3.2026 17:11",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 193,
@@ -5596,7 +5788,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "5.3.2026 13:13",
     "angebotsprozessDatum": "3.3.2026 16:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 194,
@@ -5625,7 +5818,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "4.3.2026 10:08",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 195,
@@ -5654,7 +5848,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "12.3.2026 15:03",
     "angebotsprozessDatum": "5.3.2026 12:03",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 196,
@@ -5683,7 +5878,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 11:20",
     "angebotsprozessDatum": "3.3.2026 16:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 197,
@@ -5712,7 +5908,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "3.3.2026 16:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 198,
@@ -5741,7 +5938,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "5.3.2026 11:52",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 199,
@@ -5770,7 +5968,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 14:47",
     "angebotsprozessDatum": "3.3.2026 16:14",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 200,
@@ -5799,7 +5998,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "3.3.2026 16:14",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 201,
@@ -5828,7 +6028,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "6.3.2026 10:25",
     "angebotsprozessDatum": "6.3.2026 10:25",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 202,
@@ -5857,7 +6058,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "3.3.2026 16:14",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 203,
@@ -5886,7 +6088,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 15:37",
     "angebotsprozessDatum": "3.3.2026 16:14",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 204,
@@ -5915,7 +6118,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "3.3.2026 16:16",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 205,
@@ -5944,7 +6148,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "5.3.2026 13:13",
     "angebotsprozessDatum": "3.3.2026 16:16",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 206,
@@ -5973,7 +6178,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "4.3.2026 10:25",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 207,
@@ -6002,7 +6208,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "10.3.2026 16:03",
     "angebotsprozessDatum": "10.3.2026 16:03",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 208,
@@ -6031,7 +6238,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "5.3.2026 12:44",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 209,
@@ -6060,7 +6268,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "10.3.2026 15:47",
     "angebotsprozessDatum": "10.3.2026 15:47",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 210,
@@ -6089,7 +6298,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "5.3.2026 13:25",
     "angebotsprozessDatum": "5.3.2026 13:25",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 211,
@@ -6118,7 +6328,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "11.3.2026 17:09",
     "angebotsprozessDatum": "3.3.2026 16:16",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 212,
@@ -6147,7 +6358,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "5.3.2026 12:04",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 213,
@@ -6176,7 +6388,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "3.3.2026 16:18",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 214,
@@ -6205,7 +6418,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "5.3.2026 17:31",
     "angebotsprozessDatum": "5.3.2026 17:31",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 215,
@@ -6234,7 +6448,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "12.3.2026 09:12",
     "angebotsprozessDatum": "6.3.2026 10:04",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 216,
@@ -6263,7 +6478,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "13.3.2026 10:05",
     "angebotsprozessDatum": "4.3.2026 11:50",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 217,
@@ -6292,7 +6508,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 14:47",
     "angebotsprozessDatum": "6.3.2026 15:04",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 218,
@@ -6321,7 +6538,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "6.3.2026 10:38",
     "angebotsprozessDatum": "6.3.2026 10:38",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 219,
@@ -6350,7 +6568,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "3.3.2026 17:06",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 220,
@@ -6379,7 +6598,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "6.3.2026 10:51",
     "angebotsprozessDatum": "6.3.2026 10:51",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 221,
@@ -6408,7 +6628,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 11:37",
     "angebotsprozessDatum": "3.3.2026 17:42",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 222,
@@ -6437,7 +6658,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "3.3.2026 17:51",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 223,
@@ -6466,7 +6688,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "5.3.2026 14:27",
     "angebotsprozessDatum": "3.3.2026 18:25",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 224,
@@ -6495,7 +6718,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 14:12",
     "angebotsprozessDatum": "3.3.2026 18:40",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 225,
@@ -6524,7 +6748,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "4.3.2026 14:27",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 226,
@@ -6553,7 +6778,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 11:37",
     "angebotsprozessDatum": "3.3.2026 19:44",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 227,
@@ -6582,7 +6808,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 12:03",
     "angebotsprozessDatum": "3.3.2026 19:46",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 228,
@@ -6611,7 +6838,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 14:46",
     "angebotsprozessDatum": "5.3.2026 18:57",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 229,
@@ -6640,7 +6868,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "3.3.2026 21:38",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 230,
@@ -6669,7 +6898,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 14:13",
     "angebotsprozessDatum": "3.3.2026 23:16",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 231,
@@ -6698,7 +6928,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 12:17",
     "angebotsprozessDatum": "3.3.2026 23:39",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 232,
@@ -6727,7 +6958,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "4.3.2026 18:34",
     "angebotsprozessDatum": "4.3.2026 18:34",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 233,
@@ -6756,7 +6988,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 12:17",
     "angebotsprozessDatum": "4.3.2026 04:14",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 234,
@@ -6785,7 +7018,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 10:46",
     "angebotsprozessDatum": "4.3.2026 05:48",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 235,
@@ -6814,7 +7048,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 12:18",
     "angebotsprozessDatum": "4.3.2026 06:04",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 236,
@@ -6843,7 +7078,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "9.3.2026 15:12",
     "angebotsprozessDatum": "5.3.2026 14:33",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 237,
@@ -6872,7 +7108,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "4.3.2026 12:37",
     "angebotsprozessDatum": "4.3.2026 12:33",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 238,
@@ -6901,7 +7138,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "11.3.2026 14:10",
     "angebotsprozessDatum": "4.3.2026 08:22",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 239,
@@ -6930,7 +7168,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "6.3.2026 10:46",
     "angebotsprozessDatum": "6.3.2026 10:46",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 240,
@@ -6959,7 +7198,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 12:18",
     "angebotsprozessDatum": "4.3.2026 11:46",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 241,
@@ -6988,7 +7228,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "9.3.2026 18:25",
     "angebotsprozessDatum": "4.3.2026 12:04",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 242,
@@ -7017,7 +7258,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 10:46",
     "angebotsprozessDatum": "4.3.2026 12:19",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 243,
@@ -7046,7 +7288,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 11:37",
     "angebotsprozessDatum": "4.3.2026 12:58",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 244,
@@ -7075,7 +7318,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "5.3.2026 17:45",
     "angebotsprozessDatum": "5.3.2026 17:43",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 245,
@@ -7104,7 +7348,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 14:21",
     "angebotsprozessDatum": "4.3.2026 14:18",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 246,
@@ -7133,7 +7378,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "11.3.2026 09:40",
     "angebotsprozessDatum": "4.3.2026 14:18",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 247,
@@ -7162,7 +7408,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "13.3.2026 15:46",
     "angebotsprozessDatum": "4.3.2026 14:47",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 248,
@@ -7191,7 +7438,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 10:12",
     "angebotsprozessDatum": "4.3.2026 14:41",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 249,
@@ -7220,7 +7468,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "4.3.2026 16:12",
     "angebotsprozessDatum": "4.3.2026 15:23",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 250,
@@ -7249,7 +7498,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "12.3.2026 15:03",
     "angebotsprozessDatum": "4.3.2026 16:52",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 251,
@@ -7278,7 +7528,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "11.3.2026 12:15",
     "angebotsprozessDatum": "4.3.2026 17:36",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 252,
@@ -7307,7 +7558,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "9.3.2026 18:25",
     "angebotsprozessDatum": "4.3.2026 18:11",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 253,
@@ -7336,7 +7588,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "5.3.2026 13:24",
     "angebotsprozessDatum": "5.3.2026 13:19",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 254,
@@ -7365,7 +7618,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "9.3.2026 18:50",
     "angebotsprozessDatum": "4.3.2026 18:31",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 255,
@@ -7394,7 +7648,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "11.3.2026 14:34",
     "angebotsprozessDatum": "10.3.2026 14:36",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 256,
@@ -7423,7 +7678,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "9.3.2026 19:01",
     "angebotsprozessDatum": "9.3.2026 19:01",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 257,
@@ -7452,7 +7708,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "11.3.2026 13:45",
     "angebotsprozessDatum": "4.3.2026 19:13",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 258,
@@ -7481,7 +7738,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 10:14",
     "angebotsprozessDatum": "4.3.2026 19:35",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 259,
@@ -7510,7 +7768,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 13:35",
     "angebotsprozessDatum": "4.3.2026 19:46",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 260,
@@ -7539,7 +7798,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "10.3.2026 10:13",
     "angebotsprozessDatum": "6.3.2026 12:09",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 261,
@@ -7568,7 +7828,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "10.3.2026 12:23",
     "angebotsprozessDatum": "6.3.2026 11:18",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 262,
@@ -7597,7 +7858,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "11.3.2026 13:46",
     "angebotsprozessDatum": "5.3.2026 02:02",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 263,
@@ -7626,7 +7888,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 11:21",
     "angebotsprozessDatum": "5.3.2026 08:41",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 264,
@@ -7655,7 +7918,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 08:32",
     "angebotsprozessDatum": "5.3.2026 12:47",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 265,
@@ -7684,7 +7948,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "13.3.2026 14:47",
     "angebotsprozessDatum": "5.3.2026 10:43",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 266,
@@ -7713,7 +7978,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 14:27",
     "angebotsprozessDatum": "5.3.2026 09:38",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 267,
@@ -7742,7 +8008,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "5.3.2026 09:38",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 268,
@@ -7771,7 +8038,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:03",
     "angebotsprozessDatum": "5.3.2026 09:38",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 269,
@@ -7800,7 +8068,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "5.3.2026 11:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 270,
@@ -7829,7 +8098,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 10:22",
     "angebotsprozessDatum": "5.3.2026 11:09",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 271,
@@ -7858,7 +8128,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "5.3.2026 11:36",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 272,
@@ -7887,7 +8158,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "12.3.2026 13:57",
     "angebotsprozessDatum": "5.3.2026 16:10",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 273,
@@ -7916,7 +8188,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "13.3.2026 13:41",
     "angebotsprozessDatum": "5.3.2026 15:33",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 274,
@@ -7945,7 +8218,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "5.3.2026 15:02",
     "angebotsprozessDatum": "5.3.2026 15:01",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 275,
@@ -7974,7 +8248,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 12:10",
     "angebotsprozessDatum": "5.3.2026 15:21",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 276,
@@ -8003,7 +8278,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 12:19",
     "angebotsprozessDatum": "5.3.2026 15:47",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 277,
@@ -8032,7 +8308,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "11.3.2026 13:46",
     "angebotsprozessDatum": "5.3.2026 17:07",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 278,
@@ -8061,7 +8338,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 10:13",
     "angebotsprozessDatum": "5.3.2026 17:19",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 279,
@@ -8090,7 +8368,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "9.3.2026 18:06",
     "angebotsprozessDatum": "5.3.2026 19:09",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 280,
@@ -8119,7 +8398,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "9.3.2026 16:32",
     "angebotsprozessDatum": "5.3.2026 19:09",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 281,
@@ -8148,7 +8428,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 12:20",
     "angebotsprozessDatum": "5.3.2026 20:31",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 282,
@@ -8177,7 +8458,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 12:14",
     "angebotsprozessDatum": "6.3.2026 05:48",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 283,
@@ -8206,7 +8488,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "12.3.2026 13:58",
     "angebotsprozessDatum": "6.3.2026 06:21",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 284,
@@ -8230,12 +8513,13 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "8x nicht erreicht",
+    "anrufversuch": "9x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "13.3.2026 15:17",
+    "lastModified": "14.3.2026 09:30",
     "angebotsprozessDatum": "6.3.2026 07:18",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 285,
@@ -8264,7 +8548,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 14:47",
     "angebotsprozessDatum": "6.3.2026 07:18",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 286,
@@ -8293,7 +8578,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "11.3.2026 14:16",
     "angebotsprozessDatum": "6.3.2026 07:18",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 287,
@@ -8322,7 +8608,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "9.3.2026 18:21",
     "angebotsprozessDatum": "9.3.2026 18:17",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 288,
@@ -8351,7 +8638,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 09:26",
     "angebotsprozessDatum": "6.3.2026 09:11",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 289,
@@ -8380,7 +8668,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 12:21",
     "angebotsprozessDatum": "6.3.2026 10:24",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 290,
@@ -8409,7 +8698,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:18",
     "angebotsprozessDatum": "6.3.2026 10:34",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 291,
@@ -8438,7 +8728,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "6.3.2026 12:37",
     "angebotsprozessDatum": "6.3.2026 10:34",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 292,
@@ -8467,7 +8758,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "13.3.2026 10:16",
     "angebotsprozessDatum": "12.3.2026 09:44",
-    "vertriebsqualifiziertAm": "12.3.2026 09:44"
+    "vertriebsqualifiziertAm": "12.3.2026 09:44",
+    "gewonnenAm": ""
   },
   {
     "id": 293,
@@ -8496,7 +8788,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:18",
     "angebotsprozessDatum": "6.3.2026 12:47",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 294,
@@ -8525,7 +8818,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 13:42",
     "angebotsprozessDatum": "6.3.2026 16:32",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 295,
@@ -8554,7 +8848,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "13.3.2026 14:47",
     "angebotsprozessDatum": "10.3.2026 16:38",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 296,
@@ -8581,9 +8876,10 @@ export const leads: Lead[] = [
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "6.3.2026",
     "betreuungsart": "High Touch",
-    "lastModified": "13.3.2026 14:46",
+    "lastModified": "14.3.2026 09:34",
     "angebotsprozessDatum": "6.3.2026 15:21",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 297,
@@ -8612,7 +8908,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:27",
     "angebotsprozessDatum": "6.3.2026 16:00",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 298,
@@ -8641,7 +8938,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "11.3.2026 10:48",
     "angebotsprozessDatum": "6.3.2026 16:51",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 299,
@@ -8670,7 +8968,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "9.3.2026 11:10",
     "angebotsprozessDatum": "9.3.2026 11:06",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 300,
@@ -8699,7 +8998,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 12:21",
     "angebotsprozessDatum": "6.3.2026 20:40",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 301,
@@ -8728,7 +9028,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "11.3.2026 14:04",
     "angebotsprozessDatum": "6.3.2026 21:58",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 302,
@@ -8757,7 +9058,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "9.3.2026 11:24",
     "angebotsprozessDatum": "6.3.2026 22:23",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 303,
@@ -8786,7 +9088,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "12.3.2026 11:33",
     "angebotsprozessDatum": "10.3.2026 09:57",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 304,
@@ -8815,7 +9118,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "10.3.2026 11:10",
     "angebotsprozessDatum": "7.3.2026 10:36",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 305,
@@ -8844,7 +9148,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 09:41",
     "angebotsprozessDatum": "7.3.2026 10:06",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 306,
@@ -8873,7 +9178,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:28",
     "angebotsprozessDatum": "7.3.2026 10:21",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 307,
@@ -8902,7 +9208,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "9.3.2026 11:28",
     "angebotsprozessDatum": "7.3.2026 10:24",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 308,
@@ -8931,7 +9238,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 12:22",
     "angebotsprozessDatum": "7.3.2026 10:41",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 309,
@@ -8960,7 +9268,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 14:47",
     "angebotsprozessDatum": "7.3.2026 11:55",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 310,
@@ -8989,7 +9298,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "9.3.2026 11:31",
     "angebotsprozessDatum": "7.3.2026 13:51",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 311,
@@ -9018,7 +9328,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "9.3.2026 11:33",
     "angebotsprozessDatum": "7.3.2026 15:55",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 312,
@@ -9047,7 +9358,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "9.3.2026 11:56",
     "angebotsprozessDatum": "9.3.2026 11:54",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 313,
@@ -9076,7 +9388,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "9.3.2026 11:56",
     "angebotsprozessDatum": "7.3.2026 16:53",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 314,
@@ -9105,7 +9418,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:29",
     "angebotsprozessDatum": "7.3.2026 18:43",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 315,
@@ -9134,7 +9448,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 12:52",
     "angebotsprozessDatum": "7.3.2026 20:00",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 316,
@@ -9163,7 +9478,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 11:38",
     "angebotsprozessDatum": "7.3.2026 20:08",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 317,
@@ -9192,7 +9508,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 11:21",
     "angebotsprozessDatum": "7.3.2026 20:57",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 318,
@@ -9221,7 +9538,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "9.3.2026 12:09",
     "angebotsprozessDatum": "8.3.2026 01:18",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 319,
@@ -9250,7 +9568,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 12:22",
     "angebotsprozessDatum": "8.3.2026 06:28",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 320,
@@ -9279,7 +9598,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "9.3.2026 12:10",
     "angebotsprozessDatum": "8.3.2026 07:40",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 321,
@@ -9308,7 +9628,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "12.3.2026 12:48",
     "angebotsprozessDatum": "12.3.2026 12:41",
-    "vertriebsqualifiziertAm": "12.3.2026 12:41"
+    "vertriebsqualifiziertAm": "12.3.2026 12:41",
+    "gewonnenAm": ""
   },
   {
     "id": 322,
@@ -9337,7 +9658,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:26",
     "angebotsprozessDatum": "8.3.2026 15:47",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 323,
@@ -9366,7 +9688,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 11:27",
     "angebotsprozessDatum": "8.3.2026 17:26",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 324,
@@ -9395,7 +9718,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:33",
     "angebotsprozessDatum": "8.3.2026 19:58",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 325,
@@ -9424,7 +9748,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "9.3.2026 12:42",
     "angebotsprozessDatum": "9.3.2026 12:42",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 326,
@@ -9453,7 +9778,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:25",
     "angebotsprozessDatum": "8.3.2026 21:07",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 327,
@@ -9482,7 +9808,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "9.3.2026 10:00",
     "angebotsprozessDatum": "9.3.2026 09:58",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 328,
@@ -9511,7 +9838,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "10.3.2026 14:58",
     "angebotsprozessDatum": "10.3.2026 14:58",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 329,
@@ -9540,7 +9868,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "9.3.2026 17:16",
     "angebotsprozessDatum": "9.3.2026 06:03",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 330,
@@ -9569,7 +9898,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 12:58",
     "angebotsprozessDatum": "9.3.2026 06:03",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 331,
@@ -9598,7 +9928,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:19",
     "angebotsprozessDatum": "9.3.2026 06:03",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 332,
@@ -9627,7 +9958,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "13.3.2026 09:56",
     "angebotsprozessDatum": "9.3.2026 12:57",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 333,
@@ -9656,7 +9988,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "13.3.2026 15:46",
     "angebotsprozessDatum": "9.3.2026 16:14",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 334,
@@ -9685,7 +10018,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "11.3.2026 14:18",
     "angebotsprozessDatum": "9.3.2026 06:03",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 335,
@@ -9714,7 +10048,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "10.3.2026 09:57",
     "angebotsprozessDatum": "9.3.2026 09:32",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 336,
@@ -9743,7 +10078,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "9.3.2026 15:47",
     "angebotsprozessDatum": "9.3.2026 07:32",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 337,
@@ -9772,7 +10108,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:20",
     "angebotsprozessDatum": "9.3.2026 07:32",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 338,
@@ -9801,7 +10138,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:20",
     "angebotsprozessDatum": "9.3.2026 07:32",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 339,
@@ -9830,7 +10168,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:21",
     "angebotsprozessDatum": "9.3.2026 07:32",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 340,
@@ -9859,7 +10198,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "9.3.2026 15:36",
     "angebotsprozessDatum": "9.3.2026 15:35",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 341,
@@ -9888,7 +10228,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:19",
     "angebotsprozessDatum": "9.3.2026 07:32",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 342,
@@ -9917,7 +10258,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "9.3.2026 16:54",
     "angebotsprozessDatum": "9.3.2026 07:51",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 343,
@@ -9946,7 +10288,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "12.3.2026 15:03",
     "angebotsprozessDatum": "9.3.2026 08:37",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 344,
@@ -9975,7 +10318,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 18:36",
     "angebotsprozessDatum": "9.3.2026 09:39",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 345,
@@ -10004,7 +10348,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:17",
     "angebotsprozessDatum": "9.3.2026 09:39",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 346,
@@ -10033,7 +10378,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 10:10",
     "angebotsprozessDatum": "9.3.2026 10:15",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 347,
@@ -10062,7 +10408,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "13.3.2026 21:48",
     "angebotsprozessDatum": "9.3.2026 12:59",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 348,
@@ -10091,7 +10438,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "9.3.2026 17:12",
     "angebotsprozessDatum": "9.3.2026 12:39",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 349,
@@ -10120,7 +10468,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "13.3.2026 15:49",
     "angebotsprozessDatum": "9.3.2026 15:10",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 350,
@@ -10149,7 +10498,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "9.3.2026 17:19",
     "angebotsprozessDatum": "9.3.2026 17:19",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 351,
@@ -10178,7 +10528,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:03",
     "angebotsprozessDatum": "9.3.2026 14:11",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 352,
@@ -10207,7 +10558,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 14:47",
     "angebotsprozessDatum": "9.3.2026 14:08",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 353,
@@ -10236,7 +10588,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "12.3.2026 12:22",
     "angebotsprozessDatum": "9.3.2026 14:23",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 354,
@@ -10265,7 +10618,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "13.3.2026 14:47",
     "angebotsprozessDatum": "9.3.2026 17:37",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 355,
@@ -10294,7 +10648,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "12.3.2026 17:20",
     "angebotsprozessDatum": "9.3.2026 17:59",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 356,
@@ -10323,7 +10678,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "10.3.2026 12:16",
     "angebotsprozessDatum": "10.3.2026 12:16",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 357,
@@ -10352,7 +10708,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "9.3.2026 18:49",
     "angebotsprozessDatum": "9.3.2026 18:48",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 358,
@@ -10381,7 +10738,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "9.3.2026 18:49",
     "angebotsprozessDatum": "9.3.2026 18:40",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 359,
@@ -10410,7 +10768,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:31",
     "angebotsprozessDatum": "9.3.2026 19:06",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 360,
@@ -10439,7 +10798,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 11:00",
     "angebotsprozessDatum": "9.3.2026 20:25",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 361,
@@ -10468,7 +10828,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 11:22",
     "angebotsprozessDatum": "9.3.2026 21:15",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 362,
@@ -10497,7 +10858,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 16:11",
     "angebotsprozessDatum": "9.3.2026 23:05",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 363,
@@ -10526,7 +10888,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 10:21",
     "angebotsprozessDatum": "9.3.2026 23:26",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 364,
@@ -10555,7 +10918,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 10:34",
     "angebotsprozessDatum": "9.3.2026 23:49",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 365,
@@ -10584,7 +10948,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 12:23",
     "angebotsprozessDatum": "10.3.2026 05:51",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 366,
@@ -10613,7 +10978,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 10:54",
     "angebotsprozessDatum": "10.3.2026 06:23",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 367,
@@ -10642,7 +11008,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 11:49",
     "angebotsprozessDatum": "10.3.2026 07:21",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 368,
@@ -10671,7 +11038,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "10.3.2026 10:34",
     "angebotsprozessDatum": "10.3.2026 10:31",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 369,
@@ -10700,7 +11068,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:22",
     "angebotsprozessDatum": "10.3.2026 08:21",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 370,
@@ -10729,7 +11098,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 11:27",
     "angebotsprozessDatum": "10.3.2026 08:37",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 371,
@@ -10758,7 +11128,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 11:07",
     "angebotsprozessDatum": "10.3.2026 09:11",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 372,
@@ -10787,7 +11158,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "10.3.2026 18:19",
     "angebotsprozessDatum": "10.3.2026 18:16",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 373,
@@ -10816,7 +11188,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 11:28",
     "angebotsprozessDatum": "10.3.2026 12:06",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 374,
@@ -10845,7 +11218,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "10.3.2026 12:48",
     "angebotsprozessDatum": "10.3.2026 12:47",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 375,
@@ -10874,7 +11248,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:22",
     "angebotsprozessDatum": "10.3.2026 13:16",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 376,
@@ -10903,7 +11278,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "10.3.2026 15:20",
     "angebotsprozessDatum": "10.3.2026 15:17",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 377,
@@ -10932,7 +11308,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 10:15",
     "angebotsprozessDatum": "10.3.2026 14:31",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 378,
@@ -10961,7 +11338,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 12:36",
     "angebotsprozessDatum": "10.3.2026 14:57",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 379,
@@ -10990,7 +11368,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 15:21",
     "angebotsprozessDatum": "10.3.2026 15:05",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 380,
@@ -11019,7 +11398,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 10:17",
     "angebotsprozessDatum": "10.3.2026 15:27",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 381,
@@ -11048,7 +11428,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:32",
     "angebotsprozessDatum": "10.3.2026 16:09",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 382,
@@ -11077,7 +11458,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "11.3.2026 10:05",
     "angebotsprozessDatum": "10.3.2026 16:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 383,
@@ -11106,7 +11488,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:31",
     "angebotsprozessDatum": "10.3.2026 17:20",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 384,
@@ -11135,7 +11518,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 11:10",
     "angebotsprozessDatum": "10.3.2026 17:32",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 385,
@@ -11164,7 +11548,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "10.3.2026 18:03",
     "angebotsprozessDatum": "10.3.2026 17:33",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 386,
@@ -11193,7 +11578,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "13.3.2026 11:17",
     "angebotsprozessDatum": "11.3.2026 11:32",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 387,
@@ -11222,7 +11608,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "11.3.2026 10:31",
     "angebotsprozessDatum": "11.3.2026 10:29",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 388,
@@ -11251,7 +11638,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 13:50",
     "angebotsprozessDatum": "10.3.2026 22:50",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 389,
@@ -11280,7 +11668,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 11:09",
     "angebotsprozessDatum": "10.3.2026 23:22",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 390,
@@ -11309,7 +11698,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "12.3.2026 18:09",
     "angebotsprozessDatum": "12.3.2026 18:09",
-    "vertriebsqualifiziertAm": "12.3.2026 18:09"
+    "vertriebsqualifiziertAm": "12.3.2026 18:09",
+    "gewonnenAm": ""
   },
   {
     "id": 391,
@@ -11338,7 +11728,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "11.3.2026 14:08",
     "angebotsprozessDatum": "11.3.2026 14:08",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 392,
@@ -11367,7 +11758,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "13.3.2026 11:07",
     "angebotsprozessDatum": "11.3.2026 12:53",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 393,
@@ -11396,7 +11788,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "12.3.2026 09:01",
     "angebotsprozessDatum": "11.3.2026 08:57",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 394,
@@ -11425,7 +11818,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 11:10",
     "angebotsprozessDatum": "11.3.2026 09:49",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 395,
@@ -11454,7 +11848,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "13.3.2026 11:15",
     "angebotsprozessDatum": "11.3.2026 11:08",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 396,
@@ -11483,7 +11878,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:30",
     "angebotsprozessDatum": "11.3.2026 11:11",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 397,
@@ -11512,7 +11908,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "11.3.2026 11:49",
     "angebotsprozessDatum": "11.3.2026 11:47",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 398,
@@ -11541,7 +11938,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 10:38",
     "angebotsprozessDatum": "11.3.2026 12:39",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 399,
@@ -11570,7 +11968,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 11:03",
     "angebotsprozessDatum": "11.3.2026 12:39",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 400,
@@ -11599,7 +11998,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 13:51",
     "angebotsprozessDatum": "11.3.2026 13:16",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 401,
@@ -11628,7 +12028,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "11.3.2026 17:36",
     "angebotsprozessDatum": "11.3.2026 13:26",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 402,
@@ -11657,7 +12058,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "12.3.2026 12:02",
     "angebotsprozessDatum": "11.3.2026 13:44",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 403,
@@ -11686,7 +12088,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:16",
     "angebotsprozessDatum": "11.3.2026 13:50",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 404,
@@ -11715,7 +12118,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "11.3.2026 18:02",
     "angebotsprozessDatum": "11.3.2026 15:36",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 405,
@@ -11744,7 +12148,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 13:52",
     "angebotsprozessDatum": "11.3.2026 16:06",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 406,
@@ -11773,7 +12178,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 10:15",
     "angebotsprozessDatum": "11.3.2026 17:44",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 407,
@@ -11802,7 +12208,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "12.3.2026 17:34",
     "angebotsprozessDatum": "11.3.2026 18:05",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 408,
@@ -11831,7 +12238,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "12.3.2026 09:19",
     "angebotsprozessDatum": "11.3.2026 18:12",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 409,
@@ -11860,7 +12268,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 11:05",
     "angebotsprozessDatum": "11.3.2026 18:41",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 410,
@@ -11889,7 +12298,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "12.3.2026 10:01",
     "angebotsprozessDatum": "12.3.2026 09:58",
-    "vertriebsqualifiziertAm": "12.3.2026 09:58"
+    "vertriebsqualifiziertAm": "12.3.2026 09:58",
+    "gewonnenAm": ""
   },
   {
     "id": 411,
@@ -11918,7 +12328,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "12.3.2026 10:31",
     "angebotsprozessDatum": "12.3.2026 10:24",
-    "vertriebsqualifiziertAm": "12.3.2026 10:17"
+    "vertriebsqualifiziertAm": "12.3.2026 10:17",
+    "gewonnenAm": ""
   },
   {
     "id": 412,
@@ -11947,7 +12358,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "12.3.2026 17:30",
     "angebotsprozessDatum": "11.3.2026 20:28",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 413,
@@ -11976,7 +12388,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "12.3.2026 10:44",
     "angebotsprozessDatum": "12.3.2026 10:41",
-    "vertriebsqualifiziertAm": "12.3.2026 10:41"
+    "vertriebsqualifiziertAm": "12.3.2026 10:41",
+    "gewonnenAm": ""
   },
   {
     "id": 414,
@@ -12005,7 +12418,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 13:49",
     "angebotsprozessDatum": "11.3.2026 22:25",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 415,
@@ -12034,7 +12448,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 13:54",
     "angebotsprozessDatum": "11.3.2026 22:59",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 416,
@@ -12063,7 +12478,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "12.3.2026 11:31",
     "angebotsprozessDatum": "11.3.2026 23:56",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 417,
@@ -12092,7 +12508,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "12.3.2026 11:42",
     "angebotsprozessDatum": "12.3.2026 04:28",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 418,
@@ -12121,7 +12538,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:39",
     "angebotsprozessDatum": "12.3.2026 07:48",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 419,
@@ -12150,7 +12568,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 10:39",
     "angebotsprozessDatum": "12.3.2026 09:22",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 420,
@@ -12179,7 +12598,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "12.3.2026 14:41",
     "angebotsprozessDatum": "12.3.2026 14:30",
-    "vertriebsqualifiziertAm": "12.3.2026 14:30"
+    "vertriebsqualifiziertAm": "12.3.2026 14:30",
+    "gewonnenAm": ""
   },
   {
     "id": 421,
@@ -12208,7 +12628,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:24",
     "angebotsprozessDatum": "12.3.2026 13:25",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 422,
@@ -12237,7 +12658,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:23",
     "angebotsprozessDatum": "12.3.2026 13:25",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 423,
@@ -12266,7 +12688,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "12.3.2026 16:08",
     "angebotsprozessDatum": "12.3.2026 16:00",
-    "vertriebsqualifiziertAm": "12.3.2026 16:00"
+    "vertriebsqualifiziertAm": "12.3.2026 16:00",
+    "gewonnenAm": ""
   },
   {
     "id": 424,
@@ -12295,7 +12718,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "12.3.2026 15:29",
     "angebotsprozessDatum": "12.3.2026 15:26",
-    "vertriebsqualifiziertAm": "12.3.2026 15:26"
+    "vertriebsqualifiziertAm": "12.3.2026 15:26",
+    "gewonnenAm": ""
   },
   {
     "id": 425,
@@ -12324,7 +12748,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "12.3.2026 15:00",
     "angebotsprozessDatum": "12.3.2026 14:58",
-    "vertriebsqualifiziertAm": "12.3.2026 14:58"
+    "vertriebsqualifiziertAm": "12.3.2026 14:58",
+    "gewonnenAm": ""
   },
   {
     "id": 426,
@@ -12353,7 +12778,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "12.3.2026 16:50",
     "angebotsprozessDatum": "12.3.2026 13:25",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 427,
@@ -12382,7 +12808,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "12.3.2026 16:44",
     "angebotsprozessDatum": "12.3.2026 16:42",
-    "vertriebsqualifiziertAm": "12.3.2026 16:33"
+    "vertriebsqualifiziertAm": "12.3.2026 16:33",
+    "gewonnenAm": ""
   },
   {
     "id": 428,
@@ -12411,7 +12838,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "12.3.2026 17:09",
     "angebotsprozessDatum": "12.3.2026 13:26",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 429,
@@ -12440,7 +12868,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "12.3.2026 17:06",
     "angebotsprozessDatum": "12.3.2026 13:26",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 430,
@@ -12469,7 +12898,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "12.3.2026 14:18",
     "angebotsprozessDatum": "12.3.2026 14:18",
-    "vertriebsqualifiziertAm": "12.3.2026 14:18"
+    "vertriebsqualifiziertAm": "12.3.2026 14:18",
+    "gewonnenAm": ""
   },
   {
     "id": 431,
@@ -12498,7 +12928,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "12.3.2026 15:45",
     "angebotsprozessDatum": "12.3.2026 15:43",
-    "vertriebsqualifiziertAm": "12.3.2026 15:43"
+    "vertriebsqualifiziertAm": "12.3.2026 15:43",
+    "gewonnenAm": ""
   },
   {
     "id": 432,
@@ -12527,7 +12958,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 10:12",
     "angebotsprozessDatum": "12.3.2026 14:27",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 433,
@@ -12556,7 +12988,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "12.3.2026 17:22",
     "angebotsprozessDatum": "12.3.2026 14:58",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 434,
@@ -12585,7 +13018,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 09:59",
     "angebotsprozessDatum": "12.3.2026 19:35",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 435,
@@ -12614,7 +13048,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 13:48",
     "angebotsprozessDatum": "12.3.2026 20:18",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 436,
@@ -12643,7 +13078,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 10:00",
     "angebotsprozessDatum": "12.3.2026 21:27",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 437,
@@ -12672,7 +13108,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 10:00",
     "angebotsprozessDatum": "13.3.2026 07:39",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 438,
@@ -12701,7 +13138,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 11:19",
     "angebotsprozessDatum": "13.3.2026 08:45",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 439,
@@ -12730,7 +13168,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:24",
     "angebotsprozessDatum": "13.3.2026 08:45",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 440,
@@ -12759,7 +13198,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 10:07",
     "angebotsprozessDatum": "13.3.2026 08:55",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 441,
@@ -12788,7 +13228,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 22:13",
     "angebotsprozessDatum": "13.3.2026 08:57",
-    "vertriebsqualifiziertAm": "13.3.2026 10:18"
+    "vertriebsqualifiziertAm": "13.3.2026 10:18",
+    "gewonnenAm": ""
   },
   {
     "id": 442,
@@ -12817,7 +13258,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 10:08",
     "angebotsprozessDatum": "13.3.2026 09:11",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 443,
@@ -12846,7 +13288,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 10:08",
     "angebotsprozessDatum": "13.3.2026 09:35",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 444,
@@ -12875,7 +13318,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 11:23",
     "angebotsprozessDatum": "13.3.2026 10:32",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 445,
@@ -12904,7 +13348,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 12:00",
     "angebotsprozessDatum": "13.3.2026 11:57",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 446,
@@ -12933,7 +13378,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:38",
     "angebotsprozessDatum": "13.3.2026 12:06",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 447,
@@ -12962,7 +13408,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "13.3.2026 13:29",
     "angebotsprozessDatum": "13.3.2026 13:27",
-    "vertriebsqualifiziertAm": "13.3.2026 13:27"
+    "vertriebsqualifiziertAm": "13.3.2026 13:27",
+    "gewonnenAm": ""
   },
   {
     "id": 448,
@@ -12991,7 +13438,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 14:39",
     "angebotsprozessDatum": "13.3.2026 13:16",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 449,
@@ -13020,7 +13468,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 14:38",
     "angebotsprozessDatum": "13.3.2026 13:16",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 450,
@@ -13049,7 +13498,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 14:36",
     "angebotsprozessDatum": "13.3.2026 13:16",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 451,
@@ -13078,7 +13528,8 @@ export const leads: Lead[] = [
     "betreuungsart": "Low Touch",
     "lastModified": "13.3.2026 15:34",
     "angebotsprozessDatum": "13.3.2026 14:49",
-    "vertriebsqualifiziertAm": "13.3.2026 14:49"
+    "vertriebsqualifiziertAm": "13.3.2026 14:49",
+    "gewonnenAm": ""
   },
   {
     "id": 452,
@@ -13107,7 +13558,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 13:55",
     "angebotsprozessDatum": "13.3.2026 13:16",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 453,
@@ -13136,7 +13588,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 17:46",
     "angebotsprozessDatum": "13.3.2026 14:03",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 454,
@@ -13165,7 +13618,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 17:46",
     "angebotsprozessDatum": "13.3.2026 14:15",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 455,
@@ -13194,7 +13648,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:02",
     "angebotsprozessDatum": "13.3.2026 14:38",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 456,
@@ -13223,7 +13678,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 15:25",
     "angebotsprozessDatum": "13.3.2026 15:04",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 457,
@@ -13252,7 +13708,8 @@ export const leads: Lead[] = [
     "betreuungsart": "High Touch",
     "lastModified": "13.3.2026 15:41",
     "angebotsprozessDatum": "13.3.2026 15:30",
-    "vertriebsqualifiziertAm": "13.3.2026 15:13"
+    "vertriebsqualifiziertAm": "13.3.2026 15:13",
+    "gewonnenAm": ""
   },
   {
     "id": 458,
@@ -13281,7 +13738,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 17:43",
     "angebotsprozessDatum": "13.3.2026 15:56",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 459,
@@ -13310,7 +13768,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 17:47",
     "angebotsprozessDatum": "13.3.2026 17:13",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 460,
@@ -13339,7 +13798,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 18:31",
     "angebotsprozessDatum": "13.3.2026 18:31",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 461,
@@ -13368,7 +13828,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 19:29",
     "angebotsprozessDatum": "13.3.2026 19:29",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 462,
@@ -13397,7 +13858,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 19:55",
     "angebotsprozessDatum": "13.3.2026 19:55",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 463,
@@ -13426,7 +13888,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 20:33",
     "angebotsprozessDatum": "13.3.2026 20:33",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 464,
@@ -13455,7 +13918,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "13.3.2026 21:08",
     "angebotsprozessDatum": "13.3.2026 21:08",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 465,
@@ -13484,7 +13948,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "14.3.2026 04:19",
     "angebotsprozessDatum": "14.3.2026 04:19",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 466,
@@ -13513,7 +13978,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "14.3.2026 04:25",
     "angebotsprozessDatum": "14.3.2026 04:25",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 467,
@@ -13542,7 +14008,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "14.3.2026 04:48",
     "angebotsprozessDatum": "14.3.2026 04:48",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 468,
@@ -13571,7 +14038,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "14.3.2026 05:23",
     "angebotsprozessDatum": "14.3.2026 05:23",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 469,
@@ -13600,7 +14068,8 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "14.3.2026 07:34",
     "angebotsprozessDatum": "14.3.2026 07:34",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   },
   {
     "id": 470,
@@ -13629,6 +14098,157 @@ export const leads: Lead[] = [
     "betreuungsart": "",
     "lastModified": "14.3.2026 07:48",
     "angebotsprozessDatum": "14.3.2026 07:48",
-    "vertriebsqualifiziertAm": ""
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
+  },
+  {
+    "id": 471,
+    "name": "Markus Nadler",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Instagram",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "Über 60 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "14.3.2026 08:09",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "14.3.2026 08:09",
+    "angebotsprozessDatum": "14.3.2026 08:09",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
+  },
+  {
+    "id": 472,
+    "name": "Nele Zierrath",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Instagram",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "46 – 60 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "14.3.2026 10:20",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "14.3.2026 10:20",
+    "angebotsprozessDatum": "14.3.2026 10:20",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
+  },
+  {
+    "id": 473,
+    "name": "Romano Vlahov",
+    "leadStatus": "Gewonnen",
+    "verlustgrund": "",
+    "adId": "",
+    "adName": "",
+    "platform": "Unsicher",
+    "arbeitslosGemeldet": "",
+    "deutschkenntnisse": "",
+    "alter": "Keine Angabe",
+    "vorerfahrung": "",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "14.3.2026 10:49",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "14.3.2026 10:49",
+    "angebotsprozessDatum": "14.3.2026 10:49",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": "14.3.2026 10:49"
+  },
+  {
+    "id": 474,
+    "name": "Steffi Eigenbrodt",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Facebook",
+    "arbeitslosGemeldet": "Nein, aber in den nächsten 3 Monaten",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "46 – 60 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "14.3.2026 11:42",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "14.3.2026 11:42",
+    "angebotsprozessDatum": "14.3.2026 11:42",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
+  },
+  {
+    "id": 475,
+    "name": "Andreas Keutzer-Glogger",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Facebook",
+    "arbeitslosGemeldet": "Nein, aber in den nächsten 3 Monaten",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "Über 60 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "14.3.2026 12:21",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "14.3.2026 12:21",
+    "angebotsprozessDatum": "14.3.2026 12:21",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
   }
 ];
