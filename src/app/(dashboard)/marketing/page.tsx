@@ -92,7 +92,7 @@ export default function MarketingPage() {
   const [hiddenChannels, setHiddenChannels] = useState<Set<string>>(new Set());
   const {
     channelData, segmentCounts, segmentData, allSegments, segmentWeeklyData,
-    creativeDeepFunnel, gewonnenKursnet, perspFunnelData, perspSummary,
+    creativeDeepFunnel, gewonnenKursnet, sqlKursnet, perspFunnelData, perspSummary,
     filteredLeads, channelWeeklyData,
   } = useMemo(() => {
     const filteredLeads = filterLeadsByRange(leads, range);
@@ -148,7 +148,14 @@ export default function MarketingPage() {
     const perspFiltered = filterPerspectiveByRange(perspectiveVisits, range);
     const perspSummary = computePerspectiveSummary(perspFiltered);
 
-    const gewonnenKursnet = filteredLeads.filter((l) => l.platform === "Kursnet" && l.leadStatus === "Gewonnen").length;
+    const kursnetLeads = filteredLeads.filter((l) => l.platform === "Kursnet");
+    const gewonnenKursnet = kursnetLeads.filter((l) => l.leadStatus === "Gewonnen").length;
+    // SQL = alle Kursnet-Leads die jemals SQL-Status erreicht haben (aktive + gewonnene + verlorene mit Prozess)
+    const sqlKursnet = kursnetLeads.filter((l) =>
+      l.prozessStarten.includes("High Touch") || l.betreuungsart === "High Touch" ||
+      l.prozessStarten.includes("Low Touch") || l.betreuungsart === "Low Touch" ||
+      ["Vertriebsqualifiziert", "Reterminierung", "Kennenlerngespräch gebucht", "Beratungsgespräch gebucht", "Gewonnen"].includes(l.leadStatus)
+    ).length;
     const perspFunnelData = [
       { name: "LP Visits", value: perspSummary.totalVisits },
       { name: "Konvertiert", value: perspSummary.converted },
@@ -173,7 +180,7 @@ export default function MarketingPage() {
 
     return {
       channelData, segmentCounts, segmentData, allSegments, segmentWeeklyData,
-      creativeDeepFunnel, gewonnenKursnet, perspFunnelData, perspSummary,
+      creativeDeepFunnel, gewonnenKursnet, sqlKursnet, perspFunnelData, perspSummary,
       filteredLeads, channelWeeklyData,
     };
   }, [range]);
@@ -553,6 +560,12 @@ export default function MarketingPage() {
                   <span className="text-[12px] text-[#57534e]">Konvertiert → Gewonnen</span>
                   <span className="text-[16px] font-bold text-[#5eead4] tabular-nums">
                     {perspSummary.converted > 0 ? ((gewonnenKursnet / perspSummary.converted) * 100).toFixed(1) : "0"}%
+                  </span>
+                </div>
+                <div className="flex items-center justify-between gap-6">
+                  <span className="text-[12px] text-[#57534e]">SQL → Gewonnen</span>
+                  <span className="text-[16px] font-bold text-[#818cf8] tabular-nums">
+                    {sqlKursnet > 0 ? ((gewonnenKursnet / sqlKursnet) * 100).toFixed(1) : "0"}%
                   </span>
                 </div>
               </div>
