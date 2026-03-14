@@ -54,42 +54,51 @@ interface SellerAgg {
 
 async function fetchAllCalls(): Promise<RawCall[]> {
   const allCalls: RawCall[] = [];
-  let page = 1;
   const perPage = 50;
-  const fromTimestamp = Math.floor((Date.now() - 60 * 86_400_000) / 1000);
+  const now = Math.floor(Date.now() / 1000);
+  const startFrom = now - 60 * 86_400;
+  const CHUNK_DAYS = 7;
+  let totalRequests = 0;
 
-  while (true) {
-    const url = `https://api.aircall.io/v1/calls?per_page=${perPage}&page=${page}&order=desc&from=${fromTimestamp}`;
-    console.log(`  GET page ${page}...`);
+  // Fetch in weekly chunks to avoid API pagination limits
+  for (let chunkStart = startFrom; chunkStart < now; chunkStart += CHUNK_DAYS * 86_400) {
+    const chunkEnd = Math.min(chunkStart + CHUNK_DAYS * 86_400, now);
+    const chunkLabel = new Date(chunkStart * 1000).toISOString().split("T")[0];
+    console.log(`  Chunk ${chunkLabel} ...`);
+    let page = 1;
 
-    const res = await fetch(url, {
-      method: "GET",
-      headers: { Authorization: `Basic ${AUTH}` },
-    });
+    while (true) {
+      const url = `https://api.aircall.io/v1/calls?per_page=${perPage}&page=${page}&order=asc&from=${chunkStart}&to=${chunkEnd}`;
 
-    if (!res.ok) {
-      console.error(`API error ${res.status}: ${await res.text()}`);
-      break;
-    }
+      const res = await fetch(url, {
+        method: "GET",
+        headers: { Authorization: `Basic ${AUTH}` },
+      });
 
-    const data = await res.json();
-    const calls: RawCall[] = data.calls || [];
-
-    // Filter for our sellers
-    for (const c of calls) {
-      if (c.user && SELLER_IDS.has(c.user.id)) {
-        allCalls.push(c);
+      if (!res.ok) {
+        console.error(`API error ${res.status}: ${await res.text()}`);
+        break;
       }
-    }
 
-    // Check pagination
-    if (!data.meta?.next_page_link) break;
-    page++;
+      const data = await res.json();
+      const calls: RawCall[] = data.calls || [];
 
-    // Rate limit: Aircall allows 60 req/min
-    if (page % 50 === 0) {
-      console.log("  Pausing for rate limit...");
-      await new Promise((r) => setTimeout(r, 5000));
+      for (const c of calls) {
+        if (c.user && SELLER_IDS.has(c.user.id)) {
+          allCalls.push(c);
+        }
+      }
+
+      totalRequests++;
+
+      if (!data.meta?.next_page_link) break;
+      page++;
+
+      // Rate limit: Aircall allows 60 req/min
+      if (totalRequests % 50 === 0) {
+        console.log("  Pausing for rate limit...");
+        await new Promise((r) => setTimeout(r, 5000));
+      }
     }
   }
 
