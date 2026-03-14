@@ -532,7 +532,11 @@ export default function SalesPage() {
       weekMap.set(key, entry);
     }
     const weeklyData = Array.from(weekMap.entries())
-      .sort((a, b) => a[0].localeCompare(b[0]))
+      .sort((a, b) => {
+        const [yA, wA] = a[0].split("-KW ");
+        const [yB, wB] = b[0].split("-KW ");
+        return +yA - +yB || +wA - +wB;
+      })
       .map(([key, v]) => ({
         week: key.split("-")[1],
         Erreicht: v.reached,
