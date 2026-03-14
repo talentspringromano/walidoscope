@@ -93,7 +93,7 @@ export default function MarketingPage() {
   const {
     channelData, segmentCounts, segmentData, allSegments, segmentWeeklyData,
     creativeDeepFunnel, gewonnenKursnet, sqlKursnet, perspFunnelData, perspSummary,
-    filteredLeads, channelWeeklyData,
+    filteredLeads, channelWeeklyData, platformData,
   } = useMemo(() => {
     const filteredLeads = filterLeadsByRange(leads, range);
 
@@ -178,10 +178,20 @@ export default function MarketingPage() {
       .sort((a, b) => a[0] - b[0])
       .map(([wk, counts]) => ({ week: `KW ${wk}`, ...counts }));
 
+    /* Platform-Verteilung */
+    const platformCounts: Record<string, number> = {};
+    filteredLeads.forEach((l) => {
+      const p = l.platform || "(leer)";
+      platformCounts[p] = (platformCounts[p] || 0) + 1;
+    });
+    const platformData = Object.entries(platformCounts)
+      .map(([platform, count]) => ({ platform, count }))
+      .sort((a, b) => b.count - a.count);
+
     return {
       channelData, segmentCounts, segmentData, allSegments, segmentWeeklyData,
       creativeDeepFunnel, gewonnenKursnet, sqlKursnet, perspFunnelData, perspSummary,
-      filteredLeads, channelWeeklyData,
+      filteredLeads, channelWeeklyData, platformData,
     };
   }, [range]);
 
@@ -324,6 +334,37 @@ export default function MarketingPage() {
             );
           })}
         </div>
+
+        {/* Leads nach Quelle */}
+        {platformData.length > 0 && (
+          <SectionCard title="Leads nach Quelle">
+            <div className="space-y-2.5">
+              {platformData.map(({ platform, count }) => {
+                const maxCount = platformData[0].count;
+                const pct = maxCount > 0 ? Math.round((count / maxCount) * 100) : 0;
+                return (
+                  <div key={platform} className="flex items-center gap-3">
+                    <span className="text-[12px] text-[#a8a29e] w-[160px] truncate shrink-0" title={platform}>
+                      {platform}
+                    </span>
+                    <div className="flex-1 h-[18px] rounded bg-[rgba(255,255,255,0.04)] overflow-hidden">
+                      <div
+                        className="h-full rounded bg-gradient-to-r from-[#818cf8] to-[#6366f1] transition-all duration-500"
+                        style={{ width: `${pct}%` }}
+                      />
+                    </div>
+                    <span className="text-[13px] font-semibold tabular-nums text-[#fafaf9] w-[36px] text-right shrink-0">
+                      {count}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+            <div className="mt-3 text-[11px] text-[#57534e]">
+              Gesamt: {platformData.reduce((sum, d) => sum + d.count, 0)} Leads
+            </div>
+          </SectionCard>
+        )}
 
         {/* Leads pro Kanal im Zeitverlauf – Stacked Bar */}
         {channelWeeklyData.length > 0 && (
