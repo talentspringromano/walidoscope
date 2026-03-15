@@ -12566,7 +12566,7 @@ export const leads: Lead[] = [
     "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "13.3.2026 10:39",
+    "lastModified": "15.3.2026 11:28",
     "angebotsprozessDatum": "12.3.2026 09:22",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": ""
@@ -13699,15 +13699,15 @@ export const leads: Lead[] = [
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": true,
-    "angebotVerschicken": false,
-    "prozessStarten": "High Touch - Angebot erstellen",
+    "angebotVerschicken": true,
+    "prozessStarten": "Angebot wurde erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": "High Touch",
-    "lastModified": "13.3.2026 15:41",
-    "angebotsprozessDatum": "13.3.2026 15:30",
+    "lastModified": "15.3.2026 12:11",
+    "angebotsprozessDatum": "15.3.2026 12:11",
     "vertriebsqualifiziertAm": "13.3.2026 15:13",
     "gewonnenAm": ""
   },
@@ -14163,36 +14163,6 @@ export const leads: Lead[] = [
   },
   {
     "id": 473,
-    "name": "Romano Vlahov",
-    "leadStatus": "Gewonnen",
-    "verlustgrund": "",
-    "adId": "",
-    "adName": "",
-    "platform": "Unsicher",
-    "arbeitslosGemeldet": "",
-    "deutschkenntnisse": "",
-    "alter": "Keine Angabe",
-    "vorerfahrung": "",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "14.3.2026 10:49",
-    "terminBeimAmt": "",
-    "closingWahrscheinlichkeit": "",
-    "utmTitle": "",
-    "hotLead": false,
-    "angebotVerschicken": false,
-    "prozessStarten": "Noch kein Angebot erstellt",
-    "terminBeimAmtCheck": false,
-    "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
-    "kennenlernDatum": "",
-    "betreuungsart": "",
-    "lastModified": "14.3.2026 10:49",
-    "angebotsprozessDatum": "14.3.2026 10:49",
-    "vertriebsqualifiziertAm": "",
-    "gewonnenAm": "14.3.2026 10:49"
-  },
-  {
-    "id": 474,
     "name": "Steffi Eigenbrodt",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -14222,7 +14192,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 475,
+    "id": 474,
     "name": "Andreas Keutzer-Glogger",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -14252,7 +14222,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 476,
+    "id": 475,
     "name": "Bärbel Wolff",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -14282,7 +14252,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 477,
+    "id": 476,
     "name": "Pedrocito Escobar",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -14312,7 +14282,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 478,
+    "id": 477,
     "name": "Andrea Za",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -14342,7 +14312,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 479,
+    "id": 478,
     "name": "Júlia Coronha Hübscher",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -14372,7 +14342,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 480,
+    "id": 479,
     "name": "Sevgi Uzun",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -14402,7 +14372,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 481,
+    "id": 480,
     "name": "Hansjürgen Schramm",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -14432,7 +14402,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 482,
+    "id": 481,
     "name": "Monika Maria Dubiel",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -14462,7 +14432,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 483,
+    "id": 482,
     "name": "Cordula Bollbuck",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -14492,7 +14462,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 484,
+    "id": 483,
     "name": "Adnane Amrani",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -14519,6 +14489,66 @@ export const leads: Lead[] = [
     "lastModified": "15.3.2026 03:37",
     "angebotsprozessDatum": "15.3.2026 03:37",
     "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
+  },
+  {
+    "id": 484,
+    "name": "Kornelia Skrljac Dumancic",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Instagram",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "46 – 60 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "15.3.2026 08:55",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "15.3.2026 08:55",
+    "angebotsprozessDatum": "15.3.2026 08:55",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
+  },
+  {
+    "id": 485,
+    "name": "Vivian Kruse",
+    "leadStatus": "Vertriebsqualifiziert",
+    "verlustgrund": "",
+    "adId": "",
+    "adName": "",
+    "platform": "Kursnet",
+    "arbeitslosGemeldet": "",
+    "deutschkenntnisse": "",
+    "alter": "Keine Angabe",
+    "vorerfahrung": "",
+    "vertriebler": "Walid Karimi",
+    "createdOn": "15.3.2026 11:08",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "60%",
+    "utmTitle": "",
+    "hotLead": true,
+    "angebotVerschicken": true,
+    "prozessStarten": "High Touch - Angebot erstellen",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "High Touch",
+    "lastModified": "15.3.2026 12:15",
+    "angebotsprozessDatum": "15.3.2026 12:07",
+    "vertriebsqualifiziertAm": "15.3.2026 11:51",
     "gewonnenAm": ""
   }
 ];
