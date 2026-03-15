@@ -81,7 +81,7 @@ const FILTER_PRESETS: { key: FilterPreset; label: string }[] = [
   { key: "all", label: "Alle" },
   { key: "low-cpl", label: "CPL < €5" },
   { key: "high-leads", label: "Leads ≥ 6" },
-  { key: "deep-funnel", label: "Mit Angebot" },
+  { key: "deep-funnel", label: "Mit Gewonnen" },
 ];
 
 export default function MarketingPage() {
@@ -503,7 +503,7 @@ export default function MarketingPage() {
                   ["costPerResult", "CPL", "text-right pr-5"],
                   ["airtableLeads", "CRM", "text-right pr-5"],
                   ["discovery", "Discovery+", "text-right pr-5"],
-                  ["angebot", "Angebot", "text-right pr-8"],
+                  ["angebot", "Gewonnen", "text-right pr-8"],
                 ] as [SortKey, string, string][]).map(([key, label, cls]) => (
                   <th
                     key={key}
