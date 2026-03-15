@@ -73,7 +73,7 @@ const costData = metaAds.map((ad) => ({
   cpl: ad.costPerResult,
 }));
 
-type SortKey = "adName" | "amountSpent" | "impressions" | "clicksAll" | "results" | "costPerResult" | "airtableLeads" | "discovery" | "angebot";
+type SortKey = "adName" | "shortName" | "amountSpent" | "impressions" | "clicksAll" | "results" | "costPerResult" | "airtableLeads" | "discovery" | "angebot";
 type SortDir = "asc" | "desc";
 type FilterPreset = "all" | "low-cpl" | "high-leads" | "deep-funnel";
 
@@ -496,6 +496,7 @@ export default function MarketingPage() {
               <tr>
                 {([
                   ["adName", "Creative", "text-left pl-2"],
+                  ["shortName", "Kurzname", "text-left pl-2"],
                   ["amountSpent", "Spend", "text-right pr-5"],
                   ["impressions", "Impr.", "text-right pr-5"],
                   ["clicksAll", "Clicks", "text-right pr-5"],
@@ -522,6 +523,7 @@ export default function MarketingPage() {
               {filteredAndSorted.map((ad) => (
                 <tr key={ad.adId}>
                   <td className="pl-2 pr-4 text-[13px] font-medium text-[#fafaf9]">{ad.adName}</td>
+                  <td className="pl-2 pr-4 text-[13px] text-[#a8a29e]">{ad.shortName}</td>
                   <td className="text-right pr-5 tabular-nums text-[#78716c]">€{ad.amountSpent.toFixed(2)}</td>
                   <td className="text-right pr-5 tabular-nums text-[#78716c]">{ad.impressions.toLocaleString()}</td>
                   <td className="text-right pr-5 tabular-nums text-[#78716c]">{ad.clicksAll}</td>
