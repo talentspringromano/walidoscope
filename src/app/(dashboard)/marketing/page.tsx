@@ -1,14 +1,25 @@
 "use client";
 
-import { useState, useMemo, Suspense } from "react";
+import { useState, useMemo, Suspense, useCallback, useRef } from "react";
 import { useSearchParams } from "next/navigation";
 import { KpiCard, SectionCard } from "@/components/kpi-card";
 import { TimeRangeFilter } from "@/components/time-range-filter";
 import { leads } from "@/data/leads";
 import { metaAds, totalMetaSpend, totalMetaLeads, avgCPL } from "@/data/meta-ads";
 import { perspectiveVisits } from "@/data/perspective";
+import {
+  indeedDaily,
+  indeedTotalSpend,
+  indeedTotalClicks,
+  indeedTotalApplications,
+  indeedAvgCPA,
+  indeedAvgCPC,
+  indeedOverallCTR,
+  INDEED_CSV_HEADERS,
+} from "@/data/indeed";
+import type { IndeedDailyEntry } from "@/data/indeed";
 import { TOOLTIP_STYLE, AXIS_STYLE, PALETTE, SEGMENT_COLORS, FUNNEL_COLORS } from "@/components/chart-theme";
-import { ArrowUpDown, ArrowUp, ArrowDown } from "lucide-react";
+import { ArrowUpDown, ArrowUp, ArrowDown, Upload, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 import {
   BarChart,
   Bar,
@@ -22,6 +33,10 @@ import {
   ReferenceLine,
   CartesianGrid,
   Legend,
+  LineChart,
+  Line,
+  Area,
+  ComposedChart,
 } from "recharts";
 import type { TimeRange } from "@/lib/date-utils";
 import {
@@ -604,9 +619,7 @@ function MarketingContent() {
 
       {/* ── Indeed Tab ── */}
       {activeTab === "indeed" && (
-        <SectionCard title="Indeed">
-          <p className="text-[13px] text-[#57534e]">Demnächst verfügbar — Indeed-Daten werden hier angezeigt.</p>
-        </SectionCard>
+        <IndeedTab />
       )}
 
       {/* ── Kursnet Tab ── */}
@@ -716,6 +729,237 @@ function MarketingContent() {
           </div>
         </SectionCard>
       )}
+    </div>
+  );
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Indeed Tab Component
+   ═══════════════════════════════════════════════════════════════ */
+
+function parseIndeedCSV(text: string): IndeedDailyEntry[] {
+  const lines = text.trim().split("\n");
+  if (lines.length < 2) return [];
+  const headers = lines[0].split(",");
+  const keyMap = headers.map((h) => INDEED_CSV_HEADERS[h.trim()]);
+
+  return lines.slice(1).map((line) => {
+    const vals = line.split(",");
+    const entry: Record<string, string | number> = {};
+    keyMap.forEach((key, i) => {
+      if (!key) return;
+      entry[key] = key === "date" ? vals[i].trim() : parseFloat(vals[i]) || 0;
+    });
+    return entry as unknown as IndeedDailyEntry;
+  }).filter((e) => e.date);
+}
+
+function IndeedTab() {
+  const fileRef = useRef<HTMLInputElement>(null);
+  const [uploadState, setUploadState] = useState<"idle" | "preview" | "uploading" | "success" | "error">("idle");
+  const [preview, setPreview] = useState<IndeedDailyEntry[]>([]);
+  const [errorMsg, setErrorMsg] = useState("");
+
+  const handleFile = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      try {
+        const parsed = parseIndeedCSV(ev.target?.result as string);
+        if (parsed.length === 0) {
+          setErrorMsg("Keine gültigen Daten in der CSV gefunden.");
+          setUploadState("error");
+          return;
+        }
+        setPreview(parsed);
+        setUploadState("preview");
+      } catch {
+        setErrorMsg("CSV konnte nicht gelesen werden.");
+        setUploadState("error");
+      }
+    };
+    reader.readAsText(file);
+  }, []);
+
+  const handleUpload = useCallback(async () => {
+    setUploadState("uploading");
+    try {
+      const res = await fetch("/api/indeed-import", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ data: preview }),
+      });
+      const result = await res.json();
+      if (!res.ok) {
+        setErrorMsg(result.error || "Upload fehlgeschlagen");
+        setUploadState("error");
+        return;
+      }
+      setUploadState("success");
+    } catch {
+      setErrorMsg("Netzwerkfehler beim Upload");
+      setUploadState("error");
+    }
+  }, [preview]);
+
+  const resetUpload = useCallback(() => {
+    setUploadState("idle");
+    setPreview([]);
+    setErrorMsg("");
+    if (fileRef.current) fileRef.current.value = "";
+  }, []);
+
+  // Chart data from current stored data
+  const chartData = indeedDaily.map((d) => ({
+    date: new Date(d.date + "T00:00:00").toLocaleDateString("de-DE", { day: "numeric", month: "short" }),
+    clicks: d.clicks,
+    applications: d.applications,
+    spend: d.spend,
+    cpa: d.cpa,
+  }));
+
+  const dateRange = indeedDaily.length > 0
+    ? `${new Date(indeedDaily[0].date).toLocaleDateString("de-DE")} – ${new Date(indeedDaily[indeedDaily.length - 1].date).toLocaleDateString("de-DE")}`
+    : "Keine Daten";
+
+  return (
+    <div className="space-y-6">
+      {/* KPIs */}
+      <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 stagger-in">
+        <KpiCard label="Gesamt-Spend" value={`€${indeedTotalSpend.toFixed(0)}`} sub={dateRange} accent />
+        <KpiCard label="Bewerbungen" value={indeedTotalApplications} sub={`Ø €${indeedAvgCPA.toFixed(2)} CPA`} />
+        <KpiCard label="Klicks" value={indeedTotalClicks.toLocaleString()} sub={`Ø €${indeedAvgCPC.toFixed(2)} CPC`} />
+        <KpiCard label="CTR" value={`${(indeedOverallCTR * 100).toFixed(1)}%`} sub={`${(indeedDaily.length)} Tage erfasst`} />
+      </div>
+
+      {/* Klicks & Bewerbungen Chart */}
+      <SectionCard title="Klicks & Bewerbungen im Zeitverlauf">
+        <ResponsiveContainer width="100%" height={300}>
+          <ComposedChart data={chartData} barCategoryGap="20%">
+            <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
+            <XAxis dataKey="date" {...AXIS_STYLE} axisLine={false} tickLine={false} angle={-35} textAnchor="end" height={55} />
+            <YAxis yAxisId="left" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+            <YAxis yAxisId="right" orientation="right" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+            <Tooltip {...TOOLTIP_STYLE} />
+            <Legend wrapperStyle={{ fontSize: 11, color: "#78716c" }} />
+            <Bar yAxisId="left" dataKey="clicks" name="Klicks" fill={PALETTE.indigo} radius={[4, 4, 0, 0]} />
+            <Bar yAxisId="left" dataKey="applications" name="Bewerbungen" fill={PALETTE.teal} radius={[4, 4, 0, 0]} />
+            <Line yAxisId="right" type="monotone" dataKey="cpa" name="CPA (€)" stroke={PALETTE.amber} strokeWidth={2} dot={false} />
+          </ComposedChart>
+        </ResponsiveContainer>
+      </SectionCard>
+
+      {/* Spend Chart */}
+      <SectionCard title="Tägliche Ausgaben">
+        <ResponsiveContainer width="100%" height={240}>
+          <BarChart data={chartData} barCategoryGap="20%">
+            <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
+            <XAxis dataKey="date" {...AXIS_STYLE} axisLine={false} tickLine={false} angle={-35} textAnchor="end" height={55} />
+            <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} />
+            <Tooltip {...TOOLTIP_STYLE} formatter={(val) => typeof val === "number" ? `€${val.toFixed(2)}` : val} />
+            <Bar dataKey="spend" name="Ausgaben" fill={PALETTE.amber} radius={[4, 4, 0, 0]} />
+          </BarChart>
+        </ResponsiveContainer>
+      </SectionCard>
+
+      {/* CSV Import */}
+      <SectionCard title="Daten-Import">
+        <div className="space-y-4">
+          <p className="text-[13px] text-[#57534e]">
+            Indeed CSV-Export hochladen um die Daten zu aktualisieren. Nach dem Import wird automatisch ein neuer Deploy ausgelöst.
+          </p>
+
+          {uploadState === "idle" && (
+            <label className="flex items-center gap-3 px-4 py-3 rounded-xl border border-dashed border-[rgba(255,255,255,0.1)] hover:border-[rgba(226,169,110,0.3)] hover:bg-[rgba(226,169,110,0.04)] transition-all cursor-pointer">
+              <Upload className="h-5 w-5 text-[#57534e]" />
+              <span className="text-[13px] text-[#a8a29e]">CSV-Datei auswählen</span>
+              <input ref={fileRef} type="file" accept=".csv" className="hidden" onChange={handleFile} />
+            </label>
+          )}
+
+          {uploadState === "preview" && (
+            <div className="space-y-3">
+              <div className="flex items-center gap-3 text-[13px]">
+                <span className="text-[#a8a29e]">{preview.length} Tage erkannt</span>
+                <span className="text-[#57534e]">
+                  {preview[0]?.date} – {preview[preview.length - 1]?.date}
+                </span>
+              </div>
+              <div className="overflow-x-auto max-h-[200px] overflow-y-auto rounded-lg border border-[rgba(255,255,255,0.06)]">
+                <table className="w-full premium-table text-[12px]">
+                  <thead>
+                    <tr>
+                      <th className="text-left pl-3">Datum</th>
+                      <th className="text-right pr-3">Impressions</th>
+                      <th className="text-right pr-3">Klicks</th>
+                      <th className="text-right pr-3">Bewerbungen</th>
+                      <th className="text-right pr-3">Ausgaben</th>
+                      <th className="text-right pr-3">CPA</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {preview.slice(0, 5).map((row) => (
+                      <tr key={row.date}>
+                        <td className="pl-3 text-[#a8a29e]">{row.date}</td>
+                        <td className="text-right pr-3 tabular-nums text-[#78716c]">{row.impressions.toLocaleString()}</td>
+                        <td className="text-right pr-3 tabular-nums text-[#78716c]">{row.clicks}</td>
+                        <td className="text-right pr-3 tabular-nums text-[#e2a96e]">{row.applications}</td>
+                        <td className="text-right pr-3 tabular-nums text-[#78716c]">€{row.spend.toFixed(2)}</td>
+                        <td className="text-right pr-3 tabular-nums text-[#78716c]">{row.cpa > 0 ? `€${row.cpa.toFixed(2)}` : "—"}</td>
+                      </tr>
+                    ))}
+                    {preview.length > 5 && (
+                      <tr><td colSpan={6} className="pl-3 text-[#57534e]">… und {preview.length - 5} weitere Tage</td></tr>
+                    )}
+                  </tbody>
+                </table>
+              </div>
+              <div className="flex items-center gap-3">
+                <button
+                  onClick={handleUpload}
+                  className="px-4 py-2 rounded-lg bg-[rgba(226,169,110,0.12)] text-[#e2a96e] text-[13px] font-medium border border-[rgba(226,169,110,0.25)] hover:bg-[rgba(226,169,110,0.2)] transition-all"
+                >
+                  Importieren & Deployen
+                </button>
+                <button
+                  onClick={resetUpload}
+                  className="px-4 py-2 rounded-lg text-[#78716c] text-[13px] font-medium border border-[rgba(255,255,255,0.06)] hover:text-[#a8a29e] transition-all"
+                >
+                  Abbrechen
+                </button>
+              </div>
+            </div>
+          )}
+
+          {uploadState === "uploading" && (
+            <div className="flex items-center gap-3 py-3">
+              <Loader2 className="h-5 w-5 text-[#e2a96e] animate-spin" />
+              <span className="text-[13px] text-[#a8a29e]">Daten werden importiert und committed…</span>
+            </div>
+          )}
+
+          {uploadState === "success" && (
+            <div className="flex items-center gap-3 py-3">
+              <CheckCircle className="h-5 w-5 text-[#5eead4]" />
+              <span className="text-[13px] text-[#5eead4]">Import erfolgreich! Deploy wird automatisch ausgelöst.</span>
+              <button onClick={resetUpload} className="text-[12px] text-[#57534e] hover:text-[#a8a29e] ml-2">
+                Neuer Import
+              </button>
+            </div>
+          )}
+
+          {uploadState === "error" && (
+            <div className="flex items-center gap-3 py-3">
+              <AlertCircle className="h-5 w-5 text-[#f87171]" />
+              <span className="text-[13px] text-[#f87171]">{errorMsg}</span>
+              <button onClick={resetUpload} className="text-[12px] text-[#57534e] hover:text-[#a8a29e] ml-2">
+                Erneut versuchen
+              </button>
+            </div>
+          )}
+        </div>
+      </SectionCard>
     </div>
   );
 }
