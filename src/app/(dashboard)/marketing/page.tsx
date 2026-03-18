@@ -593,113 +593,6 @@ function MarketingContent() {
         </SectionCard>
       )}
 
-      {/* Perspective Funnel */}
-      <SectionCard title="Kursnet Landing Page Funnel">
-        <div className="grid gap-8 lg:grid-cols-3">
-          <div className="lg:col-span-1 flex items-stretch gap-4">
-            <div className="flex-1">
-              <ResponsiveContainer width="100%" height={220}>
-                <FunnelChart>
-                  <Tooltip {...TOOLTIP_STYLE} />
-                  <Funnel dataKey="value" data={perspFunnelData} isAnimationActive animationDuration={800} label={<></>}>
-                    {perspFunnelData.map((_, i) => (
-                      <Cell key={i} fill={FUNNEL_COLORS[i]} />
-                    ))}
-                  </Funnel>
-                </FunnelChart>
-              </ResponsiveContainer>
-            </div>
-            <div className="flex flex-col justify-around py-4">
-              {perspFunnelData.map((d, i) => (
-                <div key={i} className="flex items-center gap-2">
-                  <div className="w-3 h-3 rounded-sm" style={{ background: FUNNEL_COLORS[i] }} />
-                  <span className="text-[14px] font-semibold text-[#fafaf9] tabular-nums">{d.value}</span>
-                  <span className="text-[13px] text-[#78716c]">{d.name}</span>
-                </div>
-              ))}
-              <div className="mt-1 pt-3 border-t border-[rgba(255,255,255,0.06)] space-y-1.5">
-                <div className="flex items-center justify-between gap-6">
-                  <span className="text-[12px] text-[#57534e]">Visit → Gewonnen</span>
-                  <span className="text-[16px] font-bold text-[#e2a96e] tabular-nums">
-                    {perspSummary.totalVisits > 0 ? ((gewonnenKursnet / perspSummary.totalVisits) * 100).toFixed(1) : "0"}%
-                  </span>
-                </div>
-                <div className="flex items-center justify-between gap-6">
-                  <span className="text-[12px] text-[#57534e]">Konvertiert → Gewonnen</span>
-                  <span className="text-[16px] font-bold text-[#5eead4] tabular-nums">
-                    {perspSummary.converted > 0 ? ((gewonnenKursnet / perspSummary.converted) * 100).toFixed(1) : "0"}%
-                  </span>
-                </div>
-                <div className="flex items-center justify-between gap-6">
-                  <span className="text-[12px] text-[#57534e]">SQL → Gewonnen</span>
-                  <span className="text-[16px] font-bold text-[#818cf8] tabular-nums">
-                    {sqlKursnet > 0 ? ((gewonnenKursnet / sqlKursnet) * 100).toFixed(1) : "0"}%
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Gap Visualization */}
-          <div className="flex flex-col justify-center space-y-4">
-            <h3 className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#57534e]">
-              CRM-Erfassungs-Gap
-            </h3>
-            {[
-              { label: "Perspective konvertiert", value: perspSummary.converted, color: "text-[#818cf8]" },
-              { label: "Im CRM erfasst", value: kursnetLeadsCount, color: "text-[#5eead4]" },
-              { label: "Fehlend", value: perspSummary.converted - kursnetLeadsCount, color: "text-amber-400" },
-            ].map((row) => (
-              <div key={row.label} className="flex items-center justify-between">
-                <span className="text-[12px] text-[#a8a29e]">{row.label}</span>
-                <span className={`text-[18px] font-semibold tabular-nums ${row.color}`}>{row.value}</span>
-              </div>
-            ))}
-            <div className="h-2 rounded-full bg-[rgba(255,255,255,0.04)] overflow-hidden mt-1">
-              <div
-                className="h-full rounded-full bg-gradient-to-r from-[#5eead4] to-[#5eead4]"
-                style={{ width: `${perspSummary.converted > 0 ? Math.round((kursnetLeadsCount / perspSummary.converted) * 100) : 0}%` }}
-              />
-            </div>
-            <p className="text-[11px] text-[#57534e]">
-              {perspSummary.converted > 0 ? Math.round((kursnetLeadsCount / perspSummary.converted) * 100) : 0}% Erfassungsrate
-            </p>
-          </div>
-
-          <div className="space-y-3">
-            <h3 className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#57534e] mb-4">
-              Visits nach Kurs-Titel
-            </h3>
-            {Object.entries(perspSummary.byTitle)
-              .sort((a, b) => b[1].visits - a[1].visits)
-              .slice(0, 6)
-              .map(([title, data]) => {
-                const pct = perspSummary.totalVisits > 0 ? Math.round((data.visits / perspSummary.totalVisits) * 100) : 0;
-                return (
-                  <div key={title} className="group">
-                    <div className="flex items-center justify-between text-[12px] mb-1.5">
-                      <span className="max-w-[260px] truncate text-[#a8a29e] group-hover:text-[#fafaf9] transition-colors" title={title}>
-                        {title}
-                      </span>
-                      <div className="flex gap-3 tabular-nums">
-                        <span className="text-[#57534e]">{data.visits}</span>
-                        <span className="text-[#5eead4] font-medium">{data.converted}</span>
-                      </div>
-                    </div>
-                    {/* progress bar */}
-                    <div className="h-[3px] rounded-full bg-[rgba(255,255,255,0.04)] overflow-hidden">
-                      <div
-                        className="h-full rounded-full bg-gradient-to-r from-[#e2a96e] to-[#818cf8] transition-all duration-500"
-                        style={{ width: `${pct}%` }}
-                      />
-                    </div>
-                  </div>
-                );
-              })}
-          </div>
-        </div>
-      </SectionCard>
-
       </>)}
 
       {/* ── Meta Tab ── */}
@@ -718,8 +611,109 @@ function MarketingContent() {
 
       {/* ── Kursnet Tab ── */}
       {activeTab === "kursnet" && (
-        <SectionCard title="Kursnet">
-          <p className="text-[13px] text-[#57534e]">Demnächst verfügbar — Kursnet-Daten werden hier angezeigt.</p>
+        <SectionCard title="Kursnet Landing Page Funnel">
+          <div className="grid gap-8 lg:grid-cols-3">
+            <div className="lg:col-span-1 flex items-stretch gap-4">
+              <div className="flex-1">
+                <ResponsiveContainer width="100%" height={220}>
+                  <FunnelChart>
+                    <Tooltip {...TOOLTIP_STYLE} />
+                    <Funnel dataKey="value" data={perspFunnelData} isAnimationActive animationDuration={800} label={<></>}>
+                      {perspFunnelData.map((_, i) => (
+                        <Cell key={i} fill={FUNNEL_COLORS[i]} />
+                      ))}
+                    </Funnel>
+                  </FunnelChart>
+                </ResponsiveContainer>
+              </div>
+              <div className="flex flex-col justify-around py-4">
+                {perspFunnelData.map((d, i) => (
+                  <div key={i} className="flex items-center gap-2">
+                    <div className="w-3 h-3 rounded-sm" style={{ background: FUNNEL_COLORS[i] }} />
+                    <span className="text-[14px] font-semibold text-[#fafaf9] tabular-nums">{d.value}</span>
+                    <span className="text-[13px] text-[#78716c]">{d.name}</span>
+                  </div>
+                ))}
+                <div className="mt-1 pt-3 border-t border-[rgba(255,255,255,0.06)] space-y-1.5">
+                  <div className="flex items-center justify-between gap-6">
+                    <span className="text-[12px] text-[#57534e]">Visit → Gewonnen</span>
+                    <span className="text-[16px] font-bold text-[#e2a96e] tabular-nums">
+                      {perspSummary.totalVisits > 0 ? ((gewonnenKursnet / perspSummary.totalVisits) * 100).toFixed(1) : "0"}%
+                    </span>
+                  </div>
+                  <div className="flex items-center justify-between gap-6">
+                    <span className="text-[12px] text-[#57534e]">Konvertiert → Gewonnen</span>
+                    <span className="text-[16px] font-bold text-[#5eead4] tabular-nums">
+                      {perspSummary.converted > 0 ? ((gewonnenKursnet / perspSummary.converted) * 100).toFixed(1) : "0"}%
+                    </span>
+                  </div>
+                  <div className="flex items-center justify-between gap-6">
+                    <span className="text-[12px] text-[#57534e]">SQL → Gewonnen</span>
+                    <span className="text-[16px] font-bold text-[#818cf8] tabular-nums">
+                      {sqlKursnet > 0 ? ((gewonnenKursnet / sqlKursnet) * 100).toFixed(1) : "0"}%
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Gap Visualization */}
+            <div className="flex flex-col justify-center space-y-4">
+              <h3 className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#57534e]">
+                CRM-Erfassungs-Gap
+              </h3>
+              {[
+                { label: "Perspective konvertiert", value: perspSummary.converted, color: "text-[#818cf8]" },
+                { label: "Im CRM erfasst", value: kursnetLeadsCount, color: "text-[#5eead4]" },
+                { label: "Fehlend", value: perspSummary.converted - kursnetLeadsCount, color: "text-amber-400" },
+              ].map((row) => (
+                <div key={row.label} className="flex items-center justify-between">
+                  <span className="text-[12px] text-[#a8a29e]">{row.label}</span>
+                  <span className={`text-[18px] font-semibold tabular-nums ${row.color}`}>{row.value}</span>
+                </div>
+              ))}
+              <div className="h-2 rounded-full bg-[rgba(255,255,255,0.04)] overflow-hidden mt-1">
+                <div
+                  className="h-full rounded-full bg-gradient-to-r from-[#5eead4] to-[#5eead4]"
+                  style={{ width: `${perspSummary.converted > 0 ? Math.round((kursnetLeadsCount / perspSummary.converted) * 100) : 0}%` }}
+                />
+              </div>
+              <p className="text-[11px] text-[#57534e]">
+                {perspSummary.converted > 0 ? Math.round((kursnetLeadsCount / perspSummary.converted) * 100) : 0}% Erfassungsrate
+              </p>
+            </div>
+
+            <div className="space-y-3">
+              <h3 className="text-[11px] font-medium uppercase tracking-[0.08em] text-[#57534e] mb-4">
+                Visits nach Kurs-Titel
+              </h3>
+              {Object.entries(perspSummary.byTitle)
+                .sort((a, b) => b[1].visits - a[1].visits)
+                .slice(0, 6)
+                .map(([title, data]) => {
+                  const pct = perspSummary.totalVisits > 0 ? Math.round((data.visits / perspSummary.totalVisits) * 100) : 0;
+                  return (
+                    <div key={title} className="group">
+                      <div className="flex items-center justify-between text-[12px] mb-1.5">
+                        <span className="max-w-[260px] truncate text-[#a8a29e] group-hover:text-[#fafaf9] transition-colors" title={title}>
+                          {title}
+                        </span>
+                        <div className="flex gap-3 tabular-nums">
+                          <span className="text-[#57534e]">{data.visits}</span>
+                          <span className="text-[#5eead4] font-medium">{data.converted}</span>
+                        </div>
+                      </div>
+                      <div className="h-[3px] rounded-full bg-[rgba(255,255,255,0.04)] overflow-hidden">
+                        <div
+                          className="h-full rounded-full bg-gradient-to-r from-[#e2a96e] to-[#818cf8] transition-all duration-500"
+                          style={{ width: `${pct}%` }}
+                        />
+                      </div>
+                    </div>
+                  );
+                })}
+            </div>
+          </div>
         </SectionCard>
       )}
     </div>
