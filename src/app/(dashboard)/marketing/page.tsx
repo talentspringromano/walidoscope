@@ -838,6 +838,15 @@ function MetaTab() {
 
   const activeAds = metaExport.filter((d) => d.delivery === "active").length;
 
+  // Gewonnen pro Creative aus CRM
+  const gewonnenByAd = useMemo(() => {
+    const map = new Map<string, number>();
+    leads
+      .filter((l) => (l.platform === "Instagram" || l.platform === "Facebook") && l.leadStatus === "Gewonnen")
+      .forEach((l) => map.set(l.adName, (map.get(l.adName) || 0) + 1));
+    return map;
+  }, []);
+
   // Sort by spend for chart
   const chartData = [...metaExport]
     .sort((a, b) => b.amountSpent - a.amountSpent)
@@ -875,6 +884,7 @@ function MetaTab() {
                 <th className="text-right pr-4">Leads</th>
                 <th className="text-right pr-4">CPL</th>
                 <th className="text-right pr-4">Impr.</th>
+                <th className="text-right pr-4">Gewonnen</th>
                 <th className="text-right pr-4">Klicks</th>
                 <th className="text-right pr-4">Reach</th>
               </tr>
@@ -896,6 +906,7 @@ function MetaTab() {
                   <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.amountSpent.toFixed(2)} €</td>
                   <td className="text-right pr-4 tabular-nums font-medium text-[#e2a96e]">{ad.results}</td>
                   <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.costPerResult > 0 ? `${ad.costPerResult.toFixed(2)} €` : "—"}</td>
+                  <td className="text-right pr-4 tabular-nums font-semibold text-[#5eead4]">{gewonnenByAd.get(ad.adName) || 0}</td>
                   <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.impressions.toLocaleString()}</td>
                   <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.linkClicks}</td>
                   <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.reach.toLocaleString()}</td>
