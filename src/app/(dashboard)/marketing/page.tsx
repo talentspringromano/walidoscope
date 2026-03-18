@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { KpiCard, SectionCard } from "@/components/kpi-card";
 import { TimeRangeFilter } from "@/components/time-range-filter";
@@ -87,6 +87,14 @@ type MarketingTab = "meta" | "indeed" | "kursnet";
 const VALID_TABS: MarketingTab[] = ["meta", "indeed", "kursnet"];
 
 export default function MarketingPage() {
+  return (
+    <Suspense fallback={null}>
+      <MarketingContent />
+    </Suspense>
+  );
+}
+
+function MarketingContent() {
   const searchParams = useSearchParams();
   const tabParam = searchParams.get("tab") as MarketingTab | null;
   const activeTab: MarketingTab = tabParam && VALID_TABS.includes(tabParam) ? tabParam : "meta";
