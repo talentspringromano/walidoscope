@@ -906,8 +906,8 @@ function MetaTab() {
                   <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.amountSpent.toFixed(2)} €</td>
                   <td className="text-right pr-4 tabular-nums font-medium text-[#e2a96e]">{ad.results}</td>
                   <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.costPerResult > 0 ? `${ad.costPerResult.toFixed(2)} €` : "—"}</td>
-                  <td className="text-right pr-4 tabular-nums font-semibold text-[#5eead4]">{gewonnenByAd.get(ad.adName) || 0}</td>
                   <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.impressions.toLocaleString()}</td>
+                  <td className="text-right pr-4 tabular-nums font-semibold text-[#5eead4]">{gewonnenByAd.get(ad.adName) || 0}</td>
                   <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.linkClicks}</td>
                   <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.reach.toLocaleString()}</td>
                 </tr>
