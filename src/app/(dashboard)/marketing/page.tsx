@@ -866,12 +866,12 @@ function IndeedTab({ range }: { range: TimeRange }) {
       {/* KPIs */}
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 stagger-in">
         <KpiCard label="Gewonnen" value={indeedLeads.gewonnen} sub={`von ${indeedLeads.total} Indeed-Leads`} accent />
-        <KpiCard label="Cost per Won" value={costPerWon > 0 ? `${costPerWon.toFixed(2)}€` : "—"} sub={`${totalSpend.toFixed(0)}€ Spend ÷ ${indeedLeads.gewonnen} Gewonnen`} />
-        <KpiCard label="Bewerbungen" value={totalApplications} sub={`Ø €${avgCPA.toFixed(2)} CPA`} />
+        <KpiCard label="Cost per Won" value={costPerWon > 0 ? `${costPerWon.toFixed(2)} €` : "—"} sub={`${totalSpend.toFixed(0)} € Spend ÷ ${indeedLeads.gewonnen} Gewonnen`} />
+        <KpiCard label="Bewerbungen" value={totalApplications} sub={`Ø ${avgCPA.toFixed(2)} € CPA`} />
       </div>
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 stagger-in">
-        <KpiCard label="Gesamt-Spend" value={`€${totalSpend.toFixed(0)}`} sub={dateRange} />
-        <KpiCard label="Klicks" value={totalClicks.toLocaleString()} sub={`Ø €${avgCPC.toFixed(2)} CPC`} />
+        <KpiCard label="Gesamt-Spend" value={`${totalSpend.toFixed(0)} €`} sub={dateRange} />
+        <KpiCard label="Klicks" value={totalClicks.toLocaleString()} sub={`Ø ${avgCPC.toFixed(2)} € CPC`} />
         <KpiCard label="CTR" value={`${(overallCTR * 100).toFixed(1)}%`} sub={`${filtered.length} Tage erfasst`} />
       </div>
 
@@ -892,14 +892,14 @@ function IndeedTab({ range }: { range: TimeRange }) {
         </ResponsiveContainer>
       </SectionCard>
 
-      {/* Spend Chart */}
+      {/* Tägliche Ausgaben Chart */}
       <SectionCard title="Tägliche Ausgaben">
         <ResponsiveContainer width="100%" height={240}>
           <BarChart data={chartData} barCategoryGap="20%">
             <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
             <XAxis dataKey="date" {...AXIS_STYLE} axisLine={false} tickLine={false} angle={-35} textAnchor="end" height={55} />
             <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} />
-            <Tooltip {...TOOLTIP_STYLE} formatter={(val) => typeof val === "number" ? `€${val.toFixed(2)}` : val} />
+            <Tooltip {...TOOLTIP_STYLE} formatter={(val) => typeof val === "number" ? `${val.toFixed(2)} €` : val} />
             <Bar dataKey="spend" name="Ausgaben" fill={PALETTE.amber} radius={[4, 4, 0, 0]} />
           </BarChart>
         </ResponsiveContainer>
@@ -947,8 +947,8 @@ function IndeedTab({ range }: { range: TimeRange }) {
                         <td className="text-right pr-3 tabular-nums text-[#78716c]">{row.impressions.toLocaleString()}</td>
                         <td className="text-right pr-3 tabular-nums text-[#78716c]">{row.clicks}</td>
                         <td className="text-right pr-3 tabular-nums text-[#e2a96e]">{row.applications}</td>
-                        <td className="text-right pr-3 tabular-nums text-[#78716c]">€{row.spend.toFixed(2)}</td>
-                        <td className="text-right pr-3 tabular-nums text-[#78716c]">{row.cpa > 0 ? `€${row.cpa.toFixed(2)}` : "—"}</td>
+                        <td className="text-right pr-3 tabular-nums text-[#78716c]">{row.spend.toFixed(2)} €</td>
+                        <td className="text-right pr-3 tabular-nums text-[#78716c]">{row.cpa > 0 ? `${row.cpa.toFixed(2)} €` : "—"}</td>
                       </tr>
                     ))}
                     {preview.length > 5 && (
