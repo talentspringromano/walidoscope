@@ -12,6 +12,7 @@ import {
   PanelLeftClose,
   PanelLeftOpen,
   LogOut,
+  ChevronRight,
 } from "lucide-react";
 
 const navItems = [
@@ -35,6 +36,7 @@ export function Sidebar() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const [collapsed, setCollapsed] = useState(false);
+  const [subExpanded, setSubExpanded] = useState<Record<string, boolean>>({});
 
   async function handleLogout() {
     await fetch("/api/auth", { method: "DELETE" });
@@ -97,36 +99,50 @@ export function Sidebar() {
                 : pathname.startsWith(href);
 
             const currentTab = searchParams.get("tab");
+            const isExpanded = subExpanded[href] ?? isActive;
 
             return (
               <div key={href}>
-                <Link
-                  href={subItems ? subItems[0].href : href}
-                  title={collapsed ? label : undefined}
-                  className={`relative flex items-center rounded-xl text-[13px] font-medium transition-all duration-200 ${
-                    collapsed
-                      ? "justify-center w-10 h-10 p-0"
-                      : "gap-3 px-3 py-2.5"
-                  } ${
-                    isActive
-                      ? "bg-[rgba(226,169,110,0.08)] text-[#e2a96e]"
-                      : "text-[#78716c] hover:bg-[rgba(255,255,255,0.03)] hover:text-[#a8a29e]"
-                  }`}
-                >
-                  {isActive && !collapsed && (
-                    <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-[2px]">
-                      <div className="active-dot" />
-                    </div>
+                <div className="flex items-center">
+                  <Link
+                    href={href}
+                    title={collapsed ? label : undefined}
+                    className={`relative flex flex-1 items-center rounded-xl text-[13px] font-medium transition-all duration-200 ${
+                      collapsed
+                        ? "justify-center w-10 h-10 p-0"
+                        : "gap-3 px-3 py-2.5"
+                    } ${
+                      isActive
+                        ? "bg-[rgba(226,169,110,0.08)] text-[#e2a96e]"
+                        : "text-[#78716c] hover:bg-[rgba(255,255,255,0.03)] hover:text-[#a8a29e]"
+                    }`}
+                  >
+                    {isActive && !collapsed && (
+                      <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-[2px]">
+                        <div className="active-dot" />
+                      </div>
+                    )}
+                    <Icon className="h-[18px] w-[18px] shrink-0" strokeWidth={1.8} />
+                    {!collapsed && label}
+                  </Link>
+                  {subItems && !collapsed && (
+                    <button
+                      onClick={() => setSubExpanded((prev) => ({ ...prev, [href]: !isExpanded }))}
+                      className="p-1.5 rounded-lg text-[#44403c] hover:text-[#a8a29e] transition-all"
+                    >
+                      <ChevronRight
+                        className={`h-3.5 w-3.5 transition-transform duration-200 ${isExpanded ? "rotate-90" : ""}`}
+                        strokeWidth={2}
+                      />
+                    </button>
                   )}
-                  <Icon className="h-[18px] w-[18px] shrink-0" strokeWidth={1.8} />
-                  {!collapsed && label}
-                </Link>
+                </div>
 
                 {/* Sub-items */}
-                {subItems && isActive && !collapsed && (
+                {subItems && isExpanded && !collapsed && (
                   <div className="ml-[30px] mt-0.5 flex flex-col gap-0.5">
                     {subItems.map((sub) => {
-                      const isSubActive = isActive && (currentTab === sub.tab || (!currentTab && sub.tab === "meta"));
+                      const isSubActive = isActive && currentTab === sub.tab;
                       return (
                         <Link
                           key={sub.tab}

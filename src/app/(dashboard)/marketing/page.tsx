@@ -97,7 +97,7 @@ export default function MarketingPage() {
 function MarketingContent() {
   const searchParams = useSearchParams();
   const tabParam = searchParams.get("tab") as MarketingTab | null;
-  const activeTab: MarketingTab = tabParam && VALID_TABS.includes(tabParam) ? tabParam : "meta";
+  const activeTab = tabParam && VALID_TABS.includes(tabParam) ? tabParam : null;
   const [sortKey, setSortKey] = useState<SortKey>("results");
   const [sortDir, setSortDir] = useState<SortDir>("desc");
   const [filter, setFilter] = useState<FilterPreset>("all");
@@ -259,8 +259,8 @@ function MarketingContent() {
         <TimeRangeFilter value={range} onChange={setRange} />
       </div>
 
-      {/* ── Meta Tab ── */}
-      {activeTab === "meta" && (<>
+      {/* ── Übersicht (kein Tab ausgewählt) ── */}
+      {!activeTab && (<>
 
       {/* ── Soll-Ist-Vergleich ── */}
       <div className="space-y-6">
@@ -701,6 +701,13 @@ function MarketingContent() {
       </SectionCard>
 
       </>)}
+
+      {/* ── Meta Tab ── */}
+      {activeTab === "meta" && (
+        <SectionCard title="Meta">
+          <p className="text-[13px] text-[#57534e]">Demnächst verfügbar — Meta-spezifische Daten werden hier angezeigt.</p>
+        </SectionCard>
+      )}
 
       {/* ── Indeed Tab ── */}
       {activeTab === "indeed" && (
