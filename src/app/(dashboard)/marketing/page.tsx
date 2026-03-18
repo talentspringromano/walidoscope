@@ -822,6 +822,14 @@ function IndeedTab({ range }: { range: TimeRange }) {
   const avgCPC = totalClicks > 0 ? totalSpend / totalClicks : 0;
   const overallCTR = totalImpressions > 0 ? totalClicks / totalImpressions : 0;
 
+  // Indeed-Leads aus CRM (gewonnen)
+  const indeedLeads = useMemo(() => {
+    const all = filterLeadsByRange(leads.filter((l) => l.platform === "Indeed"), range);
+    const gewonnen = all.filter((l) => l.leadStatus === "Gewonnen");
+    return { total: all.length, gewonnen: gewonnen.length };
+  }, [range]);
+  const costPerWon = indeedLeads.gewonnen > 0 ? totalSpend / indeedLeads.gewonnen : 0;
+
   const chartData = filtered.map((d) => ({
     date: new Date(d.date + "T00:00:00").toLocaleDateString("de-DE", { day: "numeric", month: "short" }),
     clicks: d.clicks,
@@ -837,9 +845,13 @@ function IndeedTab({ range }: { range: TimeRange }) {
   return (
     <div className="space-y-6">
       {/* KPIs */}
-      <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 stagger-in">
-        <KpiCard label="Gesamt-Spend" value={`€${totalSpend.toFixed(0)}`} sub={dateRange} accent />
+      <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 stagger-in">
+        <KpiCard label="Gewonnen" value={indeedLeads.gewonnen} sub={`von ${indeedLeads.total} Indeed-Leads`} accent />
+        <KpiCard label="Cost per Won" value={costPerWon > 0 ? `€${costPerWon.toFixed(2)}` : "—"} sub={`€${totalSpend.toFixed(0)} Spend ÷ ${indeedLeads.gewonnen} Gewonnen`} />
         <KpiCard label="Bewerbungen" value={totalApplications} sub={`Ø €${avgCPA.toFixed(2)} CPA`} />
+      </div>
+      <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 stagger-in">
+        <KpiCard label="Gesamt-Spend" value={`€${totalSpend.toFixed(0)}`} sub={dateRange} />
         <KpiCard label="Klicks" value={totalClicks.toLocaleString()} sub={`Ø €${avgCPC.toFixed(2)} CPC`} />
         <KpiCard label="CTR" value={`${(overallCTR * 100).toFixed(1)}%`} sub={`${filtered.length} Tage erfasst`} />
       </div>
