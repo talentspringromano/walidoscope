@@ -826,7 +826,7 @@ function IndeedTab({ range }: { range: TimeRange }) {
   const indeedLeads = useMemo(() => {
     const indeedAll = leads.filter((l) => l.platform === "Indeed");
     const allFiltered = filterLeadsByRange(indeedAll, range);
-    const gewonnenAll = indeedAll.filter((l) => l.leadStatus === "Gewonnen" && l.gewonnenAm);
+    const gewonnenAll = indeedAll.filter((l) => l.leadStatus === "Gewonnen");
 
     let gewonnenFiltered = gewonnenAll;
     if (range !== "all") {
@@ -834,10 +834,14 @@ function IndeedTab({ range }: { range: TimeRange }) {
       const maxDate = filtered.length > 0 ? filtered[filtered.length - 1].date : "";
       if (maxDate) {
         const cutoff = new Date(new Date(maxDate + "T00:00:00").getTime() - days * 86_400_000);
+        // Filtere nach gewonnenAm wenn vorhanden, sonst nach createdOn
         gewonnenFiltered = gewonnenAll.filter((l) => {
-          const parts = l.gewonnenAm!.split(" ")[0].split(".");
-          const d = new Date(+parts[2], +parts[1] - 1, +parts[0]);
-          return d >= cutoff;
+          if (l.gewonnenAm) {
+            const parts = l.gewonnenAm.split(" ")[0].split(".");
+            const d = new Date(+parts[2], +parts[1] - 1, +parts[0]);
+            return d >= cutoff;
+          }
+          return false;
         });
       }
     }
