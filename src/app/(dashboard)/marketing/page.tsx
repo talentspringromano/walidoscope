@@ -9,12 +9,6 @@ import { metaAds, totalMetaSpend, totalMetaLeads, avgCPL } from "@/data/meta-ads
 import { perspectiveVisits } from "@/data/perspective";
 import {
   indeedDaily,
-  indeedTotalSpend,
-  indeedTotalClicks,
-  indeedTotalApplications,
-  indeedAvgCPA,
-  indeedAvgCPC,
-  indeedOverallCTR,
   INDEED_CSV_HEADERS,
 } from "@/data/indeed";
 import type { IndeedDailyEntry } from "@/data/indeed";
@@ -619,7 +613,7 @@ function MarketingContent() {
 
       {/* ── Indeed Tab ── */}
       {activeTab === "indeed" && (
-        <IndeedTab />
+        <IndeedTab range={range} />
       )}
 
       {/* ── Kursnet Tab ── */}
@@ -754,7 +748,7 @@ function parseIndeedCSV(text: string): IndeedDailyEntry[] {
   }).filter((e) => e.date);
 }
 
-function IndeedTab() {
+function IndeedTab({ range }: { range: TimeRange }) {
   const fileRef = useRef<HTMLInputElement>(null);
   const [uploadState, setUploadState] = useState<"idle" | "preview" | "uploading" | "success" | "error">("idle");
   const [preview, setPreview] = useState<IndeedDailyEntry[]>([]);
@@ -810,8 +804,25 @@ function IndeedTab() {
     if (fileRef.current) fileRef.current.value = "";
   }, []);
 
-  // Chart data from current stored data
-  const chartData = indeedDaily.map((d) => ({
+  // Filter indeed data by range
+  const filtered = useMemo(() => {
+    if (range === "all") return indeedDaily;
+    const days = range === "7d" ? 7 : 30;
+    const maxDate = indeedDaily.reduce((max, d) => d.date > max ? d.date : max, "");
+    const cutoff = new Date(new Date(maxDate + "T00:00:00").getTime() - days * 86_400_000);
+    const cutoffStr = cutoff.toISOString().split("T")[0];
+    return indeedDaily.filter((d) => d.date >= cutoffStr);
+  }, [range]);
+
+  const totalSpend = filtered.reduce((s, d) => s + d.spend, 0);
+  const totalClicks = filtered.reduce((s, d) => s + d.clicks, 0);
+  const totalImpressions = filtered.reduce((s, d) => s + d.impressions, 0);
+  const totalApplications = filtered.reduce((s, d) => s + d.applications, 0);
+  const avgCPA = totalApplications > 0 ? totalSpend / totalApplications : 0;
+  const avgCPC = totalClicks > 0 ? totalSpend / totalClicks : 0;
+  const overallCTR = totalImpressions > 0 ? totalClicks / totalImpressions : 0;
+
+  const chartData = filtered.map((d) => ({
     date: new Date(d.date + "T00:00:00").toLocaleDateString("de-DE", { day: "numeric", month: "short" }),
     clicks: d.clicks,
     applications: d.applications,
@@ -819,18 +830,18 @@ function IndeedTab() {
     cpa: d.cpa,
   }));
 
-  const dateRange = indeedDaily.length > 0
-    ? `${new Date(indeedDaily[0].date).toLocaleDateString("de-DE")} – ${new Date(indeedDaily[indeedDaily.length - 1].date).toLocaleDateString("de-DE")}`
+  const dateRange = filtered.length > 0
+    ? `${new Date(filtered[0].date).toLocaleDateString("de-DE")} – ${new Date(filtered[filtered.length - 1].date).toLocaleDateString("de-DE")}`
     : "Keine Daten";
 
   return (
     <div className="space-y-6">
       {/* KPIs */}
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 stagger-in">
-        <KpiCard label="Gesamt-Spend" value={`€${indeedTotalSpend.toFixed(0)}`} sub={dateRange} accent />
-        <KpiCard label="Bewerbungen" value={indeedTotalApplications} sub={`Ø €${indeedAvgCPA.toFixed(2)} CPA`} />
-        <KpiCard label="Klicks" value={indeedTotalClicks.toLocaleString()} sub={`Ø €${indeedAvgCPC.toFixed(2)} CPC`} />
-        <KpiCard label="CTR" value={`${(indeedOverallCTR * 100).toFixed(1)}%`} sub={`${(indeedDaily.length)} Tage erfasst`} />
+        <KpiCard label="Gesamt-Spend" value={`€${totalSpend.toFixed(0)}`} sub={dateRange} accent />
+        <KpiCard label="Bewerbungen" value={totalApplications} sub={`Ø €${avgCPA.toFixed(2)} CPA`} />
+        <KpiCard label="Klicks" value={totalClicks.toLocaleString()} sub={`Ø €${avgCPC.toFixed(2)} CPC`} />
+        <KpiCard label="CTR" value={`${(overallCTR * 100).toFixed(1)}%`} sub={`${filtered.length} Tage erfasst`} />
       </div>
 
       {/* Klicks & Bewerbungen Chart */}
