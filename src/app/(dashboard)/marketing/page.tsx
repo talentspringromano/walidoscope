@@ -822,12 +822,27 @@ function IndeedTab({ range }: { range: TimeRange }) {
   const avgCPC = totalClicks > 0 ? totalSpend / totalClicks : 0;
   const overallCTR = totalImpressions > 0 ? totalClicks / totalImpressions : 0;
 
-  // Indeed-Leads aus CRM (gewonnen)
+  // Indeed-Leads aus CRM (gewonnen nach gewonnenAm-Datum gefiltert)
   const indeedLeads = useMemo(() => {
-    const all = filterLeadsByRange(leads.filter((l) => l.platform === "Indeed"), range);
-    const gewonnen = all.filter((l) => l.leadStatus === "Gewonnen");
-    return { total: all.length, gewonnen: gewonnen.length };
-  }, [range]);
+    const indeedAll = leads.filter((l) => l.platform === "Indeed");
+    const allFiltered = filterLeadsByRange(indeedAll, range);
+    const gewonnenAll = indeedAll.filter((l) => l.leadStatus === "Gewonnen" && l.gewonnenAm);
+
+    let gewonnenFiltered = gewonnenAll;
+    if (range !== "all") {
+      const days = range === "7d" ? 7 : 30;
+      const maxDate = filtered.length > 0 ? filtered[filtered.length - 1].date : "";
+      if (maxDate) {
+        const cutoff = new Date(new Date(maxDate + "T00:00:00").getTime() - days * 86_400_000);
+        gewonnenFiltered = gewonnenAll.filter((l) => {
+          const parts = l.gewonnenAm!.split(" ")[0].split(".");
+          const d = new Date(+parts[2], +parts[1] - 1, +parts[0]);
+          return d >= cutoff;
+        });
+      }
+    }
+    return { total: allFiltered.length, gewonnen: gewonnenFiltered.length };
+  }, [range, filtered]);
   const costPerWon = indeedLeads.gewonnen > 0 ? totalSpend / indeedLeads.gewonnen : 0;
 
   const chartData = filtered.map((d) => ({
