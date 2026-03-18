@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import { useSearchParams } from "next/navigation";
 import { KpiCard, SectionCard } from "@/components/kpi-card";
 import { TimeRangeFilter } from "@/components/time-range-filter";
 import { leads } from "@/data/leads";
@@ -83,15 +84,12 @@ const FILTER_PRESETS: { key: FilterPreset; label: string }[] = [
 ];
 
 type MarketingTab = "meta" | "indeed" | "kursnet";
-
-const MARKETING_TABS: { key: MarketingTab; label: string }[] = [
-  { key: "meta", label: "Meta" },
-  { key: "indeed", label: "Indeed" },
-  { key: "kursnet", label: "Kursnet" },
-];
+const VALID_TABS: MarketingTab[] = ["meta", "indeed", "kursnet"];
 
 export default function MarketingPage() {
-  const [activeTab, setActiveTab] = useState<MarketingTab>("meta");
+  const searchParams = useSearchParams();
+  const tabParam = searchParams.get("tab") as MarketingTab | null;
+  const activeTab: MarketingTab = tabParam && VALID_TABS.includes(tabParam) ? tabParam : "meta";
   const [sortKey, setSortKey] = useState<SortKey>("results");
   const [sortDir, setSortDir] = useState<SortDir>("desc");
   const [filter, setFilter] = useState<FilterPreset>("all");
@@ -251,23 +249,6 @@ export default function MarketingPage() {
           <p className="mt-1 text-[13px] text-[#57534e]">Ad Performance, Lead-Segmentierung & Kursnet Funnel</p>
         </div>
         <TimeRangeFilter value={range} onChange={setRange} />
-      </div>
-
-      {/* ── Tab Navigation ── */}
-      <div className="flex items-center gap-2">
-        {MARKETING_TABS.map((tab) => (
-          <button
-            key={tab.key}
-            onClick={() => setActiveTab(tab.key)}
-            className={`px-4 py-1.5 rounded-lg text-[12px] font-medium transition-all ${
-              activeTab === tab.key
-                ? "bg-[rgba(226,169,110,0.12)] text-[#e2a96e] border border-[rgba(226,169,110,0.25)]"
-                : "text-[#78716c] border border-[rgba(255,255,255,0.06)] hover:text-[#a8a29e] hover:bg-[rgba(255,255,255,0.03)]"
-            }`}
-          >
-            {tab.label}
-          </button>
-        ))}
       </div>
 
       {/* ── Meta Tab ── */}

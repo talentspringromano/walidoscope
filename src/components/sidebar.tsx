@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import {
@@ -16,13 +16,23 @@ import {
 
 const navItems = [
   { href: "/", label: "Übersicht", icon: LayoutDashboard },
-  { href: "/marketing", label: "Marketing", icon: Megaphone },
+  {
+    href: "/marketing",
+    label: "Marketing",
+    icon: Megaphone,
+    subItems: [
+      { href: "/marketing?tab=meta", label: "Meta", tab: "meta" },
+      { href: "/marketing?tab=indeed", label: "Indeed", tab: "indeed" },
+      { href: "/marketing?tab=kursnet", label: "Kursnet", tab: "kursnet" },
+    ],
+  },
   { href: "/sales", label: "Vertrieb", icon: HandshakeIcon },
   { href: "/seller", label: "Vertriebler", icon: Users },
 ];
 
 export function Sidebar() {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
   const router = useRouter();
   const [collapsed, setCollapsed] = useState(false);
 
@@ -78,35 +88,62 @@ export function Sidebar() {
         )}
 
         <nav className={`flex flex-1 flex-col gap-0.5 ${collapsed ? "px-0 items-center" : "px-1"}`}>
-          {navItems.map(({ href, label, icon: Icon }) => {
+          {navItems.map((item) => {
+            const { href, label, icon: Icon } = item;
+            const subItems = "subItems" in item ? item.subItems : undefined;
             const isActive =
               href === "/"
                 ? pathname === href
                 : pathname.startsWith(href);
 
+            const currentTab = searchParams.get("tab");
+
             return (
-              <Link
-                key={href}
-                href={href}
-                title={collapsed ? label : undefined}
-                className={`relative flex items-center rounded-xl text-[13px] font-medium transition-all duration-200 ${
-                  collapsed
-                    ? "justify-center w-10 h-10 p-0"
-                    : "gap-3 px-3 py-2.5"
-                } ${
-                  isActive
-                    ? "bg-[rgba(226,169,110,0.08)] text-[#e2a96e]"
-                    : "text-[#78716c] hover:bg-[rgba(255,255,255,0.03)] hover:text-[#a8a29e]"
-                }`}
-              >
-                {isActive && !collapsed && (
-                  <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-[2px]">
-                    <div className="active-dot" />
+              <div key={href}>
+                <Link
+                  href={subItems ? subItems[0].href : href}
+                  title={collapsed ? label : undefined}
+                  className={`relative flex items-center rounded-xl text-[13px] font-medium transition-all duration-200 ${
+                    collapsed
+                      ? "justify-center w-10 h-10 p-0"
+                      : "gap-3 px-3 py-2.5"
+                  } ${
+                    isActive
+                      ? "bg-[rgba(226,169,110,0.08)] text-[#e2a96e]"
+                      : "text-[#78716c] hover:bg-[rgba(255,255,255,0.03)] hover:text-[#a8a29e]"
+                  }`}
+                >
+                  {isActive && !collapsed && (
+                    <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-[2px]">
+                      <div className="active-dot" />
+                    </div>
+                  )}
+                  <Icon className="h-[18px] w-[18px] shrink-0" strokeWidth={1.8} />
+                  {!collapsed && label}
+                </Link>
+
+                {/* Sub-items */}
+                {subItems && isActive && !collapsed && (
+                  <div className="ml-[30px] mt-0.5 flex flex-col gap-0.5">
+                    {subItems.map((sub) => {
+                      const isSubActive = isActive && (currentTab === sub.tab || (!currentTab && sub.tab === "meta"));
+                      return (
+                        <Link
+                          key={sub.tab}
+                          href={sub.href}
+                          className={`px-3 py-1.5 rounded-lg text-[12px] font-medium transition-all duration-200 ${
+                            isSubActive
+                              ? "text-[#e2a96e] bg-[rgba(226,169,110,0.06)]"
+                              : "text-[#57534e] hover:text-[#a8a29e] hover:bg-[rgba(255,255,255,0.03)]"
+                          }`}
+                        >
+                          {sub.label}
+                        </Link>
+                      );
+                    })}
                   </div>
                 )}
-                <Icon className="h-[18px] w-[18px] shrink-0" strokeWidth={1.8} />
-                {!collapsed && label}
-              </Link>
+              </div>
             );
           })}
         </nav>
