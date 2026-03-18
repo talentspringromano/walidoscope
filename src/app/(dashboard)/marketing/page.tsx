@@ -11,6 +11,16 @@ import {
   indeedDaily,
   INDEED_CSV_HEADERS,
 } from "@/data/indeed";
+import {
+  metaExport,
+  metaExportTotalSpend,
+  metaExportTotalResults,
+  metaExportTotalImpressions,
+  metaExportTotalClicks,
+  metaExportAvgCPL,
+  META_CSV_HEADERS,
+} from "@/data/meta-export";
+import type { MetaExportEntry } from "@/data/meta-export";
 import type { IndeedDailyEntry } from "@/data/indeed";
 import { TOOLTIP_STYLE, AXIS_STYLE, PALETTE, SEGMENT_COLORS, FUNNEL_COLORS } from "@/components/chart-theme";
 import { ArrowUpDown, ArrowUp, ArrowDown, Upload, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
@@ -606,9 +616,7 @@ function MarketingContent() {
 
       {/* ── Meta Tab ── */}
       {activeTab === "meta" && (
-        <SectionCard title="Meta">
-          <p className="text-[13px] text-[#57534e]">Demnächst verfügbar — Meta-spezifische Daten werden hier angezeigt.</p>
-        </SectionCard>
+        <MetaTab />
       )}
 
       {/* ── Indeed Tab ── */}
@@ -723,6 +731,273 @@ function MarketingContent() {
           </div>
         </SectionCard>
       )}
+    </div>
+  );
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Meta Tab Component
+   ═══════════════════════════════════════════════════════════════ */
+
+function parseMetaCSV(text: string): MetaExportEntry[] {
+  const lines = text.trim().split("\n");
+  if (lines.length < 2) return [];
+  // Meta CSV uses quoted fields with commas inside — simple parse for quoted CSV
+  const parseLine = (line: string): string[] => {
+    const result: string[] = [];
+    let current = "";
+    let inQuotes = false;
+    for (const ch of line) {
+      if (ch === '"') { inQuotes = !inQuotes; continue; }
+      if (ch === "," && !inQuotes) { result.push(current.trim()); current = ""; continue; }
+      current += ch;
+    }
+    result.push(current.trim());
+    return result;
+  };
+  const headers = parseLine(lines[0]);
+  const keyMap = headers.map((h) => META_CSV_HEADERS[h]);
+
+  return lines.slice(1).filter((l) => l.trim()).map((line) => {
+    const vals = parseLine(line);
+    const entry: Record<string, string | number> = {};
+    keyMap.forEach((key, i) => {
+      if (!key) return;
+      const v = vals[i] ?? "";
+      if (["adName", "delivery", "qualityRanking", "engagementRanking", "conversionRanking", "adSetName", "reportingStarts", "reportingEnds"].includes(key)) {
+        entry[key] = v;
+      } else {
+        entry[key] = parseFloat(v) || 0;
+      }
+    });
+    return entry as unknown as MetaExportEntry;
+  }).filter((e) => e.adName);
+}
+
+function MetaTab() {
+  const fileRef = useRef<HTMLInputElement>(null);
+  const [uploadState, setUploadState] = useState<"idle" | "preview" | "uploading" | "success" | "error">("idle");
+  const [preview, setPreview] = useState<MetaExportEntry[]>([]);
+  const [errorMsg, setErrorMsg] = useState("");
+
+  const handleFile = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      try {
+        const parsed = parseMetaCSV(ev.target?.result as string);
+        if (parsed.length === 0) {
+          setErrorMsg("Keine gültigen Daten in der CSV gefunden.");
+          setUploadState("error");
+          return;
+        }
+        setPreview(parsed);
+        setUploadState("preview");
+      } catch {
+        setErrorMsg("CSV konnte nicht gelesen werden.");
+        setUploadState("error");
+      }
+    };
+    reader.readAsText(file);
+  }, []);
+
+  const handleUpload = useCallback(async () => {
+    setUploadState("uploading");
+    try {
+      const res = await fetch("/api/meta-import", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ data: preview }),
+      });
+      const result = await res.json();
+      if (!res.ok) {
+        setErrorMsg(result.error || "Upload fehlgeschlagen");
+        setUploadState("error");
+        return;
+      }
+      setUploadState("success");
+    } catch {
+      setErrorMsg("Netzwerkfehler beim Upload");
+      setUploadState("error");
+    }
+  }, [preview]);
+
+  const resetUpload = useCallback(() => {
+    setUploadState("idle");
+    setPreview([]);
+    setErrorMsg("");
+    if (fileRef.current) fileRef.current.value = "";
+  }, []);
+
+  // Gewonnen aus CRM
+  const metaGewonnen = leads.filter(
+    (l) => (l.platform === "Instagram" || l.platform === "Facebook") && l.leadStatus === "Gewonnen"
+  ).length;
+  const costPerWon = metaGewonnen > 0 ? metaExportTotalSpend / metaGewonnen : 0;
+
+  const activeAds = metaExport.filter((d) => d.delivery === "active").length;
+
+  // Sort by spend for chart
+  const chartData = [...metaExport]
+    .sort((a, b) => b.amountSpent - a.amountSpent)
+    .map((d) => ({
+      name: d.adName.length > 30 ? d.adName.slice(0, 30) + "…" : d.adName,
+      spend: d.amountSpent,
+      results: d.results,
+      cpl: d.costPerResult,
+    }));
+
+  return (
+    <div className="space-y-6">
+      {/* KPIs */}
+      <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 stagger-in">
+        <KpiCard label="Gewonnen" value={metaGewonnen} sub={`von ${leads.filter((l) => l.platform === "Instagram" || l.platform === "Facebook").length} Meta-Leads`} accent />
+        <KpiCard label="Cost per Won" value={costPerWon > 0 ? `${costPerWon.toFixed(2)} €` : "—"} sub={`${metaExportTotalSpend.toFixed(0)} € Spend ÷ ${metaGewonnen} Gewonnen`} />
+        <KpiCard label="Leads (Meta)" value={metaExportTotalResults} sub={`Ø ${metaExportAvgCPL.toFixed(2)} € CPL`} />
+      </div>
+      <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 stagger-in">
+        <KpiCard label="Gesamt-Spend" value={`${metaExportTotalSpend.toFixed(0)} €`} sub={`${metaExport.length} Creatives · ${activeAds} aktiv`} />
+        <KpiCard label="Impressions" value={metaExportTotalImpressions.toLocaleString()} sub={`${metaExportTotalClicks.toLocaleString()} Link-Klicks`} />
+        <KpiCard label="CTR (Link)" value={`${(metaExportTotalImpressions > 0 ? (metaExportTotalClicks / metaExportTotalImpressions) * 100 : 0).toFixed(2)}%`} sub={`${metaExport.length} Creatives`} />
+      </div>
+
+      {/* Creative Performance Table */}
+      <SectionCard title="Creative-Leistung">
+        <div className="overflow-x-auto">
+          <table className="w-full premium-table">
+            <thead>
+              <tr>
+                <th className="text-left pl-2">Creative</th>
+                <th className="text-left pl-2">Ad Set</th>
+                <th className="text-center">Status</th>
+                <th className="text-right pr-4">Spend</th>
+                <th className="text-right pr-4">Leads</th>
+                <th className="text-right pr-4">CPL</th>
+                <th className="text-right pr-4">Impr.</th>
+                <th className="text-right pr-4">Klicks</th>
+                <th className="text-right pr-4">Reach</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[...metaExport].sort((a, b) => b.amountSpent - a.amountSpent).map((ad) => (
+                <tr key={ad.adName}>
+                  <td className="pl-2 pr-4 text-[13px] font-medium text-[#fafaf9]">{ad.adName}</td>
+                  <td className="pl-2 pr-4 text-[12px] text-[#57534e]">{ad.adSetName}</td>
+                  <td className="text-center">
+                    <span className={`text-[10px] font-medium px-2 py-0.5 rounded-md ${
+                      ad.delivery === "active"
+                        ? "bg-[rgba(94,234,212,0.1)] text-[#5eead4]"
+                        : "bg-[rgba(255,255,255,0.04)] text-[#57534e]"
+                    }`}>
+                      {ad.delivery === "active" ? "Aktiv" : ad.delivery === "inactive" ? "Inaktiv" : "Gestoppt"}
+                    </span>
+                  </td>
+                  <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.amountSpent.toFixed(2)} €</td>
+                  <td className="text-right pr-4 tabular-nums font-medium text-[#e2a96e]">{ad.results}</td>
+                  <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.costPerResult > 0 ? `${ad.costPerResult.toFixed(2)} €` : "—"}</td>
+                  <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.impressions.toLocaleString()}</td>
+                  <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.linkClicks}</td>
+                  <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.reach.toLocaleString()}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </SectionCard>
+
+      {/* Spend & Leads Chart */}
+      <SectionCard title="Spend & Leads pro Creative">
+        <ResponsiveContainer width="100%" height={340}>
+          <BarChart data={chartData} barGap={4} layout="vertical">
+            <XAxis type="number" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+            <YAxis type="category" dataKey="name" {...AXIS_STYLE} width={200} axisLine={false} tickLine={false} interval={0} />
+            <Tooltip {...TOOLTIP_STYLE} formatter={(val, name) => {
+              if (name === "spend") return [`${(val as number).toFixed(2)} €`, "Spend"];
+              if (name === "cpl") return [`${(val as number).toFixed(2)} €`, "CPL"];
+              return [val, "Leads"];
+            }} />
+            <Bar dataKey="spend" fill={PALETTE.indigo} name="spend" radius={[0, 6, 6, 0]} />
+            <Bar dataKey="results" fill={PALETTE.teal} name="results" radius={[0, 6, 6, 0]} />
+          </BarChart>
+        </ResponsiveContainer>
+      </SectionCard>
+
+      {/* CSV Import */}
+      <SectionCard title="Daten-Import">
+        <div className="space-y-4">
+          <p className="text-[13px] text-[#57534e]">
+            Meta Ads CSV-Export hochladen um die Daten zu aktualisieren. Nach dem Import wird automatisch ein neuer Deploy ausgelöst.
+          </p>
+
+          {uploadState === "idle" && (
+            <label className="flex items-center gap-3 px-4 py-3 rounded-xl border border-dashed border-[rgba(255,255,255,0.1)] hover:border-[rgba(226,169,110,0.3)] hover:bg-[rgba(226,169,110,0.04)] transition-all cursor-pointer">
+              <Upload className="h-5 w-5 text-[#57534e]" />
+              <span className="text-[13px] text-[#a8a29e]">CSV-Datei auswählen</span>
+              <input ref={fileRef} type="file" accept=".csv" className="hidden" onChange={handleFile} />
+            </label>
+          )}
+
+          {uploadState === "preview" && (
+            <div className="space-y-3">
+              <div className="text-[13px] text-[#a8a29e]">{preview.length} Creatives erkannt</div>
+              <div className="overflow-x-auto max-h-[200px] overflow-y-auto rounded-lg border border-[rgba(255,255,255,0.06)]">
+                <table className="w-full premium-table text-[12px]">
+                  <thead>
+                    <tr>
+                      <th className="text-left pl-3">Creative</th>
+                      <th className="text-right pr-3">Spend</th>
+                      <th className="text-right pr-3">Leads</th>
+                      <th className="text-right pr-3">CPL</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {preview.map((row) => (
+                      <tr key={row.adName}>
+                        <td className="pl-3 text-[#a8a29e]">{row.adName}</td>
+                        <td className="text-right pr-3 tabular-nums text-[#78716c]">{row.amountSpent.toFixed(2)} €</td>
+                        <td className="text-right pr-3 tabular-nums text-[#e2a96e]">{row.results}</td>
+                        <td className="text-right pr-3 tabular-nums text-[#78716c]">{row.costPerResult > 0 ? `${row.costPerResult.toFixed(2)} €` : "—"}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <div className="flex items-center gap-3">
+                <button onClick={handleUpload} className="px-4 py-2 rounded-lg bg-[rgba(226,169,110,0.12)] text-[#e2a96e] text-[13px] font-medium border border-[rgba(226,169,110,0.25)] hover:bg-[rgba(226,169,110,0.2)] transition-all">
+                  Importieren & Deployen
+                </button>
+                <button onClick={resetUpload} className="px-4 py-2 rounded-lg text-[#78716c] text-[13px] font-medium border border-[rgba(255,255,255,0.06)] hover:text-[#a8a29e] transition-all">
+                  Abbrechen
+                </button>
+              </div>
+            </div>
+          )}
+
+          {uploadState === "uploading" && (
+            <div className="flex items-center gap-3 py-3">
+              <Loader2 className="h-5 w-5 text-[#e2a96e] animate-spin" />
+              <span className="text-[13px] text-[#a8a29e]">Daten werden importiert und committed…</span>
+            </div>
+          )}
+
+          {uploadState === "success" && (
+            <div className="flex items-center gap-3 py-3">
+              <CheckCircle className="h-5 w-5 text-[#5eead4]" />
+              <span className="text-[13px] text-[#5eead4]">Import erfolgreich! Deploy wird automatisch ausgelöst.</span>
+              <button onClick={resetUpload} className="text-[12px] text-[#57534e] hover:text-[#a8a29e] ml-2">Neuer Import</button>
+            </div>
+          )}
+
+          {uploadState === "error" && (
+            <div className="flex items-center gap-3 py-3">
+              <AlertCircle className="h-5 w-5 text-[#f87171]" />
+              <span className="text-[13px] text-[#f87171]">{errorMsg}</span>
+              <button onClick={resetUpload} className="text-[12px] text-[#57534e] hover:text-[#a8a29e] ml-2">Erneut versuchen</button>
+            </div>
+          )}
+        </div>
+      </SectionCard>
     </div>
   );
 }
