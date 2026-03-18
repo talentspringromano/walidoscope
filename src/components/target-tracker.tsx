@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { aircallSellers } from "@/data/aircall";
 import { formatDuration } from "@/data/aircall";
 import type { AircallDailyEntry, AircallSellerDailyEntry } from "@/data/aircall";
@@ -69,10 +69,25 @@ interface TargetTrackerProps {
 export function TargetTracker({ filteredDaily, filteredSellerDaily }: TargetTrackerProps) {
   const [activeSeller, setActiveSeller] = useState("all");
 
-  const daily =
+  // Fill in all calendar days (including weekends & zero-activity days)
+  const rawDaily =
     activeSeller === "all"
       ? filteredDaily
       : filteredSellerDaily.filter((e) => e.seller === activeSeller);
+
+  const daily = useMemo(() => {
+    if (rawDaily.length === 0) return rawDaily;
+    const byDate = new Map(rawDaily.map((d) => [d.date, d]));
+    const dates = rawDaily.map((d) => d.date).sort();
+    const start = new Date(dates[0] + "T00:00:00");
+    const end = new Date(dates[dates.length - 1] + "T00:00:00");
+    const filled: typeof rawDaily = [];
+    for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
+      const iso = d.toISOString().split("T")[0];
+      filled.push(byDate.get(iso) ?? { date: iso, dials: 0, reached: 0, calltimeSec: 0 } as typeof rawDaily[0]);
+    }
+    return filled;
+  }, [rawDaily]);
 
   const target = activeSeller === "all" ? DAILY_TARGET : DAILY_TARGET_PER_SELLER;
   const monthlyTarget = target * WORKING_DAYS_MONTH;
@@ -81,7 +96,7 @@ export function TargetTracker({ filteredDaily, filteredSellerDaily }: TargetTrac
 
   const totalDials = daily.reduce((s, d) => s + d.dials, 0);
   const totalReached = daily.reduce((s, d) => s + d.reached, 0);
-  const activeDays = daily.length;
+  const activeDays = daily.filter((d) => d.dials > 0).length || 1;
   const avgPerDay = Math.round(totalDials / activeDays);
 
   // Days remaining in the month (assume 20 working days total)
