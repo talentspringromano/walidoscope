@@ -82,7 +82,16 @@ const FILTER_PRESETS: { key: FilterPreset; label: string }[] = [
   { key: "deep-funnel", label: "Mit Gewonnen" },
 ];
 
+type MarketingTab = "meta" | "indeed" | "kursnet";
+
+const MARKETING_TABS: { key: MarketingTab; label: string }[] = [
+  { key: "meta", label: "Meta" },
+  { key: "indeed", label: "Indeed" },
+  { key: "kursnet", label: "Kursnet" },
+];
+
 export default function MarketingPage() {
+  const [activeTab, setActiveTab] = useState<MarketingTab>("meta");
   const [sortKey, setSortKey] = useState<SortKey>("results");
   const [sortDir, setSortDir] = useState<SortDir>("desc");
   const [filter, setFilter] = useState<FilterPreset>("all");
@@ -243,6 +252,26 @@ export default function MarketingPage() {
         </div>
         <TimeRangeFilter value={range} onChange={setRange} />
       </div>
+
+      {/* ── Tab Navigation ── */}
+      <div className="flex items-center gap-2">
+        {MARKETING_TABS.map((tab) => (
+          <button
+            key={tab.key}
+            onClick={() => setActiveTab(tab.key)}
+            className={`px-4 py-1.5 rounded-lg text-[12px] font-medium transition-all ${
+              activeTab === tab.key
+                ? "bg-[rgba(226,169,110,0.12)] text-[#e2a96e] border border-[rgba(226,169,110,0.25)]"
+                : "text-[#78716c] border border-[rgba(255,255,255,0.06)] hover:text-[#a8a29e] hover:bg-[rgba(255,255,255,0.03)]"
+            }`}
+          >
+            {tab.label}
+          </button>
+        ))}
+      </div>
+
+      {/* ── Meta Tab ── */}
+      {activeTab === "meta" && (<>
 
       {/* ── Soll-Ist-Vergleich ── */}
       <div className="space-y-6">
@@ -681,6 +710,22 @@ export default function MarketingPage() {
           </div>
         </div>
       </SectionCard>
+
+      </>)}
+
+      {/* ── Indeed Tab ── */}
+      {activeTab === "indeed" && (
+        <SectionCard title="Indeed">
+          <p className="text-[13px] text-[#57534e]">Demnächst verfügbar — Indeed-Daten werden hier angezeigt.</p>
+        </SectionCard>
+      )}
+
+      {/* ── Kursnet Tab ── */}
+      {activeTab === "kursnet" && (
+        <SectionCard title="Kursnet">
+          <p className="text-[13px] text-[#57534e]">Demnächst verfügbar — Kursnet-Daten werden hier angezeigt.</p>
+        </SectionCard>
+      )}
     </div>
   );
 }
