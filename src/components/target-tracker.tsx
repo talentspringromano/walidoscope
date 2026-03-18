@@ -75,19 +75,20 @@ export function TargetTracker({ filteredDaily, filteredSellerDaily }: TargetTrac
       ? filteredDaily
       : filteredSellerDaily.filter((e) => e.seller === activeSeller);
 
+  // Use global date range (across all sellers) so every seller shows the same x-axis
   const daily = useMemo(() => {
-    if (rawDaily.length === 0) return rawDaily;
+    const allDates = [...filteredDaily, ...filteredSellerDaily].map((d) => d.date).sort();
+    if (allDates.length === 0) return rawDaily;
     const byDate = new Map(rawDaily.map((d) => [d.date, d]));
-    const dates = rawDaily.map((d) => d.date).sort();
-    const start = new Date(dates[0] + "T00:00:00");
-    const end = new Date(dates[dates.length - 1] + "T00:00:00");
+    const start = new Date(allDates[0] + "T00:00:00");
+    const end = new Date(allDates[allDates.length - 1] + "T00:00:00");
     const filled: typeof rawDaily = [];
     for (let d = new Date(start); d <= end; d.setDate(d.getDate() + 1)) {
       const iso = d.toISOString().split("T")[0];
       filled.push(byDate.get(iso) ?? { date: iso, dials: 0, reached: 0, calltimeSec: 0 } as typeof rawDaily[0]);
     }
     return filled;
-  }, [rawDaily]);
+  }, [rawDaily, filteredDaily, filteredSellerDaily]);
 
   const target = activeSeller === "all" ? DAILY_TARGET : DAILY_TARGET_PER_SELLER;
   const monthlyTarget = target * WORKING_DAYS_MONTH;
