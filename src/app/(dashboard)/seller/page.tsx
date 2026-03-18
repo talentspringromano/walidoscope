@@ -27,7 +27,7 @@ import {
 import type { TimeRange } from "@/lib/date-utils";
 import { filterLeadsByRange, filterAircallDailyByRange, getAnchorDate, parseDE } from "@/lib/date-utils";
 
-const sellers = ["Walid Karimi", "Nele Pfau", "Bastian Wuske", "Eric Hardt", "Michel Grosser"];
+const sellers = ["Walid Karimi", "Nele Pfau", "Bastian Wuske", "Johannes Schultz"];
 
 function sellerStats(name: string, leadsSubset: typeof leads, filteredSellerDaily: AircallSellerDailyEntry[]) {
   const sellerLeads = leadsSubset.filter((l) => l.vertriebler === name);
