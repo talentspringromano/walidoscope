@@ -866,7 +866,7 @@ function IndeedTab({ range }: { range: TimeRange }) {
       {/* KPIs */}
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 stagger-in">
         <KpiCard label="Gewonnen" value={indeedLeads.gewonnen} sub={`von ${indeedLeads.total} Indeed-Leads`} accent />
-        <KpiCard label="Cost per Won" value={costPerWon > 0 ? `€${costPerWon.toFixed(2)}` : "—"} sub={`€${totalSpend.toFixed(0)} Spend ÷ ${indeedLeads.gewonnen} Gewonnen`} />
+        <KpiCard label="Cost per Won" value={costPerWon > 0 ? `${costPerWon.toFixed(2)}€` : "—"} sub={`${totalSpend.toFixed(0)}€ Spend ÷ ${indeedLeads.gewonnen} Gewonnen`} />
         <KpiCard label="Bewerbungen" value={totalApplications} sub={`Ø €${avgCPA.toFixed(2)} CPA`} />
       </div>
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-3 stagger-in">
