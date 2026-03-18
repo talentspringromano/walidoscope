@@ -15,8 +15,6 @@ import {
   YAxis,
   Tooltip,
   ResponsiveContainer,
-  PieChart,
-  Pie,
   Cell,
   FunnelChart,
   Funnel,
@@ -91,7 +89,7 @@ export default function MarketingPage() {
   const [range, setRange] = useState<TimeRange>("all");
   const [hiddenChannels, setHiddenChannels] = useState<Set<string>>(new Set());
   const {
-    channelData, segmentCounts, segmentData, allSegments, segmentWeeklyData,
+    channelData, segmentCounts, allSegments, segmentWeeklyData,
     creativeDeepFunnel, gewonnenKursnet, sqlKursnet, perspFunnelData, perspSummary,
     filteredLeads, channelWeeklyData, platformData, platformAggData,
   } = useMemo(() => {
@@ -108,8 +106,6 @@ export default function MarketingPage() {
       const seg = classifyLead(l);
       segmentCounts[seg] = (segmentCounts[seg] || 0) + 1;
     });
-    const segmentData = Object.entries(segmentCounts).map(([name, value]) => ({ name, value }));
-
     const allSegments = Object.keys(segmentCounts);
 
     const segmentWeekMap = new Map<number, Record<string, number>>();
@@ -200,7 +196,7 @@ export default function MarketingPage() {
       .sort((a, b) => b.count - a.count);
 
     return {
-      channelData, segmentCounts, segmentData, allSegments, segmentWeeklyData,
+      channelData, segmentCounts, allSegments, segmentWeeklyData,
       creativeDeepFunnel, gewonnenKursnet, sqlKursnet, perspFunnelData, perspSummary,
       filteredLeads, channelWeeklyData, platformData, platformAggData,
     };
@@ -539,7 +535,7 @@ export default function MarketingPage() {
         </div>
       </SectionCard>
 
-      <div className="grid gap-6 lg:grid-cols-2 stagger-in">
+      <div className="grid gap-6 lg:grid-cols-1 stagger-in">
         {/* Cost Analysis */}
         <SectionCard title="Spend & CPL pro Creative">
           <ResponsiveContainer width="100%" height={340}>
@@ -553,33 +549,6 @@ export default function MarketingPage() {
           </ResponsiveContainer>
         </SectionCard>
 
-        {/* Lead Segmentation Pie */}
-        <SectionCard title="Lead-Segmentierung">
-          <ResponsiveContainer width="100%" height={310}>
-            <PieChart>
-              <Pie
-                data={segmentData}
-                cx="50%"
-                cy="52%"
-                innerRadius={65}
-                outerRadius={105}
-                dataKey="value"
-                stroke="none"
-                label={({ name, value }) => `${name} (${value})`}
-                labelLine={{ stroke: "#44403c", strokeWidth: 1 }}
-                fontSize={11}
-              >
-                {segmentData.map((_, i) => (
-                  <Cell key={i} fill={SEGMENT_COLORS[i % SEGMENT_COLORS.length]} />
-                ))}
-              </Pie>
-              <Tooltip {...TOOLTIP_STYLE} />
-            </PieChart>
-          </ResponsiveContainer>
-          <div className="mt-3 text-[11px] text-[#57534e] leading-relaxed">
-            High-Touch = Arbeitslos + Vorerfahrung/Interesse · Low-Touch = Bald arbeitslos · Nicht qualifiziert = Aktuell nicht arbeitslos
-          </div>
-        </SectionCard>
       </div>
 
       {/* Lead-Segmentierung im Zeitverlauf */}
