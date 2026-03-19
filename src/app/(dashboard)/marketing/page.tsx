@@ -343,6 +343,8 @@ function MarketingContent() {
         {/* Leads pro Kanal im Zeitverlauf – Stacked Bar */}
         {channelWeeklyData.length > 0 && (() => {
           const chartData = channelTimeMode === "day" ? channelDailyData : channelTimeMode === "month" ? channelMonthlyData : channelWeeklyData;
+          const MQL_MONTHLY = 1000;
+          const mqlTarget = channelTimeMode === "month" ? MQL_MONTHLY : channelTimeMode === "week" ? Math.round(MQL_MONTHLY / 4.33) : Math.round(MQL_MONTHLY / 30);
           return (
         <div className="glass-card p-6">
           <div className="flex items-center justify-between mb-4">
@@ -395,7 +397,54 @@ function MarketingContent() {
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
               <XAxis dataKey="label" {...AXIS_STYLE} axisLine={false} tickLine={false} />
               <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} allowDecimals={false} />
-              <Tooltip {...TOOLTIP_STYLE} />
+              <Tooltip
+                {...TOOLTIP_STYLE}
+                content={({ active, payload, label }) => {
+                  if (!active || !payload?.length) return null;
+                  const total = payload.reduce((s, p) => s + (typeof p.value === "number" ? p.value : 0), 0);
+                  return (
+                    <div className="rounded-lg border border-[rgba(255,255,255,0.08)] bg-[#1c1917] px-3 py-2 shadow-xl">
+                      <div className="text-[11px] text-[#78716c] mb-1.5">{label}</div>
+                      {payload.map((p) => (
+                        <div key={p.name} className="flex items-center justify-between gap-4 text-[12px]">
+                          <span className="flex items-center gap-1.5">
+                            <span className="w-2 h-2 rounded-sm" style={{ background: p.color }} />
+                            <span className="text-[#a8a29e]">{p.name}</span>
+                          </span>
+                          <span className="font-semibold tabular-nums text-[#fafaf9]">{p.value}</span>
+                        </div>
+                      ))}
+                      <div className="mt-1.5 pt-1.5 border-t border-[rgba(255,255,255,0.08)] flex items-center justify-between gap-4 text-[12px]">
+                        <span className="text-[#a8a29e] font-medium">Gesamt</span>
+                        <span className="font-bold tabular-nums text-[#fafaf9]">{total}</span>
+                      </div>
+                      <div className="flex items-center justify-between gap-4 text-[12px]">
+                        <span className="text-[#e2a96e]">Ziel</span>
+                        <span className="font-semibold tabular-nums text-[#e2a96e]">{mqlTarget}</span>
+                      </div>
+                      <div className="flex items-center justify-between gap-4 text-[11px]">
+                        <span className="text-[#57534e]">Erreichung</span>
+                        <span className={`font-semibold tabular-nums ${total >= mqlTarget ? "text-[#5eead4]" : "text-[#ef4444]"}`}>
+                          {mqlTarget > 0 ? Math.round((total / mqlTarget) * 100) : 0}%
+                        </span>
+                      </div>
+                    </div>
+                  );
+                }}
+              />
+              <ReferenceLine
+                y={mqlTarget}
+                stroke="#e2a96e"
+                strokeDasharray="6 3"
+                strokeWidth={1.5}
+                label={{
+                  value: `Ziel: ${mqlTarget}`,
+                  position: "right",
+                  fill: "#e2a96e",
+                  fontSize: 11,
+                  fontWeight: 600,
+                }}
+              />
               {(["Meta", "Kursnet", "Indeed"] as const)
                 .filter((ch) => !hiddenChannels.has(ch))
                 .map((ch, i, arr) => (
