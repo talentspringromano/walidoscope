@@ -51,6 +51,7 @@ import {
   Line,
   Area,
   ComposedChart,
+  ReferenceArea,
 } from "recharts";
 import type { TimeRange } from "@/lib/date-utils";
 import {
@@ -201,7 +202,11 @@ function MarketingContent() {
       .map(([wk, counts]) => ({ label: `KW ${wk}`, ...counts }));
     const channelDailyData = Array.from(channelDayMap.entries())
       .sort((a, b) => a[0].localeCompare(b[0]))
-      .map(([day, counts]) => ({ label: `${day.slice(8)}.${day.slice(5, 7)}.`, ...counts }));
+      .map(([day, counts]) => {
+        const d = new Date(day + "T00:00:00");
+        const dow = d.getDay();
+        return { label: `${day.slice(8)}.${day.slice(5, 7)}.`, isWeekend: dow === 0 || dow === 6, ...counts };
+      });
     const channelMonthlyData = Array.from(channelMonthMap.entries())
       .sort((a, b) => a[0].localeCompare(b[0]))
       .map(([m, counts]) => {
@@ -405,6 +410,9 @@ function MarketingContent() {
           <ResponsiveContainer width="100%" height={300}>
             <BarChart data={chartData} barCategoryGap="20%">
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
+              {channelTimeMode === "day" && chartData.filter((d: Record<string, unknown>) => d.isWeekend).map((d: Record<string, unknown>) => (
+                <ReferenceArea key={d.label as string} x1={d.label as string} x2={d.label as string} fill="rgba(255,255,255,0.03)" fillOpacity={1} ifOverflow="visible" />
+              ))}
               <XAxis dataKey="label" {...AXIS_STYLE} axisLine={false} tickLine={false} />
               <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} allowDecimals={false} domain={[0, (max: number) => Math.max(max, mqlTarget * 1.1)]} />
               <Tooltip
