@@ -635,6 +635,48 @@ function MarketingContent() {
         <div className="glass-card p-6">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-[13px] font-semibold tracking-wide text-[#a8a29e]">Spend pro Kanal im Zeitverlauf</h3>
+            <div className="flex items-center gap-3">
+              <div className="flex items-center gap-1 bg-[rgba(255,255,255,0.04)] rounded-lg p-0.5">
+                {(["day", "week", "month"] as const).map((mode) => (
+                  <button
+                    key={mode}
+                    onClick={() => setChannelTimeMode(mode)}
+                    className={`px-2.5 py-1 rounded-md text-[11px] font-medium transition-all ${
+                      channelTimeMode === mode
+                        ? "bg-[rgba(226,169,110,0.12)] text-[#e2a96e] border border-[rgba(226,169,110,0.25)]"
+                        : "text-[#57534e] border border-transparent hover:text-[#a8a29e]"
+                    }`}
+                  >
+                    {mode === "day" ? "Tag" : mode === "week" ? "Woche" : "Monat"}
+                  </button>
+                ))}
+              </div>
+              {(["Meta", "Indeed"] as const).map((ch) => {
+                const active = !hiddenChannels.has(ch);
+                const color = ch === "Meta" ? PALETTE.indigo : PALETTE.amber;
+                return (
+                  <button
+                    key={ch}
+                    onClick={() =>
+                      setHiddenChannels((prev) => {
+                        const next = new Set(prev);
+                        next.has(ch) ? next.delete(ch) : next.add(ch);
+                        return next;
+                      })
+                    }
+                    className="px-3 py-1 rounded-lg text-[11px] font-medium transition-all border"
+                    style={{
+                      background: active ? `${color}18` : "transparent",
+                      borderColor: active ? `${color}40` : "rgba(255,255,255,0.06)",
+                      color: active ? color : "#57534e",
+                      opacity: active ? 1 : 0.5,
+                    }}
+                  >
+                    {ch}
+                  </button>
+                );
+              })}
+            </div>
           </div>
           <ResponsiveContainer width="100%" height={300}>
             <BarChart data={spendChartData} barCategoryGap="20%">
@@ -669,8 +711,17 @@ function MarketingContent() {
                   );
                 }}
               />
-              <Bar dataKey="Meta" stackId="spend" fill={PALETTE.indigo} />
-              <Bar dataKey="Indeed" stackId="spend" fill={PALETTE.amber} radius={[4, 4, 0, 0]} />
+              {(["Meta", "Indeed"] as const)
+                .filter((ch) => !hiddenChannels.has(ch))
+                .map((ch, i, arr) => (
+                  <Bar
+                    key={ch}
+                    dataKey={ch}
+                    stackId="spend"
+                    fill={ch === "Meta" ? PALETTE.indigo : PALETTE.amber}
+                    radius={i === arr.length - 1 ? [4, 4, 0, 0] : undefined}
+                  />
+                ))}
             </BarChart>
           </ResponsiveContainer>
         </div>
