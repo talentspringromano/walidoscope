@@ -829,21 +829,35 @@ function MetaTab() {
   }, []);
 
   // CRM-Performance pro Creative (adName)
+  type CrmCreativeRow = {
+    adName: string; total: number; gewonnen: number; verloren: number;
+    vertriebsqualifiziert: number; neuerLead: number; rueckruf: number;
+    reterminierung: number; gespraeche: number; offen: number; winRate: number;
+  };
+  type CrmSortKey = "total" | "gewonnen" | "winRate" | "verloren" | "vertriebsqualifiziert" | "gespraeche" | "rueckruf" | "reterminierung" | "neuerLead" | "offen";
+  const [crmSortKey, setCrmSortKey] = useState<CrmSortKey>("total");
+  const [crmSortDir, setCrmSortDir] = useState<"asc" | "desc">("desc");
+
+  const toggleCrmSort = useCallback((key: CrmSortKey) => {
+    if (crmSortKey === key) {
+      setCrmSortDir((d) => d === "asc" ? "desc" : "asc");
+    } else {
+      setCrmSortKey(key);
+      setCrmSortDir("desc");
+    }
+  }, [crmSortKey]);
+
   const crmByCreative = useMemo(() => {
     const metaLeads = leads.filter(
       (l) => (l.platform === "Instagram" || l.platform === "Facebook") && l.adName
     );
-    const map = new Map<string, {
-      adName: string; total: number; gewonnen: number; verloren: number;
-      vertriebsqualifiziert: number; neuerLead: number; rueckruf: number;
-      reterminierung: number; gespraeche: number;
-    }>();
+    const map = new Map<string, CrmCreativeRow>();
     metaLeads.forEach((l) => {
       const key = l.adName;
       const entry = map.get(key) ?? {
         adName: key, total: 0, gewonnen: 0, verloren: 0,
         vertriebsqualifiziert: 0, neuerLead: 0, rueckruf: 0,
-        reterminierung: 0, gespraeche: 0,
+        reterminierung: 0, gespraeche: 0, offen: 0, winRate: 0,
       };
       entry.total++;
       if (l.leadStatus === "Gewonnen") entry.gewonnen++;
@@ -855,8 +869,14 @@ function MetaTab() {
       else if (l.leadStatus === "Kennenlerngespräch gebucht" || l.leadStatus === "Beratungsgespräch gebucht") entry.gespraeche++;
       map.set(key, entry);
     });
-    return [...map.values()].sort((a, b) => b.total - a.total);
-  }, []);
+    const rows = [...map.values()].map((r) => ({
+      ...r,
+      offen: r.total - r.gewonnen - r.verloren,
+      winRate: r.total > 0 ? (r.gewonnen / r.total) * 100 : 0,
+    }));
+    rows.sort((a, b) => crmSortDir === "asc" ? a[crmSortKey] - b[crmSortKey] : b[crmSortKey] - a[crmSortKey]);
+    return rows;
+  }, [crmSortKey, crmSortDir]);
 
   // Sort by spend for chart
   const chartData = [...metaExport]
@@ -946,54 +966,96 @@ function MetaTab() {
       </SectionCard>
 
       {/* CRM-Performance pro Creative */}
-      {crmByCreative.length > 0 && (
-        <SectionCard title="CRM-Performance pro Creative">
-          <div className="overflow-x-auto rounded-lg border border-[rgba(255,255,255,0.06)]">
-            <table className="w-full premium-table text-[12px]">
-              <thead>
-                <tr>
-                  <th className="text-left pl-3">Creative</th>
-                  <th className="text-right pr-3">Leads</th>
-                  <th className="text-right pr-3">Gewonnen</th>
-                  <th className="text-right pr-3">Win-Rate</th>
-                  <th className="text-right pr-3">Verloren</th>
-                  <th className="text-right pr-3">VQ</th>
-                  <th className="text-right pr-3">Gespräche</th>
-                  <th className="text-right pr-3">Rückruf</th>
-                  <th className="text-right pr-3">Reterm.</th>
-                  <th className="text-right pr-3">Neu</th>
-                  <th className="text-right pr-3">Offen</th>
-                </tr>
-              </thead>
-              <tbody>
-                {crmByCreative.map((row) => {
-                  const offen = row.total - row.gewonnen - row.verloren;
-                  const winRate = row.total > 0 ? (row.gewonnen / row.total) * 100 : 0;
-                  return (
-                    <tr key={row.adName}>
-                      <td className="pl-3 text-[#a8a29e] font-medium max-w-[260px] truncate">{row.adName}</td>
-                      <td className="text-right pr-3 tabular-nums text-[#78716c] font-medium">{row.total}</td>
-                      <td className="text-right pr-3 tabular-nums font-semibold text-[#5eead4]">{row.gewonnen}</td>
-                      <td className="text-right pr-3 tabular-nums" style={{ color: winRate >= 5 ? "#5eead4" : winRate > 0 ? "#a8a29e" : "#57534e" }}>
-                        {winRate > 0 ? `${winRate.toFixed(1)}%` : "—"}
+      {crmByCreative.length > 0 && (() => {
+        const cols: { key: CrmSortKey; label: string; color: string }[] = [
+          { key: "total", label: "Leads", color: "#a8a29e" },
+          { key: "gewonnen", label: "Gewonnen", color: "#5eead4" },
+          { key: "winRate", label: "Win %", color: "#5eead4" },
+          { key: "verloren", label: "Verloren", color: "#f87171" },
+          { key: "vertriebsqualifiziert", label: "VQ", color: "#818cf8" },
+          { key: "gespraeche", label: "Gespräche", color: "#e2a96e" },
+          { key: "rueckruf", label: "Rückruf", color: "#78716c" },
+          { key: "reterminierung", label: "Reterm.", color: "#78716c" },
+          { key: "neuerLead", label: "Neu", color: "#78716c" },
+          { key: "offen", label: "Offen", color: "#fbbf24" },
+        ];
+        const maxTotal = Math.max(...crmByCreative.map((r) => r.total), 1);
+        return (
+          <SectionCard title="CRM-Performance pro Creative">
+            <div className="overflow-x-auto rounded-lg border border-[rgba(255,255,255,0.06)]">
+              <table className="w-full premium-table text-[12px]">
+                <thead>
+                  <tr>
+                    <th className="text-left pl-3">Creative</th>
+                    {cols.map((col) => (
+                      <th
+                        key={col.key}
+                        className="text-right pr-3 cursor-pointer select-none hover:text-[#e2a96e] transition-colors"
+                        onClick={() => toggleCrmSort(col.key)}
+                      >
+                        <span className="inline-flex items-center gap-1">
+                          {crmSortKey === col.key && (crmSortDir === "asc" ? <ChevronUp className="h-3 w-3" /> : <ChevronDown className="h-3 w-3" />)}
+                          {col.label}
+                        </span>
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {crmByCreative.map((row) => (
+                    <tr key={row.adName} className="group">
+                      <td className="pl-3 pr-4 relative">
+                        <div className="absolute inset-y-0 left-0 rounded-r-sm opacity-[0.07]" style={{ width: `${(row.total / maxTotal) * 100}%`, background: "linear-gradient(90deg, #818cf8, #5eead4)" }} />
+                        <span className="relative text-[#fafaf9] font-medium">{row.adName}</span>
                       </td>
-                      <td className="text-right pr-3 tabular-nums text-[#f87171]">{row.verloren || <span className="text-[#57534e]">0</span>}</td>
-                      <td className="text-right pr-3 tabular-nums text-[#818cf8]">{row.vertriebsqualifiziert || <span className="text-[#57534e]">0</span>}</td>
-                      <td className="text-right pr-3 tabular-nums text-[#e2a96e]">{row.gespraeche || <span className="text-[#57534e]">0</span>}</td>
-                      <td className="text-right pr-3 tabular-nums text-[#78716c]">{row.rueckruf || <span className="text-[#57534e]">0</span>}</td>
-                      <td className="text-right pr-3 tabular-nums text-[#78716c]">{row.reterminierung || <span className="text-[#57534e]">0</span>}</td>
-                      <td className="text-right pr-3 tabular-nums text-[#78716c]">{row.neuerLead || <span className="text-[#57534e]">0</span>}</td>
-                      <td className="text-right pr-3 tabular-nums" style={{ color: offen > 0 ? "#fbbf24" : "#57534e" }}>
-                        {offen}
+                      <td className="text-right pr-3 tabular-nums text-[#a8a29e] font-semibold">{row.total}</td>
+                      <td className="text-right pr-3 tabular-nums font-semibold text-[#5eead4]">{row.gewonnen || <span className="text-[#292524]">-</span>}</td>
+                      <td className="text-right pr-3 tabular-nums" style={{ color: row.winRate >= 5 ? "#5eead4" : row.winRate > 0 ? "#a8a29e" : "#292524" }}>
+                        {row.winRate > 0 ? `${row.winRate.toFixed(1)}%` : "-"}
+                      </td>
+                      <td className="text-right pr-3 tabular-nums">
+                        {row.verloren ? (
+                          <span className="text-[#f87171]">{row.verloren}</span>
+                        ) : <span className="text-[#292524]">-</span>}
+                      </td>
+                      <td className="text-right pr-3 tabular-nums">
+                        {row.vertriebsqualifiziert ? (
+                          <span className="text-[#818cf8]">{row.vertriebsqualifiziert}</span>
+                        ) : <span className="text-[#292524]">-</span>}
+                      </td>
+                      <td className="text-right pr-3 tabular-nums">
+                        {row.gespraeche ? (
+                          <span className="text-[#e2a96e]">{row.gespraeche}</span>
+                        ) : <span className="text-[#292524]">-</span>}
+                      </td>
+                      <td className="text-right pr-3 tabular-nums">
+                        {row.rueckruf ? (
+                          <span className="text-[#78716c]">{row.rueckruf}</span>
+                        ) : <span className="text-[#292524]">-</span>}
+                      </td>
+                      <td className="text-right pr-3 tabular-nums">
+                        {row.reterminierung ? (
+                          <span className="text-[#78716c]">{row.reterminierung}</span>
+                        ) : <span className="text-[#292524]">-</span>}
+                      </td>
+                      <td className="text-right pr-3 tabular-nums">
+                        {row.neuerLead ? (
+                          <span className="text-[#78716c]">{row.neuerLead}</span>
+                        ) : <span className="text-[#292524]">-</span>}
+                      </td>
+                      <td className="text-right pr-3 tabular-nums">
+                        {row.offen > 0 ? (
+                          <span className="px-1.5 py-0.5 rounded-md bg-[rgba(251,191,36,0.1)] text-[#fbbf24] font-medium">{row.offen}</span>
+                        ) : <span className="text-[#292524]">-</span>}
                       </td>
                     </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
-        </SectionCard>
-      )}
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </SectionCard>
+        );
+      })()}
 
       {/* CSV Import */}
       <SectionCard title="Daten-Import">
