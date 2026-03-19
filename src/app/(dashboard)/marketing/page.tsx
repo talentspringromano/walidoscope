@@ -828,14 +828,14 @@ function MetaTab() {
     return result;
   }, []);
 
-  // CRM-Performance pro Creative (adName)
+  // CRM-Performance pro Creative (adName) — exklusive Zuordnung wie Kohortentabelle
   const [crmSearch, setCrmSearch] = useState("");
   type CrmCreativeRow = {
     adName: string; total: number; gewonnen: number; verloren: number;
-    vertriebsqualifiziert: number; neuerLead: number; rueckruf: number;
-    reterminierung: number; gespraeche: number; offen: number; winRate: number;
+    sql: number; ht: number; lt: number; oProz: number;
+    nErreicht: number; nAngr: number; cr: number;
   };
-  type CrmSortKey = "total" | "gewonnen" | "winRate" | "verloren" | "vertriebsqualifiziert" | "gespraeche" | "rueckruf" | "reterminierung" | "neuerLead" | "offen";
+  type CrmSortKey = "total" | "gewonnen" | "verloren" | "cr" | "sql" | "ht" | "lt" | "oProz" | "nErreicht" | "nAngr";
   const [crmSortKey, setCrmSortKey] = useState<CrmSortKey>("total");
   const [crmSortDir, setCrmSortDir] = useState<"asc" | "desc">("desc");
 
@@ -857,23 +857,27 @@ function MetaTab() {
       const key = l.adName;
       const entry = map.get(key) ?? {
         adName: key, total: 0, gewonnen: 0, verloren: 0,
-        vertriebsqualifiziert: 0, neuerLead: 0, rueckruf: 0,
-        reterminierung: 0, gespraeche: 0, offen: 0, winRate: 0,
+        sql: 0, ht: 0, lt: 0, oProz: 0,
+        nErreicht: 0, nAngr: 0, cr: 0,
       };
       entry.total++;
+      // Exklusive Zuordnung (first match wins)
+      const isHT = l.prozessStarten.includes("High Touch") || l.betreuungsart === "High Touch";
+      const isLT = l.prozessStarten.includes("Low Touch") || l.betreuungsart === "Low Touch";
+      const isSQLStatus = ["Vertriebsqualifiziert", "Reterminierung", "Kennenlerngespräch gebucht", "Beratungsgespräch gebucht"].includes(l.leadStatus);
       if (l.leadStatus === "Gewonnen") entry.gewonnen++;
       else if (l.leadStatus === "Verloren") entry.verloren++;
-      else if (l.leadStatus === "Vertriebsqualifiziert") entry.vertriebsqualifiziert++;
-      else if (l.leadStatus === "Neuer Lead") entry.neuerLead++;
-      else if (l.leadStatus === "Rückruf") entry.rueckruf++;
-      else if (l.leadStatus === "Reterminierung") entry.reterminierung++;
-      else if (l.leadStatus === "Kennenlerngespräch gebucht" || l.leadStatus === "Beratungsgespräch gebucht") entry.gespraeche++;
+      else if (isHT) entry.ht++;
+      else if (isLT) entry.lt++;
+      else if (isSQLStatus) entry.oProz++;
+      else if (l.anrufversuch?.includes("nicht erreicht")) entry.nErreicht++;
+      else entry.nAngr++;
       map.set(key, entry);
     });
     const rows = [...map.values()].map((r) => ({
       ...r,
-      offen: r.total - r.gewonnen - r.verloren,
-      winRate: r.total > 0 ? (r.gewonnen / r.total) * 100 : 0,
+      sql: r.ht + r.lt + r.oProz,
+      cr: r.total > 0 ? (r.gewonnen / r.total) * 100 : 0,
     }));
     const filtered = crmSearch
       ? rows.filter((r) => r.adName.toLowerCase().includes(crmSearch.toLowerCase()))
@@ -973,15 +977,15 @@ function MetaTab() {
       {crmByCreative.length > 0 && (() => {
         const cols: { key: CrmSortKey; label: string; color: string }[] = [
           { key: "total", label: "Leads", color: "#a8a29e" },
-          { key: "gewonnen", label: "Gewonnen", color: "#5eead4" },
-          { key: "winRate", label: "Win %", color: "#5eead4" },
-          { key: "verloren", label: "Verloren", color: "#f87171" },
-          { key: "vertriebsqualifiziert", label: "VQ", color: "#818cf8" },
-          { key: "gespraeche", label: "Termin", color: "#e2a96e" },
-          { key: "rueckruf", label: "Rückruf", color: "#78716c" },
-          { key: "reterminierung", label: "Reterm.", color: "#78716c" },
-          { key: "neuerLead", label: "Neu", color: "#78716c" },
-          { key: "offen", label: "Offen", color: "#fbbf24" },
+          { key: "sql", label: "SQL", color: "#818cf8" },
+          { key: "gewonnen", label: "Won", color: "#5eead4" },
+          { key: "verloren", label: "Lost", color: "#f87171" },
+          { key: "cr", label: "CR %", color: "#5eead4" },
+          { key: "ht", label: "HT", color: "#e2a96e" },
+          { key: "lt", label: "LT", color: "#a78bfa" },
+          { key: "oProz", label: "o. Proz.", color: "#78716c" },
+          { key: "nErreicht", label: "n. err.", color: "#57534e" },
+          { key: "nAngr", label: "n. angr.", color: "#57534e" },
         ];
         const maxTotal = Math.max(...crmByCreative.map((r) => r.total), 1);
         return (
@@ -1016,54 +1020,34 @@ function MetaTab() {
                   </tr>
                 </thead>
                 <tbody>
-                  {crmByCreative.map((row) => (
-                    <tr key={row.adName} className="group">
-                      <td className="pl-3 pr-4 relative">
-                        <div className="absolute inset-y-0 left-0 rounded-r-sm opacity-[0.07]" style={{ width: `${(row.total / maxTotal) * 100}%`, background: "linear-gradient(90deg, #818cf8, #5eead4)" }} />
-                        <span className="relative text-[#fafaf9] font-medium">{row.adName}</span>
-                      </td>
-                      <td className="text-right pr-3 tabular-nums text-[#a8a29e] font-semibold">{row.total}</td>
-                      <td className="text-right pr-3 tabular-nums font-semibold text-[#5eead4]">{row.gewonnen || <span className="text-[#292524]">-</span>}</td>
-                      <td className="text-right pr-3 tabular-nums" style={{ color: row.winRate >= 5 ? "#5eead4" : row.winRate > 0 ? "#a8a29e" : "#292524" }}>
-                        {row.winRate > 0 ? `${row.winRate.toFixed(1)}%` : "-"}
-                      </td>
-                      <td className="text-right pr-3 tabular-nums">
-                        {row.verloren ? (
-                          <span className="text-[#f87171]">{row.verloren}</span>
-                        ) : <span className="text-[#292524]">-</span>}
-                      </td>
-                      <td className="text-right pr-3 tabular-nums">
-                        {row.vertriebsqualifiziert ? (
-                          <span className="text-[#818cf8]">{row.vertriebsqualifiziert}</span>
-                        ) : <span className="text-[#292524]">-</span>}
-                      </td>
-                      <td className="text-right pr-3 tabular-nums">
-                        {row.gespraeche ? (
-                          <span className="text-[#e2a96e]">{row.gespraeche}</span>
-                        ) : <span className="text-[#292524]">-</span>}
-                      </td>
-                      <td className="text-right pr-3 tabular-nums">
-                        {row.rueckruf ? (
-                          <span className="text-[#78716c]">{row.rueckruf}</span>
-                        ) : <span className="text-[#292524]">-</span>}
-                      </td>
-                      <td className="text-right pr-3 tabular-nums">
-                        {row.reterminierung ? (
-                          <span className="text-[#78716c]">{row.reterminierung}</span>
-                        ) : <span className="text-[#292524]">-</span>}
-                      </td>
-                      <td className="text-right pr-3 tabular-nums">
-                        {row.neuerLead ? (
-                          <span className="text-[#78716c]">{row.neuerLead}</span>
-                        ) : <span className="text-[#292524]">-</span>}
-                      </td>
-                      <td className="text-right pr-3 tabular-nums">
-                        {row.offen > 0 ? (
-                          <span className="px-1.5 py-0.5 rounded-md bg-[rgba(251,191,36,0.1)] text-[#fbbf24] font-medium">{row.offen}</span>
-                        ) : <span className="text-[#292524]">-</span>}
-                      </td>
-                    </tr>
-                  ))}
+                  {crmByCreative.map((row) => {
+                    const cell = (val: number, color: string, badge?: boolean) =>
+                      val ? (
+                        badge
+                          ? <span className="px-1.5 py-0.5 rounded-md font-medium" style={{ background: `${color}18`, color }}>{val}</span>
+                          : <span style={{ color }}>{val}</span>
+                      ) : <span className="text-[#292524]">-</span>;
+                    return (
+                      <tr key={row.adName}>
+                        <td className="pl-3 pr-4 relative">
+                          <div className="absolute inset-y-0 left-0 rounded-r-sm opacity-[0.07]" style={{ width: `${(row.total / maxTotal) * 100}%`, background: "linear-gradient(90deg, #818cf8, #5eead4)" }} />
+                          <span className="relative text-[#fafaf9] font-medium">{row.adName}</span>
+                        </td>
+                        <td className="text-right pr-3 tabular-nums text-[#a8a29e] font-semibold">{row.total}</td>
+                        <td className="text-right pr-3 tabular-nums">{cell(row.sql, "#818cf8", true)}</td>
+                        <td className="text-right pr-3 tabular-nums font-semibold">{cell(row.gewonnen, "#5eead4")}</td>
+                        <td className="text-right pr-3 tabular-nums">{cell(row.verloren, "#f87171")}</td>
+                        <td className="text-right pr-3 tabular-nums" style={{ color: row.cr >= 5 ? "#5eead4" : row.cr > 0 ? "#a8a29e" : "#292524" }}>
+                          {row.cr > 0 ? `${row.cr.toFixed(1)}%` : "-"}
+                        </td>
+                        <td className="text-right pr-3 tabular-nums">{cell(row.ht, "#e2a96e")}</td>
+                        <td className="text-right pr-3 tabular-nums">{cell(row.lt, "#a78bfa")}</td>
+                        <td className="text-right pr-3 tabular-nums">{cell(row.oProz, "#78716c")}</td>
+                        <td className="text-right pr-3 tabular-nums">{cell(row.nErreicht, "#57534e")}</td>
+                        <td className="text-right pr-3 tabular-nums">{cell(row.nAngr, "#57534e")}</td>
+                      </tr>
+                    );
+                  })}
                 </tbody>
               </table>
             </div>
