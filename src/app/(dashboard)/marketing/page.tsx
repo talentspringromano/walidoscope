@@ -12,6 +12,16 @@ import {
   INDEED_CSV_HEADERS,
 } from "@/data/indeed";
 import {
+  indeedBundesland,
+  INDEED_BL_CSV_HEADERS,
+} from "@/data/indeed-bundesland";
+import type { IndeedBundeslandEntry } from "@/data/indeed-bundesland";
+import {
+  indeedStellen,
+  INDEED_STELLEN_CSV_HEADERS,
+} from "@/data/indeed-stellen";
+import type { IndeedStelleEntry } from "@/data/indeed-stellen";
+import {
   metaExport,
   metaExportTotalSpend,
   metaExportTotalResults,
@@ -968,12 +978,143 @@ function parseIndeedCSV(text: string): IndeedDailyEntry[] {
   }).filter((e) => e.date);
 }
 
+/** Quoted-field-aware CSV parser (handles commas inside quotes) */
+function parseCSVLine(line: string): string[] {
+  const result: string[] = [];
+  let current = "";
+  let inQuotes = false;
+  for (const ch of line) {
+    if (ch === '"') { inQuotes = !inQuotes; continue; }
+    if (ch === "," && !inQuotes) { result.push(current.trim()); current = ""; continue; }
+    current += ch;
+  }
+  result.push(current.trim());
+  return result;
+}
+
+function parseIndeedBundeslandCSV(text: string): IndeedBundeslandEntry[] {
+  const lines = text.trim().split("\n");
+  if (lines.length < 2) return [];
+  const headers = parseCSVLine(lines[0]);
+  const keyMap = headers.map((h) => INDEED_BL_CSV_HEADERS[h.trim()]);
+
+  return lines.slice(1).map((line) => {
+    const vals = parseCSVLine(line);
+    const entry: Record<string, string | number> = {};
+    keyMap.forEach((key, i) => {
+      if (!key) return;
+      entry[key] = key === "bundesland" ? vals[i].trim() : parseFloat(vals[i]) || 0;
+    });
+    return entry as unknown as IndeedBundeslandEntry;
+  }).filter((e) => e.bundesland);
+}
+
+function parseIndeedStellenCSV(text: string): IndeedStelleEntry[] {
+  const lines = text.trim().split("\n");
+  if (lines.length < 2) return [];
+  const headers = parseCSVLine(lines[0]);
+  const keyMap = headers.map((h) => INDEED_STELLEN_CSV_HEADERS[h.trim()]);
+
+  return lines.slice(1).map((line) => {
+    const vals = parseCSVLine(line);
+    const entry: Record<string, string | number> = {};
+    keyMap.forEach((key, i) => {
+      if (!key) return;
+      const strKeys = ["stelle", "bundesland", "stadt"];
+      entry[key] = strKeys.includes(key) ? vals[i].trim() : parseFloat(vals[i]) || 0;
+    });
+    return entry as unknown as IndeedStelleEntry;
+  }).filter((e) => e.stelle);
+}
+
+/** Reusable upload section component */
+function IndeedUploadSection({ title, description, countLabel, fileRef, uploadState, preview, errorMsg, onFile, onUpload, onReset, previewTable }: {
+  title: string;
+  description: string;
+  countLabel: string;
+  fileRef: React.RefObject<HTMLInputElement | null>;
+  uploadState: "idle" | "preview" | "uploading" | "success" | "error";
+  preview: unknown[];
+  errorMsg: string;
+  onFile: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onUpload: () => void;
+  onReset: () => void;
+  previewTable: React.ReactNode;
+}) {
+  return (
+    <div className="space-y-3">
+      <h4 className="text-[13px] font-medium text-[#a8a29e]">{title}</h4>
+      <p className="text-[12px] text-[#57534e]">{description}</p>
+
+      {uploadState === "idle" && (
+        <label className="flex items-center gap-3 px-4 py-3 rounded-xl border border-dashed border-[rgba(255,255,255,0.1)] hover:border-[rgba(226,169,110,0.3)] hover:bg-[rgba(226,169,110,0.04)] transition-all cursor-pointer">
+          <Upload className="h-4 w-4 text-[#57534e]" />
+          <span className="text-[12px] text-[#a8a29e]">CSV-Datei auswählen</span>
+          <input ref={fileRef} type="file" accept=".csv" className="hidden" onChange={onFile} />
+        </label>
+      )}
+
+      {uploadState === "preview" && (
+        <div className="space-y-3">
+          <div className="text-[12px] text-[#a8a29e]">{preview.length} {countLabel} erkannt</div>
+          {previewTable}
+          <div className="flex items-center gap-3">
+            <button onClick={onUpload} className="px-4 py-2 rounded-lg bg-[rgba(226,169,110,0.12)] text-[#e2a96e] text-[12px] font-medium border border-[rgba(226,169,110,0.25)] hover:bg-[rgba(226,169,110,0.2)] transition-all">
+              Importieren & Deployen
+            </button>
+            <button onClick={onReset} className="px-4 py-2 rounded-lg text-[#78716c] text-[12px] font-medium border border-[rgba(255,255,255,0.06)] hover:text-[#a8a29e] transition-all">
+              Abbrechen
+            </button>
+          </div>
+        </div>
+      )}
+
+      {uploadState === "uploading" && (
+        <div className="flex items-center gap-3 py-2">
+          <Loader2 className="h-4 w-4 text-[#e2a96e] animate-spin" />
+          <span className="text-[12px] text-[#a8a29e]">Daten werden importiert…</span>
+        </div>
+      )}
+
+      {uploadState === "success" && (
+        <div className="flex items-center gap-3 py-2">
+          <CheckCircle className="h-4 w-4 text-[#5eead4]" />
+          <span className="text-[12px] text-[#5eead4]">Import erfolgreich!</span>
+          <button onClick={onReset} className="text-[11px] text-[#57534e] hover:text-[#a8a29e] ml-2">Neuer Import</button>
+        </div>
+      )}
+
+      {uploadState === "error" && (
+        <div className="flex items-center gap-3 py-2">
+          <AlertCircle className="h-4 w-4 text-[#f87171]" />
+          <span className="text-[12px] text-[#f87171]">{errorMsg}</span>
+          <button onClick={onReset} className="text-[11px] text-[#57534e] hover:text-[#a8a29e] ml-2">Erneut versuchen</button>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function IndeedTab({ range }: { range: TimeRange }) {
+  /* ── Daily upload state ── */
   const fileRef = useRef<HTMLInputElement>(null);
   const [uploadState, setUploadState] = useState<"idle" | "preview" | "uploading" | "success" | "error">("idle");
   const [preview, setPreview] = useState<IndeedDailyEntry[]>([]);
   const [errorMsg, setErrorMsg] = useState("");
 
+  /* ── Bundesland upload state ── */
+  const blFileRef = useRef<HTMLInputElement>(null);
+  const [blUploadState, setBlUploadState] = useState<"idle" | "preview" | "uploading" | "success" | "error">("idle");
+  const [blPreview, setBlPreview] = useState<IndeedBundeslandEntry[]>([]);
+  const [blErrorMsg, setBlErrorMsg] = useState("");
+
+  /* ── Stellen upload state ── */
+  const stFileRef = useRef<HTMLInputElement>(null);
+  const [stUploadState, setStUploadState] = useState<"idle" | "preview" | "uploading" | "success" | "error">("idle");
+  const [stPreview, setStPreview] = useState<IndeedStelleEntry[]>([]);
+  const [stErrorMsg, setStErrorMsg] = useState("");
+
+  /* ── Daily handlers ── */
   const handleFile = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -981,17 +1122,10 @@ function IndeedTab({ range }: { range: TimeRange }) {
     reader.onload = (ev) => {
       try {
         const parsed = parseIndeedCSV(ev.target?.result as string);
-        if (parsed.length === 0) {
-          setErrorMsg("Keine gültigen Daten in der CSV gefunden.");
-          setUploadState("error");
-          return;
-        }
+        if (parsed.length === 0) { setErrorMsg("Keine gültigen Daten in der CSV gefunden."); setUploadState("error"); return; }
         setPreview(parsed);
         setUploadState("preview");
-      } catch {
-        setErrorMsg("CSV konnte nicht gelesen werden.");
-        setUploadState("error");
-      }
+      } catch { setErrorMsg("CSV konnte nicht gelesen werden."); setUploadState("error"); }
     };
     reader.readAsText(file);
   }, []);
@@ -999,29 +1133,78 @@ function IndeedTab({ range }: { range: TimeRange }) {
   const handleUpload = useCallback(async () => {
     setUploadState("uploading");
     try {
-      const res = await fetch("/api/indeed-import", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ data: preview }),
-      });
+      const res = await fetch("/api/indeed-import", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ data: preview }) });
       const result = await res.json();
-      if (!res.ok) {
-        setErrorMsg(result.error || "Upload fehlgeschlagen");
-        setUploadState("error");
-        return;
-      }
+      if (!res.ok) { setErrorMsg(result.error || "Upload fehlgeschlagen"); setUploadState("error"); return; }
       setUploadState("success");
-    } catch {
-      setErrorMsg("Netzwerkfehler beim Upload");
-      setUploadState("error");
-    }
+    } catch { setErrorMsg("Netzwerkfehler beim Upload"); setUploadState("error"); }
   }, [preview]);
 
   const resetUpload = useCallback(() => {
-    setUploadState("idle");
-    setPreview([]);
-    setErrorMsg("");
+    setUploadState("idle"); setPreview([]); setErrorMsg("");
     if (fileRef.current) fileRef.current.value = "";
+  }, []);
+
+  /* ── Bundesland handlers ── */
+  const handleBlFile = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      try {
+        const parsed = parseIndeedBundeslandCSV(ev.target?.result as string);
+        if (parsed.length === 0) { setBlErrorMsg("Keine gültigen Daten in der CSV gefunden."); setBlUploadState("error"); return; }
+        setBlPreview(parsed);
+        setBlUploadState("preview");
+      } catch { setBlErrorMsg("CSV konnte nicht gelesen werden."); setBlUploadState("error"); }
+    };
+    reader.readAsText(file);
+  }, []);
+
+  const handleBlUpload = useCallback(async () => {
+    setBlUploadState("uploading");
+    try {
+      const res = await fetch("/api/indeed-bundesland-import", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ data: blPreview }) });
+      const result = await res.json();
+      if (!res.ok) { setBlErrorMsg(result.error || "Upload fehlgeschlagen"); setBlUploadState("error"); return; }
+      setBlUploadState("success");
+    } catch { setBlErrorMsg("Netzwerkfehler beim Upload"); setBlUploadState("error"); }
+  }, [blPreview]);
+
+  const resetBlUpload = useCallback(() => {
+    setBlUploadState("idle"); setBlPreview([]); setBlErrorMsg("");
+    if (blFileRef.current) blFileRef.current.value = "";
+  }, []);
+
+  /* ── Stellen handlers ── */
+  const handleStFile = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = (ev) => {
+      try {
+        const parsed = parseIndeedStellenCSV(ev.target?.result as string);
+        if (parsed.length === 0) { setStErrorMsg("Keine gültigen Daten in der CSV gefunden."); setStUploadState("error"); return; }
+        setStPreview(parsed);
+        setStUploadState("preview");
+      } catch { setStErrorMsg("CSV konnte nicht gelesen werden."); setStUploadState("error"); }
+    };
+    reader.readAsText(file);
+  }, []);
+
+  const handleStUpload = useCallback(async () => {
+    setStUploadState("uploading");
+    try {
+      const res = await fetch("/api/indeed-stellen-import", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ data: stPreview }) });
+      const result = await res.json();
+      if (!res.ok) { setStErrorMsg(result.error || "Upload fehlgeschlagen"); setStUploadState("error"); return; }
+      setStUploadState("success");
+    } catch { setStErrorMsg("Netzwerkfehler beim Upload"); setStUploadState("error"); }
+  }, [stPreview]);
+
+  const resetStUpload = useCallback(() => {
+    setStUploadState("idle"); setStPreview([]); setStErrorMsg("");
+    if (stFileRef.current) stFileRef.current.value = "";
   }, []);
 
   // Filter indeed data by range
@@ -1054,7 +1237,6 @@ function IndeedTab({ range }: { range: TimeRange }) {
       const maxDate = filtered.length > 0 ? filtered[filtered.length - 1].date : "";
       if (maxDate) {
         const cutoff = new Date(new Date(maxDate + "T00:00:00").getTime() - days * 86_400_000);
-        // Filtere nach gewonnenAm wenn vorhanden, sonst nach createdOn
         gewonnenFiltered = gewonnenAll.filter((l) => {
           if (l.gewonnenAm) {
             const parts = l.gewonnenAm.split(" ")[0].split(".");
@@ -1080,6 +1262,75 @@ function IndeedTab({ range }: { range: TimeRange }) {
   const dateRange = filtered.length > 0
     ? `${new Date(filtered[0].date).toLocaleDateString("de-DE")} – ${new Date(filtered[filtered.length - 1].date).toLocaleDateString("de-DE")}`
     : "Keine Daten";
+
+  /* ── Bundesland-Ranking (sorted by applications desc) ── */
+  const blSorted = useMemo(() =>
+    [...indeedBundesland].sort((a, b) => b.applications - a.applications),
+  []);
+
+  const blChartData = blSorted.map((d) => ({
+    bundesland: d.bundesland.length > 20 ? d.bundesland.slice(0, 18) + "…" : d.bundesland,
+    applications: d.applications,
+    spend: d.spend,
+    cpa: d.applications > 0 ? d.spend / d.applications : 0,
+    clicks: d.clicks,
+    impressions: d.impressions,
+  }));
+
+  /* ── Bundesland KPIs ── */
+  const blKpis = useMemo(() => {
+    if (indeedBundesland.length === 0) return null;
+    const withApps = indeedBundesland.filter((d) => d.applications > 0);
+    const bestCPA = withApps.length > 0 ? withApps.reduce((best, d) => (d.cpa < best.cpa && d.cpa > 0) ? d : best, withApps[0]) : null;
+    const mostApps = indeedBundesland.reduce((best, d) => d.applications > best.applications ? d : best, indeedBundesland[0]);
+    const bestAR = indeedBundesland.reduce((best, d) => d.ar > best.ar ? d : best, indeedBundesland[0]);
+    const worstAR = indeedBundesland.filter((d) => d.clicks > 0).reduce((worst, d) => d.ar < worst.ar ? d : worst, indeedBundesland[0]);
+    return { bestCPA, mostApps, bestAR, worstAR };
+  }, []);
+
+  /* ── Funnel/Conversion table per Bundesland ── */
+  const blAvgCTR = useMemo(() => {
+    const totalImp = indeedBundesland.reduce((s, d) => s + d.impressions, 0);
+    const totalCl = indeedBundesland.reduce((s, d) => s + d.clicks, 0);
+    return totalImp > 0 ? totalCl / totalImp : 0;
+  }, []);
+  const blAvgASR = useMemo(() => {
+    const totalCl = indeedBundesland.reduce((s, d) => s + d.clicks, 0);
+    const totalSt = indeedBundesland.reduce((s, d) => s + d.startedApplications, 0);
+    return totalCl > 0 ? totalSt / totalCl : 0;
+  }, []);
+  const blAvgCR = useMemo(() => {
+    const totalSt = indeedBundesland.reduce((s, d) => s + d.startedApplications, 0);
+    const totalAp = indeedBundesland.reduce((s, d) => s + d.applications, 0);
+    return totalSt > 0 ? totalAp / totalSt : 0;
+  }, []);
+  const blAvgAR = useMemo(() => {
+    const totalCl = indeedBundesland.reduce((s, d) => s + d.clicks, 0);
+    const totalAp = indeedBundesland.reduce((s, d) => s + d.applications, 0);
+    return totalCl > 0 ? totalAp / totalCl : 0;
+  }, []);
+
+  /* ── Wochen-Kohorten aus täglichen Daten ── */
+  const weeklyData = useMemo(() => {
+    const weeks: Record<string, { kw: string; clicks: number; applications: number; spend: number; impressions: number }> = {};
+    filtered.forEach((d) => {
+      const date = new Date(d.date + "T00:00:00");
+      const wk = `KW ${getISOWeek(date)}`;
+      if (!weeks[wk]) weeks[wk] = { kw: wk, clicks: 0, applications: 0, spend: 0, impressions: 0 };
+      weeks[wk].clicks += d.clicks;
+      weeks[wk].applications += d.applications;
+      weeks[wk].spend += d.spend;
+      weeks[wk].impressions += d.impressions;
+    });
+    return Object.values(weeks).map((w) => ({
+      ...w,
+      cpa: w.applications > 0 ? w.spend / w.applications : 0,
+    }));
+  }, [filtered]);
+
+  /** Color helper for conversion rates */
+  const rateColor = (val: number, avg: number) =>
+    val >= avg * 1.1 ? "#5eead4" : val <= avg * 0.9 ? "#f87171" : "#a8a29e";
 
   return (
     <div className="space-y-6">
@@ -1125,29 +1376,143 @@ function IndeedTab({ range }: { range: TimeRange }) {
         </ResponsiveContainer>
       </SectionCard>
 
-      {/* CSV Import */}
+      {/* ── Bundesland KPIs ── */}
+      {blKpis && indeedBundesland.length > 0 && (
+        <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 stagger-in">
+          <KpiCard
+            label="Günstigster CPA"
+            value={blKpis.bestCPA ? `${blKpis.bestCPA.cpa.toFixed(2)} €` : "—"}
+            sub={blKpis.bestCPA?.bundesland ?? ""}
+            accent
+          />
+          <KpiCard
+            label="Meiste Bewerbungen"
+            value={blKpis.mostApps.applications}
+            sub={blKpis.mostApps.bundesland}
+          />
+          <KpiCard
+            label="Höchste Bew.-Rate"
+            value={`${(blKpis.bestAR.ar * 100).toFixed(1)}%`}
+            sub={blKpis.bestAR.bundesland}
+          />
+          <KpiCard
+            label="Niedrigste Bew.-Rate"
+            value={`${(blKpis.worstAR.ar * 100).toFixed(1)}%`}
+            sub={blKpis.worstAR.bundesland}
+          />
+        </div>
+      )}
+
+      {/* ── Bundesland-Ranking Chart ── */}
+      {blChartData.length > 0 && (
+        <SectionCard title="Performance nach Bundesland">
+          <ResponsiveContainer width="100%" height={Math.max(300, blChartData.length * 40)}>
+            <ComposedChart data={blChartData} layout="vertical" barCategoryGap="20%">
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
+              <XAxis xAxisId="apps" type="number" {...AXIS_STYLE} axisLine={false} tickLine={false} orientation="bottom" />
+              <XAxis xAxisId="spend" type="number" {...AXIS_STYLE} axisLine={false} tickLine={false} orientation="top" tickFormatter={(v) => `${v.toFixed(0)} €`} />
+              <YAxis dataKey="bundesland" type="category" {...AXIS_STYLE} axisLine={false} tickLine={false} width={160} />
+              <Tooltip {...TOOLTIP_STYLE} formatter={(val, name) => {
+                if (name === "Ausgaben" || name === "CPA") return typeof val === "number" ? `${val.toFixed(2)} €` : val;
+                return val;
+              }} />
+              <Legend wrapperStyle={{ fontSize: 11, color: "#78716c" }} />
+              <Bar xAxisId="apps" dataKey="applications" name="Bewerbungen" fill={PALETTE.indigo} radius={[0, 4, 4, 0]} />
+              <Bar xAxisId="spend" dataKey="spend" name="Ausgaben" fill={PALETTE.amber} radius={[0, 4, 4, 0]} />
+            </ComposedChart>
+          </ResponsiveContainer>
+        </SectionCard>
+      )}
+
+      {/* ── Funnel / Conversion-Tabelle pro Bundesland ── */}
+      {blSorted.length > 0 && (
+        <SectionCard title="Conversion-Rates nach Bundesland">
+          <div className="overflow-x-auto rounded-lg border border-[rgba(255,255,255,0.06)]">
+            <table className="w-full premium-table text-[12px]">
+              <thead>
+                <tr>
+                  <th className="text-left pl-3">Bundesland</th>
+                  <th className="text-right pr-3">Impressions</th>
+                  <th className="text-right pr-3">Klicks</th>
+                  <th className="text-right pr-3">CTR</th>
+                  <th className="text-right pr-3">Begonnene</th>
+                  <th className="text-right pr-3">ASR</th>
+                  <th className="text-right pr-3">Bewerbungen</th>
+                  <th className="text-right pr-3">Compl. Rate</th>
+                  <th className="text-right pr-3">AR</th>
+                  <th className="text-right pr-3">Spend</th>
+                  <th className="text-right pr-3">CPA</th>
+                </tr>
+              </thead>
+              <tbody>
+                {blSorted.map((row) => (
+                  <tr key={row.bundesland}>
+                    <td className="pl-3 text-[#a8a29e] font-medium">{row.bundesland}</td>
+                    <td className="text-right pr-3 tabular-nums text-[#78716c]">{row.impressions.toLocaleString()}</td>
+                    <td className="text-right pr-3 tabular-nums text-[#78716c]">{row.clicks.toLocaleString()}</td>
+                    <td className="text-right pr-3 tabular-nums" style={{ color: rateColor(row.ctr, blAvgCTR) }}>
+                      {(row.ctr * 100).toFixed(1)}%
+                    </td>
+                    <td className="text-right pr-3 tabular-nums text-[#78716c]">{row.startedApplications}</td>
+                    <td className="text-right pr-3 tabular-nums" style={{ color: rateColor(row.asr, blAvgASR) }}>
+                      {(row.asr * 100).toFixed(1)}%
+                    </td>
+                    <td className="text-right pr-3 tabular-nums text-[#e2a96e] font-medium">{row.applications}</td>
+                    <td className="text-right pr-3 tabular-nums" style={{ color: rateColor(row.completionRate, blAvgCR) }}>
+                      {(row.completionRate * 100).toFixed(1)}%
+                    </td>
+                    <td className="text-right pr-3 tabular-nums" style={{ color: rateColor(row.ar, blAvgAR) }}>
+                      {(row.ar * 100).toFixed(1)}%
+                    </td>
+                    <td className="text-right pr-3 tabular-nums text-[#78716c]">{row.spend.toFixed(2)} €</td>
+                    <td className="text-right pr-3 tabular-nums text-[#78716c]">{row.cpa > 0 ? `${row.cpa.toFixed(2)} €` : "—"}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </SectionCard>
+      )}
+
+      {/* ── Wochen-Kohorten ── */}
+      {weeklyData.length > 0 && (
+        <SectionCard title="Wochen-Kohorten">
+          <ResponsiveContainer width="100%" height={300}>
+            <ComposedChart data={weeklyData} barCategoryGap="20%">
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
+              <XAxis dataKey="kw" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+              <YAxis yAxisId="left" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+              <YAxis yAxisId="right" orientation="right" {...AXIS_STYLE} axisLine={false} tickLine={false} tickFormatter={(v) => `${v.toFixed(0)} €`} />
+              <Tooltip {...TOOLTIP_STYLE} formatter={(val, name) => {
+                if (name === "CPA" || name === "Spend") return typeof val === "number" ? `${val.toFixed(2)} €` : val;
+                return val;
+              }} />
+              <Legend wrapperStyle={{ fontSize: 11, color: "#78716c" }} />
+              <Bar yAxisId="left" dataKey="clicks" name="Klicks" fill={PALETTE.indigo} radius={[4, 4, 0, 0]} />
+              <Bar yAxisId="left" dataKey="applications" name="Bewerbungen" fill={PALETTE.teal} radius={[4, 4, 0, 0]} />
+              <Line yAxisId="right" type="monotone" dataKey="spend" name="Spend" stroke={PALETTE.amber} strokeWidth={2} dot={false} />
+              <Line yAxisId="right" type="monotone" dataKey="cpa" name="CPA" stroke={PALETTE.rose} strokeWidth={2} dot={false} strokeDasharray="5 5" />
+            </ComposedChart>
+          </ResponsiveContainer>
+        </SectionCard>
+      )}
+
+      {/* ── Daten-Import (3 Bereiche) ── */}
       <SectionCard title="Daten-Import">
-        <div className="space-y-4">
-          <p className="text-[13px] text-[#57534e]">
-            Indeed CSV-Export hochladen um die Daten zu aktualisieren. Nach dem Import wird automatisch ein neuer Deploy ausgelöst.
-          </p>
-
-          {uploadState === "idle" && (
-            <label className="flex items-center gap-3 px-4 py-3 rounded-xl border border-dashed border-[rgba(255,255,255,0.1)] hover:border-[rgba(226,169,110,0.3)] hover:bg-[rgba(226,169,110,0.04)] transition-all cursor-pointer">
-              <Upload className="h-5 w-5 text-[#57534e]" />
-              <span className="text-[13px] text-[#a8a29e]">CSV-Datei auswählen</span>
-              <input ref={fileRef} type="file" accept=".csv" className="hidden" onChange={handleFile} />
-            </label>
-          )}
-
-          {uploadState === "preview" && (
-            <div className="space-y-3">
-              <div className="flex items-center gap-3 text-[13px]">
-                <span className="text-[#a8a29e]">{preview.length} Tage erkannt</span>
-                <span className="text-[#57534e]">
-                  {preview[0]?.date} – {preview[preview.length - 1]?.date}
-                </span>
-              </div>
+        <div className="space-y-6">
+          {/* 1. Tägliche Daten */}
+          <IndeedUploadSection
+            title="Tägliche Daten"
+            description="Indeed CSV-Export &quot;Nach Zeit bzw Tag&quot; hochladen."
+            countLabel="Tage"
+            fileRef={fileRef}
+            uploadState={uploadState}
+            preview={preview}
+            errorMsg={errorMsg}
+            onFile={handleFile}
+            onUpload={handleUpload}
+            onReset={resetUpload}
+            previewTable={
               <div className="overflow-x-auto max-h-[200px] overflow-y-auto rounded-lg border border-[rgba(255,255,255,0.06)]">
                 <table className="w-full premium-table text-[12px]">
                   <thead>
@@ -1177,49 +1542,98 @@ function IndeedTab({ range }: { range: TimeRange }) {
                   </tbody>
                 </table>
               </div>
-              <div className="flex items-center gap-3">
-                <button
-                  onClick={handleUpload}
-                  className="px-4 py-2 rounded-lg bg-[rgba(226,169,110,0.12)] text-[#e2a96e] text-[13px] font-medium border border-[rgba(226,169,110,0.25)] hover:bg-[rgba(226,169,110,0.2)] transition-all"
-                >
-                  Importieren & Deployen
-                </button>
-                <button
-                  onClick={resetUpload}
-                  className="px-4 py-2 rounded-lg text-[#78716c] text-[13px] font-medium border border-[rgba(255,255,255,0.06)] hover:text-[#a8a29e] transition-all"
-                >
-                  Abbrechen
-                </button>
+            }
+          />
+
+          <div className="border-t border-[rgba(255,255,255,0.06)]" />
+
+          {/* 2. Bundesland-Daten */}
+          <IndeedUploadSection
+            title="Bundesland-Daten"
+            description="Indeed CSV-Export &quot;Nach Bundesland&quot; hochladen."
+            countLabel="Bundesländer"
+            fileRef={blFileRef}
+            uploadState={blUploadState}
+            preview={blPreview}
+            errorMsg={blErrorMsg}
+            onFile={handleBlFile}
+            onUpload={handleBlUpload}
+            onReset={resetBlUpload}
+            previewTable={
+              <div className="overflow-x-auto max-h-[200px] overflow-y-auto rounded-lg border border-[rgba(255,255,255,0.06)]">
+                <table className="w-full premium-table text-[12px]">
+                  <thead>
+                    <tr>
+                      <th className="text-left pl-3">Bundesland</th>
+                      <th className="text-right pr-3">Klicks</th>
+                      <th className="text-right pr-3">Bewerbungen</th>
+                      <th className="text-right pr-3">Ausgaben</th>
+                      <th className="text-right pr-3">CPA</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {blPreview.slice(0, 5).map((row) => (
+                      <tr key={row.bundesland}>
+                        <td className="pl-3 text-[#a8a29e]">{row.bundesland}</td>
+                        <td className="text-right pr-3 tabular-nums text-[#78716c]">{row.clicks}</td>
+                        <td className="text-right pr-3 tabular-nums text-[#e2a96e]">{row.applications}</td>
+                        <td className="text-right pr-3 tabular-nums text-[#78716c]">{row.spend.toFixed(2)} €</td>
+                        <td className="text-right pr-3 tabular-nums text-[#78716c]">{row.cpa > 0 ? `${row.cpa.toFixed(2)} €` : "—"}</td>
+                      </tr>
+                    ))}
+                    {blPreview.length > 5 && (
+                      <tr><td colSpan={5} className="pl-3 text-[#57534e]">… und {blPreview.length - 5} weitere</td></tr>
+                    )}
+                  </tbody>
+                </table>
               </div>
-            </div>
-          )}
+            }
+          />
 
-          {uploadState === "uploading" && (
-            <div className="flex items-center gap-3 py-3">
-              <Loader2 className="h-5 w-5 text-[#e2a96e] animate-spin" />
-              <span className="text-[13px] text-[#a8a29e]">Daten werden importiert und committed…</span>
-            </div>
-          )}
+          <div className="border-t border-[rgba(255,255,255,0.06)]" />
 
-          {uploadState === "success" && (
-            <div className="flex items-center gap-3 py-3">
-              <CheckCircle className="h-5 w-5 text-[#5eead4]" />
-              <span className="text-[13px] text-[#5eead4]">Import erfolgreich! Deploy wird automatisch ausgelöst.</span>
-              <button onClick={resetUpload} className="text-[12px] text-[#57534e] hover:text-[#a8a29e] ml-2">
-                Neuer Import
-              </button>
-            </div>
-          )}
-
-          {uploadState === "error" && (
-            <div className="flex items-center gap-3 py-3">
-              <AlertCircle className="h-5 w-5 text-[#f87171]" />
-              <span className="text-[13px] text-[#f87171]">{errorMsg}</span>
-              <button onClick={resetUpload} className="text-[12px] text-[#57534e] hover:text-[#a8a29e] ml-2">
-                Erneut versuchen
-              </button>
-            </div>
-          )}
+          {/* 3. Stellen-Daten */}
+          <IndeedUploadSection
+            title="Stellen-Daten"
+            description="Indeed CSV-Export &quot;Nach Stelle und Bundesland&quot; hochladen."
+            countLabel="Einträge"
+            fileRef={stFileRef}
+            uploadState={stUploadState}
+            preview={stPreview}
+            errorMsg={stErrorMsg}
+            onFile={handleStFile}
+            onUpload={handleStUpload}
+            onReset={resetStUpload}
+            previewTable={
+              <div className="overflow-x-auto max-h-[200px] overflow-y-auto rounded-lg border border-[rgba(255,255,255,0.06)]">
+                <table className="w-full premium-table text-[12px]">
+                  <thead>
+                    <tr>
+                      <th className="text-left pl-3">Stelle</th>
+                      <th className="text-left pl-3">Stadt</th>
+                      <th className="text-left pl-3">Bundesland</th>
+                      <th className="text-right pr-3">Klicks</th>
+                      <th className="text-right pr-3">Bewerbungen</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {stPreview.slice(0, 5).map((row, i) => (
+                      <tr key={`${row.stelle}-${row.stadt}-${i}`}>
+                        <td className="pl-3 text-[#a8a29e] max-w-[200px] truncate">{row.stelle}</td>
+                        <td className="pl-3 text-[#78716c]">{row.stadt}</td>
+                        <td className="pl-3 text-[#78716c]">{row.bundesland}</td>
+                        <td className="text-right pr-3 tabular-nums text-[#78716c]">{row.clicks}</td>
+                        <td className="text-right pr-3 tabular-nums text-[#e2a96e]">{row.applications}</td>
+                      </tr>
+                    ))}
+                    {stPreview.length > 5 && (
+                      <tr><td colSpan={5} className="pl-3 text-[#57534e]">… und {stPreview.length - 5} weitere</td></tr>
+                    )}
+                  </tbody>
+                </table>
+              </div>
+            }
+          />
         </div>
       </SectionCard>
     </div>
