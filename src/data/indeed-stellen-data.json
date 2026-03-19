@@ -1,1 +1,82 @@
-[]
+[
+  {
+    "stelle": "Quereinstieg mit Weiterbildung in die Payroll / Lohnbuchhaltung (m/w/d)",
+    "bundesland": "Hamburg",
+    "stadt": "Hamburg",
+    "clicks": 7,
+    "startedApplications": 4,
+    "completionRate": 0.25,
+    "applications": 1,
+    "ar": 0.142857
+  },
+  {
+    "stelle": "Quereinstieg mit Weiterbildung in die Payroll / Lohnbuchhaltung (m/w/d)",
+    "bundesland": "Nordrhein-Westfalen",
+    "stadt": "Düsseldorf",
+    "clicks": 12,
+    "startedApplications": 6,
+    "completionRate": 0.833333,
+    "applications": 5,
+    "ar": 0.416667
+  },
+  {
+    "stelle": "Quereinstieg mit Weiterbildung in die Payroll / Lohnbuchhaltung (m/w/d)",
+    "bundesland": "Berlin",
+    "stadt": "Berlin",
+    "clicks": 1,
+    "startedApplications": 0,
+    "completionRate": 0,
+    "applications": 0,
+    "ar": 0
+  },
+  {
+    "stelle": "Quereinstieg mit Weiterbildung in die Payroll / Lohnbuchhaltung (m/w/d)",
+    "bundesland": "Hessen",
+    "stadt": "Frankfurt am Main",
+    "clicks": 3,
+    "startedApplications": 1,
+    "completionRate": 1,
+    "applications": 1,
+    "ar": 0.333333
+  },
+  {
+    "stelle": "Quereinstieg mit Weiterbildung in die Payroll / Lohnbuchhaltung (m/w/d)",
+    "bundesland": "Bayern",
+    "stadt": "München",
+    "clicks": 3,
+    "startedApplications": 2,
+    "completionRate": 1,
+    "applications": 2,
+    "ar": 0.666667
+  },
+  {
+    "stelle": "Quereinstieg mit Weiterbildung in die Payroll / Lohnbuchhaltung (m/w/d)",
+    "bundesland": "Baden-Württemberg",
+    "stadt": "Stuttgart",
+    "clicks": 10,
+    "startedApplications": 2,
+    "completionRate": 0.5,
+    "applications": 1,
+    "ar": 0.1
+  },
+  {
+    "stelle": "Quereinstieg mit Weiterbildung in die Payroll / Lohnbuchhaltung (m/w/d)",
+    "bundesland": "Niedersachsen",
+    "stadt": "Hannover",
+    "clicks": 17,
+    "startedApplications": 2,
+    "completionRate": 0.5,
+    "applications": 1,
+    "ar": 0.058824
+  },
+  {
+    "stelle": "Quereinstieg mit Weiterbildung in die Payroll / Lohnbuchhaltung (m/w/d)",
+    "bundesland": "Sachsen",
+    "stadt": "Leipzig",
+    "clicks": 16,
+    "startedApplications": 7,
+    "completionRate": 0.571429,
+    "applications": 4,
+    "ar": 0.25
+  }
+]
