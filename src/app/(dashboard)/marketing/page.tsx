@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { KpiCard, SectionCard } from "@/components/kpi-card";
 import { TimeRangeFilter } from "@/components/time-range-filter";
 import { leads } from "@/data/leads";
-import { totalMetaSpend, totalMetaLeads, avgCPL } from "@/data/meta-ads";
+import { metaAds, totalMetaSpend, totalMetaLeads, avgCPL } from "@/data/meta-ads";
 import { perspectiveVisits } from "@/data/perspective";
 import {
   indeedDaily,
@@ -63,6 +63,24 @@ import {
   classifyLead,
 } from "@/lib/date-utils";
 
+/* ── Helpers for proportional Meta spend ── */
+function matchesAd(lead: (typeof leads)[0], adId: string): boolean {
+  return (
+    lead.adId === adId ||
+    lead.adId === `ag:${adId}` ||
+    lead.adId.includes(adId.slice(-10))
+  );
+}
+
+const adTotalLeads = new Map<string, number>();
+leads.forEach((lead) => {
+  metaAds.forEach((ad) => {
+    if (matchesAd(lead, ad.adId)) {
+      adTotalLeads.set(ad.adId, (adTotalLeads.get(ad.adId) ?? 0) + 1);
+    }
+  });
+});
+
 /* ── Soll-Ist Targets pro Kanal ── */
 const CHANNEL_TARGETS = {
   meta:    { leads: 80, spend: 500, cpl: 5.00, conversion: 10 },
@@ -118,6 +136,8 @@ function MarketingContent() {
     channelData, segmentCounts, allSegments, segmentWeeklyData,
     gewonnenKursnet, sqlKursnet, perspFunnelData, perspSummary,
     filteredLeads, channelWeeklyData, channelDailyData, channelMonthlyData, platformData, platformAggData,
+    spendWeeklyData, spendDailyData, spendMonthlyData,
+    cplWeeklyData, cplDailyData, cplMonthlyData,
   } = useMemo(() => {
     const filteredLeads = filterLeadsByRange(leads, range);
 
@@ -214,6 +234,132 @@ function MarketingContent() {
         return { label: months[parseInt(m.slice(5)) - 1] + " " + m.slice(0, 4), ...counts };
       });
 
+    /* ── Spend + CPL time series ── */
+    // Meta spend: proportional allocation via leads per time bucket
+    const metaSpendWeekMap = new Map<number, number>();
+    const metaSpendDayMap = new Map<string, number>();
+    const metaSpendMonthMap = new Map<string, number>();
+
+    metaAds.forEach((ad) => {
+      const totalForAd = adTotalLeads.get(ad.adId) ?? 0;
+      if (totalForAd === 0 || ad.amountSpent === 0) return;
+
+      filteredLeads.forEach((l) => {
+        if (!matchesAd(l, ad.adId)) return;
+        const date = parseDE(l.createdOn);
+        if (isNaN(date.getTime())) return;
+        const share = ad.amountSpent / totalForAd;
+
+        const wk = getISOWeek(date);
+        metaSpendWeekMap.set(wk, (metaSpendWeekMap.get(wk) ?? 0) + share);
+
+        const dayKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
+        metaSpendDayMap.set(dayKey, (metaSpendDayMap.get(dayKey) ?? 0) + share);
+
+        const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`;
+        metaSpendMonthMap.set(monthKey, (metaSpendMonthMap.get(monthKey) ?? 0) + share);
+      });
+    });
+
+    // Indeed spend: directly from indeedDaily
+    const indeedSpendWeekMap = new Map<number, number>();
+    const indeedSpendDayMap = new Map<string, number>();
+    const indeedSpendMonthMap = new Map<string, number>();
+
+    indeedDaily.forEach((d) => {
+      if (d.spend === 0) return;
+      const date = new Date(d.date + "T00:00:00");
+      if (isNaN(date.getTime())) return;
+
+      const wk = getISOWeek(date);
+      indeedSpendWeekMap.set(wk, (indeedSpendWeekMap.get(wk) ?? 0) + d.spend);
+
+      indeedSpendDayMap.set(d.date, (indeedSpendDayMap.get(d.date) ?? 0) + d.spend);
+
+      const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`;
+      indeedSpendMonthMap.set(monthKey, (indeedSpendMonthMap.get(monthKey) ?? 0) + d.spend);
+    });
+
+    // Combine into chart data arrays
+    const allWeekKeys = new Set([...channelWeekMap.keys(), ...metaSpendWeekMap.keys(), ...indeedSpendWeekMap.keys()]);
+    const spendWeeklyData = Array.from(allWeekKeys)
+      .sort((a, b) => a - b)
+      .map((wk) => ({
+        label: `KW ${wk}`,
+        Meta: Math.round((metaSpendWeekMap.get(wk) ?? 0) * 100) / 100,
+        Indeed: Math.round((indeedSpendWeekMap.get(wk) ?? 0) * 100) / 100,
+      }));
+
+    const allDayKeys = new Set([...channelDayMap.keys(), ...metaSpendDayMap.keys(), ...indeedSpendDayMap.keys()]);
+    const spendDailyData = Array.from(allDayKeys)
+      .sort((a, b) => a.localeCompare(b))
+      .map((day) => {
+        const d = new Date(day + "T00:00:00");
+        const dow = d.getDay();
+        return {
+          label: `${day.slice(8)}.${day.slice(5, 7)}.`,
+          isWeekend: dow === 0 || dow === 6,
+          Meta: Math.round((metaSpendDayMap.get(day) ?? 0) * 100) / 100,
+          Indeed: Math.round((indeedSpendDayMap.get(day) ?? 0) * 100) / 100,
+        };
+      });
+
+    const allMonthKeys = new Set([...channelMonthMap.keys(), ...metaSpendMonthMap.keys(), ...indeedSpendMonthMap.keys()]);
+    const months = ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"];
+    const spendMonthlyData = Array.from(allMonthKeys)
+      .sort((a, b) => a.localeCompare(b))
+      .map((m) => ({
+        label: months[parseInt(m.slice(5)) - 1] + " " + m.slice(0, 4),
+        Meta: Math.round((metaSpendMonthMap.get(m) ?? 0) * 100) / 100,
+        Indeed: Math.round((indeedSpendMonthMap.get(m) ?? 0) * 100) / 100,
+      }));
+
+    // CPL data: spend / leads per time bucket per channel
+    const cplWeeklyData = Array.from(allWeekKeys)
+      .sort((a, b) => a - b)
+      .map((wk) => {
+        const metaLeadsWk = channelWeekMap.get(wk)?.Meta ?? 0;
+        const indeedLeadsWk = channelWeekMap.get(wk)?.Indeed ?? 0;
+        const metaSpendWk = metaSpendWeekMap.get(wk) ?? 0;
+        const indeedSpendWk = indeedSpendWeekMap.get(wk) ?? 0;
+        return {
+          label: `KW ${wk}`,
+          Meta: metaLeadsWk > 0 ? Math.round((metaSpendWk / metaLeadsWk) * 100) / 100 : null,
+          Indeed: indeedLeadsWk > 0 ? Math.round((indeedSpendWk / indeedLeadsWk) * 100) / 100 : null,
+        };
+      });
+
+    const cplDailyData = Array.from(allDayKeys)
+      .sort((a, b) => a.localeCompare(b))
+      .map((day) => {
+        const d = new Date(day + "T00:00:00");
+        const dow = d.getDay();
+        const metaLeadsDay = channelDayMap.get(day)?.Meta ?? 0;
+        const indeedLeadsDay = channelDayMap.get(day)?.Indeed ?? 0;
+        const metaSpendDay = metaSpendDayMap.get(day) ?? 0;
+        const indeedSpendDay = indeedSpendDayMap.get(day) ?? 0;
+        return {
+          label: `${day.slice(8)}.${day.slice(5, 7)}.`,
+          isWeekend: dow === 0 || dow === 6,
+          Meta: metaLeadsDay > 0 ? Math.round((metaSpendDay / metaLeadsDay) * 100) / 100 : null,
+          Indeed: indeedLeadsDay > 0 ? Math.round((indeedSpendDay / indeedLeadsDay) * 100) / 100 : null,
+        };
+      });
+
+    const cplMonthlyData = Array.from(allMonthKeys)
+      .sort((a, b) => a.localeCompare(b))
+      .map((m) => {
+        const metaLeadsM = channelMonthMap.get(m)?.Meta ?? 0;
+        const indeedLeadsM = channelMonthMap.get(m)?.Indeed ?? 0;
+        const metaSpendM = metaSpendMonthMap.get(m) ?? 0;
+        const indeedSpendM = indeedSpendMonthMap.get(m) ?? 0;
+        return {
+          label: months[parseInt(m.slice(5)) - 1] + " " + m.slice(0, 4),
+          Meta: metaLeadsM > 0 ? Math.round((metaSpendM / metaLeadsM) * 100) / 100 : null,
+          Indeed: indeedLeadsM > 0 ? Math.round((indeedSpendM / indeedLeadsM) * 100) / 100 : null,
+        };
+      });
+
     /* Platform-Verteilung */
     const platformCounts: Record<string, number> = {};
     filteredLeads.forEach((l) => {
@@ -239,6 +385,8 @@ function MarketingContent() {
       channelData, segmentCounts, allSegments, segmentWeeklyData,
       gewonnenKursnet, sqlKursnet, perspFunnelData, perspSummary,
       filteredLeads, channelWeeklyData, channelDailyData, channelMonthlyData, platformData, platformAggData,
+      spendWeeklyData, spendDailyData, spendMonthlyData,
+      cplWeeklyData, cplDailyData, cplMonthlyData,
     };
   }, [range]);
 
@@ -475,6 +623,99 @@ function MarketingContent() {
                   />
                 ))}
             </BarChart>
+          </ResponsiveContainer>
+        </div>
+          );
+        })()}
+
+        {/* Spend pro Kanal im Zeitverlauf – Stacked Bar */}
+        {spendWeeklyData.length > 0 && (() => {
+          const spendChartData = channelTimeMode === "day" ? spendDailyData : channelTimeMode === "month" ? spendMonthlyData : spendWeeklyData;
+          return (
+        <div className="glass-card p-6">
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-[13px] font-semibold tracking-wide text-[#a8a29e]">Spend pro Kanal im Zeitverlauf</h3>
+          </div>
+          <ResponsiveContainer width="100%" height={300}>
+            <BarChart data={spendChartData} barCategoryGap="20%">
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
+              {channelTimeMode === "day" && spendChartData.filter((d: Record<string, unknown>) => d.isWeekend).map((d: Record<string, unknown>) => (
+                <ReferenceArea key={d.label as string} x1={d.label as string} x2={d.label as string} fill="rgba(255,255,255,0.03)" fillOpacity={1} ifOverflow="visible" />
+              ))}
+              <XAxis dataKey="label" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+              <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} tickFormatter={(v: number) => `€${v}`} />
+              <Tooltip
+                {...TOOLTIP_STYLE}
+                content={({ active, payload, label }) => {
+                  if (!active || !payload?.length) return null;
+                  const total = payload.reduce((s, p) => s + (typeof p.value === "number" ? p.value : 0), 0);
+                  return (
+                    <div className="rounded-lg border border-[rgba(255,255,255,0.08)] bg-[#1c1917] px-3 py-2 shadow-xl">
+                      <div className="text-[11px] text-[#78716c] mb-1.5">{label}</div>
+                      {payload.map((p) => (
+                        <div key={p.name} className="flex items-center justify-between gap-4 text-[12px]">
+                          <span className="flex items-center gap-1.5">
+                            <span className="w-2 h-2 rounded-sm" style={{ background: p.color }} />
+                            <span className="text-[#a8a29e]">{p.name}</span>
+                          </span>
+                          <span className="font-semibold tabular-nums text-[#fafaf9]">€{(typeof p.value === "number" ? p.value : 0).toFixed(2)}</span>
+                        </div>
+                      ))}
+                      <div className="mt-1.5 pt-1.5 border-t border-[rgba(255,255,255,0.08)] flex items-center justify-between gap-4 text-[12px]">
+                        <span className="text-[#a8a29e] font-medium">Gesamt</span>
+                        <span className="font-bold tabular-nums text-[#fafaf9]">€{total.toFixed(2)}</span>
+                      </div>
+                    </div>
+                  );
+                }}
+              />
+              <Bar dataKey="Meta" stackId="spend" fill={PALETTE.indigo} />
+              <Bar dataKey="Indeed" stackId="spend" fill={PALETTE.amber} radius={[4, 4, 0, 0]} />
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
+          );
+        })()}
+
+        {/* CPL im Zeitverlauf – Line Chart */}
+        {cplWeeklyData.length > 0 && (() => {
+          const cplChartData = channelTimeMode === "day" ? cplDailyData : channelTimeMode === "month" ? cplMonthlyData : cplWeeklyData;
+          return (
+        <div className="glass-card p-6">
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-[13px] font-semibold tracking-wide text-[#a8a29e]">CPL im Zeitverlauf</h3>
+          </div>
+          <ResponsiveContainer width="100%" height={300}>
+            <LineChart data={cplChartData}>
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
+              <XAxis dataKey="label" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+              <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} tickFormatter={(v: number) => `€${v}`} />
+              <Tooltip
+                {...TOOLTIP_STYLE}
+                content={({ active, payload, label }) => {
+                  if (!active || !payload?.length) return null;
+                  return (
+                    <div className="rounded-lg border border-[rgba(255,255,255,0.08)] bg-[#1c1917] px-3 py-2 shadow-xl">
+                      <div className="text-[11px] text-[#78716c] mb-1.5">{label}</div>
+                      {payload.map((p) => (
+                        p.value != null && (
+                        <div key={p.name} className="flex items-center justify-between gap-4 text-[12px]">
+                          <span className="flex items-center gap-1.5">
+                            <span className="w-2 h-2 rounded-full" style={{ background: p.color }} />
+                            <span className="text-[#a8a29e]">{p.name}</span>
+                          </span>
+                          <span className="font-semibold tabular-nums text-[#fafaf9]">€{(typeof p.value === "number" ? p.value : 0).toFixed(2)}</span>
+                        </div>
+                        )
+                      ))}
+                    </div>
+                  );
+                }}
+              />
+              <Line type="monotone" dataKey="Meta" stroke={PALETTE.indigo} strokeWidth={2} dot={{ r: 3, fill: PALETTE.indigo }} connectNulls={false} />
+              <Line type="monotone" dataKey="Indeed" stroke={PALETTE.amber} strokeWidth={2} dot={{ r: 3, fill: PALETTE.amber }} connectNulls={false} />
+              <Legend wrapperStyle={{ fontSize: 11, color: "#78716c" }} />
+            </LineChart>
           </ResponsiveContainer>
         </div>
           );
