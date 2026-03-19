@@ -33,7 +33,7 @@ import {
 import type { MetaExportEntry } from "@/data/meta-export";
 import type { IndeedDailyEntry } from "@/data/indeed";
 import { TOOLTIP_STYLE, AXIS_STYLE, PALETTE, SEGMENT_COLORS, FUNNEL_COLORS } from "@/components/chart-theme";
-import { Upload, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
+import { Upload, CheckCircle, AlertCircle, Loader2, ChevronUp, ChevronDown } from "lucide-react";
 import {
   BarChart,
   Bar,
@@ -1311,22 +1311,43 @@ function IndeedTab({ range }: { range: TimeRange }) {
   }, []);
 
   /* ── Wochen-Kohorten aus täglichen Daten ── */
+  type WeeklySort = "kw" | "impressions" | "clicks" | "applications" | "spend" | "cpa" | "cpc";
+  const [weeklySortKey, setWeeklySortKey] = useState<WeeklySort>("kw");
+  const [weeklySortDir, setWeeklySortDir] = useState<"asc" | "desc">("asc");
+
+  const toggleWeeklySort = useCallback((key: WeeklySort) => {
+    if (weeklySortKey === key) {
+      setWeeklySortDir((d) => d === "asc" ? "desc" : "asc");
+    } else {
+      setWeeklySortKey(key);
+      setWeeklySortDir(key === "kw" ? "asc" : "desc");
+    }
+  }, [weeklySortKey]);
+
   const weeklyData = useMemo(() => {
-    const weeks: Record<string, { kw: string; clicks: number; applications: number; spend: number; impressions: number }> = {};
+    const weeks: Record<string, { kw: string; kwNum: number; clicks: number; applications: number; spend: number; impressions: number }> = {};
     filtered.forEach((d) => {
       const date = new Date(d.date + "T00:00:00");
-      const wk = `KW ${getISOWeek(date)}`;
-      if (!weeks[wk]) weeks[wk] = { kw: wk, clicks: 0, applications: 0, spend: 0, impressions: 0 };
+      const num = getISOWeek(date);
+      const wk = `KW ${num}`;
+      if (!weeks[wk]) weeks[wk] = { kw: wk, kwNum: num, clicks: 0, applications: 0, spend: 0, impressions: 0 };
       weeks[wk].clicks += d.clicks;
       weeks[wk].applications += d.applications;
       weeks[wk].spend += d.spend;
       weeks[wk].impressions += d.impressions;
     });
-    return Object.values(weeks).map((w) => ({
+    const rows = Object.values(weeks).map((w) => ({
       ...w,
       cpa: w.applications > 0 ? w.spend / w.applications : 0,
+      cpc: w.clicks > 0 ? w.spend / w.clicks : 0,
     }));
-  }, [filtered]);
+    rows.sort((a, b) => {
+      const valA = weeklySortKey === "kw" ? a.kwNum : a[weeklySortKey];
+      const valB = weeklySortKey === "kw" ? b.kwNum : b[weeklySortKey];
+      return weeklySortDir === "asc" ? valA - valB : valB - valA;
+    });
+    return rows;
+  }, [filtered, weeklySortKey, weeklySortDir]);
 
   /** Color helper for conversion rates */
   const rateColor = (val: number, avg: number) =>
@@ -1475,38 +1496,52 @@ function IndeedTab({ range }: { range: TimeRange }) {
       )}
 
       {/* ── Wochen-Kohorten ── */}
-      {weeklyData.length > 0 && (
-        <SectionCard title="Wochen-Kohorten">
-          <div className="overflow-x-auto rounded-lg border border-[rgba(255,255,255,0.06)]">
-            <table className="w-full premium-table text-[12px]">
-              <thead>
-                <tr>
-                  <th className="text-left pl-3">Woche</th>
-                  <th className="text-right pr-3">Impressions</th>
-                  <th className="text-right pr-3">Klicks</th>
-                  <th className="text-right pr-3">Bewerbungen</th>
-                  <th className="text-right pr-3">Spend</th>
-                  <th className="text-right pr-3">CPA</th>
-                  <th className="text-right pr-3">CPC</th>
-                </tr>
-              </thead>
-              <tbody>
-                {weeklyData.map((w) => (
-                  <tr key={w.kw}>
-                    <td className="pl-3 text-[#a8a29e] font-medium">{w.kw}</td>
-                    <td className="text-right pr-3 tabular-nums text-[#78716c]">{w.impressions.toLocaleString()}</td>
-                    <td className="text-right pr-3 tabular-nums text-[#78716c]">{w.clicks.toLocaleString()}</td>
-                    <td className="text-right pr-3 tabular-nums text-[#e2a96e] font-medium">{w.applications}</td>
-                    <td className="text-right pr-3 tabular-nums text-[#78716c]">{w.spend.toFixed(2)} €</td>
-                    <td className="text-right pr-3 tabular-nums text-[#78716c]">{w.cpa > 0 ? `${w.cpa.toFixed(2)} €` : "—"}</td>
-                    <td className="text-right pr-3 tabular-nums text-[#78716c]">{w.clicks > 0 ? `${(w.spend / w.clicks).toFixed(2)} €` : "—"}</td>
+      {weeklyData.length > 0 && (() => {
+        const SortTh = ({ label, sortKey, align = "right" }: { label: string; sortKey: WeeklySort; align?: "left" | "right" }) => (
+          <th
+            className={`${align === "left" ? "text-left pl-3" : "text-right pr-3"} cursor-pointer select-none hover:text-[#e2a96e] transition-colors`}
+            onClick={() => toggleWeeklySort(sortKey)}
+          >
+            <span className="inline-flex items-center gap-1">
+              {align === "right" && weeklySortKey === sortKey && (weeklySortDir === "asc" ? <ChevronUp className="h-3 w-3" /> : <ChevronDown className="h-3 w-3" />)}
+              {label}
+              {align === "left" && weeklySortKey === sortKey && (weeklySortDir === "asc" ? <ChevronUp className="h-3 w-3" /> : <ChevronDown className="h-3 w-3" />)}
+            </span>
+          </th>
+        );
+        return (
+          <SectionCard title="Wochen-Kohorten">
+            <div className="overflow-x-auto rounded-lg border border-[rgba(255,255,255,0.06)]">
+              <table className="w-full premium-table text-[12px]">
+                <thead>
+                  <tr>
+                    <SortTh label="Woche" sortKey="kw" align="left" />
+                    <SortTh label="Impressions" sortKey="impressions" />
+                    <SortTh label="Klicks" sortKey="clicks" />
+                    <SortTh label="Bewerbungen" sortKey="applications" />
+                    <SortTh label="Spend" sortKey="spend" />
+                    <SortTh label="CPA" sortKey="cpa" />
+                    <SortTh label="CPC" sortKey="cpc" />
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </SectionCard>
-      )}
+                </thead>
+                <tbody>
+                  {weeklyData.map((w) => (
+                    <tr key={w.kw}>
+                      <td className="pl-3 text-[#a8a29e] font-medium">{w.kw}</td>
+                      <td className="text-right pr-3 tabular-nums text-[#78716c]">{w.impressions.toLocaleString()}</td>
+                      <td className="text-right pr-3 tabular-nums text-[#78716c]">{w.clicks.toLocaleString()}</td>
+                      <td className="text-right pr-3 tabular-nums text-[#e2a96e] font-medium">{w.applications}</td>
+                      <td className="text-right pr-3 tabular-nums text-[#78716c]">{w.spend.toFixed(2)} €</td>
+                      <td className="text-right pr-3 tabular-nums text-[#78716c]">{w.cpa > 0 ? `${w.cpa.toFixed(2)} €` : "—"}</td>
+                      <td className="text-right pr-3 tabular-nums text-[#78716c]">{w.cpc > 0 ? `${w.cpc.toFixed(2)} €` : "—"}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </SectionCard>
+        );
+      })()}
 
       {/* ── Daten-Import (3 Bereiche) ── */}
       <SectionCard title="Daten-Import">
