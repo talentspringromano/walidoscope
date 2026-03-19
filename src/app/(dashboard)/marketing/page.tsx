@@ -396,7 +396,7 @@ function MarketingContent() {
             <BarChart data={chartData} barCategoryGap="20%">
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
               <XAxis dataKey="label" {...AXIS_STYLE} axisLine={false} tickLine={false} />
-              <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} allowDecimals={false} />
+              <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} allowDecimals={false} domain={[0, (max: number) => Math.max(max, mqlTarget * 1.1)]} />
               <Tooltip
                 {...TOOLTIP_STYLE}
                 content={({ active, payload, label }) => {
