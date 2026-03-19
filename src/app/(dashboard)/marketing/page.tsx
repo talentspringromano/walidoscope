@@ -1477,23 +1477,34 @@ function IndeedTab({ range }: { range: TimeRange }) {
       {/* ── Wochen-Kohorten ── */}
       {weeklyData.length > 0 && (
         <SectionCard title="Wochen-Kohorten">
-          <ResponsiveContainer width="100%" height={300}>
-            <ComposedChart data={weeklyData} barCategoryGap="20%">
-              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
-              <XAxis dataKey="kw" {...AXIS_STYLE} axisLine={false} tickLine={false} />
-              <YAxis yAxisId="left" {...AXIS_STYLE} axisLine={false} tickLine={false} />
-              <YAxis yAxisId="right" orientation="right" {...AXIS_STYLE} axisLine={false} tickLine={false} tickFormatter={(v) => `${v.toFixed(0)} €`} />
-              <Tooltip {...TOOLTIP_STYLE} formatter={(val, name) => {
-                if (name === "CPA" || name === "Spend") return typeof val === "number" ? `${val.toFixed(2)} €` : val;
-                return val;
-              }} />
-              <Legend wrapperStyle={{ fontSize: 11, color: "#78716c" }} />
-              <Bar yAxisId="left" dataKey="clicks" name="Klicks" fill={PALETTE.indigo} radius={[4, 4, 0, 0]} />
-              <Bar yAxisId="left" dataKey="applications" name="Bewerbungen" fill={PALETTE.teal} radius={[4, 4, 0, 0]} />
-              <Line yAxisId="right" type="monotone" dataKey="spend" name="Spend" stroke={PALETTE.amber} strokeWidth={2} dot={false} />
-              <Line yAxisId="right" type="monotone" dataKey="cpa" name="CPA" stroke={PALETTE.rose} strokeWidth={2} dot={false} strokeDasharray="5 5" />
-            </ComposedChart>
-          </ResponsiveContainer>
+          <div className="overflow-x-auto rounded-lg border border-[rgba(255,255,255,0.06)]">
+            <table className="w-full premium-table text-[12px]">
+              <thead>
+                <tr>
+                  <th className="text-left pl-3">Woche</th>
+                  <th className="text-right pr-3">Impressions</th>
+                  <th className="text-right pr-3">Klicks</th>
+                  <th className="text-right pr-3">Bewerbungen</th>
+                  <th className="text-right pr-3">Spend</th>
+                  <th className="text-right pr-3">CPA</th>
+                  <th className="text-right pr-3">CPC</th>
+                </tr>
+              </thead>
+              <tbody>
+                {weeklyData.map((w) => (
+                  <tr key={w.kw}>
+                    <td className="pl-3 text-[#a8a29e] font-medium">{w.kw}</td>
+                    <td className="text-right pr-3 tabular-nums text-[#78716c]">{w.impressions.toLocaleString()}</td>
+                    <td className="text-right pr-3 tabular-nums text-[#78716c]">{w.clicks.toLocaleString()}</td>
+                    <td className="text-right pr-3 tabular-nums text-[#e2a96e] font-medium">{w.applications}</td>
+                    <td className="text-right pr-3 tabular-nums text-[#78716c]">{w.spend.toFixed(2)} €</td>
+                    <td className="text-right pr-3 tabular-nums text-[#78716c]">{w.cpa > 0 ? `${w.cpa.toFixed(2)} €` : "—"}</td>
+                    <td className="text-right pr-3 tabular-nums text-[#78716c]">{w.clicks > 0 ? `${(w.spend / w.clicks).toFixed(2)} €` : "—"}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </SectionCard>
       )}
 
