@@ -33,7 +33,7 @@ import {
 import type { MetaExportEntry } from "@/data/meta-export";
 import type { IndeedDailyEntry } from "@/data/indeed";
 import { TOOLTIP_STYLE, AXIS_STYLE, PALETTE, SEGMENT_COLORS, FUNNEL_COLORS } from "@/components/chart-theme";
-import { Upload, CheckCircle, AlertCircle, Loader2, ChevronUp, ChevronDown } from "lucide-react";
+import { Upload, CheckCircle, AlertCircle, Loader2, ChevronUp, ChevronDown, Search } from "lucide-react";
 import {
   BarChart,
   Bar,
@@ -829,6 +829,7 @@ function MetaTab() {
   }, []);
 
   // CRM-Performance pro Creative (adName)
+  const [crmSearch, setCrmSearch] = useState("");
   type CrmCreativeRow = {
     adName: string; total: number; gewonnen: number; verloren: number;
     vertriebsqualifiziert: number; neuerLead: number; rueckruf: number;
@@ -874,9 +875,12 @@ function MetaTab() {
       offen: r.total - r.gewonnen - r.verloren,
       winRate: r.total > 0 ? (r.gewonnen / r.total) * 100 : 0,
     }));
-    rows.sort((a, b) => crmSortDir === "asc" ? a[crmSortKey] - b[crmSortKey] : b[crmSortKey] - a[crmSortKey]);
-    return rows;
-  }, [crmSortKey, crmSortDir]);
+    const filtered = crmSearch
+      ? rows.filter((r) => r.adName.toLowerCase().includes(crmSearch.toLowerCase()))
+      : rows;
+    filtered.sort((a, b) => crmSortDir === "asc" ? a[crmSortKey] - b[crmSortKey] : b[crmSortKey] - a[crmSortKey]);
+    return filtered;
+  }, [crmSortKey, crmSortDir, crmSearch]);
 
   // Sort by spend for chart
   const chartData = [...metaExport]
@@ -982,6 +986,16 @@ function MetaTab() {
         const maxTotal = Math.max(...crmByCreative.map((r) => r.total), 1);
         return (
           <SectionCard title="CRM-Performance pro Creative">
+            <div className="mb-3 relative">
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-[#57534e]" />
+              <input
+                type="text"
+                value={crmSearch}
+                onChange={(e) => setCrmSearch(e.target.value)}
+                placeholder="Creative suchen…"
+                className="w-full max-w-[280px] pl-9 pr-3 py-2 rounded-lg bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.08)] text-[12px] text-[#fafaf9] placeholder:text-[#57534e] focus:outline-none focus:border-[rgba(226,169,110,0.3)] transition-colors"
+              />
+            </div>
             <div className="overflow-x-auto rounded-lg border border-[rgba(255,255,255,0.06)]">
               <table className="w-full premium-table text-[12px]">
                 <thead>
