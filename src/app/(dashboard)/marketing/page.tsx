@@ -782,13 +782,42 @@ function MetaTab() {
 
   const activeAds = metaExport.filter((d) => d.delivery === "active").length;
 
-  // Gewonnen pro Creative aus CRM
-  const gewonnenByAd = useMemo(() => {
-    const map = new Map<string, number>();
+  // Gewonnen pro Creative aus CRM — über adId zuordnen, nicht adName
+  // Zuerst: welche adIds gehören zu welchem (adName + adSetName)?
+  // Da Meta-Export keine adId hat, matchen wir Leads über ihre adId zu den
+  // Meta-Einträgen anhand der adName+adSetName Kombination aus den Leads.
+  const gewonnenByCreative = useMemo(() => {
+    const metaGewonnenLeads = leads.filter(
+      (l) => (l.platform === "Instagram" || l.platform === "Facebook") && l.leadStatus === "Gewonnen" && l.adId
+    );
+    // Map adId → adName (from CRM leads, since meta-export has no adId)
+    const adIdToName = new Map<string, string>();
     leads
-      .filter((l) => (l.platform === "Instagram" || l.platform === "Facebook") && l.leadStatus === "Gewonnen")
-      .forEach((l) => map.set(l.adName, (map.get(l.adName) || 0) + 1));
-    return map;
+      .filter((l) => (l.platform === "Instagram" || l.platform === "Facebook") && l.adId)
+      .forEach((l) => adIdToName.set(l.adId, l.adName));
+    // Find which meta-export entries share each adId by checking if the CRM lead's
+    // adId maps to the same adName. Then use adSetName from meta-export to differentiate.
+    // Since we can't link adId→adSetName from CRM, we count per unique adId and assign
+    // to the meta-export row with the highest spend for that adName.
+    const countByAdId = new Map<string, number>();
+    metaGewonnenLeads.forEach((l) => countByAdId.set(l.adId, (countByAdId.get(l.adId) || 0) + 1));
+    // Aggregate: adName → total gewonnen (from distinct adIds)
+    const countByAdName = new Map<string, number>();
+    countByAdId.forEach((count, adId) => {
+      const name = adIdToName.get(adId) || "";
+      if (name) countByAdName.set(name, (countByAdName.get(name) || 0) + count);
+    });
+    // Assign gewonnen only to the highest-spend meta-export entry per adName
+    const assigned = new Set<string>();
+    const result = new Map<string, number>();
+    [...metaExport].sort((a, b) => b.amountSpent - a.amountSpent).forEach((ad) => {
+      const key = ad.adName;
+      if (!assigned.has(key) && countByAdName.has(key)) {
+        result.set(`${ad.adName}|||${ad.adSetName}`, countByAdName.get(key)!);
+        assigned.add(key);
+      }
+    });
+    return result;
   }, []);
 
   // Sort by spend for chart
@@ -851,7 +880,7 @@ function MetaTab() {
                   <td className="text-right pr-4 tabular-nums font-medium text-[#e2a96e]">{ad.results}</td>
                   <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.costPerResult > 0 ? `${ad.costPerResult.toFixed(2)} €` : "—"}</td>
                   <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.impressions.toLocaleString()}</td>
-                  <td className="text-right pr-4 tabular-nums font-semibold text-[#5eead4]">{gewonnenByAd.get(ad.adName) || 0}</td>
+                  <td className="text-right pr-4 tabular-nums font-semibold text-[#5eead4]">{gewonnenByCreative.get(`${ad.adName}|||${ad.adSetName}`) || 0}</td>
                   <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.linkClicks}</td>
                   <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.reach.toLocaleString()}</td>
                 </tr>
