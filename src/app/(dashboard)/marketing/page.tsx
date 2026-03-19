@@ -429,14 +429,6 @@ function MarketingContent() {
         )}
       </div>
 
-      {/* KPIs */}
-      <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 stagger-in">
-        <KpiCard label="Meta Spend" value={range === "all" ? `€${totalMetaSpend.toFixed(2)}` : "—"} sub={range === "all" ? "7 Creatives" : "Nicht filterbar"} accent />
-        <KpiCard label="Meta Leads" value={range === "all" ? totalMetaLeads : filteredLeads.filter((l) => l.platform === "Facebook" || l.platform === "Instagram").length} sub={range === "all" ? `€${avgCPL.toFixed(2)} CPL` : "Gefilterte Meta-Leads"} />
-        <KpiCard label="Kursnet Visits" value={perspSummary.totalVisits} sub={`${perspSummary.converted} konvertiert`} />
-        <KpiCard label="Kursnet Leads" value={kursnetLeadsCount} sub={`${kursnetLeadsCount} im CRM · ${perspSummary.converted} konvertiert`} />
-      </div>
-
 
       {/* Lead-Segmentierung im Zeitverlauf */}
       {segmentWeeklyData.length > 0 && (
