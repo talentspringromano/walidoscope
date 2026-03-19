@@ -102,10 +102,11 @@ function MarketingContent() {
   const activeTab = tabParam && VALID_TABS.includes(tabParam) ? tabParam : null;
   const [range, setRange] = useState<TimeRange>("all");
   const [hiddenChannels, setHiddenChannels] = useState<Set<string>>(new Set());
+  const [channelTimeMode, setChannelTimeMode] = useState<"day" | "week" | "month">("week");
   const {
     channelData, segmentCounts, allSegments, segmentWeeklyData,
     gewonnenKursnet, sqlKursnet, perspFunnelData, perspSummary,
-    filteredLeads, channelWeeklyData, platformData, platformAggData,
+    filteredLeads, channelWeeklyData, channelDailyData, channelMonthlyData, platformData, platformAggData,
   } = useMemo(() => {
     const filteredLeads = filterLeadsByRange(leads, range);
 
@@ -158,21 +159,45 @@ function MarketingContent() {
       { name: "Gewonnen (BG)", value: gewonnenKursnet },
     ];
 
-    /* Channel weekly (stacked bar) */
+    /* Channel time series (day / week / month) */
     const channelWeekMap = new Map<number, { Meta: number; Kursnet: number; Indeed: number }>();
+    const channelDayMap = new Map<string, { Meta: number; Kursnet: number; Indeed: number }>();
+    const channelMonthMap = new Map<string, { Meta: number; Kursnet: number; Indeed: number }>();
     filteredLeads.forEach((l) => {
       const date = parseDE(l.createdOn);
       if (isNaN(date.getTime())) return;
+      const ch = (l.platform === "Facebook" || l.platform === "Instagram") ? "Meta"
+        : l.platform === "Kursnet" ? "Kursnet"
+        : l.platform === "Indeed" ? "Indeed" : null;
+      if (!ch) return;
+      // week
       const wk = getISOWeek(date);
-      const entry = channelWeekMap.get(wk) ?? { Meta: 0, Kursnet: 0, Indeed: 0 };
-      if (l.platform === "Facebook" || l.platform === "Instagram") entry.Meta++;
-      else if (l.platform === "Kursnet") entry.Kursnet++;
-      else if (l.platform === "Indeed") entry.Indeed++;
-      channelWeekMap.set(wk, entry);
+      const wEntry = channelWeekMap.get(wk) ?? { Meta: 0, Kursnet: 0, Indeed: 0 };
+      wEntry[ch]++;
+      channelWeekMap.set(wk, wEntry);
+      // day
+      const dayKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
+      const dEntry = channelDayMap.get(dayKey) ?? { Meta: 0, Kursnet: 0, Indeed: 0 };
+      dEntry[ch]++;
+      channelDayMap.set(dayKey, dEntry);
+      // month
+      const monthKey = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`;
+      const mEntry = channelMonthMap.get(monthKey) ?? { Meta: 0, Kursnet: 0, Indeed: 0 };
+      mEntry[ch]++;
+      channelMonthMap.set(monthKey, mEntry);
     });
     const channelWeeklyData = Array.from(channelWeekMap.entries())
       .sort((a, b) => a[0] - b[0])
-      .map(([wk, counts]) => ({ week: `KW ${wk}`, ...counts }));
+      .map(([wk, counts]) => ({ label: `KW ${wk}`, ...counts }));
+    const channelDailyData = Array.from(channelDayMap.entries())
+      .sort((a, b) => a[0].localeCompare(b[0]))
+      .map(([day, counts]) => ({ label: `${day.slice(8)}.${day.slice(5, 7)}.`, ...counts }));
+    const channelMonthlyData = Array.from(channelMonthMap.entries())
+      .sort((a, b) => a[0].localeCompare(b[0]))
+      .map(([m, counts]) => {
+        const months = ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"];
+        return { label: months[parseInt(m.slice(5)) - 1] + " " + m.slice(0, 4), ...counts };
+      });
 
     /* Platform-Verteilung */
     const platformCounts: Record<string, number> = {};
@@ -198,7 +223,7 @@ function MarketingContent() {
     return {
       channelData, segmentCounts, allSegments, segmentWeeklyData,
       gewonnenKursnet, sqlKursnet, perspFunnelData, perspSummary,
-      filteredLeads, channelWeeklyData, platformData, platformAggData,
+      filteredLeads, channelWeeklyData, channelDailyData, channelMonthlyData, platformData, platformAggData,
     };
   }, [range]);
 
@@ -315,6 +340,79 @@ function MarketingContent() {
           })}
         </div>
 
+        {/* Leads pro Kanal im Zeitverlauf – Stacked Bar */}
+        {channelWeeklyData.length > 0 && (() => {
+          const chartData = channelTimeMode === "day" ? channelDailyData : channelTimeMode === "month" ? channelMonthlyData : channelWeeklyData;
+          return (
+        <div className="glass-card p-6">
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-[13px] font-semibold tracking-wide text-[#a8a29e]">Leads pro Kanal im Zeitverlauf</h3>
+            <div className="flex items-center gap-3">
+              <div className="flex items-center gap-1 bg-[rgba(255,255,255,0.04)] rounded-lg p-0.5">
+                {(["day", "week", "month"] as const).map((mode) => (
+                  <button
+                    key={mode}
+                    onClick={() => setChannelTimeMode(mode)}
+                    className={`px-2.5 py-1 rounded-md text-[11px] font-medium transition-all ${
+                      channelTimeMode === mode
+                        ? "bg-[rgba(226,169,110,0.12)] text-[#e2a96e] border border-[rgba(226,169,110,0.25)]"
+                        : "text-[#57534e] border border-transparent hover:text-[#a8a29e]"
+                    }`}
+                  >
+                    {mode === "day" ? "Tag" : mode === "week" ? "Woche" : "Monat"}
+                  </button>
+                ))}
+              </div>
+              {(["Meta", "Kursnet", "Indeed"] as const).map((ch) => {
+                const active = !hiddenChannels.has(ch);
+                const color = ch === "Meta" ? PALETTE.indigo : ch === "Kursnet" ? PALETTE.teal : PALETTE.amber;
+                return (
+                  <button
+                    key={ch}
+                    onClick={() =>
+                      setHiddenChannels((prev) => {
+                        const next = new Set(prev);
+                        next.has(ch) ? next.delete(ch) : next.add(ch);
+                        return next;
+                      })
+                    }
+                    className="px-3 py-1 rounded-lg text-[11px] font-medium transition-all border"
+                    style={{
+                      background: active ? `${color}18` : "transparent",
+                      borderColor: active ? `${color}40` : "rgba(255,255,255,0.06)",
+                      color: active ? color : "#57534e",
+                      opacity: active ? 1 : 0.5,
+                    }}
+                  >
+                    {ch}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+          <ResponsiveContainer width="100%" height={300}>
+            <BarChart data={chartData} barCategoryGap="20%">
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
+              <XAxis dataKey="label" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+              <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} allowDecimals={false} />
+              <Tooltip {...TOOLTIP_STYLE} />
+              {(["Meta", "Kursnet", "Indeed"] as const)
+                .filter((ch) => !hiddenChannels.has(ch))
+                .map((ch, i, arr) => (
+                  <Bar
+                    key={ch}
+                    dataKey={ch}
+                    stackId="a"
+                    fill={ch === "Meta" ? PALETTE.indigo : ch === "Kursnet" ? PALETTE.teal : PALETTE.amber}
+                    radius={i === arr.length - 1 ? [4, 4, 0, 0] : undefined}
+                  />
+                ))}
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
+          );
+        })()}
+
         {/* Leads nach Quelle */}
         {platformData.length > 0 && (
           <SectionCard title="Leads nach Quelle">
@@ -371,61 +469,6 @@ function MarketingContent() {
               </div>
             </div>
           </SectionCard>
-        )}
-
-        {/* Leads pro Kanal im Zeitverlauf – Stacked Bar */}
-        {channelWeeklyData.length > 0 && (
-        <div className="glass-card p-6">
-          <div className="flex items-center justify-between mb-4">
-            <h3 className="text-[13px] font-semibold tracking-wide text-[#a8a29e]">Leads pro Kanal im Zeitverlauf</h3>
-            <div className="flex items-center gap-2">
-              {(["Meta", "Kursnet", "Indeed"] as const).map((ch) => {
-                const active = !hiddenChannels.has(ch);
-                const color = ch === "Meta" ? PALETTE.indigo : ch === "Kursnet" ? PALETTE.teal : PALETTE.amber;
-                return (
-                  <button
-                    key={ch}
-                    onClick={() =>
-                      setHiddenChannels((prev) => {
-                        const next = new Set(prev);
-                        next.has(ch) ? next.delete(ch) : next.add(ch);
-                        return next;
-                      })
-                    }
-                    className="px-3 py-1 rounded-lg text-[11px] font-medium transition-all border"
-                    style={{
-                      background: active ? `${color}18` : "transparent",
-                      borderColor: active ? `${color}40` : "rgba(255,255,255,0.06)",
-                      color: active ? color : "#57534e",
-                      opacity: active ? 1 : 0.5,
-                    }}
-                  >
-                    {ch}
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-          <ResponsiveContainer width="100%" height={300}>
-            <BarChart data={channelWeeklyData} barCategoryGap="20%">
-              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
-              <XAxis dataKey="week" {...AXIS_STYLE} axisLine={false} tickLine={false} />
-              <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} allowDecimals={false} />
-              <Tooltip {...TOOLTIP_STYLE} />
-              {(["Meta", "Kursnet", "Indeed"] as const)
-                .filter((ch) => !hiddenChannels.has(ch))
-                .map((ch, i, arr) => (
-                  <Bar
-                    key={ch}
-                    dataKey={ch}
-                    stackId="a"
-                    fill={ch === "Meta" ? PALETTE.indigo : ch === "Kursnet" ? PALETTE.teal : PALETTE.amber}
-                    radius={i === arr.length - 1 ? [4, 4, 0, 0] : undefined}
-                  />
-                ))}
-            </BarChart>
-          </ResponsiveContainer>
-        </div>
         )}
       </div>
 
