@@ -1166,10 +1166,11 @@ function MetaTab() {
     return result;
   }, []);
 
-  // CRM-Performance pro Creative (adName) — exklusive Zuordnung wie Kohortentabelle
+  // CRM-Performance pro Creative × Ad Set — Leads aus CRM werden über adName zugeordnet
+  // und proportional (nach Meta-Export results) auf Ad Sets verteilt
   const [crmSearch, setCrmSearch] = useState("");
   type CrmCreativeRow = {
-    adName: string; total: number; gewonnen: number; verloren: number;
+    adName: string; adSetName: string; total: number; gewonnen: number; verloren: number;
     sql: number; ht: number; lt: number; oProz: number;
     nErreicht: number; nAngr: number; cr: number;
   };
@@ -1190,16 +1191,13 @@ function MetaTab() {
     const metaLeads = leads.filter(
       (l) => (l.platform === "Instagram" || l.platform === "Facebook") && l.adName
     );
-    const map = new Map<string, CrmCreativeRow>();
+
+    // Step 1: Aggregate CRM leads by adName into pipeline buckets
+    type BucketCounts = { total: number; gewonnen: number; verloren: number; ht: number; lt: number; oProz: number; nErreicht: number; nAngr: number };
+    const byAdName = new Map<string, BucketCounts>();
     metaLeads.forEach((l) => {
-      const key = l.adName;
-      const entry = map.get(key) ?? {
-        adName: key, total: 0, gewonnen: 0, verloren: 0,
-        sql: 0, ht: 0, lt: 0, oProz: 0,
-        nErreicht: 0, nAngr: 0, cr: 0,
-      };
+      const entry = byAdName.get(l.adName) ?? { total: 0, gewonnen: 0, verloren: 0, ht: 0, lt: 0, oProz: 0, nErreicht: 0, nAngr: 0 };
       entry.total++;
-      // Exklusive Zuordnung (first match wins)
       const isHT = l.prozessStarten.includes("High Touch") || l.betreuungsart === "High Touch";
       const isLT = l.prozessStarten.includes("Low Touch") || l.betreuungsart === "Low Touch";
       const isSQLStatus = ["Vertriebsqualifiziert", "Reterminierung", "Kennenlerngespräch gebucht", "Beratungsgespräch gebucht"].includes(l.leadStatus);
@@ -1210,15 +1208,55 @@ function MetaTab() {
       else if (isSQLStatus) entry.oProz++;
       else if (l.anrufversuch?.includes("nicht erreicht")) entry.nErreicht++;
       else entry.nAngr++;
-      map.set(key, entry);
+      byAdName.set(l.adName, entry);
     });
-    const rows = [...map.values()].map((r) => ({
-      ...r,
-      sql: r.ht + r.lt + r.oProz,
-      cr: r.total > 0 ? (r.gewonnen / r.total) * 100 : 0,
-    }));
+
+    // Step 2: For each adName, find all Meta-Export ad sets and compute proportional share
+    const adSetsByName = new Map<string, { adSetName: string; results: number }[]>();
+    metaExport.forEach((ad) => {
+      const arr = adSetsByName.get(ad.adName) ?? [];
+      arr.push({ adSetName: ad.adSetName, results: ad.results });
+      adSetsByName.set(ad.adName, arr);
+    });
+
+    // Step 3: Distribute CRM counts proportionally across ad sets
+    const rows: CrmCreativeRow[] = [];
+    byAdName.forEach((counts, adName) => {
+      const adSets = adSetsByName.get(adName);
+      if (!adSets || adSets.length === 0) {
+        // No meta-export match — show as single row with empty ad set
+        rows.push({
+          adName, adSetName: "—",
+          ...counts,
+          sql: counts.ht + counts.lt + counts.oProz,
+          cr: counts.total > 0 ? (counts.gewonnen / counts.total) * 100 : 0,
+        });
+        return;
+      }
+      const totalResults = adSets.reduce((s, a) => s + a.results, 0);
+      adSets.forEach(({ adSetName, results }) => {
+        const share = totalResults > 0 ? results / totalResults : 1 / adSets.length;
+        const distribute = (v: number) => Math.round(v * share);
+        const row = {
+          adName, adSetName,
+          total: distribute(counts.total),
+          gewonnen: distribute(counts.gewonnen),
+          verloren: distribute(counts.verloren),
+          ht: distribute(counts.ht),
+          lt: distribute(counts.lt),
+          oProz: distribute(counts.oProz),
+          nErreicht: distribute(counts.nErreicht),
+          nAngr: distribute(counts.nAngr),
+          sql: 0, cr: 0,
+        };
+        row.sql = row.ht + row.lt + row.oProz;
+        row.cr = row.total > 0 ? (row.gewonnen / row.total) * 100 : 0;
+        rows.push(row);
+      });
+    });
+
     const filtered = crmSearch
-      ? rows.filter((r) => r.adName.toLowerCase().includes(crmSearch.toLowerCase()))
+      ? rows.filter((r) => r.adName.toLowerCase().includes(crmSearch.toLowerCase()) || r.adSetName.toLowerCase().includes(crmSearch.toLowerCase()))
       : rows;
     filtered.sort((a, b) => crmSortDir === "asc" ? a[crmSortKey] - b[crmSortKey] : b[crmSortKey] - a[crmSortKey]);
     return filtered;
@@ -1343,6 +1381,7 @@ function MetaTab() {
                 <thead>
                   <tr>
                     <th className="text-left pl-3">Creative</th>
+                    <th className="text-left pl-2">Ad Set</th>
                     {cols.map((col) => (
                       <th
                         key={col.key}
@@ -1366,11 +1405,12 @@ function MetaTab() {
                           : <span style={{ color }}>{val}</span>
                       ) : <span className="text-[#292524]">-</span>;
                     return (
-                      <tr key={row.adName}>
+                      <tr key={`${row.adName}|||${row.adSetName}`}>
                         <td className="pl-3 pr-4 relative">
                           <div className="absolute inset-y-0 left-0 rounded-r-sm opacity-[0.07]" style={{ width: `${(row.total / maxTotal) * 100}%`, background: "linear-gradient(90deg, #818cf8, #5eead4)" }} />
                           <span className="relative text-[#fafaf9] font-medium">{row.adName}</span>
                         </td>
+                        <td className="pl-2 pr-4 text-[12px] text-[#57534e]">{row.adSetName}</td>
                         <td className="text-right pr-3 tabular-nums text-[#a8a29e] font-semibold">{row.total}</td>
                         <td className="text-right pr-3 tabular-nums">{cell(row.sql, "#818cf8", true)}</td>
                         <td className="text-right pr-3 tabular-nums font-semibold">{cell(row.gewonnen, "#5eead4")}</td>
