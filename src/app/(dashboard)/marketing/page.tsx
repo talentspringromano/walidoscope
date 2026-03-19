@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { KpiCard, SectionCard } from "@/components/kpi-card";
 import { TimeRangeFilter } from "@/components/time-range-filter";
 import { leads } from "@/data/leads";
-import { metaAds, totalMetaSpend, totalMetaLeads, avgCPL } from "@/data/meta-ads";
+import { totalMetaSpend, totalMetaLeads, avgCPL } from "@/data/meta-ads";
 import { perspectiveVisits } from "@/data/perspective";
 import {
   indeedDaily,
@@ -85,12 +85,6 @@ const CHANNELS: { key: ChannelKey; label: string }[] = [
 ];
 
 /* ── Cost per Ad (module-level, not filterable) ── */
-const costData = metaAds.map((ad) => ({
-  name: ad.shortName,
-  spend: ad.amountSpent,
-  cpl: ad.costPerResult,
-}));
-
 type MarketingTab = "meta" | "indeed" | "kursnet";
 const VALID_TABS: MarketingTab[] = ["meta", "indeed", "kursnet"];
 
@@ -443,22 +437,6 @@ function MarketingContent() {
         <KpiCard label="Kursnet Leads" value={kursnetLeadsCount} sub={`${kursnetLeadsCount} im CRM · ${perspSummary.converted} konvertiert`} />
       </div>
 
-
-      <div className="grid gap-6 lg:grid-cols-1 stagger-in">
-        {/* Cost Analysis */}
-        <SectionCard title="Spend & CPL pro Creative">
-          <ResponsiveContainer width="100%" height={340}>
-            <BarChart data={costData} barGap={4} layout="vertical">
-              <XAxis type="number" {...AXIS_STYLE} axisLine={false} tickLine={false} />
-              <YAxis type="category" dataKey="name" {...AXIS_STYLE} width={160} axisLine={false} tickLine={false} interval={0} />
-              <Tooltip {...TOOLTIP_STYLE} formatter={(val) => typeof val === "number" ? `€${val.toFixed(2)}` : val} />
-              <Bar dataKey="spend" fill={PALETTE.indigo} name="Spend" radius={[0, 6, 6, 0]} />
-              <Bar dataKey="cpl" fill={PALETTE.teal} name="CPL" radius={[0, 6, 6, 0]} />
-            </BarChart>
-          </ResponsiveContainer>
-        </SectionCard>
-
-      </div>
 
       {/* Lead-Segmentierung im Zeitverlauf */}
       {segmentWeeklyData.length > 0 && (
