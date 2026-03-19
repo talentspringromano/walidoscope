@@ -977,7 +977,7 @@ function MetaTab() {
           { key: "winRate", label: "Win %", color: "#5eead4" },
           { key: "verloren", label: "Verloren", color: "#f87171" },
           { key: "vertriebsqualifiziert", label: "VQ", color: "#818cf8" },
-          { key: "gespraeche", label: "Gespräche", color: "#e2a96e" },
+          { key: "gespraeche", label: "Termin", color: "#e2a96e" },
           { key: "rueckruf", label: "Rückruf", color: "#78716c" },
           { key: "reterminierung", label: "Reterm.", color: "#78716c" },
           { key: "neuerLead", label: "Neu", color: "#78716c" },
