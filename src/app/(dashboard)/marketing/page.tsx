@@ -23,7 +23,7 @@ import {
 import type { MetaExportEntry } from "@/data/meta-export";
 import type { IndeedDailyEntry } from "@/data/indeed";
 import { TOOLTIP_STYLE, AXIS_STYLE, PALETTE, SEGMENT_COLORS, FUNNEL_COLORS } from "@/components/chart-theme";
-import { ArrowUpDown, ArrowUp, ArrowDown, Upload, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
+import { Upload, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 import {
   BarChart,
   Bar,
@@ -91,17 +91,6 @@ const costData = metaAds.map((ad) => ({
   cpl: ad.costPerResult,
 }));
 
-type SortKey = "adName" | "shortName" | "amountSpent" | "impressions" | "clicksAll" | "results" | "costPerResult" | "airtableLeads" | "discovery" | "angebot";
-type SortDir = "asc" | "desc";
-type FilterPreset = "all" | "low-cpl" | "high-leads" | "deep-funnel";
-
-const FILTER_PRESETS: { key: FilterPreset; label: string }[] = [
-  { key: "all", label: "Alle" },
-  { key: "low-cpl", label: "CPL < €5" },
-  { key: "high-leads", label: "Leads ≥ 6" },
-  { key: "deep-funnel", label: "Mit Gewonnen" },
-];
-
 type MarketingTab = "meta" | "indeed" | "kursnet";
 const VALID_TABS: MarketingTab[] = ["meta", "indeed", "kursnet"];
 
@@ -117,14 +106,11 @@ function MarketingContent() {
   const searchParams = useSearchParams();
   const tabParam = searchParams.get("tab") as MarketingTab | null;
   const activeTab = tabParam && VALID_TABS.includes(tabParam) ? tabParam : null;
-  const [sortKey, setSortKey] = useState<SortKey>("results");
-  const [sortDir, setSortDir] = useState<SortDir>("desc");
-  const [filter, setFilter] = useState<FilterPreset>("all");
   const [range, setRange] = useState<TimeRange>("all");
   const [hiddenChannels, setHiddenChannels] = useState<Set<string>>(new Set());
   const {
     channelData, segmentCounts, allSegments, segmentWeeklyData,
-    creativeDeepFunnel, gewonnenKursnet, sqlKursnet, perspFunnelData, perspSummary,
+    gewonnenKursnet, sqlKursnet, perspFunnelData, perspSummary,
     filteredLeads, channelWeeklyData, platformData, platformAggData,
   } = useMemo(() => {
     const filteredLeads = filterLeadsByRange(leads, range);
@@ -159,20 +145,6 @@ function MarketingContent() {
         week: `KW ${wk}`,
         ...Object.fromEntries(allSegments.map((s) => [s, counts[s] || 0])),
       }));
-
-    /* Creative Deep-Funnel */
-    const creativeDeepFunnel = metaAds.map((ad) => {
-      const adLeads = filteredLeads.filter(
-        (l) => l.adId === ad.adId || l.adId === `ag:${ad.adId}` || l.adId.includes(ad.adId.slice(-10))
-      );
-      const qualified = adLeads.filter(
-        (l) => l.leadStatus === "Vertriebsqualifiziert" || l.leadStatus === "Kennenlerngespräch gebucht" || l.leadStatus === "Beratungsgespräch gebucht"
-      ).length;
-      const angebot = adLeads.filter(
-        (l) => l.leadStatus === "Gewonnen"
-      ).length;
-      return { ...ad, airtableLeads: adLeads.length, discovery: qualified, angebot };
-    });
 
     /* Perspective */
     const perspFiltered = filterPerspectiveByRange(perspectiveVisits, range);
@@ -231,40 +203,10 @@ function MarketingContent() {
 
     return {
       channelData, segmentCounts, allSegments, segmentWeeklyData,
-      creativeDeepFunnel, gewonnenKursnet, sqlKursnet, perspFunnelData, perspSummary,
+      gewonnenKursnet, sqlKursnet, perspFunnelData, perspSummary,
       filteredLeads, channelWeeklyData, platformData, platformAggData,
     };
   }, [range]);
-
-  const filteredAndSorted = useMemo(() => {
-    let data = [...creativeDeepFunnel];
-
-    if (filter === "low-cpl") data = data.filter((d) => d.costPerResult < 5);
-    else if (filter === "high-leads") data = data.filter((d) => d.results >= 6);
-    else if (filter === "deep-funnel") data = data.filter((d) => d.angebot > 0);
-
-    data.sort((a, b) => {
-      const aVal = a[sortKey as keyof typeof a];
-      const bVal = b[sortKey as keyof typeof b];
-      if (typeof aVal === "string" && typeof bVal === "string")
-        return sortDir === "asc" ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
-      return sortDir === "asc" ? (aVal as number) - (bVal as number) : (bVal as number) - (aVal as number);
-    });
-
-    return data;
-  }, [sortKey, sortDir, filter, creativeDeepFunnel]);
-
-  function toggleSort(key: SortKey) {
-    if (sortKey === key) setSortDir((d) => (d === "asc" ? "desc" : "asc"));
-    else { setSortKey(key); setSortDir("desc"); }
-  }
-
-  function SortIcon({ col }: { col: SortKey }) {
-    if (sortKey !== col) return <ArrowUpDown className="h-3 w-3 ml-1 opacity-30" />;
-    return sortDir === "desc"
-      ? <ArrowDown className="h-3 w-3 ml-1 text-[#e2a96e]" />
-      : <ArrowUp className="h-3 w-3 ml-1 text-[#e2a96e]" />;
-  }
 
   const kursnetLeadsCount = filteredLeads.filter((l) => l.platform === "Kursnet").length;
 
@@ -501,76 +443,6 @@ function MarketingContent() {
         <KpiCard label="Kursnet Leads" value={kursnetLeadsCount} sub={`${kursnetLeadsCount} im CRM · ${perspSummary.converted} konvertiert`} />
       </div>
 
-      {/* Creative Performance Table */}
-      <SectionCard title="Creative-Leistung (Deep-Funnel)" className="overflow-visible">
-        {/* Filter Chips */}
-        <div className="flex items-center gap-2 mb-4">
-          {FILTER_PRESETS.map((f) => (
-            <button
-              key={f.key}
-              onClick={() => setFilter(f.key)}
-              className={`px-3 py-1 rounded-lg text-[11px] font-medium transition-all ${
-                filter === f.key
-                  ? "bg-[rgba(226,169,110,0.12)] text-[#e2a96e] border border-[rgba(226,169,110,0.25)]"
-                  : "text-[#78716c] border border-[rgba(255,255,255,0.06)] hover:text-[#a8a29e] hover:bg-[rgba(255,255,255,0.03)]"
-              }`}
-            >
-              {f.label}
-            </button>
-          ))}
-          <span className="ml-auto text-[11px] text-[#44403c]">
-            {filteredAndSorted.length} von {creativeDeepFunnel.length}
-          </span>
-        </div>
-
-        <div className="overflow-x-auto">
-          <table className="w-full premium-table">
-            <thead>
-              <tr>
-                {([
-                  ["adName", "Creative", "text-left pl-2"],
-                  ["shortName", "Kurzname", "text-left pl-2"],
-                  ["amountSpent", "Spend", "text-right pr-5"],
-                  ["impressions", "Impr.", "text-right pr-5"],
-                  ["clicksAll", "Clicks", "text-right pr-5"],
-                  ["results", "Leads", "text-right pr-5"],
-                  ["costPerResult", "CPL", "text-right pr-5"],
-                  ["airtableLeads", "CRM", "text-right pr-5"],
-                  ["discovery", "Discovery+", "text-right pr-5"],
-                  ["angebot", "Gewonnen", "text-right pr-8"],
-                ] as [SortKey, string, string][]).map(([key, label, cls]) => (
-                  <th
-                    key={key}
-                    className={`${cls} cursor-pointer select-none hover:text-[#a8a29e] transition-colors`}
-                    onClick={() => toggleSort(key)}
-                  >
-                    <span className="inline-flex items-center">
-                      {label}
-                      <SortIcon col={key} />
-                    </span>
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {filteredAndSorted.map((ad) => (
-                <tr key={ad.adId}>
-                  <td className="pl-2 pr-4 text-[13px] font-medium text-[#fafaf9]">{ad.adName}</td>
-                  <td className="pl-2 pr-4 text-[13px] text-[#a8a29e]">{ad.shortName}</td>
-                  <td className="text-right pr-5 tabular-nums text-[#78716c]">€{ad.amountSpent.toFixed(2)}</td>
-                  <td className="text-right pr-5 tabular-nums text-[#78716c]">{ad.impressions.toLocaleString()}</td>
-                  <td className="text-right pr-5 tabular-nums text-[#78716c]">{ad.clicksAll}</td>
-                  <td className="text-right pr-5 tabular-nums font-medium text-[#e2a96e]">{ad.results}</td>
-                  <td className="text-right pr-5 tabular-nums text-[#78716c]">€{ad.costPerResult.toFixed(2)}</td>
-                  <td className="text-right pr-5 tabular-nums text-[#a8a29e]">{ad.airtableLeads}</td>
-                  <td className="text-right pr-5 tabular-nums text-[#a8a29e]">{ad.discovery}</td>
-                  <td className="text-right pr-8 tabular-nums font-semibold text-[#5eead4] glow-badge">{ad.angebot}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </SectionCard>
 
       <div className="grid gap-6 lg:grid-cols-1 stagger-in">
         {/* Cost Analysis */}
