@@ -50,6 +50,7 @@ import {
   LineChart,
   Line,
   Area,
+  AreaChart,
   ComposedChart,
   ReferenceArea,
 } from "recharts";
@@ -138,6 +139,7 @@ function MarketingContent() {
     filteredLeads, channelWeeklyData, channelDailyData, channelMonthlyData, platformData, platformAggData,
     spendWeeklyData, spendDailyData, spendMonthlyData,
     cplWeeklyData, cplDailyData, cplMonthlyData,
+    outcomeWeeklyData,
   } = useMemo(() => {
     const filteredLeads = filterLeadsByRange(leads, range);
 
@@ -360,6 +362,36 @@ function MarketingContent() {
         };
       });
 
+    /* ── Lead-Outcome im Wochenverlauf (100% stacked: HT, LT, Lost) ── */
+    const outcomeWeekMap = new Map<number, { ht: number; lt: number; lost: number }>();
+    filteredLeads.forEach((l) => {
+      const date = parseDE(l.createdOn);
+      if (isNaN(date.getTime())) return;
+      const wk = getISOWeek(date);
+      const entry = outcomeWeekMap.get(wk) ?? { ht: 0, lt: 0, lost: 0 };
+      const isHT = l.prozessStarten.includes("High Touch") || l.betreuungsart === "High Touch";
+      const isLT = l.prozessStarten.includes("Low Touch") || l.betreuungsart === "Low Touch";
+      if (l.leadStatus === "Verloren") entry.lost++;
+      else if (isHT) entry.ht++;
+      else if (isLT) entry.lt++;
+      outcomeWeekMap.set(wk, entry);
+    });
+    const outcomeWeeklyData = Array.from(outcomeWeekMap.entries())
+      .sort((a, b) => a[0] - b[0])
+      .map(([wk, counts]) => {
+        const total = counts.ht + counts.lt + counts.lost;
+        return {
+          label: `KW ${wk}`,
+          "High Touch": total > 0 ? Math.round((counts.ht / total) * 1000) / 10 : 0,
+          "Low Touch": total > 0 ? Math.round((counts.lt / total) * 1000) / 10 : 0,
+          Verloren: total > 0 ? Math.round((counts.lost / total) * 1000) / 10 : 0,
+          rawHT: counts.ht,
+          rawLT: counts.lt,
+          rawLost: counts.lost,
+          rawTotal: total,
+        };
+      });
+
     /* Platform-Verteilung */
     const platformCounts: Record<string, number> = {};
     filteredLeads.forEach((l) => {
@@ -387,6 +419,7 @@ function MarketingContent() {
       filteredLeads, channelWeeklyData, channelDailyData, channelMonthlyData, platformData, platformAggData,
       spendWeeklyData, spendDailyData, spendMonthlyData,
       cplWeeklyData, cplDailyData, cplMonthlyData,
+      outcomeWeeklyData,
     };
   }, [range]);
 
@@ -817,6 +850,51 @@ function MarketingContent() {
         </div>
           );
         })()}
+
+        {/* Lead-Outcome im Wochenverlauf – 100% Stacked Area */}
+        {outcomeWeeklyData.length > 0 && (
+        <div className="glass-card p-6">
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-[13px] font-semibold tracking-wide text-[#a8a29e]">Was ist mit Leads passiert? — Wochenverlauf</h3>
+          </div>
+          <ResponsiveContainer width="100%" height={320}>
+            <AreaChart data={outcomeWeeklyData} stackOffset="expand">
+              <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
+              <XAxis dataKey="label" {...AXIS_STYLE} axisLine={false} tickLine={false} />
+              <YAxis {...AXIS_STYLE} axisLine={false} tickLine={false} tickFormatter={(v: number) => `${Math.round(v * 100)}%`} />
+              <Tooltip
+                {...TOOLTIP_STYLE}
+                content={({ active, payload, label }) => {
+                  if (!active || !payload?.length) return null;
+                  const d = payload[0]?.payload;
+                  return (
+                    <div className="rounded-lg border border-[rgba(255,255,255,0.08)] bg-[#1c1917] px-3 py-2 shadow-xl">
+                      <div className="text-[11px] text-[#78716c] mb-1.5">{label} — {d?.rawTotal} Leads</div>
+                      {[
+                        { name: "High Touch", val: d?.rawHT, pct: d?.["High Touch"], color: "#34d399" },
+                        { name: "Low Touch", val: d?.rawLT, pct: d?.["Low Touch"], color: "#60a5fa" },
+                        { name: "Verloren", val: d?.rawLost, pct: d?.Verloren, color: "#f87171" },
+                      ].map((item) => (
+                        <div key={item.name} className="flex items-center justify-between gap-4 text-[12px]">
+                          <span className="flex items-center gap-1.5">
+                            <span className="w-2 h-2 rounded-sm" style={{ background: item.color }} />
+                            <span className="text-[#a8a29e]">{item.name}</span>
+                          </span>
+                          <span className="font-semibold tabular-nums text-[#fafaf9]">{item.val} <span className="text-[#57534e]">({item.pct}%)</span></span>
+                        </div>
+                      ))}
+                    </div>
+                  );
+                }}
+              />
+              <Area type="monotone" dataKey="High Touch" stackId="1" stroke="#34d399" fill="#34d399" fillOpacity={0.7} />
+              <Area type="monotone" dataKey="Low Touch" stackId="1" stroke="#60a5fa" fill="#60a5fa" fillOpacity={0.7} />
+              <Area type="monotone" dataKey="Verloren" stackId="1" stroke="#f87171" fill="#f87171" fillOpacity={0.7} />
+              <Legend wrapperStyle={{ fontSize: 11, color: "#78716c" }} />
+            </AreaChart>
+          </ResponsiveContainer>
+        </div>
+        )}
 
         {/* Leads nach Quelle */}
         {platformData.length > 0 && (
