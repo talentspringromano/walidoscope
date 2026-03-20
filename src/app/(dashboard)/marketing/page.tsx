@@ -131,8 +131,15 @@ function MarketingContent() {
   const tabParam = searchParams.get("tab") as MarketingTab | null;
   const activeTab = tabParam && VALID_TABS.includes(tabParam) ? tabParam : null;
   const [range, setRange] = useState<TimeRange>("all");
+  const [seller, setSeller] = useState<string>("all");
   const [hiddenChannels, setHiddenChannels] = useState<Set<string>>(new Set());
   const [channelTimeMode, setChannelTimeMode] = useState<"day" | "week" | "month">("week");
+
+  const sellerOptions = useMemo(() => {
+    const names = new Set<string>();
+    leads.forEach((l) => { if (l.vertriebler) names.add(l.vertriebler); });
+    return Array.from(names).sort();
+  }, []);
   const {
     channelData, segmentCounts, allSegments, segmentWeeklyData,
     gewonnenKursnet, sqlKursnet, perspFunnelData, perspSummary,
@@ -141,7 +148,8 @@ function MarketingContent() {
     cplWeeklyData, cplDailyData, cplMonthlyData,
     outcomeWeeklyData,
   } = useMemo(() => {
-    const filteredLeads = filterLeadsByRange(leads, range);
+    const rangeFiltered = filterLeadsByRange(leads, range);
+    const filteredLeads = seller === "all" ? rangeFiltered : rangeFiltered.filter((l) => l.vertriebler === seller);
 
     const channelData = CHANNELS.map(({ key, label }) => {
       const ist = computeChannelIST(key, filteredLeads);
@@ -425,7 +433,7 @@ function MarketingContent() {
       cplWeeklyData, cplDailyData, cplMonthlyData,
       outcomeWeeklyData,
     };
-  }, [range]);
+  }, [range, seller]);
 
   const kursnetLeadsCount = filteredLeads.filter((l) => l.platform === "Kursnet").length;
 
@@ -436,7 +444,19 @@ function MarketingContent() {
           <h1 className="text-[26px] font-bold tracking-tight text-[#fafaf9]">Marketing-Analytik</h1>
           <p className="mt-1 text-[13px] text-[#57534e]">Ad Performance, Lead-Segmentierung & Kursnet Funnel</p>
         </div>
-        <TimeRangeFilter value={range} onChange={setRange} />
+        <div className="flex items-center gap-3">
+          <select
+            value={seller}
+            onChange={(e) => setSeller(e.target.value)}
+            className="appearance-none rounded-lg border border-[rgba(255,255,255,0.06)] bg-[rgba(255,255,255,0.03)] px-3 py-1 text-[11px] font-medium text-[#a8a29e] outline-none transition-all hover:bg-[rgba(255,255,255,0.05)] focus:border-[rgba(226,169,110,0.25)] focus:text-[#e2a96e]"
+          >
+            <option value="all">Alle Seller</option>
+            {sellerOptions.map((s) => (
+              <option key={s} value={s}>{s}</option>
+            ))}
+          </select>
+          <TimeRangeFilter value={range} onChange={setRange} />
+        </div>
       </div>
 
       {/* ── Übersicht (kein Tab ausgewählt) ── */}
