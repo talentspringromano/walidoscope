@@ -887,9 +887,9 @@ function MarketingContent() {
                   );
                 }}
               />
-              <Area type="monotone" dataKey="High Touch" stackId="1" stroke="#34d399" fill="#34d399" fillOpacity={0.7} />
-              <Area type="monotone" dataKey="Low Touch" stackId="1" stroke="#60a5fa" fill="#60a5fa" fillOpacity={0.7} />
               <Area type="monotone" dataKey="Verloren" stackId="1" stroke="#f87171" fill="#f87171" fillOpacity={0.7} />
+              <Area type="monotone" dataKey="Low Touch" stackId="1" stroke="#60a5fa" fill="#60a5fa" fillOpacity={0.7} />
+              <Area type="monotone" dataKey="High Touch" stackId="1" stroke="#34d399" fill="#34d399" fillOpacity={0.7} />
               <Legend wrapperStyle={{ fontSize: 11, color: "#78716c" }} />
             </AreaChart>
           </ResponsiveContainer>
