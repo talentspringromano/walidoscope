@@ -146,10 +146,8 @@ function MarketingContent() {
     filteredLeads, channelWeeklyData, channelDailyData, channelMonthlyData, platformData, platformAggData,
     spendWeeklyData, spendDailyData, spendMonthlyData,
     cplWeeklyData, cplDailyData, cplMonthlyData,
-    outcomeWeeklyData,
   } = useMemo(() => {
-    const rangeFiltered = filterLeadsByRange(leads, range);
-    const filteredLeads = seller === "all" ? rangeFiltered : rangeFiltered.filter((l) => l.vertriebler === seller);
+    const filteredLeads = filterLeadsByRange(leads, range);
 
     const channelData = CHANNELS.map(({ key, label }) => {
       const ist = computeChannelIST(key, filteredLeads);
@@ -370,40 +368,6 @@ function MarketingContent() {
         };
       });
 
-    /* ── Lead-Outcome im Wochenverlauf (100% stacked: HT, LT, Offen, Lost) ── */
-    const outcomeWeekMap = new Map<number, { ht: number; lt: number; lost: number; offen: number }>();
-    filteredLeads.forEach((l) => {
-      const date = parseDE(l.createdOn);
-      if (isNaN(date.getTime())) return;
-      const wk = getISOWeek(date);
-      const entry = outcomeWeekMap.get(wk) ?? { ht: 0, lt: 0, lost: 0, offen: 0 };
-      const isHT = l.prozessStarten.includes("High Touch") || l.betreuungsart === "High Touch";
-      const isLT = l.prozessStarten.includes("Low Touch") || l.betreuungsart === "Low Touch";
-      if (l.leadStatus === "Verloren") entry.lost++;
-      else if (l.leadStatus === "Gewonnen") { /* skip — nicht im Chart */ }
-      else if (isHT) entry.ht++;
-      else if (isLT) entry.lt++;
-      else entry.offen++;
-      outcomeWeekMap.set(wk, entry);
-    });
-    const outcomeWeeklyData = Array.from(outcomeWeekMap.entries())
-      .sort((a, b) => a[0] - b[0])
-      .map(([wk, counts]) => {
-        const total = counts.ht + counts.lt + counts.lost + counts.offen;
-        return {
-          label: `KW ${wk}`,
-          "High Touch": total > 0 ? Math.round((counts.ht / total) * 1000) / 10 : 0,
-          "Low Touch": total > 0 ? Math.round((counts.lt / total) * 1000) / 10 : 0,
-          Offen: total > 0 ? Math.round((counts.offen / total) * 1000) / 10 : 0,
-          Verloren: total > 0 ? Math.round((counts.lost / total) * 1000) / 10 : 0,
-          rawHT: counts.ht,
-          rawLT: counts.lt,
-          rawOffen: counts.offen,
-          rawLost: counts.lost,
-          rawTotal: total,
-        };
-      });
-
     /* Platform-Verteilung */
     const platformCounts: Record<string, number> = {};
     filteredLeads.forEach((l) => {
@@ -431,9 +395,45 @@ function MarketingContent() {
       filteredLeads, channelWeeklyData, channelDailyData, channelMonthlyData, platformData, platformAggData,
       spendWeeklyData, spendDailyData, spendMonthlyData,
       cplWeeklyData, cplDailyData, cplMonthlyData,
-      outcomeWeeklyData,
     };
-  }, [range, seller]);
+  }, [range]);
+
+  /* ── Lead-Outcome (eigenes Memo mit Seller-Filter) ── */
+  const outcomeWeeklyData = useMemo(() => {
+    const base = seller === "all" ? filteredLeads : filteredLeads.filter((l) => l.vertriebler === seller);
+    const outcomeWeekMap = new Map<number, { ht: number; lt: number; lost: number; offen: number }>();
+    base.forEach((l) => {
+      const date = parseDE(l.createdOn);
+      if (isNaN(date.getTime())) return;
+      const wk = getISOWeek(date);
+      const entry = outcomeWeekMap.get(wk) ?? { ht: 0, lt: 0, lost: 0, offen: 0 };
+      const isHT = l.prozessStarten.includes("High Touch") || l.betreuungsart === "High Touch";
+      const isLT = l.prozessStarten.includes("Low Touch") || l.betreuungsart === "Low Touch";
+      if (l.leadStatus === "Verloren") entry.lost++;
+      else if (l.leadStatus === "Gewonnen") { /* skip — nicht im Chart */ }
+      else if (isHT) entry.ht++;
+      else if (isLT) entry.lt++;
+      else entry.offen++;
+      outcomeWeekMap.set(wk, entry);
+    });
+    return Array.from(outcomeWeekMap.entries())
+      .sort((a, b) => a[0] - b[0])
+      .map(([wk, counts]) => {
+        const total = counts.ht + counts.lt + counts.lost + counts.offen;
+        return {
+          label: `KW ${wk}`,
+          "High Touch": total > 0 ? Math.round((counts.ht / total) * 1000) / 10 : 0,
+          "Low Touch": total > 0 ? Math.round((counts.lt / total) * 1000) / 10 : 0,
+          Offen: total > 0 ? Math.round((counts.offen / total) * 1000) / 10 : 0,
+          Verloren: total > 0 ? Math.round((counts.lost / total) * 1000) / 10 : 0,
+          rawHT: counts.ht,
+          rawLT: counts.lt,
+          rawOffen: counts.offen,
+          rawLost: counts.lost,
+          rawTotal: total,
+        };
+      });
+  }, [filteredLeads, seller]);
 
   const kursnetLeadsCount = filteredLeads.filter((l) => l.platform === "Kursnet").length;
 
@@ -444,19 +444,7 @@ function MarketingContent() {
           <h1 className="text-[26px] font-bold tracking-tight text-[#fafaf9]">Marketing-Analytik</h1>
           <p className="mt-1 text-[13px] text-[#57534e]">Ad Performance, Lead-Segmentierung & Kursnet Funnel</p>
         </div>
-        <div className="flex items-center gap-3">
-          <select
-            value={seller}
-            onChange={(e) => setSeller(e.target.value)}
-            className="appearance-none rounded-lg border border-[rgba(255,255,255,0.06)] bg-[rgba(255,255,255,0.03)] px-3 py-1 text-[11px] font-medium text-[#a8a29e] outline-none transition-all hover:bg-[rgba(255,255,255,0.05)] focus:border-[rgba(226,169,110,0.25)] focus:text-[#e2a96e]"
-          >
-            <option value="all">Alle Seller</option>
-            {sellerOptions.map((s) => (
-              <option key={s} value={s}>{s}</option>
-            ))}
-          </select>
-          <TimeRangeFilter value={range} onChange={setRange} />
-        </div>
+        <TimeRangeFilter value={range} onChange={setRange} />
       </div>
 
       {/* ── Übersicht (kein Tab ausgewählt) ── */}
@@ -880,6 +868,16 @@ function MarketingContent() {
         <div className="glass-card p-6">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-[13px] font-semibold tracking-wide text-[#a8a29e]">Was ist mit Leads passiert? — Wochenverlauf</h3>
+            <select
+              value={seller}
+              onChange={(e) => setSeller(e.target.value)}
+              className="appearance-none rounded-lg border border-[rgba(255,255,255,0.06)] bg-[rgba(255,255,255,0.03)] px-3 py-1 text-[11px] font-medium text-[#a8a29e] outline-none transition-all hover:bg-[rgba(255,255,255,0.05)] focus:border-[rgba(226,169,110,0.25)] focus:text-[#e2a96e]"
+            >
+              <option value="all">Alle Seller</option>
+              {sellerOptions.map((s) => (
+                <option key={s} value={s}>{s}</option>
+              ))}
+            </select>
           </div>
           <ResponsiveContainer width="100%" height={320}>
             <AreaChart data={outcomeWeeklyData} stackOffset="expand">
