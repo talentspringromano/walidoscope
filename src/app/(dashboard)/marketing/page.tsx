@@ -362,31 +362,35 @@ function MarketingContent() {
         };
       });
 
-    /* ── Lead-Outcome im Wochenverlauf (100% stacked: HT, LT, Lost) ── */
-    const outcomeWeekMap = new Map<number, { ht: number; lt: number; lost: number }>();
+    /* ── Lead-Outcome im Wochenverlauf (100% stacked: HT, LT, Offen, Lost) ── */
+    const outcomeWeekMap = new Map<number, { ht: number; lt: number; lost: number; offen: number }>();
     filteredLeads.forEach((l) => {
       const date = parseDE(l.createdOn);
       if (isNaN(date.getTime())) return;
       const wk = getISOWeek(date);
-      const entry = outcomeWeekMap.get(wk) ?? { ht: 0, lt: 0, lost: 0 };
+      const entry = outcomeWeekMap.get(wk) ?? { ht: 0, lt: 0, lost: 0, offen: 0 };
       const isHT = l.prozessStarten.includes("High Touch") || l.betreuungsart === "High Touch";
       const isLT = l.prozessStarten.includes("Low Touch") || l.betreuungsart === "Low Touch";
       if (l.leadStatus === "Verloren") entry.lost++;
+      else if (l.leadStatus === "Gewonnen") { /* skip — nicht im Chart */ }
       else if (isHT) entry.ht++;
       else if (isLT) entry.lt++;
+      else entry.offen++;
       outcomeWeekMap.set(wk, entry);
     });
     const outcomeWeeklyData = Array.from(outcomeWeekMap.entries())
       .sort((a, b) => a[0] - b[0])
       .map(([wk, counts]) => {
-        const total = counts.ht + counts.lt + counts.lost;
+        const total = counts.ht + counts.lt + counts.lost + counts.offen;
         return {
           label: `KW ${wk}`,
           "High Touch": total > 0 ? Math.round((counts.ht / total) * 1000) / 10 : 0,
           "Low Touch": total > 0 ? Math.round((counts.lt / total) * 1000) / 10 : 0,
+          Offen: total > 0 ? Math.round((counts.offen / total) * 1000) / 10 : 0,
           Verloren: total > 0 ? Math.round((counts.lost / total) * 1000) / 10 : 0,
           rawHT: counts.ht,
           rawLT: counts.lt,
+          rawOffen: counts.offen,
           rawLost: counts.lost,
           rawTotal: total,
         };
@@ -873,6 +877,7 @@ function MarketingContent() {
                       {[
                         { name: "High Touch", val: d?.rawHT, pct: d?.["High Touch"], color: "#34d399" },
                         { name: "Low Touch", val: d?.rawLT, pct: d?.["Low Touch"], color: "#60a5fa" },
+                        { name: "Offen", val: d?.rawOffen, pct: d?.Offen, color: "#e2a96e" },
                         { name: "Verloren", val: d?.rawLost, pct: d?.Verloren, color: "#f87171" },
                       ].map((item) => (
                         <div key={item.name} className="flex items-center justify-between gap-4 text-[12px]">
@@ -888,6 +893,7 @@ function MarketingContent() {
                 }}
               />
               <Area type="monotone" dataKey="Verloren" stackId="1" stroke="#f87171" fill="#f87171" fillOpacity={0.7} />
+              <Area type="monotone" dataKey="Offen" stackId="1" stroke="#e2a96e" fill="#e2a96e" fillOpacity={0.7} />
               <Area type="monotone" dataKey="Low Touch" stackId="1" stroke="#60a5fa" fill="#60a5fa" fillOpacity={0.7} />
               <Area type="monotone" dataKey="High Touch" stackId="1" stroke="#34d399" fill="#34d399" fillOpacity={0.7} />
               <Legend wrapperStyle={{ fontSize: 11, color: "#78716c" }} />
