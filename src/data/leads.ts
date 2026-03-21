@@ -29,7 +29,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 2,
@@ -59,7 +60,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 18:27",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 3,
@@ -89,7 +91,8 @@ export const leads: Lead[] = [
     "lastModified": "5.3.2026 13:41",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 4,
@@ -119,7 +122,8 @@ export const leads: Lead[] = [
     "lastModified": "25.2.2026 10:15",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 5,
@@ -149,7 +153,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 6,
@@ -179,7 +184,8 @@ export const leads: Lead[] = [
     "lastModified": "12.3.2026 11:35",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 7,
@@ -209,7 +215,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 8,
@@ -239,7 +246,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 9,
@@ -269,7 +277,8 @@ export const leads: Lead[] = [
     "lastModified": "3.3.2026 16:00",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 10,
@@ -299,7 +308,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 09:37",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 11,
@@ -329,7 +339,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 12,
@@ -359,7 +370,8 @@ export const leads: Lead[] = [
     "lastModified": "25.2.2026 10:59",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 13,
@@ -389,7 +401,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 14,
@@ -419,7 +432,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 18:28",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 15,
@@ -449,7 +463,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 18:28",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 16,
@@ -479,7 +494,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 17,
@@ -509,7 +525,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 18,
@@ -539,7 +556,8 @@ export const leads: Lead[] = [
     "lastModified": "3.3.2026 09:23",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 19,
@@ -569,7 +587,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 20,
@@ -599,7 +618,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 21,
@@ -629,7 +649,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 13:27",
     "angebotsprozessDatum": "3.3.2026 15:22",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 22,
@@ -659,7 +680,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 10:46",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 23,
@@ -689,7 +711,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 24,
@@ -719,7 +742,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 25,
@@ -749,7 +773,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 26,
@@ -779,7 +804,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 27,
@@ -809,7 +835,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 12:08",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 28,
@@ -839,7 +866,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:33",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 29,
@@ -869,7 +897,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 30,
@@ -899,7 +928,8 @@ export const leads: Lead[] = [
     "lastModified": "4.3.2026 13:30",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 31,
@@ -929,7 +959,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 12:21",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 32,
@@ -959,7 +990,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 14:16",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 33,
@@ -989,7 +1021,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 14:20",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 34,
@@ -1019,7 +1052,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 10:59",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 35,
@@ -1049,7 +1083,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 16:23",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 36,
@@ -1079,7 +1114,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 37,
@@ -1109,7 +1145,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 11:03",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 38,
@@ -1139,7 +1176,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 14:00",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 39,
@@ -1169,7 +1207,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 40,
@@ -1199,7 +1238,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 18:29",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 41,
@@ -1229,7 +1269,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 42,
@@ -1259,7 +1300,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 43,
@@ -1289,7 +1331,8 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 11:49",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 44,
@@ -1319,7 +1362,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 18:29",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 45,
@@ -1349,7 +1393,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 18:30",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 46,
@@ -1379,7 +1424,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 11:19",
     "angebotsprozessDatum": "26.2.2026 13:35",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 47,
@@ -1409,7 +1455,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 48,
@@ -1439,7 +1486,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 14:11",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 49,
@@ -1469,7 +1517,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 50,
@@ -1499,7 +1548,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 11:56",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 51,
@@ -1529,7 +1579,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 18:31",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 52,
@@ -1559,7 +1610,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 14:42",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 53,
@@ -1589,7 +1641,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 14:11",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 54,
@@ -1619,7 +1672,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 55,
@@ -1649,7 +1703,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 14:11",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 56,
@@ -1679,7 +1734,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 14:42",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 57,
@@ -1709,7 +1765,8 @@ export const leads: Lead[] = [
     "lastModified": "3.3.2026 09:25",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 58,
@@ -1739,7 +1796,8 @@ export const leads: Lead[] = [
     "lastModified": "25.2.2026 08:23",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 59,
@@ -1769,7 +1827,8 @@ export const leads: Lead[] = [
     "lastModified": "28.2.2026 18:39",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 60,
@@ -1799,7 +1858,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:28",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 61,
@@ -1829,7 +1889,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 13:09",
     "angebotsprozessDatum": "2.3.2026 10:44",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 62,
@@ -1859,7 +1920,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 11:29",
     "angebotsprozessDatum": "18.3.2026 09:51",
     "vertriebsqualifiziertAm": "18.3.2026 09:51",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 63,
@@ -1889,7 +1951,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 11:50",
     "angebotsprozessDatum": "19.3.2026 11:43",
     "vertriebsqualifiziertAm": "19.3.2026 11:43",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 64,
@@ -1919,7 +1982,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 18:31",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 65,
@@ -1949,7 +2013,8 @@ export const leads: Lead[] = [
     "lastModified": "14.3.2026 11:49",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 66,
@@ -1979,7 +2044,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 11:02",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 67,
@@ -2009,7 +2075,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 14:42",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 68,
@@ -2039,7 +2106,8 @@ export const leads: Lead[] = [
     "lastModified": "25.2.2026 17:41",
     "angebotsprozessDatum": "24.2.2026 18:45",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 69,
@@ -2069,7 +2137,8 @@ export const leads: Lead[] = [
     "lastModified": "11.3.2026 12:15",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 70,
@@ -2099,7 +2168,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 71,
@@ -2129,7 +2199,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 72,
@@ -2159,7 +2230,8 @@ export const leads: Lead[] = [
     "lastModified": "4.3.2026 19:23",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 73,
@@ -2189,7 +2261,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 14:42",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 74,
@@ -2219,7 +2292,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 10:46",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 75,
@@ -2249,7 +2323,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 14:42",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 76,
@@ -2279,7 +2354,8 @@ export const leads: Lead[] = [
     "lastModified": "3.3.2026 16:32",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 77,
@@ -2309,7 +2385,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 78,
@@ -2339,7 +2416,8 @@ export const leads: Lead[] = [
     "lastModified": "25.2.2026 08:54",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 79,
@@ -2369,7 +2447,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 80,
@@ -2399,7 +2478,8 @@ export const leads: Lead[] = [
     "lastModified": "25.2.2026 08:55",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 81,
@@ -2429,7 +2509,8 @@ export const leads: Lead[] = [
     "lastModified": "4.3.2026 08:59",
     "angebotsprozessDatum": "3.3.2026 09:46",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 82,
@@ -2459,7 +2540,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 83,
@@ -2489,7 +2571,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 15:40",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 84,
@@ -2519,7 +2602,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 13:50",
     "angebotsprozessDatum": "6.3.2026 15:59",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 85,
@@ -2549,7 +2633,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 86,
@@ -2579,7 +2664,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 87,
@@ -2609,7 +2695,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 15:41",
     "angebotsprozessDatum": "27.2.2026 08:17",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 88,
@@ -2639,7 +2726,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 17:42",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 89,
@@ -2669,7 +2757,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 10:45",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 90,
@@ -2699,7 +2788,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 10:48",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 91,
@@ -2729,7 +2819,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 92,
@@ -2759,7 +2850,8 @@ export const leads: Lead[] = [
     "lastModified": "3.3.2026 14:31",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 93,
@@ -2789,7 +2881,8 @@ export const leads: Lead[] = [
     "lastModified": "24.2.2026 18:12",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 94,
@@ -2819,7 +2912,8 @@ export const leads: Lead[] = [
     "lastModified": "11.3.2026 08:51",
     "angebotsprozessDatum": "10.3.2026 13:20",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 95,
@@ -2849,7 +2943,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 14:47",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 96,
@@ -2879,7 +2974,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 18:32",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 97,
@@ -2909,7 +3005,8 @@ export const leads: Lead[] = [
     "lastModified": "25.2.2026 08:06",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 98,
@@ -2939,7 +3036,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 16:23",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 99,
@@ -2969,7 +3067,8 @@ export const leads: Lead[] = [
     "lastModified": "5.3.2026 10:17",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 100,
@@ -2999,7 +3098,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 16:24",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 101,
@@ -3029,7 +3129,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 14:11",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 102,
@@ -3059,7 +3160,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 10:12",
     "angebotsprozessDatum": "7.3.2026 10:36",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 103,
@@ -3089,7 +3191,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 11:04",
     "angebotsprozessDatum": "26.2.2026 13:35",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 104,
@@ -3119,7 +3222,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 17:09",
     "angebotsprozessDatum": "24.2.2026 18:45",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 105,
@@ -3149,7 +3253,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 13:23",
     "angebotsprozessDatum": "26.2.2026 11:59",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 106,
@@ -3179,7 +3284,8 @@ export const leads: Lead[] = [
     "lastModified": "26.2.2026 11:07",
     "angebotsprozessDatum": "",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 107,
@@ -3209,7 +3315,8 @@ export const leads: Lead[] = [
     "lastModified": "26.2.2026 11:07",
     "angebotsprozessDatum": "",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 108,
@@ -3239,7 +3346,8 @@ export const leads: Lead[] = [
     "lastModified": "27.2.2026 12:30",
     "angebotsprozessDatum": "",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 109,
@@ -3269,7 +3377,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 16:42",
     "angebotsprozessDatum": "4.3.2026 15:41",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 110,
@@ -3299,7 +3408,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 11:09",
     "angebotsprozessDatum": "",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 111,
@@ -3329,7 +3439,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 15:32",
     "angebotsprozessDatum": "",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 112,
@@ -3359,7 +3470,8 @@ export const leads: Lead[] = [
     "lastModified": "27.2.2026 13:16",
     "angebotsprozessDatum": "27.2.2026 13:16",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 113,
@@ -3389,7 +3501,8 @@ export const leads: Lead[] = [
     "lastModified": "26.2.2026 10:13",
     "angebotsprozessDatum": "",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 114,
@@ -3419,7 +3532,8 @@ export const leads: Lead[] = [
     "lastModified": "3.3.2026 14:22",
     "angebotsprozessDatum": "",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 115,
@@ -3449,7 +3563,8 @@ export const leads: Lead[] = [
     "lastModified": "26.2.2026 11:11",
     "angebotsprozessDatum": "",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 116,
@@ -3479,7 +3594,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 15:31",
     "angebotsprozessDatum": "",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 117,
@@ -3509,7 +3625,8 @@ export const leads: Lead[] = [
     "lastModified": "3.3.2026 14:24",
     "angebotsprozessDatum": "",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 118,
@@ -3539,7 +3656,8 @@ export const leads: Lead[] = [
     "lastModified": "26.2.2026 10:05",
     "angebotsprozessDatum": "26.2.2026 10:05",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 119,
@@ -3569,7 +3687,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 15:32",
     "angebotsprozessDatum": "",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 120,
@@ -3599,7 +3718,8 @@ export const leads: Lead[] = [
     "lastModified": "3.3.2026 13:00",
     "angebotsprozessDatum": "",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 121,
@@ -3629,7 +3749,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 15:30",
     "angebotsprozessDatum": "",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 122,
@@ -3659,7 +3780,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 11:25",
     "angebotsprozessDatum": "27.2.2026 13:14",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 123,
@@ -3689,7 +3811,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 14:47",
     "angebotsprozessDatum": "",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 124,
@@ -3719,7 +3842,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 14:43",
     "angebotsprozessDatum": "",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 125,
@@ -3749,7 +3873,8 @@ export const leads: Lead[] = [
     "lastModified": "27.2.2026 08:19",
     "angebotsprozessDatum": "26.2.2026 10:15",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 126,
@@ -3779,7 +3904,8 @@ export const leads: Lead[] = [
     "lastModified": "3.3.2026 12:03",
     "angebotsprozessDatum": "3.3.2026 12:02",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 127,
@@ -3809,7 +3935,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 10:41",
     "angebotsprozessDatum": "26.2.2026 16:34",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 128,
@@ -3839,7 +3966,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 14:11",
     "angebotsprozessDatum": "26.2.2026 16:57",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 129,
@@ -3869,7 +3997,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 10:45",
     "angebotsprozessDatum": "26.2.2026 19:28",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 130,
@@ -3899,7 +4028,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 10:46",
     "angebotsprozessDatum": "26.2.2026 19:29",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 131,
@@ -3929,7 +4059,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 12:04",
     "angebotsprozessDatum": "26.2.2026 20:03",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 132,
@@ -3959,7 +4090,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 13:27",
     "angebotsprozessDatum": "26.2.2026 20:03",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 133,
@@ -3989,7 +4121,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 12:05",
     "angebotsprozessDatum": "26.2.2026 20:09",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 134,
@@ -4019,7 +4152,8 @@ export const leads: Lead[] = [
     "lastModified": "4.3.2026 13:59",
     "angebotsprozessDatum": "26.2.2026 20:46",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 135,
@@ -4049,7 +4183,8 @@ export const leads: Lead[] = [
     "lastModified": "2.3.2026 10:02",
     "angebotsprozessDatum": "26.2.2026 21:17",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 136,
@@ -4079,7 +4214,8 @@ export const leads: Lead[] = [
     "lastModified": "27.2.2026 17:09",
     "angebotsprozessDatum": "27.2.2026 17:09",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 137,
@@ -4109,7 +4245,8 @@ export const leads: Lead[] = [
     "lastModified": "3.3.2026 15:46",
     "angebotsprozessDatum": "27.2.2026 01:18",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 138,
@@ -4139,7 +4276,8 @@ export const leads: Lead[] = [
     "lastModified": "27.2.2026 09:46",
     "angebotsprozessDatum": "27.2.2026 09:26",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 139,
@@ -4169,7 +4307,8 @@ export const leads: Lead[] = [
     "lastModified": "2.3.2026 13:14",
     "angebotsprozessDatum": "27.2.2026 14:18",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 140,
@@ -4199,7 +4338,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 12:06",
     "angebotsprozessDatum": "27.2.2026 20:40",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 141,
@@ -4229,7 +4369,8 @@ export const leads: Lead[] = [
     "lastModified": "12.3.2026 11:46",
     "angebotsprozessDatum": "2.3.2026 12:46",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 142,
@@ -4259,7 +4400,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 12:06",
     "angebotsprozessDatum": "28.2.2026 09:03",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 143,
@@ -4289,7 +4431,8 @@ export const leads: Lead[] = [
     "lastModified": "2.3.2026 13:14",
     "angebotsprozessDatum": "28.2.2026 09:34",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 144,
@@ -4319,7 +4462,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 11:10",
     "angebotsprozessDatum": "13.3.2026 17:26",
     "vertriebsqualifiziertAm": "13.3.2026 17:26",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 145,
@@ -4349,7 +4493,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 14:42",
     "angebotsprozessDatum": "2.3.2026 12:14",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 146,
@@ -4379,7 +4524,8 @@ export const leads: Lead[] = [
     "lastModified": "4.3.2026 14:03",
     "angebotsprozessDatum": "1.3.2026 06:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 147,
@@ -4409,7 +4555,8 @@ export const leads: Lead[] = [
     "lastModified": "3.3.2026 10:03",
     "angebotsprozessDatum": "2.3.2026 13:10",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 148,
@@ -4439,7 +4586,8 @@ export const leads: Lead[] = [
     "lastModified": "3.3.2026 11:35",
     "angebotsprozessDatum": "1.3.2026 09:39",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 149,
@@ -4469,7 +4617,8 @@ export const leads: Lead[] = [
     "lastModified": "2.3.2026 13:14",
     "angebotsprozessDatum": "1.3.2026 09:41",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 150,
@@ -4499,7 +4648,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 11:44",
     "angebotsprozessDatum": "2.3.2026 10:38",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 151,
@@ -4529,7 +4679,8 @@ export const leads: Lead[] = [
     "lastModified": "2.3.2026 21:21",
     "angebotsprozessDatum": "2.3.2026 21:21",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 152,
@@ -4559,7 +4710,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 13:58",
     "angebotsprozessDatum": "4.3.2026 19:02",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 153,
@@ -4589,7 +4741,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:28",
     "angebotsprozessDatum": "2.3.2026 10:18",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 154,
@@ -4619,7 +4772,8 @@ export const leads: Lead[] = [
     "lastModified": "2.3.2026 13:14",
     "angebotsprozessDatum": "1.3.2026 19:45",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 155,
@@ -4649,7 +4803,8 @@ export const leads: Lead[] = [
     "lastModified": "11.3.2026 09:18",
     "angebotsprozessDatum": "1.3.2026 20:07",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 156,
@@ -4679,7 +4834,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 13:36",
     "angebotsprozessDatum": "3.3.2026 16:52",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 157,
@@ -4709,7 +4865,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 13:39",
     "angebotsprozessDatum": "5.3.2026 18:11",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 158,
@@ -4739,7 +4896,8 @@ export const leads: Lead[] = [
     "lastModified": "2.3.2026 13:14",
     "angebotsprozessDatum": "1.3.2026 21:15",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 159,
@@ -4769,7 +4927,8 @@ export const leads: Lead[] = [
     "lastModified": "4.3.2026 14:01",
     "angebotsprozessDatum": "1.3.2026 21:59",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 160,
@@ -4799,7 +4958,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 10:27",
     "angebotsprozessDatum": "1.3.2026 22:27",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 161,
@@ -4829,7 +4989,8 @@ export const leads: Lead[] = [
     "lastModified": "2.3.2026 13:13",
     "angebotsprozessDatum": "2.3.2026 11:49",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 162,
@@ -4859,7 +5020,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 12:08",
     "angebotsprozessDatum": "2.3.2026 01:02",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 163,
@@ -4889,7 +5051,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 12:09",
     "angebotsprozessDatum": "2.3.2026 05:35",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 164,
@@ -4919,7 +5082,8 @@ export const leads: Lead[] = [
     "lastModified": "3.3.2026 11:47",
     "angebotsprozessDatum": "2.3.2026 05:52",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 165,
@@ -4949,7 +5113,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 12:09",
     "angebotsprozessDatum": "2.3.2026 05:57",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 166,
@@ -4979,7 +5144,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 14:11",
     "angebotsprozessDatum": "2.3.2026 07:51",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 167,
@@ -5009,7 +5175,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 10:46",
     "angebotsprozessDatum": "2.3.2026 09:44",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 168,
@@ -5039,7 +5206,8 @@ export const leads: Lead[] = [
     "lastModified": "3.3.2026 12:26",
     "angebotsprozessDatum": "2.3.2026 10:32",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 169,
@@ -5069,7 +5237,8 @@ export const leads: Lead[] = [
     "lastModified": "3.3.2026 16:01",
     "angebotsprozessDatum": "2.3.2026 13:53",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 170,
@@ -5099,7 +5268,8 @@ export const leads: Lead[] = [
     "lastModified": "3.3.2026 10:38",
     "angebotsprozessDatum": "2.3.2026 14:57",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 171,
@@ -5129,7 +5299,8 @@ export const leads: Lead[] = [
     "lastModified": "3.3.2026 10:59",
     "angebotsprozessDatum": "2.3.2026 17:43",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 172,
@@ -5159,7 +5330,8 @@ export const leads: Lead[] = [
     "lastModified": "3.3.2026 13:00",
     "angebotsprozessDatum": "2.3.2026 18:58",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 173,
@@ -5189,7 +5361,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 11:35",
     "angebotsprozessDatum": "2.3.2026 19:20",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 174,
@@ -5219,7 +5392,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:40",
     "angebotsprozessDatum": "5.3.2026 16:48",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 175,
@@ -5249,7 +5423,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 15:02",
     "angebotsprozessDatum": "2.3.2026 19:39",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 176,
@@ -5279,7 +5454,8 @@ export const leads: Lead[] = [
     "lastModified": "4.3.2026 16:21",
     "angebotsprozessDatum": "2.3.2026 20:33",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 177,
@@ -5309,7 +5485,8 @@ export const leads: Lead[] = [
     "lastModified": "3.3.2026 11:06",
     "angebotsprozessDatum": "2.3.2026 22:30",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 178,
@@ -5339,7 +5516,8 @@ export const leads: Lead[] = [
     "lastModified": "4.3.2026 09:22",
     "angebotsprozessDatum": "2.3.2026 22:59",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 179,
@@ -5369,7 +5547,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 09:14",
     "angebotsprozessDatum": "16.3.2026 10:00",
     "vertriebsqualifiziertAm": "16.3.2026 10:00",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 180,
@@ -5399,7 +5578,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 12:33",
     "angebotsprozessDatum": "3.3.2026 07:11",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 181,
@@ -5429,7 +5609,8 @@ export const leads: Lead[] = [
     "lastModified": "3.3.2026 11:31",
     "angebotsprozessDatum": "3.3.2026 08:15",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 182,
@@ -5459,7 +5640,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 10:46",
     "angebotsprozessDatum": "3.3.2026 09:05",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 183,
@@ -5489,7 +5671,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 18:43",
     "angebotsprozessDatum": "3.3.2026 10:36",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 184,
@@ -5519,7 +5702,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 14:12",
     "angebotsprozessDatum": "3.3.2026 11:38",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 185,
@@ -5549,7 +5733,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 13:04",
     "angebotsprozessDatum": "3.3.2026 13:57",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 186,
@@ -5579,7 +5764,8 @@ export const leads: Lead[] = [
     "lastModified": "11.3.2026 14:11",
     "angebotsprozessDatum": "3.3.2026 13:57",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 187,
@@ -5609,7 +5795,8 @@ export const leads: Lead[] = [
     "lastModified": "3.3.2026 15:45",
     "angebotsprozessDatum": "3.3.2026 15:45",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 188,
@@ -5639,7 +5826,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 14:11",
     "angebotsprozessDatum": "3.3.2026 15:53",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 189,
@@ -5669,7 +5857,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:51",
     "angebotsprozessDatum": "4.3.2026 16:55",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 190,
@@ -5699,7 +5888,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 10:46",
     "angebotsprozessDatum": "3.3.2026 16:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 191,
@@ -5729,7 +5919,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 14:04",
     "angebotsprozessDatum": "3.3.2026 17:11",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 192,
@@ -5759,7 +5950,8 @@ export const leads: Lead[] = [
     "lastModified": "5.3.2026 13:13",
     "angebotsprozessDatum": "3.3.2026 16:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 193,
@@ -5789,7 +5981,8 @@ export const leads: Lead[] = [
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "4.3.2026 10:08",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 194,
@@ -5819,7 +6012,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 16:04",
     "angebotsprozessDatum": "5.3.2026 12:03",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 195,
@@ -5849,7 +6043,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 11:14",
     "angebotsprozessDatum": "3.3.2026 16:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 196,
@@ -5879,7 +6074,8 @@ export const leads: Lead[] = [
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "3.3.2026 16:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 197,
@@ -5909,7 +6105,8 @@ export const leads: Lead[] = [
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "5.3.2026 11:52",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 198,
@@ -5939,7 +6136,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 14:47",
     "angebotsprozessDatum": "3.3.2026 16:14",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 199,
@@ -5969,7 +6167,8 @@ export const leads: Lead[] = [
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "3.3.2026 16:14",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 200,
@@ -5999,7 +6198,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 10:25",
     "angebotsprozessDatum": "6.3.2026 10:25",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 201,
@@ -6029,7 +6229,8 @@ export const leads: Lead[] = [
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "3.3.2026 16:14",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 202,
@@ -6059,7 +6260,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 15:37",
     "angebotsprozessDatum": "3.3.2026 16:14",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 203,
@@ -6089,7 +6291,8 @@ export const leads: Lead[] = [
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "3.3.2026 16:16",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 204,
@@ -6119,7 +6322,8 @@ export const leads: Lead[] = [
     "lastModified": "5.3.2026 13:13",
     "angebotsprozessDatum": "3.3.2026 16:16",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 205,
@@ -6149,7 +6353,8 @@ export const leads: Lead[] = [
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "4.3.2026 10:25",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 206,
@@ -6179,7 +6384,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 16:03",
     "angebotsprozessDatum": "10.3.2026 16:03",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 207,
@@ -6209,7 +6415,8 @@ export const leads: Lead[] = [
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "5.3.2026 12:44",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 208,
@@ -6239,7 +6446,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 15:47",
     "angebotsprozessDatum": "10.3.2026 15:47",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 209,
@@ -6269,7 +6477,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 10:23",
     "angebotsprozessDatum": "5.3.2026 13:25",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 210,
@@ -6299,7 +6508,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 11:30",
     "angebotsprozessDatum": "3.3.2026 16:16",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 211,
@@ -6329,7 +6539,8 @@ export const leads: Lead[] = [
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "5.3.2026 12:04",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 212,
@@ -6359,7 +6570,8 @@ export const leads: Lead[] = [
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "3.3.2026 16:18",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 213,
@@ -6389,7 +6601,8 @@ export const leads: Lead[] = [
     "lastModified": "5.3.2026 17:31",
     "angebotsprozessDatum": "5.3.2026 17:31",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 214,
@@ -6419,7 +6632,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 14:04",
     "angebotsprozessDatum": "6.3.2026 10:04",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 215,
@@ -6449,7 +6663,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 10:23",
     "angebotsprozessDatum": "4.3.2026 11:50",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 216,
@@ -6479,7 +6694,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 13:04",
     "angebotsprozessDatum": "6.3.2026 15:04",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 217,
@@ -6509,7 +6725,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 10:38",
     "angebotsprozessDatum": "6.3.2026 10:38",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 218,
@@ -6539,7 +6756,8 @@ export const leads: Lead[] = [
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "3.3.2026 17:06",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 219,
@@ -6569,7 +6787,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 10:51",
     "angebotsprozessDatum": "6.3.2026 10:51",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 220,
@@ -6599,7 +6818,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 15:23",
     "angebotsprozessDatum": "3.3.2026 17:42",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 221,
@@ -6629,7 +6849,8 @@ export const leads: Lead[] = [
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "3.3.2026 17:51",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 222,
@@ -6659,7 +6880,8 @@ export const leads: Lead[] = [
     "lastModified": "5.3.2026 14:27",
     "angebotsprozessDatum": "3.3.2026 18:25",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 223,
@@ -6689,7 +6911,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 14:12",
     "angebotsprozessDatum": "3.3.2026 18:40",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 224,
@@ -6719,7 +6942,8 @@ export const leads: Lead[] = [
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "4.3.2026 14:27",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 225,
@@ -6749,7 +6973,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 14:12",
     "angebotsprozessDatum": "3.3.2026 19:44",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 226,
@@ -6779,7 +7004,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 14:51",
     "angebotsprozessDatum": "3.3.2026 19:46",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 227,
@@ -6809,7 +7035,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 14:46",
     "angebotsprozessDatum": "5.3.2026 18:57",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 228,
@@ -6839,7 +7066,8 @@ export const leads: Lead[] = [
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "3.3.2026 21:38",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 229,
@@ -6869,7 +7097,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 14:13",
     "angebotsprozessDatum": "3.3.2026 23:16",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 230,
@@ -6899,7 +7128,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 15:21",
     "angebotsprozessDatum": "3.3.2026 23:39",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 231,
@@ -6929,7 +7159,8 @@ export const leads: Lead[] = [
     "lastModified": "4.3.2026 18:34",
     "angebotsprozessDatum": "4.3.2026 18:34",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 232,
@@ -6959,7 +7190,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 15:06",
     "angebotsprozessDatum": "4.3.2026 04:14",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 233,
@@ -6989,7 +7221,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 10:46",
     "angebotsprozessDatum": "4.3.2026 05:48",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 234,
@@ -7019,7 +7252,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 15:01",
     "angebotsprozessDatum": "4.3.2026 06:04",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 235,
@@ -7049,7 +7283,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 15:11",
     "angebotsprozessDatum": "5.3.2026 14:33",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 236,
@@ -7079,7 +7314,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 15:40",
     "angebotsprozessDatum": "4.3.2026 12:33",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 237,
@@ -7109,7 +7345,8 @@ export const leads: Lead[] = [
     "lastModified": "11.3.2026 14:10",
     "angebotsprozessDatum": "4.3.2026 08:22",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 238,
@@ -7139,7 +7376,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 10:46",
     "angebotsprozessDatum": "6.3.2026 10:46",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 239,
@@ -7169,7 +7407,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 14:59",
     "angebotsprozessDatum": "4.3.2026 11:46",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 240,
@@ -7199,7 +7438,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 18:25",
     "angebotsprozessDatum": "4.3.2026 12:04",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 241,
@@ -7229,7 +7469,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 10:46",
     "angebotsprozessDatum": "4.3.2026 12:19",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 242,
@@ -7259,7 +7500,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 14:13",
     "angebotsprozessDatum": "4.3.2026 12:58",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 243,
@@ -7289,7 +7531,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:32",
     "angebotsprozessDatum": "5.3.2026 17:43",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 244,
@@ -7319,7 +7562,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 14:21",
     "angebotsprozessDatum": "4.3.2026 14:18",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 245,
@@ -7349,7 +7593,8 @@ export const leads: Lead[] = [
     "lastModified": "11.3.2026 09:40",
     "angebotsprozessDatum": "4.3.2026 14:18",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 246,
@@ -7379,7 +7624,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:25",
     "angebotsprozessDatum": "4.3.2026 14:47",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": "19.3.2026 15:43"
+    "gewonnenAm": "19.3.2026 15:43",
+    "zustaendigeStelle": ""
   },
   {
     "id": 247,
@@ -7409,7 +7655,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 10:12",
     "angebotsprozessDatum": "4.3.2026 14:41",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 248,
@@ -7439,7 +7686,8 @@ export const leads: Lead[] = [
     "lastModified": "4.3.2026 16:12",
     "angebotsprozessDatum": "4.3.2026 15:23",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 249,
@@ -7469,7 +7717,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 11:57",
     "angebotsprozessDatum": "4.3.2026 16:52",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 250,
@@ -7499,7 +7748,8 @@ export const leads: Lead[] = [
     "lastModified": "11.3.2026 12:15",
     "angebotsprozessDatum": "4.3.2026 17:36",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 251,
@@ -7529,7 +7779,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 18:25",
     "angebotsprozessDatum": "4.3.2026 18:11",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 252,
@@ -7559,7 +7810,8 @@ export const leads: Lead[] = [
     "lastModified": "5.3.2026 13:24",
     "angebotsprozessDatum": "5.3.2026 13:19",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 253,
@@ -7589,7 +7841,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 18:50",
     "angebotsprozessDatum": "4.3.2026 18:31",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 254,
@@ -7619,7 +7872,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 14:27",
     "angebotsprozessDatum": "10.3.2026 14:36",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 255,
@@ -7649,7 +7903,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 19:01",
     "angebotsprozessDatum": "9.3.2026 19:01",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 256,
@@ -7679,7 +7934,8 @@ export const leads: Lead[] = [
     "lastModified": "11.3.2026 13:45",
     "angebotsprozessDatum": "4.3.2026 19:13",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 257,
@@ -7709,7 +7965,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 10:14",
     "angebotsprozessDatum": "4.3.2026 19:35",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 258,
@@ -7739,7 +7996,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 13:35",
     "angebotsprozessDatum": "4.3.2026 19:46",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 259,
@@ -7769,7 +8027,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 16:40",
     "angebotsprozessDatum": "6.3.2026 12:09",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 260,
@@ -7799,7 +8058,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 12:23",
     "angebotsprozessDatum": "6.3.2026 11:18",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 261,
@@ -7829,7 +8089,8 @@ export const leads: Lead[] = [
     "lastModified": "11.3.2026 13:46",
     "angebotsprozessDatum": "5.3.2026 02:02",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 262,
@@ -7859,7 +8120,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 11:31",
     "angebotsprozessDatum": "5.3.2026 08:41",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 263,
@@ -7889,7 +8151,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 12:59",
     "angebotsprozessDatum": "5.3.2026 12:47",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 264,
@@ -7919,7 +8182,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 11:19",
     "angebotsprozessDatum": "5.3.2026 10:43",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 265,
@@ -7949,7 +8213,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 14:27",
     "angebotsprozessDatum": "5.3.2026 09:38",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 266,
@@ -7979,7 +8244,8 @@ export const leads: Lead[] = [
     "lastModified": "5.3.2026 13:12",
     "angebotsprozessDatum": "5.3.2026 09:38",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 267,
@@ -8009,7 +8275,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 16:42",
     "angebotsprozessDatum": "5.3.2026 09:38",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 268,
@@ -8039,7 +8306,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 11:51",
     "angebotsprozessDatum": "5.3.2026 11:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 269,
@@ -8069,7 +8337,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 10:22",
     "angebotsprozessDatum": "5.3.2026 11:09",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 270,
@@ -8099,7 +8368,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 14:04",
     "angebotsprozessDatum": "5.3.2026 11:36",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 271,
@@ -8129,7 +8399,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:18",
     "angebotsprozessDatum": "5.3.2026 16:10",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 272,
@@ -8159,7 +8430,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 15:52",
     "angebotsprozessDatum": "5.3.2026 15:33",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 273,
@@ -8189,7 +8461,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:54",
     "angebotsprozessDatum": "5.3.2026 15:01",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 274,
@@ -8219,7 +8492,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 15:41",
     "angebotsprozessDatum": "5.3.2026 15:21",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 275,
@@ -8249,7 +8523,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 14:57",
     "angebotsprozessDatum": "5.3.2026 15:47",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 276,
@@ -8279,7 +8554,8 @@ export const leads: Lead[] = [
     "lastModified": "11.3.2026 13:46",
     "angebotsprozessDatum": "5.3.2026 17:07",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 277,
@@ -8309,7 +8585,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 10:13",
     "angebotsprozessDatum": "5.3.2026 17:19",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 278,
@@ -8339,7 +8616,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 18:06",
     "angebotsprozessDatum": "5.3.2026 19:09",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 279,
@@ -8369,7 +8647,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 16:32",
     "angebotsprozessDatum": "5.3.2026 19:09",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 280,
@@ -8399,7 +8678,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 14:55",
     "angebotsprozessDatum": "5.3.2026 20:31",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 281,
@@ -8429,7 +8709,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 12:14",
     "angebotsprozessDatum": "6.3.2026 05:48",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 282,
@@ -8459,7 +8740,8 @@ export const leads: Lead[] = [
     "lastModified": "12.3.2026 13:58",
     "angebotsprozessDatum": "6.3.2026 06:21",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 283,
@@ -8489,7 +8771,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 16:03",
     "angebotsprozessDatum": "6.3.2026 07:18",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 284,
@@ -8519,7 +8802,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 14:47",
     "angebotsprozessDatum": "6.3.2026 07:18",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 285,
@@ -8549,7 +8833,8 @@ export const leads: Lead[] = [
     "lastModified": "11.3.2026 14:16",
     "angebotsprozessDatum": "6.3.2026 07:18",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 286,
@@ -8579,7 +8864,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 18:21",
     "angebotsprozessDatum": "9.3.2026 18:17",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 287,
@@ -8609,7 +8895,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 09:26",
     "angebotsprozessDatum": "6.3.2026 09:11",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 288,
@@ -8639,7 +8926,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 14:54",
     "angebotsprozessDatum": "6.3.2026 10:24",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 289,
@@ -8669,7 +8957,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 16:02",
     "angebotsprozessDatum": "6.3.2026 10:34",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 290,
@@ -8699,7 +8988,8 @@ export const leads: Lead[] = [
     "lastModified": "6.3.2026 12:37",
     "angebotsprozessDatum": "6.3.2026 10:34",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 291,
@@ -8729,7 +9019,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 15:42",
     "angebotsprozessDatum": "12.3.2026 09:44",
     "vertriebsqualifiziertAm": "12.3.2026 09:44",
-    "gewonnenAm": "16.3.2026 17:49"
+    "gewonnenAm": "16.3.2026 17:49",
+    "zustaendigeStelle": ""
   },
   {
     "id": 292,
@@ -8759,7 +9050,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 16:03",
     "angebotsprozessDatum": "6.3.2026 12:47",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 293,
@@ -8789,7 +9081,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 15:21",
     "angebotsprozessDatum": "19.3.2026 15:21",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 294,
@@ -8819,7 +9112,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 14:47",
     "angebotsprozessDatum": "10.3.2026 16:38",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 295,
@@ -8849,7 +9143,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 11:52",
     "angebotsprozessDatum": "6.3.2026 15:21",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 296,
@@ -8879,7 +9174,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 15:26",
     "angebotsprozessDatum": "6.3.2026 16:00",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 297,
@@ -8909,7 +9205,8 @@ export const leads: Lead[] = [
     "lastModified": "11.3.2026 10:48",
     "angebotsprozessDatum": "6.3.2026 16:51",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 298,
@@ -8939,7 +9236,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 11:10",
     "angebotsprozessDatum": "9.3.2026 11:06",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 299,
@@ -8969,7 +9267,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 14:53",
     "angebotsprozessDatum": "6.3.2026 20:40",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 300,
@@ -8999,7 +9298,8 @@ export const leads: Lead[] = [
     "lastModified": "11.3.2026 14:04",
     "angebotsprozessDatum": "6.3.2026 21:58",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 301,
@@ -9029,7 +9329,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 11:24",
     "angebotsprozessDatum": "6.3.2026 22:23",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 302,
@@ -9059,7 +9360,8 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 11:19",
     "angebotsprozessDatum": "10.3.2026 09:57",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 303,
@@ -9089,7 +9391,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 13:12",
     "angebotsprozessDatum": "7.3.2026 10:36",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": "14.3.2026 15:21"
+    "gewonnenAm": "14.3.2026 15:21",
+    "zustaendigeStelle": ""
   },
   {
     "id": 304,
@@ -9119,7 +9422,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 10:04",
     "angebotsprozessDatum": "7.3.2026 10:06",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 305,
@@ -9149,7 +9453,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 15:26",
     "angebotsprozessDatum": "7.3.2026 10:21",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 306,
@@ -9179,7 +9484,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 11:28",
     "angebotsprozessDatum": "7.3.2026 10:24",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 307,
@@ -9209,7 +9515,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 15:27",
     "angebotsprozessDatum": "7.3.2026 10:41",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 308,
@@ -9239,7 +9546,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 14:47",
     "angebotsprozessDatum": "7.3.2026 11:55",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 309,
@@ -9269,7 +9577,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 11:31",
     "angebotsprozessDatum": "7.3.2026 13:51",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 310,
@@ -9299,7 +9608,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 11:33",
     "angebotsprozessDatum": "7.3.2026 15:55",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 311,
@@ -9329,7 +9639,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 10:13",
     "angebotsprozessDatum": "9.3.2026 11:54",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 312,
@@ -9359,7 +9670,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 11:56",
     "angebotsprozessDatum": "7.3.2026 16:53",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 313,
@@ -9389,7 +9701,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 15:20",
     "angebotsprozessDatum": "7.3.2026 18:43",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 314,
@@ -9419,7 +9732,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 12:52",
     "angebotsprozessDatum": "7.3.2026 20:00",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 315,
@@ -9449,7 +9763,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 14:42",
     "angebotsprozessDatum": "18.3.2026 14:26",
     "vertriebsqualifiziertAm": "18.3.2026 14:26",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 316,
@@ -9479,7 +9794,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 10:05",
     "angebotsprozessDatum": "7.3.2026 20:57",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 317,
@@ -9509,7 +9825,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 12:09",
     "angebotsprozessDatum": "8.3.2026 01:18",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 318,
@@ -9539,7 +9856,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 17:31",
     "angebotsprozessDatum": "8.3.2026 06:28",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 319,
@@ -9569,7 +9887,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 12:10",
     "angebotsprozessDatum": "8.3.2026 07:40",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 320,
@@ -9599,7 +9918,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 11:28",
     "angebotsprozessDatum": "12.3.2026 12:41",
     "vertriebsqualifiziertAm": "12.3.2026 12:41",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 321,
@@ -9629,7 +9949,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 15:19",
     "angebotsprozessDatum": "8.3.2026 15:47",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 322,
@@ -9659,7 +9980,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 12:24",
     "angebotsprozessDatum": "8.3.2026 17:26",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 323,
@@ -9689,7 +10011,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 13:47",
     "angebotsprozessDatum": "8.3.2026 19:58",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 324,
@@ -9719,7 +10042,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 12:42",
     "angebotsprozessDatum": "9.3.2026 12:42",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 325,
@@ -9749,7 +10073,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 15:19",
     "angebotsprozessDatum": "8.3.2026 21:07",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 326,
@@ -9779,7 +10104,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 10:00",
     "angebotsprozessDatum": "9.3.2026 09:58",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 327,
@@ -9809,7 +10135,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 14:58",
     "angebotsprozessDatum": "10.3.2026 14:58",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 328,
@@ -9839,7 +10166,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 17:16",
     "angebotsprozessDatum": "9.3.2026 06:03",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 329,
@@ -9869,7 +10197,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 12:58",
     "angebotsprozessDatum": "9.3.2026 06:03",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 330,
@@ -9899,7 +10228,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 16:04",
     "angebotsprozessDatum": "9.3.2026 06:03",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 331,
@@ -9929,7 +10259,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 11:13",
     "angebotsprozessDatum": "9.3.2026 12:57",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 332,
@@ -9959,7 +10290,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 14:53",
     "angebotsprozessDatum": "9.3.2026 16:14",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 333,
@@ -9989,7 +10321,8 @@ export const leads: Lead[] = [
     "lastModified": "11.3.2026 14:18",
     "angebotsprozessDatum": "9.3.2026 06:03",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 334,
@@ -10019,7 +10352,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 09:57",
     "angebotsprozessDatum": "9.3.2026 09:32",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 335,
@@ -10049,7 +10383,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 15:47",
     "angebotsprozessDatum": "9.3.2026 07:32",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 336,
@@ -10079,7 +10414,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 16:04",
     "angebotsprozessDatum": "9.3.2026 07:32",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 337,
@@ -10109,7 +10445,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 16:05",
     "angebotsprozessDatum": "9.3.2026 07:32",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 338,
@@ -10139,7 +10476,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 16:06",
     "angebotsprozessDatum": "9.3.2026 07:32",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 339,
@@ -10169,7 +10507,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 15:36",
     "angebotsprozessDatum": "9.3.2026 15:35",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 340,
@@ -10199,7 +10538,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 16:07",
     "angebotsprozessDatum": "9.3.2026 07:32",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 341,
@@ -10229,7 +10569,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 16:54",
     "angebotsprozessDatum": "9.3.2026 07:51",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 342,
@@ -10259,7 +10600,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 10:51",
     "angebotsprozessDatum": "9.3.2026 08:37",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 343,
@@ -10289,7 +10631,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 18:36",
     "angebotsprozessDatum": "9.3.2026 09:39",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 344,
@@ -10319,7 +10662,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 15:16",
     "angebotsprozessDatum": "9.3.2026 09:39",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 345,
@@ -10349,7 +10693,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 10:10",
     "angebotsprozessDatum": "9.3.2026 10:15",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 346,
@@ -10379,7 +10724,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 11:52",
     "angebotsprozessDatum": "9.3.2026 12:59",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 347,
@@ -10409,7 +10755,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 17:12",
     "angebotsprozessDatum": "9.3.2026 12:39",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 348,
@@ -10439,7 +10786,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:05",
     "angebotsprozessDatum": "9.3.2026 15:10",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 349,
@@ -10469,7 +10817,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 17:19",
     "angebotsprozessDatum": "9.3.2026 17:19",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 350,
@@ -10499,7 +10848,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:52",
     "angebotsprozessDatum": "9.3.2026 14:11",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 351,
@@ -10529,7 +10879,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 14:31",
     "angebotsprozessDatum": "9.3.2026 14:08",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 352,
@@ -10559,7 +10910,8 @@ export const leads: Lead[] = [
     "lastModified": "12.3.2026 12:22",
     "angebotsprozessDatum": "9.3.2026 14:23",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 353,
@@ -10589,7 +10941,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 15:13",
     "angebotsprozessDatum": "9.3.2026 17:37",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 354,
@@ -10619,7 +10972,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 11:28",
     "angebotsprozessDatum": "9.3.2026 17:59",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 355,
@@ -10649,7 +11003,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 12:16",
     "angebotsprozessDatum": "10.3.2026 12:16",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 356,
@@ -10679,7 +11034,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 18:49",
     "angebotsprozessDatum": "9.3.2026 18:48",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 357,
@@ -10709,7 +11065,8 @@ export const leads: Lead[] = [
     "lastModified": "9.3.2026 18:49",
     "angebotsprozessDatum": "9.3.2026 18:40",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 358,
@@ -10739,7 +11096,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 14:29",
     "angebotsprozessDatum": "9.3.2026 19:06",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 359,
@@ -10769,7 +11127,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 11:00",
     "angebotsprozessDatum": "9.3.2026 20:25",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 360,
@@ -10799,7 +11158,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 11:53",
     "angebotsprozessDatum": "9.3.2026 21:15",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 361,
@@ -10829,7 +11189,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 16:11",
     "angebotsprozessDatum": "9.3.2026 23:05",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 362,
@@ -10859,7 +11220,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 10:21",
     "angebotsprozessDatum": "9.3.2026 23:26",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 363,
@@ -10889,7 +11251,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 10:34",
     "angebotsprozessDatum": "9.3.2026 23:49",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 364,
@@ -10919,7 +11282,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 16:12",
     "angebotsprozessDatum": "10.3.2026 05:51",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 365,
@@ -10949,7 +11313,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 10:54",
     "angebotsprozessDatum": "10.3.2026 06:23",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 366,
@@ -10979,7 +11344,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 10:29",
     "angebotsprozessDatum": "17.3.2026 10:24",
     "vertriebsqualifiziertAm": "17.3.2026 10:24",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 367,
@@ -11009,7 +11375,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 10:34",
     "angebotsprozessDatum": "10.3.2026 10:31",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 368,
@@ -11039,7 +11406,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 08:22",
     "angebotsprozessDatum": "10.3.2026 08:21",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 369,
@@ -11069,7 +11437,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 12:24",
     "angebotsprozessDatum": "10.3.2026 08:37",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 370,
@@ -11099,7 +11468,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 11:07",
     "angebotsprozessDatum": "10.3.2026 09:11",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 371,
@@ -11129,7 +11499,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 18:19",
     "angebotsprozessDatum": "10.3.2026 18:16",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 372,
@@ -11159,7 +11530,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 12:25",
     "angebotsprozessDatum": "10.3.2026 12:06",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 373,
@@ -11189,7 +11561,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 13:10",
     "angebotsprozessDatum": "10.3.2026 12:47",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 374,
@@ -11219,7 +11592,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 08:28",
     "angebotsprozessDatum": "10.3.2026 13:16",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 375,
@@ -11249,7 +11623,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 14:20",
     "angebotsprozessDatum": "10.3.2026 15:17",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 376,
@@ -11279,7 +11654,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 14:01",
     "angebotsprozessDatum": "10.3.2026 14:31",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 377,
@@ -11309,7 +11685,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 12:36",
     "angebotsprozessDatum": "10.3.2026 14:57",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 378,
@@ -11339,7 +11716,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 15:21",
     "angebotsprozessDatum": "10.3.2026 15:05",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 379,
@@ -11369,7 +11747,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 10:17",
     "angebotsprozessDatum": "10.3.2026 15:27",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 380,
@@ -11399,7 +11778,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 14:29",
     "angebotsprozessDatum": "10.3.2026 16:09",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 381,
@@ -11429,7 +11809,8 @@ export const leads: Lead[] = [
     "lastModified": "11.3.2026 10:05",
     "angebotsprozessDatum": "10.3.2026 16:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 382,
@@ -11459,7 +11840,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 14:30",
     "angebotsprozessDatum": "10.3.2026 17:20",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 383,
@@ -11489,7 +11871,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 10:11",
     "angebotsprozessDatum": "10.3.2026 17:32",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 384,
@@ -11519,7 +11902,8 @@ export const leads: Lead[] = [
     "lastModified": "10.3.2026 18:03",
     "angebotsprozessDatum": "10.3.2026 17:33",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 385,
@@ -11549,7 +11933,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 17:01",
     "angebotsprozessDatum": "11.3.2026 11:32",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 386,
@@ -11579,7 +11964,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 11:16",
     "angebotsprozessDatum": "11.3.2026 10:29",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 387,
@@ -11609,7 +11995,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 16:12",
     "angebotsprozessDatum": "10.3.2026 22:50",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 388,
@@ -11639,7 +12026,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 11:17",
     "angebotsprozessDatum": "10.3.2026 23:22",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 389,
@@ -11669,7 +12057,8 @@ export const leads: Lead[] = [
     "lastModified": "12.3.2026 18:09",
     "angebotsprozessDatum": "12.3.2026 18:09",
     "vertriebsqualifiziertAm": "12.3.2026 18:09",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 390,
@@ -11699,7 +12088,8 @@ export const leads: Lead[] = [
     "lastModified": "11.3.2026 14:08",
     "angebotsprozessDatum": "11.3.2026 14:08",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 391,
@@ -11729,7 +12119,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 11:17",
     "angebotsprozessDatum": "11.3.2026 12:53",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 392,
@@ -11759,7 +12150,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 13:10",
     "angebotsprozessDatum": "11.3.2026 08:57",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 393,
@@ -11789,7 +12181,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 11:58",
     "angebotsprozessDatum": "11.3.2026 09:49",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 394,
@@ -11819,7 +12212,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 11:15",
     "angebotsprozessDatum": "11.3.2026 11:08",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 395,
@@ -11849,7 +12243,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 11:33",
     "angebotsprozessDatum": "11.3.2026 11:11",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 396,
@@ -11879,7 +12274,8 @@ export const leads: Lead[] = [
     "lastModified": "11.3.2026 11:49",
     "angebotsprozessDatum": "11.3.2026 11:47",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 397,
@@ -11909,7 +12305,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 10:38",
     "angebotsprozessDatum": "11.3.2026 12:39",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 398,
@@ -11939,7 +12336,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 11:57",
     "angebotsprozessDatum": "11.3.2026 12:39",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 399,
@@ -11969,7 +12367,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 14:31",
     "angebotsprozessDatum": "11.3.2026 13:16",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 400,
@@ -11999,7 +12398,8 @@ export const leads: Lead[] = [
     "lastModified": "11.3.2026 17:36",
     "angebotsprozessDatum": "11.3.2026 13:26",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 401,
@@ -12029,7 +12429,8 @@ export const leads: Lead[] = [
     "lastModified": "12.3.2026 12:02",
     "angebotsprozessDatum": "11.3.2026 13:44",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 402,
@@ -12059,7 +12460,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 15:16",
     "angebotsprozessDatum": "11.3.2026 13:50",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 403,
@@ -12089,7 +12491,8 @@ export const leads: Lead[] = [
     "lastModified": "11.3.2026 18:02",
     "angebotsprozessDatum": "11.3.2026 15:36",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 404,
@@ -12119,7 +12522,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 13:52",
     "angebotsprozessDatum": "11.3.2026 16:06",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 405,
@@ -12149,7 +12553,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 12:05",
     "angebotsprozessDatum": "11.3.2026 17:44",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 406,
@@ -12179,7 +12584,8 @@ export const leads: Lead[] = [
     "lastModified": "12.3.2026 17:34",
     "angebotsprozessDatum": "11.3.2026 18:05",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 407,
@@ -12209,7 +12615,8 @@ export const leads: Lead[] = [
     "lastModified": "12.3.2026 09:19",
     "angebotsprozessDatum": "11.3.2026 18:12",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 408,
@@ -12239,7 +12646,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 12:23",
     "angebotsprozessDatum": "11.3.2026 18:41",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 409,
@@ -12269,7 +12677,8 @@ export const leads: Lead[] = [
     "lastModified": "12.3.2026 10:01",
     "angebotsprozessDatum": "12.3.2026 09:58",
     "vertriebsqualifiziertAm": "12.3.2026 09:58",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 410,
@@ -12299,7 +12708,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 12:00",
     "angebotsprozessDatum": "12.3.2026 10:24",
     "vertriebsqualifiziertAm": "12.3.2026 10:17",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 411,
@@ -12329,7 +12739,8 @@ export const leads: Lead[] = [
     "lastModified": "12.3.2026 17:30",
     "angebotsprozessDatum": "11.3.2026 20:28",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 412,
@@ -12359,7 +12770,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 10:35",
     "angebotsprozessDatum": "12.3.2026 10:41",
     "vertriebsqualifiziertAm": "12.3.2026 10:41",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 413,
@@ -12389,7 +12801,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 15:16",
     "angebotsprozessDatum": "11.3.2026 22:25",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 414,
@@ -12419,7 +12832,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 16:15",
     "angebotsprozessDatum": "11.3.2026 22:59",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 415,
@@ -12449,7 +12863,8 @@ export const leads: Lead[] = [
     "lastModified": "12.3.2026 11:31",
     "angebotsprozessDatum": "11.3.2026 23:56",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 416,
@@ -12479,7 +12894,8 @@ export const leads: Lead[] = [
     "lastModified": "12.3.2026 11:42",
     "angebotsprozessDatum": "12.3.2026 04:28",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 417,
@@ -12509,7 +12925,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 15:39",
     "angebotsprozessDatum": "12.3.2026 07:48",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 418,
@@ -12539,7 +12956,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 14:13",
     "angebotsprozessDatum": "12.3.2026 09:22",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 419,
@@ -12569,7 +12987,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 12:55",
     "angebotsprozessDatum": "12.3.2026 14:30",
     "vertriebsqualifiziertAm": "12.3.2026 14:30",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 420,
@@ -12599,7 +13018,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 15:31",
     "angebotsprozessDatum": "12.3.2026 13:25",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 421,
@@ -12629,7 +13049,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 15:30",
     "angebotsprozessDatum": "12.3.2026 13:25",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 422,
@@ -12659,7 +13080,8 @@ export const leads: Lead[] = [
     "lastModified": "12.3.2026 16:08",
     "angebotsprozessDatum": "12.3.2026 16:00",
     "vertriebsqualifiziertAm": "12.3.2026 16:00",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 423,
@@ -12689,7 +13111,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 16:17",
     "angebotsprozessDatum": "12.3.2026 15:26",
     "vertriebsqualifiziertAm": "12.3.2026 15:26",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 424,
@@ -12719,7 +13142,8 @@ export const leads: Lead[] = [
     "lastModified": "12.3.2026 15:00",
     "angebotsprozessDatum": "12.3.2026 14:58",
     "vertriebsqualifiziertAm": "12.3.2026 14:58",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 425,
@@ -12749,7 +13173,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 12:44",
     "angebotsprozessDatum": "18.3.2026 13:32",
     "vertriebsqualifiziertAm": "18.3.2026 13:30",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 426,
@@ -12779,7 +13204,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 15:13",
     "angebotsprozessDatum": "12.3.2026 16:42",
     "vertriebsqualifiziertAm": "12.3.2026 16:33",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 427,
@@ -12809,7 +13235,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 08:39",
     "angebotsprozessDatum": "12.3.2026 13:26",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 428,
@@ -12839,7 +13266,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 13:11",
     "angebotsprozessDatum": "12.3.2026 13:26",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 429,
@@ -12869,7 +13297,8 @@ export const leads: Lead[] = [
     "lastModified": "12.3.2026 14:18",
     "angebotsprozessDatum": "12.3.2026 14:18",
     "vertriebsqualifiziertAm": "12.3.2026 14:18",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 430,
@@ -12899,7 +13328,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 13:45",
     "angebotsprozessDatum": "12.3.2026 15:43",
     "vertriebsqualifiziertAm": "12.3.2026 15:43",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 431,
@@ -12929,7 +13359,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 10:39",
     "angebotsprozessDatum": "12.3.2026 14:27",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 432,
@@ -12959,7 +13390,8 @@ export const leads: Lead[] = [
     "lastModified": "12.3.2026 17:22",
     "angebotsprozessDatum": "12.3.2026 14:58",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 433,
@@ -12989,7 +13421,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 11:13",
     "angebotsprozessDatum": "12.3.2026 19:35",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 434,
@@ -13019,7 +13452,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 15:15",
     "angebotsprozessDatum": "12.3.2026 20:18",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 435,
@@ -13049,7 +13483,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 10:00",
     "angebotsprozessDatum": "12.3.2026 21:27",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 436,
@@ -13079,7 +13514,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 10:17",
     "angebotsprozessDatum": "13.3.2026 07:39",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 437,
@@ -13109,7 +13545,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 12:01",
     "angebotsprozessDatum": "13.3.2026 08:45",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 438,
@@ -13139,7 +13576,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:33",
     "angebotsprozessDatum": "13.3.2026 08:45",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 439,
@@ -13169,7 +13607,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 12:59",
     "angebotsprozessDatum": "17.3.2026 12:59",
     "vertriebsqualifiziertAm": "17.3.2026 12:59",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 440,
@@ -13199,7 +13638,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 08:37",
     "angebotsprozessDatum": "13.3.2026 08:57",
     "vertriebsqualifiziertAm": "13.3.2026 10:18",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 441,
@@ -13229,7 +13669,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:32",
     "angebotsprozessDatum": "18.3.2026 12:17",
     "vertriebsqualifiziertAm": "18.3.2026 11:07",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 442,
@@ -13259,7 +13700,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 10:08",
     "angebotsprozessDatum": "13.3.2026 09:35",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 443,
@@ -13289,7 +13731,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 15:56",
     "angebotsprozessDatum": "13.3.2026 10:32",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 444,
@@ -13319,7 +13762,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 15:57",
     "angebotsprozessDatum": "13.3.2026 11:57",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 445,
@@ -13349,7 +13793,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 13:15",
     "angebotsprozessDatum": "18.3.2026 10:51",
     "vertriebsqualifiziertAm": "18.3.2026 10:51",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 446,
@@ -13379,7 +13824,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 14:02",
     "angebotsprozessDatum": "13.3.2026 13:27",
     "vertriebsqualifiziertAm": "13.3.2026 13:27",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 447,
@@ -13409,7 +13855,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 09:01",
     "angebotsprozessDatum": "13.3.2026 13:16",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 448,
@@ -13439,7 +13886,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:32",
     "angebotsprozessDatum": "13.3.2026 13:16",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 449,
@@ -13469,7 +13917,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:33",
     "angebotsprozessDatum": "13.3.2026 13:16",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 450,
@@ -13499,7 +13948,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 13:46",
     "angebotsprozessDatum": "13.3.2026 14:49",
     "vertriebsqualifiziertAm": "13.3.2026 14:49",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 451,
@@ -13529,7 +13979,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:34",
     "angebotsprozessDatum": "13.3.2026 13:16",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 452,
@@ -13559,7 +14010,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 17:46",
     "angebotsprozessDatum": "13.3.2026 14:03",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 453,
@@ -13589,7 +14041,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 17:46",
     "angebotsprozessDatum": "13.3.2026 14:15",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 454,
@@ -13619,7 +14072,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 15:02",
     "angebotsprozessDatum": "13.3.2026 14:38",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 455,
@@ -13649,7 +14103,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:23",
     "angebotsprozessDatum": "13.3.2026 15:04",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 456,
@@ -13679,7 +14134,8 @@ export const leads: Lead[] = [
     "lastModified": "15.3.2026 12:11",
     "angebotsprozessDatum": "15.3.2026 12:11",
     "vertriebsqualifiziertAm": "13.3.2026 15:13",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 457,
@@ -13709,7 +14165,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 11:50",
     "angebotsprozessDatum": "13.3.2026 15:56",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 458,
@@ -13739,7 +14196,8 @@ export const leads: Lead[] = [
     "lastModified": "13.3.2026 17:47",
     "angebotsprozessDatum": "13.3.2026 17:13",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 459,
@@ -13769,7 +14227,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 09:43",
     "angebotsprozessDatum": "16.3.2026 09:31",
     "vertriebsqualifiziertAm": "16.3.2026 09:31",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 460,
@@ -13799,7 +14258,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 16:00",
     "angebotsprozessDatum": "13.3.2026 19:29",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 461,
@@ -13829,7 +14289,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 14:41",
     "angebotsprozessDatum": "13.3.2026 19:55",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 462,
@@ -13859,7 +14320,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:11",
     "angebotsprozessDatum": "17.3.2026 16:43",
     "vertriebsqualifiziertAm": "17.3.2026 16:43",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 463,
@@ -13889,7 +14351,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 17:17",
     "angebotsprozessDatum": "13.3.2026 21:08",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 464,
@@ -13919,7 +14382,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 10:43",
     "angebotsprozessDatum": "14.3.2026 04:19",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 465,
@@ -13949,7 +14413,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 10:45",
     "angebotsprozessDatum": "14.3.2026 04:25",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 466,
@@ -13979,7 +14444,8 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 11:41",
     "angebotsprozessDatum": "14.3.2026 04:48",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 467,
@@ -14009,7 +14475,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 11:06",
     "angebotsprozessDatum": "14.3.2026 05:23",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 468,
@@ -14039,7 +14506,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 11:34",
     "angebotsprozessDatum": "16.3.2026 11:34",
     "vertriebsqualifiziertAm": "16.3.2026 11:34",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 469,
@@ -14069,7 +14537,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 15:56",
     "angebotsprozessDatum": "19.3.2026 15:56",
     "vertriebsqualifiziertAm": "19.3.2026 15:56",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 470,
@@ -14099,7 +14568,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 11:39",
     "angebotsprozessDatum": "14.3.2026 08:09",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 471,
@@ -14129,7 +14599,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:27",
     "angebotsprozessDatum": "14.3.2026 10:20",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 472,
@@ -14159,7 +14630,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 12:13",
     "angebotsprozessDatum": "14.3.2026 11:42",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 473,
@@ -14189,7 +14661,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 17:33",
     "angebotsprozessDatum": "19.3.2026 17:23",
     "vertriebsqualifiziertAm": "19.3.2026 17:23",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 474,
@@ -14219,7 +14692,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:17",
     "angebotsprozessDatum": "17.3.2026 15:18",
     "vertriebsqualifiziertAm": "17.3.2026 15:18",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 475,
@@ -14249,7 +14723,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 11:44",
     "angebotsprozessDatum": "14.3.2026 16:06",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 476,
@@ -14279,7 +14754,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 16:23",
     "angebotsprozessDatum": "14.3.2026 16:18",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 477,
@@ -14309,7 +14785,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 11:48",
     "angebotsprozessDatum": "14.3.2026 17:50",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 478,
@@ -14339,7 +14816,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 11:50",
     "angebotsprozessDatum": "14.3.2026 18:11",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 479,
@@ -14369,7 +14847,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 16:17",
     "angebotsprozessDatum": "14.3.2026 18:31",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 480,
@@ -14399,7 +14878,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 14:03",
     "angebotsprozessDatum": "16.3.2026 17:17",
     "vertriebsqualifiziertAm": "16.3.2026 17:17",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 481,
@@ -14429,7 +14909,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 15:02",
     "angebotsprozessDatum": "16.3.2026 14:21",
     "vertriebsqualifiziertAm": "16.3.2026 14:21",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 482,
@@ -14459,7 +14940,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 09:58",
     "angebotsprozessDatum": "15.3.2026 03:37",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 483,
@@ -14489,7 +14971,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 11:58",
     "angebotsprozessDatum": "15.3.2026 08:55",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 484,
@@ -14519,7 +15002,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 12:17",
     "angebotsprozessDatum": "15.3.2026 12:07",
     "vertriebsqualifiziertAm": "15.3.2026 11:51",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 485,
@@ -14549,7 +15033,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 09:56",
     "angebotsprozessDatum": "15.3.2026 18:45",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 486,
@@ -14579,7 +15064,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 11:57",
     "angebotsprozessDatum": "15.3.2026 20:32",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 487,
@@ -14609,7 +15095,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 16:25",
     "angebotsprozessDatum": "15.3.2026 20:43",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 488,
@@ -14639,7 +15126,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 11:59",
     "angebotsprozessDatum": "15.3.2026 21:26",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 489,
@@ -14669,7 +15157,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 12:03",
     "angebotsprozessDatum": "16.3.2026 00:40",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 490,
@@ -14699,7 +15188,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 13:13",
     "angebotsprozessDatum": "16.3.2026 02:36",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 491,
@@ -14729,7 +15219,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 11:40",
     "angebotsprozessDatum": "16.3.2026 05:46",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 492,
@@ -14759,7 +15250,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:17",
     "angebotsprozessDatum": "17.3.2026 14:13",
     "vertriebsqualifiziertAm": "17.3.2026 14:13",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 493,
@@ -14789,7 +15281,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:35",
     "angebotsprozessDatum": "16.3.2026 08:37",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 494,
@@ -14819,7 +15312,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 15:46",
     "angebotsprozessDatum": "16.3.2026 09:01",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 495,
@@ -14849,7 +15343,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 16:38",
     "angebotsprozessDatum": "16.3.2026 09:01",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 496,
@@ -14879,7 +15374,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 16:47",
     "angebotsprozessDatum": "16.3.2026 09:02",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 497,
@@ -14909,7 +15405,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 12:36",
     "angebotsprozessDatum": "16.3.2026 09:13",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 498,
@@ -14939,7 +15436,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 14:05",
     "angebotsprozessDatum": "16.3.2026 10:22",
     "vertriebsqualifiziertAm": "16.3.2026 10:20",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 499,
@@ -14969,7 +15467,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 09:56",
     "angebotsprozessDatum": "16.3.2026 10:46",
     "vertriebsqualifiziertAm": "16.3.2026 10:45",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 500,
@@ -14999,7 +15498,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 15:10",
     "angebotsprozessDatum": "16.3.2026 15:08",
     "vertriebsqualifiziertAm": "16.3.2026 15:08",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 501,
@@ -15029,7 +15529,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 09:22",
     "angebotsprozessDatum": "16.3.2026 13:26",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 502,
@@ -15059,7 +15560,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 09:51",
     "angebotsprozessDatum": "16.3.2026 13:40",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 503,
@@ -15089,7 +15591,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 09:54",
     "angebotsprozessDatum": "16.3.2026 13:51",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 504,
@@ -15119,7 +15622,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:30",
     "angebotsprozessDatum": "17.3.2026 17:30",
     "vertriebsqualifiziertAm": "17.3.2026 17:30",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 505,
@@ -15149,7 +15653,8 @@ export const leads: Lead[] = [
     "lastModified": "16.3.2026 16:00",
     "angebotsprozessDatum": "16.3.2026 16:00",
     "vertriebsqualifiziertAm": "16.3.2026 16:00",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 506,
@@ -15179,7 +15684,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 18:08",
     "angebotsprozessDatum": "16.3.2026 18:02",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 507,
@@ -15209,7 +15715,8 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 11:49",
     "angebotsprozessDatum": "17.3.2026 11:11",
     "vertriebsqualifiziertAm": "17.3.2026 11:11",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 508,
@@ -15239,7 +15746,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 16:16",
     "angebotsprozessDatum": "19.3.2026 16:16",
     "vertriebsqualifiziertAm": "19.3.2026 16:16",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 509,
@@ -15269,7 +15777,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:22",
     "angebotsprozessDatum": "16.3.2026 19:31",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 510,
@@ -15299,7 +15808,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 11:32",
     "angebotsprozessDatum": "17.3.2026 11:31",
     "vertriebsqualifiziertAm": "17.3.2026 11:31",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 511,
@@ -15329,7 +15839,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 09:55",
     "angebotsprozessDatum": "16.3.2026 20:38",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 512,
@@ -15359,7 +15870,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 11:32",
     "angebotsprozessDatum": "16.3.2026 21:11",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 513,
@@ -15389,7 +15901,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:22",
     "angebotsprozessDatum": "16.3.2026 21:18",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 514,
@@ -15419,7 +15932,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 11:50",
     "angebotsprozessDatum": "17.3.2026 06:40",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 515,
@@ -15449,7 +15963,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 16:49",
     "angebotsprozessDatum": "17.3.2026 06:45",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 516,
@@ -15479,7 +15994,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:21",
     "angebotsprozessDatum": "17.3.2026 07:00",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 517,
@@ -15509,7 +16025,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:20",
     "angebotsprozessDatum": "17.3.2026 07:46",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 518,
@@ -15539,7 +16056,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 16:33",
     "angebotsprozessDatum": "17.3.2026 08:10",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 519,
@@ -15569,7 +16087,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 12:42",
     "angebotsprozessDatum": "17.3.2026 10:25",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 520,
@@ -15599,7 +16118,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 13:09",
     "angebotsprozessDatum": "17.3.2026 10:42",
     "vertriebsqualifiziertAm": "17.3.2026 10:42",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 521,
@@ -15629,7 +16149,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 12:49",
     "angebotsprozessDatum": "17.3.2026 12:23",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 522,
@@ -15659,7 +16180,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:31",
     "angebotsprozessDatum": "17.3.2026 12:23",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 523,
@@ -15689,7 +16211,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 17:32",
     "angebotsprozessDatum": "17.3.2026 17:32",
     "vertriebsqualifiziertAm": "17.3.2026 17:32",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 524,
@@ -15719,7 +16242,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:31",
     "angebotsprozessDatum": "17.3.2026 12:24",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 525,
@@ -15749,7 +16273,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 12:44",
     "angebotsprozessDatum": "17.3.2026 12:57",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 526,
@@ -15779,7 +16304,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 13:22",
     "angebotsprozessDatum": "17.3.2026 13:22",
     "vertriebsqualifiziertAm": "17.3.2026 13:20",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 527,
@@ -15809,7 +16335,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 13:55",
     "angebotsprozessDatum": "17.3.2026 14:01",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 528,
@@ -15839,7 +16366,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 15:33",
     "angebotsprozessDatum": "17.3.2026 15:17",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 529,
@@ -15869,7 +16397,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 17:08",
     "angebotsprozessDatum": "17.3.2026 15:17",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 530,
@@ -15899,7 +16428,8 @@ export const leads: Lead[] = [
     "lastModified": "17.3.2026 16:17",
     "angebotsprozessDatum": "17.3.2026 15:51",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 531,
@@ -15929,7 +16459,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 10:33",
     "angebotsprozessDatum": "17.3.2026 16:06",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 532,
@@ -15959,7 +16490,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 10:08",
     "angebotsprozessDatum": "17.3.2026 16:11",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 533,
@@ -15989,7 +16521,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 09:35",
     "angebotsprozessDatum": "17.3.2026 16:50",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 534,
@@ -16019,7 +16552,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:19",
     "angebotsprozessDatum": "17.3.2026 17:13",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 535,
@@ -16049,7 +16583,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:19",
     "angebotsprozessDatum": "17.3.2026 18:49",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 536,
@@ -16079,7 +16614,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 09:30",
     "angebotsprozessDatum": "17.3.2026 19:01",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 537,
@@ -16109,7 +16645,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 10:33",
     "angebotsprozessDatum": "17.3.2026 20:51",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 538,
@@ -16139,7 +16676,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 12:28",
     "angebotsprozessDatum": "17.3.2026 22:00",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 539,
@@ -16169,7 +16707,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 10:31",
     "angebotsprozessDatum": "17.3.2026 23:18",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 540,
@@ -16199,7 +16738,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 16:23",
     "angebotsprozessDatum": "18.3.2026 01:38",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 541,
@@ -16229,7 +16769,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 17:12",
     "angebotsprozessDatum": "18.3.2026 03:53",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 542,
@@ -16259,7 +16800,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 10:14",
     "angebotsprozessDatum": "18.3.2026 05:08",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 543,
@@ -16289,7 +16831,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:31",
     "angebotsprozessDatum": "19.3.2026 13:48",
     "vertriebsqualifiziertAm": "18.3.2026 10:44",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 544,
@@ -16319,7 +16862,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 14:02",
     "angebotsprozessDatum": "18.3.2026 05:26",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 545,
@@ -16349,7 +16893,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:18",
     "angebotsprozessDatum": "18.3.2026 06:00",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 546,
@@ -16379,7 +16924,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 11:39",
     "angebotsprozessDatum": "18.3.2026 07:46",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 547,
@@ -16409,7 +16955,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:49",
     "angebotsprozessDatum": "18.3.2026 08:50",
     "vertriebsqualifiziertAm": "18.3.2026 08:48",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 548,
@@ -16439,7 +16986,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:18",
     "angebotsprozessDatum": "18.3.2026 09:03",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 549,
@@ -16469,7 +17017,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:33",
     "angebotsprozessDatum": "18.3.2026 09:06",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 550,
@@ -16499,7 +17048,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 12:12",
     "angebotsprozessDatum": "18.3.2026 12:11",
     "vertriebsqualifiziertAm": "18.3.2026 11:32",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 551,
@@ -16529,7 +17079,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:40",
     "angebotsprozessDatum": "18.3.2026 15:50",
     "vertriebsqualifiziertAm": "18.3.2026 15:50",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 552,
@@ -16559,7 +17110,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 10:21",
     "angebotsprozessDatum": "18.3.2026 09:06",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 553,
@@ -16589,7 +17141,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 10:09",
     "angebotsprozessDatum": "18.3.2026 10:09",
     "vertriebsqualifiziertAm": "18.3.2026 10:09",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 554,
@@ -16619,7 +17172,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 11:24",
     "angebotsprozessDatum": "18.3.2026 11:19",
     "vertriebsqualifiziertAm": "18.3.2026 11:19",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 555,
@@ -16649,7 +17203,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 13:12",
     "angebotsprozessDatum": "20.3.2026 10:18",
     "vertriebsqualifiziertAm": "20.3.2026 10:19",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 556,
@@ -16679,7 +17234,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 15:01",
     "angebotsprozessDatum": "18.3.2026 11:23",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 557,
@@ -16709,7 +17265,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 13:36",
     "angebotsprozessDatum": "18.3.2026 12:04",
     "vertriebsqualifiziertAm": "18.3.2026 12:00",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 558,
@@ -16739,7 +17296,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 13:10",
     "angebotsprozessDatum": "18.3.2026 13:06",
     "vertriebsqualifiziertAm": "18.3.2026 13:06",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 559,
@@ -16769,7 +17327,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 08:54",
     "angebotsprozessDatum": "19.3.2026 12:00",
     "vertriebsqualifiziertAm": "19.3.2026 12:00",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 560,
@@ -16799,7 +17358,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 16:36",
     "angebotsprozessDatum": "18.3.2026 13:27",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 561,
@@ -16829,7 +17389,8 @@ export const leads: Lead[] = [
     "lastModified": "18.3.2026 16:59",
     "angebotsprozessDatum": "18.3.2026 13:35",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 562,
@@ -16859,7 +17420,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:07",
     "angebotsprozessDatum": "18.3.2026 15:16",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 563,
@@ -16889,7 +17451,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:24",
     "angebotsprozessDatum": "18.3.2026 15:37",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 564,
@@ -16919,7 +17482,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 10:59",
     "angebotsprozessDatum": "18.3.2026 16:40",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 565,
@@ -16949,7 +17513,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 17:16",
     "angebotsprozessDatum": "18.3.2026 16:45",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 566,
@@ -16979,7 +17544,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 13:23",
     "angebotsprozessDatum": "19.3.2026 09:09",
     "vertriebsqualifiziertAm": "19.3.2026 09:04",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 567,
@@ -17009,7 +17575,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:23",
     "angebotsprozessDatum": "18.3.2026 20:11",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 568,
@@ -17039,7 +17606,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 14:20",
     "angebotsprozessDatum": "18.3.2026 20:16",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 569,
@@ -17069,7 +17637,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 15:47",
     "angebotsprozessDatum": "19.3.2026 15:29",
     "vertriebsqualifiziertAm": "19.3.2026 15:29",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 570,
@@ -17099,7 +17668,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:28",
     "angebotsprozessDatum": "18.3.2026 23:16",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 571,
@@ -17129,7 +17699,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 09:12",
     "angebotsprozessDatum": "19.3.2026 00:17",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 572,
@@ -17159,7 +17730,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 09:45",
     "angebotsprozessDatum": "19.3.2026 09:38",
     "vertriebsqualifiziertAm": "19.3.2026 09:38",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 573,
@@ -17189,7 +17761,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:56",
     "angebotsprozessDatum": "19.3.2026 06:52",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 574,
@@ -17219,7 +17792,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 12:24",
     "angebotsprozessDatum": "19.3.2026 10:30",
     "vertriebsqualifiziertAm": "19.3.2026 09:35",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 575,
@@ -17249,7 +17823,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 13:34",
     "angebotsprozessDatum": "20.3.2026 12:35",
     "vertriebsqualifiziertAm": "20.3.2026 12:36",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 576,
@@ -17279,7 +17854,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:29",
     "angebotsprozessDatum": "19.3.2026 10:03",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 577,
@@ -17309,7 +17885,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 08:50",
     "angebotsprozessDatum": "19.3.2026 11:28",
     "vertriebsqualifiziertAm": "19.3.2026 11:28",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 578,
@@ -17339,7 +17916,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:30",
     "angebotsprozessDatum": "19.3.2026 10:03",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 579,
@@ -17369,7 +17947,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 10:38",
     "angebotsprozessDatum": "19.3.2026 10:30",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 580,
@@ -17399,7 +17978,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 12:22",
     "angebotsprozessDatum": "19.3.2026 12:21",
     "vertriebsqualifiziertAm": "19.3.2026 12:21",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 581,
@@ -17429,7 +18009,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 11:09",
     "angebotsprozessDatum": "19.3.2026 10:45",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 582,
@@ -17459,7 +18040,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:24",
     "angebotsprozessDatum": "19.3.2026 10:49",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 583,
@@ -17489,7 +18071,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 11:26",
     "angebotsprozessDatum": "19.3.2026 11:24",
     "vertriebsqualifiziertAm": "19.3.2026 11:24",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 584,
@@ -17519,7 +18102,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 17:06",
     "angebotsprozessDatum": "19.3.2026 11:22",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 585,
@@ -17549,7 +18133,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 12:03",
     "angebotsprozessDatum": "19.3.2026 11:24",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 586,
@@ -17579,7 +18164,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:24",
     "angebotsprozessDatum": "19.3.2026 12:54",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 587,
@@ -17609,7 +18195,8 @@ export const leads: Lead[] = [
     "lastModified": "19.3.2026 17:38",
     "angebotsprozessDatum": "19.3.2026 14:10",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 588,
@@ -17639,7 +18226,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:56",
     "angebotsprozessDatum": "19.3.2026 15:17",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 589,
@@ -17669,7 +18257,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:53",
     "angebotsprozessDatum": "19.3.2026 15:18",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 590,
@@ -17699,7 +18288,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:14",
     "angebotsprozessDatum": "20.3.2026 15:14",
     "vertriebsqualifiziertAm": "20.3.2026 15:14",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 591,
@@ -17729,7 +18319,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 13:28",
     "angebotsprozessDatum": "19.3.2026 16:48",
     "vertriebsqualifiziertAm": "19.3.2026 16:48",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 592,
@@ -17759,7 +18350,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:26",
     "angebotsprozessDatum": "19.3.2026 18:36",
     "vertriebsqualifiziertAm": "19.3.2026 18:36",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 593,
@@ -17789,7 +18381,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:25",
     "angebotsprozessDatum": "20.3.2026 08:11",
     "vertriebsqualifiziertAm": "20.3.2026 08:17",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 594,
@@ -17819,7 +18412,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:51",
     "angebotsprozessDatum": "19.3.2026 18:58",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 595,
@@ -17849,7 +18443,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 10:40",
     "angebotsprozessDatum": "19.3.2026 19:55",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 596,
@@ -17879,7 +18474,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:50",
     "angebotsprozessDatum": "20.3.2026 08:27",
     "vertriebsqualifiziertAm": "20.3.2026 08:27",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 597,
@@ -17909,7 +18505,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 08:58",
     "angebotsprozessDatum": "19.3.2026 20:45",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 598,
@@ -17939,7 +18536,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 13:30",
     "angebotsprozessDatum": "20.3.2026 09:11",
     "vertriebsqualifiziertAm": "20.3.2026 09:11",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 599,
@@ -17969,7 +18567,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:55",
     "angebotsprozessDatum": "19.3.2026 21:11",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 600,
@@ -17999,7 +18598,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 09:33",
     "angebotsprozessDatum": "20.3.2026 09:25",
     "vertriebsqualifiziertAm": "20.3.2026 09:25",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 601,
@@ -18029,7 +18629,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 09:51",
     "angebotsprozessDatum": "19.3.2026 23:36",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 602,
@@ -18059,7 +18660,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:58",
     "angebotsprozessDatum": "20.3.2026 01:40",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 603,
@@ -18089,7 +18691,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 17:00",
     "angebotsprozessDatum": "20.3.2026 02:01",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 604,
@@ -18119,7 +18722,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 09:37",
     "angebotsprozessDatum": "20.3.2026 05:51",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 605,
@@ -18149,7 +18753,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 10:07",
     "angebotsprozessDatum": "20.3.2026 09:52",
     "vertriebsqualifiziertAm": "20.3.2026 09:52",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 606,
@@ -18179,7 +18784,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 17:09",
     "angebotsprozessDatum": "20.3.2026 08:04",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 607,
@@ -18209,7 +18815,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 12:56",
     "angebotsprozessDatum": "20.3.2026 12:55",
     "vertriebsqualifiziertAm": "20.3.2026 12:55",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 608,
@@ -18239,7 +18846,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 12:06",
     "angebotsprozessDatum": "20.3.2026 10:26",
     "vertriebsqualifiziertAm": "20.3.2026 10:26",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 609,
@@ -18269,7 +18877,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 17:02",
     "angebotsprozessDatum": "20.3.2026 09:34",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 610,
@@ -18299,7 +18908,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 17:03",
     "angebotsprozessDatum": "20.3.2026 09:37",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 611,
@@ -18329,7 +18939,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 11:45",
     "angebotsprozessDatum": "20.3.2026 11:00",
     "vertriebsqualifiziertAm": "20.3.2026 11:00",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 612,
@@ -18359,7 +18970,8 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 11:38",
     "angebotsprozessDatum": "21.3.2026 11:38",
     "vertriebsqualifiziertAm": "21.3.2026 11:38",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 613,
@@ -18389,7 +19001,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:08",
     "angebotsprozessDatum": "20.3.2026 11:13",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 614,
@@ -18419,7 +19032,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:19",
     "angebotsprozessDatum": "20.3.2026 15:04",
     "vertriebsqualifiziertAm": "20.3.2026 15:04",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 615,
@@ -18449,7 +19063,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 14:45",
     "angebotsprozessDatum": "20.3.2026 14:13",
     "vertriebsqualifiziertAm": "20.3.2026 14:13",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 616,
@@ -18479,7 +19094,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:09",
     "angebotsprozessDatum": "20.3.2026 12:14",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 617,
@@ -18509,7 +19125,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 13:58",
     "angebotsprozessDatum": "20.3.2026 12:34",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 618,
@@ -18539,7 +19156,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 14:01",
     "angebotsprozessDatum": "20.3.2026 12:41",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 619,
@@ -18569,7 +19187,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 15:51",
     "angebotsprozessDatum": "20.3.2026 15:39",
     "vertriebsqualifiziertAm": "20.3.2026 15:49",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 620,
@@ -18599,7 +19218,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 17:28",
     "angebotsprozessDatum": "20.3.2026 16:05",
     "vertriebsqualifiziertAm": "20.3.2026 16:05",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 621,
@@ -18629,7 +19249,8 @@ export const leads: Lead[] = [
     "lastModified": "20.3.2026 16:05",
     "angebotsprozessDatum": "20.3.2026 15:46",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 622,
@@ -18659,7 +19280,8 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 10:34",
     "angebotsprozessDatum": "20.3.2026 18:31",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 623,
@@ -18689,7 +19311,8 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 10:35",
     "angebotsprozessDatum": "20.3.2026 18:56",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 624,
@@ -18719,7 +19342,8 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 10:36",
     "angebotsprozessDatum": "20.3.2026 18:57",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 625,
@@ -18749,7 +19373,8 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 10:36",
     "angebotsprozessDatum": "20.3.2026 19:40",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 626,
@@ -18779,7 +19404,8 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 10:37",
     "angebotsprozessDatum": "20.3.2026 21:04",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 627,
@@ -18809,7 +19435,8 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 10:38",
     "angebotsprozessDatum": "20.3.2026 21:20",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 628,
@@ -18839,7 +19466,8 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 10:40",
     "angebotsprozessDatum": "20.3.2026 21:23",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 629,
@@ -18869,7 +19497,8 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 10:41",
     "angebotsprozessDatum": "20.3.2026 21:25",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 630,
@@ -18899,7 +19528,8 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 10:41",
     "angebotsprozessDatum": "20.3.2026 22:15",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 631,
@@ -18929,7 +19559,8 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 10:42",
     "angebotsprozessDatum": "20.3.2026 22:50",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 632,
@@ -18959,7 +19590,8 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 10:42",
     "angebotsprozessDatum": "20.3.2026 23:17",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 633,
@@ -18989,7 +19621,8 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 10:43",
     "angebotsprozessDatum": "20.3.2026 23:24",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 634,
@@ -19019,7 +19652,8 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 11:06",
     "angebotsprozessDatum": "21.3.2026 10:47",
     "vertriebsqualifiziertAm": "21.3.2026 10:47",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 635,
@@ -19049,7 +19683,8 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 11:14",
     "angebotsprozessDatum": "21.3.2026 07:26",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 636,
@@ -19079,7 +19714,8 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 11:15",
     "angebotsprozessDatum": "21.3.2026 07:31",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 637,
@@ -19109,7 +19745,8 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 11:16",
     "angebotsprozessDatum": "21.3.2026 08:03",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 638,
@@ -19139,7 +19776,8 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 11:51",
     "angebotsprozessDatum": "21.3.2026 08:41",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 639,
@@ -19169,7 +19807,8 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 11:39",
     "angebotsprozessDatum": "21.3.2026 09:26",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 640,
@@ -19199,7 +19838,8 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 11:39",
     "angebotsprozessDatum": "21.3.2026 11:24",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   },
   {
     "id": 641,
@@ -19229,6 +19869,7 @@ export const leads: Lead[] = [
     "lastModified": "21.3.2026 12:45",
     "angebotsprozessDatum": "21.3.2026 12:45",
     "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
+    "gewonnenAm": "",
+    "zustaendigeStelle": ""
   }
 ];

@@ -1268,6 +1268,39 @@ function MetaTab() {
     return result;
   }, []);
 
+  // Qualifizierte Leads pro Creative (CPQL)
+  const qualifiedByCreative = useMemo(() => {
+    const metaQualifiedLeads = leads.filter(
+      (l) =>
+        (l.platform === "Instagram" || l.platform === "Facebook") &&
+        l.adId &&
+        l.zustaendigeStelle === "Agentur für Arbeit" &&
+        l.alter !== "Keine Angabe" && l.alter !== "" &&
+        l.arbeitslosGemeldet === "Ja"
+    );
+    const adIdToName = new Map<string, string>();
+    leads
+      .filter((l) => (l.platform === "Instagram" || l.platform === "Facebook") && l.adId)
+      .forEach((l) => adIdToName.set(l.adId, l.adName));
+    const countByAdId = new Map<string, number>();
+    metaQualifiedLeads.forEach((l) => countByAdId.set(l.adId, (countByAdId.get(l.adId) || 0) + 1));
+    const countByAdName = new Map<string, number>();
+    countByAdId.forEach((count, adId) => {
+      const name = adIdToName.get(adId) || "";
+      if (name) countByAdName.set(name, (countByAdName.get(name) || 0) + count);
+    });
+    const assigned = new Set<string>();
+    const result = new Map<string, number>();
+    [...metaExport].sort((a, b) => b.amountSpent - a.amountSpent).forEach((ad) => {
+      const key = ad.adName;
+      if (!assigned.has(key) && countByAdName.has(key)) {
+        result.set(`${ad.adName}|||${ad.adSetName}`, countByAdName.get(key)!);
+        assigned.add(key);
+      }
+    });
+    return result;
+  }, []);
+
   // CRM-Performance pro Creative × Ad Set — Leads aus CRM werden über adName zugeordnet
   // und proportional (nach Meta-Export results) auf Ad Sets verteilt
   const [crmSearch, setCrmSearch] = useState("");
@@ -1400,6 +1433,7 @@ function MetaTab() {
                 <th className="text-right pr-4">Spend</th>
                 <th className="text-right pr-4">Leads</th>
                 <th className="text-right pr-4">CPL</th>
+                <th className="text-right pr-4">CPQL</th>
                 <th className="text-right pr-4">Impr.</th>
                 <th className="text-right pr-4">Gewonnen</th>
                 <th className="text-right pr-4">Klicks</th>
@@ -1423,6 +1457,7 @@ function MetaTab() {
                   <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.amountSpent.toFixed(2)} €</td>
                   <td className="text-right pr-4 tabular-nums font-medium text-[#e2a96e]">{ad.results}</td>
                   <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.costPerResult > 0 ? `${ad.costPerResult.toFixed(2)} €` : "—"}</td>
+                  <td className="text-right pr-4 tabular-nums text-[#78716c]">{(() => { const qc = qualifiedByCreative.get(`${ad.adName}|||${ad.adSetName}`) || 0; return qc > 0 ? `${(ad.amountSpent / qc).toFixed(2)} €` : "—"; })()}</td>
                   <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.impressions.toLocaleString()}</td>
                   <td className="text-right pr-4 tabular-nums font-semibold text-[#5eead4]">{gewonnenByCreative.get(`${ad.adName}|||${ad.adSetName}`) || 0}</td>
                   <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.linkClicks}</td>

@@ -118,6 +118,7 @@ function mapRecord(record: AirtableRecord, index: number) {
     angebotsprozessDatum: formatDateDE(f["Datum - Last modified - Angebotsprozess"]),
     vertriebsqualifiziertAm: formatDateDE(f["Vertriebsqualifiziert am"]),
     gewonnenAm: formatDateDE(f["Gewonnen am"]),
+    zustaendigeStelle: str(f["Zuständige Stelle"]),
   };
 }
 
