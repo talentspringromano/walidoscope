@@ -1275,7 +1275,7 @@ function MetaTab() {
         (l.platform === "Instagram" || l.platform === "Facebook") &&
         l.adId &&
         l.zustaendigeStelle === "Die Agentur für Arbeit" &&
-        l.alter !== "Keine Angabe" && l.alter !== "" &&
+        l.alter !== "Keine Angabe" && l.alter !== "" && l.alter !== "Unter 24 Jahre" &&
         l.arbeitslosGemeldet === "Ja"
     );
     const adIdToName = new Map<string, string>();
