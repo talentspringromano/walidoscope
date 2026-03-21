@@ -30,7 +30,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 2,
@@ -61,7 +61,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 3,
@@ -92,7 +92,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 4,
@@ -123,7 +123,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 5,
@@ -154,7 +154,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 6,
@@ -185,7 +185,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 7,
@@ -216,7 +216,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 8,
@@ -247,7 +247,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 9,
@@ -278,7 +278,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 10,
@@ -309,7 +309,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 11,
@@ -340,7 +340,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 12,
@@ -371,7 +371,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 13,
@@ -402,7 +402,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 14,
@@ -433,7 +433,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 15,
@@ -464,7 +464,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 16,
@@ -495,7 +495,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 17,
@@ -526,7 +526,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 18,
@@ -557,7 +557,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 19,
@@ -588,7 +588,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 20,
@@ -619,7 +619,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 21,
@@ -650,7 +650,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 15:22",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 22,
@@ -681,7 +681,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 23,
@@ -712,7 +712,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 24,
@@ -743,7 +743,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 25,
@@ -774,7 +774,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 26,
@@ -805,7 +805,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 27,
@@ -836,7 +836,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 28,
@@ -867,7 +867,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 29,
@@ -898,7 +898,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 30,
@@ -929,7 +929,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 31,
@@ -1239,7 +1239,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 41,
@@ -1270,7 +1270,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 42,
@@ -1301,7 +1301,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 43,
@@ -1332,7 +1332,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 44,
@@ -1363,7 +1363,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 45,
@@ -1394,7 +1394,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 46,
@@ -1425,7 +1425,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "26.2.2026 13:35",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 47,
@@ -1456,7 +1456,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 48,
@@ -1487,7 +1487,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 49,
@@ -1518,7 +1518,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 50,
@@ -1549,7 +1549,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 51,
@@ -1580,7 +1580,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 52,
@@ -1611,7 +1611,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 53,
@@ -1642,7 +1642,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 54,
@@ -1673,7 +1673,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 55,
@@ -1704,7 +1704,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 56,
@@ -1735,7 +1735,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 57,
@@ -1766,7 +1766,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 58,
@@ -1797,7 +1797,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 59,
@@ -1828,7 +1828,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 60,
@@ -1859,7 +1859,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 61,
@@ -1890,7 +1890,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "2.3.2026 10:44",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 62,
@@ -1921,7 +1921,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 09:51",
     "vertriebsqualifiziertAm": "18.3.2026 09:51",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 63,
@@ -1952,7 +1952,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 11:43",
     "vertriebsqualifiziertAm": "19.3.2026 11:43",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 64,
@@ -1983,7 +1983,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 65,
@@ -2014,7 +2014,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 66,
@@ -2045,7 +2045,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 67,
@@ -2076,7 +2076,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 68,
@@ -2107,7 +2107,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:45",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 69,
@@ -2138,7 +2138,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 70,
@@ -2169,7 +2169,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 71,
@@ -2200,7 +2200,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 72,
@@ -2231,7 +2231,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 73,
@@ -2262,7 +2262,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 74,
@@ -2293,7 +2293,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 75,
@@ -2324,7 +2324,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 76,
@@ -2355,7 +2355,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 77,
@@ -2386,7 +2386,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 78,
@@ -2417,7 +2417,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 79,
@@ -2448,7 +2448,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 80,
@@ -2479,7 +2479,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 81,
@@ -2510,7 +2510,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 09:46",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 82,
@@ -2541,7 +2541,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 83,
@@ -2572,7 +2572,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 84,
@@ -2603,7 +2603,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 15:59",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 85,
@@ -2634,7 +2634,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 86,
@@ -2665,7 +2665,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 87,
@@ -2696,7 +2696,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "27.2.2026 08:17",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 88,
@@ -2727,7 +2727,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 89,
@@ -2758,7 +2758,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 90,
@@ -2789,7 +2789,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 91,
@@ -2820,7 +2820,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 92,
@@ -2851,7 +2851,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 93,
@@ -2913,7 +2913,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 13:20",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 95,
@@ -2944,7 +2944,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 96,
@@ -2975,7 +2975,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 97,
@@ -3006,7 +3006,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Rentenversicherung"
   },
   {
     "id": 98,
@@ -3874,7 +3874,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "26.2.2026 10:15",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 126,
@@ -3905,7 +3905,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 12:02",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 127,
@@ -3936,7 +3936,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "26.2.2026 16:34",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 128,
@@ -3967,7 +3967,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "26.2.2026 16:57",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 129,
@@ -3998,7 +3998,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "26.2.2026 19:28",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 130,
@@ -4029,7 +4029,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "26.2.2026 19:29",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Rentenversicherung"
   },
   {
     "id": 131,
@@ -4060,7 +4060,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "26.2.2026 20:03",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 132,
@@ -4091,7 +4091,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "26.2.2026 20:03",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 133,
@@ -4122,7 +4122,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "26.2.2026 20:09",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 134,
@@ -4153,7 +4153,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "26.2.2026 20:46",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 135,
@@ -4184,7 +4184,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "26.2.2026 21:17",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 136,
@@ -4215,7 +4215,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "27.2.2026 17:09",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 137,
@@ -4246,7 +4246,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "27.2.2026 01:18",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 138,
@@ -4277,7 +4277,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "27.2.2026 09:26",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 139,
@@ -4308,7 +4308,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "27.2.2026 14:18",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 140,
@@ -4339,7 +4339,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "27.2.2026 20:40",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 141,
@@ -4370,7 +4370,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "2.3.2026 12:46",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 142,
@@ -4401,7 +4401,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "28.2.2026 09:03",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 143,
@@ -4432,7 +4432,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "28.2.2026 09:34",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 144,
@@ -4463,7 +4463,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "13.3.2026 17:26",
     "vertriebsqualifiziertAm": "13.3.2026 17:26",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 145,
@@ -4494,7 +4494,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "2.3.2026 12:14",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 146,
@@ -4525,7 +4525,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "1.3.2026 06:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 147,
@@ -4556,7 +4556,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "2.3.2026 13:10",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 148,
@@ -4587,7 +4587,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "1.3.2026 09:39",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 149,
@@ -4618,7 +4618,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "1.3.2026 09:41",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 150,
@@ -4649,7 +4649,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "2.3.2026 10:38",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 151,
@@ -4680,7 +4680,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "2.3.2026 21:21",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 152,
@@ -4711,7 +4711,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 19:02",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 153,
@@ -4742,7 +4742,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "2.3.2026 10:18",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 154,
@@ -4773,7 +4773,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "1.3.2026 19:45",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 155,
@@ -4804,7 +4804,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "1.3.2026 20:07",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 156,
@@ -4835,7 +4835,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 16:52",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 157,
@@ -4866,7 +4866,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 18:11",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 158,
@@ -4897,7 +4897,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "1.3.2026 21:15",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 159,
@@ -4928,7 +4928,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "1.3.2026 21:59",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 160,
@@ -4959,7 +4959,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "1.3.2026 22:27",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 161,
@@ -4990,7 +4990,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "2.3.2026 11:49",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 162,
@@ -5021,7 +5021,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "2.3.2026 01:02",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 163,
@@ -5052,7 +5052,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "2.3.2026 05:35",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 164,
@@ -5083,7 +5083,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "2.3.2026 05:52",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 165,
@@ -5114,7 +5114,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "2.3.2026 05:57",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 166,
@@ -5145,7 +5145,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "2.3.2026 07:51",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 167,
@@ -5176,7 +5176,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "2.3.2026 09:44",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 168,
@@ -5207,7 +5207,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "2.3.2026 10:32",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 169,
@@ -5269,7 +5269,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "2.3.2026 14:57",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 171,
@@ -5300,7 +5300,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "2.3.2026 17:43",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 172,
@@ -5331,7 +5331,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "2.3.2026 18:58",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 173,
@@ -5362,7 +5362,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "2.3.2026 19:20",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 174,
@@ -5393,7 +5393,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 16:48",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 175,
@@ -5424,7 +5424,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "2.3.2026 19:39",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 176,
@@ -5455,7 +5455,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "2.3.2026 20:33",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 177,
@@ -5486,7 +5486,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "2.3.2026 22:30",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 178,
@@ -5517,7 +5517,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "2.3.2026 22:59",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 179,
@@ -5548,7 +5548,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 10:00",
     "vertriebsqualifiziertAm": "16.3.2026 10:00",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 180,
@@ -5579,7 +5579,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 07:11",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 181,
@@ -5610,7 +5610,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 08:15",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Rentenversicherung"
   },
   {
     "id": 182,
@@ -5641,7 +5641,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 09:05",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 183,
@@ -5672,7 +5672,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 10:36",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 184,
@@ -5703,7 +5703,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 11:38",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 185,
@@ -5734,7 +5734,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 13:57",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 186,
@@ -5796,7 +5796,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 15:45",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 188,
@@ -5827,7 +5827,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 15:53",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 189,
@@ -5858,7 +5858,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 16:55",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 190,
@@ -5889,7 +5889,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 16:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 191,
@@ -5920,7 +5920,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 17:11",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 192,
@@ -5951,7 +5951,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 16:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 193,
@@ -5982,7 +5982,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 10:08",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 194,
@@ -6013,7 +6013,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 12:03",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 195,
@@ -6044,7 +6044,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 16:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 196,
@@ -6075,7 +6075,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 16:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 197,
@@ -6106,7 +6106,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 11:52",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 198,
@@ -6137,7 +6137,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 16:14",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 199,
@@ -6168,7 +6168,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 16:14",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 200,
@@ -6199,7 +6199,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 10:25",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 201,
@@ -6230,7 +6230,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 16:14",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 202,
@@ -6261,7 +6261,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 16:14",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 203,
@@ -6292,7 +6292,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 16:16",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 204,
@@ -6323,7 +6323,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 16:16",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 205,
@@ -6354,7 +6354,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 10:25",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 206,
@@ -6385,7 +6385,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 16:03",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 207,
@@ -6416,7 +6416,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 12:44",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 208,
@@ -6447,7 +6447,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 15:47",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 209,
@@ -6478,7 +6478,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 13:25",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 210,
@@ -6509,7 +6509,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 16:16",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 211,
@@ -6540,7 +6540,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 12:04",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 212,
@@ -6571,7 +6571,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 16:18",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 213,
@@ -6602,7 +6602,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 17:31",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 214,
@@ -6633,7 +6633,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 10:04",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 215,
@@ -6664,7 +6664,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 11:50",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 216,
@@ -6695,7 +6695,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 15:04",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 217,
@@ -6726,7 +6726,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 10:38",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 218,
@@ -6757,7 +6757,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 17:06",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 219,
@@ -6788,7 +6788,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 10:51",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 220,
@@ -6819,7 +6819,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 17:42",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 221,
@@ -6850,7 +6850,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 17:51",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 222,
@@ -6881,7 +6881,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 18:25",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 223,
@@ -6912,7 +6912,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 18:40",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 224,
@@ -6943,7 +6943,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 14:27",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 225,
@@ -6974,7 +6974,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 19:44",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 226,
@@ -7005,7 +7005,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 19:46",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 227,
@@ -7036,7 +7036,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 18:57",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 228,
@@ -7067,7 +7067,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 21:38",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 229,
@@ -7098,7 +7098,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 23:16",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 230,
@@ -7129,7 +7129,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "3.3.2026 23:39",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 231,
@@ -7160,7 +7160,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 18:34",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 232,
@@ -7191,7 +7191,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 04:14",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 233,
@@ -7222,7 +7222,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 05:48",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 234,
@@ -7253,7 +7253,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 06:04",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 235,
@@ -7284,7 +7284,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 14:33",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 236,
@@ -7315,7 +7315,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 12:33",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 237,
@@ -7346,7 +7346,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 08:22",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 238,
@@ -7377,7 +7377,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 10:46",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 239,
@@ -7408,7 +7408,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 11:46",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 240,
@@ -7439,7 +7439,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 12:04",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 241,
@@ -7470,7 +7470,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 12:19",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 242,
@@ -7501,7 +7501,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 12:58",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 243,
@@ -7532,7 +7532,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 17:43",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 244,
@@ -7563,7 +7563,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 14:18",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 245,
@@ -7594,7 +7594,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 14:18",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 246,
@@ -7625,7 +7625,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 14:47",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "19.3.2026 15:43",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 247,
@@ -7656,7 +7656,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 14:41",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 248,
@@ -7687,7 +7687,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 15:23",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 249,
@@ -7718,7 +7718,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 16:52",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 250,
@@ -7749,7 +7749,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 17:36",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 251,
@@ -7780,7 +7780,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 18:11",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 252,
@@ -7811,7 +7811,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 13:19",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 253,
@@ -7842,7 +7842,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 18:31",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 254,
@@ -7873,7 +7873,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 14:36",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 255,
@@ -7904,7 +7904,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 19:01",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 256,
@@ -7935,7 +7935,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 19:13",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 257,
@@ -7966,7 +7966,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 19:35",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 258,
@@ -7997,7 +7997,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "4.3.2026 19:46",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 259,
@@ -8028,7 +8028,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 12:09",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 260,
@@ -8059,7 +8059,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 11:18",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 261,
@@ -8090,7 +8090,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 02:02",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 262,
@@ -8121,7 +8121,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 08:41",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 263,
@@ -8152,7 +8152,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 12:47",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 264,
@@ -8183,7 +8183,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 10:43",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 265,
@@ -8214,7 +8214,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 09:38",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 266,
@@ -8245,7 +8245,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 09:38",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 267,
@@ -8276,7 +8276,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 09:38",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 268,
@@ -8307,7 +8307,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 11:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 269,
@@ -8338,7 +8338,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 11:09",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 270,
@@ -8369,7 +8369,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 11:36",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 271,
@@ -8400,7 +8400,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 16:10",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 272,
@@ -8431,7 +8431,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 15:33",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 273,
@@ -8462,7 +8462,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 15:01",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 274,
@@ -8493,7 +8493,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 15:21",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 275,
@@ -8524,7 +8524,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 15:47",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 276,
@@ -8555,7 +8555,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 17:07",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 277,
@@ -8586,7 +8586,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 17:19",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 278,
@@ -8617,7 +8617,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 19:09",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 279,
@@ -8648,7 +8648,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 19:09",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 280,
@@ -8679,7 +8679,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "5.3.2026 20:31",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 281,
@@ -8710,7 +8710,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 05:48",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 282,
@@ -8741,7 +8741,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 06:21",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 283,
@@ -8772,7 +8772,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 07:18",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 284,
@@ -8803,7 +8803,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 07:18",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 285,
@@ -8834,7 +8834,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 07:18",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 286,
@@ -8865,7 +8865,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 18:17",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 287,
@@ -8896,7 +8896,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 09:11",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 288,
@@ -8927,7 +8927,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 10:24",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 289,
@@ -8958,7 +8958,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 10:34",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 290,
@@ -8989,7 +8989,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 10:34",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 291,
@@ -9020,7 +9020,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 09:44",
     "vertriebsqualifiziertAm": "12.3.2026 09:44",
     "gewonnenAm": "16.3.2026 17:49",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 292,
@@ -9051,7 +9051,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 12:47",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 293,
@@ -9082,7 +9082,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 15:21",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 294,
@@ -9113,7 +9113,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 16:38",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 295,
@@ -9144,7 +9144,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 15:21",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 296,
@@ -9175,7 +9175,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 16:00",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 297,
@@ -9206,7 +9206,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 16:51",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 298,
@@ -9237,7 +9237,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 11:06",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 299,
@@ -9268,7 +9268,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 20:40",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 300,
@@ -9299,7 +9299,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 21:58",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 301,
@@ -9330,7 +9330,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "6.3.2026 22:23",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 302,
@@ -9361,7 +9361,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 09:57",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 303,
@@ -9392,7 +9392,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "7.3.2026 10:36",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "14.3.2026 15:21",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 304,
@@ -9423,7 +9423,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "7.3.2026 10:06",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 305,
@@ -9454,7 +9454,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "7.3.2026 10:21",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 306,
@@ -9485,7 +9485,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "7.3.2026 10:24",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 307,
@@ -9516,7 +9516,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "7.3.2026 10:41",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 308,
@@ -9547,7 +9547,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "7.3.2026 11:55",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 309,
@@ -9578,7 +9578,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "7.3.2026 13:51",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 310,
@@ -9609,7 +9609,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "7.3.2026 15:55",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 311,
@@ -9640,7 +9640,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 11:54",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 312,
@@ -9671,7 +9671,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "7.3.2026 16:53",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 313,
@@ -9702,7 +9702,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "7.3.2026 18:43",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 314,
@@ -9733,7 +9733,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "7.3.2026 20:00",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 315,
@@ -9764,7 +9764,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 14:26",
     "vertriebsqualifiziertAm": "18.3.2026 14:26",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 316,
@@ -9795,7 +9795,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "7.3.2026 20:57",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 317,
@@ -9826,7 +9826,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "8.3.2026 01:18",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 318,
@@ -9857,7 +9857,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "8.3.2026 06:28",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 319,
@@ -9888,7 +9888,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "8.3.2026 07:40",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 320,
@@ -9919,7 +9919,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 12:41",
     "vertriebsqualifiziertAm": "12.3.2026 12:41",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 321,
@@ -9950,7 +9950,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "8.3.2026 15:47",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 322,
@@ -9981,7 +9981,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "8.3.2026 17:26",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 323,
@@ -10012,7 +10012,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "8.3.2026 19:58",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 324,
@@ -10043,7 +10043,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 12:42",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 325,
@@ -10074,7 +10074,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "8.3.2026 21:07",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 326,
@@ -10105,7 +10105,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 09:58",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 327,
@@ -10136,7 +10136,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 14:58",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 328,
@@ -10167,7 +10167,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 06:03",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 329,
@@ -10198,7 +10198,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 06:03",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 330,
@@ -10229,7 +10229,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 06:03",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 331,
@@ -10260,7 +10260,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 12:57",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 332,
@@ -10291,7 +10291,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 16:14",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 333,
@@ -10322,7 +10322,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 06:03",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 334,
@@ -10353,7 +10353,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 09:32",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 335,
@@ -10384,7 +10384,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 07:32",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 336,
@@ -10415,7 +10415,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 07:32",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 337,
@@ -10446,7 +10446,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 07:32",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 338,
@@ -10477,7 +10477,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 07:32",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 339,
@@ -10508,7 +10508,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 15:35",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 340,
@@ -10539,7 +10539,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 07:32",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 341,
@@ -10570,7 +10570,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 07:51",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 342,
@@ -10601,7 +10601,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 08:37",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 343,
@@ -10632,7 +10632,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 09:39",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 344,
@@ -10663,7 +10663,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 09:39",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 345,
@@ -10694,7 +10694,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 10:15",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 346,
@@ -10725,7 +10725,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 12:59",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 347,
@@ -10756,7 +10756,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 12:39",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 348,
@@ -10787,7 +10787,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 15:10",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 349,
@@ -10818,7 +10818,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 17:19",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 350,
@@ -10849,7 +10849,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 14:11",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 351,
@@ -10880,7 +10880,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 14:08",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 352,
@@ -10911,7 +10911,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 14:23",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 353,
@@ -10942,7 +10942,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 17:37",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 354,
@@ -10973,7 +10973,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 17:59",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 355,
@@ -11004,7 +11004,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 12:16",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 356,
@@ -11035,7 +11035,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 18:48",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 357,
@@ -11066,7 +11066,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 18:40",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 358,
@@ -11097,7 +11097,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 19:06",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 359,
@@ -11128,7 +11128,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 20:25",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 360,
@@ -11159,7 +11159,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 21:15",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 361,
@@ -11190,7 +11190,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 23:05",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 362,
@@ -11221,7 +11221,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 23:26",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 363,
@@ -11252,7 +11252,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "9.3.2026 23:49",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 364,
@@ -11283,7 +11283,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 05:51",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 365,
@@ -11314,7 +11314,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 06:23",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 366,
@@ -11345,7 +11345,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 10:24",
     "vertriebsqualifiziertAm": "17.3.2026 10:24",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 367,
@@ -11376,7 +11376,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 10:31",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 368,
@@ -11407,7 +11407,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 08:21",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 369,
@@ -11438,7 +11438,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 08:37",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 370,
@@ -11469,7 +11469,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 09:11",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 371,
@@ -11500,7 +11500,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 18:16",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 372,
@@ -11531,7 +11531,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 12:06",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 373,
@@ -11562,7 +11562,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 12:47",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 374,
@@ -11593,7 +11593,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 13:16",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 375,
@@ -11624,7 +11624,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 15:17",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 376,
@@ -11655,7 +11655,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 14:31",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 377,
@@ -11686,7 +11686,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 14:57",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 378,
@@ -11717,7 +11717,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 15:05",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 379,
@@ -11748,7 +11748,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 15:27",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 380,
@@ -11779,7 +11779,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 16:09",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 381,
@@ -11810,7 +11810,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 16:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 382,
@@ -11841,7 +11841,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 17:20",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 383,
@@ -11872,7 +11872,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 17:32",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 384,
@@ -11903,7 +11903,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 17:33",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 385,
@@ -11934,7 +11934,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 11:32",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 386,
@@ -11965,7 +11965,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 10:29",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 387,
@@ -11996,7 +11996,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 22:50",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 388,
@@ -12027,7 +12027,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "10.3.2026 23:22",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 389,
@@ -12058,7 +12058,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 18:09",
     "vertriebsqualifiziertAm": "12.3.2026 18:09",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 390,
@@ -12089,7 +12089,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 14:08",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 391,
@@ -12120,7 +12120,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 12:53",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 392,
@@ -12151,7 +12151,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 08:57",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 393,
@@ -12182,7 +12182,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 09:49",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 394,
@@ -12213,7 +12213,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 11:08",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 395,
@@ -12244,7 +12244,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 11:11",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 396,
@@ -12275,7 +12275,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 11:47",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 397,
@@ -12306,7 +12306,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 12:39",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 398,
@@ -12337,7 +12337,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 12:39",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 399,
@@ -12368,7 +12368,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 13:16",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 400,
@@ -12399,7 +12399,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 13:26",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 401,
@@ -12430,7 +12430,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 13:44",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 402,
@@ -12461,7 +12461,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 13:50",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 403,
@@ -12492,7 +12492,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 15:36",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 404,
@@ -12523,7 +12523,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 16:06",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 405,
@@ -12554,7 +12554,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 17:44",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 406,
@@ -12585,7 +12585,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 18:05",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 407,
@@ -12616,7 +12616,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Rentenversicherung"
   },
   {
     "id": 408,
@@ -12647,7 +12647,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 18:41",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 409,
@@ -12678,7 +12678,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 09:58",
     "vertriebsqualifiziertAm": "12.3.2026 09:58",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 410,
@@ -12709,7 +12709,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 10:24",
     "vertriebsqualifiziertAm": "12.3.2026 10:17",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 411,
@@ -12740,7 +12740,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 20:28",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 412,
@@ -12771,7 +12771,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 10:41",
     "vertriebsqualifiziertAm": "12.3.2026 10:41",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 413,
@@ -12802,7 +12802,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 22:25",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 414,
@@ -12833,7 +12833,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 22:59",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 415,
@@ -12864,7 +12864,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "11.3.2026 23:56",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 416,
@@ -12895,7 +12895,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 04:28",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 417,
@@ -12926,7 +12926,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 07:48",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 418,
@@ -12957,7 +12957,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 09:22",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 419,
@@ -12988,7 +12988,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 14:30",
     "vertriebsqualifiziertAm": "12.3.2026 14:30",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 420,
@@ -13019,7 +13019,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 13:25",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 421,
@@ -13050,7 +13050,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 13:25",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 422,
@@ -13081,7 +13081,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 16:00",
     "vertriebsqualifiziertAm": "12.3.2026 16:00",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 423,
@@ -13112,7 +13112,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 15:26",
     "vertriebsqualifiziertAm": "12.3.2026 15:26",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 424,
@@ -13143,7 +13143,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 14:58",
     "vertriebsqualifiziertAm": "12.3.2026 14:58",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 425,
@@ -13174,7 +13174,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 13:32",
     "vertriebsqualifiziertAm": "18.3.2026 13:30",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 426,
@@ -13205,7 +13205,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 16:42",
     "vertriebsqualifiziertAm": "12.3.2026 16:33",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 427,
@@ -13236,7 +13236,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 13:26",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 428,
@@ -13267,7 +13267,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 13:26",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 429,
@@ -13298,7 +13298,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 14:18",
     "vertriebsqualifiziertAm": "12.3.2026 14:18",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 430,
@@ -13329,7 +13329,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 15:43",
     "vertriebsqualifiziertAm": "12.3.2026 15:43",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 431,
@@ -13360,7 +13360,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 14:27",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 432,
@@ -13391,7 +13391,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 14:58",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 433,
@@ -13422,7 +13422,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 19:35",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 434,
@@ -13453,7 +13453,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 20:18",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 435,
@@ -13484,7 +13484,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "12.3.2026 21:27",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 436,
@@ -13515,7 +13515,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "13.3.2026 07:39",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 437,
@@ -13546,7 +13546,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "13.3.2026 08:45",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 438,
@@ -13577,7 +13577,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "13.3.2026 08:45",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 439,
@@ -13608,7 +13608,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 12:59",
     "vertriebsqualifiziertAm": "17.3.2026 12:59",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 440,
@@ -13639,7 +13639,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "13.3.2026 08:57",
     "vertriebsqualifiziertAm": "13.3.2026 10:18",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 441,
@@ -13670,7 +13670,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 12:17",
     "vertriebsqualifiziertAm": "18.3.2026 11:07",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 442,
@@ -13701,7 +13701,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "13.3.2026 09:35",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 443,
@@ -13732,7 +13732,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "13.3.2026 10:32",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 444,
@@ -13763,7 +13763,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "13.3.2026 11:57",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 445,
@@ -13794,7 +13794,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 10:51",
     "vertriebsqualifiziertAm": "18.3.2026 10:51",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 446,
@@ -13825,7 +13825,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "13.3.2026 13:27",
     "vertriebsqualifiziertAm": "13.3.2026 13:27",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 447,
@@ -13856,7 +13856,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "13.3.2026 13:16",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 448,
@@ -13887,7 +13887,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "13.3.2026 13:16",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 449,
@@ -13918,7 +13918,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "13.3.2026 13:16",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 450,
@@ -13949,7 +13949,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "13.3.2026 14:49",
     "vertriebsqualifiziertAm": "13.3.2026 14:49",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 451,
@@ -13980,7 +13980,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "13.3.2026 13:16",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 452,
@@ -14011,7 +14011,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "13.3.2026 14:03",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 453,
@@ -14042,7 +14042,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "13.3.2026 14:15",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 454,
@@ -14073,7 +14073,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "13.3.2026 14:38",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 455,
@@ -14104,7 +14104,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "13.3.2026 15:04",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 456,
@@ -14135,7 +14135,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "15.3.2026 12:11",
     "vertriebsqualifiziertAm": "13.3.2026 15:13",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 457,
@@ -14166,7 +14166,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "13.3.2026 15:56",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 458,
@@ -14197,7 +14197,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "13.3.2026 17:13",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 459,
@@ -14228,7 +14228,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 09:31",
     "vertriebsqualifiziertAm": "16.3.2026 09:31",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 460,
@@ -14259,7 +14259,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "13.3.2026 19:29",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 461,
@@ -14290,7 +14290,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "13.3.2026 19:55",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 462,
@@ -14321,7 +14321,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 16:43",
     "vertriebsqualifiziertAm": "17.3.2026 16:43",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 463,
@@ -14352,7 +14352,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "13.3.2026 21:08",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 464,
@@ -14383,7 +14383,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "14.3.2026 04:19",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 465,
@@ -14414,7 +14414,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "14.3.2026 04:25",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 466,
@@ -14445,7 +14445,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "14.3.2026 04:48",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 467,
@@ -14476,7 +14476,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "14.3.2026 05:23",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 468,
@@ -14507,7 +14507,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 11:34",
     "vertriebsqualifiziertAm": "16.3.2026 11:34",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 469,
@@ -14538,7 +14538,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 15:56",
     "vertriebsqualifiziertAm": "19.3.2026 15:56",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 470,
@@ -14569,7 +14569,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "14.3.2026 08:09",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 471,
@@ -14600,7 +14600,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "14.3.2026 10:20",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 472,
@@ -14631,7 +14631,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "14.3.2026 11:42",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 473,
@@ -14662,7 +14662,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 17:23",
     "vertriebsqualifiziertAm": "19.3.2026 17:23",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 474,
@@ -14693,7 +14693,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 15:18",
     "vertriebsqualifiziertAm": "17.3.2026 15:18",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 475,
@@ -14724,7 +14724,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "14.3.2026 16:06",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 476,
@@ -14755,7 +14755,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "14.3.2026 16:18",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 477,
@@ -14786,7 +14786,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "14.3.2026 17:50",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 478,
@@ -14817,7 +14817,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "14.3.2026 18:11",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 479,
@@ -14848,7 +14848,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "14.3.2026 18:31",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 480,
@@ -14879,7 +14879,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 17:17",
     "vertriebsqualifiziertAm": "16.3.2026 17:17",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 481,
@@ -14910,7 +14910,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 14:21",
     "vertriebsqualifiziertAm": "16.3.2026 14:21",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 482,
@@ -14941,7 +14941,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "15.3.2026 03:37",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 483,
@@ -14972,7 +14972,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "15.3.2026 08:55",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 484,
@@ -15003,7 +15003,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "15.3.2026 12:07",
     "vertriebsqualifiziertAm": "15.3.2026 11:51",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 485,
@@ -15034,7 +15034,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "15.3.2026 18:45",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 486,
@@ -15065,7 +15065,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "15.3.2026 20:32",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 487,
@@ -15096,7 +15096,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "15.3.2026 20:43",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 488,
@@ -15127,7 +15127,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "15.3.2026 21:26",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 489,
@@ -15158,7 +15158,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 00:40",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 490,
@@ -15189,7 +15189,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 02:36",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 491,
@@ -15220,7 +15220,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 05:46",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 492,
@@ -15251,7 +15251,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 14:13",
     "vertriebsqualifiziertAm": "17.3.2026 14:13",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 493,
@@ -15282,7 +15282,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 08:37",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 494,
@@ -15313,7 +15313,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 09:01",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 495,
@@ -15344,7 +15344,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 09:01",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 496,
@@ -15375,7 +15375,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 09:02",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 497,
@@ -15406,7 +15406,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 09:13",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 498,
@@ -15437,7 +15437,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 10:22",
     "vertriebsqualifiziertAm": "16.3.2026 10:20",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 499,
@@ -15468,7 +15468,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 10:46",
     "vertriebsqualifiziertAm": "16.3.2026 10:45",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 500,
@@ -15499,7 +15499,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 15:08",
     "vertriebsqualifiziertAm": "16.3.2026 15:08",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 501,
@@ -15530,7 +15530,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 13:26",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 502,
@@ -15561,7 +15561,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 13:40",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 503,
@@ -15592,7 +15592,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 13:51",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 504,
@@ -15623,7 +15623,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 17:30",
     "vertriebsqualifiziertAm": "17.3.2026 17:30",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 505,
@@ -15654,7 +15654,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 16:00",
     "vertriebsqualifiziertAm": "16.3.2026 16:00",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 506,
@@ -15685,7 +15685,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 18:02",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 507,
@@ -15716,7 +15716,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 11:11",
     "vertriebsqualifiziertAm": "17.3.2026 11:11",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 508,
@@ -15747,7 +15747,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 16:16",
     "vertriebsqualifiziertAm": "19.3.2026 16:16",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 509,
@@ -15778,7 +15778,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 19:31",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 510,
@@ -15809,7 +15809,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 11:31",
     "vertriebsqualifiziertAm": "17.3.2026 11:31",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 511,
@@ -15840,7 +15840,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 20:38",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 512,
@@ -15871,7 +15871,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 21:11",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 513,
@@ -15902,7 +15902,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "16.3.2026 21:18",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 514,
@@ -15933,7 +15933,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 06:40",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 515,
@@ -15964,7 +15964,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 06:45",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 516,
@@ -15995,7 +15995,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 07:00",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 517,
@@ -16026,7 +16026,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 07:46",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 518,
@@ -16057,7 +16057,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 08:10",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 519,
@@ -16088,7 +16088,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 10:25",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 520,
@@ -16119,7 +16119,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 10:42",
     "vertriebsqualifiziertAm": "17.3.2026 10:42",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 521,
@@ -16150,7 +16150,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 12:23",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 522,
@@ -16181,7 +16181,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 12:23",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 523,
@@ -16212,7 +16212,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 17:32",
     "vertriebsqualifiziertAm": "17.3.2026 17:32",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 524,
@@ -16243,7 +16243,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 12:24",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 525,
@@ -16274,7 +16274,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 12:57",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 526,
@@ -16305,7 +16305,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 13:22",
     "vertriebsqualifiziertAm": "17.3.2026 13:20",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 527,
@@ -16336,7 +16336,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 14:01",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 528,
@@ -16367,7 +16367,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 15:17",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 529,
@@ -16398,7 +16398,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 15:17",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 530,
@@ -16429,7 +16429,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 15:51",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 531,
@@ -16460,7 +16460,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 16:06",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Rentenversicherung"
   },
   {
     "id": 532,
@@ -16491,7 +16491,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 16:11",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 533,
@@ -16522,7 +16522,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 16:50",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 534,
@@ -16553,7 +16553,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 17:13",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 535,
@@ -16584,7 +16584,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 18:49",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 536,
@@ -16615,7 +16615,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 19:01",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 537,
@@ -16646,7 +16646,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 20:51",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 538,
@@ -16677,7 +16677,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 22:00",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 539,
@@ -16708,7 +16708,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "17.3.2026 23:18",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 540,
@@ -16739,7 +16739,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 01:38",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 541,
@@ -16770,7 +16770,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 03:53",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 542,
@@ -16801,7 +16801,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 05:08",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 543,
@@ -16832,7 +16832,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 13:48",
     "vertriebsqualifiziertAm": "18.3.2026 10:44",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 544,
@@ -16863,7 +16863,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 05:26",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 545,
@@ -16894,7 +16894,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 06:00",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 546,
@@ -16925,7 +16925,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 07:46",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 547,
@@ -16956,7 +16956,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 08:50",
     "vertriebsqualifiziertAm": "18.3.2026 08:48",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 548,
@@ -16987,7 +16987,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 09:03",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 549,
@@ -17018,7 +17018,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 09:06",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 550,
@@ -17049,7 +17049,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 12:11",
     "vertriebsqualifiziertAm": "18.3.2026 11:32",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 551,
@@ -17080,7 +17080,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 15:50",
     "vertriebsqualifiziertAm": "18.3.2026 15:50",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 552,
@@ -17111,7 +17111,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 09:06",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 553,
@@ -17142,7 +17142,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 10:09",
     "vertriebsqualifiziertAm": "18.3.2026 10:09",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 554,
@@ -17173,7 +17173,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 11:19",
     "vertriebsqualifiziertAm": "18.3.2026 11:19",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 555,
@@ -17204,7 +17204,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 10:18",
     "vertriebsqualifiziertAm": "20.3.2026 10:19",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 556,
@@ -17235,7 +17235,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 11:23",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 557,
@@ -17266,7 +17266,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 12:04",
     "vertriebsqualifiziertAm": "18.3.2026 12:00",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 558,
@@ -17297,7 +17297,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 13:06",
     "vertriebsqualifiziertAm": "18.3.2026 13:06",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 559,
@@ -17328,7 +17328,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 12:00",
     "vertriebsqualifiziertAm": "19.3.2026 12:00",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 560,
@@ -17359,7 +17359,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 13:27",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 561,
@@ -17390,7 +17390,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 13:35",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Rentenversicherung"
   },
   {
     "id": 562,
@@ -17421,7 +17421,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 15:16",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 563,
@@ -17452,7 +17452,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 15:37",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 564,
@@ -17483,7 +17483,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 16:40",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 565,
@@ -17514,7 +17514,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 16:45",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 566,
@@ -17545,7 +17545,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 09:09",
     "vertriebsqualifiziertAm": "19.3.2026 09:04",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 567,
@@ -17576,7 +17576,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 20:11",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 568,
@@ -17607,7 +17607,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 20:16",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 569,
@@ -17638,7 +17638,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 15:29",
     "vertriebsqualifiziertAm": "19.3.2026 15:29",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 570,
@@ -17669,7 +17669,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "18.3.2026 23:16",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 571,
@@ -17700,7 +17700,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 00:17",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 572,
@@ -17731,7 +17731,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 09:38",
     "vertriebsqualifiziertAm": "19.3.2026 09:38",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 573,
@@ -17762,7 +17762,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 06:52",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 574,
@@ -17793,7 +17793,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 10:30",
     "vertriebsqualifiziertAm": "19.3.2026 09:35",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 575,
@@ -17824,7 +17824,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 12:35",
     "vertriebsqualifiziertAm": "20.3.2026 12:36",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 576,
@@ -17855,7 +17855,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 10:03",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 577,
@@ -17886,7 +17886,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 11:28",
     "vertriebsqualifiziertAm": "19.3.2026 11:28",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 578,
@@ -17917,7 +17917,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 10:03",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 579,
@@ -17948,7 +17948,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 10:30",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 580,
@@ -17979,7 +17979,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 12:21",
     "vertriebsqualifiziertAm": "19.3.2026 12:21",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 581,
@@ -18010,7 +18010,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 10:45",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 582,
@@ -18041,7 +18041,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 10:49",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 583,
@@ -18072,7 +18072,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 11:24",
     "vertriebsqualifiziertAm": "19.3.2026 11:24",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 584,
@@ -18103,7 +18103,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 11:22",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 585,
@@ -18134,7 +18134,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 11:24",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Rentenversicherung"
   },
   {
     "id": 586,
@@ -18165,7 +18165,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 12:54",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 587,
@@ -18196,7 +18196,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 14:10",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 588,
@@ -18227,7 +18227,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 15:17",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 589,
@@ -18258,7 +18258,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 15:18",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 590,
@@ -18289,7 +18289,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 15:14",
     "vertriebsqualifiziertAm": "20.3.2026 15:14",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 591,
@@ -18320,7 +18320,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 16:48",
     "vertriebsqualifiziertAm": "19.3.2026 16:48",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 592,
@@ -18351,7 +18351,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 18:36",
     "vertriebsqualifiziertAm": "19.3.2026 18:36",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 593,
@@ -18382,7 +18382,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 08:11",
     "vertriebsqualifiziertAm": "20.3.2026 08:17",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 594,
@@ -18413,7 +18413,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 18:58",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 595,
@@ -18444,7 +18444,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 19:55",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 596,
@@ -18475,7 +18475,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 08:27",
     "vertriebsqualifiziertAm": "20.3.2026 08:27",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 597,
@@ -18506,7 +18506,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 20:45",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 598,
@@ -18537,7 +18537,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 09:11",
     "vertriebsqualifiziertAm": "20.3.2026 09:11",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 599,
@@ -18568,7 +18568,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 21:11",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 600,
@@ -18599,7 +18599,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 09:25",
     "vertriebsqualifiziertAm": "20.3.2026 09:25",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 601,
@@ -18630,7 +18630,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "19.3.2026 23:36",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 602,
@@ -18661,7 +18661,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 01:40",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 603,
@@ -18692,7 +18692,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 02:01",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 604,
@@ -18723,7 +18723,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 05:51",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 605,
@@ -18754,7 +18754,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 09:52",
     "vertriebsqualifiziertAm": "20.3.2026 09:52",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 606,
@@ -18785,7 +18785,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 08:04",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 607,
@@ -18816,7 +18816,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 12:55",
     "vertriebsqualifiziertAm": "20.3.2026 12:55",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 608,
@@ -18847,7 +18847,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 10:26",
     "vertriebsqualifiziertAm": "20.3.2026 10:26",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 609,
@@ -18878,7 +18878,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 09:34",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 610,
@@ -18909,7 +18909,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 09:37",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 611,
@@ -18940,7 +18940,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 11:00",
     "vertriebsqualifiziertAm": "20.3.2026 11:00",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 612,
@@ -18971,7 +18971,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "21.3.2026 11:38",
     "vertriebsqualifiziertAm": "21.3.2026 11:38",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 613,
@@ -19002,7 +19002,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 11:13",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 614,
@@ -19033,7 +19033,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 15:04",
     "vertriebsqualifiziertAm": "20.3.2026 15:04",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 615,
@@ -19064,7 +19064,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 14:13",
     "vertriebsqualifiziertAm": "20.3.2026 14:13",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 616,
@@ -19095,7 +19095,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 12:14",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 617,
@@ -19126,7 +19126,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 12:34",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Rentenversicherung"
   },
   {
     "id": 618,
@@ -19157,7 +19157,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 12:41",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 619,
@@ -19188,7 +19188,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 15:39",
     "vertriebsqualifiziertAm": "20.3.2026 15:49",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Keine Angabe"
   },
   {
     "id": 620,
@@ -19219,7 +19219,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 16:05",
     "vertriebsqualifiziertAm": "20.3.2026 16:05",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 621,
@@ -19250,7 +19250,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 15:46",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Rentenversicherung"
   },
   {
     "id": 622,
@@ -19281,7 +19281,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 18:31",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 623,
@@ -19312,7 +19312,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 18:56",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 624,
@@ -19343,7 +19343,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 18:57",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 625,
@@ -19374,7 +19374,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 19:40",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 626,
@@ -19405,7 +19405,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 21:04",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 627,
@@ -19436,7 +19436,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 21:20",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
     "id": 628,
@@ -19467,7 +19467,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 21:23",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 629,
@@ -19498,7 +19498,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 21:25",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 630,
@@ -19529,7 +19529,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 22:15",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 631,
@@ -19560,7 +19560,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 22:50",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 632,
@@ -19591,7 +19591,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 23:17",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 633,
@@ -19622,7 +19622,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "20.3.2026 23:24",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 634,
@@ -19653,7 +19653,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "21.3.2026 10:47",
     "vertriebsqualifiziertAm": "21.3.2026 10:47",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 635,
@@ -19684,7 +19684,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "21.3.2026 07:26",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 636,
@@ -19715,7 +19715,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "21.3.2026 07:31",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Das Jobcenter"
   },
   {
     "id": 637,
@@ -19746,7 +19746,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "21.3.2026 08:03",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 638,
@@ -19777,7 +19777,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "21.3.2026 08:41",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 639,
@@ -19808,7 +19808,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "21.3.2026 09:26",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 640,
@@ -19839,7 +19839,7 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "21.3.2026 11:24",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
     "id": 641,
@@ -19870,6 +19870,161 @@ export const leads: Lead[] = [
     "angebotsprozessDatum": "21.3.2026 12:45",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
-    "zustaendigeStelle": ""
+    "zustaendigeStelle": "Die Agentur für Arbeit"
+  },
+  {
+    "id": 642,
+    "name": "Doris Jerman Jakšić",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120241445230580128",
+    "adName": "C1 - Berufseinstieg schwer",
+    "platform": "Instagram",
+    "arbeitslosGemeldet": "Nein, aber in den nächsten 3 Monaten",
+    "deutschkenntnisse": "Gute Kenntnisse (B2)",
+    "alter": "25 – 45 Jahre",
+    "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
+    "vertriebler": "",
+    "createdOn": "21.3.2026 14:19",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "21.3.2026 14:19",
+    "angebotsprozessDatum": "21.3.2026 14:19",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": "",
+    "zustaendigeStelle": "Die Rentenversicherung"
+  },
+  {
+    "id": 643,
+    "name": "Nadine Hans",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120241352642900128",
+    "adName": "C4.2 - Recruiter und arbeitslos",
+    "platform": "Instagram",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "25 – 45 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "",
+    "createdOn": "21.3.2026 15:21",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "21.3.2026 15:21",
+    "angebotsprozessDatum": "21.3.2026 15:21",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": "",
+    "zustaendigeStelle": "Die Agentur für Arbeit"
+  },
+  {
+    "id": 644,
+    "name": "Agnieszka Böltl",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Instagram",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Fließend (C1/C2)",
+    "alter": "25 – 45 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "",
+    "createdOn": "21.3.2026 16:15",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "21.3.2026 16:15",
+    "angebotsprozessDatum": "21.3.2026 16:15",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": "",
+    "zustaendigeStelle": "Die Agentur für Arbeit"
+  },
+  {
+    "id": 645,
+    "name": "Lena Fichtl",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Instagram",
+    "arbeitslosGemeldet": "Nein, aber in den nächsten 3 Monaten",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "25 – 45 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "",
+    "createdOn": "21.3.2026 17:01",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "21.3.2026 17:01",
+    "angebotsprozessDatum": "21.3.2026 17:01",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": "",
+    "zustaendigeStelle": "Ich bin mir nicht sicher"
+  },
+  {
+    "id": 646,
+    "name": "Iwajlo Abadjiev",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120241352642900128",
+    "adName": "C4.2 - Recruiter und arbeitslos",
+    "platform": "Facebook",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "46 – 60 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "",
+    "createdOn": "21.3.2026 17:47",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "21.3.2026 17:47",
+    "angebotsprozessDatum": "21.3.2026 17:47",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": "",
+    "zustaendigeStelle": "Die Agentur für Arbeit"
   }
 ];
