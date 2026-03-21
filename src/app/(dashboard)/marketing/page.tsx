@@ -879,7 +879,7 @@ function MarketingContent() {
               ))}
             </select>
           </div>
-          <ResponsiveContainer width="100%" height={320}>
+          <ResponsiveContainer width="100%" height={420}>
             <AreaChart data={outcomeWeeklyData} stackOffset="expand">
               <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.04)" />
               <XAxis dataKey="label" {...AXIS_STYLE} axisLine={false} tickLine={false} />
