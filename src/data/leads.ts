@@ -1264,8 +1264,8 @@ export const leads: Lead[] = [
   {
     "id": 43,
     "name": "Patricia Ajvazi",
-    "leadStatus": "Rückruf",
-    "verlustgrund": "",
+    "leadStatus": "Verloren",
+    "verlustgrund": "neuen Job erhalten",
     "adId": "120239534644260128",
     "adName": "C7 - Aktuell arbeitslos und Vorerfahrung HR",
     "platform": "Instagram",
@@ -1286,7 +1286,7 @@ export const leads: Lead[] = [
     "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "20.3.2026 12:50",
+    "lastModified": "21.3.2026 11:49",
     "angebotsprozessDatum": "24.2.2026 18:12",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": ""
@@ -3783,36 +3783,6 @@ export const leads: Lead[] = [
   },
   {
     "id": 127,
-    "name": "",
-    "leadStatus": "Rückruf",
-    "verlustgrund": "",
-    "adId": "",
-    "adName": "",
-    "platform": "",
-    "arbeitslosGemeldet": "",
-    "deutschkenntnisse": "",
-    "alter": "Keine Angabe",
-    "vorerfahrung": "",
-    "vertriebler": "Nele Pfau",
-    "createdOn": "26.2.2026 10:38",
-    "terminBeimAmt": "",
-    "closingWahrscheinlichkeit": "",
-    "utmTitle": "",
-    "hotLead": false,
-    "angebotVerschicken": false,
-    "prozessStarten": "Noch kein Angebot erstellt",
-    "terminBeimAmtCheck": false,
-    "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
-    "kennenlernDatum": "",
-    "betreuungsart": "",
-    "lastModified": "26.2.2026 10:38",
-    "angebotsprozessDatum": "26.2.2026 10:38",
-    "vertriebsqualifiziertAm": "",
-    "gewonnenAm": ""
-  },
-  {
-    "id": 128,
     "name": "Claudia Danneberg",
     "leadStatus": "Gewonnen",
     "verlustgrund": "",
@@ -3842,7 +3812,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 129,
+    "id": 128,
     "name": "Lorena Koch",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -3872,7 +3842,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 130,
+    "id": 129,
     "name": "Stefan Raddatz",
     "leadStatus": "Kennenlerngespräch gebucht",
     "verlustgrund": "",
@@ -3902,7 +3872,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 131,
+    "id": 130,
     "name": "Uta Schulze",
     "leadStatus": "Reterminierung",
     "verlustgrund": "",
@@ -3932,7 +3902,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 132,
+    "id": 131,
     "name": "Oliver Schimming",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -3962,7 +3932,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 133,
+    "id": 132,
     "name": "Ümid Harmanci",
     "leadStatus": "Verloren",
     "verlustgrund": "Kein Interesse an HR/Payroll",
@@ -3992,7 +3962,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 134,
+    "id": 133,
     "name": "Sergio Anabalon - Anabalon-Weinzierl",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -4022,7 +3992,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 135,
+    "id": 134,
     "name": "Thomas Bügelsteiber",
     "leadStatus": "Verloren",
     "verlustgrund": "Angestellt",
@@ -4052,7 +4022,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 136,
+    "id": 135,
     "name": "Nadine Luczynsk",
     "leadStatus": "Verloren",
     "verlustgrund": "",
@@ -4082,7 +4052,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 137,
+    "id": 136,
     "name": "Anna Wasem",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -4112,7 +4082,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 138,
+    "id": 137,
     "name": "Martina Grimm",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -4142,7 +4112,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 139,
+    "id": 138,
     "name": "Stephanie Mineau",
     "leadStatus": "Verloren",
     "verlustgrund": "",
@@ -4172,7 +4142,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 140,
+    "id": 139,
     "name": "Virginia Womitso",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -4202,7 +4172,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 141,
+    "id": 140,
     "name": "Barbara Benaissa",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -4232,7 +4202,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 142,
+    "id": 141,
     "name": "Philomena Fragezeichen",
     "leadStatus": "Verloren",
     "verlustgrund": "neuen Job erhalten",
@@ -4262,7 +4232,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 143,
+    "id": 142,
     "name": "Annas Karnath",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -4292,7 +4262,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 144,
+    "id": 143,
     "name": "Marti Derr",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -4322,7 +4292,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 145,
+    "id": 144,
     "name": "Corinna Haring",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -4352,7 +4322,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 146,
+    "id": 145,
     "name": "Isabel Weber",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -4382,7 +4352,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 147,
+    "id": 146,
     "name": "Nadine Werth",
     "leadStatus": "Verloren",
     "verlustgrund": "bereits anderer Kurs",
@@ -4412,7 +4382,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 148,
+    "id": 147,
     "name": "Katrin Pförtner",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -4442,7 +4412,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 149,
+    "id": 148,
     "name": "Karolina Anna Nawrot",
     "leadStatus": "Verloren",
     "verlustgrund": "Angestellt",
@@ -4472,7 +4442,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 150,
+    "id": 149,
     "name": "Roland_urabl_muench Urabl-Münch",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -4502,7 +4472,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 151,
+    "id": 150,
     "name": "Zuhal Sue Kimmel",
     "leadStatus": "Verloren",
     "verlustgrund": "Angestellt",
@@ -4532,7 +4502,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 152,
+    "id": 151,
     "name": "Daniel Van Dam",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -4562,7 +4532,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 153,
+    "id": 152,
     "name": "Kathrin Plas",
     "leadStatus": "Verloren",
     "verlustgrund": "Kein Interesse an HR/Payroll",
@@ -4592,7 +4562,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 154,
+    "id": 153,
     "name": "Ruth Lechner",
     "leadStatus": "Gewonnen",
     "verlustgrund": "",
@@ -4622,7 +4592,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 155,
+    "id": 154,
     "name": "Daniela Zielinski",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -4652,7 +4622,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 156,
+    "id": 155,
     "name": "Filomena Amantea",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -4682,7 +4652,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 157,
+    "id": 156,
     "name": "Jenny Müller",
     "leadStatus": "Beratungsgespräch gebucht",
     "verlustgrund": "",
@@ -4712,7 +4682,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 158,
+    "id": 157,
     "name": "Meerim Isaeva",
     "leadStatus": "Verloren",
     "verlustgrund": "neuen Job erhalten",
@@ -4742,7 +4712,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 159,
+    "id": 158,
     "name": "Stefanie Kunter",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -4772,7 +4742,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 160,
+    "id": 159,
     "name": "Natalia Guberac | Permanent Make-Up",
     "leadStatus": "Verloren",
     "verlustgrund": "Angestellt",
@@ -4802,7 +4772,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 161,
+    "id": 160,
     "name": "Nerma Rahic",
     "leadStatus": "Verloren",
     "verlustgrund": "Kein Interesse an HR/Payroll",
@@ -4832,7 +4802,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 162,
+    "id": 161,
     "name": "Birgit Landhäußer",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -4862,7 +4832,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 163,
+    "id": 162,
     "name": "Stefan Röver",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -4892,7 +4862,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 164,
+    "id": 163,
     "name": "Katharina Leim",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -4922,7 +4892,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 165,
+    "id": 164,
     "name": "Albrecht Hermann",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -4952,7 +4922,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 166,
+    "id": 165,
     "name": "Stefan Weigert",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -4982,7 +4952,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 167,
+    "id": 166,
     "name": "Svenja Andresen",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -5012,7 +4982,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 168,
+    "id": 167,
     "name": "Magdalena Wesolowska",
     "leadStatus": "Reterminierung",
     "verlustgrund": "",
@@ -5042,7 +5012,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 169,
+    "id": 168,
     "name": "Juli Kru",
     "leadStatus": "Verloren",
     "verlustgrund": "Angestellt",
@@ -5072,7 +5042,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 170,
+    "id": 169,
     "name": "Derya Okur",
     "leadStatus": "Verloren",
     "verlustgrund": "bereits anderer Kurs",
@@ -5102,7 +5072,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 171,
+    "id": 170,
     "name": "Saskia Weisser",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -5132,7 +5102,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 172,
+    "id": 171,
     "name": "Beata Sosna-Nowak",
     "leadStatus": "Verloren",
     "verlustgrund": "Angestellt",
@@ -5162,7 +5132,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 173,
+    "id": 172,
     "name": "Emine Şahan",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -5192,7 +5162,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 174,
+    "id": 173,
     "name": "Manuela Lehnen",
     "leadStatus": "Verloren",
     "verlustgrund": "neuen Job erhalten",
@@ -5222,7 +5192,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 175,
+    "id": 174,
     "name": "Emilia Czarnecki",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -5252,7 +5222,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 176,
+    "id": 175,
     "name": "Tanja Werner",
     "leadStatus": "Verloren",
     "verlustgrund": "Kein Interesse an HR/Payroll",
@@ -5282,7 +5252,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 177,
+    "id": 176,
     "name": "Jess- Roe",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -5312,7 +5282,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 178,
+    "id": 177,
     "name": "Heidrun Stark",
     "leadStatus": "Verloren",
     "verlustgrund": "Kein Interesse an HR/Payroll",
@@ -5342,7 +5312,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 179,
+    "id": 178,
     "name": "Hanna Heller",
     "leadStatus": "Verloren",
     "verlustgrund": "Angestellt",
@@ -5372,7 +5342,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 180,
+    "id": 179,
     "name": "Mary Kasalo",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -5402,7 +5372,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 181,
+    "id": 180,
     "name": "Ma Rotty",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -5432,7 +5402,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 182,
+    "id": 181,
     "name": "Liz Jacob",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -5462,7 +5432,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 183,
+    "id": 182,
     "name": "De Nise",
     "leadStatus": "Reterminierung",
     "verlustgrund": "",
@@ -5492,7 +5462,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 184,
+    "id": 183,
     "name": "Sonja Ittner",
     "leadStatus": "Verloren",
     "verlustgrund": "Angestellt",
@@ -5522,7 +5492,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 185,
+    "id": 184,
     "name": "Philipp Regnat",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -5552,7 +5522,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 186,
+    "id": 185,
     "name": "Justine Zürker",
     "leadStatus": "Verloren",
     "verlustgrund": "Angestellt",
@@ -5582,7 +5552,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 187,
+    "id": 186,
     "name": "Diana Schneider",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -5612,7 +5582,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 188,
+    "id": 187,
     "name": "Alexander Galbory",
     "leadStatus": "Verloren",
     "verlustgrund": "Angestellt",
@@ -5642,7 +5612,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 189,
+    "id": 188,
     "name": "Iren Drexler",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -5672,7 +5642,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 190,
+    "id": 189,
     "name": "Carla Schwerb",
     "leadStatus": "Beratungsgespräch gebucht",
     "verlustgrund": "",
@@ -5702,7 +5672,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 191,
+    "id": 190,
     "name": "Dennis Jovanovic",
     "leadStatus": "Reterminierung",
     "verlustgrund": "",
@@ -5732,7 +5702,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 192,
+    "id": 191,
     "name": "Schugufa Aria",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -5762,7 +5732,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 193,
+    "id": 192,
     "name": "Anita Parfimczyk",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -5792,7 +5762,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 194,
+    "id": 193,
     "name": "Yasar Abdullah",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -5822,7 +5792,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 195,
+    "id": 194,
     "name": "Thomas Sugar",
     "leadStatus": "Gewonnen",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -5852,7 +5822,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 196,
+    "id": 195,
     "name": "Tioma Marakati",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -5882,7 +5852,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 197,
+    "id": 196,
     "name": "Adam Balihodzic",
     "leadStatus": "Verloren",
     "verlustgrund": "bereits anderer Kurs",
@@ -5912,7 +5882,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 198,
+    "id": 197,
     "name": "Agid Bajo",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -5942,7 +5912,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 199,
+    "id": 198,
     "name": "Hannes Hungerbühler",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -5972,7 +5942,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 200,
+    "id": 199,
     "name": "Gökalphan Akkoyunlu",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -6002,7 +5972,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 201,
+    "id": 200,
     "name": "Dragana Stanisic",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -6032,7 +6002,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 202,
+    "id": 201,
     "name": "Ela Akaba",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -6062,7 +6032,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 203,
+    "id": 202,
     "name": "Florian Schneider",
     "leadStatus": "Verloren",
     "verlustgrund": "Kein Interesse an HR/Payroll",
@@ -6092,7 +6062,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 204,
+    "id": 203,
     "name": "Marko Krezic",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -6122,7 +6092,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 205,
+    "id": 204,
     "name": "Maab Ouhaddou",
     "leadStatus": "Verloren",
     "verlustgrund": "noch nicht gemeldet",
@@ -6152,7 +6122,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 206,
+    "id": 205,
     "name": "Leotrim Ibrahimi",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -6182,7 +6152,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 207,
+    "id": 206,
     "name": "Melek Yörük",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -6212,7 +6182,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 208,
+    "id": 207,
     "name": "Jessica Rume",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -6242,7 +6212,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 209,
+    "id": 208,
     "name": "Hannelore Tempfli",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -6272,7 +6242,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 210,
+    "id": 209,
     "name": "Inga Movsesyan",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -6302,7 +6272,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 211,
+    "id": 210,
     "name": "Mehmet Akif Yilmaz",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -6332,7 +6302,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 212,
+    "id": 211,
     "name": "Nico Huster",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -6362,7 +6332,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 213,
+    "id": 212,
     "name": "Rafael Muresan",
     "leadStatus": "Verloren",
     "verlustgrund": "noch nicht gemeldet",
@@ -6392,7 +6362,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 214,
+    "id": 213,
     "name": "Melisa Cena",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -6422,7 +6392,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 215,
+    "id": 214,
     "name": "Nicolaij Kolbe",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -6452,7 +6422,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 216,
+    "id": 215,
     "name": "Petra Ashington",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -6482,7 +6452,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 217,
+    "id": 216,
     "name": "Snezana Lukic",
     "leadStatus": "Verloren",
     "verlustgrund": "Angestellt",
@@ -6512,7 +6482,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 218,
+    "id": 217,
     "name": "Conny Pilz",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -6542,7 +6512,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 219,
+    "id": 218,
     "name": "Chrissi Ruth",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -6572,7 +6542,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 220,
+    "id": 219,
     "name": "Siranush Gevorgyan",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -6602,7 +6572,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 221,
+    "id": 220,
     "name": "Nicole Schnaß",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -6632,7 +6602,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 222,
+    "id": 221,
     "name": "Idriss-Yannick Diabate",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -6662,7 +6632,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 223,
+    "id": 222,
     "name": "Felix Fetzer",
     "leadStatus": "Verloren",
     "verlustgrund": "Angestellt",
@@ -6692,7 +6662,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 224,
+    "id": 223,
     "name": "Uschi_ Herrmann",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -6722,7 +6692,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 225,
+    "id": 224,
     "name": "Isabella Berghoffer",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -6752,7 +6722,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 226,
+    "id": 225,
     "name": "Nicole Jung",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -6782,7 +6752,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 227,
+    "id": 226,
     "name": "Susanne Borowsky",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -6812,7 +6782,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 228,
+    "id": 227,
     "name": "Gina Nguyen",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -6842,7 +6812,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 229,
+    "id": 228,
     "name": "Ayten Avutan Berkyürek",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -6872,7 +6842,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 230,
+    "id": 229,
     "name": "Birgit Brückmann",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -6902,7 +6872,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 231,
+    "id": 230,
     "name": "Cigdem Gürbüz",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -6932,7 +6902,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 232,
+    "id": 231,
     "name": "Liv Ndive",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -6962,7 +6932,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 233,
+    "id": 232,
     "name": "Bianca Koob",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -6992,7 +6962,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 234,
+    "id": 233,
     "name": "Aysenur Kuecuekarpaci",
     "leadStatus": "Reterminierung",
     "verlustgrund": "",
@@ -7022,7 +6992,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 235,
+    "id": 234,
     "name": "Chanti Corlette",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -7052,7 +7022,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 236,
+    "id": 235,
     "name": "Deborah Plath",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -7082,7 +7052,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 237,
+    "id": 236,
     "name": "Maria Gelevska",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -7112,7 +7082,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 238,
+    "id": 237,
     "name": "Liam Day",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -7142,7 +7112,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 239,
+    "id": 238,
     "name": "Cath Leen Wunderlich",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -7172,7 +7142,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 240,
+    "id": 239,
     "name": "Katrin Wittmann",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -7202,7 +7172,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 241,
+    "id": 240,
     "name": "Melly Fundke",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -7232,7 +7202,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 242,
+    "id": 241,
     "name": "Emin Thaqi",
     "leadStatus": "Reterminierung",
     "verlustgrund": "",
@@ -7262,7 +7232,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 243,
+    "id": 242,
     "name": "Oliver Schimming",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -7292,7 +7262,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 244,
+    "id": 243,
     "name": "Shenoll Dindari",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -7322,7 +7292,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 245,
+    "id": 244,
     "name": "Tim Napieralski",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -7352,7 +7322,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 246,
+    "id": 245,
     "name": "Nicole Schmerker",
     "leadStatus": "Verloren",
     "verlustgrund": "Kein Interesse an HR/Payroll",
@@ -7382,7 +7352,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 247,
+    "id": 246,
     "name": "Eva Rainer",
     "leadStatus": "Gewonnen",
     "verlustgrund": "",
@@ -7412,7 +7382,7 @@ export const leads: Lead[] = [
     "gewonnenAm": "19.3.2026 15:43"
   },
   {
-    "id": 248,
+    "id": 247,
     "name": "Sabrina Kilpo",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -7442,7 +7412,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 249,
+    "id": 248,
     "name": "Joanna Mannarino",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -7472,7 +7442,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 250,
+    "id": 249,
     "name": "Thao Nguyen",
     "leadStatus": "Gewonnen",
     "verlustgrund": "",
@@ -7502,7 +7472,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 251,
+    "id": 250,
     "name": "Beate Pilz",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -7532,7 +7502,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 252,
+    "id": 251,
     "name": "Sally Ebner",
     "leadStatus": "Verloren",
     "verlustgrund": "Kein Interesse an HR/Payroll",
@@ -7562,7 +7532,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 253,
+    "id": 252,
     "name": "Shabbir Sheikh",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -7592,7 +7562,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 254,
+    "id": 253,
     "name": "Erik Kokenov",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -7622,7 +7592,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 255,
+    "id": 254,
     "name": "Annette Enners",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -7652,7 +7622,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 256,
+    "id": 255,
     "name": "Vanessa Müller",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "Angestellt",
@@ -7682,7 +7652,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 257,
+    "id": 256,
     "name": "Sandra Grauel",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -7712,7 +7682,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 258,
+    "id": 257,
     "name": "Sonja Arnst",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -7742,7 +7712,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 259,
+    "id": 258,
     "name": "Alexandra Schneemayer",
     "leadStatus": "Verloren",
     "verlustgrund": "Kein Interesse an HR/Payroll",
@@ -7772,7 +7742,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 260,
+    "id": 259,
     "name": "Sayed Menayar",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -7802,7 +7772,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 261,
+    "id": 260,
     "name": "Christine Kulozik",
     "leadStatus": "Verloren",
     "verlustgrund": "",
@@ -7832,7 +7802,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 262,
+    "id": 261,
     "name": "Nicole Hudek",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -7862,7 +7832,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 263,
+    "id": 262,
     "name": "Ieva Elksne-Diessner",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -7892,7 +7862,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 264,
+    "id": 263,
     "name": "Farida Bouda",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -7922,7 +7892,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 265,
+    "id": 264,
     "name": "Yuliya Haysan",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -7952,7 +7922,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 266,
+    "id": 265,
     "name": "Mika Wrede",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -7982,7 +7952,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 267,
+    "id": 266,
     "name": "Dana Schmidt",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -8012,7 +7982,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 268,
+    "id": 267,
     "name": "Anaïs Fortas",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -8042,7 +8012,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 269,
+    "id": 268,
     "name": "Susanne Amann",
     "leadStatus": "Beratungsgespräch gebucht",
     "verlustgrund": "",
@@ -8072,7 +8042,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 270,
+    "id": 269,
     "name": "Daniel Olligschläger",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -8102,7 +8072,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 271,
+    "id": 270,
     "name": "Katrin Herrmann",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -8132,7 +8102,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 272,
+    "id": 271,
     "name": "Isabell Prediger",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -8162,7 +8132,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 273,
+    "id": 272,
     "name": "Daniela Lukic",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -8192,7 +8162,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 274,
+    "id": 273,
     "name": "Gio Bagnis",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -8222,7 +8192,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 275,
+    "id": 274,
     "name": "Sabine Altmann",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -8252,7 +8222,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 276,
+    "id": 275,
     "name": "Michaela Petri",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -8282,7 +8252,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 277,
+    "id": 276,
     "name": "Manda Grün",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -8312,7 +8282,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 278,
+    "id": 277,
     "name": "Jeannette Schmolke",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -8342,7 +8312,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 279,
+    "id": 278,
     "name": "Constanze Mackedanz",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -8372,7 +8342,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 280,
+    "id": 279,
     "name": "Valerie Kravchenko",
     "leadStatus": "Reterminierung",
     "verlustgrund": "",
@@ -8402,7 +8372,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 281,
+    "id": 280,
     "name": "Sonja Scharl",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -8432,7 +8402,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 282,
+    "id": 281,
     "name": "Carolin Kunz",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -8462,7 +8432,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 283,
+    "id": 282,
     "name": "Annett Schwarzer",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -8492,7 +8462,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 284,
+    "id": 283,
     "name": "Soukaina Alaoui Mdaghri",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -8522,7 +8492,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 285,
+    "id": 284,
     "name": "Donyas Tej",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -8552,7 +8522,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 286,
+    "id": 285,
     "name": "Valmira Beqiri",
     "leadStatus": "Verloren",
     "verlustgrund": "Angestellt",
@@ -8582,7 +8552,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 287,
+    "id": 286,
     "name": "Nicole Würtele",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -8612,7 +8582,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 288,
+    "id": 287,
     "name": "O S",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -8642,7 +8612,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 289,
+    "id": 288,
     "name": "Nadine Nowak",
     "leadStatus": "Verloren",
     "verlustgrund": "",
@@ -8672,7 +8642,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 290,
+    "id": 289,
     "name": "Isabell Sauter",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -8702,7 +8672,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 291,
+    "id": 290,
     "name": "Charlotte Beck",
     "leadStatus": "Verloren",
     "verlustgrund": "Angestellt",
@@ -8732,7 +8702,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 292,
+    "id": 291,
     "name": "Theresa Wolf",
     "leadStatus": "Gewonnen",
     "verlustgrund": "",
@@ -8762,7 +8732,7 @@ export const leads: Lead[] = [
     "gewonnenAm": "16.3.2026 17:49"
   },
   {
-    "id": 293,
+    "id": 292,
     "name": "Melinda Csicsek",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -8792,7 +8762,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 294,
+    "id": 293,
     "name": "Rim Soumer",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -8822,7 +8792,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 295,
+    "id": 294,
     "name": "Despina Prokopidu",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -8852,7 +8822,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 296,
+    "id": 295,
     "name": "Melanie Tanja Grotz",
     "leadStatus": "Gewonnen",
     "verlustgrund": "",
@@ -8882,7 +8852,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 297,
+    "id": 296,
     "name": "Andre Weberpals",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -8912,7 +8882,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 298,
+    "id": 297,
     "name": "Patrick Schmal",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -8942,7 +8912,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 299,
+    "id": 298,
     "name": "Marlena Twardowska",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -8972,7 +8942,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 300,
+    "id": 299,
     "name": "Ursula Wolf",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -9002,7 +8972,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 301,
+    "id": 300,
     "name": "Heike Wötzel",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -9032,7 +9002,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 302,
+    "id": 301,
     "name": "Christoph Krupp",
     "leadStatus": "Verloren",
     "verlustgrund": "Kein Interesse an HR/Payroll",
@@ -9062,7 +9032,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 303,
+    "id": 302,
     "name": "Sabine Kühnlenz",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -9083,16 +9053,16 @@ export const leads: Lead[] = [
     "prozessStarten": "Angebot wurde erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
+    "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "High Touch",
-    "lastModified": "20.3.2026 12:52",
+    "lastModified": "21.3.2026 11:19",
     "angebotsprozessDatum": "10.3.2026 09:57",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": ""
   },
   {
-    "id": 304,
+    "id": 303,
     "name": "Oliver Haug",
     "leadStatus": "Gewonnen",
     "verlustgrund": "",
@@ -9122,7 +9092,7 @@ export const leads: Lead[] = [
     "gewonnenAm": "14.3.2026 15:21"
   },
   {
-    "id": 305,
+    "id": 304,
     "name": "Claudia Wagner",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -9152,7 +9122,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 306,
+    "id": 305,
     "name": "Andrea Staniszewski",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -9182,7 +9152,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 307,
+    "id": 306,
     "name": "Sabrina Gonzales",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -9212,7 +9182,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 308,
+    "id": 307,
     "name": "Christian Matthäus",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -9242,7 +9212,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 309,
+    "id": 308,
     "name": "Stella Raida",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -9272,7 +9242,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 310,
+    "id": 309,
     "name": "Michael Dietrich",
     "leadStatus": "Verloren",
     "verlustgrund": "Kein Interesse an HR/Payroll",
@@ -9302,7 +9272,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 311,
+    "id": 310,
     "name": "Janina Eilhardt",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -9332,7 +9302,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 312,
+    "id": 311,
     "name": "Angela Müller",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -9362,7 +9332,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 313,
+    "id": 312,
     "name": "Ula Wolf",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -9392,7 +9362,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 314,
+    "id": 313,
     "name": "~ela~ Gar",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -9422,7 +9392,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 315,
+    "id": 314,
     "name": "Julia Lamertz",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -9452,7 +9422,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 316,
+    "id": 315,
     "name": "Elena Eberle",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -9482,7 +9452,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 317,
+    "id": 316,
     "name": "Katarzyna Meister",
     "leadStatus": "Rückruf",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -9512,7 +9482,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 318,
+    "id": 317,
     "name": "R B",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -9542,7 +9512,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 319,
+    "id": 318,
     "name": "Mariam Deme",
     "leadStatus": "Reterminierung",
     "verlustgrund": "",
@@ -9572,7 +9542,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 320,
+    "id": 319,
     "name": "Jana Rütz",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -9602,7 +9572,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 321,
+    "id": 320,
     "name": "Stefan Schaefer",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -9632,7 +9602,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 322,
+    "id": 321,
     "name": "Nancy Penther",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -9662,7 +9632,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 323,
+    "id": 322,
     "name": "Anh Hoang Nguyen",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -9692,7 +9662,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 324,
+    "id": 323,
     "name": "Mandy Knoch",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -9722,7 +9692,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 325,
+    "id": 324,
     "name": "Victoria Bergmann",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -9752,7 +9722,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 326,
+    "id": 325,
     "name": "Birgit Kulisch",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -9782,7 +9752,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 327,
+    "id": 326,
     "name": "Daniela Betz",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -9812,7 +9782,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 328,
+    "id": 327,
     "name": "Anna Kraus",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -9842,7 +9812,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 329,
+    "id": 328,
     "name": "Hamza Kassimi",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -9872,7 +9842,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 330,
+    "id": 329,
     "name": "Meriam Menadi",
     "leadStatus": "Verloren",
     "verlustgrund": "Kein Interesse an HR/Payroll",
@@ -9902,7 +9872,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 331,
+    "id": 330,
     "name": "Marina Reichert",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -9932,7 +9902,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 332,
+    "id": 331,
     "name": "Yusra Merabeti",
     "leadStatus": "Verloren",
     "verlustgrund": "neuen Job erhalten",
@@ -9962,7 +9932,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 333,
+    "id": 332,
     "name": "Feyzi Turgay",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -9992,7 +9962,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 334,
+    "id": 333,
     "name": "Jan Landje",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -10022,7 +9992,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 335,
+    "id": 334,
     "name": "Zuhal Sue Kimmel",
     "leadStatus": "Beratungsgespräch gebucht",
     "verlustgrund": "",
@@ -10052,7 +10022,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 336,
+    "id": 335,
     "name": "Brume Nyarko",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -10082,7 +10052,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 337,
+    "id": 336,
     "name": "Ben Vogelmann",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -10112,7 +10082,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 338,
+    "id": 337,
     "name": "Juliana Georgine Hoffmann",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -10142,7 +10112,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 339,
+    "id": 338,
     "name": "Stella Ciftci",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -10172,7 +10142,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 340,
+    "id": 339,
     "name": "Zeyno Simsek",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -10202,7 +10172,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 341,
+    "id": 340,
     "name": "Souhail Boujatoui",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -10232,7 +10202,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 342,
+    "id": 341,
     "name": "Svenja Andresen",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -10262,7 +10232,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 343,
+    "id": 342,
     "name": "Nicole Krohn",
     "leadStatus": "Gewonnen",
     "verlustgrund": "",
@@ -10292,7 +10262,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 344,
+    "id": 343,
     "name": "Kevser Iman",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -10322,7 +10292,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 345,
+    "id": 344,
     "name": "Tim Lojack",
     "leadStatus": "Verloren",
     "verlustgrund": "Kein Interesse an HR/Payroll",
@@ -10352,7 +10322,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 346,
+    "id": 345,
     "name": "Melanie Bogol",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -10382,7 +10352,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 347,
+    "id": 346,
     "name": "Katarzyna Paszkiet",
     "leadStatus": "Gewonnen",
     "verlustgrund": "",
@@ -10412,7 +10382,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 348,
+    "id": 347,
     "name": "Laura Vockerodt",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -10442,7 +10412,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 349,
+    "id": 348,
     "name": "Melissa Lietzau",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -10472,7 +10442,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 350,
+    "id": 349,
     "name": "Ayushi Vekariya",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -10502,7 +10472,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 351,
+    "id": 350,
     "name": "Pia Goffelmeyer",
     "leadStatus": "Beratungsgespräch gebucht",
     "verlustgrund": "",
@@ -10532,7 +10502,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 352,
+    "id": 351,
     "name": "Lars Tiemann",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -10562,7 +10532,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 353,
+    "id": 352,
     "name": "Christine Pfisterer",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -10592,7 +10562,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 354,
+    "id": 353,
     "name": "Duc Thanh Vu",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -10622,7 +10592,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 355,
+    "id": 354,
     "name": "Elias Tahar Gazem",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -10652,7 +10622,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 356,
+    "id": 355,
     "name": "Norman Zagermann",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -10682,7 +10652,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 357,
+    "id": 356,
     "name": "Andrea Fringel",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -10712,7 +10682,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 358,
+    "id": 357,
     "name": "Kyra Bekou",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -10742,7 +10712,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 359,
+    "id": 358,
     "name": "Jenny Grunewaldt",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -10772,7 +10742,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 360,
+    "id": 359,
     "name": "Sandra Weitzel",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -10802,7 +10772,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 361,
+    "id": 360,
     "name": "Silvia Schindler",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -10832,7 +10802,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 362,
+    "id": 361,
     "name": "Burcu Günay",
     "leadStatus": "Verloren",
     "verlustgrund": "Sprachkenntnisse",
@@ -10862,7 +10832,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 363,
+    "id": 362,
     "name": "Ronald Exner",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -10892,7 +10862,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 364,
+    "id": 363,
     "name": "Jess- Roe",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -10922,7 +10892,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 365,
+    "id": 364,
     "name": "Kristin Seifert",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -10952,7 +10922,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 366,
+    "id": 365,
     "name": "Christine Rinnert",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -10982,7 +10952,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 367,
+    "id": 366,
     "name": "Jennifer Conrad",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -11012,7 +10982,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 368,
+    "id": 367,
     "name": "Luljeta Demiri",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -11042,7 +11012,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 369,
+    "id": 368,
     "name": "Mousa Mousa",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -11072,7 +11042,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 370,
+    "id": 369,
     "name": "Nicole Schöttner",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -11102,7 +11072,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 371,
+    "id": 370,
     "name": "Hüly Kilic",
     "leadStatus": "Verloren",
     "verlustgrund": "Angestellt",
@@ -11132,7 +11102,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 372,
+    "id": 371,
     "name": "Heinke Gunne",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -11162,7 +11132,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 373,
+    "id": 372,
     "name": "Ebru Oksuzoglu",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -11192,7 +11162,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 374,
+    "id": 373,
     "name": "Nadja Colditz",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -11222,7 +11192,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 375,
+    "id": 374,
     "name": "Lisa-Aileen Lämmel",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -11252,7 +11222,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 376,
+    "id": 375,
     "name": "Aylin Abalioglu",
     "leadStatus": "Verloren",
     "verlustgrund": "neuen Job erhalten",
@@ -11282,7 +11252,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 377,
+    "id": 376,
     "name": "Maren Menge",
     "leadStatus": "Verloren",
     "verlustgrund": "neuen Job erhalten",
@@ -11312,7 +11282,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 378,
+    "id": 377,
     "name": "Ingi Lenz",
     "leadStatus": "Verloren",
     "verlustgrund": "bereits anderer Kurs",
@@ -11342,7 +11312,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 379,
+    "id": 378,
     "name": "Holger Bluhm",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -11372,7 +11342,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 380,
+    "id": 379,
     "name": "Jennifer Simmat",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -11402,7 +11372,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 381,
+    "id": 380,
     "name": "Nicole Weinberg",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -11432,7 +11402,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 382,
+    "id": 381,
     "name": "Nicole Mack",
     "leadStatus": "Verloren",
     "verlustgrund": "Kein Interesse an HR/Payroll",
@@ -11462,7 +11432,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 383,
+    "id": 382,
     "name": "Rhonda Kulpa",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -11492,7 +11462,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 384,
+    "id": 383,
     "name": "Stefan Booke",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -11522,7 +11492,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 385,
+    "id": 384,
     "name": "Pia Schulz",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -11552,7 +11522,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 386,
+    "id": 385,
     "name": "Isabelle Brückner",
     "leadStatus": "Verloren",
     "verlustgrund": "neuen Job erhalten",
@@ -11582,7 +11552,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 387,
+    "id": 386,
     "name": "Tina Jose",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -11612,7 +11582,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 388,
+    "id": 387,
     "name": "Marina Gerbanovsky",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -11642,7 +11612,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 389,
+    "id": 388,
     "name": "Patricia We",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -11672,7 +11642,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 390,
+    "id": 389,
     "name": "Sibel Asani",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -11702,7 +11672,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 391,
+    "id": 390,
     "name": "Jürgen Braun",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -11732,7 +11702,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 392,
+    "id": 391,
     "name": "Kerstin Jeske",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -11762,7 +11732,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 393,
+    "id": 392,
     "name": "Luis Hannemann",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -11792,7 +11762,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 394,
+    "id": 393,
     "name": "Malika Gawri",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -11822,7 +11792,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 395,
+    "id": 394,
     "name": "Razan Gerblinger",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -11852,7 +11822,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 396,
+    "id": 395,
     "name": "Judith Vicari",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -11882,7 +11852,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 397,
+    "id": 396,
     "name": "Stephanie Mineau",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -11912,7 +11882,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 398,
+    "id": 397,
     "name": "Lesley Boateng",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -11942,7 +11912,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 399,
+    "id": 398,
     "name": "Feyyaz Erdem",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -11972,7 +11942,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 400,
+    "id": 399,
     "name": "Doreen Marohn",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -12002,7 +11972,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 401,
+    "id": 400,
     "name": "Inga Runkel-Hobert",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -12032,7 +12002,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 402,
+    "id": 401,
     "name": "David Niederhofer",
     "leadStatus": "Verloren",
     "verlustgrund": "will kein DATEV",
@@ -12062,7 +12032,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 403,
+    "id": 402,
     "name": "Kerstin Bliedung",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -12092,7 +12062,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 404,
+    "id": 403,
     "name": "Marina Krüger",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -12122,7 +12092,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 405,
+    "id": 404,
     "name": "Nicoline Ingenlath",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -12152,7 +12122,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 406,
+    "id": 405,
     "name": "D Simros",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -12182,7 +12152,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 407,
+    "id": 406,
     "name": "Hans Grabow",
     "leadStatus": "Verloren",
     "verlustgrund": "neuen Job erhalten",
@@ -12212,7 +12182,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 408,
+    "id": 407,
     "name": "Gabriele Dudenhöffer",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -12242,7 +12212,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 409,
+    "id": 408,
     "name": "Eva Hogger",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -12272,7 +12242,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 410,
+    "id": 409,
     "name": "Karolina Urbanczyk",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -12302,7 +12272,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 411,
+    "id": 410,
     "name": "Seher Findik",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -12332,7 +12302,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 412,
+    "id": 411,
     "name": "Christina Raeder",
     "leadStatus": "Verloren",
     "verlustgrund": "Teilzeit",
@@ -12362,7 +12332,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 413,
+    "id": 412,
     "name": "Robert Krawczak",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -12392,7 +12362,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 414,
+    "id": 413,
     "name": "Anna Krzykowski",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -12422,7 +12392,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 415,
+    "id": 414,
     "name": "Essa Jal",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -12452,7 +12422,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 416,
+    "id": 415,
     "name": "Tanja Kunkel",
     "leadStatus": "Verloren",
     "verlustgrund": "Angestellt",
@@ -12482,7 +12452,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 417,
+    "id": 416,
     "name": "Andreea Hurgoiu",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -12512,7 +12482,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 418,
+    "id": 417,
     "name": "Sanja Maaßen-Neumann",
     "leadStatus": "Verloren",
     "verlustgrund": "neuen Job erhalten",
@@ -12542,7 +12512,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 419,
+    "id": 418,
     "name": "Ann-Kristin Decker",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -12572,7 +12542,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 420,
+    "id": 419,
     "name": "Anna Kulesch",
     "leadStatus": "Beratungsgespräch gebucht",
     "verlustgrund": "",
@@ -12602,7 +12572,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 421,
+    "id": 420,
     "name": "Angelina Engel",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -12632,7 +12602,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 422,
+    "id": 421,
     "name": "Stephanie Zöller",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -12662,7 +12632,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 423,
+    "id": 422,
     "name": "Elena Ivanyuk",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -12692,7 +12662,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 424,
+    "id": 423,
     "name": "Pia Michalik",
     "leadStatus": "Verloren",
     "verlustgrund": "neuen Job erhalten",
@@ -12722,7 +12692,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 425,
+    "id": 424,
     "name": "Mike Muwazi",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -12752,7 +12722,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 426,
+    "id": 425,
     "name": "Panagiota Markopoulou",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -12782,7 +12752,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 427,
+    "id": 426,
     "name": "Laura Dürkoop",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -12812,7 +12782,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 428,
+    "id": 427,
     "name": "Dennis Diaz Crespo",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -12842,7 +12812,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 429,
+    "id": 428,
     "name": "Arina Simus",
     "leadStatus": "Verloren",
     "verlustgrund": "Teilzeit",
@@ -12872,7 +12842,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 430,
+    "id": 429,
     "name": "Lucas Herbig",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -12902,7 +12872,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 431,
+    "id": 430,
     "name": "Steven Heise",
     "leadStatus": "Verloren",
     "verlustgrund": "neuen Job erhalten",
@@ -12932,7 +12902,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 432,
+    "id": 431,
     "name": "Andrea Höhler",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -12962,7 +12932,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 433,
+    "id": 432,
     "name": "Gabi Jonas",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -12992,7 +12962,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 434,
+    "id": 433,
     "name": "Jutta Brand",
     "leadStatus": "Verloren",
     "verlustgrund": "Kein Interesse an HR/Payroll",
@@ -13022,7 +12992,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 435,
+    "id": 434,
     "name": "Stefanie Kentschke",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -13052,7 +13022,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 436,
+    "id": 435,
     "name": "𝐃𝐞𝐣𝐚 𝐋𝐞𝐰𝐢𝐬",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -13082,7 +13052,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 437,
+    "id": 436,
     "name": "Tiffany La",
     "leadStatus": "Verloren",
     "verlustgrund": "Kein Interesse an HR/Payroll",
@@ -13112,7 +13082,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 438,
+    "id": 437,
     "name": "Songül Temirci",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -13142,7 +13112,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 439,
+    "id": 438,
     "name": "Paulina Stickel",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -13172,7 +13142,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 440,
+    "id": 439,
     "name": "Javed Jave",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -13202,7 +13172,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 441,
+    "id": 440,
     "name": "Florian Baumgärtner",
     "leadStatus": "Gewonnen",
     "verlustgrund": "",
@@ -13232,7 +13202,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 442,
+    "id": 441,
     "name": "Nara Carballal",
     "leadStatus": "Beratungsgespräch gebucht",
     "verlustgrund": "",
@@ -13262,7 +13232,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 443,
+    "id": 442,
     "name": "Muna Simoh",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -13292,7 +13262,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 444,
+    "id": 443,
     "name": "Nina Drost",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -13322,7 +13292,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 445,
+    "id": 444,
     "name": "Viktoria Grenz",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -13352,7 +13322,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 446,
+    "id": 445,
     "name": "Lesli Fonseca",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -13382,7 +13352,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 447,
+    "id": 446,
     "name": "Sabine Kemper",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -13412,7 +13382,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 448,
+    "id": 447,
     "name": "Deepika Tummala",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -13442,7 +13412,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 449,
+    "id": 448,
     "name": "Meliha Asilsoy",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -13472,7 +13442,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 450,
+    "id": 449,
     "name": "Sila Sakar",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -13502,7 +13472,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 451,
+    "id": 450,
     "name": "Harun Ay",
     "leadStatus": "Verloren",
     "verlustgrund": "Kein Interesse an HR/Payroll",
@@ -13532,7 +13502,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 452,
+    "id": 451,
     "name": "Rick Schneider",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -13562,7 +13532,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 453,
+    "id": 452,
     "name": "Elia Corn",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -13592,7 +13562,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 454,
+    "id": 453,
     "name": "Maria Krawczyk",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -13622,7 +13592,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 455,
+    "id": 454,
     "name": "Hussein Al-Abayechi",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -13652,7 +13622,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 456,
+    "id": 455,
     "name": "Senad F",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -13682,7 +13652,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 457,
+    "id": 456,
     "name": "Jürgen Steeb",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -13712,7 +13682,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 458,
+    "id": 457,
     "name": "Özlem Ciftci",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -13742,7 +13712,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 459,
+    "id": 458,
     "name": "Birgit Cerny",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -13772,7 +13742,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 460,
+    "id": 459,
     "name": "Sabine Wüstenberg",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -13802,7 +13772,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 461,
+    "id": 460,
     "name": "Nadine Schadebrodt",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -13832,7 +13802,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 462,
+    "id": 461,
     "name": "Polina Poluyko",
     "leadStatus": "Verloren",
     "verlustgrund": "Amt hat eine anderen Träger freigegben",
@@ -13862,7 +13832,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 463,
+    "id": 462,
     "name": "Alexandra Stika",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -13892,7 +13862,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 464,
+    "id": 463,
     "name": "Bernd Körbl",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -13922,7 +13892,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 465,
+    "id": 464,
     "name": "Claudia Steinmüller",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -13952,7 +13922,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 466,
+    "id": 465,
     "name": "Heike Kinateder",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -13982,7 +13952,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 467,
+    "id": 466,
     "name": "Beata Sosna-Nowak",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -14003,16 +13973,16 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "5x nicht erreicht",
+    "anrufversuch": "6x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "20.3.2026 12:04",
+    "lastModified": "21.3.2026 11:41",
     "angebotsprozessDatum": "14.3.2026 04:48",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": ""
   },
   {
-    "id": 468,
+    "id": 467,
     "name": "Andreas Manniegel",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -14042,7 +14012,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 469,
+    "id": 468,
     "name": "Georg Porzel",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -14072,7 +14042,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 470,
+    "id": 469,
     "name": "Eina Fets",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -14102,7 +14072,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 471,
+    "id": 470,
     "name": "Markus Nadler",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -14132,7 +14102,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 472,
+    "id": 471,
     "name": "Nele Zierrath",
     "leadStatus": "Verloren",
     "verlustgrund": "Anderer Bildungsträger",
@@ -14162,7 +14132,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 473,
+    "id": 472,
     "name": "Steffi Eigenbrodt",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -14192,7 +14162,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 474,
+    "id": 473,
     "name": "Andreas Keutzer-Glogger",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -14222,7 +14192,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 475,
+    "id": 474,
     "name": "Bärbel Wolff",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -14252,7 +14222,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 476,
+    "id": 475,
     "name": "Pedrocito Escobar",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -14282,7 +14252,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 477,
+    "id": 476,
     "name": "Andrea Za",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -14312,7 +14282,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 478,
+    "id": 477,
     "name": "Júlia Coronha Hübscher",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -14342,7 +14312,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 479,
+    "id": 478,
     "name": "Sevgi Uzun",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -14372,7 +14342,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 480,
+    "id": 479,
     "name": "Hansjürgen Schramm",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -14402,7 +14372,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 481,
+    "id": 480,
     "name": "Monika Maria Dubiel",
     "leadStatus": "Reterminierung",
     "verlustgrund": "",
@@ -14432,7 +14402,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 482,
+    "id": 481,
     "name": "Cordula Bollbuck",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -14462,7 +14432,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 483,
+    "id": 482,
     "name": "Adnane Amrani",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -14492,7 +14462,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 484,
+    "id": 483,
     "name": "Kornelia Skrljac Dumancic",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -14522,7 +14492,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 485,
+    "id": 484,
     "name": "Vivian Kruse",
     "leadStatus": "Verloren",
     "verlustgrund": "Kein Interesse an HR/Payroll",
@@ -14552,7 +14522,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 486,
+    "id": 485,
     "name": "Mattes Schröder",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -14582,7 +14552,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 487,
+    "id": 486,
     "name": "Klara Irmlind",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -14612,7 +14582,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 488,
+    "id": 487,
     "name": "Sabrina Offermanns",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -14642,7 +14612,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 489,
+    "id": 488,
     "name": "Evgenia Tschernajewa",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -14672,7 +14642,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 490,
+    "id": 489,
     "name": "Markus Hermelink",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -14702,7 +14672,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 491,
+    "id": 490,
     "name": "Pia Hübner",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -14732,7 +14702,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 492,
+    "id": 491,
     "name": "Kerstin Friedel",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -14762,7 +14732,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 493,
+    "id": 492,
     "name": "Anne-Marie Arends",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -14792,7 +14762,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 494,
+    "id": 493,
     "name": "Caroline Emma Casey",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -14822,7 +14792,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 495,
+    "id": 494,
     "name": "Enit Sokija",
     "leadStatus": "Verloren",
     "verlustgrund": "Sprachkenntnisse",
@@ -14852,7 +14822,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 496,
+    "id": 495,
     "name": "Shabnam Behnazhad",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -14882,7 +14852,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 497,
+    "id": 496,
     "name": "Lesfar Chaimaa",
     "leadStatus": "Verloren",
     "verlustgrund": "noch nicht gemeldet",
@@ -14912,7 +14882,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 498,
+    "id": 497,
     "name": "Jana Niggemann",
     "leadStatus": "Verloren",
     "verlustgrund": "Kein Interesse an HR/Payroll",
@@ -14942,7 +14912,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 499,
+    "id": 498,
     "name": "Sabrina De Turckheim",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -14972,7 +14942,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 500,
+    "id": 499,
     "name": "Hüsne Kalman",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -15002,7 +14972,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 501,
+    "id": 500,
     "name": "Tea Mikić",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -15032,7 +15002,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 502,
+    "id": 501,
     "name": "Andrea Mo",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -15062,7 +15032,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 503,
+    "id": 502,
     "name": "Achim Tröster",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -15092,7 +15062,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 504,
+    "id": 503,
     "name": "Urszula Zühlke",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -15122,7 +15092,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 505,
+    "id": 504,
     "name": "Yildiray Akgül",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -15152,7 +15122,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 506,
+    "id": 505,
     "name": "Robin Celik",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -15182,7 +15152,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 507,
+    "id": 506,
     "name": "Karina May Else",
     "leadStatus": "Verloren",
     "verlustgrund": "Angestellt",
@@ -15212,7 +15182,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 508,
+    "id": 507,
     "name": "Anica Jäger",
     "leadStatus": "Beratungsgespräch gebucht",
     "verlustgrund": "",
@@ -15236,13 +15206,13 @@ export const leads: Lead[] = [
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": "High Touch",
-    "lastModified": "20.3.2026 13:43",
+    "lastModified": "21.3.2026 11:49",
     "angebotsprozessDatum": "17.3.2026 11:11",
     "vertriebsqualifiziertAm": "17.3.2026 11:11",
     "gewonnenAm": ""
   },
   {
-    "id": 509,
+    "id": 508,
     "name": "Sarah Graf",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -15272,7 +15242,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 510,
+    "id": 509,
     "name": "Patrick E",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -15302,7 +15272,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 511,
+    "id": 510,
     "name": "Evelina Paulus",
     "leadStatus": "Verloren",
     "verlustgrund": "bereits anderer Kurs",
@@ -15332,7 +15302,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 512,
+    "id": 511,
     "name": "Silke Specht",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -15362,7 +15332,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 513,
+    "id": 512,
     "name": "Karin Maison",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -15392,7 +15362,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 514,
+    "id": 513,
     "name": "Ewelina Juszynska",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -15422,7 +15392,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 515,
+    "id": 514,
     "name": "Laura Schlott",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -15452,7 +15422,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 516,
+    "id": 515,
     "name": "Vanessa Barth",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -15482,7 +15452,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 517,
+    "id": 516,
     "name": "Petar Kojundzija",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -15512,7 +15482,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 518,
+    "id": 517,
     "name": "Maria Liebmann",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -15542,7 +15512,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 519,
+    "id": 518,
     "name": "Friederike Lotta",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -15572,7 +15542,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 520,
+    "id": 519,
     "name": "𝙏𝙖𝙯𝙞𝙤𝙤 L",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -15602,7 +15572,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 521,
+    "id": 520,
     "name": "Tatjana Tsay",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -15632,7 +15602,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 522,
+    "id": 521,
     "name": "Yusuf Bayansar",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -15662,7 +15632,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 523,
+    "id": 522,
     "name": "Jeanette Brandstetter",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -15692,7 +15662,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 524,
+    "id": 523,
     "name": "Yasemin Huber",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -15722,7 +15692,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 525,
+    "id": 524,
     "name": "Robin Segatz",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -15752,7 +15722,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 526,
+    "id": 525,
     "name": "Robert Klingen",
     "leadStatus": "Kennenlerngespräch gebucht",
     "verlustgrund": "",
@@ -15782,7 +15752,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 527,
+    "id": 526,
     "name": "Alina Chladek",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -15812,7 +15782,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 528,
+    "id": 527,
     "name": "Marion Brosig",
     "leadStatus": "Verloren",
     "verlustgrund": "neuen Job erhalten",
@@ -15842,7 +15812,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 529,
+    "id": 528,
     "name": "Alma Musinovic",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -15872,7 +15842,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 530,
+    "id": 529,
     "name": "Joe Mondot",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -15902,7 +15872,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 531,
+    "id": 530,
     "name": "Manuel Gust",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -15932,7 +15902,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 532,
+    "id": 531,
     "name": "Jürgen Wolfanger",
     "leadStatus": "Verloren",
     "verlustgrund": "Teilzeit",
@@ -15962,7 +15932,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 533,
+    "id": 532,
     "name": "Emilio Fornieles",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -15992,7 +15962,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 534,
+    "id": 533,
     "name": "Tolga Gökdemir",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -16022,7 +15992,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 535,
+    "id": 534,
     "name": "Annika Bartsch",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -16052,7 +16022,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 536,
+    "id": 535,
     "name": "Simone Bader",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -16082,7 +16052,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 537,
+    "id": 536,
     "name": "Asis Tellert",
     "leadStatus": "Verloren",
     "verlustgrund": "Angestellt",
@@ -16112,7 +16082,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 538,
+    "id": 537,
     "name": "Joachin Kienle",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -16142,7 +16112,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 539,
+    "id": 538,
     "name": "Rolf Alexander Biemelt",
     "leadStatus": "Verloren",
     "verlustgrund": "Kein Interesse an HR/Payroll",
@@ -16172,7 +16142,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 540,
+    "id": 539,
     "name": "Arlinda Imeri",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -16202,7 +16172,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 541,
+    "id": 540,
     "name": "Dagmara Pawletta",
     "leadStatus": "Verloren",
     "verlustgrund": "neuen Job erhalten",
@@ -16232,7 +16202,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 542,
+    "id": 541,
     "name": "Jens Biedermann",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -16262,7 +16232,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 543,
+    "id": 542,
     "name": "Peter Schwarz",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -16292,7 +16262,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 544,
+    "id": 543,
     "name": "Jennifer Heidemann",
     "leadStatus": "Verloren",
     "verlustgrund": "",
@@ -16322,7 +16292,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 545,
+    "id": 544,
     "name": "Tobias Mucha",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -16352,7 +16322,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 546,
+    "id": 545,
     "name": "Stefanie Pröhl",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -16382,7 +16352,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 547,
+    "id": 546,
     "name": "Florian Fauß",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -16412,7 +16382,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 548,
+    "id": 547,
     "name": "Oliver Wosch",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -16442,7 +16412,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 549,
+    "id": 548,
     "name": "Benjamin Rodemann",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -16472,7 +16442,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 550,
+    "id": 549,
     "name": "Pascal Schomacker",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -16502,7 +16472,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 551,
+    "id": 550,
     "name": "Anke-Tina Klamm",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -16532,7 +16502,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 552,
+    "id": 551,
     "name": "Fabian Klocke",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -16562,7 +16532,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 553,
+    "id": 552,
     "name": "Jan-Martin Reichhardt",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -16592,7 +16562,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 554,
+    "id": 553,
     "name": "Mäys Kadri",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -16622,7 +16592,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 555,
+    "id": 554,
     "name": "Arlett Arletka",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -16652,7 +16622,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 556,
+    "id": 555,
     "name": "Lisa Schweren",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -16682,7 +16652,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 557,
+    "id": 556,
     "name": "Caterina Selis",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -16712,7 +16682,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 558,
+    "id": 557,
     "name": "Rosanne Heinze",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -16742,7 +16712,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 559,
+    "id": 558,
     "name": "Klaus K.",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -16772,7 +16742,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 560,
+    "id": 559,
     "name": "Inna Kolb",
     "leadStatus": "Verloren",
     "verlustgrund": "bereits anderer Kurs",
@@ -16802,7 +16772,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 561,
+    "id": 560,
     "name": "Fatime Kovács- Gajdos",
     "leadStatus": "Verloren",
     "verlustgrund": "Teilzeit",
@@ -16832,7 +16802,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 562,
+    "id": 561,
     "name": "Sören Schuhknecht",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -16862,7 +16832,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 563,
+    "id": 562,
     "name": "Sascha Falkenreck",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -16892,7 +16862,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 564,
+    "id": 563,
     "name": "Stephanie Fernandez",
     "leadStatus": "Verloren",
     "verlustgrund": "Kein Interesse an HR/Payroll",
@@ -16922,7 +16892,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 565,
+    "id": 564,
     "name": "Lars Sonntag",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -16952,7 +16922,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 566,
+    "id": 565,
     "name": "Werner Schwabe",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -16982,7 +16952,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 567,
+    "id": 566,
     "name": "Egidijus Juschka",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -17012,7 +16982,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 568,
+    "id": 567,
     "name": "Mike Schulz",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -17042,7 +17012,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 569,
+    "id": 568,
     "name": "Anne Hill",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -17072,7 +17042,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 570,
+    "id": 569,
     "name": "Ozan Görgülü",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -17102,7 +17072,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 571,
+    "id": 570,
     "name": "Birthe Röhrbein",
     "leadStatus": "Verloren",
     "verlustgrund": "Kein Interesse an HR/Payroll",
@@ -17132,7 +17102,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 572,
+    "id": 571,
     "name": "Erika Schlegel",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -17162,7 +17132,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 573,
+    "id": 572,
     "name": "Anna Mucha",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -17192,7 +17162,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 574,
+    "id": 573,
     "name": "Paulina Kowalkowska",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -17222,7 +17192,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 575,
+    "id": 574,
     "name": "Helen Stenda",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -17252,7 +17222,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 576,
+    "id": 575,
     "name": "Tobias Tolle",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -17282,7 +17252,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 577,
+    "id": 576,
     "name": "Ousama Aissati",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -17312,7 +17282,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 578,
+    "id": 577,
     "name": "Alice Mona",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -17342,7 +17312,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 579,
+    "id": 578,
     "name": "Leman Özerli",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -17372,7 +17342,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 580,
+    "id": 579,
     "name": "Kostas Messas",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -17402,7 +17372,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 581,
+    "id": 580,
     "name": "Melanie Kunert",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -17432,7 +17402,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 582,
+    "id": 581,
     "name": "Missa Böhm",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -17462,7 +17432,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 583,
+    "id": 582,
     "name": "Alexandra Paraskeva",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -17492,7 +17462,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 584,
+    "id": 583,
     "name": "Elena Meltser",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -17522,7 +17492,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 585,
+    "id": 584,
     "name": "Iulia Mathe",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -17552,7 +17522,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 586,
+    "id": 585,
     "name": "Natalie Hieble",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -17582,7 +17552,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 587,
+    "id": 586,
     "name": "Nicole Brys",
     "leadStatus": "Verloren",
     "verlustgrund": "Kein Interesse an HR/Payroll",
@@ -17612,7 +17582,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 588,
+    "id": 587,
     "name": "Kai Henniges",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -17642,7 +17612,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 589,
+    "id": 588,
     "name": "Yvonne Horn",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -17672,7 +17642,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 590,
+    "id": 589,
     "name": "Natalie Dunn",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -17702,7 +17672,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 591,
+    "id": 590,
     "name": "Lumturije Terzija",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -17732,7 +17702,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 592,
+    "id": 591,
     "name": "Melanie Stec",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -17762,7 +17732,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 593,
+    "id": 592,
     "name": "Kemal-Yildirim Atik",
     "leadStatus": "Verloren",
     "verlustgrund": "",
@@ -17792,7 +17762,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 594,
+    "id": 593,
     "name": "Jitka Kocova",
     "leadStatus": "Kennenlerngespräch gebucht",
     "verlustgrund": "",
@@ -17822,7 +17792,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 595,
+    "id": 594,
     "name": "Manuela Pompe",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -17852,7 +17822,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 596,
+    "id": 595,
     "name": "Alla Laut",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -17882,7 +17852,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 597,
+    "id": 596,
     "name": "Steffi Kramer",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -17912,7 +17882,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 598,
+    "id": 597,
     "name": "Kathrin Zeichner",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -17942,7 +17912,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 599,
+    "id": 598,
     "name": "Hanna Chebotarova",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -17972,7 +17942,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 600,
+    "id": 599,
     "name": "Joanna Malecka",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -18002,7 +17972,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 601,
+    "id": 600,
     "name": "Magdalena Wesolowska",
     "leadStatus": "Rückruf",
     "verlustgrund": "",
@@ -18032,7 +18002,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 602,
+    "id": 601,
     "name": "Zeliha Sizi",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -18062,7 +18032,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 603,
+    "id": 602,
     "name": "Heike Steinmann",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -18092,7 +18062,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 604,
+    "id": 603,
     "name": "Waltraud Peters",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -18122,7 +18092,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 605,
+    "id": 604,
     "name": "Louisa Lulu",
     "leadStatus": "Verloren",
     "verlustgrund": "neuen Job erhalten",
@@ -18152,7 +18122,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 606,
+    "id": 605,
     "name": "Frank Thon",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -18182,7 +18152,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 607,
+    "id": 606,
     "name": "Charline Domanetzki",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -18212,7 +18182,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 608,
+    "id": 607,
     "name": "Fabian Laskaj",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -18242,7 +18212,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 609,
+    "id": 608,
     "name": "Anastasia Leiher",
     "leadStatus": "Beratungsgespräch gebucht",
     "verlustgrund": "",
@@ -18272,7 +18242,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 610,
+    "id": 609,
     "name": "Enrico Krams",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -18302,7 +18272,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 611,
+    "id": 610,
     "name": "Christine Bucari",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -18332,7 +18302,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 612,
+    "id": 611,
     "name": "Marc Oliver Wiedecke",
     "leadStatus": "Beratungsgespräch gebucht",
     "verlustgrund": "",
@@ -18362,9 +18332,9 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 613,
+    "id": 612,
     "name": "Nevena Kovanovic",
-    "leadStatus": "Neuer Lead",
+    "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
     "adId": "120241445230580128",
     "adName": "C1 - Berufseinstieg schwer",
@@ -18373,26 +18343,26 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Fließend (C1/C2)",
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
-    "vertriebler": "Johannes Schultz",
+    "vertriebler": "Nele Pfau",
     "createdOn": "20.3.2026 11:07",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
     "angebotVerschicken": false,
-    "prozessStarten": "Noch kein Angebot erstellt",
+    "prozessStarten": "Angebot wurde erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
     "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "",
-    "lastModified": "20.3.2026 17:04",
-    "angebotsprozessDatum": "20.3.2026 11:07",
-    "vertriebsqualifiziertAm": "",
+    "betreuungsart": "Low Touch",
+    "lastModified": "21.3.2026 11:38",
+    "angebotsprozessDatum": "21.3.2026 11:38",
+    "vertriebsqualifiziertAm": "21.3.2026 11:38",
     "gewonnenAm": ""
   },
   {
-    "id": 614,
+    "id": 613,
     "name": "Nina Grin?",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -18422,7 +18392,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 615,
+    "id": 614,
     "name": "Francie Antes",
     "leadStatus": "Beratungsgespräch gebucht",
     "verlustgrund": "",
@@ -18452,7 +18422,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 616,
+    "id": 615,
     "name": "Bettina Timpe",
     "leadStatus": "Beratungsgespräch gebucht",
     "verlustgrund": "",
@@ -18482,7 +18452,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 617,
+    "id": 616,
     "name": "Shakeel Khan",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -18512,7 +18482,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 618,
+    "id": 617,
     "name": "Michael Gust",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -18542,7 +18512,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 619,
+    "id": 618,
     "name": "Suzie Suz",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -18572,7 +18542,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 620,
+    "id": 619,
     "name": "Laura Kilian",
     "leadStatus": "Verloren",
     "verlustgrund": "Angestellt",
@@ -18602,7 +18572,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 621,
+    "id": 620,
     "name": "Thomas Schmid",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -18632,7 +18602,7 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 622,
+    "id": 621,
     "name": "Uwe Jemiller",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -18662,10 +18632,10 @@ export const leads: Lead[] = [
     "gewonnenAm": ""
   },
   {
-    "id": 623,
+    "id": 622,
     "name": "Vivien Mercedesz Kulcsar",
-    "leadStatus": "Neuer Lead",
-    "verlustgrund": "",
+    "leadStatus": "Verloren",
+    "verlustgrund": "Kurs für Job gehalten",
     "adId": "120240870704370128",
     "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
     "platform": "Instagram",
@@ -18673,7 +18643,7 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
-    "vertriebler": "",
+    "vertriebler": "Nele Pfau",
     "createdOn": "20.3.2026 18:31",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
@@ -18683,18 +18653,18 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "20.3.2026 18:31",
+    "lastModified": "21.3.2026 10:34",
     "angebotsprozessDatum": "20.3.2026 18:31",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": ""
   },
   {
-    "id": 624,
+    "id": 623,
     "name": "Vani Saxena",
-    "leadStatus": "Neuer Lead",
+    "leadStatus": "Rückruf",
     "verlustgrund": "",
     "adId": "120241445230580128",
     "adName": "C1 - Berufseinstieg schwer",
@@ -18703,7 +18673,7 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Gute Kenntnisse (B2)",
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
-    "vertriebler": "",
+    "vertriebler": "Nele Pfau",
     "createdOn": "20.3.2026 18:56",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
@@ -18716,16 +18686,16 @@ export const leads: Lead[] = [
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "20.3.2026 18:56",
+    "lastModified": "21.3.2026 10:35",
     "angebotsprozessDatum": "20.3.2026 18:56",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": ""
   },
   {
-    "id": 625,
+    "id": 624,
     "name": "Bianca Buttgereit",
-    "leadStatus": "Neuer Lead",
-    "verlustgrund": "",
+    "leadStatus": "Verloren",
+    "verlustgrund": "Falsche Kontaktinformationen",
     "adId": "120241352642900128",
     "adName": "C4.2 - Recruiter und arbeitslos",
     "platform": "Instagram",
@@ -18746,13 +18716,13 @@ export const leads: Lead[] = [
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "20.3.2026 18:57",
+    "lastModified": "21.3.2026 10:36",
     "angebotsprozessDatum": "20.3.2026 18:57",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": ""
   },
   {
-    "id": 626,
+    "id": 625,
     "name": "Susi Genz",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -18763,7 +18733,7 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
-    "vertriebler": "",
+    "vertriebler": "Nele Pfau",
     "createdOn": "20.3.2026 19:40",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
@@ -18773,16 +18743,16 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "20.3.2026 19:40",
+    "lastModified": "21.3.2026 10:36",
     "angebotsprozessDatum": "20.3.2026 19:40",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": ""
   },
   {
-    "id": 627,
+    "id": 626,
     "name": "Jasmin Sudermann-Schaad",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -18793,7 +18763,7 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
-    "vertriebler": "",
+    "vertriebler": "Nele Pfau",
     "createdOn": "20.3.2026 21:04",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
@@ -18803,16 +18773,16 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "20.3.2026 21:04",
+    "lastModified": "21.3.2026 10:37",
     "angebotsprozessDatum": "20.3.2026 21:04",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": ""
   },
   {
-    "id": 628,
+    "id": 627,
     "name": "Sundareshwari Pandian",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -18823,7 +18793,7 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Gute Kenntnisse (B2)",
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
-    "vertriebler": "",
+    "vertriebler": "Nele Pfau",
     "createdOn": "20.3.2026 21:20",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
@@ -18833,16 +18803,16 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "20.3.2026 21:20",
+    "lastModified": "21.3.2026 10:38",
     "angebotsprozessDatum": "20.3.2026 21:20",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": ""
   },
   {
-    "id": 629,
+    "id": 628,
     "name": "Sandy Worbis",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -18853,7 +18823,7 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
-    "vertriebler": "",
+    "vertriebler": "Nele Pfau",
     "createdOn": "20.3.2026 21:23",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
@@ -18863,16 +18833,16 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "20.3.2026 21:23",
+    "lastModified": "21.3.2026 10:40",
     "angebotsprozessDatum": "20.3.2026 21:23",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": ""
   },
   {
-    "id": 630,
+    "id": 629,
     "name": "Melita Sabo",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -18883,7 +18853,7 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
-    "vertriebler": "",
+    "vertriebler": "Nele Pfau",
     "createdOn": "20.3.2026 21:25",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
@@ -18893,16 +18863,16 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "20.3.2026 21:25",
+    "lastModified": "21.3.2026 10:41",
     "angebotsprozessDatum": "20.3.2026 21:25",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": ""
   },
   {
-    "id": 631,
+    "id": 630,
     "name": "Agata Bongiovanni Hoffmann",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -18913,7 +18883,7 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Fließend (C1/C2)",
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
-    "vertriebler": "",
+    "vertriebler": "Nele Pfau",
     "createdOn": "20.3.2026 22:15",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
@@ -18923,16 +18893,16 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "20.3.2026 22:15",
+    "lastModified": "21.3.2026 10:41",
     "angebotsprozessDatum": "20.3.2026 22:15",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": ""
   },
   {
-    "id": 632,
+    "id": 631,
     "name": "Daniela Fleischer",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -18943,7 +18913,7 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
-    "vertriebler": "",
+    "vertriebler": "Nele Pfau",
     "createdOn": "20.3.2026 22:50",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
@@ -18953,16 +18923,16 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "20.3.2026 22:50",
+    "lastModified": "21.3.2026 10:42",
     "angebotsprozessDatum": "20.3.2026 22:50",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": ""
   },
   {
-    "id": 633,
+    "id": 632,
     "name": "Stephie Golden",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -18973,7 +18943,7 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, ich bin noch unsicher, ob es zu mir passt",
-    "vertriebler": "",
+    "vertriebler": "Nele Pfau",
     "createdOn": "20.3.2026 23:17",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
@@ -18983,16 +18953,16 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "20.3.2026 23:17",
+    "lastModified": "21.3.2026 10:42",
     "angebotsprozessDatum": "20.3.2026 23:17",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": ""
   },
   {
-    "id": 634,
+    "id": 633,
     "name": "Chantal Heise",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -19003,7 +18973,7 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "24 – 25 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
-    "vertriebler": "",
+    "vertriebler": "Nele Pfau",
     "createdOn": "20.3.2026 23:24",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
@@ -19013,18 +18983,18 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "20.3.2026 23:24",
+    "lastModified": "21.3.2026 10:43",
     "angebotsprozessDatum": "20.3.2026 23:24",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": ""
   },
   {
-    "id": 635,
+    "id": 634,
     "name": "Anna Kalver",
-    "leadStatus": "Neuer Lead",
+    "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
     "adId": "120241445230580128",
     "adName": "C1 - Berufseinstieg schwer",
@@ -19033,26 +19003,26 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, ich bin noch unsicher, ob es zu mir passt",
-    "vertriebler": "",
+    "vertriebler": "Nele Pfau",
     "createdOn": "21.3.2026 06:04",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
     "angebotVerschicken": false,
-    "prozessStarten": "Noch kein Angebot erstellt",
+    "prozessStarten": "Angebot wurde erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "",
-    "lastModified": "21.3.2026 06:04",
-    "angebotsprozessDatum": "21.3.2026 06:04",
-    "vertriebsqualifiziertAm": "",
+    "betreuungsart": "Low Touch",
+    "lastModified": "21.3.2026 11:06",
+    "angebotsprozessDatum": "21.3.2026 10:47",
+    "vertriebsqualifiziertAm": "21.3.2026 10:47",
     "gewonnenAm": ""
   },
   {
-    "id": 636,
+    "id": 635,
     "name": "Viktoria Schleicher",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -19063,7 +19033,7 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Fließend (C1/C2)",
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
-    "vertriebler": "",
+    "vertriebler": "Nele Pfau",
     "createdOn": "21.3.2026 07:26",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
@@ -19073,16 +19043,16 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "21.3.2026 07:26",
+    "lastModified": "21.3.2026 11:14",
     "angebotsprozessDatum": "21.3.2026 07:26",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": ""
   },
   {
-    "id": 637,
+    "id": 636,
     "name": "Gina Lulu",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -19093,8 +19063,158 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
-    "vertriebler": "",
+    "vertriebler": "Nele Pfau",
     "createdOn": "21.3.2026 07:31",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "1x nicht erreicht",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "21.3.2026 11:15",
+    "angebotsprozessDatum": "21.3.2026 07:31",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
+  },
+  {
+    "id": 637,
+    "name": "Daniel Kerbs",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120241352642900128",
+    "adName": "C4.2 - Recruiter und arbeitslos",
+    "platform": "Facebook",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "25 – 45 Jahre",
+    "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "21.3.2026 08:03",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "1x nicht erreicht",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "21.3.2026 11:16",
+    "angebotsprozessDatum": "21.3.2026 08:03",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
+  },
+  {
+    "id": 638,
+    "name": "Christa Pfister",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120240870704370128",
+    "adName": "C7.3 - Aktuell arbeitslos und Vorerfahrung HR - v2",
+    "platform": "Facebook",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "Über 60 Jahre",
+    "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "21.3.2026 08:41",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "2x nicht erreicht",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "21.3.2026 11:51",
+    "angebotsprozessDatum": "21.3.2026 08:41",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
+  },
+  {
+    "id": 639,
+    "name": "Marlon Mader",
+    "leadStatus": "Rückruf",
+    "verlustgrund": "",
+    "adId": "120241352642900128",
+    "adName": "C4.2 - Recruiter und arbeitslos",
+    "platform": "Facebook",
+    "arbeitslosGemeldet": "Nein, aber in den nächsten 3 Monaten",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "25 – 45 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "21.3.2026 09:26",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "1x nicht erreicht",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "21.3.2026 11:39",
+    "angebotsprozessDatum": "21.3.2026 09:26",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
+  },
+  {
+    "id": 640,
+    "name": "Anne-Kathrin Engeroff",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120241445230580128",
+    "adName": "C1 - Berufseinstieg schwer",
+    "platform": "Instagram",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "25 – 45 Jahre",
+    "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "21.3.2026 11:24",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "1x nicht erreicht",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "21.3.2026 11:39",
+    "angebotsprozessDatum": "21.3.2026 11:24",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": ""
+  },
+  {
+    "id": 641,
+    "name": "Rosenblüte Schmidt",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120241352642900128",
+    "adName": "C4.2 - Recruiter und arbeitslos",
+    "platform": "Instagram",
+    "arbeitslosGemeldet": "Nein, aber in den nächsten 3 Monaten",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "Über 60 Jahre",
+    "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
+    "vertriebler": "",
+    "createdOn": "21.3.2026 12:45",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
@@ -19106,8 +19226,8 @@ export const leads: Lead[] = [
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "21.3.2026 07:31",
-    "angebotsprozessDatum": "21.3.2026 07:31",
+    "lastModified": "21.3.2026 12:45",
+    "angebotsprozessDatum": "21.3.2026 12:45",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": ""
   }
