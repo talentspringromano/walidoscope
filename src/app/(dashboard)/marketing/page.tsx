@@ -29,6 +29,7 @@ import {
   metaExportTotalClicks,
   metaExportAvgCPL,
   META_CSV_HEADERS,
+  META_STRING_FIELDS,
 } from "@/data/meta-export";
 import type { MetaExportEntry } from "@/data/meta-export";
 import type { IndeedDailyEntry } from "@/data/indeed";
@@ -1156,7 +1157,7 @@ function parseMetaCSV(text: string): MetaExportEntry[] {
     keyMap.forEach((key, i) => {
       if (!key) return;
       const v = vals[i] ?? "";
-      if (["adName", "delivery", "qualityRanking", "engagementRanking", "conversionRanking", "adSetName", "reportingStarts", "reportingEnds"].includes(key)) {
+      if (META_STRING_FIELDS.has(key as string)) {
         entry[key] = v;
       } else {
         entry[key] = parseFloat(v) || 0;
@@ -1550,7 +1551,7 @@ function MetaTab() {
                   <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.impressions.toLocaleString()}</td>
                   <td className="text-right pr-4 tabular-nums font-semibold text-[#5eead4]">{gewonnenByCreative.get(`${ad.adName}|||${ad.adSetName}`) || 0}</td>
                   <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.linkClicks}</td>
-                  <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.reach.toLocaleString()}</td>
+                  <td className="text-right pr-4 tabular-nums text-[#78716c]">{(ad.reach || 0).toLocaleString()}</td>
                 </tr>
               ))}
             </tbody>
