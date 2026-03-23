@@ -1292,23 +1292,44 @@ function MetaTab() {
     return d && d >= metaReportingRange.start && d <= metaReportingRange.end;
   };
 
-  // Qualifizierte Leads pro Creative (CPQL)
-  const qualifiedByCreative = useMemo(() => {
-    const metaQualifiedLeads = leads.filter(
+  // CPFL Filter States
+  const [filterArbeitslos, setFilterArbeitslos] = useState("all");
+  const [filterStelle, setFilterStelle] = useState("all");
+  const [filterAlter, setFilterAlter] = useState("all");
+  const [filterVorerfahrung, setFilterVorerfahrung] = useState("all");
+
+  const hasAnyCpflFilter = filterArbeitslos !== "all" || filterStelle !== "all" || filterAlter !== "all" || filterVorerfahrung !== "all";
+
+  // Unique-Werte für CPFL-Filter-Dropdowns
+  const cpflFilterOptions = useMemo(() => {
+    const metaLeads = leads.filter(
+      (l) => (l.platform === "Instagram" || l.platform === "Facebook") && l.adId
+    );
+    const stellen = [...new Set(metaLeads.map((l) => l.zustaendigeStelle).filter(Boolean))].sort();
+    const alterWerte = [...new Set(metaLeads.map((l) => l.alter).filter(Boolean))].sort();
+    const vorerfahrungWerte = [...new Set(metaLeads.map((l) => l.vorerfahrung).filter(Boolean))].sort();
+    const arbeitslosWerte = [...new Set(metaLeads.map((l) => l.arbeitslosGemeldet).filter(Boolean))].sort();
+    return { stellen, alterWerte, vorerfahrungWerte, arbeitslosWerte };
+  }, []);
+
+  // Dynamisch gefilterte Leads pro Creative (CPFL)
+  const filteredByCreative = useMemo(() => {
+    const metaFilteredLeads = leads.filter(
       (l) =>
         (l.platform === "Instagram" || l.platform === "Facebook") &&
         l.adId &&
         isInReportingRange(l) &&
-        l.zustaendigeStelle === "Die Agentur für Arbeit" &&
-        l.alter !== "Keine Angabe" && l.alter !== "" && l.alter !== "Unter 24 Jahre" &&
-        l.arbeitslosGemeldet === "Ja"
+        (filterArbeitslos === "all" || l.arbeitslosGemeldet === filterArbeitslos) &&
+        (filterStelle === "all" || l.zustaendigeStelle === filterStelle) &&
+        (filterAlter === "all" || l.alter === filterAlter) &&
+        (filterVorerfahrung === "all" || l.vorerfahrung === filterVorerfahrung)
     );
     const adIdToName = new Map<string, string>();
     leads
       .filter((l) => (l.platform === "Instagram" || l.platform === "Facebook") && l.adId)
       .forEach((l) => adIdToName.set(l.adId, l.adName));
     const countByAdId = new Map<string, number>();
-    metaQualifiedLeads.forEach((l) => countByAdId.set(l.adId, (countByAdId.get(l.adId) || 0) + 1));
+    metaFilteredLeads.forEach((l) => countByAdId.set(l.adId, (countByAdId.get(l.adId) || 0) + 1));
     const countByAdName = new Map<string, number>();
     countByAdId.forEach((count, adId) => {
       const name = adIdToName.get(adId) || "";
@@ -1324,7 +1345,7 @@ function MetaTab() {
       }
     });
     return result;
-  }, []);
+  }, [filterArbeitslos, filterStelle, filterAlter, filterVorerfahrung]);
 
   // CRM-Performance pro Creative × Ad Set — Leads aus CRM werden über adName zugeordnet
   // und proportional (nach Meta-Export results) auf Ad Sets verteilt
@@ -1448,6 +1469,49 @@ function MetaTab() {
 
       {/* Creative Performance Table */}
       <SectionCard title="Creative-Leistung">
+        <div className="flex flex-wrap items-center gap-2 mb-4">
+          <span className="text-[11px] font-medium text-[#78716c]">CPFL-Filter:</span>
+          <select
+            value={filterArbeitslos}
+            onChange={(e) => setFilterArbeitslos(e.target.value)}
+            className="appearance-none rounded-lg border border-[rgba(255,255,255,0.06)] bg-[rgba(255,255,255,0.03)] px-3 py-1 text-[11px] font-medium text-[#a8a29e] outline-none transition-all hover:bg-[rgba(255,255,255,0.05)] focus:border-[rgba(226,169,110,0.25)] focus:text-[#e2a96e]"
+          >
+            <option value="all">Arbeitslos: Alle</option>
+            {cpflFilterOptions.arbeitslosWerte.map((v) => (
+              <option key={v} value={v}>{v}</option>
+            ))}
+          </select>
+          <select
+            value={filterStelle}
+            onChange={(e) => setFilterStelle(e.target.value)}
+            className="appearance-none rounded-lg border border-[rgba(255,255,255,0.06)] bg-[rgba(255,255,255,0.03)] px-3 py-1 text-[11px] font-medium text-[#a8a29e] outline-none transition-all hover:bg-[rgba(255,255,255,0.05)] focus:border-[rgba(226,169,110,0.25)] focus:text-[#e2a96e]"
+          >
+            <option value="all">Stelle: Alle</option>
+            {cpflFilterOptions.stellen.map((v) => (
+              <option key={v} value={v}>{v}</option>
+            ))}
+          </select>
+          <select
+            value={filterAlter}
+            onChange={(e) => setFilterAlter(e.target.value)}
+            className="appearance-none rounded-lg border border-[rgba(255,255,255,0.06)] bg-[rgba(255,255,255,0.03)] px-3 py-1 text-[11px] font-medium text-[#a8a29e] outline-none transition-all hover:bg-[rgba(255,255,255,0.05)] focus:border-[rgba(226,169,110,0.25)] focus:text-[#e2a96e]"
+          >
+            <option value="all">Alter: Alle</option>
+            {cpflFilterOptions.alterWerte.map((v) => (
+              <option key={v} value={v}>{v}</option>
+            ))}
+          </select>
+          <select
+            value={filterVorerfahrung}
+            onChange={(e) => setFilterVorerfahrung(e.target.value)}
+            className="appearance-none rounded-lg border border-[rgba(255,255,255,0.06)] bg-[rgba(255,255,255,0.03)] px-3 py-1 text-[11px] font-medium text-[#a8a29e] outline-none transition-all hover:bg-[rgba(255,255,255,0.05)] focus:border-[rgba(226,169,110,0.25)] focus:text-[#e2a96e]"
+          >
+            <option value="all">Vorerfahrung: Alle</option>
+            {cpflFilterOptions.vorerfahrungWerte.map((v) => (
+              <option key={v} value={v}>{v}</option>
+            ))}
+          </select>
+        </div>
         <div className="overflow-x-auto">
           <table className="w-full premium-table">
             <thead>
@@ -1458,7 +1522,7 @@ function MetaTab() {
                 <th className="text-right pr-4">Spend</th>
                 <th className="text-right pr-4">Leads</th>
                 <th className="text-right pr-4">CPL</th>
-                <th className="text-right pr-4">CPQL</th>
+                <th className="text-right pr-4">{hasAnyCpflFilter ? "CPFL" : "CP/L"}</th>
                 <th className="text-right pr-4">Impr.</th>
                 <th className="text-right pr-4">Gewonnen</th>
                 <th className="text-right pr-4">Klicks</th>
@@ -1482,7 +1546,7 @@ function MetaTab() {
                   <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.amountSpent.toFixed(2)} €</td>
                   <td className="text-right pr-4 tabular-nums font-medium text-[#e2a96e]">{ad.results}</td>
                   <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.costPerResult > 0 ? `${ad.costPerResult.toFixed(2)} €` : "—"}</td>
-                  <td className="text-right pr-4 tabular-nums text-[#78716c]">{(() => { const qc = qualifiedByCreative.get(`${ad.adName}|||${ad.adSetName}`) || 0; return qc > 0 ? `${(ad.amountSpent / qc).toFixed(2)} €` : "—"; })()}</td>
+                  <td className="text-right pr-4 tabular-nums text-[#78716c]">{(() => { const fc = filteredByCreative.get(`${ad.adName}|||${ad.adSetName}`) || 0; return fc > 0 ? `${(ad.amountSpent / fc).toFixed(2)} €` : "—"; })()}</td>
                   <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.impressions.toLocaleString()}</td>
                   <td className="text-right pr-4 tabular-nums font-semibold text-[#5eead4]">{gewonnenByCreative.get(`${ad.adName}|||${ad.adSetName}`) || 0}</td>
                   <td className="text-right pr-4 tabular-nums text-[#78716c]">{ad.linkClicks}</td>
