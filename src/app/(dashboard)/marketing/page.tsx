@@ -1268,12 +1268,37 @@ function MetaTab() {
     return result;
   }, []);
 
+  // Reporting-Zeitraum aus Meta-Export ermitteln
+  const metaReportingRange = useMemo(() => {
+    let start = "9999-12-31";
+    let end = "0000-01-01";
+    metaExport.forEach((ad) => {
+      if (ad.reportingStarts < start) start = ad.reportingStarts;
+      if (ad.reportingEnds > end) end = ad.reportingEnds;
+    });
+    return { start: new Date(start), end: new Date(end + "T23:59:59") };
+  }, []);
+
+  // createdOn ("27.1.2026 17:11") → Date parsen
+  const parseCreatedOn = (s: string): Date | null => {
+    const match = s.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})\s+(\d{1,2}):(\d{2})$/);
+    if (!match) return null;
+    return new Date(+match[3], +match[2] - 1, +match[1], +match[4], +match[5]);
+  };
+
+  // Nur Leads im Meta-Export-Zeitraum
+  const isInReportingRange = (l: { createdOn: string }) => {
+    const d = parseCreatedOn(l.createdOn);
+    return d && d >= metaReportingRange.start && d <= metaReportingRange.end;
+  };
+
   // Qualifizierte Leads pro Creative (CPQL)
   const qualifiedByCreative = useMemo(() => {
     const metaQualifiedLeads = leads.filter(
       (l) =>
         (l.platform === "Instagram" || l.platform === "Facebook") &&
         l.adId &&
+        isInReportingRange(l) &&
         l.zustaendigeStelle === "Die Agentur für Arbeit" &&
         l.alter !== "Keine Angabe" && l.alter !== "" && l.alter !== "Unter 24 Jahre" &&
         l.arbeitslosGemeldet === "Ja"
