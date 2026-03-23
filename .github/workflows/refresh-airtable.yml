@@ -2,7 +2,7 @@ name: Refresh Airtable Data
 
 on:
   schedule:
-    - cron: "30 */6 * * *" # Every 6 hours (offset from Aircall)
+    - cron: "30 */3 * * *" # Every 3 hours (offset from Aircall)
   workflow_dispatch: # Manual trigger
 
 permissions:
