@@ -4,7 +4,15 @@ import { useState, useMemo } from "react";
 import { KpiCard, SectionCard } from "@/components/kpi-card";
 import { TimeRangeFilter } from "@/components/time-range-filter";
 import { leads } from "@/data/leads";
-import { metaAds, totalMetaSpend, totalMetaLeads, avgCPL } from "@/data/meta-ads";
+import { metaAds } from "@/data/meta-ads";
+import {
+  metaExportTotalSpend,
+  metaExportTotalResults,
+  metaExportAvgCPL,
+} from "@/data/meta-export";
+import {
+  indeedTotalApplications,
+} from "@/data/indeed";
 import { perspectiveVisits } from "@/data/perspective";
 import { TOOLTIP_STYLE, AXIS_STYLE, FUNNEL_COLORS, STATUS_COLORS } from "@/components/chart-theme";
 import { Users, DollarSign, MousePointerClick, TrendingUp } from "lucide-react";
@@ -114,15 +122,15 @@ export default function OverviewPage() {
     const channelData = [
       {
         name: "Meta (FB/IG)",
-        leads: range === "all" ? totalMetaLeads : metaLeads.length,
-        spend: range === "all" ? totalMetaSpend : 0,
-        sub: range === "all" && totalMetaLeads > 0
-          ? `€${avgCPL.toFixed(2)} CPL`
+        leads: range === "all" ? metaExportTotalResults : metaLeads.length,
+        spend: range === "all" ? metaExportTotalSpend : 0,
+        sub: range === "all" && metaExportTotalResults > 0
+          ? `€${metaExportAvgCPL.toFixed(2)} CPL`
           : range === "all" ? "Keine Meta-Leads" : "Spend nicht filterbar",
         hasSpend: range === "all",
       },
-      { name: "Indeed", leads: indeedLeads.length, spend: 0, sub: "Organisch via Indeed", hasSpend: false },
-      { name: "Kursnet", leads: kursnetLeads.length, spend: 0, sub: "Organisch via Kursnet", hasSpend: false },
+      { name: "Indeed", leads: range === "all" ? indeedTotalApplications : indeedLeads.length, spend: 0, sub: "Upload-Daten", hasSpend: false },
+      { name: "Kursnet", leads: kursnetLeads.length, spend: 0, sub: "CRM-Leads", hasSpend: false },
     ];
 
     /* Timeline — Meta (FB+IG zusammengefasst), Kursnet, Indeed */
@@ -255,21 +263,31 @@ export default function OverviewPage() {
       <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 stagger-in">
         <KpiCard
           label="Gesamte Leads"
-          value={range === "all" ? totalMetaLeads + kursnetLeads.length + indeedLeads.length : totalLeads}
-          sub={`${range === "all" ? totalMetaLeads : metaLeads.length} Meta · ${kursnetLeads.length} Kursnet · ${indeedLeads.length} Indeed`}
+          value={(() => {
+            const marketingTotal = metaExportTotalResults + kursnetLeads.length + indeedTotalApplications;
+            return range === "all" ? marketingTotal : totalLeads;
+          })()}
+          sub={(() => {
+            const marketingTotal = metaExportTotalResults + kursnetLeads.length + indeedTotalApplications;
+            const crmDiff = marketingTotal - totalLeads;
+            const diffLabel = crmDiff > 0 ? `+${crmDiff}` : `${crmDiff}`;
+            return range === "all"
+              ? `${metaExportTotalResults} Meta · ${kursnetLeads.length} Kursnet · ${indeedTotalApplications} Indeed · ${diffLabel} vs. CRM (${totalLeads})`
+              : `${metaLeads.length} Meta · ${kursnetLeads.length} Kursnet · ${indeedLeads.length} Indeed`;
+          })()}
           icon={<Users className="h-4 w-4" />}
           accent
         />
         <KpiCard
           label="Gesamt-Spend"
-          value={range === "all" ? `€${totalMetaSpend.toFixed(2)}` : "—"}
+          value={range === "all" ? `€${metaExportTotalSpend.toFixed(2)}` : "—"}
           sub={range === "all" ? "Nur Meta Ads" : "Spend nicht filterbar"}
           icon={<DollarSign className="h-4 w-4" />}
         />
         <KpiCard
           label="Avg. CPL (Meta)"
-          value={range === "all" && totalMetaLeads > 0 ? `€${(totalMetaSpend / totalMetaLeads).toFixed(2)}` : "—"}
-          sub={range === "all" ? `${totalMetaLeads} Leads aus Ads` : "CPL nicht filterbar"}
+          value={range === "all" && metaExportTotalResults > 0 ? `€${metaExportAvgCPL.toFixed(2)}` : "—"}
+          sub={range === "all" ? `${metaExportTotalResults} Leads aus Ads` : "CPL nicht filterbar"}
           icon={<MousePointerClick className="h-4 w-4" />}
         />
         <KpiCard
