@@ -10,6 +10,7 @@ import {
   metaExportTotalResults,
   metaExportAvgCPL,
 } from "@/data/meta-export";
+import { indeedTotalSpend } from "@/data/indeed";
 import { perspectiveVisits } from "@/data/perspective";
 import { TOOLTIP_STYLE, AXIS_STYLE, FUNNEL_COLORS, STATUS_COLORS } from "@/components/chart-theme";
 import { Users, DollarSign, MousePointerClick, TrendingUp } from "lucide-react";
@@ -277,8 +278,8 @@ export default function OverviewPage() {
         />
         <KpiCard
           label="Gesamt-Spend"
-          value={range === "all" ? `€${metaExportTotalSpend.toFixed(2)}` : "—"}
-          sub={range === "all" ? "Nur Meta Ads" : "Spend nicht filterbar"}
+          value={range === "all" ? `€${(metaExportTotalSpend + indeedTotalSpend).toFixed(2)}` : "—"}
+          sub={range === "all" ? `€${metaExportTotalSpend.toFixed(0)} Meta · €${indeedTotalSpend.toFixed(0)} Indeed` : "Spend nicht filterbar"}
           icon={<DollarSign className="h-4 w-4" />}
         />
         <KpiCard
