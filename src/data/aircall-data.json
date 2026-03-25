@@ -3,36 +3,36 @@
     {
       "name": "Walid Karimi",
       "userId": 1093878,
-      "outboundCalls": 361,
-      "inboundCalls": 27,
-      "answeredCalls": 309,
+      "outboundCalls": 365,
+      "inboundCalls": 28,
+      "answeredCalls": 314,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 77067,
+      "totalDurationSec": 78247,
       "avgDurationSec": 249,
       "longestCallSec": 2314,
       "reachabilityPct": 100,
-      "callsPerDay": 6.9,
-      "totalCalls": 388,
+      "callsPerDay": 7,
+      "totalCalls": 393,
       "firstCallDate": "2026-01-28",
-      "lastCallDate": "2026-03-24"
+      "lastCallDate": "2026-03-25"
     },
     {
       "name": "Nele Pfau",
       "userId": 1862427,
-      "outboundCalls": 1384,
+      "outboundCalls": 1392,
       "inboundCalls": 45,
-      "answeredCalls": 1007,
+      "answeredCalls": 1011,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 176724,
+      "totalDurationSec": 176796,
       "avgDurationSec": 175,
       "longestCallSec": 2432,
       "reachabilityPct": 100,
-      "callsPerDay": 42,
-      "totalCalls": 1429,
+      "callsPerDay": 41.1,
+      "totalCalls": 1437,
       "firstCallDate": "2026-02-19",
-      "lastCallDate": "2026-03-24"
+      "lastCallDate": "2026-03-25"
     },
     {
       "name": "Bastian Wuske",
@@ -54,17 +54,17 @@
     {
       "name": "Johannes Schultz",
       "userId": 1888157,
-      "outboundCalls": 488,
+      "outboundCalls": 539,
       "inboundCalls": 22,
-      "answeredCalls": 404,
+      "answeredCalls": 442,
       "missedCalls": 1,
       "voicemailCalls": 0,
-      "totalDurationSec": 91223,
-      "avgDurationSec": 226,
+      "totalDurationSec": 94899,
+      "avgDurationSec": 215,
       "longestCallSec": 3730,
       "reachabilityPct": 95,
-      "callsPerDay": 56.7,
-      "totalCalls": 510,
+      "callsPerDay": 62.3,
+      "totalCalls": 561,
       "firstCallDate": "2026-03-16",
       "lastCallDate": "2026-03-25"
     }
@@ -312,9 +312,9 @@
     },
     {
       "date": "2026-03-25",
-      "dials": 2,
-      "reached": 1,
-      "calltimeSec": 1092
+      "dials": 65,
+      "reached": 47,
+      "calltimeSec": 4934
     }
   ],
   "sellerDaily": [
@@ -1353,15 +1353,39 @@
     {
       "seller": "Johannes Schultz",
       "date": "2026-03-25",
-      "dials": 2,
-      "reached": 1,
-      "calltimeSec": 1092,
-      "outboundCalls": 2,
+      "dials": 53,
+      "reached": 39,
+      "calltimeSec": 4768,
+      "outboundCalls": 53,
       "inboundCalls": 0,
-      "answeredCalls": 1,
-      "totalDurationSec": 1092,
+      "answeredCalls": 39,
+      "totalDurationSec": 4768,
       "longestCallSec": 1092
+    },
+    {
+      "seller": "Nele Pfau",
+      "date": "2026-03-25",
+      "dials": 8,
+      "reached": 4,
+      "calltimeSec": 72,
+      "outboundCalls": 8,
+      "inboundCalls": 0,
+      "answeredCalls": 4,
+      "totalDurationSec": 72,
+      "longestCallSec": 23
+    },
+    {
+      "seller": "Walid Karimi",
+      "date": "2026-03-25",
+      "dials": 4,
+      "reached": 4,
+      "calltimeSec": 94,
+      "outboundCalls": 4,
+      "inboundCalls": 1,
+      "answeredCalls": 5,
+      "totalDurationSec": 1180,
+      "longestCallSec": 1086
     }
   ],
-  "fetchedAt": "2026-03-25T08:24:18.415Z"
+  "fetchedAt": "2026-03-25T11:48:32.165Z"
 }
