@@ -3,18 +3,18 @@
     {
       "name": "Walid Karimi",
       "userId": 1093878,
-      "outboundCalls": 398,
+      "outboundCalls": 379,
       "inboundCalls": 29,
-      "answeredCalls": 336,
+      "answeredCalls": 321,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 83610,
-      "avgDurationSec": 249,
+      "totalDurationSec": 80807,
+      "avgDurationSec": 252,
       "longestCallSec": 2314,
       "reachabilityPct": 100,
-      "callsPerDay": 7.4,
-      "totalCalls": 427,
-      "firstCallDate": "2026-01-28",
+      "callsPerDay": 7,
+      "totalCalls": 408,
+      "firstCallDate": "2026-01-29",
       "lastCallDate": "2026-03-27"
     },
     {
@@ -25,9 +25,9 @@
       "answeredCalls": 1070,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 187553,
-      "avgDurationSec": 175,
-      "longestCallSec": 2580,
+      "totalDurationSec": 190529,
+      "avgDurationSec": 178,
+      "longestCallSec": 2976,
       "reachabilityPct": 100,
       "callsPerDay": 39.1,
       "totalCalls": 1526,
@@ -70,12 +70,6 @@
     }
   ],
   "daily": [
-    {
-      "date": "2026-01-28",
-      "dials": 19,
-      "reached": 15,
-      "calltimeSec": 2803
-    },
     {
       "date": "2026-01-29",
       "dials": 13,
@@ -332,22 +326,10 @@
       "date": "2026-03-29",
       "dials": 13,
       "reached": 11,
-      "calltimeSec": 1027
+      "calltimeSec": 4003
     }
   ],
   "sellerDaily": [
-    {
-      "seller": "Walid Karimi",
-      "date": "2026-01-28",
-      "dials": 19,
-      "reached": 15,
-      "calltimeSec": 2803,
-      "outboundCalls": 19,
-      "inboundCalls": 0,
-      "answeredCalls": 15,
-      "totalDurationSec": 2803,
-      "longestCallSec": 798
-    },
     {
       "seller": "Walid Karimi",
       "date": "2026-01-29",
@@ -1517,13 +1499,13 @@
       "date": "2026-03-29",
       "dials": 13,
       "reached": 11,
-      "calltimeSec": 1027,
+      "calltimeSec": 4003,
       "outboundCalls": 13,
       "inboundCalls": 0,
       "answeredCalls": 11,
-      "totalDurationSec": 1027,
-      "longestCallSec": 690
+      "totalDurationSec": 4003,
+      "longestCallSec": 2976
     }
   ],
-  "fetchedAt": "2026-03-29T15:41:16.631Z"
+  "fetchedAt": "2026-03-29T18:46:41.638Z"
 }
