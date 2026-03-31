@@ -20,17 +20,17 @@
     {
       "name": "Nele Pfau",
       "userId": 1862427,
-      "outboundCalls": 1552,
+      "outboundCalls": 1560,
       "inboundCalls": 52,
-      "answeredCalls": 1123,
+      "answeredCalls": 1129,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 203137,
-      "avgDurationSec": 181,
+      "totalDurationSec": 205823,
+      "avgDurationSec": 182,
       "longestCallSec": 2976,
       "reachabilityPct": 100,
-      "callsPerDay": 39.1,
-      "totalCalls": 1604,
+      "callsPerDay": 39.3,
+      "totalCalls": 1612,
       "firstCallDate": "2026-02-19",
       "lastCallDate": "2026-03-31"
     },
@@ -54,17 +54,17 @@
     {
       "name": "Johannes Schultz",
       "userId": 1888157,
-      "outboundCalls": 958,
+      "outboundCalls": 965,
       "inboundCalls": 40,
-      "answeredCalls": 781,
+      "answeredCalls": 787,
       "missedCalls": 2,
       "voicemailCalls": 0,
-      "totalDurationSec": 152680,
+      "totalDurationSec": 153201,
       "avgDurationSec": 195,
       "longestCallSec": 3730,
       "reachabilityPct": 95,
-      "callsPerDay": 66.5,
-      "totalCalls": 998,
+      "callsPerDay": 62.8,
+      "totalCalls": 1005,
       "firstCallDate": "2026-03-16",
       "lastCallDate": "2026-03-31"
     }
@@ -330,9 +330,9 @@
     },
     {
       "date": "2026-03-31",
-      "dials": 110,
-      "reached": 81,
-      "calltimeSec": 16689
+      "dials": 125,
+      "reached": 93,
+      "calltimeSec": 19896
     }
   ],
   "sellerDaily": [
@@ -1563,25 +1563,25 @@
     {
       "seller": "Johannes Schultz",
       "date": "2026-03-31",
-      "dials": 63,
-      "reached": 48,
-      "calltimeSec": 8598,
-      "outboundCalls": 63,
+      "dials": 70,
+      "reached": 54,
+      "calltimeSec": 9119,
+      "outboundCalls": 70,
       "inboundCalls": 4,
-      "answeredCalls": 51,
-      "totalDurationSec": 10595,
+      "answeredCalls": 57,
+      "totalDurationSec": 11116,
       "longestCallSec": 1580
     },
     {
       "seller": "Nele Pfau",
       "date": "2026-03-31",
-      "dials": 35,
-      "reached": 24,
-      "calltimeSec": 3885,
-      "outboundCalls": 35,
+      "dials": 43,
+      "reached": 30,
+      "calltimeSec": 6571,
+      "outboundCalls": 43,
       "inboundCalls": 2,
-      "answeredCalls": 26,
-      "totalDurationSec": 7326,
+      "answeredCalls": 32,
+      "totalDurationSec": 10012,
       "longestCallSec": 2257
     },
     {
@@ -1597,5 +1597,5 @@
       "longestCallSec": 1562
     }
   ],
-  "fetchedAt": "2026-03-31T16:23:13.231Z"
+  "fetchedAt": "2026-03-31T19:10:35.276Z"
 }
