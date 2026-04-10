@@ -3,19 +3,19 @@
     {
       "name": "Walid Karimi",
       "userId": 1093878,
-      "outboundCalls": 7,
+      "outboundCalls": 13,
       "inboundCalls": 0,
-      "answeredCalls": 6,
+      "answeredCalls": 11,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 3547,
-      "avgDurationSec": 591,
+      "totalDurationSec": 3935,
+      "avgDurationSec": 358,
       "longestCallSec": 1035,
       "reachabilityPct": 0,
-      "callsPerDay": 2.3,
-      "totalCalls": 7,
-      "firstCallDate": "2026-02-09",
-      "lastCallDate": "2026-02-12"
+      "callsPerDay": 2.2,
+      "totalCalls": 13,
+      "firstCallDate": "2026-02-10",
+      "lastCallDate": "2026-02-16"
     },
     {
       "name": "Nele Pfau",
@@ -71,12 +71,6 @@
   ],
   "daily": [
     {
-      "date": "2026-02-09",
-      "dials": 1,
-      "reached": 1,
-      "calltimeSec": 674
-    },
-    {
       "date": "2026-02-10",
       "dials": 1,
       "reached": 1,
@@ -93,21 +87,15 @@
       "dials": 2,
       "reached": 2,
       "calltimeSec": 813
+    },
+    {
+      "date": "2026-02-16",
+      "dials": 7,
+      "reached": 6,
+      "calltimeSec": 1062
     }
   ],
   "sellerDaily": [
-    {
-      "seller": "Walid Karimi",
-      "date": "2026-02-09",
-      "dials": 1,
-      "reached": 1,
-      "calltimeSec": 674,
-      "outboundCalls": 1,
-      "inboundCalls": 0,
-      "answeredCalls": 1,
-      "totalDurationSec": 674,
-      "longestCallSec": 674
-    },
     {
       "seller": "Walid Karimi",
       "date": "2026-02-10",
@@ -143,7 +131,19 @@
       "answeredCalls": 2,
       "totalDurationSec": 813,
       "longestCallSec": 783
+    },
+    {
+      "seller": "Walid Karimi",
+      "date": "2026-02-16",
+      "dials": 7,
+      "reached": 6,
+      "calltimeSec": 1062,
+      "outboundCalls": 7,
+      "inboundCalls": 0,
+      "answeredCalls": 6,
+      "totalDurationSec": 1062,
+      "longestCallSec": 844
     }
   ],
-  "fetchedAt": "2026-04-10T15:42:36.467Z"
+  "fetchedAt": "2026-04-10T18:40:30.124Z"
 }
