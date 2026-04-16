@@ -18378,7 +18378,7 @@ export const leads: Lead[] = [
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "High Touch",
-    "lastModified": "10.4.2026 15:22",
+    "lastModified": "16.4.2026 19:47",
     "angebotsprozessDatum": "20.3.2026 08:11",
     "vertriebsqualifiziertAm": "9.4.2026 11:34",
     "gewonnenAm": "",
