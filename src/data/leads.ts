@@ -35778,7 +35778,7 @@ export const leads: Lead[] = [
   {
     "id": 1155,
     "name": "Christina Wehrs",
-    "leadStatus": "Vertriebsqualifiziert",
+    "leadStatus": "Gewonnen",
     "verlustgrund": "",
     "adId": "",
     "adName": "",
@@ -35800,10 +35800,10 @@ export const leads: Lead[] = [
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "Low Touch",
-    "lastModified": "16.4.2026 13:18",
+    "lastModified": "18.4.2026 17:29",
     "angebotsprozessDatum": "9.4.2026 16:50",
     "vertriebsqualifiziertAm": "8.4.2026 15:36",
-    "gewonnenAm": "",
+    "gewonnenAm": "17.4.2026 17:27",
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
