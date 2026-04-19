@@ -3,18 +3,18 @@
     {
       "name": "Walid Karimi",
       "userId": 1093878,
-      "outboundCalls": 17,
+      "outboundCalls": 19,
       "inboundCalls": 0,
-      "answeredCalls": 15,
+      "answeredCalls": 17,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 4190,
-      "avgDurationSec": 279,
-      "longestCallSec": 1026,
+      "totalDurationSec": 5737,
+      "avgDurationSec": 337,
+      "longestCallSec": 1610,
       "reachabilityPct": 0,
-      "callsPerDay": 3.4,
-      "totalCalls": 17,
-      "firstCallDate": "2026-02-18",
+      "callsPerDay": 3.8,
+      "totalCalls": 19,
+      "firstCallDate": "2026-02-19",
       "lastCallDate": "2026-02-23"
     },
     {
@@ -71,12 +71,6 @@
   ],
   "daily": [
     {
-      "date": "2026-02-18",
-      "dials": 1,
-      "reached": 1,
-      "calltimeSec": 778
-    },
-    {
       "date": "2026-02-19",
       "dials": 24,
       "reached": 17,
@@ -90,24 +84,12 @@
     },
     {
       "date": "2026-02-23",
-      "dials": 49,
-      "reached": 37,
-      "calltimeSec": 7396
+      "dials": 52,
+      "reached": 40,
+      "calltimeSec": 9721
     }
   ],
   "sellerDaily": [
-    {
-      "seller": "Walid Karimi",
-      "date": "2026-02-18",
-      "dials": 1,
-      "reached": 1,
-      "calltimeSec": 778,
-      "outboundCalls": 1,
-      "inboundCalls": 0,
-      "answeredCalls": 1,
-      "totalDurationSec": 778,
-      "longestCallSec": 778
-    },
     {
       "seller": "Nele Pfau",
       "date": "2026-02-19",
@@ -171,15 +153,15 @@
     {
       "seller": "Walid Karimi",
       "date": "2026-02-23",
-      "dials": 10,
-      "reached": 9,
-      "calltimeSec": 1072,
-      "outboundCalls": 10,
+      "dials": 13,
+      "reached": 12,
+      "calltimeSec": 3397,
+      "outboundCalls": 13,
       "inboundCalls": 0,
-      "answeredCalls": 9,
-      "totalDurationSec": 1072,
-      "longestCallSec": 458
+      "answeredCalls": 12,
+      "totalDurationSec": 3397,
+      "longestCallSec": 1610
     }
   ],
-  "fetchedAt": "2026-04-19T15:30:23.954Z"
+  "fetchedAt": "2026-04-19T18:35:32.339Z"
 }
