@@ -3,17 +3,17 @@
     {
       "name": "Walid Karimi",
       "userId": 1093878,
-      "outboundCalls": 19,
+      "outboundCalls": 18,
       "inboundCalls": 0,
       "answeredCalls": 17,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 5737,
-      "avgDurationSec": 337,
+      "totalDurationSec": 5745,
+      "avgDurationSec": 338,
       "longestCallSec": 1610,
       "reachabilityPct": 0,
-      "callsPerDay": 3.8,
-      "totalCalls": 19,
+      "callsPerDay": 3.6,
+      "totalCalls": 18,
       "firstCallDate": "2026-02-19",
       "lastCallDate": "2026-02-23"
     },
@@ -72,9 +72,9 @@
   "daily": [
     {
       "date": "2026-02-19",
-      "dials": 24,
-      "reached": 17,
-      "calltimeSec": 3281
+      "dials": 22,
+      "reached": 16,
+      "calltimeSec": 3260
     },
     {
       "date": "2026-02-20",
@@ -84,9 +84,9 @@
     },
     {
       "date": "2026-02-23",
-      "dials": 52,
-      "reached": 40,
-      "calltimeSec": 9721
+      "dials": 53,
+      "reached": 41,
+      "calltimeSec": 9750
     }
   ],
   "sellerDaily": [
@@ -105,13 +105,13 @@
     {
       "seller": "Walid Karimi",
       "date": "2026-02-19",
-      "dials": 5,
-      "reached": 4,
-      "calltimeSec": 1400,
-      "outboundCalls": 5,
+      "dials": 3,
+      "reached": 3,
+      "calltimeSec": 1379,
+      "outboundCalls": 3,
       "inboundCalls": 0,
-      "answeredCalls": 4,
-      "totalDurationSec": 1400,
+      "answeredCalls": 3,
+      "totalDurationSec": 1379,
       "longestCallSec": 1026
     },
     {
@@ -153,15 +153,15 @@
     {
       "seller": "Walid Karimi",
       "date": "2026-02-23",
-      "dials": 13,
-      "reached": 12,
-      "calltimeSec": 3397,
-      "outboundCalls": 13,
+      "dials": 14,
+      "reached": 13,
+      "calltimeSec": 3426,
+      "outboundCalls": 14,
       "inboundCalls": 0,
-      "answeredCalls": 12,
-      "totalDurationSec": 3397,
+      "answeredCalls": 13,
+      "totalDurationSec": 3426,
       "longestCallSec": 1610
     }
   ],
-  "fetchedAt": "2026-04-20T05:32:33.971Z"
+  "fetchedAt": "2026-04-20T07:51:52.325Z"
 }
