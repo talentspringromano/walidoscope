@@ -3,18 +3,18 @@
     {
       "name": "Walid Karimi",
       "userId": 1093878,
-      "outboundCalls": 28,
-      "inboundCalls": 1,
-      "answeredCalls": 25,
+      "outboundCalls": 22,
+      "inboundCalls": 2,
+      "answeredCalls": 20,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 5333,
-      "avgDurationSec": 213,
+      "totalDurationSec": 5741,
+      "avgDurationSec": 287,
       "longestCallSec": 1668,
       "reachabilityPct": 100,
-      "callsPerDay": 9.7,
-      "totalCalls": 29,
-      "firstCallDate": "2026-02-23",
+      "callsPerDay": 8,
+      "totalCalls": 24,
+      "firstCallDate": "2026-02-24",
       "lastCallDate": "2026-02-26"
     },
     {
@@ -71,12 +71,6 @@
   ],
   "daily": [
     {
-      "date": "2026-02-23",
-      "dials": 9,
-      "reached": 9,
-      "calltimeSec": 992
-    },
-    {
       "date": "2026-02-24",
       "dials": 77,
       "reached": 56,
@@ -90,24 +84,12 @@
     },
     {
       "date": "2026-02-26",
-      "dials": 40,
-      "reached": 27,
-      "calltimeSec": 3682
+      "dials": 43,
+      "reached": 30,
+      "calltimeSec": 4550
     }
   ],
   "sellerDaily": [
-    {
-      "seller": "Walid Karimi",
-      "date": "2026-02-23",
-      "dials": 9,
-      "reached": 9,
-      "calltimeSec": 992,
-      "outboundCalls": 9,
-      "inboundCalls": 0,
-      "answeredCalls": 9,
-      "totalDurationSec": 992,
-      "longestCallSec": 631
-    },
     {
       "seller": "Nele Pfau",
       "date": "2026-02-24",
@@ -171,15 +153,15 @@
     {
       "seller": "Walid Karimi",
       "date": "2026-02-26",
-      "dials": 13,
-      "reached": 10,
-      "calltimeSec": 514,
-      "outboundCalls": 13,
-      "inboundCalls": 1,
-      "answeredCalls": 11,
-      "totalDurationSec": 546,
-      "longestCallSec": 179
+      "dials": 16,
+      "reached": 13,
+      "calltimeSec": 1382,
+      "outboundCalls": 16,
+      "inboundCalls": 2,
+      "answeredCalls": 15,
+      "totalDurationSec": 1946,
+      "longestCallSec": 782
     }
   ],
-  "fetchedAt": "2026-04-24T15:59:41.085Z"
+  "fetchedAt": "2026-04-24T18:38:02.379Z"
 }
