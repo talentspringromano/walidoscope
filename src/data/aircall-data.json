@@ -20,17 +20,17 @@
     {
       "name": "Nele Pfau",
       "userId": 1862427,
-      "outboundCalls": 126,
-      "inboundCalls": 9,
-      "answeredCalls": 100,
+      "outboundCalls": 132,
+      "inboundCalls": 10,
+      "answeredCalls": 107,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 18801,
-      "avgDurationSec": 188,
+      "totalDurationSec": 19457,
+      "avgDurationSec": 182,
       "longestCallSec": 1740,
       "reachabilityPct": 100,
-      "callsPerDay": 22.5,
-      "totalCalls": 135,
+      "callsPerDay": 23.7,
+      "totalCalls": 142,
       "firstCallDate": "2026-02-26",
       "lastCallDate": "2026-03-03"
     },
@@ -72,9 +72,9 @@
   "daily": [
     {
       "date": "2026-02-26",
-      "dials": 44,
-      "reached": 31,
-      "calltimeSec": 4573
+      "dials": 40,
+      "reached": 29,
+      "calltimeSec": 4531
     },
     {
       "date": "2026-02-27",
@@ -90,22 +90,22 @@
     },
     {
       "date": "2026-03-03",
-      "dials": 33,
-      "reached": 24,
-      "calltimeSec": 5685
+      "dials": 43,
+      "reached": 32,
+      "calltimeSec": 6321
     }
   ],
   "sellerDaily": [
     {
       "seller": "Nele Pfau",
       "date": "2026-02-26",
-      "dials": 27,
-      "reached": 17,
-      "calltimeSec": 3168,
-      "outboundCalls": 27,
+      "dials": 23,
+      "reached": 15,
+      "calltimeSec": 3126,
+      "outboundCalls": 23,
       "inboundCalls": 3,
-      "answeredCalls": 20,
-      "totalDurationSec": 4190,
+      "answeredCalls": 18,
+      "totalDurationSec": 4148,
       "longestCallSec": 1740
     },
     {
@@ -171,13 +171,13 @@
     {
       "seller": "Nele Pfau",
       "date": "2026-03-03",
-      "dials": 32,
-      "reached": 23,
-      "calltimeSec": 4130,
-      "outboundCalls": 32,
-      "inboundCalls": 1,
-      "answeredCalls": 24,
-      "totalDurationSec": 4348,
+      "dials": 42,
+      "reached": 31,
+      "calltimeSec": 4766,
+      "outboundCalls": 42,
+      "inboundCalls": 2,
+      "answeredCalls": 33,
+      "totalDurationSec": 5046,
       "longestCallSec": 1078
     },
     {
@@ -193,5 +193,5 @@
       "longestCallSec": 1555
     }
   ],
-  "fetchedAt": "2026-04-27T05:45:30.614Z"
+  "fetchedAt": "2026-04-27T08:05:53.774Z"
 }
