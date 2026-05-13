@@ -54,17 +54,17 @@
     {
       "name": "Johannes Schultz",
       "userId": 1888157,
-      "outboundCalls": 53,
+      "outboundCalls": 54,
       "inboundCalls": 1,
-      "answeredCalls": 46,
+      "answeredCalls": 47,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 5677,
-      "avgDurationSec": 123,
+      "totalDurationSec": 5754,
+      "avgDurationSec": 122,
       "longestCallSec": 1046,
       "reachabilityPct": 100,
-      "callsPerDay": 54,
-      "totalCalls": 54,
+      "callsPerDay": 55,
+      "totalCalls": 55,
       "firstCallDate": "2026-03-16",
       "lastCallDate": "2026-03-17"
     }
@@ -90,9 +90,9 @@
     },
     {
       "date": "2026-03-17",
-      "dials": 111,
-      "reached": 87,
-      "calltimeSec": 14434
+      "dials": 112,
+      "reached": 88,
+      "calltimeSec": 14511
     }
   ],
   "sellerDaily": [
@@ -183,13 +183,13 @@
     {
       "seller": "Johannes Schultz",
       "date": "2026-03-17",
-      "dials": 48,
-      "reached": 40,
-      "calltimeSec": 4688,
-      "outboundCalls": 48,
+      "dials": 49,
+      "reached": 41,
+      "calltimeSec": 4765,
+      "outboundCalls": 49,
       "inboundCalls": 1,
-      "answeredCalls": 41,
-      "totalDurationSec": 4867,
+      "answeredCalls": 42,
+      "totalDurationSec": 4944,
       "longestCallSec": 1046
     },
     {
@@ -217,5 +217,5 @@
       "longestCallSec": 674
     }
   ],
-  "fetchedAt": "2026-05-12T22:04:35.989Z"
+  "fetchedAt": "2026-05-13T02:10:03.444Z"
 }
