@@ -20,19 +20,19 @@
     {
       "name": "Nele Pfau",
       "userId": 1862427,
-      "outboundCalls": 1735,
-      "inboundCalls": 37,
-      "answeredCalls": 1290,
+      "outboundCalls": 1666,
+      "inboundCalls": 36,
+      "answeredCalls": 1245,
       "missedCalls": 1,
       "voicemailCalls": 0,
-      "totalDurationSec": 324530,
-      "avgDurationSec": 252,
+      "totalDurationSec": 301063,
+      "avgDurationSec": 242,
       "longestCallSec": 3540,
       "reachabilityPct": 97,
-      "callsPerDay": 29.5,
-      "totalCalls": 1772,
+      "callsPerDay": 29.3,
+      "totalCalls": 1702,
       "firstCallDate": "2026-03-29",
-      "lastCallDate": "2026-05-27"
+      "lastCallDate": "2026-05-26"
     },
     {
       "name": "Bastian Wuske",
@@ -294,15 +294,9 @@
     },
     {
       "date": "2026-05-26",
-      "dials": 22,
-      "reached": 16,
-      "calltimeSec": 11412
-    },
-    {
-      "date": "2026-05-27",
-      "dials": 62,
-      "reached": 40,
-      "calltimeSec": 17324
+      "dials": 15,
+      "reached": 12,
+      "calltimeSec": 6379
     }
   ],
   "sellerDaily": [
@@ -1881,13 +1875,13 @@
     {
       "seller": "Nele Pfau",
       "date": "2026-05-26",
-      "dials": 21,
-      "reached": 15,
-      "calltimeSec": 11391,
-      "outboundCalls": 21,
-      "inboundCalls": 1,
-      "answeredCalls": 16,
-      "totalDurationSec": 12501,
+      "dials": 14,
+      "reached": 11,
+      "calltimeSec": 6358,
+      "outboundCalls": 14,
+      "inboundCalls": 0,
+      "answeredCalls": 11,
+      "totalDurationSec": 6358,
       "longestCallSec": 3540
     },
     {
@@ -1901,19 +1895,7 @@
       "answeredCalls": 1,
       "totalDurationSec": 21,
       "longestCallSec": 21
-    },
-    {
-      "seller": "Nele Pfau",
-      "date": "2026-05-27",
-      "dials": 62,
-      "reached": 40,
-      "calltimeSec": 17324,
-      "outboundCalls": 62,
-      "inboundCalls": 0,
-      "answeredCalls": 40,
-      "totalDurationSec": 17324,
-      "longestCallSec": 2222
     }
   ],
-  "fetchedAt": "2026-05-28T02:15:25.007Z"
+  "fetchedAt": "2026-05-28T06:51:52.710Z"
 }
