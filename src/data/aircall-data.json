@@ -3,34 +3,34 @@
     {
       "name": "Walid Karimi",
       "userId": 1093878,
-      "outboundCalls": 234,
+      "outboundCalls": 237,
       "inboundCalls": 31,
-      "answeredCalls": 212,
+      "answeredCalls": 215,
       "missedCalls": 1,
       "voicemailCalls": 0,
-      "totalDurationSec": 48375,
-      "avgDurationSec": 228,
+      "totalDurationSec": 48754,
+      "avgDurationSec": 227,
       "longestCallSec": 1636,
       "reachabilityPct": 97,
-      "callsPerDay": 4.6,
-      "totalCalls": 265,
+      "callsPerDay": 4.5,
+      "totalCalls": 268,
       "firstCallDate": "2026-04-13",
-      "lastCallDate": "2026-06-09"
+      "lastCallDate": "2026-06-10"
     },
     {
       "name": "Nele Pfau",
       "userId": 1862427,
-      "outboundCalls": 2368,
-      "inboundCalls": 51,
-      "answeredCalls": 1784,
+      "outboundCalls": 2461,
+      "inboundCalls": 54,
+      "answeredCalls": 1845,
       "missedCalls": 1,
       "voicemailCalls": 0,
-      "totalDurationSec": 390042,
+      "totalDurationSec": 403653,
       "avgDurationSec": 219,
       "longestCallSec": 3540,
       "reachabilityPct": 98,
-      "callsPerDay": 41.7,
-      "totalCalls": 2419,
+      "callsPerDay": 42.6,
+      "totalCalls": 2515,
       "firstCallDate": "2026-04-13",
       "lastCallDate": "2026-06-10"
     },
@@ -54,19 +54,19 @@
     {
       "name": "Johannes Schultz",
       "userId": 1888157,
-      "outboundCalls": 2486,
-      "inboundCalls": 85,
-      "answeredCalls": 1965,
+      "outboundCalls": 2578,
+      "inboundCalls": 89,
+      "answeredCalls": 2034,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 346230,
-      "avgDurationSec": 176,
+      "totalDurationSec": 352525,
+      "avgDurationSec": 173,
       "longestCallSec": 14500,
       "reachabilityPct": 100,
-      "callsPerDay": 43.6,
-      "totalCalls": 2571,
+      "callsPerDay": 44.5,
+      "totalCalls": 2667,
       "firstCallDate": "2026-04-13",
-      "lastCallDate": "2026-06-10"
+      "lastCallDate": "2026-06-11"
     }
   ],
   "daily": [
@@ -306,9 +306,15 @@
     },
     {
       "date": "2026-06-10",
-      "dials": 32,
-      "reached": 17,
-      "calltimeSec": 548
+      "dials": 218,
+      "reached": 141,
+      "calltimeSec": 16075
+    },
+    {
+      "date": "2026-06-11",
+      "dials": 2,
+      "reached": 2,
+      "calltimeSec": 146
     }
   ],
   "sellerDaily": [
@@ -1767,27 +1773,51 @@
     {
       "seller": "Johannes Schultz",
       "date": "2026-06-10",
-      "dials": 21,
-      "reached": 10,
-      "calltimeSec": 448,
-      "outboundCalls": 21,
-      "inboundCalls": 1,
-      "answeredCalls": 11,
-      "totalDurationSec": 1253,
-      "longestCallSec": 805
+      "dials": 111,
+      "reached": 73,
+      "calltimeSec": 6324,
+      "outboundCalls": 111,
+      "inboundCalls": 5,
+      "answeredCalls": 78,
+      "totalDurationSec": 7402,
+      "longestCallSec": 834
     },
     {
       "seller": "Nele Pfau",
       "date": "2026-06-10",
-      "dials": 11,
-      "reached": 7,
-      "calltimeSec": 100,
-      "outboundCalls": 11,
+      "dials": 104,
+      "reached": 65,
+      "calltimeSec": 9372,
+      "outboundCalls": 104,
+      "inboundCalls": 3,
+      "answeredCalls": 68,
+      "totalDurationSec": 13711,
+      "longestCallSec": 2443
+    },
+    {
+      "seller": "Walid Karimi",
+      "date": "2026-06-10",
+      "dials": 3,
+      "reached": 3,
+      "calltimeSec": 379,
+      "outboundCalls": 3,
       "inboundCalls": 0,
-      "answeredCalls": 7,
-      "totalDurationSec": 100,
-      "longestCallSec": 29
+      "answeredCalls": 3,
+      "totalDurationSec": 379,
+      "longestCallSec": 279
+    },
+    {
+      "seller": "Johannes Schultz",
+      "date": "2026-06-11",
+      "dials": 2,
+      "reached": 2,
+      "calltimeSec": 146,
+      "outboundCalls": 2,
+      "inboundCalls": 0,
+      "answeredCalls": 2,
+      "totalDurationSec": 146,
+      "longestCallSec": 101
     }
   ],
-  "fetchedAt": "2026-06-11T02:49:55.135Z"
+  "fetchedAt": "2026-06-11T07:31:03.520Z"
 }
