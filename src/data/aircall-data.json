@@ -37,17 +37,17 @@
     {
       "name": "Bastian Wuske",
       "userId": 1875176,
-      "outboundCalls": 225,
+      "outboundCalls": 227,
       "inboundCalls": 9,
-      "answeredCalls": 157,
+      "answeredCalls": 159,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 22433,
-      "avgDurationSec": 143,
+      "totalDurationSec": 22513,
+      "avgDurationSec": 142,
       "longestCallSec": 1771,
       "reachabilityPct": 100,
-      "callsPerDay": 29.3,
-      "totalCalls": 234,
+      "callsPerDay": 29.5,
+      "totalCalls": 236,
       "firstCallDate": "2026-04-22",
       "lastCallDate": "2026-04-29"
     },
@@ -102,9 +102,9 @@
     },
     {
       "date": "2026-04-29",
-      "dials": 72,
-      "reached": 50,
-      "calltimeSec": 14549
+      "dials": 74,
+      "reached": 52,
+      "calltimeSec": 14629
     }
   ],
   "sellerDaily": [
@@ -279,13 +279,13 @@
     {
       "seller": "Bastian Wuske",
       "date": "2026-04-29",
-      "dials": 47,
-      "reached": 29,
-      "calltimeSec": 3435,
-      "outboundCalls": 47,
+      "dials": 49,
+      "reached": 31,
+      "calltimeSec": 3515,
+      "outboundCalls": 49,
       "inboundCalls": 1,
-      "answeredCalls": 30,
-      "totalDurationSec": 3561,
+      "answeredCalls": 32,
+      "totalDurationSec": 3641,
       "longestCallSec": 1082
     },
     {
@@ -313,5 +313,5 @@
       "longestCallSec": 1636
     }
   ],
-  "fetchedAt": "2026-06-21T02:45:13.984Z"
+  "fetchedAt": "2026-06-21T07:26:47.989Z"
 }
