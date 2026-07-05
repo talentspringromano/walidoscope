@@ -20,17 +20,17 @@
     {
       "name": "Nele Pfau",
       "userId": 1862427,
-      "outboundCalls": 303,
+      "outboundCalls": 304,
       "inboundCalls": 5,
-      "answeredCalls": 226,
+      "answeredCalls": 227,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 57280,
+      "totalDurationSec": 57381,
       "avgDurationSec": 253,
       "longestCallSec": 2484,
       "reachabilityPct": 100,
-      "callsPerDay": 28,
-      "totalCalls": 308,
+      "callsPerDay": 25.8,
+      "totalCalls": 309,
       "firstCallDate": "2026-05-07",
       "lastCallDate": "2026-05-18"
     },
@@ -108,9 +108,9 @@
     },
     {
       "date": "2026-05-18",
-      "dials": 9,
-      "reached": 6,
-      "calltimeSec": 2408
+      "dials": 10,
+      "reached": 7,
+      "calltimeSec": 2509
     }
   ],
   "sellerDaily": [
@@ -309,15 +309,15 @@
     {
       "seller": "Nele Pfau",
       "date": "2026-05-18",
-      "dials": 9,
-      "reached": 6,
-      "calltimeSec": 2408,
-      "outboundCalls": 9,
+      "dials": 10,
+      "reached": 7,
+      "calltimeSec": 2509,
+      "outboundCalls": 10,
       "inboundCalls": 0,
-      "answeredCalls": 6,
-      "totalDurationSec": 2408,
+      "answeredCalls": 7,
+      "totalDurationSec": 2509,
       "longestCallSec": 2070
     }
   ],
-  "fetchedAt": "2026-07-05T16:01:09.491Z"
+  "fetchedAt": "2026-07-05T19:02:31.916Z"
 }
