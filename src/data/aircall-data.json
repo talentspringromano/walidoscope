@@ -20,18 +20,18 @@
     {
       "name": "Nele Pfau",
       "userId": 1862427,
-      "outboundCalls": 2234,
-      "inboundCalls": 73,
-      "answeredCalls": 1766,
+      "outboundCalls": 2212,
+      "inboundCalls": 70,
+      "answeredCalls": 1746,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 381468,
-      "avgDurationSec": 216,
+      "totalDurationSec": 380367,
+      "avgDurationSec": 218,
       "longestCallSec": 4089,
       "reachabilityPct": 100,
-      "callsPerDay": 38.5,
-      "totalCalls": 2307,
-      "firstCallDate": "2026-06-04",
+      "callsPerDay": 38,
+      "totalCalls": 2282,
+      "firstCallDate": "2026-06-05",
       "lastCallDate": "2026-08-03"
     },
     {
@@ -70,12 +70,6 @@
     }
   ],
   "daily": [
-    {
-      "date": "2026-06-04",
-      "dials": 36,
-      "reached": 27,
-      "calltimeSec": 3140
-    },
     {
       "date": "2026-06-05",
       "dials": 73,
@@ -324,24 +318,12 @@
     },
     {
       "date": "2026-08-03",
-      "dials": 47,
-      "reached": 40,
-      "calltimeSec": 6747
+      "dials": 61,
+      "reached": 50,
+      "calltimeSec": 8902
     }
   ],
   "sellerDaily": [
-    {
-      "seller": "Nele Pfau",
-      "date": "2026-06-04",
-      "dials": 36,
-      "reached": 27,
-      "calltimeSec": 3140,
-      "outboundCalls": 36,
-      "inboundCalls": 4,
-      "answeredCalls": 31,
-      "totalDurationSec": 4012,
-      "longestCallSec": 1439
-    },
     {
       "seller": "Nele Pfau",
       "date": "2026-06-05",
@@ -1113,15 +1095,15 @@
     {
       "seller": "Nele Pfau",
       "date": "2026-08-03",
-      "dials": 47,
-      "reached": 40,
-      "calltimeSec": 6747,
-      "outboundCalls": 47,
-      "inboundCalls": 1,
-      "answeredCalls": 41,
-      "totalDurationSec": 7008,
-      "longestCallSec": 989
+      "dials": 61,
+      "reached": 50,
+      "calltimeSec": 8902,
+      "outboundCalls": 61,
+      "inboundCalls": 2,
+      "answeredCalls": 52,
+      "totalDurationSec": 9919,
+      "longestCallSec": 1103
     }
   ],
-  "fetchedAt": "2026-08-03T12:25:49.315Z"
+  "fetchedAt": "2026-08-03T17:18:03.005Z"
 }
