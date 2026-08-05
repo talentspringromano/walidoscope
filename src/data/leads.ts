@@ -115727,7 +115727,7 @@ export const leads: Lead[] = [
   {
     "id": 3734,
     "name": "Manuela Marienfeld",
-    "leadStatus": "Vertriebsqualifiziert",
+    "leadStatus": "Beratungsgespräch gebucht",
     "verlustgrund": "",
     "adId": "",
     "adName": "",
@@ -115749,7 +115749,7 @@ export const leads: Lead[] = [
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": "High Touch",
-    "lastModified": "31.7.2026 13:09",
+    "lastModified": "5.8.2026 00:04",
     "angebotsprozessDatum": "20.7.2026 07:24",
     "vertriebsqualifiziertAm": "21.7.2026 14:14",
     "gewonnenAm": "",
