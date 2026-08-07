@@ -3,34 +3,34 @@
     {
       "name": "Walid Karimi",
       "userId": 1093878,
-      "outboundCalls": 10,
+      "outboundCalls": 14,
       "inboundCalls": 1,
-      "answeredCalls": 8,
+      "answeredCalls": 11,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 606,
-      "avgDurationSec": 76,
-      "longestCallSec": 279,
+      "totalDurationSec": 1565,
+      "avgDurationSec": 142,
+      "longestCallSec": 503,
       "reachabilityPct": 100,
-      "callsPerDay": 3.7,
-      "totalCalls": 11,
+      "callsPerDay": 5,
+      "totalCalls": 15,
       "firstCallDate": "2026-06-09",
-      "lastCallDate": "2026-06-11"
+      "lastCallDate": "2026-06-12"
     },
     {
       "name": "Nele Pfau",
       "userId": 1862427,
-      "outboundCalls": 275,
-      "inboundCalls": 8,
-      "answeredCalls": 195,
+      "outboundCalls": 262,
+      "inboundCalls": 9,
+      "answeredCalls": 189,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 38285,
-      "avgDurationSec": 196,
-      "longestCallSec": 2581,
+      "totalDurationSec": 41096,
+      "avgDurationSec": 217,
+      "longestCallSec": 2984,
       "reachabilityPct": 100,
-      "callsPerDay": 70.8,
-      "totalCalls": 283,
+      "callsPerDay": 67.8,
+      "totalCalls": 271,
       "firstCallDate": "2026-06-08",
       "lastCallDate": "2026-06-12"
     },
@@ -72,9 +72,9 @@
   "daily": [
     {
       "date": "2026-06-08",
-      "dials": 76,
-      "reached": 56,
-      "calltimeSec": 8599
+      "dials": 46,
+      "reached": 34,
+      "calltimeSec": 5110
     },
     {
       "date": "2026-06-09",
@@ -96,22 +96,22 @@
     },
     {
       "date": "2026-06-12",
-      "dials": 1,
-      "reached": 1,
-      "calltimeSec": 505
+      "dials": 22,
+      "reached": 19,
+      "calltimeSec": 5372
     }
   ],
   "sellerDaily": [
     {
       "seller": "Nele Pfau",
       "date": "2026-06-08",
-      "dials": 76,
-      "reached": 56,
-      "calltimeSec": 8599,
-      "outboundCalls": 76,
+      "dials": 46,
+      "reached": 34,
+      "calltimeSec": 5110,
+      "outboundCalls": 46,
       "inboundCalls": 0,
-      "answeredCalls": 56,
-      "totalDurationSec": 8599,
+      "answeredCalls": 34,
+      "totalDurationSec": 5110,
       "longestCallSec": 2482
     },
     {
@@ -189,15 +189,27 @@
     {
       "seller": "Nele Pfau",
       "date": "2026-06-12",
-      "dials": 1,
-      "reached": 1,
-      "calltimeSec": 505,
-      "outboundCalls": 1,
+      "dials": 18,
+      "reached": 16,
+      "calltimeSec": 4413,
+      "outboundCalls": 18,
+      "inboundCalls": 1,
+      "answeredCalls": 17,
+      "totalDurationSec": 6805,
+      "longestCallSec": 2984
+    },
+    {
+      "seller": "Walid Karimi",
+      "date": "2026-06-12",
+      "dials": 4,
+      "reached": 3,
+      "calltimeSec": 959,
+      "outboundCalls": 4,
       "inboundCalls": 0,
-      "answeredCalls": 1,
-      "totalDurationSec": 505,
-      "longestCallSec": 505
+      "answeredCalls": 3,
+      "totalDurationSec": 959,
+      "longestCallSec": 503
     }
   ],
-  "fetchedAt": "2026-08-07T09:51:56.361Z"
+  "fetchedAt": "2026-08-07T12:40:27.659Z"
 }
