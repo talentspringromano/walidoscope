@@ -80378,7 +80378,7 @@ export const leads: Lead[] = [
     "anrufversuch": "3x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "High Touch",
-    "lastModified": "11.8.2026 07:49",
+    "lastModified": "17.8.2026 11:01",
     "angebotsprozessDatum": "14.7.2026 12:28",
     "vertriebsqualifiziertAm": "15.6.2026 12:30",
     "gewonnenAm": "",
@@ -83943,7 +83943,7 @@ export const leads: Lead[] = [
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": "High Touch",
-    "lastModified": "14.8.2026 11:37",
+    "lastModified": "17.8.2026 11:15",
     "angebotsprozessDatum": "16.6.2026 13:05",
     "vertriebsqualifiziertAm": "3.8.2026 16:25",
     "gewonnenAm": "",
@@ -90648,7 +90648,7 @@ export const leads: Lead[] = [
   {
     "id": 2925,
     "name": "Claudia Bene",
-    "leadStatus": "Vertriebsqualifiziert",
+    "leadStatus": "Verloren",
     "verlustgrund": "",
     "adId": "",
     "adName": "",
@@ -90670,9 +90670,9 @@ export const leads: Lead[] = [
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": "High Touch",
-    "lastModified": "15.7.2026 11:35",
-    "angebotsprozessDatum": "26.6.2026 08:37",
-    "vertriebsqualifiziertAm": "26.6.2026 08:34",
+    "lastModified": "17.8.2026 12:37",
+    "angebotsprozessDatum": "17.8.2026 12:37",
+    "vertriebsqualifiziertAm": "17.8.2026 12:37",
     "gewonnenAm": "",
     "zustaendigeStelle": "Keine Angabe"
   },
@@ -92003,7 +92003,7 @@ export const leads: Lead[] = [
     "anrufversuch": "6x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "14.8.2026 14:18",
+    "lastModified": "17.8.2026 11:05",
     "angebotsprozessDatum": "26.6.2026 15:52",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
@@ -111170,7 +111170,7 @@ export const leads: Lead[] = [
   {
     "id": 3587,
     "name": "Vivien Wojciechowski",
-    "leadStatus": "Vertriebsqualifiziert",
+    "leadStatus": "Gewonnen",
     "verlustgrund": "",
     "adId": "",
     "adName": "",
@@ -111188,14 +111188,14 @@ export const leads: Lead[] = [
     "angebotVerschicken": false,
     "prozessStarten": "Angebot wurde erstellt",
     "terminBeimAmtCheck": false,
-    "bgVerschickt": "",
+    "bgVerschickt": "true",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": "High Touch",
-    "lastModified": "17.8.2026 07:27",
+    "lastModified": "17.8.2026 12:53",
     "angebotsprozessDatum": "16.7.2026 09:26",
     "vertriebsqualifiziertAm": "10.7.2026 11:53",
-    "gewonnenAm": "",
+    "gewonnenAm": "17.8.2026 10:59",
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
@@ -113641,7 +113641,7 @@ export const leads: Lead[] = [
     "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "High Touch",
-    "lastModified": "12.8.2026 13:58",
+    "lastModified": "17.8.2026 11:18",
     "angebotsprozessDatum": "28.7.2026 14:29",
     "vertriebsqualifiziertAm": "3.8.2026 11:24",
     "gewonnenAm": "",
@@ -119934,7 +119934,7 @@ export const leads: Lead[] = [
     "anrufversuch": "",
     "kennenlernDatum": "",
     "betreuungsart": "High Touch",
-    "lastModified": "13.8.2026 11:28",
+    "lastModified": "17.8.2026 11:13",
     "angebotsprozessDatum": "4.8.2026 08:08",
     "vertriebsqualifiziertAm": "23.7.2026 10:48",
     "gewonnenAm": "",
@@ -123741,14 +123741,14 @@ export const leads: Lead[] = [
     "utmTitle": "",
     "hotLead": false,
     "angebotVerschicken": false,
-    "prozessStarten": "Noch kein Angebot erstellt",
+    "prozessStarten": "Angebot wurde erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
     "anrufversuch": "10x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "High Touch",
-    "lastModified": "13.8.2026 12:15",
-    "angebotsprozessDatum": "26.7.2026 22:10",
+    "lastModified": "17.8.2026 12:36",
+    "angebotsprozessDatum": "17.8.2026 12:36",
     "vertriebsqualifiziertAm": "13.8.2026 11:27",
     "gewonnenAm": "",
     "zustaendigeStelle": "Die Agentur für Arbeit"
@@ -123933,7 +123933,7 @@ export const leads: Lead[] = [
     "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "High Touch",
-    "lastModified": "13.8.2026 13:06",
+    "lastModified": "17.8.2026 12:10",
     "angebotsprozessDatum": "27.7.2026 09:19",
     "vertriebsqualifiziertAm": "13.8.2026 12:01",
     "gewonnenAm": "",
@@ -126351,7 +126351,7 @@ export const leads: Lead[] = [
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": "High Touch",
-    "lastModified": "4.8.2026 14:12",
+    "lastModified": "17.8.2026 12:16",
     "angebotsprozessDatum": "29.7.2026 13:12",
     "vertriebsqualifiziertAm": "29.7.2026 13:12",
     "gewonnenAm": "",
@@ -128539,7 +128539,7 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "",
     "alter": "Keine Angabe",
     "vorerfahrung": "",
-    "vertriebler": "",
+    "vertriebler": "Nele Pfau",
     "createdOn": "1.8.2026 09:41",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
@@ -128552,7 +128552,7 @@ export const leads: Lead[] = [
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "1.8.2026 09:41",
+    "lastModified": "17.8.2026 13:11",
     "angebotsprozessDatum": "1.8.2026 09:41",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
@@ -131590,7 +131590,7 @@ export const leads: Lead[] = [
     "anrufversuch": "4x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "14.8.2026 11:58",
+    "lastModified": "17.8.2026 12:25",
     "angebotsprozessDatum": "3.8.2026 19:59",
     "vertriebsqualifiziertAm": "10.8.2026 09:24",
     "gewonnenAm": "",
@@ -133149,37 +133149,6 @@ export const leads: Lead[] = [
   {
     "id": 4296,
     "name": "Tetiana Danchuk",
-    "leadStatus": "Neuer Lead",
-    "verlustgrund": "",
-    "adId": "",
-    "adName": "",
-    "platform": "Kursnet",
-    "arbeitslosGemeldet": "",
-    "deutschkenntnisse": "",
-    "alter": "Keine Angabe",
-    "vorerfahrung": "",
-    "vertriebler": "",
-    "createdOn": "6.8.2026 17:28",
-    "terminBeimAmt": "",
-    "closingWahrscheinlichkeit": "",
-    "utmTitle": "",
-    "hotLead": false,
-    "angebotVerschicken": false,
-    "prozessStarten": "Noch kein Angebot erstellt",
-    "terminBeimAmtCheck": false,
-    "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
-    "kennenlernDatum": "",
-    "betreuungsart": "",
-    "lastModified": "6.8.2026 17:28",
-    "angebotsprozessDatum": "6.8.2026 17:28",
-    "vertriebsqualifiziertAm": "",
-    "gewonnenAm": "",
-    "zustaendigeStelle": "Keine Angabe"
-  },
-  {
-    "id": 4297,
-    "name": "Tetiana Danchuk",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
     "adId": "",
@@ -133209,7 +133178,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4298,
+    "id": 4297,
     "name": "Antje Pollmer",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -133240,7 +133209,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4299,
+    "id": 4298,
     "name": "Christos Iltsidis",
     "leadStatus": "Verloren",
     "verlustgrund": "kein Grund genannt/ genervt",
@@ -133271,7 +133240,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4300,
+    "id": 4299,
     "name": "Yvonne Willemsen",
     "leadStatus": "Verloren",
     "verlustgrund": "Jobcenter",
@@ -133302,7 +133271,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4301,
+    "id": 4300,
     "name": "Azadeh Safaei Dolat Abadi",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -133333,7 +133302,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4302,
+    "id": 4301,
     "name": "Oussama Abida",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -133364,7 +133333,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4303,
+    "id": 4302,
     "name": "Gedeon Mampunga",
     "leadStatus": "Verloren",
     "verlustgrund": "Angestellt",
@@ -133395,7 +133364,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4304,
+    "id": 4303,
     "name": "Shiksha Setia",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -133426,7 +133395,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4305,
+    "id": 4304,
     "name": "Deborah Valli",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -133457,7 +133426,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4306,
+    "id": 4305,
     "name": "Michael Morawski",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -133488,7 +133457,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4307,
+    "id": 4306,
     "name": "Katrin Illhardt",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -133519,7 +133488,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4308,
+    "id": 4307,
     "name": "Er Imane",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -133550,7 +133519,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4309,
+    "id": 4308,
     "name": "Elif Kanmaz",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -133581,7 +133550,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4310,
+    "id": 4309,
     "name": "Mohamed Zouhiri Bayba",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -133612,7 +133581,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4311,
+    "id": 4310,
     "name": "Saskia Kopp",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -133643,7 +133612,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4312,
+    "id": 4311,
     "name": "Hanaa Oukouis",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -133674,7 +133643,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4313,
+    "id": 4312,
     "name": "Meitiara Effendi",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -133705,7 +133674,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4314,
+    "id": 4313,
     "name": "Katharina Haude",
     "leadStatus": "Beratungsgespräch gebucht",
     "verlustgrund": "",
@@ -133736,7 +133705,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4315,
+    "id": 4314,
     "name": "Natas Mavric",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -133767,7 +133736,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4316,
+    "id": 4315,
     "name": "Rozelya Candan",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -133798,7 +133767,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4317,
+    "id": 4316,
     "name": "Niclas Matthia",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -133829,7 +133798,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4318,
+    "id": 4317,
     "name": "Jennifer Thomas",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -133860,7 +133829,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4319,
+    "id": 4318,
     "name": "Zakaria Abouham",
     "leadStatus": "Verloren",
     "verlustgrund": "will sich auf Jobsuche konzentrieren",
@@ -133891,7 +133860,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4320,
+    "id": 4319,
     "name": "Elisabeth Ibili",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -133922,7 +133891,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4321,
+    "id": 4320,
     "name": "Angelika Krings",
     "leadStatus": "Reterminierung",
     "verlustgrund": "",
@@ -133953,7 +133922,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4322,
+    "id": 4321,
     "name": "Yasmina Zahri",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -133984,7 +133953,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4323,
+    "id": 4322,
     "name": "Narges Takalloo",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -134015,7 +133984,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4324,
+    "id": 4323,
     "name": "Jannik Franke",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -134046,7 +134015,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4325,
+    "id": 4324,
     "name": "Sabrina Klabes",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -134077,7 +134046,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4326,
+    "id": 4325,
     "name": "Patrick Freitag",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -134108,7 +134077,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4327,
+    "id": 4326,
     "name": "Zhanna Kharebina",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -134139,7 +134108,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4328,
+    "id": 4327,
     "name": "Niklas Rolwes",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -134170,7 +134139,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4329,
+    "id": 4328,
     "name": "Sabrina Butzke",
     "leadStatus": "Verloren",
     "verlustgrund": "Dublette",
@@ -134201,7 +134170,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4330,
+    "id": 4329,
     "name": "Sabrina Butzke",
     "leadStatus": "Reterminierung",
     "verlustgrund": "",
@@ -134232,7 +134201,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4331,
+    "id": 4330,
     "name": "Luisa Wolff",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -134263,7 +134232,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4332,
+    "id": 4331,
     "name": "Blerta Vishi",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -134294,7 +134263,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4333,
+    "id": 4332,
     "name": "Fatih Gale",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -134325,7 +134294,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4334,
+    "id": 4333,
     "name": "Viktoria Krutsch",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -134356,7 +134325,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4335,
+    "id": 4334,
     "name": "Sarah Körner",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -134387,7 +134356,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4336,
+    "id": 4335,
     "name": "Leon Maurice Kluck",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -134418,7 +134387,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4337,
+    "id": 4336,
     "name": "Detlef Paria",
     "leadStatus": "Verloren",
     "verlustgrund": "noch nicht gemeldet",
@@ -134449,7 +134418,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4338,
+    "id": 4337,
     "name": "Natasa Mavric",
     "leadStatus": "Verloren",
     "verlustgrund": "Dublette",
@@ -134480,7 +134449,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4339,
+    "id": 4338,
     "name": "Nina Kindermann",
     "leadStatus": "Reterminierung",
     "verlustgrund": "",
@@ -134511,7 +134480,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4340,
+    "id": 4339,
     "name": "Nur Jerad",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -134542,7 +134511,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4341,
+    "id": 4340,
     "name": "Kim-Michaela Zahraj",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -134573,7 +134542,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4342,
+    "id": 4341,
     "name": "Jessica Thurner",
     "leadStatus": "Verloren",
     "verlustgrund": "Ghosting",
@@ -134604,7 +134573,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4343,
+    "id": 4342,
     "name": "Mohammed Hamzeh",
     "leadStatus": "Reterminierung",
     "verlustgrund": "",
@@ -134635,7 +134604,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4344,
+    "id": 4343,
     "name": "Jule Djordjevic",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -134666,7 +134635,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4345,
+    "id": 4344,
     "name": "Lisa Hauser",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -134697,7 +134666,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4346,
+    "id": 4345,
     "name": "Sherin Müller",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -134728,7 +134697,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4347,
+    "id": 4346,
     "name": "Ola Naes",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -134759,7 +134728,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4348,
+    "id": 4347,
     "name": "Benan Civan",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -134783,14 +134752,14 @@ export const leads: Lead[] = [
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "17.8.2026 08:34",
+    "lastModified": "17.8.2026 10:34",
     "angebotsprozessDatum": "11.8.2026 06:35",
     "vertriebsqualifiziertAm": "11.8.2026 12:06",
     "gewonnenAm": "",
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4349,
+    "id": 4348,
     "name": "Huda Nemer",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -134821,7 +134790,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4350,
+    "id": 4349,
     "name": "Laura Laurendi",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -134852,7 +134821,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4351,
+    "id": 4350,
     "name": "Mustafa Aldaghli",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -134883,7 +134852,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4352,
+    "id": 4351,
     "name": "Betül Selim",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -134914,7 +134883,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4353,
+    "id": 4352,
     "name": "Alexander Hagen",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -134945,7 +134914,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4354,
+    "id": 4353,
     "name": "Victoria Gertler",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -134976,7 +134945,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4355,
+    "id": 4354,
     "name": "Mariya Peterson",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -135007,7 +134976,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4356,
+    "id": 4355,
     "name": "Lea Schrader",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -135038,7 +135007,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4357,
+    "id": 4356,
     "name": "Ceren Yildirim",
     "leadStatus": "Verloren",
     "verlustgrund": "Keine Rückmeldung nach 8 Kontaktversuchen",
@@ -135069,7 +135038,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4358,
+    "id": 4357,
     "name": "Zakarie Ali",
     "leadStatus": "Reterminierung",
     "verlustgrund": "",
@@ -135100,7 +135069,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4359,
+    "id": 4358,
     "name": "Elif Häfner",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -135131,7 +135100,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4360,
+    "id": 4359,
     "name": "Brayan Anato",
     "leadStatus": "Verloren",
     "verlustgrund": "will sich auf Jobsuche konzentrieren",
@@ -135162,7 +135131,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4361,
+    "id": 4360,
     "name": "Lara Schmitt",
     "leadStatus": "Verloren",
     "verlustgrund": "noch nicht gemeldet",
@@ -135193,7 +135162,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4362,
+    "id": 4361,
     "name": "Galina Starodubcev",
     "leadStatus": "Verloren",
     "verlustgrund": "will sich auf Jobsuche konzentrieren",
@@ -135224,7 +135193,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4363,
+    "id": 4362,
     "name": "Ece Peksen",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -135255,7 +135224,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4364,
+    "id": 4363,
     "name": "Dalja Wilhelm",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -135286,7 +135255,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4365,
+    "id": 4364,
     "name": "Maya Hasan",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -135317,7 +135286,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4366,
+    "id": 4365,
     "name": "Felix Scholl",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -135348,7 +135317,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4367,
+    "id": 4366,
     "name": "Bervin Mesvat",
     "leadStatus": "Reterminierung",
     "verlustgrund": "",
@@ -135379,7 +135348,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4368,
+    "id": 4367,
     "name": "Dzhamal Tamarov",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -135410,7 +135379,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4369,
+    "id": 4368,
     "name": "Nasi Paroev",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -135441,7 +135410,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4370,
+    "id": 4369,
     "name": "Clotilde Fague Kouzozop",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -135472,7 +135441,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4371,
+    "id": 4370,
     "name": "Durmus Ahmet Bugra",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -135503,7 +135472,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4372,
+    "id": 4371,
     "name": "Astrid Himmelstoss",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -135534,7 +135503,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4373,
+    "id": 4372,
     "name": "Azira Stefanova",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -135565,7 +135534,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4374,
+    "id": 4373,
     "name": "Armend Saliti",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -135596,7 +135565,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4375,
+    "id": 4374,
     "name": "Xenia Junker",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -135627,7 +135596,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4376,
+    "id": 4375,
     "name": "Sabrina Gruber",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -135658,7 +135627,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4377,
+    "id": 4376,
     "name": "Gabriela Ghita",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -135689,7 +135658,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4378,
+    "id": 4377,
     "name": "Marcel-Andre Bruns",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -135720,7 +135689,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4379,
+    "id": 4378,
     "name": "Bukurije Bajra",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -135751,7 +135720,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4380,
+    "id": 4379,
     "name": "Lena Friesen",
     "leadStatus": "Verloren",
     "verlustgrund": "zu teuer",
@@ -135782,7 +135751,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4381,
+    "id": 4380,
     "name": "Cheyenne Teschlade",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -135813,7 +135782,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4382,
+    "id": 4381,
     "name": "Vanitha Punitharajah",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -135844,7 +135813,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4383,
+    "id": 4382,
     "name": "Mandy Scharrenberg",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -135875,7 +135844,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4384,
+    "id": 4383,
     "name": "Christina Preger",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -135906,7 +135875,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4385,
+    "id": 4384,
     "name": "Lucy Blomberg",
     "leadStatus": "Kennenlerngespräch gebucht",
     "verlustgrund": "",
@@ -135937,7 +135906,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4386,
+    "id": 4385,
     "name": "Sabrina Lea Baier",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -135968,7 +135937,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4387,
+    "id": 4386,
     "name": "Galina Tulskaia",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -135999,7 +135968,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4388,
+    "id": 4387,
     "name": "Raphaela Mpouzini",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -136030,7 +135999,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4389,
+    "id": 4388,
     "name": "Puput Wiraatmaja",
     "leadStatus": "Reterminierung",
     "verlustgrund": "",
@@ -136061,7 +136030,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4390,
+    "id": 4389,
     "name": "Nelli Deis",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -136092,7 +136061,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4391,
+    "id": 4390,
     "name": "Sameena Atemerkhel",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -136123,7 +136092,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4392,
+    "id": 4391,
     "name": "Cassidy Miley Wieditz",
     "leadStatus": "Reterminierung",
     "verlustgrund": "",
@@ -136154,7 +136123,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4393,
+    "id": 4392,
     "name": "Lutz Seidel",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -136185,7 +136154,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4394,
+    "id": 4393,
     "name": "Nick Oehmigen",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -136216,7 +136185,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4395,
+    "id": 4394,
     "name": "Bjondina Hajdari",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -136247,7 +136216,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4396,
+    "id": 4395,
     "name": "Sajjad Lamouchi",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -136278,7 +136247,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4397,
+    "id": 4396,
     "name": "Oliver Kuhn",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -136309,7 +136278,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4398,
+    "id": 4397,
     "name": "Lotta Urban",
     "leadStatus": "Beratungsgespräch gebucht",
     "verlustgrund": "",
@@ -136340,7 +136309,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4399,
+    "id": 4398,
     "name": "Iven Stieg",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -136364,14 +136333,14 @@ export const leads: Lead[] = [
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "14.8.2026",
     "betreuungsart": "High Touch",
-    "lastModified": "14.8.2026 13:49",
+    "lastModified": "17.8.2026 12:15",
     "angebotsprozessDatum": "13.8.2026 13:27",
     "vertriebsqualifiziertAm": "14.8.2026 13:48",
     "gewonnenAm": "",
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4400,
+    "id": 4399,
     "name": "Claudia Choinowski",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -136402,7 +136371,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4401,
+    "id": 4400,
     "name": "Michaela Dahlhaus",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -136433,7 +136402,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4402,
+    "id": 4401,
     "name": "Steffi Schneider",
     "leadStatus": "Beratungsgespräch gebucht",
     "verlustgrund": "",
@@ -136464,7 +136433,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4403,
+    "id": 4402,
     "name": "Dominik Schurz",
     "leadStatus": "Verloren",
     "verlustgrund": "bereits anderer Kurs",
@@ -136495,7 +136464,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4404,
+    "id": 4403,
     "name": "Daya Cuba",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -136526,7 +136495,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4405,
+    "id": 4404,
     "name": "Emily Drosdowski",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -136557,7 +136526,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4406,
+    "id": 4405,
     "name": "Florian Dlugos",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -136588,9 +136557,9 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4407,
+    "id": 4406,
     "name": "Gülsüm Ucarkus",
-    "leadStatus": "Kennenlerngespräch gebucht",
+    "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
     "adId": "",
     "adName": "",
@@ -136599,27 +136568,27 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "Keine Angabe",
     "vorerfahrung": "",
-    "vertriebler": "",
+    "vertriebler": "Emelie Hell",
     "createdOn": "13.8.2026 15:39",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
     "utmTitle": "",
     "hotLead": false,
     "angebotVerschicken": false,
-    "prozessStarten": "Noch kein Angebot erstellt",
+    "prozessStarten": "Angebot wurde erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "17.8.2026",
-    "betreuungsart": "",
-    "lastModified": "13.8.2026 15:53",
-    "angebotsprozessDatum": "13.8.2026 15:39",
-    "vertriebsqualifiziertAm": "",
+    "betreuungsart": "Low Touch",
+    "lastModified": "17.8.2026 12:46",
+    "angebotsprozessDatum": "17.8.2026 12:45",
+    "vertriebsqualifiziertAm": "17.8.2026 12:45",
     "gewonnenAm": "",
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4408,
+    "id": 4407,
     "name": "Tatjana Gisi",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -136650,7 +136619,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4409,
+    "id": 4408,
     "name": "Marina Schmidt",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -136681,7 +136650,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4410,
+    "id": 4409,
     "name": "Gamela Abdalaziz",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -136712,7 +136681,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4411,
+    "id": 4410,
     "name": "Annika Baumgart",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -136743,7 +136712,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4412,
+    "id": 4411,
     "name": "Hazme Celik",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -136774,7 +136743,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4413,
+    "id": 4412,
     "name": "Beatrice Namara",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -136805,7 +136774,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4414,
+    "id": 4413,
     "name": "Johannes Kahrl",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -136836,7 +136805,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4415,
+    "id": 4414,
     "name": "Snez. Snezana",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -136867,7 +136836,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4416,
+    "id": 4415,
     "name": "Sami Arekona",
     "leadStatus": "Verloren",
     "verlustgrund": "Kein Interesse an HR/Payroll",
@@ -136898,7 +136867,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4417,
+    "id": 4416,
     "name": "Szoenyi Maura",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -136929,7 +136898,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
-    "id": 4418,
+    "id": 4417,
     "name": "Donjeta Asllani",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -136960,7 +136929,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4419,
+    "id": 4418,
     "name": "Jacqueline Bänsch",
     "leadStatus": "Reterminierung",
     "verlustgrund": "",
@@ -136991,7 +136960,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Rentenversicherung"
   },
   {
-    "id": 4420,
+    "id": 4419,
     "name": "Christine Pfisterer",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -137022,7 +136991,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4421,
+    "id": 4420,
     "name": "Sükran Solmaz",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -137053,7 +137022,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4422,
+    "id": 4421,
     "name": "Lena Schauer",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -137084,7 +137053,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
-    "id": 4423,
+    "id": 4422,
     "name": "Carmen Bernardo",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -137115,7 +137084,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4424,
+    "id": 4423,
     "name": "Peter Platzbecker",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -137146,7 +137115,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4425,
+    "id": 4424,
     "name": "Kshipra Nandwana",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -137177,7 +137146,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4426,
+    "id": 4425,
     "name": "Jana Sindelar",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -137208,7 +137177,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4427,
+    "id": 4426,
     "name": "Nuryan Gence",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -137239,7 +137208,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4428,
+    "id": 4427,
     "name": "Anja Schenk",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -137270,7 +137239,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4429,
+    "id": 4428,
     "name": "Antonio Garganico",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -137301,7 +137270,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4430,
+    "id": 4429,
     "name": "𝒱𝒾𝓋𝒾𝑒𝓃 𝒫𝑜𝓁𝓎𝒶𝓀",
     "leadStatus": "Beratungsgespräch gebucht",
     "verlustgrund": "",
@@ -137332,7 +137301,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4431,
+    "id": 4430,
     "name": "Vanessa Krieger",
     "leadStatus": "Verloren",
     "verlustgrund": "Angestellt",
@@ -137363,7 +137332,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4432,
+    "id": 4431,
     "name": "Ibolya Fehér",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -137394,7 +137363,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4433,
+    "id": 4432,
     "name": "Lisa Paps",
     "leadStatus": "Beratungsgespräch gebucht",
     "verlustgrund": "",
@@ -137425,7 +137394,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4434,
+    "id": 4433,
     "name": "Daniela Tretter",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -137456,7 +137425,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4435,
+    "id": 4434,
     "name": "Alina Raluka",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -137487,7 +137456,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4436,
+    "id": 4435,
     "name": "Benjamin Zimmerman",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -137518,7 +137487,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4437,
+    "id": 4436,
     "name": "Christel Zilles",
     "leadStatus": "Reterminierung",
     "verlustgrund": "",
@@ -137549,9 +137518,9 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4438,
+    "id": 4437,
     "name": "Lilija Pauls",
-    "leadStatus": "Kennenlerngespräch gebucht",
+    "leadStatus": "Neuer Lead",
     "verlustgrund": "",
     "adId": "",
     "adName": "",
@@ -137560,7 +137529,7 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "Keine Angabe",
     "vorerfahrung": "",
-    "vertriebler": "Nele Pfau",
+    "vertriebler": "Emelie Hell",
     "createdOn": "14.8.2026 06:23",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
@@ -137570,17 +137539,17 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "1x nicht erreicht",
+    "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "17.8.2026",
     "betreuungsart": "",
-    "lastModified": "14.8.2026 08:23",
+    "lastModified": "17.8.2026 12:48",
     "angebotsprozessDatum": "14.8.2026 06:23",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4439,
+    "id": 4438,
     "name": "Ellen Brüning",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -137611,7 +137580,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4440,
+    "id": 4439,
     "name": "Volker Exner",
     "leadStatus": "Verloren",
     "verlustgrund": "bereits anderer Kurs",
@@ -137642,7 +137611,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4441,
+    "id": 4440,
     "name": "Francesco Pisano",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -137673,7 +137642,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4442,
+    "id": 4441,
     "name": "Chadaporn Thaweesap",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -137704,7 +137673,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4443,
+    "id": 4442,
     "name": "Inga Leistner",
     "leadStatus": "Verloren",
     "verlustgrund": "Jobcenter",
@@ -137735,7 +137704,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4444,
+    "id": 4443,
     "name": "Bilal Hlal",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -137766,7 +137735,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4445,
+    "id": 4444,
     "name": "Carmen Rohr",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -137797,38 +137766,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4446,
-    "name": "Carmen Rohr",
-    "leadStatus": "Neuer Lead",
-    "verlustgrund": "",
-    "adId": "",
-    "adName": "",
-    "platform": "Kursnet",
-    "arbeitslosGemeldet": "",
-    "deutschkenntnisse": "",
-    "alter": "Keine Angabe",
-    "vorerfahrung": "",
-    "vertriebler": "",
-    "createdOn": "14.8.2026 10:57",
-    "terminBeimAmt": "",
-    "closingWahrscheinlichkeit": "",
-    "utmTitle": "",
-    "hotLead": false,
-    "angebotVerschicken": false,
-    "prozessStarten": "Noch kein Angebot erstellt",
-    "terminBeimAmtCheck": false,
-    "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
-    "kennenlernDatum": "",
-    "betreuungsart": "",
-    "lastModified": "14.8.2026 10:57",
-    "angebotsprozessDatum": "14.8.2026 10:57",
-    "vertriebsqualifiziertAm": "",
-    "gewonnenAm": "",
-    "zustaendigeStelle": "Keine Angabe"
-  },
-  {
-    "id": 4447,
+    "id": 4445,
     "name": "Alexander Scharpf",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -137859,7 +137797,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
-    "id": 4448,
+    "id": 4446,
     "name": "Selva Mohammed",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -137890,7 +137828,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4449,
+    "id": 4447,
     "name": "Natali Mil",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -137921,7 +137859,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
-    "id": 4450,
+    "id": 4448,
     "name": "Jennifer Knöpke",
     "leadStatus": "Verloren",
     "verlustgrund": "Jobcenter",
@@ -137952,7 +137890,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4451,
+    "id": 4449,
     "name": "Melanie Kruse",
     "leadStatus": "Kennenlerngespräch gebucht",
     "verlustgrund": "",
@@ -137983,7 +137921,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4452,
+    "id": 4450,
     "name": "John Schulze",
     "leadStatus": "Reterminierung",
     "verlustgrund": "",
@@ -138014,7 +137952,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4453,
+    "id": 4451,
     "name": "Kelvin Thomas Krause",
     "leadStatus": "Kennenlerngespräch gebucht",
     "verlustgrund": "",
@@ -138025,7 +137963,7 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "Keine Angabe",
     "vorerfahrung": "",
-    "vertriebler": "",
+    "vertriebler": "Emelie Hell",
     "createdOn": "14.8.2026 13:54",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
@@ -138038,14 +137976,14 @@ export const leads: Lead[] = [
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "17.8.2026",
     "betreuungsart": "",
-    "lastModified": "14.8.2026 13:58",
+    "lastModified": "17.8.2026 13:11",
     "angebotsprozessDatum": "14.8.2026 13:54",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4454,
+    "id": 4452,
     "name": "Elke Hock",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -138076,7 +138014,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4455,
+    "id": 4453,
     "name": "Syed Arifain Raza",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "Sprachkenntnisse",
@@ -138107,7 +138045,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4456,
+    "id": 4454,
     "name": "Viehl-It Services",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -138138,7 +138076,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4457,
+    "id": 4455,
     "name": "Adriana Happel",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -138169,7 +138107,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4458,
+    "id": 4456,
     "name": "Muhammad Sugero",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -138200,7 +138138,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
-    "id": 4459,
+    "id": 4457,
     "name": "Akinwunmi Victor",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -138231,9 +138169,9 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4460,
+    "id": 4458,
     "name": "Tatjana Kluge",
-    "leadStatus": "Neuer Lead",
+    "leadStatus": "Beratungsgespräch gebucht",
     "verlustgrund": "",
     "adId": "120242109905060128",
     "adName": "C1 - Notizen Deskriptiv",
@@ -138249,20 +138187,20 @@ export const leads: Lead[] = [
     "utmTitle": "",
     "hotLead": false,
     "angebotVerschicken": false,
-    "prozessStarten": "Noch kein Angebot erstellt",
+    "prozessStarten": "Angebot wurde erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
     "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
-    "betreuungsart": "",
-    "lastModified": "17.8.2026 09:41",
-    "angebotsprozessDatum": "14.8.2026 15:41",
-    "vertriebsqualifiziertAm": "",
+    "betreuungsart": "High Touch",
+    "lastModified": "17.8.2026 12:12",
+    "angebotsprozessDatum": "17.8.2026 11:56",
+    "vertriebsqualifiziertAm": "17.8.2026 11:51",
     "gewonnenAm": "",
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4461,
+    "id": 4459,
     "name": "Elin Elia",
     "leadStatus": "Verloren",
     "verlustgrund": "bereits anderer Kurs",
@@ -138293,7 +138231,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4462,
+    "id": 4460,
     "name": "Fatmir Zymberi",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -138324,7 +138262,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4463,
+    "id": 4461,
     "name": "Meruyert Belispayeva",
     "leadStatus": "Kennenlerngespräch gebucht",
     "verlustgrund": "",
@@ -138355,7 +138293,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4464,
+    "id": 4462,
     "name": "Klaus-Peter Rubert",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -138386,7 +138324,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Rentenversicherung"
   },
   {
-    "id": 4465,
+    "id": 4463,
     "name": "𝐿𝑒𝑎 Gerke",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -138417,7 +138355,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4466,
+    "id": 4464,
     "name": "Hendrik Horstmann",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -138448,7 +138386,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4467,
+    "id": 4465,
     "name": "Suzana Shaqiri",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -138479,7 +138417,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4468,
+    "id": 4466,
     "name": "Michael Groetzner",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -138510,7 +138448,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
-    "id": 4469,
+    "id": 4467,
     "name": "Petra Massa",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -138541,7 +138479,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Rentenversicherung"
   },
   {
-    "id": 4470,
+    "id": 4468,
     "name": "Simone Bredereck",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -138572,9 +138510,9 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4471,
+    "id": 4469,
     "name": "Claudia Firle",
-    "leadStatus": "Neuer Lead",
+    "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
     "adId": "120242088318970128",
     "adName": "C2 - Aktuell arbeitslos und Vorerfahrung im Personalwesen - Copy",
@@ -138590,20 +138528,20 @@ export const leads: Lead[] = [
     "utmTitle": "",
     "hotLead": false,
     "angebotVerschicken": false,
-    "prozessStarten": "Noch kein Angebot erstellt",
+    "prozessStarten": "Angebot wurde erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
+    "anrufversuch": "",
     "kennenlernDatum": "",
-    "betreuungsart": "",
-    "lastModified": "17.8.2026 10:01",
-    "angebotsprozessDatum": "14.8.2026 21:30",
-    "vertriebsqualifiziertAm": "",
+    "betreuungsart": "Low Touch",
+    "lastModified": "17.8.2026 10:31",
+    "angebotsprozessDatum": "17.8.2026 10:18",
+    "vertriebsqualifiziertAm": "17.8.2026 10:18",
     "gewonnenAm": "",
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4472,
+    "id": 4470,
     "name": "Jenni Jobst",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -138634,7 +138572,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4473,
+    "id": 4471,
     "name": "Noah Tesé-Kuster",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -138665,7 +138603,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4474,
+    "id": 4472,
     "name": "Wolfgang Zimmer",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -138676,7 +138614,7 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
-    "vertriebler": "",
+    "vertriebler": "Juliano Halisch",
     "createdOn": "15.8.2026 05:07",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
@@ -138686,17 +138624,17 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "15.8.2026 05:07",
+    "lastModified": "17.8.2026 10:32",
     "angebotsprozessDatum": "15.8.2026 05:07",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4475,
+    "id": 4473,
     "name": "Irena Stefanovic",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -138707,7 +138645,7 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Fließend (C1/C2)",
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Nein, ich bin noch unsicher, ob es zu mir passt",
-    "vertriebler": "",
+    "vertriebler": "Juliano Halisch",
     "createdOn": "15.8.2026 06:44",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
@@ -138717,17 +138655,17 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "15.8.2026 06:44",
+    "lastModified": "17.8.2026 10:35",
     "angebotsprozessDatum": "15.8.2026 06:44",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4476,
+    "id": 4474,
     "name": "Anna Daunhauer",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -138758,7 +138696,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4477,
+    "id": 4475,
     "name": "Tanja Westphal",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -138769,7 +138707,7 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
-    "vertriebler": "",
+    "vertriebler": "Juliano Halisch",
     "createdOn": "15.8.2026 07:19",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
@@ -138779,17 +138717,17 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "15.8.2026 07:19",
+    "lastModified": "17.8.2026 10:35",
     "angebotsprozessDatum": "15.8.2026 07:19",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4478,
+    "id": 4476,
     "name": "M.thiele Thiele",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -138820,7 +138758,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4479,
+    "id": 4477,
     "name": "Inna Chitak",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -138851,7 +138789,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4480,
+    "id": 4478,
     "name": "Gottlieb Weiß",
     "leadStatus": "Kennenlerngespräch gebucht",
     "verlustgrund": "",
@@ -138882,7 +138820,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4481,
+    "id": 4479,
     "name": "Kath Riegel",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -138913,7 +138851,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4482,
+    "id": 4480,
     "name": "Lakshmipriya Sajeev",
     "leadStatus": "Kennenlerngespräch gebucht",
     "verlustgrund": "",
@@ -138944,7 +138882,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4483,
+    "id": 4481,
     "name": "Sabine Winkler",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -138975,7 +138913,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4484,
+    "id": 4482,
     "name": "Andreas Alekseenko",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139006,7 +138944,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4485,
+    "id": 4483,
     "name": "David Hees",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139037,7 +138975,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4486,
+    "id": 4484,
     "name": "Andre Geue",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139068,7 +139006,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4487,
+    "id": 4485,
     "name": "Yusef Gio A. Siani Siahi",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139099,7 +139037,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
-    "id": 4488,
+    "id": 4486,
     "name": "Sabrina Neumann",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139130,7 +139068,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
-    "id": 4489,
+    "id": 4487,
     "name": "Beate Reich",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139161,7 +139099,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Rentenversicherung"
   },
   {
-    "id": 4490,
+    "id": 4488,
     "name": "Claudia Dyballa",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139192,9 +139130,9 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4491,
+    "id": 4489,
     "name": "Benjamin Timm",
-    "leadStatus": "Neuer Lead",
+    "leadStatus": "Reterminierung",
     "verlustgrund": "",
     "adId": "120242088318970128",
     "adName": "C2 - Aktuell arbeitslos und Vorerfahrung im Personalwesen - Copy",
@@ -139203,7 +139141,7 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
-    "vertriebler": "",
+    "vertriebler": "Juliano Halisch",
     "createdOn": "15.8.2026 12:13",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
@@ -139213,17 +139151,17 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "15.8.2026 12:13",
+    "lastModified": "17.8.2026 10:41",
     "angebotsprozessDatum": "15.8.2026 12:13",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4492,
+    "id": 4490,
     "name": "Marcel Dauth",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139254,7 +139192,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
-    "id": 4493,
+    "id": 4491,
     "name": "Heike Kipar",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139285,10 +139223,10 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4494,
+    "id": 4492,
     "name": "Dana Bosbach",
-    "leadStatus": "Neuer Lead",
-    "verlustgrund": "",
+    "leadStatus": "Verloren",
+    "verlustgrund": "Kurs für Job gehalten",
     "adId": "120242088318970128",
     "adName": "C2 - Aktuell arbeitslos und Vorerfahrung im Personalwesen - Copy",
     "platform": "Instagram",
@@ -139296,7 +139234,7 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
-    "vertriebler": "",
+    "vertriebler": "Juliano Halisch",
     "createdOn": "15.8.2026 13:02",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
@@ -139306,17 +139244,17 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
+    "anrufversuch": "",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "15.8.2026 13:02",
+    "lastModified": "17.8.2026 10:40",
     "angebotsprozessDatum": "15.8.2026 13:02",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4495,
+    "id": 4493,
     "name": "Ay Enur K L Ç",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139347,9 +139285,9 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4496,
+    "id": 4494,
     "name": "Simone Ohrnberger",
-    "leadStatus": "Neuer Lead",
+    "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
     "adId": "120242109905060128",
     "adName": "C1 - Notizen Deskriptiv",
@@ -139358,7 +139296,7 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "25 – 45 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
-    "vertriebler": "",
+    "vertriebler": "Juliano Halisch",
     "createdOn": "15.8.2026 14:51",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
@@ -139370,15 +139308,15 @@ export const leads: Lead[] = [
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
-    "betreuungsart": "",
-    "lastModified": "15.8.2026 14:51",
+    "betreuungsart": "Low Touch",
+    "lastModified": "17.8.2026 10:58",
     "angebotsprozessDatum": "15.8.2026 14:51",
-    "vertriebsqualifiziertAm": "",
+    "vertriebsqualifiziertAm": "17.8.2026 10:58",
     "gewonnenAm": "",
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4497,
+    "id": 4495,
     "name": "Melanie Kaufmann",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139409,9 +139347,9 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4498,
+    "id": 4496,
     "name": "Steffi Brosche",
-    "leadStatus": "Neuer Lead",
+    "leadStatus": "Reterminierung",
     "verlustgrund": "",
     "adId": "120242088318970128",
     "adName": "C2 - Aktuell arbeitslos und Vorerfahrung im Personalwesen - Copy",
@@ -139420,7 +139358,7 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "46 – 60 Jahre",
     "vorerfahrung": "Ja, ich habe relevante Erfahrung",
-    "vertriebler": "",
+    "vertriebler": "Juliano Halisch",
     "createdOn": "15.8.2026 15:09",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
@@ -139430,17 +139368,17 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
+    "anrufversuch": "",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "15.8.2026 15:09",
+    "lastModified": "17.8.2026 12:28",
     "angebotsprozessDatum": "15.8.2026 15:09",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4499,
+    "id": 4497,
     "name": "Nadine Wullbrandt",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139471,7 +139409,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4500,
+    "id": 4498,
     "name": "Jens Carlsen",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139482,7 +139420,7 @@ export const leads: Lead[] = [
     "deutschkenntnisse": "Muttersprache",
     "alter": "Über 60 Jahre",
     "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
-    "vertriebler": "",
+    "vertriebler": "Juliano Halisch",
     "createdOn": "15.8.2026 16:08",
     "terminBeimAmt": "",
     "closingWahrscheinlichkeit": "",
@@ -139495,14 +139433,14 @@ export const leads: Lead[] = [
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "15.8.2026 16:08",
+    "lastModified": "17.8.2026 12:33",
     "angebotsprozessDatum": "15.8.2026 16:08",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4501,
+    "id": 4499,
     "name": "Maren Menge",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139533,7 +139471,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4502,
+    "id": 4500,
     "name": "Mediha Kücükcakir",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139564,7 +139502,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4503,
+    "id": 4501,
     "name": "Yara Hmada",
     "leadStatus": "Verloren",
     "verlustgrund": "Kurs für Job gehalten",
@@ -139595,7 +139533,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4504,
+    "id": 4502,
     "name": "Alicia Rübsamen",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139626,7 +139564,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4505,
+    "id": 4503,
     "name": "Rene Kretschmann",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139657,7 +139595,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4506,
+    "id": 4504,
     "name": "Irma Ketterer",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139688,7 +139626,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4507,
+    "id": 4505,
     "name": "Tina Lehner",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139719,7 +139657,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4508,
+    "id": 4506,
     "name": "Youness Zahidi",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139750,7 +139688,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4509,
+    "id": 4507,
     "name": "Fatima Ait Lahoucine",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139781,7 +139719,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4510,
+    "id": 4508,
     "name": "Birgit Fredrichsdorf",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139812,7 +139750,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4511,
+    "id": 4509,
     "name": "Stratula Nikolaidou",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139843,7 +139781,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4512,
+    "id": 4510,
     "name": "Marvin Wendorff",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -139874,7 +139812,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4513,
+    "id": 4511,
     "name": "Κonstantinos Vrettas",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139905,7 +139843,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4514,
+    "id": 4512,
     "name": "Mahmood Yaseen Zaman",
     "leadStatus": "Verloren",
     "verlustgrund": "aktuell keine BG-Bewilligung",
@@ -139936,7 +139874,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4515,
+    "id": 4513,
     "name": "Gjeladin Rama",
     "leadStatus": "Vertriebsqualifiziert",
     "verlustgrund": "",
@@ -139967,7 +139905,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4516,
+    "id": 4514,
     "name": "Rene Kronenberg",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -139998,7 +139936,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4517,
+    "id": 4515,
     "name": "Tamara Kannegiesser",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -140029,7 +139967,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4518,
+    "id": 4516,
     "name": "Betül Alparslan",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -140060,7 +139998,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4519,
+    "id": 4517,
     "name": "Jens Leiblich",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -140091,7 +140029,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4520,
+    "id": 4518,
     "name": "Esra Koca",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -140122,7 +140060,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4521,
+    "id": 4519,
     "name": "Tamara Böhm",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -140153,7 +140091,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4522,
+    "id": 4520,
     "name": "Mohammed Al-Anesi",
     "leadStatus": "Verloren",
     "verlustgrund": "Jobcenter",
@@ -140184,7 +140122,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4523,
+    "id": 4521,
     "name": "Halyna Prysiazhniuk",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -140215,7 +140153,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4524,
+    "id": 4522,
     "name": "Andre Küchenhof",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -140246,7 +140184,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
-    "id": 4525,
+    "id": 4523,
     "name": "Mario Krüger",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -140277,7 +140215,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4526,
+    "id": 4524,
     "name": "Maria Strümke",
     "leadStatus": "Verloren",
     "verlustgrund": "bereits anderer Kurs",
@@ -140308,7 +140246,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4527,
+    "id": 4525,
     "name": "Susanne Ti",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -140339,7 +140277,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4528,
+    "id": 4526,
     "name": "Rossano Gozza",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -140370,7 +140308,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4529,
+    "id": 4527,
     "name": "Willi Stier",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -140401,7 +140339,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4530,
+    "id": 4528,
     "name": "Letizia Licini",
     "leadStatus": "Reterminierung",
     "verlustgrund": "",
@@ -140432,7 +140370,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4531,
+    "id": 4529,
     "name": "Granit Gashi",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -140463,9 +140401,9 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4532,
+    "id": 4530,
     "name": "Tim Degelmann",
-    "leadStatus": "Kennenlerngespräch gebucht",
+    "leadStatus": "Reterminierung",
     "verlustgrund": "",
     "adId": "",
     "adName": "",
@@ -140485,16 +140423,16 @@ export const leads: Lead[] = [
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
     "anrufversuch": "Noch nicht angerufen",
-    "kennenlernDatum": "17.8.2026",
+    "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "16.8.2026 10:33",
+    "lastModified": "17.8.2026 10:47",
     "angebotsprozessDatum": "16.8.2026 10:30",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4533,
+    "id": 4531,
     "name": "Manolya Karasan",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -140525,7 +140463,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4534,
+    "id": 4532,
     "name": "Antonia L.",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -140556,7 +140494,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4535,
+    "id": 4533,
     "name": "Antje Jörgens",
     "leadStatus": "Kennenlerngespräch gebucht",
     "verlustgrund": "",
@@ -140587,7 +140525,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4536,
+    "id": 4534,
     "name": "Martin Stöckl",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -140618,7 +140556,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4537,
+    "id": 4535,
     "name": "Lennart Weitz",
     "leadStatus": "Verloren",
     "verlustgrund": "Falsche Kontaktinformationen",
@@ -140649,7 +140587,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4538,
+    "id": 4536,
     "name": "Marina Ianovskaia",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -140680,7 +140618,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Rentenversicherung"
   },
   {
-    "id": 4539,
+    "id": 4537,
     "name": "Heinz-Peter Rüger",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -140711,7 +140649,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4540,
+    "id": 4538,
     "name": "Nina Geweiler",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -140742,7 +140680,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4541,
+    "id": 4539,
     "name": "Saskia Kampmann",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -140773,7 +140711,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4542,
+    "id": 4540,
     "name": "Gil S",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -140804,7 +140742,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4543,
+    "id": 4541,
     "name": "Andreas Pahl",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -140835,7 +140773,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Rentenversicherung"
   },
   {
-    "id": 4544,
+    "id": 4542,
     "name": "Bahareh Naghawi",
     "leadStatus": "Verloren",
     "verlustgrund": "noch nicht gemeldet",
@@ -140866,7 +140804,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4545,
+    "id": 4543,
     "name": "Petra Hort",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -140897,7 +140835,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
-    "id": 4546,
+    "id": 4544,
     "name": "Gamal Anan",
     "leadStatus": "Verloren",
     "verlustgrund": "bereits anderer Kurs",
@@ -140928,7 +140866,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4547,
+    "id": 4545,
     "name": "Aymaral Yazmyradova",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -140959,7 +140897,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4548,
+    "id": 4546,
     "name": "Punky Seidel",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -140990,7 +140928,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
-    "id": 4549,
+    "id": 4547,
     "name": "Emre Arslan",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -141021,7 +140959,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Ich bin mir nicht sicher"
   },
   {
-    "id": 4550,
+    "id": 4548,
     "name": "Valintina Gergeluk",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -141052,7 +140990,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Das Jobcenter"
   },
   {
-    "id": 4551,
+    "id": 4549,
     "name": "Violeta Grigoryan",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -141083,7 +141021,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4552,
+    "id": 4550,
     "name": "Claudia Wagner",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -141114,7 +141052,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4553,
+    "id": 4551,
     "name": "Tanja Krüger",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -141145,7 +141083,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4554,
+    "id": 4552,
     "name": "Maximilian Karsten",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -141176,7 +141114,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4555,
+    "id": 4553,
     "name": "Patrícia Dias",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -141197,17 +141135,17 @@ export const leads: Lead[] = [
     "prozessStarten": "Noch kein Angebot erstellt",
     "terminBeimAmtCheck": false,
     "bgVerschickt": "",
-    "anrufversuch": "Noch nicht angerufen",
+    "anrufversuch": "1x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "17.8.2026 07:25",
+    "lastModified": "17.8.2026 11:21",
     "angebotsprozessDatum": "17.8.2026 07:24",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4556,
+    "id": 4554,
     "name": "Nadine Weidenhammer",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -141238,7 +141176,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4557,
+    "id": 4555,
     "name": "Pavlos Kalaitsoglou",
     "leadStatus": "Kennenlerngespräch gebucht",
     "verlustgrund": "",
@@ -141269,7 +141207,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4558,
+    "id": 4556,
     "name": "Sunny Rohmer",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -141300,7 +141238,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Die Agentur für Arbeit"
   },
   {
-    "id": 4559,
+    "id": 4557,
     "name": "Zeki Emanet",
     "leadStatus": "Kennenlerngespräch gebucht",
     "verlustgrund": "",
@@ -141331,7 +141269,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4560,
+    "id": 4558,
     "name": "Marie-Luise Uhlig",
     "leadStatus": "Kennenlerngespräch gebucht",
     "verlustgrund": "",
@@ -141362,7 +141300,7 @@ export const leads: Lead[] = [
     "zustaendigeStelle": "Keine Angabe"
   },
   {
-    "id": 4561,
+    "id": 4559,
     "name": "Adham Baburi",
     "leadStatus": "Neuer Lead",
     "verlustgrund": "",
@@ -141391,5 +141329,346 @@ export const leads: Lead[] = [
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
     "zustaendigeStelle": "Das Jobcenter"
+  },
+  {
+    "id": 4560,
+    "name": "Oliver Schwarz",
+    "leadStatus": "Vertriebsqualifiziert",
+    "verlustgrund": "",
+    "adId": "",
+    "adName": "",
+    "platform": "Indeed",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "Keine Angabe",
+    "vorerfahrung": "",
+    "vertriebler": "Emelie Hell",
+    "createdOn": "17.8.2026 10:17",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Angebot wurde erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "Low Touch",
+    "lastModified": "17.8.2026 13:07",
+    "angebotsprozessDatum": "17.8.2026 13:07",
+    "vertriebsqualifiziertAm": "17.8.2026 13:06",
+    "gewonnenAm": "",
+    "zustaendigeStelle": "Keine Angabe"
+  },
+  {
+    "id": 4561,
+    "name": "Hossam Hamouda",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120242088318970128",
+    "adName": "C2 - Aktuell arbeitslos und Vorerfahrung im Personalwesen - Copy",
+    "platform": "Facebook",
+    "arbeitslosGemeldet": "Nein, aber in den nächsten 3 Monaten",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "46 – 60 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "",
+    "createdOn": "17.8.2026 10:40",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "17.8.2026 10:40",
+    "angebotsprozessDatum": "17.8.2026 10:40",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": "",
+    "zustaendigeStelle": "Die Agentur für Arbeit"
+  },
+  {
+    "id": 4562,
+    "name": "Tina Menzel",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120242109905060128",
+    "adName": "C1 - Notizen Deskriptiv",
+    "platform": "Instagram",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "25 – 45 Jahre",
+    "vorerfahrung": "Ja, ich habe relevante Erfahrung",
+    "vertriebler": "",
+    "createdOn": "17.8.2026 10:48",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "17.8.2026 10:48",
+    "angebotsprozessDatum": "17.8.2026 10:48",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": "",
+    "zustaendigeStelle": "Die Agentur für Arbeit"
+  },
+  {
+    "id": 4563,
+    "name": "Janine Weber",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "",
+    "adName": "",
+    "platform": "Indeed",
+    "arbeitslosGemeldet": "",
+    "deutschkenntnisse": "",
+    "alter": "Keine Angabe",
+    "vorerfahrung": "",
+    "vertriebler": "",
+    "createdOn": "17.8.2026 10:56",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "17.8.2026 10:56",
+    "angebotsprozessDatum": "17.8.2026 10:56",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": "",
+    "zustaendigeStelle": "Keine Angabe"
+  },
+  {
+    "id": 4564,
+    "name": "Metecan Bastas",
+    "leadStatus": "Reterminierung",
+    "verlustgrund": "",
+    "adId": "",
+    "adName": "",
+    "platform": "Talentspring Academy Group",
+    "arbeitslosGemeldet": "",
+    "deutschkenntnisse": "",
+    "alter": "Keine Angabe",
+    "vorerfahrung": "",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "17.8.2026 11:22",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "Low Touch",
+    "lastModified": "17.8.2026 12:04",
+    "angebotsprozessDatum": "17.8.2026 11:22",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": "",
+    "zustaendigeStelle": "Keine Angabe"
+  },
+  {
+    "id": 4565,
+    "name": "Glikeria Sarris",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "",
+    "adName": "",
+    "platform": "Indeed",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "Keine Angabe",
+    "vorerfahrung": "",
+    "vertriebler": "",
+    "createdOn": "17.8.2026 11:37",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "17.8.2026 11:37",
+    "angebotsprozessDatum": "17.8.2026 11:37",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": "",
+    "zustaendigeStelle": "Keine Angabe"
+  },
+  {
+    "id": 4566,
+    "name": "Behrad Javanbakht",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120242109905060128",
+    "adName": "C1 - Notizen Deskriptiv",
+    "platform": "Instagram",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "Gute Kenntnisse (B2)",
+    "alter": "25 – 45 Jahre",
+    "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
+    "vertriebler": "",
+    "createdOn": "17.8.2026 11:49",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "17.8.2026 11:49",
+    "angebotsprozessDatum": "17.8.2026 11:49",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": "",
+    "zustaendigeStelle": "Die Agentur für Arbeit"
+  },
+  {
+    "id": 4567,
+    "name": "Robert Jäger",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "",
+    "adName": "",
+    "platform": "Indeed",
+    "arbeitslosGemeldet": "",
+    "deutschkenntnisse": "",
+    "alter": "Keine Angabe",
+    "vorerfahrung": "",
+    "vertriebler": "",
+    "createdOn": "17.8.2026 12:06",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "17.8.2026 12:06",
+    "angebotsprozessDatum": "17.8.2026 12:06",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": "",
+    "zustaendigeStelle": "Keine Angabe"
+  },
+  {
+    "id": 4568,
+    "name": "Richard Kutz",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "120242088318970128",
+    "adName": "C2 - Aktuell arbeitslos und Vorerfahrung im Personalwesen - Copy",
+    "platform": "Facebook",
+    "arbeitslosGemeldet": "Nein, aber in den nächsten 3 Monaten",
+    "deutschkenntnisse": "Muttersprache",
+    "alter": "46 – 60 Jahre",
+    "vorerfahrung": "Nein, aber ich habe großes Interesse an HR & Personalwesen",
+    "vertriebler": "",
+    "createdOn": "17.8.2026 12:18",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "17.8.2026 12:18",
+    "angebotsprozessDatum": "17.8.2026 12:18",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": "",
+    "zustaendigeStelle": "Die Agentur für Arbeit"
+  },
+  {
+    "id": 4569,
+    "name": "Diana Moskvin",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "",
+    "adName": "",
+    "platform": "Indeed",
+    "arbeitslosGemeldet": "Ja",
+    "deutschkenntnisse": "",
+    "alter": "Keine Angabe",
+    "vorerfahrung": "",
+    "vertriebler": "",
+    "createdOn": "17.8.2026 12:22",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "17.8.2026 12:22",
+    "angebotsprozessDatum": "17.8.2026 12:22",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": "",
+    "zustaendigeStelle": "Keine Angabe"
+  },
+  {
+    "id": 4570,
+    "name": "Meri Beenen",
+    "leadStatus": "Neuer Lead",
+    "verlustgrund": "",
+    "adId": "",
+    "adName": "",
+    "platform": "Talentspring Academy Group",
+    "arbeitslosGemeldet": "",
+    "deutschkenntnisse": "",
+    "alter": "Keine Angabe",
+    "vorerfahrung": "",
+    "vertriebler": "Nele Pfau",
+    "createdOn": "17.8.2026 12:47",
+    "terminBeimAmt": "",
+    "closingWahrscheinlichkeit": "",
+    "utmTitle": "",
+    "hotLead": false,
+    "angebotVerschicken": false,
+    "prozessStarten": "Noch kein Angebot erstellt",
+    "terminBeimAmtCheck": false,
+    "bgVerschickt": "",
+    "anrufversuch": "Noch nicht angerufen",
+    "kennenlernDatum": "",
+    "betreuungsart": "",
+    "lastModified": "17.8.2026 12:50",
+    "angebotsprozessDatum": "17.8.2026 12:47",
+    "vertriebsqualifiziertAm": "",
+    "gewonnenAm": "",
+    "zustaendigeStelle": "Keine Angabe"
   }
 ];
