@@ -3,17 +3,17 @@
     {
       "name": "Walid Karimi",
       "userId": 1093878,
-      "outboundCalls": 22,
+      "outboundCalls": 23,
       "inboundCalls": 5,
-      "answeredCalls": 25,
+      "answeredCalls": 26,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 7828,
-      "avgDurationSec": 313,
+      "totalDurationSec": 7865,
+      "avgDurationSec": 303,
       "longestCallSec": 1168,
       "reachabilityPct": 100,
-      "callsPerDay": 4.5,
-      "totalCalls": 27,
+      "callsPerDay": 4.7,
+      "totalCalls": 28,
       "firstCallDate": "2026-06-19",
       "lastCallDate": "2026-06-24"
     },
@@ -90,9 +90,9 @@
     },
     {
       "date": "2026-06-24",
-      "dials": 35,
-      "reached": 30,
-      "calltimeSec": 7012
+      "dials": 36,
+      "reached": 31,
+      "calltimeSec": 7049
     }
   ],
   "sellerDaily": [
@@ -171,15 +171,15 @@
     {
       "seller": "Walid Karimi",
       "date": "2026-06-24",
-      "dials": 2,
-      "reached": 2,
-      "calltimeSec": 1909,
-      "outboundCalls": 2,
+      "dials": 3,
+      "reached": 3,
+      "calltimeSec": 1946,
+      "outboundCalls": 3,
       "inboundCalls": 1,
-      "answeredCalls": 3,
-      "totalDurationSec": 2148,
+      "answeredCalls": 4,
+      "totalDurationSec": 2185,
       "longestCallSec": 1168
     }
   ],
-  "fetchedAt": "2026-08-17T15:16:55.398Z"
+  "fetchedAt": "2026-08-17T18:23:11.775Z"
 }
