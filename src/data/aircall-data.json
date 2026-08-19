@@ -3,36 +3,36 @@
     {
       "name": "Walid Karimi",
       "userId": 1093878,
-      "outboundCalls": 24,
-      "inboundCalls": 4,
-      "answeredCalls": 24,
+      "outboundCalls": 51,
+      "inboundCalls": 8,
+      "answeredCalls": 46,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 8261,
-      "avgDurationSec": 344,
+      "totalDurationSec": 13654,
+      "avgDurationSec": 297,
       "longestCallSec": 1168,
       "reachabilityPct": 100,
-      "callsPerDay": 4,
-      "totalCalls": 28,
+      "callsPerDay": 6.6,
+      "totalCalls": 59,
       "firstCallDate": "2026-06-22",
-      "lastCallDate": "2026-06-29"
+      "lastCallDate": "2026-07-01"
     },
     {
       "name": "Nele Pfau",
       "userId": 1862427,
-      "outboundCalls": 375,
-      "inboundCalls": 9,
-      "answeredCalls": 294,
+      "outboundCalls": 523,
+      "inboundCalls": 13,
+      "answeredCalls": 404,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 65910,
-      "avgDurationSec": 224,
+      "totalDurationSec": 89977,
+      "avgDurationSec": 223,
       "longestCallSec": 4089,
       "reachabilityPct": 100,
-      "callsPerDay": 48,
-      "totalCalls": 384,
+      "callsPerDay": 53.6,
+      "totalCalls": 536,
       "firstCallDate": "2026-06-22",
-      "lastCallDate": "2026-06-29"
+      "lastCallDate": "2026-07-01"
     },
     {
       "name": "Bastian Wuske",
@@ -102,9 +102,21 @@
     },
     {
       "date": "2026-06-29",
-      "dials": 45,
-      "reached": 36,
-      "calltimeSec": 4824
+      "dials": 112,
+      "reached": 83,
+      "calltimeSec": 13019
+    },
+    {
+      "date": "2026-06-30",
+      "dials": 107,
+      "reached": 76,
+      "calltimeSec": 15165
+    },
+    {
+      "date": "2026-07-01",
+      "dials": 1,
+      "reached": 1,
+      "calltimeSec": 1260
     }
   ],
   "sellerDaily": [
@@ -231,27 +243,75 @@
     {
       "seller": "Nele Pfau",
       "date": "2026-06-29",
-      "dials": 43,
-      "reached": 35,
-      "calltimeSec": 4744,
-      "outboundCalls": 43,
-      "inboundCalls": 0,
-      "answeredCalls": 35,
-      "totalDurationSec": 4744,
-      "longestCallSec": 982
+      "dials": 90,
+      "reached": 68,
+      "calltimeSec": 10290,
+      "outboundCalls": 90,
+      "inboundCalls": 3,
+      "answeredCalls": 71,
+      "totalDurationSec": 13717,
+      "longestCallSec": 3311
     },
     {
       "seller": "Walid Karimi",
       "date": "2026-06-29",
-      "dials": 2,
+      "dials": 22,
+      "reached": 15,
+      "calltimeSec": 2729,
+      "outboundCalls": 22,
+      "inboundCalls": 3,
+      "answeredCalls": 18,
+      "totalDurationSec": 3375,
+      "longestCallSec": 571
+    },
+    {
+      "seller": "Nele Pfau",
+      "date": "2026-06-30",
+      "dials": 100,
+      "reached": 72,
+      "calltimeSec": 13667,
+      "outboundCalls": 100,
+      "inboundCalls": 1,
+      "answeredCalls": 73,
+      "totalDurationSec": 13834,
+      "longestCallSec": 2469
+    },
+    {
+      "seller": "Walid Karimi",
+      "date": "2026-06-30",
+      "dials": 7,
+      "reached": 4,
+      "calltimeSec": 1498,
+      "outboundCalls": 7,
+      "inboundCalls": 0,
+      "answeredCalls": 4,
+      "totalDurationSec": 1498,
+      "longestCallSec": 884
+    },
+    {
+      "seller": "Nele Pfau",
+      "date": "2026-07-01",
+      "dials": 1,
       "reached": 1,
-      "calltimeSec": 80,
-      "outboundCalls": 2,
+      "calltimeSec": 1260,
+      "outboundCalls": 1,
       "inboundCalls": 0,
       "answeredCalls": 1,
-      "totalDurationSec": 80,
-      "longestCallSec": 80
+      "totalDurationSec": 1260,
+      "longestCallSec": 1260
+    },
+    {
+      "seller": "Walid Karimi",
+      "date": "2026-07-01",
+      "dials": 0,
+      "reached": 0,
+      "calltimeSec": 0,
+      "outboundCalls": 0,
+      "inboundCalls": 1,
+      "answeredCalls": 1,
+      "totalDurationSec": 600,
+      "longestCallSec": 600
     }
   ],
-  "fetchedAt": "2026-08-19T18:20:33.322Z"
+  "fetchedAt": "2026-08-19T21:18:42.063Z"
 }
