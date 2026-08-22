@@ -20,19 +20,19 @@
     {
       "name": "Nele Pfau",
       "userId": 1862427,
-      "outboundCalls": 1739,
-      "inboundCalls": 56,
-      "answeredCalls": 1429,
+      "outboundCalls": 1492,
+      "inboundCalls": 48,
+      "answeredCalls": 1222,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 325418,
-      "avgDurationSec": 228,
+      "totalDurationSec": 272910,
+      "avgDurationSec": 223,
       "longestCallSec": 4089,
       "reachabilityPct": 100,
-      "callsPerDay": 35.9,
-      "totalCalls": 1795,
+      "callsPerDay": 35.8,
+      "totalCalls": 1540,
       "firstCallDate": "2026-06-23",
-      "lastCallDate": "2026-08-11"
+      "lastCallDate": "2026-08-04"
     },
     {
       "name": "Bastian Wuske",
@@ -72,9 +72,9 @@
   "daily": [
     {
       "date": "2026-06-23",
-      "dials": 95,
-      "reached": 70,
-      "calltimeSec": 12281
+      "dials": 72,
+      "reached": 53,
+      "calltimeSec": 7137
     },
     {
       "date": "2026-06-24",
@@ -252,53 +252,23 @@
     },
     {
       "date": "2026-08-04",
-      "dials": 34,
-      "reached": 31,
-      "calltimeSec": 10276
-    },
-    {
-      "date": "2026-08-05",
-      "dials": 50,
-      "reached": 41,
-      "calltimeSec": 10350
-    },
-    {
-      "date": "2026-08-06",
-      "dials": 30,
-      "reached": 27,
-      "calltimeSec": 5879
-    },
-    {
-      "date": "2026-08-07",
-      "dials": 40,
-      "reached": 27,
-      "calltimeSec": 7841
-    },
-    {
-      "date": "2026-08-10",
-      "dials": 77,
-      "reached": 63,
-      "calltimeSec": 10568
-    },
-    {
-      "date": "2026-08-11",
-      "dials": 9,
-      "reached": 8,
-      "calltimeSec": 1291
+      "dials": 16,
+      "reached": 15,
+      "calltimeSec": 3960
     }
   ],
   "sellerDaily": [
     {
       "seller": "Nele Pfau",
       "date": "2026-06-23",
-      "dials": 90,
-      "reached": 66,
-      "calltimeSec": 10655,
-      "outboundCalls": 90,
+      "dials": 67,
+      "reached": 49,
+      "calltimeSec": 5511,
+      "outboundCalls": 67,
       "inboundCalls": 2,
-      "answeredCalls": 68,
-      "totalDurationSec": 10891,
-      "longestCallSec": 2089
+      "answeredCalls": 51,
+      "totalDurationSec": 5747,
+      "longestCallSec": 1562
     },
     {
       "seller": "Walid Karimi",
@@ -843,75 +813,15 @@
     {
       "seller": "Nele Pfau",
       "date": "2026-08-04",
-      "dials": 34,
-      "reached": 31,
-      "calltimeSec": 10276,
-      "outboundCalls": 34,
-      "inboundCalls": 6,
-      "answeredCalls": 37,
-      "totalDurationSec": 12575,
-      "longestCallSec": 1421
-    },
-    {
-      "seller": "Nele Pfau",
-      "date": "2026-08-05",
-      "dials": 50,
-      "reached": 41,
-      "calltimeSec": 10350,
-      "outboundCalls": 50,
-      "inboundCalls": 1,
-      "answeredCalls": 42,
-      "totalDurationSec": 10389,
-      "longestCallSec": 1353
-    },
-    {
-      "seller": "Nele Pfau",
-      "date": "2026-08-06",
-      "dials": 30,
-      "reached": 27,
-      "calltimeSec": 5879,
-      "outboundCalls": 30,
-      "inboundCalls": 1,
-      "answeredCalls": 28,
-      "totalDurationSec": 8884,
-      "longestCallSec": 3005
-    },
-    {
-      "seller": "Nele Pfau",
-      "date": "2026-08-07",
-      "dials": 40,
-      "reached": 27,
-      "calltimeSec": 7841,
-      "outboundCalls": 40,
-      "inboundCalls": 1,
-      "answeredCalls": 28,
-      "totalDurationSec": 7868,
-      "longestCallSec": 3074
-    },
-    {
-      "seller": "Nele Pfau",
-      "date": "2026-08-10",
-      "dials": 77,
-      "reached": 63,
-      "calltimeSec": 10568,
-      "outboundCalls": 77,
-      "inboundCalls": 2,
-      "answeredCalls": 65,
-      "totalDurationSec": 11501,
-      "longestCallSec": 2541
-    },
-    {
-      "seller": "Nele Pfau",
-      "date": "2026-08-11",
-      "dials": 9,
-      "reached": 8,
-      "calltimeSec": 1291,
-      "outboundCalls": 9,
-      "inboundCalls": 0,
-      "answeredCalls": 8,
-      "totalDurationSec": 1291,
-      "longestCallSec": 515
+      "dials": 16,
+      "reached": 15,
+      "calltimeSec": 3960,
+      "outboundCalls": 16,
+      "inboundCalls": 3,
+      "answeredCalls": 18,
+      "totalDurationSec": 5144,
+      "longestCallSec": 985
     }
   ],
-  "fetchedAt": "2026-08-22T06:32:38.310Z"
+  "fetchedAt": "2026-08-22T09:26:36.103Z"
 }
