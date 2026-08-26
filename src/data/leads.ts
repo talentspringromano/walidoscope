@@ -96290,7 +96290,7 @@ export const leads: Lead[] = [
   {
     "id": 3107,
     "name": "Ratika Ganjoo",
-    "leadStatus": "Vertriebsqualifiziert",
+    "leadStatus": "Gewonnen",
     "verlustgrund": "",
     "adId": "",
     "adName": "",
@@ -96312,10 +96312,10 @@ export const leads: Lead[] = [
     "anrufversuch": "",
     "kennenlernDatum": "3.7.2026",
     "betreuungsart": "High Touch",
-    "lastModified": "25.8.2026 12:17",
+    "lastModified": "26.8.2026 20:10",
     "angebotsprozessDatum": "13.7.2026 12:49",
     "vertriebsqualifiziertAm": "2.7.2026 09:42",
-    "gewonnenAm": "",
+    "gewonnenAm": "26.8.2026 20:10",
     "zustaendigeStelle": "Keine Angabe"
   },
   {
