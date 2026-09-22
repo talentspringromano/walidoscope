@@ -3,36 +3,36 @@
     {
       "name": "Walid Karimi",
       "userId": 1093878,
-      "outboundCalls": 94,
-      "inboundCalls": 21,
-      "answeredCalls": 94,
+      "outboundCalls": 82,
+      "inboundCalls": 19,
+      "answeredCalls": 84,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 20796,
-      "avgDurationSec": 221,
+      "totalDurationSec": 19083,
+      "avgDurationSec": 227,
       "longestCallSec": 2169,
       "reachabilityPct": 100,
-      "callsPerDay": 2.7,
-      "totalCalls": 115,
+      "callsPerDay": 2.9,
+      "totalCalls": 101,
       "firstCallDate": "2026-08-12",
-      "lastCallDate": "2026-09-22"
+      "lastCallDate": "2026-09-15"
     },
     {
       "name": "Nele Pfau",
       "userId": 1862427,
-      "outboundCalls": 2444,
-      "inboundCalls": 102,
-      "answeredCalls": 2046,
+      "outboundCalls": 2292,
+      "inboundCalls": 94,
+      "answeredCalls": 1917,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 480390,
-      "avgDurationSec": 235,
+      "totalDurationSec": 435768,
+      "avgDurationSec": 227,
       "longestCallSec": 3636,
       "reachabilityPct": 100,
-      "callsPerDay": 43.9,
-      "totalCalls": 2546,
+      "callsPerDay": 45,
+      "totalCalls": 2386,
       "firstCallDate": "2026-07-27",
-      "lastCallDate": "2026-09-22"
+      "lastCallDate": "2026-09-17"
     },
     {
       "name": "Bastian Wuske",
@@ -312,27 +312,9 @@
     },
     {
       "date": "2026-09-17",
-      "dials": 21,
-      "reached": 18,
-      "calltimeSec": 4531
-    },
-    {
-      "date": "2026-09-18",
-      "dials": 60,
-      "reached": 48,
-      "calltimeSec": 11180
-    },
-    {
-      "date": "2026-09-21",
-      "dials": 58,
-      "reached": 45,
-      "calltimeSec": 15220
-    },
-    {
-      "date": "2026-09-22",
-      "dials": 27,
-      "reached": 20,
-      "calltimeSec": 14330
+      "dials": 2,
+      "reached": 2,
+      "calltimeSec": 475
     }
   ],
   "sellerDaily": [
@@ -1083,87 +1065,15 @@
     {
       "seller": "Nele Pfau",
       "date": "2026-09-17",
-      "dials": 21,
-      "reached": 18,
-      "calltimeSec": 4531,
-      "outboundCalls": 21,
-      "inboundCalls": 1,
-      "answeredCalls": 19,
-      "totalDurationSec": 4551,
-      "longestCallSec": 983
-    },
-    {
-      "seller": "Nele Pfau",
-      "date": "2026-09-18",
-      "dials": 58,
-      "reached": 46,
-      "calltimeSec": 11022,
-      "outboundCalls": 58,
-      "inboundCalls": 5,
-      "answeredCalls": 51,
-      "totalDurationSec": 12093,
-      "longestCallSec": 2237
-    },
-    {
-      "seller": "Walid Karimi",
-      "date": "2026-09-18",
       "dials": 2,
       "reached": 2,
-      "calltimeSec": 158,
+      "calltimeSec": 475,
       "outboundCalls": 2,
       "inboundCalls": 0,
       "answeredCalls": 2,
-      "totalDurationSec": 158,
-      "longestCallSec": 137
-    },
-    {
-      "seller": "Nele Pfau",
-      "date": "2026-09-21",
-      "dials": 53,
-      "reached": 41,
-      "calltimeSec": 13953,
-      "outboundCalls": 53,
-      "inboundCalls": 2,
-      "answeredCalls": 43,
-      "totalDurationSec": 14270,
-      "longestCallSec": 2639
-    },
-    {
-      "seller": "Walid Karimi",
-      "date": "2026-09-21",
-      "dials": 5,
-      "reached": 4,
-      "calltimeSec": 1267,
-      "outboundCalls": 5,
-      "inboundCalls": 2,
-      "answeredCalls": 6,
-      "totalDurationSec": 1408,
-      "longestCallSec": 643
-    },
-    {
-      "seller": "Nele Pfau",
-      "date": "2026-09-22",
-      "dials": 22,
-      "reached": 18,
-      "calltimeSec": 14183,
-      "outboundCalls": 22,
-      "inboundCalls": 0,
-      "answeredCalls": 18,
-      "totalDurationSec": 14183,
-      "longestCallSec": 1971
-    },
-    {
-      "seller": "Walid Karimi",
-      "date": "2026-09-22",
-      "dials": 5,
-      "reached": 2,
-      "calltimeSec": 147,
-      "outboundCalls": 5,
-      "inboundCalls": 0,
-      "answeredCalls": 2,
-      "totalDurationSec": 147,
-      "longestCallSec": 100
+      "totalDurationSec": 475,
+      "longestCallSec": 450
     }
   ],
-  "fetchedAt": "2026-09-22T18:35:20.045Z"
+  "fetchedAt": "2026-09-22T23:32:01.115Z"
 }
