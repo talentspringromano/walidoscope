@@ -20,17 +20,17 @@
     {
       "name": "Nele Pfau",
       "userId": 1862427,
-      "outboundCalls": 199,
+      "outboundCalls": 188,
       "inboundCalls": 11,
-      "answeredCalls": 181,
+      "answeredCalls": 170,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 46406,
-      "avgDurationSec": 256,
+      "totalDurationSec": 45991,
+      "avgDurationSec": 271,
       "longestCallSec": 3005,
       "reachabilityPct": 100,
-      "callsPerDay": 30,
-      "totalCalls": 210,
+      "callsPerDay": 28.4,
+      "totalCalls": 199,
       "firstCallDate": "2026-07-31",
       "lastCallDate": "2026-08-06"
     },
@@ -72,9 +72,9 @@
   "daily": [
     {
       "date": "2026-07-31",
-      "dials": 31,
-      "reached": 27,
-      "calltimeSec": 9626
+      "dials": 17,
+      "reached": 14,
+      "calltimeSec": 7276
     },
     {
       "date": "2026-08-03",
@@ -96,22 +96,22 @@
     },
     {
       "date": "2026-08-06",
-      "dials": 23,
-      "reached": 21,
-      "calltimeSec": 880
+      "dials": 26,
+      "reached": 23,
+      "calltimeSec": 2815
     }
   ],
   "sellerDaily": [
     {
       "seller": "Nele Pfau",
       "date": "2026-07-31",
-      "dials": 31,
-      "reached": 27,
-      "calltimeSec": 9626,
-      "outboundCalls": 31,
+      "dials": 17,
+      "reached": 14,
+      "calltimeSec": 7276,
+      "outboundCalls": 17,
       "inboundCalls": 1,
-      "answeredCalls": 28,
-      "totalDurationSec": 9638,
+      "answeredCalls": 15,
+      "totalDurationSec": 7288,
       "longestCallSec": 2540
     },
     {
@@ -153,15 +153,15 @@
     {
       "seller": "Nele Pfau",
       "date": "2026-08-06",
-      "dials": 23,
-      "reached": 21,
-      "calltimeSec": 880,
-      "outboundCalls": 23,
+      "dials": 26,
+      "reached": 23,
+      "calltimeSec": 2815,
+      "outboundCalls": 26,
       "inboundCalls": 1,
-      "answeredCalls": 22,
-      "totalDurationSec": 3885,
+      "answeredCalls": 24,
+      "totalDurationSec": 5820,
       "longestCallSec": 3005
     }
   ],
-  "fetchedAt": "2026-09-29T00:45:12.607Z"
+  "fetchedAt": "2026-09-29T09:17:02.245Z"
 }
