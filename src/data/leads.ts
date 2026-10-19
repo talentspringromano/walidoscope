@@ -183834,7 +183834,7 @@ export const leads: Lead[] = [
   {
     "id": 5931,
     "name": "Lea Ritter",
-    "leadStatus": "Vertriebsqualifiziert",
+    "leadStatus": "Beratungsgespräch gebucht",
     "verlustgrund": "",
     "adId": "",
     "adName": "",
@@ -183856,7 +183856,7 @@ export const leads: Lead[] = [
     "anrufversuch": "2x nicht erreicht",
     "kennenlernDatum": "",
     "betreuungsart": "Low Touch",
-    "lastModified": "6.10.2026 14:18",
+    "lastModified": "19.10.2026 00:01",
     "angebotsprozessDatum": "30.9.2026 12:16",
     "vertriebsqualifiziertAm": "30.9.2026 12:16",
     "gewonnenAm": "",
