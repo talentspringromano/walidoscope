@@ -20,18 +20,18 @@
     {
       "name": "Nele Pfau",
       "userId": 1862427,
-      "outboundCalls": 387,
+      "outboundCalls": 388,
       "inboundCalls": 12,
       "answeredCalls": 315,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 69119,
-      "avgDurationSec": 219,
+      "totalDurationSec": 69297,
+      "avgDurationSec": 220,
       "longestCallSec": 2103,
       "reachabilityPct": 100,
-      "callsPerDay": 57,
-      "totalCalls": 399,
-      "firstCallDate": "2026-08-22",
+      "callsPerDay": 80,
+      "totalCalls": 400,
+      "firstCallDate": "2026-08-24",
       "lastCallDate": "2026-08-28"
     },
     {
@@ -71,12 +71,6 @@
   ],
   "daily": [
     {
-      "date": "2026-08-22",
-      "dials": 1,
-      "reached": 1,
-      "calltimeSec": 24
-    },
-    {
       "date": "2026-08-24",
       "dials": 73,
       "reached": 61,
@@ -102,24 +96,12 @@
     },
     {
       "date": "2026-08-28",
-      "dials": 40,
-      "reached": 28,
-      "calltimeSec": 6267
+      "dials": 42,
+      "reached": 29,
+      "calltimeSec": 6469
     }
   ],
   "sellerDaily": [
-    {
-      "seller": "Nele Pfau",
-      "date": "2026-08-22",
-      "dials": 1,
-      "reached": 1,
-      "calltimeSec": 24,
-      "outboundCalls": 1,
-      "inboundCalls": 0,
-      "answeredCalls": 1,
-      "totalDurationSec": 24,
-      "longestCallSec": 24
-    },
     {
       "seller": "Nele Pfau",
       "date": "2026-08-24",
@@ -207,13 +189,13 @@
     {
       "seller": "Nele Pfau",
       "date": "2026-08-28",
-      "dials": 38,
-      "reached": 27,
-      "calltimeSec": 6208,
-      "outboundCalls": 38,
+      "dials": 40,
+      "reached": 28,
+      "calltimeSec": 6410,
+      "outboundCalls": 40,
       "inboundCalls": 1,
-      "answeredCalls": 28,
-      "totalDurationSec": 6481,
+      "answeredCalls": 29,
+      "totalDurationSec": 6683,
       "longestCallSec": 1721
     },
     {
@@ -229,5 +211,5 @@
       "longestCallSec": 59
     }
   ],
-  "fetchedAt": "2026-10-21T08:07:15.719Z"
+  "fetchedAt": "2026-10-21T14:14:31.533Z"
 }
