@@ -20,19 +20,19 @@
     {
       "name": "Nele Pfau",
       "userId": 1862427,
-      "outboundCalls": 386,
+      "outboundCalls": 392,
       "inboundCalls": 12,
-      "answeredCalls": 314,
+      "answeredCalls": 319,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 69095,
-      "avgDurationSec": 220,
-      "longestCallSec": 2103,
+      "totalDurationSec": 71654,
+      "avgDurationSec": 225,
+      "longestCallSec": 2305,
       "reachabilityPct": 100,
-      "callsPerDay": 79.6,
-      "totalCalls": 398,
+      "callsPerDay": 50.5,
+      "totalCalls": 404,
       "firstCallDate": "2026-08-24",
-      "lastCallDate": "2026-08-28"
+      "lastCallDate": "2026-08-31"
     },
     {
       "name": "Bastian Wuske",
@@ -96,9 +96,15 @@
     },
     {
       "date": "2026-08-28",
-      "dials": 40,
-      "reached": 28,
-      "calltimeSec": 6267
+      "dials": 42,
+      "reached": 29,
+      "calltimeSec": 6469
+    },
+    {
+      "date": "2026-08-31",
+      "dials": 4,
+      "reached": 4,
+      "calltimeSec": 2357
     }
   ],
   "sellerDaily": [
@@ -189,13 +195,13 @@
     {
       "seller": "Nele Pfau",
       "date": "2026-08-28",
-      "dials": 38,
-      "reached": 27,
-      "calltimeSec": 6208,
-      "outboundCalls": 38,
+      "dials": 40,
+      "reached": 28,
+      "calltimeSec": 6410,
+      "outboundCalls": 40,
       "inboundCalls": 1,
-      "answeredCalls": 28,
-      "totalDurationSec": 6481,
+      "answeredCalls": 29,
+      "totalDurationSec": 6683,
       "longestCallSec": 1721
     },
     {
@@ -209,7 +215,19 @@
       "answeredCalls": 1,
       "totalDurationSec": 59,
       "longestCallSec": 59
+    },
+    {
+      "seller": "Nele Pfau",
+      "date": "2026-08-31",
+      "dials": 4,
+      "reached": 4,
+      "calltimeSec": 2357,
+      "outboundCalls": 4,
+      "inboundCalls": 0,
+      "answeredCalls": 4,
+      "totalDurationSec": 2357,
+      "longestCallSec": 2305
     }
   ],
-  "fetchedAt": "2026-10-22T14:14:16.546Z"
+  "fetchedAt": "2026-10-22T18:58:34.987Z"
 }
