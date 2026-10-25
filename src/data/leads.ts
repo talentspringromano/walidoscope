@@ -66955,7 +66955,7 @@ export const leads: Lead[] = [
     "anrufversuch": "Noch nicht angerufen",
     "kennenlernDatum": "",
     "betreuungsart": "",
-    "lastModified": "25.10.2026 20:14",
+    "lastModified": "25.10.2026 21:35",
     "angebotsprozessDatum": "15.5.2026 20:32",
     "vertriebsqualifiziertAm": "",
     "gewonnenAm": "",
