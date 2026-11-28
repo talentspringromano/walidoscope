@@ -20,18 +20,18 @@
     {
       "name": "Nele Pfau",
       "userId": 1862427,
-      "outboundCalls": 456,
+      "outboundCalls": 455,
       "inboundCalls": 13,
-      "answeredCalls": 358,
+      "answeredCalls": 357,
       "missedCalls": 0,
       "voicemailCalls": 0,
-      "totalDurationSec": 48574,
-      "avgDurationSec": 136,
+      "totalDurationSec": 48892,
+      "avgDurationSec": 137,
       "longestCallSec": 1763,
       "reachabilityPct": 100,
-      "callsPerDay": 67,
-      "totalCalls": 469,
-      "firstCallDate": "2026-09-28",
+      "callsPerDay": 66.9,
+      "totalCalls": 468,
+      "firstCallDate": "2026-09-29",
       "lastCallDate": "2026-10-05"
     },
     {
@@ -71,12 +71,6 @@
   ],
   "daily": [
     {
-      "date": "2026-09-28",
-      "dials": 2,
-      "reached": 2,
-      "calltimeSec": 678
-    },
-    {
       "date": "2026-09-29",
       "dials": 104,
       "reached": 79,
@@ -102,24 +96,12 @@
     },
     {
       "date": "2026-10-05",
-      "dials": 7,
-      "reached": 5,
-      "calltimeSec": 2332
+      "dials": 8,
+      "reached": 6,
+      "calltimeSec": 3328
     }
   ],
   "sellerDaily": [
-    {
-      "seller": "Nele Pfau",
-      "date": "2026-09-28",
-      "dials": 2,
-      "reached": 2,
-      "calltimeSec": 678,
-      "outboundCalls": 2,
-      "inboundCalls": 0,
-      "answeredCalls": 2,
-      "totalDurationSec": 678,
-      "longestCallSec": 392
-    },
     {
       "seller": "Nele Pfau",
       "date": "2026-09-29",
@@ -219,15 +201,15 @@
     {
       "seller": "Nele Pfau",
       "date": "2026-10-05",
-      "dials": 7,
-      "reached": 5,
-      "calltimeSec": 2332,
-      "outboundCalls": 7,
+      "dials": 8,
+      "reached": 6,
+      "calltimeSec": 3328,
+      "outboundCalls": 8,
       "inboundCalls": 0,
-      "answeredCalls": 5,
-      "totalDurationSec": 2332,
+      "answeredCalls": 6,
+      "totalDurationSec": 3328,
       "longestCallSec": 1763
     }
   ],
-  "fetchedAt": "2026-11-27T15:50:05.249Z"
+  "fetchedAt": "2026-11-28T00:50:57.039Z"
 }
